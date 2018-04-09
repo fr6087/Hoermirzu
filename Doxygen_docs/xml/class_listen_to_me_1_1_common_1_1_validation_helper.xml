@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_common_1_1_validation_helper" kind="class" language="C#" prot="package">
+    <compoundname>ListenToMe::Common::ValidationHelper</compoundname>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_validation_helper_1a3790614d02f0d4b548bbacc4a75e2a32" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool ListenToMe.Common.ValidationHelper.MandatoryFieldsFilled</definition>
+        <argsstring>(TextBox[] boxes)</argsstring>
+        <name>MandatoryFieldsFilled</name>
+        <param>
+          <type>TextBox[]</type>
+          <declname>boxes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/ValidationHelper.cs" line="14" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/ValidationHelper.cs" bodystart="14" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>can help the static XAML-Pages to validate the required fields. Currently deactive. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/ValidationHelper.cs" line="12" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/ValidationHelper.cs" bodystart="11" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_common_1_1_validation_helper_1a3790614d02f0d4b548bbacc4a75e2a32" prot="package" virt="non-virtual"><scope>ListenToMe::Common::ValidationHelper</scope><name>MandatoryFieldsFilled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

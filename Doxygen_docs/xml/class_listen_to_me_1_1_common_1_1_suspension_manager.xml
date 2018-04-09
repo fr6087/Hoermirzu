@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_common_1_1_suspension_manager" kind="class" language="C#" prot="package">
+    <compoundname>ListenToMe::Common::SuspensionManager</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1a6288dec49686047574ce1362d6a0e69f" prot="private" static="yes" mutable="no">
+        <type>Dictionary&lt; string, object &gt;</type>
+        <definition>Dictionary&lt;string, object&gt; ListenToMe.Common.SuspensionManager._sessionState</definition>
+        <argsstring></argsstring>
+        <name>_sessionState</name>
+        <initializer>= new Dictionary&lt;string, object&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="24" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1ae384ed74dc4a2429ccb0059f1717d545" prot="private" static="yes" mutable="no">
+        <type>List&lt; Type &gt;</type>
+        <definition>List&lt;Type&gt; ListenToMe.Common.SuspensionManager._knownTypes</definition>
+        <argsstring></argsstring>
+        <name>_knownTypes</name>
+        <initializer>= new List&lt;Type&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="25" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1a1a089788ad2f3f6166c7a5b8634ae22a" prot="private" static="yes" mutable="no">
+        <type>DependencyProperty</type>
+        <definition>DependencyProperty ListenToMe.Common.SuspensionManager.FrameSessionStateKeyProperty</definition>
+        <argsstring></argsstring>
+        <name>FrameSessionStateKeyProperty</name>
+        <initializer>=
+            DependencyProperty.RegisterAttached(&quot;_FrameSessionStateKey&quot;, typeof(String), typeof(SuspensionManager), null)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="134" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1a641023c9d16708f5e6544afb29b5e771" prot="private" static="yes" mutable="no">
+        <type>DependencyProperty</type>
+        <definition>DependencyProperty ListenToMe.Common.SuspensionManager.FrameSessionBaseKeyProperty</definition>
+        <argsstring></argsstring>
+        <name>FrameSessionBaseKeyProperty</name>
+        <initializer>=
+            DependencyProperty.RegisterAttached(&quot;_FrameSessionBaseKeyParams&quot;, typeof(String), typeof(SuspensionManager), null)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="136" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1a2774e9c300aa2d2a700e443ffa0cf8b4" prot="private" static="yes" mutable="no">
+        <type>DependencyProperty</type>
+        <definition>DependencyProperty ListenToMe.Common.SuspensionManager.FrameSessionStateProperty</definition>
+        <argsstring></argsstring>
+        <name>FrameSessionStateProperty</name>
+        <initializer>=
+            DependencyProperty.RegisterAttached(&quot;_FrameSessionState&quot;, typeof(Dictionary&lt;String, Object&gt;), typeof(SuspensionManager), null)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="138" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1a564d7f7b90db456b12023d0bfb01b70f" prot="private" static="yes" mutable="no">
+        <type>List&lt; WeakReference&lt; Frame &gt; &gt;</type>
+        <definition>List&lt;WeakReference&lt;Frame&gt; &gt; ListenToMe.Common.SuspensionManager._registeredFrames</definition>
+        <argsstring></argsstring>
+        <name>_registeredFrames</name>
+        <initializer>= new List&lt;WeakReference&lt;Frame&gt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="140" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1ab1b491ef341bd2e605f57c9f8cfda9ed" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string ListenToMe.Common.SuspensionManager.sessionStateFilename</definition>
+        <argsstring></argsstring>
+        <name>sessionStateFilename</name>
+        <initializer>= &quot;_sessionState.xml&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="26" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1a10b3af4e7ff0ee1c4b78aaa513b0ead9" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Dictionary&lt; string, object &gt;</type>
+        <definition>Dictionary&lt;string, object&gt; ListenToMe.Common.SuspensionManager.SessionState</definition>
+        <argsstring></argsstring>
+        <name>SessionState</name>
+        <briefdescription>
+<para>Provides access to global session state for the current session. This state is serialized by SaveAsync and restored by RestoreAsync, so values must be serializable by DataContractSerializer and should be as compact as possible. Strings and other self-contained data types are strongly recommended. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="35" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1a245f1e1fc505d4e74d79e8487f0be352" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>List&lt; Type &gt;</type>
+        <definition>List&lt;Type&gt; ListenToMe.Common.SuspensionManager.KnownTypes</definition>
+        <argsstring></argsstring>
+        <name>KnownTypes</name>
+        <briefdescription>
+<para>List of custom types provided to the DataContractSerializer when reading and writing session state. Initially empty, additional types may be added to customize the serialization process. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="45" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1ae00a7abf014126ba98403d18920289bb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task ListenToMe.Common.SuspensionManager.SaveAsync</definition>
+        <argsstring>()</argsstring>
+        <name>SaveAsync</name>
+        <briefdescription>
+<para>Save the current SessionState. Any Frame instances registered with RegisterFrame will also preserve their current navigation stack, which in turn gives their active Page an opportunity to save its state. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An asynchronous task that reflects when session state has been saved.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="57" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="57" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1ae4786dbfbbdb4efa3358dc72c44abb77" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task ListenToMe.Common.SuspensionManager.RestoreAsync</definition>
+        <argsstring>(String sessionBaseKey=null)</argsstring>
+        <name>RestoreAsync</name>
+        <param>
+          <type>String</type>
+          <declname>sessionBaseKey</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Restores previously saved SessionState. Any Frame instances registered with RegisterFrame will also restore their prior navigation state, which in turn gives their active Page an opportunity restore its state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sessionBaseKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional key that identifies the type of session. This can be used to distinguish between multiple application launch scenarios.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An asynchronous task that reflects when session state has been read. The content of SessionState should not be relied upon until this task completes.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="102" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="102" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1a7b613b59d7f0e7e3e318eeb39cef0a86" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ListenToMe.Common.SuspensionManager.RegisterFrame</definition>
+        <argsstring>(Frame frame, String sessionStateKey, String sessionBaseKey=null)</argsstring>
+        <name>RegisterFrame</name>
+        <param>
+          <type>Frame</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>sessionStateKey</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>sessionBaseKey</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Registers a Frame instance to allow its navigation history to be saved to and restored from SessionState. Frames should be registered once immediately after creation if they will participate in session state management. Upon registration if state has already been restored for the specified key the navigation history will immediately be restored. Subsequent invocations of RestoreAsync will also restore navigation history. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An instance whose navigation history should be managed by SuspensionManager</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sessionStateKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A unique key into SessionState used to store navigation-related information.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sessionBaseKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional key that identifies the type of session. This can be used to distinguish between multiple application launch scenarios.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="156" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="156" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1a71b51ebb2a3681aaef1cdc00083f77c1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ListenToMe.Common.SuspensionManager.UnregisterFrame</definition>
+        <argsstring>(Frame frame)</argsstring>
+        <name>UnregisterFrame</name>
+        <param>
+          <type>Frame</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Disassociates a Frame previously registered by RegisterFrame from SessionState. Any navigation state previously captured will be removed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An instance whose navigation history should no longer be managed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="190" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="190" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1a68899b66660b7111b5c09a64365b3700" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Dictionary&lt; String, Object &gt;</type>
+        <definition>static Dictionary&lt;String, Object&gt; ListenToMe.Common.SuspensionManager.SessionStateForFrame</definition>
+        <argsstring>(Frame frame)</argsstring>
+        <name>SessionStateForFrame</name>
+        <param>
+          <type>Frame</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Provides storage for session state associated with the specified Frame. Frames that have been previously registered with RegisterFrame have their session state saved and restored automatically as a part of the global SessionState. Frames that are not registered have transient state that can still be useful when restoring pages that have been discarded from the navigation cache. </para>        </briefdescription>
+        <detaileddescription>
+<para>Apps may choose to rely on <ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper" kindref="compound">NavigationHelper</ref> to manage page-specific state instead of working with frame session state directly.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The instance for which session state is desired.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A collection of state subject to the same serialization mechanism as SessionState.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="215" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="215" bodyend="239"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1af1b5628e250e9b8e2a3ae6e164521429" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ListenToMe.Common.SuspensionManager.RestoreFrameNavigationState</definition>
+        <argsstring>(Frame frame)</argsstring>
+        <name>RestoreFrameNavigationState</name>
+        <param>
+          <type>Frame</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="241" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="241" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_suspension_manager_1a31e8d462eaaa9a509ff30c15a014da88" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ListenToMe.Common.SuspensionManager.SaveFrameNavigationState</definition>
+        <argsstring>(Frame frame)</argsstring>
+        <name>SaveFrameNavigationState</name>
+        <param>
+          <type>Frame</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="250" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="250" bodyend="254"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SuspensionManager captures global session state to simplify process lifetime management for an application. Note that session state will be automatically cleared under a variety of conditions and should only be used to store information that would be convenient to carry across sessions, but that should be discarded when an application crashes or is upgraded. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="23" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="22" bodyend="255"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1ae384ed74dc4a2429ccb0059f1717d545" prot="private" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>_knownTypes</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1a564d7f7b90db456b12023d0bfb01b70f" prot="private" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>_registeredFrames</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1a6288dec49686047574ce1362d6a0e69f" prot="private" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>_sessionState</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1a641023c9d16708f5e6544afb29b5e771" prot="private" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>FrameSessionBaseKeyProperty</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1a1a089788ad2f3f6166c7a5b8634ae22a" prot="private" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>FrameSessionStateKeyProperty</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1a2774e9c300aa2d2a700e443ffa0cf8b4" prot="private" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>FrameSessionStateProperty</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1a245f1e1fc505d4e74d79e8487f0be352" prot="public" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>KnownTypes</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1a7b613b59d7f0e7e3e318eeb39cef0a86" prot="public" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>RegisterFrame</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1ae4786dbfbbdb4efa3358dc72c44abb77" prot="public" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>RestoreAsync</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1af1b5628e250e9b8e2a3ae6e164521429" prot="private" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>RestoreFrameNavigationState</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1ae00a7abf014126ba98403d18920289bb" prot="public" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>SaveAsync</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1a31e8d462eaaa9a509ff30c15a014da88" prot="private" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>SaveFrameNavigationState</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1a10b3af4e7ff0ee1c4b78aaa513b0ead9" prot="public" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>SessionState</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1ab1b491ef341bd2e605f57c9f8cfda9ed" prot="private" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>sessionStateFilename</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1a68899b66660b7111b5c09a64365b3700" prot="public" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>SessionStateForFrame</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_1a71b51ebb2a3681aaef1cdc00083f77c1" prot="public" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManager</scope><name>UnregisterFrame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

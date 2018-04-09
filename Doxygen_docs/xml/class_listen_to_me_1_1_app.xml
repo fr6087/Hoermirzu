@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_app" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::App</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Application</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_app_1a311ccaa1ae0fd9cf9f89d3e3466098fe" prot="public" static="yes" mutable="no">
+        <type>System.Collections.Hashtable</type>
+        <definition>System.Collections.Hashtable ListenToMe.App.hashTable</definition>
+        <argsstring></argsstring>
+        <name>hashTable</name>
+        <briefdescription>
+<para>saves the adresses of the input fields present in the frame; this helps identifying the control in which to display the textvalue recognized by Luis </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="34" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_app_1a2862b032c76095016dd7dc7600bfd029" prot="public" static="yes" mutable="no">
+        <type>Bot</type>
+        <definition>Bot ListenToMe.App.Bot</definition>
+        <argsstring></argsstring>
+        <name>Bot</name>
+        <briefdescription>
+<para>connects via DirectLine tho the WebApp. Communicates with the language understanding intelligence model </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="43" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_app_1a41b762ac78fada5d35954d39419b8e36" prot="public" static="yes" mutable="no">
+        <type>Service1Client</type>
+        <definition>Service1Client ListenToMe.App.client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <briefdescription>
+<para>the WCF-Service client instance that is able to parse the HTML-Form </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="47" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_app_1a3e094e220103fe4590cf50c22f38ee65" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_listen_to_me_1_1_model_1_1_form" kindref="compound">Model.Form</ref></type>
+        <definition>Model.Form ListenToMe.App.formstore</definition>
+        <argsstring></argsstring>
+        <name>formstore</name>
+        <initializer>= new <ref refid="class_listen_to_me_1_1_model_1_1_form" kindref="compound">Model.Form</ref>()</initializer>
+        <briefdescription>
+<para>keeps a collection Model.FormStore.Sections of all the sections of the web form. is able to store and load sections in the device storage </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="68" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_app_1ae35ddc10bf8aad1a80c92c71c6e3b7fc" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_listen_to_me_1_1_common_1_1_navigation_service" kindref="compound">NavigationService</ref></type>
+        <definition>NavigationService ListenToMe.App.NavigationService</definition>
+        <argsstring></argsstring>
+        <name>NavigationService</name>
+        <briefdescription>
+<para>Navigation service, provides a decoupled way to trigger the UI Frame to transition between views. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="39" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_app_1ad1b3a77f44f52055446727716abfccc6" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>PasswordVault</type>
+        <definition>PasswordVault ListenToMe.App.Vault</definition>
+        <argsstring></argsstring>
+        <name>Vault</name>
+        <briefdescription>
+<para>The password vault stores application specific usernames and passwords encrypted </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="51" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_app_1a2ff13a3c353a770011b988fe8b392b75" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string ListenToMe.App.UserName</definition>
+        <argsstring></argsstring>
+        <name>UserName</name>
+        <briefdescription>
+<para>the userName field is a tempory storage for the user&apos;s name toDo: check if needed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="62" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_app_1a18804f091f81b46de97ab88c594f3f23" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string ListenToMe.App.UserPassword</definition>
+        <argsstring></argsstring>
+        <name>UserPassword</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="63" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_app_1a92eb573f880ce92d5b9fa79b90ba3f41" prot="private" static="no" mutable="no">
+        <type><ref refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper" kindref="compound">RootFrameNavigationHelper</ref></type>
+        <definition>RootFrameNavigationHelper ListenToMe.App.rootFrameNavigationHelper</definition>
+        <argsstring></argsstring>
+        <name>rootFrameNavigationHelper</name>
+        <briefdescription>
+<para>The rootframenavigation helper instance enables <ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref> to register to keayboard events related to navigation </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="56" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_app_1a2c50cfed33094aff84b281be8244f41a" prot="package" static="yes" mutable="no">
+        <type>readonly string</type>
+        <definition>readonly string ListenToMe.App.uri</definition>
+        <argsstring></argsstring>
+        <name>uri</name>
+        <initializer>= &quot;http://10.150.50.21/formularservice/formular/A_FOREX_ANTRAG_ESF/appl/d556026e-991d-11e7-9fb1-27c0f1da4ec4/?lang=de&quot;</initializer>
+        <briefdescription>
+<para>the uri of the form to be accessed. Warning: the client is highly form-specific and is searching for specific attributes and types. Similar generated forms that contain the same attributes and html-tags will work, but all other forms will not be parsed correctly. this form ist available in Polish and English as well. But the forms of these languages still contain 50% German so I&apos;m neglecting these other languages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="75" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_app_1a59acc333f6141d00101170b53ad29754" prot="package" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool ListenToMe.App.isDebug</definition>
+        <argsstring></argsstring>
+        <name>isDebug</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>is Debug determines the mode in which to run the application. If the above form uri is sometimes not available due to maintenace this should be set to true. If the form is available, this should be false. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="81" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_app_1a0ceb5219b35307c9377448b1071ee4cc" prot="package" static="yes" mutable="no">
+        <type>Dictionary&lt; string, Section &gt;</type>
+        <definition>Dictionary&lt;string, Section&gt; ListenToMe.App.sections</definition>
+        <argsstring></argsstring>
+        <name>sections</name>
+        <briefdescription>
+<para>the Dictionary is filled if the Debug mode is not enabled instead of sectionsList </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="86" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_app_1a8b865aa5eb8e0a1333c2b29f41bf4aa1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.App.App</definition>
+        <argsstring>()</argsstring>
+        <name>App</name>
+        <briefdescription>
+<para>Initialized the Singleton application object. This is the first line of built code and the logic equivalent to main() that is WinMain(). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="96" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="96" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_app_1ace89a3624e2de8cc528dea8b1288d03f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ListenToMe.App.OnLaunched</definition>
+        <argsstring>(LaunchActivatedEventArgs e)</argsstring>
+        <name>OnLaunched</name>
+        <param>
+          <type>LaunchActivatedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Is called as the application is started normally by the user. Other enty points are used for example if the application is activated in the fore or background </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Details on application start and start arguments.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="108" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="108" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_app_1a3e2da49bb555b7fdc5858f5442d396e4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async override void</type>
+        <definition>async override void ListenToMe.App.OnActivated</definition>
+        <argsstring>(IActivatedEventArgs e)</argsstring>
+        <name>OnActivated</name>
+        <param>
+          <type>IActivatedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>OnActivated is called whenever an external application e.g- Cortana launches the ListenToMeApp </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="148" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="148" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_app_1ac79758b58c56c49b87a3e2ff6a9ad638" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.App.ActivateVoiceCommands</definition>
+        <argsstring>()</argsstring>
+        <name>ActivateVoiceCommands</name>
+        <briefdescription>
+<para>The method ActivateVoiceCommands is calling an VoiceCommands.xml-File from local storage to determine which Cortana commands are valid. It also is able to update the phrase lists page and sections. The problem with that is, though that the phrase lists are limited to one word.7 For a voice command like &quot;Open &apos;Angaben zum antragsstellenden Unternehmen&apos;&quot; this is problematic. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="120" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="120" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_app_1ad23d27a2bdcd858e10e589bfadb1db17" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.App.initGui</definition>
+        <argsstring>(LaunchActivatedEventArgs e=null)</argsstring>
+        <name>initGui</name>
+        <param>
+          <type>LaunchActivatedEventArgs</type>
+          <declname>e</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>initGui determines whether or not there is an active Windows Frame. It creates one for the application if there wasn&apos;t one before. As soon as there exists a frame, the method can transfer launchArguments to it. This is curently not used but might be in the future interesting. The command Edit could by this concept get the launch argument &quot;company details&quot; and is navigating the frame to companydails page. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="238" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="238" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_app_1aaf710baa7ee4fb8e6da7e97a333e6e8c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.App.PerformCommandAsync</definition>
+        <argsstring>(string commandName, String result)</argsstring>
+        <name>PerformCommandAsync</name>
+        <param>
+          <type>string</type>
+          <declname>commandName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>performCommand performs the voice commmand it received from Cortana or the input text field. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>commandName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name ot the command, e.g. edit. Valid names are found in ViceConnamds.xml</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The speech recognition result in text form</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="304" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="304" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_app_1a8867647372e101bdd100a68eab4d0d3a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.App.OnNavigationFailed</definition>
+        <argsstring>(object sender, NavigationFailedEventArgs e)</argsstring>
+        <name>OnNavigationFailed</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>NavigationFailedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Is called when nvigation to a certain page fails </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame that failed to navigate to the page</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Details about navigation error</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="387" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="387" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_app_1adc9d18402a7a696ca6d4a7631a610e8d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.App.OnSuspending</definition>
+        <argsstring>(object sender, SuspendingEventArgs e)</argsstring>
+        <name>OnSuspending</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SuspendingEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>OnSuspending is called if the application execution is stopped. The application state is stored without knowing whether the application is terminated or will be called at a later time </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source of suspension.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Details on suspension.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="398" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="398" bodyend="403"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_app_1ac165e2cffa6fc662285627595a6a7622" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ListenToMe.App.Filter_Changed</definition>
+        <argsstring>(object sender, TextChangedEventArgs e, String regex)</argsstring>
+        <name>Filter_Changed</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>TextChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>regex</declname>
+        </param>
+        <briefdescription>
+<para>Filter changed is supposed to filter every sign from input string that&apos;s not alphanumerical. Unfortunately, TextchangedEvent is only triggered between posts to the server, so this is inept try. see reference: <ulink url="https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.textbox.textchanged(v=vs.110).aspx">https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.textbox.textchanged(v=vs.110).aspx</ulink> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="412" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="412" bodyend="420"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>contains application specific methods for starting the application. Initializations and state-related actions are includes. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="49">
+        <label>ListenToMe.App</label>
+        <link refid="class_listen_to_me_1_1_app"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>Application</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="51">
+        <label>ListenToMe.App</label>
+        <link refid="class_listen_to_me_1_1_app"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+        <childnode refid="53" relation="usage">
+          <edgelabel>hashTable</edgelabel>
+        </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>formstore</edgelabel>
+        </childnode>
+      </node>
+      <node id="52">
+        <label>Application</label>
+      </node>
+      <node id="53">
+        <label>System</label>
+      </node>
+      <node id="54">
+        <label>Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" line="30" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs" bodystart="29" bodyend="646"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_app_1ac79758b58c56c49b87a3e2ff6a9ad638" prot="private" virt="non-virtual"><scope>ListenToMe::App</scope><name>ActivateVoiceCommands</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a8b865aa5eb8e0a1333c2b29f41bf4aa1" prot="public" virt="non-virtual"><scope>ListenToMe::App</scope><name>App</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a2862b032c76095016dd7dc7600bfd029" prot="public" virt="non-virtual"><scope>ListenToMe::App</scope><name>Bot</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a41b762ac78fada5d35954d39419b8e36" prot="public" virt="non-virtual"><scope>ListenToMe::App</scope><name>client</name></member>
+      <member refid="class_listen_to_me_1_1_app_1ac165e2cffa6fc662285627595a6a7622" prot="package" virt="non-virtual"><scope>ListenToMe::App</scope><name>Filter_Changed</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a3e094e220103fe4590cf50c22f38ee65" prot="public" virt="non-virtual"><scope>ListenToMe::App</scope><name>formstore</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a311ccaa1ae0fd9cf9f89d3e3466098fe" prot="public" virt="non-virtual"><scope>ListenToMe::App</scope><name>hashTable</name></member>
+      <member refid="class_listen_to_me_1_1_app_1ad23d27a2bdcd858e10e589bfadb1db17" prot="private" virt="non-virtual"><scope>ListenToMe::App</scope><name>initGui</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a59acc333f6141d00101170b53ad29754" prot="package" virt="non-virtual"><scope>ListenToMe::App</scope><name>isDebug</name></member>
+      <member refid="class_listen_to_me_1_1_app_1ae35ddc10bf8aad1a80c92c71c6e3b7fc" prot="public" virt="non-virtual"><scope>ListenToMe::App</scope><name>NavigationService</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a3e2da49bb555b7fdc5858f5442d396e4" prot="protected" virt="non-virtual"><scope>ListenToMe::App</scope><name>OnActivated</name></member>
+      <member refid="class_listen_to_me_1_1_app_1ace89a3624e2de8cc528dea8b1288d03f" prot="protected" virt="non-virtual"><scope>ListenToMe::App</scope><name>OnLaunched</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a8867647372e101bdd100a68eab4d0d3a" prot="private" virt="non-virtual"><scope>ListenToMe::App</scope><name>OnNavigationFailed</name></member>
+      <member refid="class_listen_to_me_1_1_app_1adc9d18402a7a696ca6d4a7631a610e8d" prot="private" virt="non-virtual"><scope>ListenToMe::App</scope><name>OnSuspending</name></member>
+      <member refid="class_listen_to_me_1_1_app_1aaf710baa7ee4fb8e6da7e97a333e6e8c" prot="private" virt="non-virtual"><scope>ListenToMe::App</scope><name>PerformCommandAsync</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a92eb573f880ce92d5b9fa79b90ba3f41" prot="private" virt="non-virtual"><scope>ListenToMe::App</scope><name>rootFrameNavigationHelper</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a0ceb5219b35307c9377448b1071ee4cc" prot="package" virt="non-virtual"><scope>ListenToMe::App</scope><name>sections</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a2c50cfed33094aff84b281be8244f41a" prot="package" virt="non-virtual"><scope>ListenToMe::App</scope><name>uri</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a2ff13a3c353a770011b988fe8b392b75" prot="package" virt="non-virtual"><scope>ListenToMe::App</scope><name>UserName</name></member>
+      <member refid="class_listen_to_me_1_1_app_1a18804f091f81b46de97ab88c594f3f23" prot="package" virt="non-virtual"><scope>ListenToMe::App</scope><name>UserPassword</name></member>
+      <member refid="class_listen_to_me_1_1_app_1ad1b3a77f44f52055446727716abfccc6" prot="public" virt="non-virtual"><scope>ListenToMe::App</scope><name>Vault</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

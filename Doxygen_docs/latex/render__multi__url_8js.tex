@@ -1,0 +1,77 @@
+\hypertarget{render__multi__url_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/render\+\_\+multi\+\_\+url.js File Reference}
+\label{render__multi__url_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/render\+\_\+multi\+\_\+url.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/render\+\_\+multi\+\_\+url.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{render__multi__url_8js_a31a2830355ce1fa0d1e0d1d585cc828f}{if} (system.\+args.\+length $>$ 1)
+\item 
+\hyperlink{render__multi__url_8js_a4d525e5f556bed7f7f75e66ece4bf511}{Render\+Urls\+To\+File} (\hyperlink{render__multi__url_8js_a8a01ff47f42ee9845409e8870401bf64}{array\+Of\+Urls},(function(status, \hyperlink{server_8js_a273346471dff7030093765f4e043d101}{url}, file)\{       \hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(status!==\char`\"{}success\char`\"{})\{                       return \hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\char`\"{}Unable to \hyperlink{colorwheel_8js_a2e68365b09ca6b47bfb6cfb37e38294d}{render} \textquotesingle{}\char`\"{}+url+\char`\"{}\textquotesingle{}\char`\"{});       \}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{                       return \hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\char`\"{}Rendered \textquotesingle{}\char`\"{}+url+\char`\"{}\textquotesingle{} at \textquotesingle{}\char`\"{}+file+\char`\"{}\textquotesingle{}\char`\"{});       \}\}), function()\{return \hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{render__multi__url_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{render__multi__url_8js_a0c995e18f6642de84e1eb6fd12bc0304}{Render\+Urls\+To\+File}
+\item 
+var \hyperlink{render__multi__url_8js_a8a01ff47f42ee9845409e8870401bf64}{array\+Of\+Urls} = null
+\item 
+var \hyperlink{render__multi__url_8js_ac4ca86dead4518ac4fd6e30172db3d9e}{system} = require(\char`\"{}system\char`\"{})
+\item 
+\hyperlink{render__multi__url_8js_a0544c3fe466e421738dae463968b70ba}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}!if@{if}}
+\index{if@{if}!render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}}
+\subsubsection[{\texorpdfstring{if(system.\+args.\+length $>$ 1)}{if(system.args.length > 1)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{system.\+args.}]{length, }
+\item[{}]{1}
+\end{DoxyParamCaption}
+)}\hypertarget{render__multi__url_8js_a31a2830355ce1fa0d1e0d1d585cc828f}{}\label{render__multi__url_8js_a31a2830355ce1fa0d1e0d1d585cc828f}
+
+
+References array\+Of\+Urls, and system.
+
+\index{render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}!Render\+Urls\+To\+File@{Render\+Urls\+To\+File}}
+\index{Render\+Urls\+To\+File@{Render\+Urls\+To\+File}!render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}}
+\subsubsection[{\texorpdfstring{Render\+Urls\+To\+File(array\+Of\+Urls,(function(status, url, file)\lcurly{}       if(status"!==""success"")\lcurly{}                       return console.\+log(""Unable to render \textquotesingle{}""+url+""\textquotesingle{}"");       \rcurly{}else\lcurly{}                       return console.\+log(""Rendered \textquotesingle{}""+url+""\textquotesingle{} at \textquotesingle{}""+file+""\textquotesingle{}"");       \rcurly{}\rcurly{}), function()\lcurly{}return phantom.\+exit();\rcurly{})}{RenderUrlsToFile(arrayOfUrls,(function(status, url, file)\{       if(status!=="success")\{                       return console.log("Unable to render '"+url+"'");       \}else\{                       return console.log("Rendered '"+url+"' at '"+file+"'");       \}\}), function()\{return phantom.exit();\})}}]{\setlength{\rightskip}{0pt plus 5cm}Render\+Urls\+To\+File (
+\begin{DoxyParamCaption}
+\item[{{\bf array\+Of\+Urls}}]{, }
+\item[{(function(status, {\bf url}, file)\{           {\bf if}(status!==\char`\"{}success\char`\"{})\{                                           return {\bf console.\+log}(\char`\"{}Unable to {\bf render} \textquotesingle{}\char`\"{}+url+\char`\"{}\textquotesingle{}\char`\"{});           \}{\bf else}\{                                           return {\bf console.\+log}(\char`\"{}Rendered \textquotesingle{}\char`\"{}+url+\char`\"{}\textquotesingle{} at \textquotesingle{}\char`\"{}+file+\char`\"{}\textquotesingle{}\char`\"{});           \}\})}]{, }
+\item[{function()\{return {\bf phantom.\+exit}();\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{render__multi__url_8js_a4d525e5f556bed7f7f75e66ece4bf511}{}\label{render__multi__url_8js_a4d525e5f556bed7f7f75e66ece4bf511}
+
+
+\subsection{Variable Documentation}
+\index{render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}!array\+Of\+Urls@{array\+Of\+Urls}}
+\index{array\+Of\+Urls@{array\+Of\+Urls}!render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}}
+\subsubsection[{\texorpdfstring{array\+Of\+Urls}{arrayOfUrls}}]{\setlength{\rightskip}{0pt plus 5cm}array\+Of\+Urls = null}\hypertarget{render__multi__url_8js_a8a01ff47f42ee9845409e8870401bf64}{}\label{render__multi__url_8js_a8a01ff47f42ee9845409e8870401bf64}
+
+
+Referenced by if().
+
+\index{render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}!else@{else}}
+\index{else@{else}!render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}else}\hypertarget{render__multi__url_8js_a0544c3fe466e421738dae463968b70ba}{}\label{render__multi__url_8js_a0544c3fe466e421738dae463968b70ba}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    console.log(\textcolor{stringliteral}{"Usage: phantomjs render\_multi\_url.js [domain.name1, domain.name2, ...]"})
+\end{DoxyCode}
+\index{render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}!Render\+Urls\+To\+File@{Render\+Urls\+To\+File}}
+\index{Render\+Urls\+To\+File@{Render\+Urls\+To\+File}!render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}}
+\subsubsection[{\texorpdfstring{Render\+Urls\+To\+File}{RenderUrlsToFile}}]{\setlength{\rightskip}{0pt plus 5cm}Render\+Urls\+To\+File}\hypertarget{render__multi__url_8js_a0c995e18f6642de84e1eb6fd12bc0304}{}\label{render__multi__url_8js_a0c995e18f6642de84e1eb6fd12bc0304}
+\index{render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}!strict@{strict}}
+\index{strict@{strict}!render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{render__multi__url_8js_ae2475e10618961c050dcba04e8c42331}{}\label{render__multi__url_8js_ae2475e10618961c050dcba04e8c42331}
+\index{render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}!system@{system}}
+\index{system@{system}!render\+\_\+multi\+\_\+url.\+js@{render\+\_\+multi\+\_\+url.\+js}}
+\subsubsection[{\texorpdfstring{system}{system}}]{\setlength{\rightskip}{0pt plus 5cm}system = require(\char`\"{}system\char`\"{})}\hypertarget{render__multi__url_8js_ac4ca86dead4518ac4fd6e30172db3d9e}{}\label{render__multi__url_8js_ac4ca86dead4518ac4fd6e30172db3d9e}
+
+
+Referenced by if().
+

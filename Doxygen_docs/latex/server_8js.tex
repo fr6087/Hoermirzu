@@ -1,0 +1,124 @@
+\hypertarget{server_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/server.js File Reference}
+\label{server_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/server.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/server.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{server_8js_a257c1144ed4804cfc7074491c5f634f2}{if} (system.\+args.\+length!==2)
+\item 
+\hyperlink{server_8js_affb65481895fcb586111c8352e4d58bf}{if} (!\hyperlink{server_8js_a9987953388913b9d70b37bb80d07e6ec}{listening})
+\item 
+console \hyperlink{server_8js_aa1e0fe7ed1eac8aebe0380f32d1dc307}{log} (\char`\"{}S\+E\+N\+D\+I\+NG R\+E\+Q\+U\+E\+ST T\+O\+:\char`\"{})
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{server_8js_a791d7de2d086963e8cacc278d7f40865}{open} (\hyperlink{server_8js_a273346471dff7030093765f4e043d101}{url}, function(status)\{\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(status!== \textquotesingle{}success\textquotesingle{})\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}F\+A\+IL to load the \hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{address}\textquotesingle{});\}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\char`\"{}G\+OT R\+E\+P\+LY F\+R\+OM S\+E\+R\+V\+E\+R\+:\char`\"{});console.\+log(\hyperlink{colorwheel_8js_af941a9c8d1e0d5867f89739a7d55720c}{page.\+content});\}\hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{server_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{server_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\item 
+var \hyperlink{server_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server} = require(\textquotesingle{}webserver\textquotesingle{}).create()
+\item 
+var \hyperlink{server_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system} = require(\textquotesingle{}system\textquotesingle{})
+\item 
+var \hyperlink{server_8js_a81216e135694ea6125b42509308b52f1}{host}
+\item 
+var \hyperlink{server_8js_a8919360cd4b4bb6c42169b3735ca2a39}{port}
+\item 
+\hyperlink{server_8js_a0544c3fe466e421738dae463968b70ba}{else}
+\item 
+var \hyperlink{server_8js_a9987953388913b9d70b37bb80d07e6ec}{listening}
+\item 
+var \hyperlink{server_8js_a273346471dff7030093765f4e043d101}{url} = \char`\"{}http\+://localhost\+:\char`\"{} + port + \char`\"{}/foo/bar.\+php?asdf=true\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{server.\+js@{server.\+js}!if@{if}}
+\index{if@{if}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{if(system.\+args.\+length"!==2)}{if(system.args.length!==2)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{}]{system.\+args.\+length! = {\ttfamily =~2}}
+\end{DoxyParamCaption}
+)}\hypertarget{server_8js_a257c1144ed4804cfc7074491c5f634f2}{}\label{server_8js_a257c1144ed4804cfc7074491c5f634f2}
+\index{server.\+js@{server.\+js}!if@{if}}
+\index{if@{if}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{if("!listening)}{if(!listening)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{!}]{listening}
+\end{DoxyParamCaption}
+)}\hypertarget{server_8js_affb65481895fcb586111c8352e4d58bf}{}\label{server_8js_affb65481895fcb586111c8352e4d58bf}
+\index{server.\+js@{server.\+js}!log@{log}}
+\index{log@{log}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{log(""S\+E\+N\+D\+I\+N\+G R\+E\+Q\+U\+E\+S\+T T\+O\+:"")}{log("SENDING REQUEST TO:")}}]{\setlength{\rightskip}{0pt plus 5cm}console log (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}S\+E\+N\+D\+I\+NG R\+E\+Q\+U\+E\+ST T\+O\+:\char`\"{}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{server_8js_aa1e0fe7ed1eac8aebe0380f32d1dc307}{}\label{server_8js_aa1e0fe7ed1eac8aebe0380f32d1dc307}
+\index{server.\+js@{server.\+js}!open@{open}}
+\index{open@{open}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{open(url, function(status)\lcurly{}if(status"!== \textquotesingle{}success\textquotesingle{})\lcurly{}console.\+log(\textquotesingle{}\+F\+A\+I\+L to load the address\textquotesingle{});\rcurly{}else\lcurly{}console.\+log(""G\+O\+T R\+E\+P\+L\+Y F\+R\+O\+M S\+E\+R\+V\+E\+R\+:"");console.\+log(page.\+content);\rcurly{}phantom.\+exit();\rcurly{})}{open(url, function(status)\{if(status!== 'success')\{console.log('FAIL to load the address');\}else\{console.log("GOT REPLY FROM SERVER:");console.log(page.content);\}phantom.exit();\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} open (
+\begin{DoxyParamCaption}
+\item[{{\bf url}}]{, }
+\item[{function(status)\{{\bf if}(status!== \textquotesingle{}success\textquotesingle{})\{{\bf console.\+log}(\textquotesingle{}F\+A\+IL to load the {\bf address}\textquotesingle{});\}{\bf else}\{{\bf console.\+log}(\char`\"{}G\+OT R\+E\+P\+LY F\+R\+OM S\+E\+R\+V\+E\+R\+:\char`\"{});console.\+log({\bf page.\+content});\}{\bf phantom.\+exit}();\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{server_8js_a791d7de2d086963e8cacc278d7f40865}{}\label{server_8js_a791d7de2d086963e8cacc278d7f40865}
+
+
+\subsection{Variable Documentation}
+\index{server.\+js@{server.\+js}!else@{else}}
+\index{else@{else}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}else}\hypertarget{server_8js_a0544c3fe466e421738dae463968b70ba}{}\label{server_8js_a0544c3fe466e421738dae463968b70ba}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \hyperlink{server_8js_a8919360cd4b4bb6c42169b3735ca2a39}{port} = \hyperlink{server_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system}.args[1]
+\end{DoxyCode}
+\index{server.\+js@{server.\+js}!host@{host}}
+\index{host@{host}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{host}{host}}]{\setlength{\rightskip}{0pt plus 5cm}var host}\hypertarget{server_8js_a81216e135694ea6125b42509308b52f1}{}\label{server_8js_a81216e135694ea6125b42509308b52f1}
+\index{server.\+js@{server.\+js}!listening@{listening}}
+\index{listening@{listening}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{listening}{listening}}]{\setlength{\rightskip}{0pt plus 5cm}var listening}\hypertarget{server_8js_a9987953388913b9d70b37bb80d07e6ec}{}\label{server_8js_a9987953388913b9d70b37bb80d07e6ec}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{server_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}.listen(\hyperlink{server_8js_a8919360cd4b4bb6c42169b3735ca2a39}{port}, \textcolor{keyword}{function} (request, response) \{
+        console.log(\textcolor{stringliteral}{"GOT HTTP REQUEST"});
+        console.log(JSON.stringify(request, null, 4));
+
+        
+        response.statusCode = 200;
+        response.headers = \{\textcolor{stringliteral}{"Cache"}: \textcolor{stringliteral}{"no-cache"}, \textcolor{stringliteral}{"Content-Type"}: \textcolor{stringliteral}{"text/html"}\};
+        
+        response.setHeader(\textcolor{stringliteral}{"foo"}, \textcolor{stringliteral}{"bar"});
+        
+        
+        response.write(\textcolor{stringliteral}{"<html><head><title>YES!</title></head>"});
+        
+        response.write(\textcolor{stringliteral}{"<body><p>pretty cool :)</body></html>"});
+        response.close();
+    \})
+\end{DoxyCode}
+\index{server.\+js@{server.\+js}!page@{page}}
+\index{page@{page}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{server_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{server_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+\index{server.\+js@{server.\+js}!port@{port}}
+\index{port@{port}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{port}{port}}]{\setlength{\rightskip}{0pt plus 5cm}var port}\hypertarget{server_8js_a8919360cd4b4bb6c42169b3735ca2a39}{}\label{server_8js_a8919360cd4b4bb6c42169b3735ca2a39}
+\index{server.\+js@{server.\+js}!server@{server}}
+\index{server@{server}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{server}{server}}]{\setlength{\rightskip}{0pt plus 5cm}var server = require(\textquotesingle{}webserver\textquotesingle{}).create()}\hypertarget{server_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{}\label{server_8js_a207259f7e3cfd9800ed8f7d7224c7a68}
+\index{server.\+js@{server.\+js}!strict@{strict}}
+\index{strict@{strict}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{server_8js_ae2475e10618961c050dcba04e8c42331}{}\label{server_8js_ae2475e10618961c050dcba04e8c42331}
+\index{server.\+js@{server.\+js}!system@{system}}
+\index{system@{system}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{system}{system}}]{\setlength{\rightskip}{0pt plus 5cm}var system = require(\textquotesingle{}system\textquotesingle{})}\hypertarget{server_8js_acdb77dc97eb44e91baaadd41d9d078fc}{}\label{server_8js_acdb77dc97eb44e91baaadd41d9d078fc}
+\index{server.\+js@{server.\+js}!url@{url}}
+\index{url@{url}!server.\+js@{server.\+js}}
+\subsubsection[{\texorpdfstring{url}{url}}]{\setlength{\rightskip}{0pt plus 5cm}var url = \char`\"{}http\+://localhost\+:\char`\"{} + port + \char`\"{}/foo/bar.\+php?asdf=true\char`\"{}}\hypertarget{server_8js_a273346471dff7030093765f4e043d101}{}\label{server_8js_a273346471dff7030093765f4e043d101}
+
+
+Referenced by create\+H\+A\+R(), and url\+To\+Dir().
+

@@ -1,0 +1,596 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_app_8xaml_8cs" kind="file" language="C#">
+    <compoundname>App.xaml.cs</compoundname>
+    <innerclass refid="class_listen_to_me_1_1_app" prot="public">ListenToMe::App</innerclass>
+    <innernamespace refid="namespace_listen_to_me">ListenToMe</innernamespace>
+    <innernamespace refid="namespace_system">System</innernamespace>
+    <innernamespace refid="namespace_system_1_1_collections_1_1_generic">System::Collections::Generic</innernamespace>
+    <innernamespace refid="namespace_system_1_1_linq">System::Linq</innernamespace>
+    <innernamespace refid="namespace_system_1_1_runtime_1_1_interop_services_1_1_windows_runtime">System::Runtime::InteropServices::WindowsRuntime</innernamespace>
+    <innernamespace refid="namespace_windows_1_1_application_model">Windows::ApplicationModel</innernamespace>
+    <innernamespace refid="namespace_windows_1_1_application_model_1_1_activation">Windows::ApplicationModel::Activation</innernamespace>
+    <innernamespace refid="namespace_windows_1_1_u_i_1_1_xaml">Windows::UI::Xaml</innernamespace>
+    <innernamespace refid="namespace_windows_1_1_u_i_1_1_xaml_1_1_controls">Windows::UI::Xaml::Controls</innernamespace>
+    <innernamespace refid="namespace_windows_1_1_u_i_1_1_xaml_1_1_navigation">Windows::UI::Xaml::Navigation</innernamespace>
+    <innernamespace refid="namespace_windows_1_1_u_i_1_1_popups">Windows::UI::Popups</innernamespace>
+    <innernamespace refid="namespace_windows_1_1_media_1_1_speech_recognition">Windows::Media::SpeechRecognition</innernamespace>
+    <innernamespace refid="namespace_windows_1_1_application_model_1_1_voice_commands">Windows::ApplicationModel::VoiceCommands</innernamespace>
+    <innernamespace refid="namespace_windows_1_1_storage">Windows::Storage</innernamespace>
+    <innernamespace refid="namespace_system_1_1_threading_1_1_tasks">System::Threading::Tasks</innernamespace>
+    <innernamespace refid="namespace_system_1_1_diagnostics">System::Diagnostics</innernamespace>
+    <innernamespace refid="namespace_system_1_1_text_1_1_regular_expressions">System::Text::RegularExpressions</innernamespace>
+    <innernamespace refid="namespace_class_library_1_1model">ClassLibrary::model</innernamespace>
+    <innernamespace refid="namespace_windows_1_1_security_1_1_credentials">Windows::Security::Credentials</innernamespace>
+    <innernamespace refid="namespace_newtonsoft_1_1_json">Newtonsoft::Json</innernamespace>
+    <innernamespace refid="namespace_listen_to_me_1_1_service_reference">ListenToMe::ServiceReference</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_system" kindref="compound">System</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_system" kindref="compound">System</ref>.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_system" kindref="compound">System</ref>.Linq;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_system" kindref="compound">System</ref>.Runtime.InteropServices.WindowsRuntime;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Windows.ApplicationModel;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Windows.ApplicationModel.Activation;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Windows.UI.Xaml;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Windows.UI.Xaml.Controls;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Windows.UI.Xaml.Navigation;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Windows.UI.Popups;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Windows.Media.SpeechRecognition;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Windows.ApplicationModel.VoiceCommands;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Windows.Storage;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_system" kindref="compound">System</ref>.Threading.Tasks;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_system" kindref="compound">System</ref>.Diagnostics;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_listen_to_me" kindref="compound">ListenToMe</ref>.<ref refid="namespace_listen_to_me_1_1_common" kindref="compound">Common</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_system" kindref="compound">System</ref>.Text.RegularExpressions;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>ClassLibrary.model;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Windows.Security.Credentials;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_listen_to_me" kindref="compound">ListenToMe</ref>.<ref refid="namespace_listen_to_me_1_1_model" kindref="compound">Model</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Newtonsoft.Json;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_listen_to_me" kindref="compound">ListenToMe</ref>.ServiceReference;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="namespace_listen_to_me" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_listen_to_me" kindref="compound">ListenToMe</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29" refid="class_listen_to_me_1_1_app" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/>sealed<sp/></highlight><highlight class="keyword">partial<sp/>class<sp/></highlight><highlight class="normal"><ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref><sp/>:<sp/>Application</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespace_system" kindref="compound">System</ref>.Collections.Hashtable<sp/><ref refid="class_listen_to_me_1_1_app_1a311ccaa1ae0fd9cf9f89d3e3466098fe" kindref="member">hashTable</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_listen_to_me_1_1_common_1_1_navigation_service" kindref="compound">NavigationService</ref><sp/><ref refid="class_listen_to_me_1_1_common_1_1_navigation_service" kindref="compound">NavigationService</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_listen_to_me_1_1_app_1a2862b032c76095016dd7dc7600bfd029" kindref="member">Bot</ref><sp/><ref refid="class_listen_to_me_1_1_app_1a2862b032c76095016dd7dc7600bfd029" kindref="member">Bot</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Service1Client<sp/><ref refid="class_listen_to_me_1_1_app_1a41b762ac78fada5d35954d39419b8e36" kindref="member">client</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>PasswordVault<sp/><ref refid="class_listen_to_me_1_1_app_1ad1b3a77f44f52055446727716abfccc6" kindref="member">Vault</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper" kindref="compound">RootFrameNavigationHelper</ref><sp/>rootFrameNavigationHelper;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>UserName<sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>UserPassword<sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Model.Form<sp/><ref refid="class_listen_to_me_1_1_app_1a3e094e220103fe4590cf50c22f38ee65" kindref="member">formstore</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Model.Form();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>readonly<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>uri<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;http://10.150.50.21/formularservice/formular/A_FOREX_ANTRAG_ESF/appl/d556026e-991d-11e7-9fb1-27c0f1da4ec4/?lang=de&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isDebug<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Dictionary&lt;string,<sp/>Section&gt;<sp/>sections;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//internal<sp/>static<sp/>readonly<sp/>Dictionary&lt;String,<sp/>Type&gt;<sp/>HeadingsNavigations<sp/>=<sp/>new<sp/>Dictionary&lt;string,<sp/>Type&gt;();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//internal<sp/>static<sp/>readonly<sp/>Dictionary&lt;String,<sp/>String&gt;<sp/>InputsNavigations<sp/>=<sp/>new<sp/>Dictionary&lt;string,<sp/>String&gt;();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_listen_to_me_1_1_app_1a8b865aa5eb8e0a1333c2b29f41bf4aa1" kindref="member">App</ref>()</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.InitializeComponent();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.Suspending<sp/>+=<sp/>OnSuspending;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>client<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Service1Client();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_listen_to_me_1_1_app_1ace89a3624e2de8cc528dea8b1288d03f" kindref="member">OnLaunched</ref>(LaunchActivatedEventArgs<sp/>e)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MessageDialog<sp/>message<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>MessageDialog(</highlight><highlight class="stringliteral">&quot;OnLaunched<sp/>was<sp/>called.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//await<sp/>message.ShowAsync();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initGui(e);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>async<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ActivateVoiceCommands()</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Write(</highlight><highlight class="stringliteral">&quot;Let&apos;s<sp/>search<sp/>for<sp/>xml<sp/>in<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>Package.Current.InstalledLocation.Name);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StorageFile<sp/>vcd<sp/>=<sp/>await<sp/>Package.Current.InstalledLocation.GetFileAsync(</highlight><highlight class="stringliteral">@&quot;VoiceCommands.xml&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>VoiceCommandDefinitionManager.InstallCommandDefinitionsFromStorageFileAsync(vcd);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_cortana_model_methods" kindref="compound">CortanaModelMethods</ref><sp/>meth<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_listen_to_me_1_1_cortana_model_methods" kindref="compound">CortanaModelMethods</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//List&lt;String&gt;<sp/>headings<sp/>=<sp/>await<sp/>meth.UpdatePhraseList(&quot;Page&quot;);<sp/>//this<sp/>is<sp/>supposed<sp/>to<sp/>load<sp/>the<sp/>headings<sp/>from<sp/>html<sp/>file<sp/>and<sp/>add<sp/>them<sp/>as<sp/>pages<sp/>to<sp/>voice<sp/>command<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Debug.WriteLine(headings.Count<sp/>+<sp/>&quot;headingsCount&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List&lt;String&gt;<sp/>inputs<sp/>=<sp/>await<sp/>meth.<ref refid="class_listen_to_me_1_1_cortana_model_methods_1afe872337c3f1c74f5db6e26918f29ac1" kindref="member">UpdatePhraseList</ref>(</highlight><highlight class="stringliteral">&quot;Field&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//these<sp/>UpdatePhraselist<sp/>methods<sp/>are<sp/>not<sp/>effective<sp/>since<sp/>prase<sp/>lists<sp/>support<sp/>only<sp/>one<sp/>word<sp/>items</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>two<sp/>dictionaries<sp/>for<sp/>translating<sp/>items<sp/>to<sp/>the<sp/>XAML-Names<sp/>I<sp/>chose.<sp/>This<sp/>is<sp/>not<sp/>necessary,<sp/>when<sp/>creating<sp/>pages<sp/>dynamic.<sp/>but<sp/>since<sp/>I<sp/>already<sp/>have<sp/>the<sp/>static<sp/>ones,<sp/>I&apos;m<sp/>going<sp/>to<sp/>use<sp/>them<sp/>:)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//fillPageDictionary(headings);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//fillFieldDictionary(inputs);<sp/>//not<sp/>yet<sp/>implemented</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(Exception<sp/>ex)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Write(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>register<sp/>custom<sp/>commands<sp/>because<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>ex.Message);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>async<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_listen_to_me_1_1_app_1a3e2da49bb555b7fdc5858f5442d396e4" kindref="member">OnActivated</ref>(IActivatedEventArgs<sp/>e)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base.OnActivated(e);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command" kindref="compound">ListenToMeVoiceCommand</ref><sp/>navigationCommand=<sp/>null;<sp/></highlight><highlight class="comment">//vormals<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MessageDialog<sp/>dialog<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>MessageDialog(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>the<sp/>App<sp/>was<sp/>activated<sp/>by<sp/>a<sp/>speech<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e.Kind<sp/>==<sp/>ActivationKind.VoiceCommand<sp/>)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VoiceCommandActivatedEventArgs<sp/>cmdArgs<sp/>=<sp/>e<sp/>as<sp/>VoiceCommandActivatedEventArgs;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SpeechRecognitionResult<sp/>result<sp/>=<sp/>cmdArgs.Result;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>commandName<sp/>=<sp/>result.RulePath[0];</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>result.RulePath.ToArray().Length;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>rules<sp/>=<sp/>result.Text;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Write(</highlight><highlight class="stringliteral">&quot;command<sp/>found:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>commandName);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dialog.Content<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;You<sp/>have<sp/>a<sp/>voice<sp/>command<sp/>activation<sp/>&quot;</highlight><highlight class="normal">+<sp/>rules;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>dialog.ShowAsync();</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initGui();</highlight><highlight class="comment">//load<sp/>default<sp/>frames<sp/>and<sp/>page</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>PerformCommandAsync(commandName,<sp/>rules);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>the<sp/>App<sp/>was<sp/>activated<sp/>by<sp/>a<sp/>text<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e.Kind<sp/>==<sp/>ActivationKind.Protocol)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dialog.Content<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Activated<sp/>by<sp/>Protocol&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>dialog.ShowAsync();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Extract<sp/>the<sp/>launch<sp/>context.<sp/>In<sp/>this<sp/>case,<sp/>we&apos;re<sp/>just<sp/>using<sp/>a<sp/>field<sp/>from<sp/>the<sp/>phrase<sp/>set<sp/>(passed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>along<sp/>in<sp/>the<sp/>background<sp/>task<sp/>inside<sp/>Cortana),<sp/>which<sp/>makes<sp/>no<sp/>attempt<sp/>to<sp/>be<sp/>unique.<sp/>A<sp/>unique<sp/>id<sp/>or<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>identifier<sp/>is<sp/>ideal<sp/>for<sp/>more<sp/>complex<sp/>scenarios.<sp/>We<sp/>let<sp/>the<sp/>page<sp/>check<sp/>if<sp/>the<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>field<sp/>still<sp/>exists,<sp/>and<sp/>navigate<sp/>back<sp/>to<sp/>the<sp/>default<sp/>if<sp/>it<sp/>doesn&apos;t.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>commandArgs<sp/>=<sp/>e<sp/>as<sp/>ProtocolActivatedEventArgs;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Windows.Foundation.WwwFormUrlDecoder<sp/>decoder<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Windows.Foundation.WwwFormUrlDecoder(commandArgs.Uri.Query);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>destination<sp/>=<sp/>decoder.GetFirstValueByName(</highlight><highlight class="stringliteral">&quot;LaunchContext&quot;</highlight><highlight class="normal">);</highlight><highlight class="comment">//debug<sp/>this,<sp/>commandargs<sp/>is<sp/>probably<sp/>&quot;name*&quot;<sp/>or<sp/>something<sp/>like<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>navigationCommand<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Model.<ref refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1a3da9ccddfb33c7b23eb9ae0ca4c9b39c" kindref="member">ListenToMeVoiceCommand</ref>(</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;protocolLaunch&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;text&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;destination&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>destination);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MessageDialog<sp/>mymessage<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>MessageDialog(</highlight><highlight class="stringliteral">&quot;Todo<sp/>here<sp/>some<sp/>navigation<sp/>by<sp/>protocol<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>mymessage.ShowAsync();</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_common_1_1_navigation_service" kindref="compound">NavigationService</ref>.<ref refid="class_listen_to_me_1_1_common_1_1_navigation_service_1a53284996388b4695f9fa2e122295404e" kindref="member">Navigate</ref>(typeof(<ref refid="class_listen_to_me_1_1_dynamic_page" kindref="compound">DynamicPage</ref>),<sp/>navigationCommand);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dialog.Content<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;something<sp/>else&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>dialog.ShowAsync();</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>we<sp/>were<sp/>launched<sp/>via<sp/>any<sp/>other<sp/>mechanism,<sp/>fall<sp/>back<sp/>to<sp/>the<sp/>main<sp/>page<sp/>view.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_common_1_1_navigation_service" kindref="compound">NavigationService</ref>.<ref refid="class_listen_to_me_1_1_common_1_1_navigation_service_1a53284996388b4695f9fa2e122295404e" kindref="member">Navigate</ref>(typeof(<ref refid="class_listen_to_me_1_1_login_page" kindref="compound">LoginPage</ref>),<sp/>navigationCommand);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Repeat<sp/>the<sp/>same<sp/>basic<sp/>initialization<sp/>as<sp/>OnLaunched()<sp/>above,<sp/>taking<sp/>into<sp/>account<sp/>whether</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>or<sp/>not<sp/>the<sp/>app<sp/>is<sp/>already<sp/>active.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Frame<sp/>rootFrame<sp/>=<sp/>Window.Current.Content<sp/>as<sp/>Frame;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Do<sp/>not<sp/>repeat<sp/>app<sp/>initialization<sp/>when<sp/>the<sp/>Window<sp/>already<sp/>has<sp/>content,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>just<sp/>ensure<sp/>that<sp/>the<sp/>window<sp/>is<sp/>active</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rootFrame<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>Frame<sp/>to<sp/>act<sp/>as<sp/>the<sp/>navigation<sp/>context<sp/>and<sp/>navigate<sp/>to<sp/>the<sp/>first<sp/>page</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rootFrame<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Frame();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref>.<ref refid="class_listen_to_me_1_1_app_1ae35ddc10bf8aad1a80c92c71c6e3b7fc" kindref="member">NavigationService</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Common.NavigationService(rootFrame);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rootFrame.NavigationFailed<sp/>+=<sp/>OnNavigationFailed;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Place<sp/>the<sp/>frame<sp/>in<sp/>the<sp/>current<sp/>Window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Window.Current.Content<sp/>=<sp/>rootFrame;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Since<sp/>we&apos;re<sp/>expecting<sp/>to<sp/>always<sp/>show<sp/>a<sp/>details<sp/>page,<sp/>navigate<sp/>even<sp/>if<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>a<sp/>content<sp/>frame<sp/>is<sp/>in<sp/>place<sp/>(unlike<sp/>OnLaunched).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Navigate<sp/>to<sp/>either<sp/>the<sp/>main<sp/>trip<sp/>list<sp/>page,<sp/>or<sp/>if<sp/>a<sp/>valid<sp/>voice<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>was<sp/>provided,<sp/>to<sp/>the<sp/>details<sp/>page<sp/>for<sp/>that<sp/>trip.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_common_1_1_navigation_service" kindref="compound">NavigationService</ref>.<ref refid="class_listen_to_me_1_1_common_1_1_navigation_service_1a53284996388b4695f9fa2e122295404e" kindref="member">Navigate</ref>(typeof(<ref refid="class_listen_to_me_1_1_main_page" kindref="compound">MainPage</ref>),<sp/>navigationCommand);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ensure<sp/>the<sp/>current<sp/>window<sp/>is<sp/>active</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Window.Current.Activate();</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initGui(LaunchActivatedEventArgs<sp/>e<sp/>=<sp/>null)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Frame<sp/>rootFrame<sp/>=<sp/>Window.Current.Content<sp/>as<sp/>Frame;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>App-Initialisierung<sp/>nicht<sp/>wiederholen,<sp/>wenn<sp/>das<sp/>Fenster<sp/>bereits<sp/>Inhalte<sp/>enthält.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Nur<sp/>sicherstellen,<sp/>dass<sp/>das<sp/>Fenster<sp/>aktiv<sp/>ist.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rootFrame<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Frame<sp/>erstellen,<sp/>der<sp/>als<sp/>Navigationskontext<sp/>fungiert<sp/>und<sp/>zum<sp/>Parameter<sp/>der<sp/>ersten<sp/>Seite<sp/>navigieren</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rootFrame<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Frame();</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rootFrame.NavigationFailed<sp/>+=<sp/>OnNavigationFailed;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rootFrame.Language<sp/>=<sp/>Windows.Globalization.ApplicationLanguages.Languages[0];</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref>.<ref refid="class_listen_to_me_1_1_app_1ae35ddc10bf8aad1a80c92c71c6e3b7fc" kindref="member">NavigationService</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_listen_to_me_1_1_app_1ae35ddc10bf8aad1a80c92c71c6e3b7fc" kindref="member">NavigationService</ref>(rootFrame);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>the<sp/>RootFrameNavigationHelper<sp/>to<sp/>respond<sp/>to<sp/>keyboard<sp/>and<sp/>mouse<sp/>shortcuts.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.rootFrameNavigationHelper<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper" kindref="compound">RootFrameNavigationHelper</ref>(rootFrame);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(e.PreviousExecutionState<sp/>==<sp/>ApplicationExecutionState.Terminated)</highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//TODO:<sp/>Zustand<sp/>von<sp/>zuvor<sp/>angehaltener<sp/>Anwendung<sp/>laden</highlight></codeline>
+<codeline lineno="258"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>place<sp/>frame<sp/>in<sp/>current<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Window.Current.Content<sp/>=<sp/>rootFrame;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Determine<sp/>if<sp/>we&apos;re<sp/>being<sp/>activated<sp/>normally,<sp/>or<sp/>with<sp/>arguments<sp/>from<sp/>Cortana.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.IsNullOrEmpty(e.Arguments))</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_listen_to_me_1_1_app_1ad1b3a77f44f52055446727716abfccc6" kindref="member">Vault</ref><sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref>.<ref refid="class_listen_to_me_1_1_app_1ad1b3a77f44f52055446727716abfccc6" kindref="member">Vault</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>PasswordVault();</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>cred<sp/>=<sp/><ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref>.<ref refid="class_listen_to_me_1_1_app_1ad1b3a77f44f52055446727716abfccc6" kindref="member">Vault</ref>.Retrieve(</highlight><highlight class="stringliteral">&quot;ListenToMe&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;fgeiss&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>the<sp/>user<sp/>has<sp/>already<sp/>validated<sp/>user<sp/>credentials<sp/>with<sp/>the<sp/>web<sp/>form,<sp/>skip<sp/>login</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref>.UserName<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;fgeiss&quot;</highlight><highlight class="normal">;</highlight><highlight class="comment">//not<sp/>necessary</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cred.RetrievePassword();</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref>.UserPassword<sp/>=<sp/>cred.Password;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rootFrame.Navigate(typeof(<ref refid="class_listen_to_me_1_1_main_page" kindref="compound">MainPage</ref>),<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Launching<sp/>normally.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rootFrame.Navigate(typeof(<ref refid="class_listen_to_me_1_1_login_page" kindref="compound">LoginPage</ref>),<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Launching<sp/>with<sp/>arguments.<sp/>We<sp/>assume,<sp/>for<sp/>now,<sp/>that<sp/>this<sp/>is<sp/>likely</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>to<sp/>be<sp/>in<sp/>the<sp/>form<sp/>of<sp/>&quot;destination=&lt;location&gt;&quot;<sp/>from<sp/>activation<sp/>via<sp/>Cortana.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(e!=null)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rootFrame.Navigate(typeof(<ref refid="class_listen_to_me_1_1_main_page" kindref="compound">MainPage</ref>),<sp/>e.Arguments);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sicherstellen,<sp/>dass<sp/>das<sp/>aktuelle<sp/>Fenster<sp/>aktiv<sp/>ist</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Window.Current.Activate();</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ActivateVoiceCommands();</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>async<sp/>Task<sp/>PerformCommandAsync(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>commandName,<sp/>String<sp/>result)</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Frame<sp/>bigFrame<sp/>=<sp/>rootFrameNavigationHelper.Frame;</highlight><highlight class="comment">//Window.Current.Content<sp/>as<sp/>Frame;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MessageDialog<sp/>message<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>MessageDialog(</highlight><highlight class="stringliteral">&quot;sss&quot;</highlight><highlight class="normal">+bigFrame.Name);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>message.ShowAsync();</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>page<sp/>=<sp/>(<ref refid="class_listen_to_me_1_1_main_page" kindref="compound">MainPage</ref>)bigFrame.Content;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Frame<sp/>subFrame<sp/>=<sp/>page.mainFrame;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Window.Current.Content<sp/>=<sp/>bigFrame;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MessageDialog<sp/>dialog<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>MessageDialog(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(commandName)</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//do<sp/>something</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Edit&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dialog.Content<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Edit.<sp/>result.Text<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>result;</highlight><highlight class="comment">//result.RulePath[1];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.WriteLine(</highlight><highlight class="stringliteral">&quot;found<sp/>2<sp/>edit<sp/>command<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>dialog.ShowAsync();</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_common_1_1_navigation_service" kindref="compound">NavigationService</ref><sp/>nana<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_listen_to_me_1_1_app_1ae35ddc10bf8aad1a80c92c71c6e3b7fc" kindref="member">NavigationService</ref>(subFrame);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>navPageType<sp/>=<sp/>typeof(<ref refid="class_listen_to_me_1_1_main_page" kindref="compound">MainPage</ref>);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>(HeadingsNavigations.Count<sp/>&lt;<sp/>1)<sp/>//this<sp/>should<sp/>not<sp/>happen,<sp/>but<sp/>it<sp/>does<sp/>whenever<sp/>the<sp/>App<sp/>starts<sp/>with<sp/>OnActivated<sp/>instead<sp/>of<sp/>OnLaunched</highlight></codeline>
+<codeline lineno="325"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="326"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CortanaModelMethods<sp/>meth<sp/>=<sp/>new<sp/>CortanaModelMethods();</highlight></codeline>
+<codeline lineno="327"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List&lt;String&gt;<sp/>headings<sp/>=<sp/>await<sp/>meth.UpdatePhraseList(&quot;Page&quot;);</highlight></codeline>
+<codeline lineno="328"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fillPageDictionary(headings);</highlight></codeline>
+<codeline lineno="329"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//await<sp/>FindPageToNavigateAndJump(nana,<sp/>result);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Information&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VoiceCommandUserMessage<sp/>messageM<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>VoiceCommandUserMessage();</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>messageM.DisplayMessage<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;You<sp/>can<sp/>say:<sp/>&apos;Edit<sp/>&lt;Field<sp/>xyz&gt;&apos;<sp/>or<sp/>&apos;Shutdown&apos;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.WriteLine(</highlight><highlight class="stringliteral">&quot;found<sp/>information<sp/>command&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Application.Current.Exit();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>typeof(MainPage);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Menu&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dialog.Content<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;showing<sp/>menu&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.WriteLine(</highlight><highlight class="stringliteral">&quot;found<sp/>shut<sp/>down<sp/>command&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>dialog.ShowAsync();</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.WriteLine(</highlight><highlight class="stringliteral">&quot;found<sp/>information<sp/>command&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_common_1_1_navigation_service" kindref="compound">NavigationService</ref>.<ref refid="class_listen_to_me_1_1_common_1_1_navigation_service_1a53284996388b4695f9fa2e122295404e" kindref="member">Navigate</ref>(typeof(<ref refid="class_listen_to_me_1_1_main_page" kindref="compound">MainPage</ref>));</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Shutdown&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dialog.Content<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;shut<sp/>computer<sp/>down.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.WriteLine(</highlight><highlight class="stringliteral">&quot;found<sp/>shut<sp/>down<sp/>command&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>dialog.ShowAsync();</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Application.Current.Exit();</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.WriteLine(</highlight><highlight class="stringliteral">&quot;Couldn&apos;t<sp/>find<sp/>command<sp/>name&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dialog.Content<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;default<sp/>of<sp/>onActivated&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>dialog.ShowAsync();</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_listen_to_me_1_1_common_1_1_navigation_service" kindref="compound">NavigationService</ref>.<ref refid="class_listen_to_me_1_1_common_1_1_navigation_service_1a53284996388b4695f9fa2e122295404e" kindref="member">Navigate</ref>(typeof(<ref refid="class_listen_to_me_1_1_main_page" kindref="compound">MainPage</ref>));</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="366"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>private<sp/>Task&lt;bool&gt;<sp/>FindPageToNavigateAndJump(NavigationService<sp/>nana,<sp/>String<sp/>result)</highlight></codeline>
+<codeline lineno="367"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="368"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>foreach<sp/>(var<sp/>heading<sp/>in<sp/>HeadingsNavigations)<sp/>//go<sp/>through<sp/>the<sp/>headings<sp/>on<sp/>the<sp/>page</highlight></codeline>
+<codeline lineno="369"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="370"><highlight class="comment"></highlight></codeline>
+<codeline lineno="371"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(result.Contains(heading.Key))<sp/>//test<sp/>whether<sp/>the<sp/>heading<sp/>was<sp/>mentioned<sp/>in<sp/>the<sp/>Speech<sp/>input<sp/>by<sp/>the<sp/>user</highlight></codeline>
+<codeline lineno="372"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="373"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>navPageType<sp/>=<sp/>HeadingsNavigations[heading.Key];//if<sp/>yes,<sp/>get<sp/>the<sp/>pagetype<sp/>to<sp/>which<sp/>to<sp/>navigate</highlight></codeline>
+<codeline lineno="374"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nana.Navigate(navPageType);//and<sp/>navigate</highlight></codeline>
+<codeline lineno="375"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>Task.FromResult(true);</highlight></codeline>
+<codeline lineno="376"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="377"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="378"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>Task.FromResult(false);</highlight></codeline>
+<codeline lineno="379"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="380"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnNavigationFailed(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>sender,<sp/>NavigationFailedEventArgs<sp/>e)</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Exception(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>load<sp/>Page<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>e.SourcePageType.FullName);</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnSuspending(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>sender,<sp/>SuspendingEventArgs<sp/>e)</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>deferral<sp/>=<sp/>e.SuspendingOperation.GetDeferral();</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>Anwendungszustand<sp/>speichern<sp/>und<sp/>alle<sp/>Hintergrundaktivitäten<sp/>beenden</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>deferral.Complete();</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Filter_Changed(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>sender,<sp/>TextChangedEventArgs<sp/>e,<sp/>String<sp/>regex)</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.WriteLine(</highlight><highlight class="stringliteral">&quot;Text<sp/>Changed<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>textboxSender<sp/>=<sp/>(TextBox)sender;</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>cursorPosition<sp/>=<sp/>textboxSender.SelectionStart;</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textboxSender.Text<sp/>=<sp/>Regex.Replace(textboxSender.Text,<sp/></highlight><highlight class="stringliteral">&quot;^(?!&quot;</highlight><highlight class="normal">+regex+</highlight><highlight class="stringliteral">&quot;)$&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textboxSender.SelectionStart<sp/>=<sp/>cursorPosition;</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>//this<sp/>was<sp/>a<sp/>static<sp/>mapping<sp/>to<sp/>the<sp/>names<sp/>of<sp/>the<sp/>XAML-field<sp/>names</highlight></codeline>
+<codeline lineno="424"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>private<sp/>void<sp/>fillFieldDictionary(List&lt;String&gt;<sp/>inputs)</highlight></codeline>
+<codeline lineno="425"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="426"><highlight class="comment"></highlight></codeline>
+<codeline lineno="427"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="428"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(&quot;_11Name&quot;,<sp/>inputs[i]);//Name</highlight></codeline>
+<codeline lineno="429"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="430"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13Anrede&quot;,<sp/>inputs[i]);//Anrede</highlight></codeline>
+<codeline lineno="431"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="432"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13surname&quot;,<sp/>inputs[i]);//Nachname</highlight></codeline>
+<codeline lineno="433"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="434"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13givenName&quot;,<sp/>inputs[i]);//Vorname</highlight></codeline>
+<codeline lineno="435"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="436"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13Function&quot;,<sp/>inputs[i]);//Funktion</highlight></codeline>
+<codeline lineno="437"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="438"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13telephone&quot;,<sp/>inputs[i]);//Telefon</highlight></codeline>
+<codeline lineno="439"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="440"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13Anrede&quot;,<sp/>inputs[i]);//Fax</highlight></codeline>
+<codeline lineno="441"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="442"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13surname&quot;,<sp/>inputs[i]);//E<sp/>-<sp/>Mail-Adresse</highlight></codeline>
+<codeline lineno="443"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="444"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13givenName&quot;,<sp/>inputs[i]);//Straße</highlight></codeline>
+<codeline lineno="445"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="446"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13Function&quot;,<sp/>inputs[i]);//Hausnr.</highlight></codeline>
+<codeline lineno="447"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="448"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13telephone&quot;,<sp/>inputs[i]);//PLZ</highlight></codeline>
+<codeline lineno="449"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="450"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_2PostalCode&quot;,<sp/>inputs[i]);//Ort</highlight></codeline>
+<codeline lineno="451"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="452"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_2township&quot;,<sp/>inputs[i]);//Gemeinde</highlight></codeline>
+<codeline lineno="453"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="454"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_2townshipKey&quot;,<sp/>inputs[i]);//Amtlicher<sp/>Gemeindeschlüssel<sp/>(AGS)</highlight></codeline>
+<codeline lineno="455"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="456"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;*********************************************&quot;,<sp/>inputs[i]);//Landkreis</highlight></codeline>
+<codeline lineno="457"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="458"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_2POB&quot;,<sp/>inputs[i]);//Postfach</highlight></codeline>
+<codeline lineno="459"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="460"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_2postalcodePOB&quot;,<sp/>inputs[i]);//Postleitzahl<sp/>Postfach</highlight></codeline>
+<codeline lineno="461"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="462"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(&quot;_2telephone&quot;,<sp/>inputs[i]);//Telefon</highlight></codeline>
+<codeline lineno="463"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="464"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(&quot;_2email&quot;,<sp/>inputs[i]);//E<sp/>-<sp/>Mail-Adresse</highlight></codeline>
+<codeline lineno="465"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="466"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13givenName&quot;,<sp/>inputs[i]);//Internetadresse<sp/>(URL)<sp/>des<sp/>Antragstellers</highlight></codeline>
+<codeline lineno="467"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="468"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13Function&quot;,<sp/>inputs[i]);//IBAN</highlight></codeline>
+<codeline lineno="469"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="470"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputsNavigations.Add(<sp/>&quot;_13telephone&quot;,<sp/>inputs[i]);//3.1<sp/>Rechtsform</highlight></codeline>
+<codeline lineno="471"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="472"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="473"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*</highlight></codeline>
+<codeline lineno="474"><highlight class="comment"></highlight></codeline>
+<codeline lineno="475"><highlight class="comment"></highlight></codeline>
+<codeline lineno="476"><highlight class="comment">3.2<sp/>Gründungsdatum<sp/>bzw.<sp/>Geburtsdatum<sp/>(bei<sp/>natürlichen<sp/>Personen):</highlight></codeline>
+<codeline lineno="477"><highlight class="comment">4.1<sp/>Datum<sp/>der<sp/>Bescheinigung<sp/>der<sp/>Gewerbeanmeldung</highlight></codeline>
+<codeline lineno="478"><highlight class="comment">4.2<sp/>Datum<sp/>des<sp/>Beginns<sp/>der<sp/>angemeldeten<sp/>Tätigkeit</highlight></codeline>
+<codeline lineno="479"><highlight class="comment">4.3<sp/>Angemeldete<sp/>Tätigkeit<sp/>(entsprechend<sp/>Ziffer<sp/>15<sp/>der<sp/>Gewerbeanmeldung)</highlight></codeline>
+<codeline lineno="480"><highlight class="comment">5.1<sp/>Handelsregister-Nummer</highlight></codeline>
+<codeline lineno="481"><highlight class="comment">Datum<sp/>des<sp/>Eintrags<sp/>ins<sp/>HR</highlight></codeline>
+<codeline lineno="482"><highlight class="comment">Seiten-Nummer<sp/>letztes<sp/>Blatt<sp/>HR</highlight></codeline>
+<codeline lineno="483"><highlight class="comment">Datum<sp/>des<sp/>letzten<sp/>Eintrags</highlight></codeline>
+<codeline lineno="484"><highlight class="comment">5.2<sp/>Vereinsregister-Nummer</highlight></codeline>
+<codeline lineno="485"><highlight class="comment">Datum<sp/>des<sp/>Eintrags<sp/>ins<sp/>VR</highlight></codeline>
+<codeline lineno="486"><highlight class="comment">5.3<sp/>Genossenschaftsregister-Nummer</highlight></codeline>
+<codeline lineno="487"><highlight class="comment">Datum<sp/>des<sp/>Eintrags<sp/>in<sp/>GR</highlight></codeline>
+<codeline lineno="488"><highlight class="comment">5.4<sp/>Steuernummer</highlight></codeline>
+<codeline lineno="489"><highlight class="comment">Zuständiges<sp/>Finanzamt</highlight></codeline>
+<codeline lineno="490"><highlight class="comment">Anrede</highlight></codeline>
+<codeline lineno="491"><highlight class="comment">Titel</highlight></codeline>
+<codeline lineno="492"><highlight class="comment">Name</highlight></codeline>
+<codeline lineno="493"><highlight class="comment">Vorname</highlight></codeline>
+<codeline lineno="494"><highlight class="comment">Funktion<sp/>im<sp/>Unternehmen</highlight></codeline>
+<codeline lineno="495"><highlight class="comment">Bitte<sp/>wählen<sp/>Sie<sp/>einen<sp/>Branchenschlüssel</highlight></codeline>
+<codeline lineno="496"><highlight class="comment">Anzahl<sp/>weibliche<sp/>Beschäftigte</highlight></codeline>
+<codeline lineno="497"><highlight class="comment">Anzahl<sp/>männliche<sp/>Beschäftigte</highlight></codeline>
+<codeline lineno="498"><highlight class="comment">Anzahl<sp/>der<sp/>Beschäftigten<sp/>gesamt</highlight></codeline>
+<codeline lineno="499"><highlight class="comment">Ist<sp/>zum<sp/>Zeitpunkt<sp/>der<sp/>Antragstellung<sp/>eine<sp/>verbindliche<sp/>Anmeldung<sp/>für<sp/>die<sp/>Weiterbildungsmaßnahme/den<sp/>Kurs<sp/>erfolgt<sp/>oder<sp/>wird<sp/>vor<sp/>Erhalt<sp/>des<sp/>Zuwendungsbescheides<sp/>der<sp/>LASA<sp/>eine<sp/>Anmeldung<sp/>erfolgen?</highlight></codeline>
+<codeline lineno="500"><highlight class="comment">Das<sp/>Unternehmen<sp/>befindet<sp/>sich<sp/>in<sp/>folgendem<sp/>Regionalen<sp/>Wachstumskern:</highlight></codeline>
+<codeline lineno="501"><highlight class="comment">Das<sp/>Unternehmen<sp/>ist<sp/>folgendem<sp/>Zukunftscluster<sp/>zuzuordnen:</highlight></codeline>
+<codeline lineno="502"><highlight class="comment">Bezirk<sp/>der<sp/>Agentur<sp/>für<sp/>Arbeit</highlight></codeline>
+<codeline lineno="503"><highlight class="comment">Landkreis</highlight></codeline>
+<codeline lineno="504"><highlight class="comment">PLZ</highlight></codeline>
+<codeline lineno="505"><highlight class="comment">Maßnahmeort</highlight></codeline>
+<codeline lineno="506"><highlight class="comment">Gemeinde</highlight></codeline>
+<codeline lineno="507"><highlight class="comment">Amtlicher<sp/>Gemeindeschlüssel<sp/>(AGS)</highlight></codeline>
+<codeline lineno="508"><highlight class="comment">Zuordnungskriterium:<sp/>Kreisstadt<sp/>von<sp/>Sitz/Betriebsstätte<sp/>des<sp/>Unternehmens<sp/>im<sp/>Land<sp/>Brandenburg</highlight></codeline>
+<codeline lineno="509"><highlight class="comment">10.1<sp/>Kurzbezeichnung<sp/>der<sp/>Weiterbildungsmaßnahme/n</highlight></codeline>
+<codeline lineno="510"><highlight class="comment">10.2<sp/>Bitte<sp/>beschreiben<sp/>Sie<sp/>die<sp/>mittel-<sp/>und<sp/>langfristigen<sp/>Entwicklungsziele<sp/>Ihres<sp/>Unternehmens,<sp/>zu<sp/>deren<sp/>Erreichung<sp/>die<sp/><sp/>Weiterbildungsmaßnahme/n<sp/>beitragen<sp/>soll/en:</highlight></codeline>
+<codeline lineno="511"><highlight class="comment">von</highlight></codeline>
+<codeline lineno="512"><highlight class="comment">bis</highlight></codeline>
+<codeline lineno="513"><highlight class="comment">Frauen:</highlight></codeline>
+<codeline lineno="514"><highlight class="comment">Männer:</highlight></codeline>
+<codeline lineno="515"><highlight class="comment">Mitarbeiter/innen<sp/>gesamt:</highlight></codeline>
+<codeline lineno="516"><highlight class="comment">Weibliche<sp/>Teilnehmende:</highlight></codeline>
+<codeline lineno="517"><highlight class="comment">Männliche<sp/>Teilnehmende:</highlight></codeline>
+<codeline lineno="518"><highlight class="comment">Teilnehmende<sp/>gesamt:</highlight></codeline>
+<codeline lineno="519"><highlight class="comment">Gesamtinvestitionen:</highlight></codeline>
+<codeline lineno="520"><highlight class="comment">Gesamtinvestitionen:</highlight></codeline>
+<codeline lineno="521"><highlight class="comment">Zuschuss:</highlight></codeline>
+<codeline lineno="522"><highlight class="comment">Gesamt:</highlight></codeline>
+<codeline lineno="523"><highlight class="comment">Öffentliche<sp/>Mittel<sp/>EU:</highlight></codeline>
+<codeline lineno="524"><highlight class="comment">Gesamt:</highlight></codeline>
+<codeline lineno="525"><highlight class="comment">Ort</highlight></codeline>
+<codeline lineno="526"><highlight class="comment">Datum<sp/>der<sp/>Antragstellung</highlight></codeline>
+<codeline lineno="527"><highlight class="comment">Nachname,<sp/>Vorname<sp/>der/des<sp/>Zeichnungsberechtigten</highlight></codeline>
+<codeline lineno="528"><highlight class="comment">Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="529"><highlight class="comment">Anzahl<sp/>Männer:*</highlight></codeline>
+<codeline lineno="530"><highlight class="comment">Gesamt:</highlight></codeline>
+<codeline lineno="531"><highlight class="comment">Zahl<sp/>der<sp/>Erwerbstätigen<sp/>(einschl.<sp/>Selbstständige,<sp/>Auszubildende)<sp/>gesamt:*</highlight></codeline>
+<codeline lineno="532"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="533"><highlight class="comment">Darunter<sp/>Zahl<sp/>der<sp/>Selbstständigen<sp/>(einschl.<sp/>Existenzgründer):*</highlight></codeline>
+<codeline lineno="534"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="535"><highlight class="comment">Gemeldete<sp/>Arbeitslose<sp/>gesamt:*</highlight></codeline>
+<codeline lineno="536"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="537"><highlight class="comment">Darunter<sp/>Zahl<sp/>der<sp/>Langzeitarbeitslosen:*</highlight></codeline>
+<codeline lineno="538"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="539"><highlight class="comment">Zahl<sp/>der<sp/>Nicht-Erwerbstätigen<sp/>gesamt:*</highlight></codeline>
+<codeline lineno="540"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="541"><highlight class="comment">Darunter<sp/>Zahl<sp/>der<sp/>Nicht-Erwerbstätigen<sp/>in<sp/>beruflicher<sp/>Ausbildung:</highlight></codeline>
+<codeline lineno="542"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="543"><highlight class="comment">Summe<sp/>4.2:</highlight></codeline>
+<codeline lineno="544"><highlight class="comment">Davon<sp/>Summe<sp/>Frauen:</highlight></codeline>
+<codeline lineno="545"><highlight class="comment">Zahl<sp/>der<sp/>Jugendlichen<sp/>(zwischen<sp/>15<sp/>und<sp/>24<sp/>Jahren):</highlight></codeline>
+<codeline lineno="546"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="547"><highlight class="comment">Zahl<sp/>der<sp/>Älteren<sp/>(zwischen<sp/>25<sp/>und<sp/>44<sp/>Jahren):</highlight></codeline>
+<codeline lineno="548"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="549"><highlight class="comment">Zahl<sp/>der<sp/>Älteren<sp/>(zwischen<sp/>45<sp/>und<sp/>54<sp/>Jahren):</highlight></codeline>
+<codeline lineno="550"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="551"><highlight class="comment">Zahl<sp/>der<sp/>Älteren<sp/>(zwischen<sp/>55<sp/>und<sp/>64<sp/>Jahren):</highlight></codeline>
+<codeline lineno="552"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="553"><highlight class="comment">Summe<sp/>4.3:</highlight></codeline>
+<codeline lineno="554"><highlight class="comment">Davon<sp/>Summe<sp/>Frauen:</highlight></codeline>
+<codeline lineno="555"><highlight class="comment">Angehörige<sp/>einer<sp/>nationalen<sp/>Minderheit:</highlight></codeline>
+<codeline lineno="556"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="557"><highlight class="comment">Zahl<sp/>der<sp/>Migranten<sp/>und<sp/>Migrantinnen:</highlight></codeline>
+<codeline lineno="558"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="559"><highlight class="comment">Zahl<sp/>der<sp/>Menschen<sp/>mit<sp/>Behinderungen:</highlight></codeline>
+<codeline lineno="560"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="561"><highlight class="comment">mit<sp/>Hauptschulabschluss:</highlight></codeline>
+<codeline lineno="562"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="563"><highlight class="comment">mit<sp/>mittlerer<sp/>Reife<sp/>(10.<sp/>Klasse):</highlight></codeline>
+<codeline lineno="564"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="565"><highlight class="comment">mit<sp/>(Fach)Hochschulreife:</highlight></codeline>
+<codeline lineno="566"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="567"><highlight class="comment">mit<sp/>(Fach)Hochschulabschluss,<sp/>Meisterabschluss,<sp/>Promotion:</highlight></codeline>
+<codeline lineno="568"><highlight class="comment">Davon<sp/>Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="569"><highlight class="comment">Summe<sp/>4.5:</highlight></codeline>
+<codeline lineno="570"><highlight class="comment">Davon<sp/>Summe<sp/>Frauen:</highlight></codeline>
+<codeline lineno="571"><highlight class="comment">Jahr:</highlight></codeline>
+<codeline lineno="572"><highlight class="comment">Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="573"><highlight class="comment">Anzahl<sp/>Männer:*</highlight></codeline>
+<codeline lineno="574"><highlight class="comment">Darunter<sp/>Zahl<sp/>der<sp/>Nicht-Erwerbstätigen<sp/>in<sp/>beruflicher<sp/>Ausbildung:</highlight></codeline>
+<codeline lineno="575"><highlight class="comment">Zahl<sp/>der<sp/>Nicht-Erwerbstätigen<sp/>gesamt:*</highlight></codeline>
+<codeline lineno="576"><highlight class="comment">Darunter<sp/>Zahl<sp/>der<sp/>Langzeitarbeitslosen:*</highlight></codeline>
+<codeline lineno="577"><highlight class="comment">Gemeldete<sp/>Arbeitslose<sp/>gesamt:*</highlight></codeline>
+<codeline lineno="578"><highlight class="comment">Darunter<sp/>Zahl<sp/>der<sp/>Selbstständigen<sp/>(einschl.<sp/>Existenzgründer):</highlight></codeline>
+<codeline lineno="579"><highlight class="comment">Zahl<sp/>der<sp/>Erwerbstätigen<sp/>gesamt:</highlight></codeline>
+<codeline lineno="580"><highlight class="comment">Theorie:</highlight></codeline>
+<codeline lineno="581"><highlight class="comment">Praxis:</highlight></codeline>
+<codeline lineno="582"><highlight class="comment">Arbeitserfahrung:</highlight></codeline>
+<codeline lineno="583"><highlight class="comment">Beratung<sp/>/<sp/>Orientierung<sp/>(SOLL):</highlight></codeline>
+<codeline lineno="584"><highlight class="comment">Gesamtteilnehmerstunden:</highlight></codeline>
+<codeline lineno="585"><highlight class="comment">Gesamt<sp/>je<sp/>Teilnehmer:</highlight></codeline>
+<codeline lineno="586"><highlight class="comment">Jahr:</highlight></codeline>
+<codeline lineno="587"><highlight class="comment">Anzahl<sp/>Frauen:*</highlight></codeline>
+<codeline lineno="588"><highlight class="comment">Anzahl<sp/>Männer:*</highlight></codeline>
+<codeline lineno="589"><highlight class="comment">Darunter<sp/>Zahl<sp/>der<sp/>Nicht-Erwerbstätigen<sp/>in<sp/>beruflicher<sp/>Ausbildung:</highlight></codeline>
+<codeline lineno="590"><highlight class="comment">Zahl<sp/>der<sp/>Nicht-Erwerbstätigen<sp/>gesamt:*</highlight></codeline>
+<codeline lineno="591"><highlight class="comment">Darunter<sp/>Zahl<sp/>der<sp/>Langzeitarbeitslosen:*</highlight></codeline>
+<codeline lineno="592"><highlight class="comment">Gemeldete<sp/>Arbeitslose<sp/>gesamt:*</highlight></codeline>
+<codeline lineno="593"><highlight class="comment">Darunter<sp/>Zahl<sp/>der<sp/>Selbstständigen<sp/>(einschl.<sp/>Existenzgründer):</highlight></codeline>
+<codeline lineno="594"><highlight class="comment">Zahl<sp/>der<sp/>Erwerbstätigen<sp/>gesamt:</highlight></codeline>
+<codeline lineno="595"><highlight class="comment">Theorie:</highlight></codeline>
+<codeline lineno="596"><highlight class="comment">Praxis:</highlight></codeline>
+<codeline lineno="597"><highlight class="comment">Arbeitserfahrung:</highlight></codeline>
+<codeline lineno="598"><highlight class="comment">Beratung<sp/>/<sp/>Orientierung<sp/>(SOLL):</highlight></codeline>
+<codeline lineno="599"><highlight class="comment">Gesamtteilnehmerstunden:</highlight></codeline>
+<codeline lineno="600"><highlight class="comment">Gesamt<sp/>je<sp/>Teilnehmer:</highlight></codeline>
+<codeline lineno="601"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="602"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>switch<sp/>(i)</highlight></codeline>
+<codeline lineno="603"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="604"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>1:</highlight></codeline>
+<codeline lineno="605"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textBoxName<sp/>=<sp/>typeof(ESF_2.CompanyPage);</highlight></codeline>
+<codeline lineno="606"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline lineno="607"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>2:</highlight></codeline>
+<codeline lineno="608"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textBoxName<sp/>=<sp/>textBoxNameof(ESF_2.AddressPage);</highlight></codeline>
+<codeline lineno="609"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline lineno="610"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>3:</highlight></codeline>
+<codeline lineno="611"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>4:</highlight></codeline>
+<codeline lineno="612"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textBoxName<sp/>=<sp/>textBoxNameof(ESF_2.LegalFormRegistrationPage);</highlight></codeline>
+<codeline lineno="613"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline lineno="614"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>5:</highlight></codeline>
+<codeline lineno="615"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>6:</highlight></codeline>
+<codeline lineno="616"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textBoxName<sp/>=<sp/>textBoxNameof(ESF_2.RegisterEntriesPage);</highlight></codeline>
+<codeline lineno="617"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline lineno="618"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>7:</highlight></codeline>
+<codeline lineno="619"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>8:</highlight></codeline>
+<codeline lineno="620"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textBoxName<sp/>=<sp/>textBoxNameof(ESF_2.PetitionsPage);</highlight></codeline>
+<codeline lineno="621"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline lineno="622"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>9:</highlight></codeline>
+<codeline lineno="623"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textBoxName<sp/>=<sp/>textBoxNameof(ESF_2.LocationPage);</highlight></codeline>
+<codeline lineno="624"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline lineno="625"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>10:</highlight></codeline>
+<codeline lineno="626"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>11:</highlight></codeline>
+<codeline lineno="627"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textBoxName<sp/>=<sp/>textBoxNameof(ESF_2.ScheduleHRPage);</highlight></codeline>
+<codeline lineno="628"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline lineno="629"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>12:</highlight></codeline>
+<codeline lineno="630"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textBoxName<sp/>=<sp/>textBoxNameof(ESF_2.TrainingProvidersPage);</highlight></codeline>
+<codeline lineno="631"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline lineno="632"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>13:</highlight></codeline>
+<codeline lineno="633"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textBoxName<sp/>=<sp/>textBoxNameof(ESF_2.FinancingPage);</highlight></codeline>
+<codeline lineno="634"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline lineno="635"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>14:</highlight></codeline>
+<codeline lineno="636"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textBoxName<sp/>=<sp/>textBoxNameof(ESF_2.ConfirmationsPage);</highlight></codeline>
+<codeline lineno="637"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline lineno="638"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>15:</highlight></codeline>
+<codeline lineno="639"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textBoxName<sp/>=<sp/>textBoxNameof(ESF_2.DeclarationsPage);</highlight></codeline>
+<codeline lineno="640"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline lineno="641"><highlight class="comment"></highlight></codeline>
+<codeline lineno="642"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="643"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.WriteLine(&quot;Dict.<sp/>Heading:<sp/>&quot;<sp/>+<sp/>heads[i]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>Type.Name<sp/>+<sp/>&quot;<sp/>|<sp/>&quot;<sp/>+<sp/>Type.FullName);</highlight></codeline>
+<codeline lineno="644"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HeadingsNavigations.Add(heads[i],<sp/>Type);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="647"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/App.xaml.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,110 @@
+\hypertarget{class_listen_to_me_1_1_common_1_1_navigation_service}{}\section{Listen\+To\+Me.\+Common.\+Navigation\+Service Class Reference}
+\label{class_listen_to_me_1_1_common_1_1_navigation_service}\index{Listen\+To\+Me.\+Common.\+Navigation\+Service@{Listen\+To\+Me.\+Common.\+Navigation\+Service}}
+
+
+Navigation system that decouples the \hyperlink{namespace_listen_to_me_1_1_view}{View} \hyperlink{namespace_listen_to_me_1_1_model}{Model} from knowledge of the \hyperlink{namespace_listen_to_me_1_1_view}{View} for navigation purposes. This class can be replaced with a simple mock implementation for test purposes.  
+
+
+
+
+Inheritance diagram for Listen\+To\+Me.\+Common.\+Navigation\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_listen_to_me_1_1_common_1_1_navigation_service__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Navigation\+Service} (Frame frame)\hypertarget{class_listen_to_me_1_1_common_1_1_navigation_service_a8a665fd401d950a01ef3c91c9f606fac}{}\label{class_listen_to_me_1_1_common_1_1_navigation_service_a8a665fd401d950a01ef3c91c9f606fac}
+
+\item 
+bool \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_service_a4d76df9d16965ff6693f58c1d0ecf968}{Navigate$<$ T $>$} (object parameter=null)
+\begin{DoxyCompactList}\small\item\em Navigate to the target page of type T \end{DoxyCompactList}\item 
+bool \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_service_a53284996388b4695f9fa2e122295404e}{Navigate} (Type t, object parameter=null)
+\begin{DoxyCompactList}\small\item\em Navigate to the target page of the specified type. \end{DoxyCompactList}\item 
+void \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_service_aefd6738e5756b8f18b08a4c64c0dd13a}{Go\+Back} ()
+\begin{DoxyCompactList}\small\item\em Goes back a page in the back stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Navigation system that decouples the \hyperlink{namespace_listen_to_me_1_1_view}{View} \hyperlink{namespace_listen_to_me_1_1_model}{Model} from knowledge of the \hyperlink{namespace_listen_to_me_1_1_view}{View} for navigation purposes. This class can be replaced with a simple mock implementation for test purposes. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Service@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Service}!Go\+Back@{Go\+Back}}
+\index{Go\+Back@{Go\+Back}!Listen\+To\+Me\+::\+Common\+::\+Navigation\+Service@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Go\+Back()}{GoBack()}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+Common.\+Navigation\+Service.\+Go\+Back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_common_1_1_navigation_service_aefd6738e5756b8f18b08a4c64c0dd13a}{}\label{class_listen_to_me_1_1_common_1_1_navigation_service_aefd6738e5756b8f18b08a4c64c0dd13a}
+
+
+Goes back a page in the back stack. 
+
+
+
+Implements \hyperlink{interface_listen_to_me_1_1_common_1_1_i_navigation_service}{Listen\+To\+Me.\+Common.\+I\+Navigation\+Service}.
+
+\index{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Service@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Service}!Navigate@{Navigate}}
+\index{Navigate@{Navigate}!Listen\+To\+Me\+::\+Common\+::\+Navigation\+Service@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Navigate(\+Type t, object parameter=null)}{Navigate(Type t, object parameter=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Listen\+To\+Me.\+Common.\+Navigation\+Service.\+Navigate (
+\begin{DoxyParamCaption}
+\item[{Type}]{t, }
+\item[{object}]{parameter = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_common_1_1_navigation_service_a53284996388b4695f9fa2e122295404e}{}\label{class_listen_to_me_1_1_common_1_1_navigation_service_a53284996388b4695f9fa2e122295404e}
+
+
+Navigate to the target page of the specified type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Type of the view to navigate to.\\
+\hline
+{\em parameter} & Any parameters to pass to the newly loaded view\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_listen_to_me_1_1_common_1_1_i_navigation_service}{Listen\+To\+Me.\+Common.\+I\+Navigation\+Service}.
+
+\index{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Service@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Service}!Navigate$<$ T $>$@{Navigate$<$ T $>$}}
+\index{Navigate$<$ T $>$@{Navigate$<$ T $>$}!Listen\+To\+Me\+::\+Common\+::\+Navigation\+Service@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Navigate$<$ T $>$(object parameter=null)}{Navigate< T >(object parameter=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Listen\+To\+Me.\+Common.\+Navigation\+Service.\+Navigate}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{object}]{parameter = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_common_1_1_navigation_service_a4d76df9d16965ff6693f58c1d0ecf968}{}\label{class_listen_to_me_1_1_common_1_1_navigation_service_a4d76df9d16965ff6693f58c1d0ecf968}
+
+
+Navigate to the target page of type T 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the view to navigate to.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & Any parameters to pass to the newly loaded view\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_listen_to_me_1_1_common_1_1_i_navigation_service}{Listen\+To\+Me.\+Common.\+I\+Navigation\+Service}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Listen\+To\+Me/\+Common/Navigation\+Service.\+cs\end{DoxyCompactItemize}

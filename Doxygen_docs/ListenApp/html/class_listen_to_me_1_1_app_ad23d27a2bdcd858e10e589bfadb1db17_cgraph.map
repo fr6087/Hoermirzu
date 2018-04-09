@@ -1,0 +1,5 @@
+<map id="ListenToMe.App.initGui" name="ListenToMe.App.initGui">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_app.html#a8867647372e101bdd100a68eab4d0d3a" title="Is called when nvigation to a certain page fails " alt="" coords="212,5,408,47"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_app.html#ac79758b58c56c49b87a3e2ff6a9ad638" title="The method ActivateVoiceCommands is calling an VoiceCommands.xml&#45;File from local storage to determine..." alt="" coords="211,71,409,112"/>
+<area shape="rect" id="node4" href="$class_listen_to_me_1_1_cortana_model_methods.html#afe872337c3f1c74f5db6e26918f29ac1" title="reference TripViewModel.UpdateDestinationPhraseList in AdventureWorks project called when App Activat..." alt="" coords="457,71,684,112"/>
+</map>

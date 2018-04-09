@@ -1,0 +1,5 @@
+<map id="WcfService1.Implementation_Real" name="WcfService1.Implementation_Real">
+<area shape="rect" id="node2" href="$class_wcf_service1_1_1_service_class.html" title="contains operations of the service1client for parsing the html&#45;webform All operations containing a &quot;1..." alt="" coords="45,109,143,136"/>
+<area shape="rect" id="node3" href="$class_wcf_service1_1_1_cortana_direct_line_client.html" title="creates DirectLine connection to the bot " alt="" coords="5,5,183,47"/>
+<area shape="rect" id="node4" href="$class_wcf_service1_1_1_website_crawler.html" title="this class is opening a connection to the web form. I provides methods for retreiving the HTML&#45;Code b..." alt="" coords="167,109,357,136"/>
+</map>

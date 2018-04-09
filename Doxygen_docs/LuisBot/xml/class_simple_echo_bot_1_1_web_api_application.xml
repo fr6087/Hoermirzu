@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simple_echo_bot_1_1_web_api_application" kind="class" language="C#" prot="public">
+    <compoundname>SimpleEchoBot::WebApiApplication</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">HttpApplication</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_simple_echo_bot_1_1_web_api_application_1a560dbf218a3be5e70996d0158af08ced" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SimpleEchoBot.WebApiApplication.Application_Start</definition>
+        <argsstring>()</argsstring>
+        <name>Application_Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Global.asax.cs" line="12" column="1" bodyfile="Global.asax.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="29">
+        <label>System::Web::HttpApplication</label>
+      </node>
+      <node id="28">
+        <label>SimpleEchoBot.WebApiApplication</label>
+        <link refid="class_simple_echo_bot_1_1_web_api_application"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="31">
+        <label>System::Web::HttpApplication</label>
+      </node>
+      <node id="30">
+        <label>SimpleEchoBot.WebApiApplication</label>
+        <link refid="class_simple_echo_bot_1_1_web_api_application"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Global.asax.cs" line="11" column="1" bodyfile="Global.asax.cs" bodystart="10" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_simple_echo_bot_1_1_web_api_application_1a560dbf218a3be5e70996d0158af08ced" prot="protected" virt="non-virtual"><scope>SimpleEchoBot::WebApiApplication</scope><name>Application_Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

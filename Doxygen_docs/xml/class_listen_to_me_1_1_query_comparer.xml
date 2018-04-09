@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_query_comparer" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::QueryComparer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IEqualityComparer</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_query_comparer_1a700125ab1c7ee15c31485a1d1ca71a70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ListenToMe.QueryComparer.GetHashCode</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>GetHashCode</name>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="981" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="981" bodyend="984"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_query_comparer_1a8c5ce93e1d11dcebbcc0693d4c425169" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new bool</type>
+        <definition>new bool ListenToMe.QueryComparer.Equals</definition>
+        <argsstring>(object userQuery, object keyInHashTable)</argsstring>
+        <name>Equals</name>
+        <param>
+          <type>object</type>
+          <declname>userQuery</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>keyInHashTable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="986" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="986" bodyend="999"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>inactive class for matching the controls visible on the section against the field name LUIS recognized in the user query </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="121">
+        <label>IEqualityComparer</label>
+      </node>
+      <node id="120">
+        <label>ListenToMe.QueryComparer</label>
+        <link refid="class_listen_to_me_1_1_query_comparer"/>
+        <childnode refid="121" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="123">
+        <label>IEqualityComparer</label>
+      </node>
+      <node id="122">
+        <label>ListenToMe.QueryComparer</label>
+        <link refid="class_listen_to_me_1_1_query_comparer"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="980" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="979" bodyend="1000"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_query_comparer_1a8c5ce93e1d11dcebbcc0693d4c425169" prot="public" virt="non-virtual"><scope>ListenToMe::QueryComparer</scope><name>Equals</name></member>
+      <member refid="class_listen_to_me_1_1_query_comparer_1a700125ab1c7ee15c31485a1d1ca71a70" prot="public" virt="non-virtual"><scope>ListenToMe::QueryComparer</scope><name>GetHashCode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

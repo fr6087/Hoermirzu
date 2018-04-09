@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_resource1" kind="class" language="C#" prot="package">
+    <compoundname>Resource1</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_resource1_1a6dd910bc0f6ec5fe593902d80bbb5a36" prot="private" static="yes" mutable="no">
+        <type>global::System.Resources.ResourceManager</type>
+        <definition>global::System.Resources.ResourceManager Resource1.resourceMan</definition>
+        <argsstring></argsstring>
+        <name>resourceMan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="27" column="1" bodyfile="Resource/Resource1.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_resource1_1a279325406b81dd0fff9b4373d8fb23ea" prot="private" static="yes" mutable="no">
+        <type>global::System.Globalization.CultureInfo</type>
+        <definition>global::System.Globalization.CultureInfo Resource1.resourceCulture</definition>
+        <argsstring></argsstring>
+        <name>resourceCulture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="29" column="1" bodyfile="Resource/Resource1.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_resource1_1aa118d56da5ed4961de98c6b1595aade6" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>global::System.Resources.ResourceManager</type>
+        <definition>global::System.Resources.ResourceManager Resource1.ResourceManager</definition>
+        <argsstring></argsstring>
+        <name>ResourceManager</name>
+        <briefdescription>
+<para>Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="39" column="1" bodyfile="Resource/Resource1.cs" bodystart="39" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1a0d7ab43fea10eb34e7d8de689c6013a1" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>global::System.Globalization.CultureInfo</type>
+        <definition>global::System.Globalization.CultureInfo Resource1.Culture</definition>
+        <argsstring></argsstring>
+        <name>Culture</name>
+        <briefdescription>
+<para>Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="54" column="1" bodyfile="Resource/Resource1.cs" bodystart="54" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1a1ec096bf20a91025c008df6f1743277a" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.AskForFieldFemale</definition>
+        <argsstring></argsstring>
+        <name>AskForFieldFemale</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Was ist deine ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="66" column="1" bodyfile="Resource/Resource1.cs" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1aaaed5c2abc366f68bff31587365f5aa3" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.AskForFieldMaleNeutral</definition>
+        <argsstring></argsstring>
+        <name>AskForFieldMaleNeutral</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Was ist dein ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="75" column="1" bodyfile="Resource/Resource1.cs" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1ad8cb5a59ace1daee67f3ad8f8d05cb69" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.AskForSave</definition>
+        <argsstring></argsstring>
+        <name>AskForSave</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Möchtest du folgendes speichern: ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="84" column="1" bodyfile="Resource/Resource1.cs" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1a3c6ce5b66517e1914da9123117406410" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.FormWelcomeMessage</definition>
+        <argsstring></argsstring>
+        <name>FormWelcomeMessage</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Willkommen im ESF_2 Bot! ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="93" column="1" bodyfile="Resource/Resource1.cs" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1a4ff11c73841dd0d6d9cb60b57fd93e4e" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.GotHelpedQuestion</definition>
+        <argsstring></argsstring>
+        <name>GotHelpedQuestion</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Hat das geholfen? ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="102" column="1" bodyfile="Resource/Resource1.cs" bodystart="102" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1a2a5df77a0deac07fabe0d2c97f5bcfd2" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.HelpClarification</definition>
+        <argsstring></argsstring>
+        <name>HelpClarification</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Was kann ich für dich tun? ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="111" column="1" bodyfile="Resource/Resource1.cs" bodystart="111" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1a56da905a56633368fcd84619d9de6ee5" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.HelpTitel</definition>
+        <argsstring></argsstring>
+        <name>HelpTitel</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Sie können folgende Dialoge mit mir führen: ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="120" column="1" bodyfile="Resource/Resource1.cs" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1a122212e0c0d38927681020f0095f669e" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.HelpWelcomeMessage</definition>
+        <argsstring></argsstring>
+        <name>HelpWelcomeMessage</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Willkommen in der Hilfe. Dieser Bot ist dazu da Formularangaben zu machen. Versuchen Sie 'Meine Firma ist innobis' um das Feld Firma zu füllen. ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="129" column="1" bodyfile="Resource/Resource1.cs" bodystart="129" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1abe081f6777cfef0855b9a9979f8e5971" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.No</definition>
+        <argsstring></argsstring>
+        <name>No</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die nein ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="138" column="1" bodyfile="Resource/Resource1.cs" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1a002ddb6305260764f33e88a1ec7d8deb" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.Processing</definition>
+        <argsstring></argsstring>
+        <name>Processing</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Deine Werte werden verarbeitet. ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="147" column="1" bodyfile="Resource/Resource1.cs" bodystart="147" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1a0c09ddb26f568de9eccb533d003af6ef" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.Save</definition>
+        <argsstring></argsstring>
+        <name>Save</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Soll ich diese Werte speichern? ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="156" column="1" bodyfile="Resource/Resource1.cs" bodystart="156" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1ab9cd9b52b88aa99e26d64a13425ec5fb" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.Saved</definition>
+        <argsstring></argsstring>
+        <name>Saved</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Gespeichert. ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="165" column="1" bodyfile="Resource/Resource1.cs" bodystart="165" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1a11d4482ffca85677496742951fda32a4" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.Thanks</definition>
+        <argsstring></argsstring>
+        <name>Thanks</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Danke. ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="174" column="1" bodyfile="Resource/Resource1.cs" bodystart="174" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1aad90240ad77f9998fb5db7a447737fae" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.UploadOptions</definition>
+        <argsstring></argsstring>
+        <name>UploadOptions</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="183" column="1" bodyfile="Resource/Resource1.cs" bodystart="183" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="property" id="class_resource1_1acf31155810537fca72165b0f7c3f6496" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Resource1.Yes</definition>
+        <argsstring></argsstring>
+        <name>Yes</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die ja ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="192" column="1" bodyfile="Resource/Resource1.cs" bodystart="192" bodyend="196"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_resource1_1a3628b5970ae5bb6af7ae979e299ea166" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Resource1.Resource1</definition>
+        <argsstring>()</argsstring>
+        <name>Resource1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.cs" line="32" column="1" bodyfile="Resource/Resource1.cs" bodystart="32" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Resource/Resource1.cs" line="25" column="1" bodyfile="Resource/Resource1.cs" bodystart="25" bodyend="197"/>
+    <listofallmembers>
+      <member refid="class_resource1_1a1ec096bf20a91025c008df6f1743277a" prot="package" virt="non-virtual"><scope>Resource1</scope><name>AskForFieldFemale</name></member>
+      <member refid="class_resource1_1aaaed5c2abc366f68bff31587365f5aa3" prot="package" virt="non-virtual"><scope>Resource1</scope><name>AskForFieldMaleNeutral</name></member>
+      <member refid="class_resource1_1ad8cb5a59ace1daee67f3ad8f8d05cb69" prot="package" virt="non-virtual"><scope>Resource1</scope><name>AskForSave</name></member>
+      <member refid="class_resource1_1a0d7ab43fea10eb34e7d8de689c6013a1" prot="package" virt="non-virtual"><scope>Resource1</scope><name>Culture</name></member>
+      <member refid="class_resource1_1a3c6ce5b66517e1914da9123117406410" prot="package" virt="non-virtual"><scope>Resource1</scope><name>FormWelcomeMessage</name></member>
+      <member refid="class_resource1_1a4ff11c73841dd0d6d9cb60b57fd93e4e" prot="package" virt="non-virtual"><scope>Resource1</scope><name>GotHelpedQuestion</name></member>
+      <member refid="class_resource1_1a2a5df77a0deac07fabe0d2c97f5bcfd2" prot="package" virt="non-virtual"><scope>Resource1</scope><name>HelpClarification</name></member>
+      <member refid="class_resource1_1a56da905a56633368fcd84619d9de6ee5" prot="package" virt="non-virtual"><scope>Resource1</scope><name>HelpTitel</name></member>
+      <member refid="class_resource1_1a122212e0c0d38927681020f0095f669e" prot="package" virt="non-virtual"><scope>Resource1</scope><name>HelpWelcomeMessage</name></member>
+      <member refid="class_resource1_1abe081f6777cfef0855b9a9979f8e5971" prot="package" virt="non-virtual"><scope>Resource1</scope><name>No</name></member>
+      <member refid="class_resource1_1a002ddb6305260764f33e88a1ec7d8deb" prot="package" virt="non-virtual"><scope>Resource1</scope><name>Processing</name></member>
+      <member refid="class_resource1_1a3628b5970ae5bb6af7ae979e299ea166" prot="package" virt="non-virtual"><scope>Resource1</scope><name>Resource1</name></member>
+      <member refid="class_resource1_1a279325406b81dd0fff9b4373d8fb23ea" prot="private" virt="non-virtual"><scope>Resource1</scope><name>resourceCulture</name></member>
+      <member refid="class_resource1_1a6dd910bc0f6ec5fe593902d80bbb5a36" prot="private" virt="non-virtual"><scope>Resource1</scope><name>resourceMan</name></member>
+      <member refid="class_resource1_1aa118d56da5ed4961de98c6b1595aade6" prot="package" virt="non-virtual"><scope>Resource1</scope><name>ResourceManager</name></member>
+      <member refid="class_resource1_1a0c09ddb26f568de9eccb533d003af6ef" prot="package" virt="non-virtual"><scope>Resource1</scope><name>Save</name></member>
+      <member refid="class_resource1_1ab9cd9b52b88aa99e26d64a13425ec5fb" prot="package" virt="non-virtual"><scope>Resource1</scope><name>Saved</name></member>
+      <member refid="class_resource1_1a11d4482ffca85677496742951fda32a4" prot="package" virt="non-virtual"><scope>Resource1</scope><name>Thanks</name></member>
+      <member refid="class_resource1_1aad90240ad77f9998fb5db7a447737fae" prot="package" virt="non-virtual"><scope>Resource1</scope><name>UploadOptions</name></member>
+      <member refid="class_resource1_1acf31155810537fca72165b0f7c3f6496" prot="package" virt="non-virtual"><scope>Resource1</scope><name>Yes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

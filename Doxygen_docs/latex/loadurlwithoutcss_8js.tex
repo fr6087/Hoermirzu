@@ -1,0 +1,68 @@
+\hypertarget{loadurlwithoutcss_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/loadurlwithoutcss.js File Reference}
+\label{loadurlwithoutcss_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/loadurlwithoutcss.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/loadurlwithoutcss.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{loadurlwithoutcss_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if} (system.\+args.\+length$<$ 2)
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{loadurlwithoutcss_8js_a98c36eb7f2aa8c6bd3d70fa50a1c5b79}{open} (\hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{address}, function(status)\{\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(status=== \textquotesingle{}success\textquotesingle{})\{\hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();\}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}Unable to load the address!\textquotesingle{});\hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();\}\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{loadurlwithoutcss_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{loadurlwithoutcss_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\item 
+var \hyperlink{loadurlwithoutcss_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system} = require(\textquotesingle{}system\textquotesingle{})
+\item 
+var \hyperlink{loadurlwithoutcss_8js_a2f48084defc0a4df2c31dac40f213f94}{address} = \hyperlink{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{system.\+args}\mbox{[}1\mbox{]}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{loadurlwithoutcss_8js_aa845c61095ae7dd4918bee320c30772a}{on\+Resource\+Requested}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}!if@{if}}
+\index{if@{if}!loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}}
+\subsubsection[{\texorpdfstring{if(system.\+args.\+length$<$ 2)}{if(system.args.length< 2)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{loadurlwithoutcss_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{}\label{loadurlwithoutcss_8js_a41bc2f4fa2f08e1e174987b1c09445c1}
+\index{loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}!open@{open}}
+\index{open@{open}!loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}}
+\subsubsection[{\texorpdfstring{open(address, function(status)\lcurly{}if(status=== \textquotesingle{}success\textquotesingle{})\lcurly{}phantom.\+exit();\rcurly{}else\lcurly{}console.\+log(\textquotesingle{}\+Unable to load the address"!\textquotesingle{});phantom.\+exit();\rcurly{}\rcurly{})}{open(address, function(status)\{if(status=== 'success')\{phantom.exit();\}else\{console.log('Unable to load the address!');phantom.exit();\}\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} open (
+\begin{DoxyParamCaption}
+\item[{{\bf address}}]{, }
+\item[{function(status)\{{\bf if}(status=== \textquotesingle{}success\textquotesingle{})\{{\bf phantom.\+exit}();\}{\bf else}\{{\bf console.\+log}(\textquotesingle{}Unable to load the address!\textquotesingle{});{\bf phantom.\+exit}();\}\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{loadurlwithoutcss_8js_a98c36eb7f2aa8c6bd3d70fa50a1c5b79}{}\label{loadurlwithoutcss_8js_a98c36eb7f2aa8c6bd3d70fa50a1c5b79}
+
+
+\subsection{Variable Documentation}
+\index{loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}!address@{address}}
+\index{address@{address}!loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}}
+\subsubsection[{\texorpdfstring{address}{address}}]{\setlength{\rightskip}{0pt plus 5cm}var address = {\bf system.\+args}\mbox{[}1\mbox{]}}\hypertarget{loadurlwithoutcss_8js_a2f48084defc0a4df2c31dac40f213f94}{}\label{loadurlwithoutcss_8js_a2f48084defc0a4df2c31dac40f213f94}
+\index{loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}!on\+Resource\+Requested@{on\+Resource\+Requested}}
+\index{on\+Resource\+Requested@{on\+Resource\+Requested}!loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}}
+\subsubsection[{\texorpdfstring{on\+Resource\+Requested}{onResourceRequested}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Resource\+Requested}\hypertarget{loadurlwithoutcss_8js_aa845c61095ae7dd4918bee320c30772a}{}\label{loadurlwithoutcss_8js_aa845c61095ae7dd4918bee320c30772a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}(requestData, request) \{
+    \textcolor{keywordflow}{if} ((/http:\(\backslash\)/\(\backslash\)/.+?\(\backslash\).\hyperlink{_listen_app_2html_2jquery_8js_a89ad527fcd82c01ebb587332f5b4fcd4}{css}/gi).test(requestData[\textcolor{stringliteral}{'url'}]) || requestData.headers[\textcolor{stringliteral}{'Content-Type'}] == \textcolor{stringliteral}{'
+      text/css'}) \{
+        console.log(\textcolor{stringliteral}{'The url of the request is matching. Aborting: '} + requestData[\textcolor{stringliteral}{'url'}]);
+        request.abort();
+    \}
+\}
+\end{DoxyCode}
+\index{loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}!page@{page}}
+\index{page@{page}!loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{loadurlwithoutcss_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{loadurlwithoutcss_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+\index{loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}!strict@{strict}}
+\index{strict@{strict}!loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{loadurlwithoutcss_8js_ae2475e10618961c050dcba04e8c42331}{}\label{loadurlwithoutcss_8js_ae2475e10618961c050dcba04e8c42331}
+\index{loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}!system@{system}}
+\index{system@{system}!loadurlwithoutcss.\+js@{loadurlwithoutcss.\+js}}
+\subsubsection[{\texorpdfstring{system}{system}}]{\setlength{\rightskip}{0pt plus 5cm}var system = require(\textquotesingle{}system\textquotesingle{})}\hypertarget{loadurlwithoutcss_8js_acdb77dc97eb44e91baaadd41d9d078fc}{}\label{loadurlwithoutcss_8js_acdb77dc97eb44e91baaadd41d9d078fc}

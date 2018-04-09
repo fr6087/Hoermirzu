@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_view_model_1_1_view_model_base.html" title="Base class for all view models. Contains the common implementation of INotifyPropertyChanged and the ..." alt="" coords="212,39,400,80"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_view_model_1_1_section_list_view_model.html" title="View Model controlling the behavior of a List view of Sections " alt="" coords="448,5,652,47"/>
+<area shape="rect" id="node4" href="$class_listen_to_me_1_1_view_model_1_1_section_view_model.html" title="View Model associated with SectionDetails.xaml. Provides access to an individual Section, and Commands for saving new, updating existing, and deleting Sections. Is able to both create brand new Sections, and edit existing Sections, hiding buttons that should not be accessible in some cases. " alt="" coords="448,71,652,112"/>
+</map>

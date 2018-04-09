@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_model_1_1_company_page___dialog" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::Model::CompanyPage_Dialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">LuisDialog</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="57">
+        <label>ListenToMe.Model.CompanyPage_Dialog</label>
+        <link refid="class_listen_to_me_1_1_model_1_1_company_page___dialog"/>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>LuisDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="59">
+        <label>ListenToMe.Model.CompanyPage_Dialog</label>
+        <link refid="class_listen_to_me_1_1_model_1_1_company_page___dialog"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>LuisDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/CompanyPage_Dialog.cs" line="10" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/CompanyPage_Dialog.cs" bodystart="9" bodyend="11"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

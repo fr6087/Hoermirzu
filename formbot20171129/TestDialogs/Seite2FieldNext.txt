@@ -1,0 +1,14 @@
+--Field.Next Seite2 durchlauf--
+
+[Nutzer sagt/tippt ] Cortana, öffne ListenToMe
+[Nutzer sagt/tippt: ] nächstes innobis. -->Field.FillInn
+[Nutzer klickt nicht vorsteuerabzug]
+[Nutzer wählt anrede "Herr"]
+[Nutzer sagt/tippt:] nächstes kunze 
+[Nutzer sagt/tippt:] nächstes max  
+""		     nächstes mitarbeiter
+[Nutzer sagt/tippt:] nächstes 040312312131
+[Nutzer sagt/tippt:] nächstes 040312312130  
+[Nutzer sagt/tippt:] nächstes "müller@innobis.de".
+[Nutzer sagt/ tippt:] Cortana, ListenToMe beenden 
+

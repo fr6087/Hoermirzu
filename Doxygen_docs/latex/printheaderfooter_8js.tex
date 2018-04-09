@@ -1,0 +1,115 @@
+\hypertarget{printheaderfooter_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/printheaderfooter.js File Reference}
+\label{printheaderfooter_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/printheaderfooter.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/printheaderfooter.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \hyperlink{printheaderfooter_8js_ad35c594a3c1a6a1e1fc4e5edcb25e34a}{some\+Callback} (page\+Num, num\+Pages)
+\item 
+\hyperlink{printheaderfooter_8js_a050bab352fc1544be9c45ca1ed2389f5}{if} (system.\+args.\+length$<$ 3)
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{printheaderfooter_8js_afc2fa712e6b76e92b2beca30adcfe474}{open} (\hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{address}, function(status)\{\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(status!== \textquotesingle{}success\textquotesingle{})\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}Unable to load the address!\textquotesingle{});\}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(\hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{page.\+evaluate}(function()\{return typeof Phantom\+J\+S\+Printing==\char`\"{}object\char`\"{};\}))\{paper\+Size=\hyperlink{printmargins_8js_a659ab248ae6a3b260e06339897de8965}{page.\+paper\+Size};paper\+Size.\+header.\+height=\hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{page.\+evaluate}(function()\{                                                                       return Phantom\+J\+S\+Printing.\+header.\+height;                                                       \});paper\+Size.\+header.\+contents=phantom.\+callback(function(page\+Num, num\+Pages)\{                                                                       return \hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{page.\+evaluate}(function(page\+Num, num\+Pages)\{return Phantom\+J\+S\+Printing.\+header.\+contents(page\+Num, num\+Pages);\}, page\+Num, num\+Pages);                                                       \});paper\+Size.\+footer.\+height=\hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{page.\+evaluate}(function()\{                                                                       return Phantom\+J\+S\+Printing.\+footer.\+height;                                                       \});paper\+Size.\+footer.\+contents=phantom.\+callback(function(page\+Num, num\+Pages)\{                                                                       return \hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{page.\+evaluate}(function(page\+Num, num\+Pages)\{return Phantom\+J\+S\+Printing.\+footer.\+contents(page\+Num, num\+Pages);\}, page\+Num, num\+Pages);                                                       \});\hyperlink{printmargins_8js_a659ab248ae6a3b260e06339897de8965}{page.\+paper\+Size}=\hyperlink{printmargins_8js_a659ab248ae6a3b260e06339897de8965}{paper\+Size};\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(page.\+paper\+Size.\+header.\+height);\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(page.\+paper\+Size.\+footer.\+height);\}\hyperlink{page__events_8js_ade245ee708b346c7f822a576459e3674}{window.\+set\+Timeout}(function()\{                                                       \hyperlink{colorwheel_8js_a2e68365b09ca6b47bfb6cfb37e38294d}{page.\+render}(\hyperlink{rasterize_8js_ad288825273ed7192429ab0474fb2d4a0}{output});                                                       \hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();                                       \}, 200);\}\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{printheaderfooter_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{printheaderfooter_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\item 
+var \hyperlink{printheaderfooter_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system} = require(\textquotesingle{}system\textquotesingle{})
+\item 
+\hyperlink{printheaderfooter_8js_a0544c3fe466e421738dae463968b70ba}{else}
+\item 
+var \hyperlink{printheaderfooter_8js_a34687689873d42dec2c94cc27f36e1e9}{output} = \hyperlink{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{system.\+args}\mbox{[}2\mbox{]}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{printheaderfooter_8js_abbbde5b34d3e102004827846faf853b0}{viewport\+Size} = \{ width\+: 600, height\+: 600 \}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{printheaderfooter_8js_a659ab248ae6a3b260e06339897de8965}{paper\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{printheaderfooter.\+js@{printheaderfooter.\+js}!if@{if}}
+\index{if@{if}!printheaderfooter.\+js@{printheaderfooter.\+js}}
+\subsubsection[{\texorpdfstring{if(system.\+args.\+length$<$ 3)}{if(system.args.length< 3)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{printheaderfooter_8js_a050bab352fc1544be9c45ca1ed2389f5}{}\label{printheaderfooter_8js_a050bab352fc1544be9c45ca1ed2389f5}
+\index{printheaderfooter.\+js@{printheaderfooter.\+js}!open@{open}}
+\index{open@{open}!printheaderfooter.\+js@{printheaderfooter.\+js}}
+\subsubsection[{\texorpdfstring{open(address, function(status)\lcurly{}if(status"!== \textquotesingle{}success\textquotesingle{})\lcurly{}console.\+log(\textquotesingle{}\+Unable to load the address"!\textquotesingle{});\rcurly{}else\lcurly{}if(page.\+evaluate(function()\lcurly{}return typeof Phantom\+J\+S\+Printing==""object"";\rcurly{}))\lcurly{}paper\+Size=page.\+paper\+Size;paper\+Size.\+header.\+height=page.\+evaluate(function()\lcurly{}                                                                       return Phantom\+J\+S\+Printing.\+header.\+height;                                                       \rcurly{});paper\+Size.\+header.\+contents=phantom.\+callback(function(page\+Num, num\+Pages)\lcurly{}                                                                       return page.\+evaluate(function(page\+Num, num\+Pages)\lcurly{}return Phantom\+J\+S\+Printing.\+header.\+contents(page\+Num, num\+Pages);\rcurly{}, page\+Num, num\+Pages);                                                       \rcurly{});paper\+Size.\+footer.\+height=page.\+evaluate(function()\lcurly{}                                                                       return Phantom\+J\+S\+Printing.\+footer.\+height;                                                       \rcurly{});paper\+Size.\+footer.\+contents=phantom.\+callback(function(page\+Num, num\+Pages)\lcurly{}                                                                       return page.\+evaluate(function(page\+Num, num\+Pages)\lcurly{}return Phantom\+J\+S\+Printing.\+footer.\+contents(page\+Num, num\+Pages);\rcurly{}, page\+Num, num\+Pages);                                                       \rcurly{});page.\+paper\+Size=paper\+Size;console.\+log(page.\+paper\+Size.\+header.\+height);console.\+log(page.\+paper\+Size.\+footer.\+height);\rcurly{}window.\+set\+Timeout(function()\lcurly{}                                                       page.\+render(output);                                                       phantom.\+exit();                                       \rcurly{}, 200);\rcurly{}\rcurly{})}{open(address, function(status)\{if(status!== 'success')\{console.log('Unable to load the address!');\}else\{if(page.evaluate(function()\{return typeof PhantomJSPrinting=="object";\}))\{paperSize=page.paperSize;paperSize.header.height=page.evaluate(function()\{                                                                       return PhantomJSPrinting.header.height;                                                       \});paperSize.header.contents=phantom.callback(function(pageNum, numPages)\{                                                                       return page.evaluate(function(pageNum, numPages)\{return PhantomJSPrinting.header.contents(pageNum, numPages);\}, pageNum, numPages);                                                       \});paperSize.footer.height=page.evaluate(function()\{                                                                       return PhantomJSPrinting.footer.height;                                                       \});paperSize.footer.contents=phantom.callback(function(pageNum, numPages)\{                                                                       return page.evaluate(function(pageNum, numPages)\{return PhantomJSPrinting.footer.contents(pageNum, numPages);\}, pageNum, numPages);                                                       \});page.paperSize=paperSize;console.log(page.paperSize.header.height);console.log(page.paperSize.footer.height);\}window.setTimeout(function()\{                                                       page.render(output);                                                       phantom.exit();                                       \}, 200);\}\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} open (
+\begin{DoxyParamCaption}
+\item[{{\bf address}}]{, }
+\item[{function(status)\{{\bf if}(status!== \textquotesingle{}success\textquotesingle{})\{{\bf console.\+log}(\textquotesingle{}Unable to load the address!\textquotesingle{});\}{\bf else}\{{\bf if}({\bf page.\+evaluate}(function()\{return typeof Phantom\+J\+S\+Printing==\char`\"{}object\char`\"{};\}))\{paper\+Size={\bf page.\+paper\+Size};paper\+Size.\+header.\+height={\bf page.\+evaluate}(function()\{                                                                                                                                                                                                                                                                                   return Phantom\+J\+S\+Printing.\+header.\+height;                                                                                                                                                                                                                   \});paper\+Size.\+header.\+contents=phantom.\+callback(function(page\+Num, num\+Pages)\{                                                                                                                                                                                                                                                                                   return {\bf page.\+evaluate}(function(page\+Num, num\+Pages)\{return Phantom\+J\+S\+Printing.\+header.\+contents(page\+Num, num\+Pages);\}, page\+Num, num\+Pages);                                                                                                                                                                                                                   \});paper\+Size.\+footer.\+height={\bf page.\+evaluate}(function()\{                                                                                                                                                                                                                                                                                   return Phantom\+J\+S\+Printing.\+footer.\+height;                                                                                                                                                                                                                   \});paper\+Size.\+footer.\+contents=phantom.\+callback(function(page\+Num, num\+Pages)\{                                                                                                                                                                                                                                                                                   return {\bf page.\+evaluate}(function(page\+Num, num\+Pages)\{return Phantom\+J\+S\+Printing.\+footer.\+contents(page\+Num, num\+Pages);\}, page\+Num, num\+Pages);                                                                                                                                                                                                                   \});{\bf page.\+paper\+Size}={\bf paper\+Size};{\bf console.\+log}(page.\+paper\+Size.\+header.\+height);{\bf console.\+log}(page.\+paper\+Size.\+footer.\+height);\}{\bf window.\+set\+Timeout}(function()\{                                                                                                                                                                                                                   {\bf page.\+render}({\bf output});                                                                                                                                                                                                                   {\bf phantom.\+exit}();                                                                                                                                                   \}, 200);\}\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{printheaderfooter_8js_afc2fa712e6b76e92b2beca30adcfe474}{}\label{printheaderfooter_8js_afc2fa712e6b76e92b2beca30adcfe474}
+\index{printheaderfooter.\+js@{printheaderfooter.\+js}!some\+Callback@{some\+Callback}}
+\index{some\+Callback@{some\+Callback}!printheaderfooter.\+js@{printheaderfooter.\+js}}
+\subsubsection[{\texorpdfstring{some\+Callback(page\+Num, num\+Pages)}{someCallback(pageNum, numPages)}}]{\setlength{\rightskip}{0pt plus 5cm}function some\+Callback (
+\begin{DoxyParamCaption}
+\item[{}]{page\+Num, }
+\item[{}]{num\+Pages}
+\end{DoxyParamCaption}
+)}\hypertarget{printheaderfooter_8js_ad35c594a3c1a6a1e1fc4e5edcb25e34a}{}\label{printheaderfooter_8js_ad35c594a3c1a6a1e1fc4e5edcb25e34a}
+
+
+\subsection{Variable Documentation}
+\index{printheaderfooter.\+js@{printheaderfooter.\+js}!else@{else}}
+\index{else@{else}!printheaderfooter.\+js@{printheaderfooter.\+js}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}else}\hypertarget{printheaderfooter_8js_a0544c3fe466e421738dae463968b70ba}{}\label{printheaderfooter_8js_a0544c3fe466e421738dae463968b70ba}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    var \hyperlink{detectsniff_8js_a2f48084defc0a4df2c31dac40f213f94}{address} = \hyperlink{printheaderfooter_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system}.args[1]
+\end{DoxyCode}
+\index{printheaderfooter.\+js@{printheaderfooter.\+js}!output@{output}}
+\index{output@{output}!printheaderfooter.\+js@{printheaderfooter.\+js}}
+\subsubsection[{\texorpdfstring{output}{output}}]{\setlength{\rightskip}{0pt plus 5cm}var output = {\bf system.\+args}\mbox{[}2\mbox{]}}\hypertarget{printheaderfooter_8js_a34687689873d42dec2c94cc27f36e1e9}{}\label{printheaderfooter_8js_a34687689873d42dec2c94cc27f36e1e9}
+
+
+Referenced by Class\+Library.\+model.\+Form\+Store\+::\+Write\+Sections().
+
+\index{printheaderfooter.\+js@{printheaderfooter.\+js}!page@{page}}
+\index{page@{page}!printheaderfooter.\+js@{printheaderfooter.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{printheaderfooter_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{printheaderfooter_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+\index{printheaderfooter.\+js@{printheaderfooter.\+js}!paper\+Size@{paper\+Size}}
+\index{paper\+Size@{paper\+Size}!printheaderfooter.\+js@{printheaderfooter.\+js}}
+\subsubsection[{\texorpdfstring{paper\+Size}{paperSize}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} paper\+Size}\hypertarget{printheaderfooter_8js_a659ab248ae6a3b260e06339897de8965}{}\label{printheaderfooter_8js_a659ab248ae6a3b260e06339897de8965}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        format: \textcolor{stringliteral}{'A4'},
+        margin: \textcolor{stringliteral}{"1cm"},
+        
+        header: \{
+            height: \textcolor{stringliteral}{"1cm"},
+            contents: phantom.callback(\textcolor{keyword}{function}(pageNum, numPages) \{
+                \textcolor{keywordflow}{if} (pageNum == 1) \{
+                    \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+                \}
+                \textcolor{keywordflow}{return} \textcolor{stringliteral}{"<h1>Header <span style='float:right'>"} + pageNum + \textcolor{stringliteral}{" / "} + numPages + \textcolor{stringliteral}{"</span></h1>
+      "};
+            \})
+        \},
+        footer: \{
+            height: \textcolor{stringliteral}{"1cm"},
+            contents: phantom.callback(\textcolor{keyword}{function}(pageNum, numPages) \{
+                \textcolor{keywordflow}{if} (pageNum == numPages) \{
+                    \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+                \}
+                \textcolor{keywordflow}{return} \textcolor{stringliteral}{"<h1>Footer <span style='float:right'>"} + pageNum + \textcolor{stringliteral}{" / "} + numPages + \textcolor{stringliteral}{"</span></h1>
+      "};
+            \})
+        \}
+    \}
+\end{DoxyCode}
+\index{printheaderfooter.\+js@{printheaderfooter.\+js}!strict@{strict}}
+\index{strict@{strict}!printheaderfooter.\+js@{printheaderfooter.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{printheaderfooter_8js_ae2475e10618961c050dcba04e8c42331}{}\label{printheaderfooter_8js_ae2475e10618961c050dcba04e8c42331}
+\index{printheaderfooter.\+js@{printheaderfooter.\+js}!system@{system}}
+\index{system@{system}!printheaderfooter.\+js@{printheaderfooter.\+js}}
+\subsubsection[{\texorpdfstring{system}{system}}]{\setlength{\rightskip}{0pt plus 5cm}var system = require(\textquotesingle{}system\textquotesingle{})}\hypertarget{printheaderfooter_8js_acdb77dc97eb44e91baaadd41d9d078fc}{}\label{printheaderfooter_8js_acdb77dc97eb44e91baaadd41d9d078fc}
+\index{printheaderfooter.\+js@{printheaderfooter.\+js}!viewport\+Size@{viewport\+Size}}
+\index{viewport\+Size@{viewport\+Size}!printheaderfooter.\+js@{printheaderfooter.\+js}}
+\subsubsection[{\texorpdfstring{viewport\+Size}{viewportSize}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} viewport\+Size = \{ width\+: 600, height\+: 600 \}}\hypertarget{printheaderfooter_8js_abbbde5b34d3e102004827846faf853b0}{}\label{printheaderfooter_8js_abbbde5b34d3e102004827846faf853b0}

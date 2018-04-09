@@ -1,0 +1,145 @@
+\hypertarget{netsniff_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/netsniff.js File Reference}
+\label{netsniff_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/netsniff.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/netsniff.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{netsniff_8js_a525a35e79046ee7b034e02a46b4b200a}{if} (!Date.\+prototype.\+to\+I\+S\+O\+String)
+\item 
+function \hyperlink{netsniff_8js_a9a4f51dd77d286b63f7bd785594b4b11}{create\+H\+AR} (\hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{address}, title, start\+Time, \hyperlink{netsniff_8js_aa93470e6f261e9f853e4a58e556ce707}{resources})
+\item 
+\hyperlink{netsniff_8js_ad96c8bd5761b78693c1f5953cfbc43f6}{if} (system.\+args.\+length===1)
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{netsniff_8js_a92ae1725df23ace073406f11914c22e9}{open} (\hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{page.\+address}, function(status)\{var har;\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(status!== \textquotesingle{}success\textquotesingle{})\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}F\+A\+IL to load the \hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{address}\textquotesingle{});\hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}(1);\}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{page.\+end\+Time=new Date();page.\+title=\hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{page.\+evaluate}(function()\{                                                       return document.\+title;                                       \});har=\hyperlink{netsniff_8js_a9a4f51dd77d286b63f7bd785594b4b11}{create\+H\+AR}(\hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{page.\+address}, page.\+title, page.\+start\+Time, \hyperlink{netsniff_8js_aa93470e6f261e9f853e4a58e556ce707}{page.\+resources});\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(J\+S\+O\+N.\+stringify(har, undefined, 4));\hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();\}\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{netsniff_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{netsniff_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\item 
+var \hyperlink{netsniff_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system} = require(\textquotesingle{}system\textquotesingle{})
+\item 
+\hyperlink{netsniff_8js_a0544c3fe466e421738dae463968b70ba}{else}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{netsniff_8js_aa93470e6f261e9f853e4a58e556ce707}{resources} = \mbox{[}$\,$\mbox{]}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{netsniff_8js_a14bc9832407adb3a671bcbe5ce829b19}{on\+Load\+Started}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{netsniff_8js_aa845c61095ae7dd4918bee320c30772a}{on\+Resource\+Requested}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{netsniff_8js_a9b9ce5658bc39baef0b68cf928be15d7}{on\+Resource\+Received}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{netsniff.\+js@{netsniff.\+js}!create\+H\+AR@{create\+H\+AR}}
+\index{create\+H\+AR@{create\+H\+AR}!netsniff.\+js@{netsniff.\+js}}
+\subsubsection[{\texorpdfstring{create\+H\+A\+R(address, title, start\+Time, resources)}{createHAR(address, title, startTime, resources)}}]{\setlength{\rightskip}{0pt plus 5cm}function create\+H\+AR (
+\begin{DoxyParamCaption}
+\item[{}]{address, }
+\item[{}]{title, }
+\item[{}]{start\+Time, }
+\item[{}]{resources}
+\end{DoxyParamCaption}
+)}\hypertarget{netsniff_8js_a9a4f51dd77d286b63f7bd785594b4b11}{}\label{netsniff_8js_a9a4f51dd77d286b63f7bd785594b4b11}
+
+
+References address, content, data, headers, log(), page, resources, size, and url.
+
+
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+\index{netsniff.\+js@{netsniff.\+js}!if@{if}}
+\index{if@{if}!netsniff.\+js@{netsniff.\+js}}
+\subsubsection[{\texorpdfstring{if("!Date.\+prototype.\+to\+I\+S\+O\+String)}{if(!Date.prototype.toISOString)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{!Date.\+prototype.}]{to\+I\+S\+O\+String}
+\end{DoxyParamCaption}
+)}\hypertarget{netsniff_8js_a525a35e79046ee7b034e02a46b4b200a}{}\label{netsniff_8js_a525a35e79046ee7b034e02a46b4b200a}
+\index{netsniff.\+js@{netsniff.\+js}!if@{if}}
+\index{if@{if}!netsniff.\+js@{netsniff.\+js}}
+\subsubsection[{\texorpdfstring{if(system.\+args.\+length===1)}{if(system.args.length===1)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{system.\+args.}]{length = {\ttfamily ==~1}}
+\end{DoxyParamCaption}
+)}\hypertarget{netsniff_8js_ad96c8bd5761b78693c1f5953cfbc43f6}{}\label{netsniff_8js_ad96c8bd5761b78693c1f5953cfbc43f6}
+\index{netsniff.\+js@{netsniff.\+js}!open@{open}}
+\index{open@{open}!netsniff.\+js@{netsniff.\+js}}
+\subsubsection[{\texorpdfstring{open(page.\+address, function(status)\lcurly{}var har;if(status"!== \textquotesingle{}success\textquotesingle{})\lcurly{}console.\+log(\textquotesingle{}\+F\+A\+I\+L to load the address\textquotesingle{});phantom.\+exit(1);\rcurly{}else\lcurly{}page.\+end\+Time=new Date();page.\+title=page.\+evaluate(function()\lcurly{}                                                       return document.\+title;                                       \rcurly{});har=create\+H\+A\+R(page.\+address, page.\+title, page.\+start\+Time, page.\+resources);console.\+log(\+J\+S\+O\+N.\+stringify(har, undefined, 4));phantom.\+exit();\rcurly{}\rcurly{})}{open(page.address, function(status)\{var har;if(status!== 'success')\{console.log('FAIL to load the address');phantom.exit(1);\}else\{page.endTime=new Date();page.title=page.evaluate(function()\{                                                       return document.title;                                       \});har=createHAR(page.address, page.title, page.startTime, page.resources);console.log(JSON.stringify(har, undefined, 4));phantom.exit();\}\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} open (
+\begin{DoxyParamCaption}
+\item[{page.}]{address, }
+\item[{function(status)\{var har;{\bf if}(status!== \textquotesingle{}success\textquotesingle{})\{{\bf console.\+log}(\textquotesingle{}F\+A\+IL to load the {\bf address}\textquotesingle{});{\bf phantom.\+exit}(1);\}{\bf else}\{page.\+end\+Time=new Date();page.\+title={\bf page.\+evaluate}(function()\{                                                                                                                                                                                                                   return document.\+title;                                                                                                                                                   \});har={\bf create\+H\+AR}({\bf page.\+address}, page.\+title, page.\+start\+Time, {\bf page.\+resources});{\bf console.\+log}(J\+S\+O\+N.\+stringify(har, undefined, 4));{\bf phantom.\+exit}();\}\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{netsniff_8js_a92ae1725df23ace073406f11914c22e9}{}\label{netsniff_8js_a92ae1725df23ace073406f11914c22e9}
+
+
+\subsection{Variable Documentation}
+\index{netsniff.\+js@{netsniff.\+js}!else@{else}}
+\index{else@{else}!netsniff.\+js@{netsniff.\+js}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}else}\hypertarget{netsniff_8js_a0544c3fe466e421738dae463968b70ba}{}\label{netsniff_8js_a0544c3fe466e421738dae463968b70ba}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+
+    \hyperlink{netsniff_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page}.address = \hyperlink{netsniff_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system}.args[1]
+\end{DoxyCode}
+\index{netsniff.\+js@{netsniff.\+js}!on\+Load\+Started@{on\+Load\+Started}}
+\index{on\+Load\+Started@{on\+Load\+Started}!netsniff.\+js@{netsniff.\+js}}
+\subsubsection[{\texorpdfstring{on\+Load\+Started}{onLoadStarted}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Load\+Started}\hypertarget{netsniff_8js_a14bc9832407adb3a671bcbe5ce829b19}{}\label{netsniff_8js_a14bc9832407adb3a671bcbe5ce829b19}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function} () \{
+        \hyperlink{netsniff_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page}.startTime = \textcolor{keyword}{new} Date();
+    \}
+\end{DoxyCode}
+\index{netsniff.\+js@{netsniff.\+js}!on\+Resource\+Received@{on\+Resource\+Received}}
+\index{on\+Resource\+Received@{on\+Resource\+Received}!netsniff.\+js@{netsniff.\+js}}
+\subsubsection[{\texorpdfstring{on\+Resource\+Received}{onResourceReceived}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Resource\+Received}\hypertarget{netsniff_8js_a9b9ce5658bc39baef0b68cf928be15d7}{}\label{netsniff_8js_a9b9ce5658bc39baef0b68cf928be15d7}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function} (res) \{
+        \textcolor{keywordflow}{if} (res.stage === \textcolor{stringliteral}{'start'}) \{
+            \hyperlink{netsniff_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page}.resources[res.id].startReply = res;
+        \}
+        \textcolor{keywordflow}{if} (res.stage === \textcolor{stringliteral}{'end'}) \{
+            \hyperlink{netsniff_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page}.resources[res.id].endReply = res;
+        \}
+    \}
+\end{DoxyCode}
+\index{netsniff.\+js@{netsniff.\+js}!on\+Resource\+Requested@{on\+Resource\+Requested}}
+\index{on\+Resource\+Requested@{on\+Resource\+Requested}!netsniff.\+js@{netsniff.\+js}}
+\subsubsection[{\texorpdfstring{on\+Resource\+Requested}{onResourceRequested}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Resource\+Requested}\hypertarget{netsniff_8js_aa845c61095ae7dd4918bee320c30772a}{}\label{netsniff_8js_aa845c61095ae7dd4918bee320c30772a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function} (req) \{
+        \hyperlink{netsniff_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page}.resources[req.id] = \{
+            request: req,
+            startReply: null,
+            endReply: null
+        \};
+    \}
+\end{DoxyCode}
+\index{netsniff.\+js@{netsniff.\+js}!page@{page}}
+\index{page@{page}!netsniff.\+js@{netsniff.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{netsniff_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{netsniff_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+
+
+Referenced by create\+H\+A\+R().
+
+\index{netsniff.\+js@{netsniff.\+js}!resources@{resources}}
+\index{resources@{resources}!netsniff.\+js@{netsniff.\+js}}
+\subsubsection[{\texorpdfstring{resources}{resources}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} resources = \mbox{[}$\,$\mbox{]}}\hypertarget{netsniff_8js_aa93470e6f261e9f853e4a58e556ce707}{}\label{netsniff_8js_aa93470e6f261e9f853e4a58e556ce707}
+
+
+Referenced by create\+H\+A\+R().
+
+\index{netsniff.\+js@{netsniff.\+js}!strict@{strict}}
+\index{strict@{strict}!netsniff.\+js@{netsniff.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{netsniff_8js_ae2475e10618961c050dcba04e8c42331}{}\label{netsniff_8js_ae2475e10618961c050dcba04e8c42331}
+\index{netsniff.\+js@{netsniff.\+js}!system@{system}}
+\index{system@{system}!netsniff.\+js@{netsniff.\+js}}
+\subsubsection[{\texorpdfstring{system}{system}}]{\setlength{\rightskip}{0pt plus 5cm}var system = require(\textquotesingle{}system\textquotesingle{})}\hypertarget{netsniff_8js_acdb77dc97eb44e91baaadd41d9d078fc}{}\label{netsniff_8js_acdb77dc97eb44e91baaadd41d9d078fc}

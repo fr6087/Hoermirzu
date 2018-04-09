@@ -1,0 +1,68 @@
+\hypertarget{loadspeed_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/loadspeed.js File Reference}
+\label{loadspeed_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/loadspeed.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/loadspeed.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{loadspeed_8js_ad96c8bd5761b78693c1f5953cfbc43f6}{if} (system.\+args.\+length===1)
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{loadspeed_8js_a666372c952e6647a5862b1623a290c39}{open} (\hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{address}, function(status)\{\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(status!== \textquotesingle{}success\textquotesingle{})\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}F\+A\+IL to load the \hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{address}\textquotesingle{});\}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{loadspeed_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}=Date.\+now()-\/\hyperlink{loadspeed_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t};\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}Page title is \textquotesingle{}+\hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{page.\+evaluate}(function()\{                                                       return document.\+title;                                       \}));\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}Loading time \textquotesingle{}+\hyperlink{loadspeed_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}+ \textquotesingle{}msec\textquotesingle{});\}\hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{loadspeed_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{loadspeed_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\item 
+var \hyperlink{loadspeed_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system} = require(\textquotesingle{}system\textquotesingle{})
+\item 
+var \hyperlink{loadspeed_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}
+\item 
+var \hyperlink{loadspeed_8js_ade5a18d52133ef21f211020ceb464c07}{address} = \hyperlink{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{system.\+args}\mbox{[}1\mbox{]}
+\item 
+\hyperlink{loadspeed_8js_a0544c3fe466e421738dae463968b70ba}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{loadspeed.\+js@{loadspeed.\+js}!if@{if}}
+\index{if@{if}!loadspeed.\+js@{loadspeed.\+js}}
+\subsubsection[{\texorpdfstring{if(system.\+args.\+length===1)}{if(system.args.length===1)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{system.\+args.}]{length = {\ttfamily ==~1}}
+\end{DoxyParamCaption}
+)}\hypertarget{loadspeed_8js_ad96c8bd5761b78693c1f5953cfbc43f6}{}\label{loadspeed_8js_ad96c8bd5761b78693c1f5953cfbc43f6}
+\index{loadspeed.\+js@{loadspeed.\+js}!open@{open}}
+\index{open@{open}!loadspeed.\+js@{loadspeed.\+js}}
+\subsubsection[{\texorpdfstring{open(address, function(status)\lcurly{}if(status"!== \textquotesingle{}success\textquotesingle{})\lcurly{}console.\+log(\textquotesingle{}\+F\+A\+I\+L to load the address\textquotesingle{});\rcurly{}else\lcurly{}t=\+Date.\+now()-\/t;console.\+log(\textquotesingle{}\+Page title is \textquotesingle{}+page.\+evaluate(function()\lcurly{}                                                       return document.\+title;                                       \rcurly{}));console.\+log(\textquotesingle{}\+Loading time \textquotesingle{}+t+ \textquotesingle{}msec\textquotesingle{});\rcurly{}phantom.\+exit();\rcurly{})}{open(address, function(status)\{if(status!== 'success')\{console.log('FAIL to load the address');\}else\{t=Date.now()-t;console.log('Page title is '+page.evaluate(function()\{                                                       return document.title;                                       \}));console.log('Loading time '+t+ 'msec');\}phantom.exit();\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} open (
+\begin{DoxyParamCaption}
+\item[{{\bf address}}]{, }
+\item[{function(status)\{{\bf if}(status!== \textquotesingle{}success\textquotesingle{})\{{\bf console.\+log}(\textquotesingle{}F\+A\+IL to load the {\bf address}\textquotesingle{});\}{\bf else}\{{\bf t}=Date.\+now()-\/{\bf t};{\bf console.\+log}(\textquotesingle{}Page title is \textquotesingle{}+{\bf page.\+evaluate}(function()\{                                                                                                                                                                                                                   return document.\+title;                                                                                                                                                   \}));{\bf console.\+log}(\textquotesingle{}Loading time \textquotesingle{}+{\bf t}+ \textquotesingle{}msec\textquotesingle{});\}{\bf phantom.\+exit}();\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{loadspeed_8js_a666372c952e6647a5862b1623a290c39}{}\label{loadspeed_8js_a666372c952e6647a5862b1623a290c39}
+
+
+\subsection{Variable Documentation}
+\index{loadspeed.\+js@{loadspeed.\+js}!address@{address}}
+\index{address@{address}!loadspeed.\+js@{loadspeed.\+js}}
+\subsubsection[{\texorpdfstring{address}{address}}]{\setlength{\rightskip}{0pt plus 5cm}address = {\bf system.\+args}\mbox{[}1\mbox{]}}\hypertarget{loadspeed_8js_ade5a18d52133ef21f211020ceb464c07}{}\label{loadspeed_8js_ade5a18d52133ef21f211020ceb464c07}
+\index{loadspeed.\+js@{loadspeed.\+js}!else@{else}}
+\index{else@{else}!loadspeed.\+js@{loadspeed.\+js}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}else}\hypertarget{loadspeed_8js_a0544c3fe466e421738dae463968b70ba}{}\label{loadspeed_8js_a0544c3fe466e421738dae463968b70ba}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \hyperlink{loadspeed_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t} = Date.now()
+\end{DoxyCode}
+\index{loadspeed.\+js@{loadspeed.\+js}!page@{page}}
+\index{page@{page}!loadspeed.\+js@{loadspeed.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{loadspeed_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{loadspeed_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+\index{loadspeed.\+js@{loadspeed.\+js}!strict@{strict}}
+\index{strict@{strict}!loadspeed.\+js@{loadspeed.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{loadspeed_8js_ae2475e10618961c050dcba04e8c42331}{}\label{loadspeed_8js_ae2475e10618961c050dcba04e8c42331}
+\index{loadspeed.\+js@{loadspeed.\+js}!system@{system}}
+\index{system@{system}!loadspeed.\+js@{loadspeed.\+js}}
+\subsubsection[{\texorpdfstring{system}{system}}]{\setlength{\rightskip}{0pt plus 5cm}var system = require(\textquotesingle{}system\textquotesingle{})}\hypertarget{loadspeed_8js_acdb77dc97eb44e91baaadd41d9d078fc}{}\label{loadspeed_8js_acdb77dc97eb44e91baaadd41d9d078fc}
+\index{loadspeed.\+js@{loadspeed.\+js}!t@{t}}
+\index{t@{t}!loadspeed.\+js@{loadspeed.\+js}}
+\subsubsection[{\texorpdfstring{t}{t}}]{\setlength{\rightskip}{0pt plus 5cm}var t}\hypertarget{loadspeed_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{}\label{loadspeed_8js_a5459dd59c2ac7c323d9ca8bca22ff249}

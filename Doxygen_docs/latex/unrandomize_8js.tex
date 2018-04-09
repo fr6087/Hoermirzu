@@ -1,0 +1,48 @@
+\hypertarget{unrandomize_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/unrandomize.js File Reference}
+\label{unrandomize_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/unrandomize.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/unrandomize.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{unrandomize_8js_ac0701279064cb68d2d15c40a97c34407}{open} (\textquotesingle{}http\+:var result;\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(status!== \textquotesingle{}success\textquotesingle{})\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}Network error.\textquotesingle{});\}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{page.\+evaluate}(function()\{                                       return document.\+get\+Element\+By\+Id(\textquotesingle{}numbers\textquotesingle{}).text\+Content;                       \}));\}\hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{unrandomize_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{unrandomize_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{unrandomize_8js_a54c7495028ac9167fd70c44348a1fbb9}{on\+Initialized}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{unrandomize.\+js@{unrandomize.\+js}!open@{open}}
+\index{open@{open}!unrandomize.\+js@{unrandomize.\+js}}
+\subsubsection[{\texorpdfstring{open(\textquotesingle{}http\+:var result;if(status"!== \textquotesingle{}success\textquotesingle{})\lcurly{}console.\+log(\textquotesingle{}\+Network error.\textquotesingle{});\rcurly{}else\lcurly{}console.\+log(page.\+evaluate(function()\lcurly{}                                       return document.\+get\+Element\+By\+Id(\textquotesingle{}numbers\textquotesingle{}).\+text\+Content;                       \rcurly{}));\rcurly{}phantom.\+exit();\rcurly{})}{open('http:var result;if(status!== 'success')\{console.log('Network error.');\}else\{console.log(page.evaluate(function()\{                                       return document.getElementById('numbers').textContent;                       \}));\}phantom.exit();\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} open (
+\begin{DoxyParamCaption}
+\item[{\textquotesingle{}http\+:var result;{\bf if}(status!== \textquotesingle{}success\textquotesingle{})\{{\bf console.\+log}(\textquotesingle{}Network error.\textquotesingle{});\}{\bf else}\{{\bf console.\+log}({\bf page.\+evaluate}(function()\{                                                                                                                                                   return document.\+get\+Element\+By\+Id(\textquotesingle{}numbers\textquotesingle{}).text\+Content;                                                                                   \}));\}{\bf phantom.\+exit}();\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{unrandomize_8js_ac0701279064cb68d2d15c40a97c34407}{}\label{unrandomize_8js_ac0701279064cb68d2d15c40a97c34407}
+
+
+\subsection{Variable Documentation}
+\index{unrandomize.\+js@{unrandomize.\+js}!on\+Initialized@{on\+Initialized}}
+\index{on\+Initialized@{on\+Initialized}!unrandomize.\+js@{unrandomize.\+js}}
+\subsubsection[{\texorpdfstring{on\+Initialized}{onInitialized}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Initialized}\hypertarget{unrandomize_8js_a54c7495028ac9167fd70c44348a1fbb9}{}\label{unrandomize_8js_a54c7495028ac9167fd70c44348a1fbb9}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function} () \{
+    \hyperlink{unrandomize_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page}.evaluate(\textcolor{keyword}{function} () \{
+        Math.random = \textcolor{keyword}{function}() \{
+            \textcolor{keywordflow}{return} 42 / 100;
+        \};
+    \});
+\}
+\end{DoxyCode}
+\index{unrandomize.\+js@{unrandomize.\+js}!page@{page}}
+\index{page@{page}!unrandomize.\+js@{unrandomize.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{unrandomize_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{unrandomize_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+\index{unrandomize.\+js@{unrandomize.\+js}!strict@{strict}}
+\index{strict@{strict}!unrandomize.\+js@{unrandomize.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{unrandomize_8js_ae2475e10618961c050dcba04e8c42331}{}\label{unrandomize_8js_ae2475e10618961c050dcba04e8c42331}

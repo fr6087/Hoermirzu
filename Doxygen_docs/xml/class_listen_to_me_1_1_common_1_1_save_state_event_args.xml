@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_common_1_1_save_state_event_args" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::Common::SaveStateEventArgs</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">EventArgs</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_common_1_1_save_state_event_args_1a190dff500fde23905bd505e403c47be3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Dictionary&lt; string, Object &gt;</type>
+        <definition>Dictionary&lt;string, Object&gt; ListenToMe.Common.SaveStateEventArgs.PageState</definition>
+        <argsstring></argsstring>
+        <name>PageState</name>
+        <briefdescription>
+<para>An empty dictionary to be populated with serializable state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="375" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_save_state_event_args_1a73b5192276a1daa51a69d042b5e9b977" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.Common.SaveStateEventArgs.SaveStateEventArgs</definition>
+        <argsstring>(Dictionary&lt; string, Object &gt; pageState)</argsstring>
+        <name>SaveStateEventArgs</name>
+        <param>
+          <type>Dictionary&lt; string, Object &gt;</type>
+          <declname>pageState</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_listen_to_me_1_1_common_1_1_save_state_event_args" kindref="compound">SaveStateEventArgs</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pageState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An empty dictionary to be populated with serializable state.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="381" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="381" bodyend="385"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class used to hold the event data required when a page attempts to save state. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="114">
+        <label>EventArgs</label>
+      </node>
+      <node id="113">
+        <label>ListenToMe.Common.SaveStateEventArgs</label>
+        <link refid="class_listen_to_me_1_1_common_1_1_save_state_event_args"/>
+        <childnode refid="114" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="116">
+        <label>EventArgs</label>
+      </node>
+      <node id="115">
+        <label>ListenToMe.Common.SaveStateEventArgs</label>
+        <link refid="class_listen_to_me_1_1_common_1_1_save_state_event_args"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="371" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="370" bodyend="386"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_common_1_1_save_state_event_args_1a190dff500fde23905bd505e403c47be3" prot="public" virt="non-virtual"><scope>ListenToMe::Common::SaveStateEventArgs</scope><name>PageState</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_save_state_event_args_1a73b5192276a1daa51a69d042b5e9b977" prot="public" virt="non-virtual"><scope>ListenToMe::Common::SaveStateEventArgs</scope><name>SaveStateEventArgs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

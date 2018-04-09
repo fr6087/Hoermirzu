@@ -1,0 +1,256 @@
+\hypertarget{page__events_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/page\+\_\+events.js File Reference}
+\label{page__events_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/page\+\_\+events.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/page\+\_\+events.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{page__events_8js_ac1d7bcad16d33532771308330bd40e78}{if} (sys.\+args.\+length $>$ 1 \&\&\hyperlink{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{sys.\+args}\mbox{[}1\mbox{]}===\char`\"{}-\/v\char`\"{})
+\item 
+function \hyperlink{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{print\+Args} ()
+\item 
+\hyperlink{page__events_8js_aae76d65a2763ecc478f95fa9d7ba1eb1}{if} (\hyperlink{page__events_8js_ad0e9d1c2904f522842419975e94bceeb}{log\+Resources}===true)
+\item 
+\hyperlink{page__events_8js_ade245ee708b346c7f822a576459e3674}{set\+Timeout} (function()\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\char`\"{}\char`\"{});\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\char`\"{}\#\#\# S\+T\+EP 1\+: Load \textquotesingle{}\char`\"{}+step1url+\char`\"{}\textquotesingle{}\char`\"{});\hyperlink{walk__through__frames_8js_aec54d1c4fc3b584d221c6fed2195c597}{page.\+open}(\hyperlink{page__events_8js_ace905f7ca75e88f53a244cbbd42305ec}{step1url});\}, 0)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{page__events_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{page__events_8js_aa858592e14c9dcfdf455375962b13ff5}{sys} = require(\char`\"{}system\char`\"{})
+\item 
+var \hyperlink{page__events_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\char`\"{}webpage\char`\"{}).create()
+\item 
+var \hyperlink{page__events_8js_ad0e9d1c2904f522842419975e94bceeb}{log\+Resources} = false
+\item 
+var \hyperlink{page__events_8js_ace905f7ca75e88f53a244cbbd42305ec}{step1url} = \char`\"{}http\+://en.\+wikipedia.\+org/wiki/D\+O\+M\+\_\+events\char`\"{}
+\item 
+var \hyperlink{page__events_8js_a6adf17d14b7e877e37accb3123fa1a92}{step2url} = \char`\"{}http\+://en.\+wikipedia.\+org/wiki/D\+O\+M\+\_\+events\#Event\+\_\+flow\char`\"{}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{page__events_8js_a54c7495028ac9167fd70c44348a1fbb9}{on\+Initialized}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{page__events_8js_a14bc9832407adb3a671bcbe5ce829b19}{on\+Load\+Started}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{page__events_8js_ae73e931ad516cebbf44790c8b2fef523}{on\+Load\+Finished}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{page__events_8js_aa42b9de03d02108fded37dc9f9b45889}{on\+Url\+Changed}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{page__events_8js_a47d06f9952755085a4cc11537305fe4b}{on\+Navigation\+Requested}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{page__events_8js_a470fc5e5ccfb0550648103282d9df549}{on\+Repaint\+Requested}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{page__events_8js_ace13ff69712d1661e4697dbef0b9a407}{on\+Closing}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{page__events_8js_a87e6a5ff0ebb4d272a04b52dd70224c6}{on\+Console\+Message}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{page__events_8js_a52385173eaa7b65312e4163ee1ec4766}{on\+Alert}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{page__events_8js_a9c24bc595624bf49d0e433f647f6d1df}{on\+Confirm}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{page__events_8js_a998b2fc806a9a7ece1cbc2e0b4a6b109}{on\+Prompt}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!if@{if}}
+\index{if@{if}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{if(sys.\+args.\+length $>$ 1 \&\&sys.\+args[1]===""-\/v"")}{if(sys.args.length > 1 &&sys.args[1]==="-v")}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{sys.\+args.}]{length, }
+\item[{1 \&\&sys.}]{args\mbox{[}1\mbox{]} = {\ttfamily ==~\char`\"{}-\/v\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{page__events_8js_ac1d7bcad16d33532771308330bd40e78}{}\label{page__events_8js_ac1d7bcad16d33532771308330bd40e78}
+
+
+References log\+Resources.
+
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!if@{if}}
+\index{if@{if}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{if(log\+Resources===true)}{if(logResources===true)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{}]{log\+Resources = {\ttfamily ==~true}}
+\end{DoxyParamCaption}
+)}\hypertarget{page__events_8js_aae76d65a2763ecc478f95fa9d7ba1eb1}{}\label{page__events_8js_aae76d65a2763ecc478f95fa9d7ba1eb1}
+
+
+References page, and print\+Args().
+
+
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!print\+Args@{print\+Args}}
+\index{print\+Args@{print\+Args}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{print\+Args()}{printArgs()}}]{\setlength{\rightskip}{0pt plus 5cm}function print\+Args (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{}\label{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}
+
+
+Referenced by if().
+
+
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!set\+Timeout@{set\+Timeout}}
+\index{set\+Timeout@{set\+Timeout}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{set\+Timeout(function()\lcurly{}console.\+log("""");console.\+log(""\#\#\# S\+T\+E\+P 1\+: Load \textquotesingle{}""+step1url+""\textquotesingle{}"");page.\+open(step1url);\rcurly{}, 0)}{setTimeout(function()\{console.log("");console.log("### STEP 1: Load '"+step1url+"'");page.open(step1url);\}, 0)}}]{\setlength{\rightskip}{0pt plus 5cm}set\+Timeout (
+\begin{DoxyParamCaption}
+\item[{function()\{{\bf console.\+log}(\char`\"{}\char`\"{});{\bf console.\+log}(\char`\"{}\#\#\# S\+T\+EP 1\+: Load \textquotesingle{}\char`\"{}+step1url+\char`\"{}\textquotesingle{}\char`\"{});{\bf page.\+open}({\bf step1url});\}}]{, }
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{page__events_8js_ade245ee708b346c7f822a576459e3674}{}\label{page__events_8js_ade245ee708b346c7f822a576459e3674}
+
+
+Referenced by Search\+Box(), and sleep\+Sort().
+
+
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+
+
+\subsection{Variable Documentation}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!log\+Resources@{log\+Resources}}
+\index{log\+Resources@{log\+Resources}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{log\+Resources}{logResources}}]{\setlength{\rightskip}{0pt plus 5cm}var log\+Resources = false}\hypertarget{page__events_8js_ad0e9d1c2904f522842419975e94bceeb}{}\label{page__events_8js_ad0e9d1c2904f522842419975e94bceeb}
+
+
+Referenced by if().
+
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!on\+Alert@{on\+Alert}}
+\index{on\+Alert@{on\+Alert}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{on\+Alert}{onAlert}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Alert}\hypertarget{page__events_8js_a52385173eaa7b65312e4163ee1ec4766}{}\label{page__events_8js_a52385173eaa7b65312e4163ee1ec4766}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    console.log(\textcolor{stringliteral}{"page.onAlert"});
+    \hyperlink{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{printArgs}.apply(\textcolor{keyword}{this}, arguments);
+\}
+\end{DoxyCode}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!on\+Closing@{on\+Closing}}
+\index{on\+Closing@{on\+Closing}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{on\+Closing}{onClosing}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Closing}\hypertarget{page__events_8js_ace13ff69712d1661e4697dbef0b9a407}{}\label{page__events_8js_ace13ff69712d1661e4697dbef0b9a407}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    console.log(\textcolor{stringliteral}{"page.onClosing"});
+    \hyperlink{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{printArgs}.apply(\textcolor{keyword}{this}, arguments);
+\}
+\end{DoxyCode}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!on\+Confirm@{on\+Confirm}}
+\index{on\+Confirm@{on\+Confirm}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{on\+Confirm}{onConfirm}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Confirm}\hypertarget{page__events_8js_a9c24bc595624bf49d0e433f647f6d1df}{}\label{page__events_8js_a9c24bc595624bf49d0e433f647f6d1df}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    console.log(\textcolor{stringliteral}{"page.onConfirm"});
+    \hyperlink{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{printArgs}.apply(\textcolor{keyword}{this}, arguments);
+\}
+\end{DoxyCode}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!on\+Console\+Message@{on\+Console\+Message}}
+\index{on\+Console\+Message@{on\+Console\+Message}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{on\+Console\+Message}{onConsoleMessage}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Console\+Message}\hypertarget{page__events_8js_a87e6a5ff0ebb4d272a04b52dd70224c6}{}\label{page__events_8js_a87e6a5ff0ebb4d272a04b52dd70224c6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    console.log(\textcolor{stringliteral}{"page.onConsoleMessage"});
+    \hyperlink{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{printArgs}.apply(\textcolor{keyword}{this}, arguments);
+\}
+\end{DoxyCode}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!on\+Initialized@{on\+Initialized}}
+\index{on\+Initialized@{on\+Initialized}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{on\+Initialized}{onInitialized}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Initialized}\hypertarget{page__events_8js_a54c7495028ac9167fd70c44348a1fbb9}{}\label{page__events_8js_a54c7495028ac9167fd70c44348a1fbb9}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    console.log(\textcolor{stringliteral}{"page.onInitialized"});
+    \hyperlink{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{printArgs}.apply(\textcolor{keyword}{this}, arguments);
+\}
+\end{DoxyCode}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!on\+Load\+Finished@{on\+Load\+Finished}}
+\index{on\+Load\+Finished@{on\+Load\+Finished}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{on\+Load\+Finished}{onLoadFinished}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Load\+Finished}\hypertarget{page__events_8js_ae73e931ad516cebbf44790c8b2fef523}{}\label{page__events_8js_ae73e931ad516cebbf44790c8b2fef523}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    console.log(\textcolor{stringliteral}{"page.onLoadFinished"});
+    \hyperlink{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{printArgs}.apply(\textcolor{keyword}{this}, arguments);
+\}
+\end{DoxyCode}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!on\+Load\+Started@{on\+Load\+Started}}
+\index{on\+Load\+Started@{on\+Load\+Started}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{on\+Load\+Started}{onLoadStarted}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Load\+Started}\hypertarget{page__events_8js_a14bc9832407adb3a671bcbe5ce829b19}{}\label{page__events_8js_a14bc9832407adb3a671bcbe5ce829b19}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    console.log(\textcolor{stringliteral}{"page.onLoadStarted"});
+    \hyperlink{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{printArgs}.apply(\textcolor{keyword}{this}, arguments);
+\}
+\end{DoxyCode}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!on\+Navigation\+Requested@{on\+Navigation\+Requested}}
+\index{on\+Navigation\+Requested@{on\+Navigation\+Requested}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{on\+Navigation\+Requested}{onNavigationRequested}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Navigation\+Requested}\hypertarget{page__events_8js_a47d06f9952755085a4cc11537305fe4b}{}\label{page__events_8js_a47d06f9952755085a4cc11537305fe4b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    console.log(\textcolor{stringliteral}{"page.onNavigationRequested"});
+    \hyperlink{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{printArgs}.apply(\textcolor{keyword}{this}, arguments);
+\}
+\end{DoxyCode}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!on\+Prompt@{on\+Prompt}}
+\index{on\+Prompt@{on\+Prompt}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{on\+Prompt}{onPrompt}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Prompt}\hypertarget{page__events_8js_a998b2fc806a9a7ece1cbc2e0b4a6b109}{}\label{page__events_8js_a998b2fc806a9a7ece1cbc2e0b4a6b109}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    console.log(\textcolor{stringliteral}{"page.onPrompt"});
+    \hyperlink{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{printArgs}.apply(\textcolor{keyword}{this}, arguments);
+\}
+\end{DoxyCode}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!on\+Repaint\+Requested@{on\+Repaint\+Requested}}
+\index{on\+Repaint\+Requested@{on\+Repaint\+Requested}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{on\+Repaint\+Requested}{onRepaintRequested}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Repaint\+Requested}\hypertarget{page__events_8js_a470fc5e5ccfb0550648103282d9df549}{}\label{page__events_8js_a470fc5e5ccfb0550648103282d9df549}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    console.log(\textcolor{stringliteral}{"page.onRepaintRequested"});
+    \hyperlink{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{printArgs}.apply(\textcolor{keyword}{this}, arguments);
+\}
+\end{DoxyCode}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!on\+Url\+Changed@{on\+Url\+Changed}}
+\index{on\+Url\+Changed@{on\+Url\+Changed}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{on\+Url\+Changed}{onUrlChanged}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Url\+Changed}\hypertarget{page__events_8js_aa42b9de03d02108fded37dc9f9b45889}{}\label{page__events_8js_aa42b9de03d02108fded37dc9f9b45889}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    console.log(\textcolor{stringliteral}{"page.onUrlChanged"});
+    \hyperlink{page__events_8js_aff22b500b7d4bca203bdfc4ff6ec7746}{printArgs}.apply(\textcolor{keyword}{this}, arguments);
+\}
+\end{DoxyCode}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!page@{page}}
+\index{page@{page}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\char`\"{}webpage\char`\"{}).create()}\hypertarget{page__events_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{page__events_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+
+
+Referenced by if().
+
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!step1url@{step1url}}
+\index{step1url@{step1url}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{step1url}{step1url}}]{\setlength{\rightskip}{0pt plus 5cm}var step1url = \char`\"{}http\+://en.\+wikipedia.\+org/wiki/D\+O\+M\+\_\+events\char`\"{}}\hypertarget{page__events_8js_ace905f7ca75e88f53a244cbbd42305ec}{}\label{page__events_8js_ace905f7ca75e88f53a244cbbd42305ec}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!step2url@{step2url}}
+\index{step2url@{step2url}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{step2url}{step2url}}]{\setlength{\rightskip}{0pt plus 5cm}var step2url = \char`\"{}http\+://en.\+wikipedia.\+org/wiki/D\+O\+M\+\_\+events\#Event\+\_\+flow\char`\"{}}\hypertarget{page__events_8js_a6adf17d14b7e877e37accb3123fa1a92}{}\label{page__events_8js_a6adf17d14b7e877e37accb3123fa1a92}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!strict@{strict}}
+\index{strict@{strict}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{page__events_8js_ae2475e10618961c050dcba04e8c42331}{}\label{page__events_8js_ae2475e10618961c050dcba04e8c42331}
+\index{page\+\_\+events.\+js@{page\+\_\+events.\+js}!sys@{sys}}
+\index{sys@{sys}!page\+\_\+events.\+js@{page\+\_\+events.\+js}}
+\subsubsection[{\texorpdfstring{sys}{sys}}]{\setlength{\rightskip}{0pt plus 5cm}var sys = require(\char`\"{}system\char`\"{})}\hypertarget{page__events_8js_aa858592e14c9dcfdf455375962b13ff5}{}\label{page__events_8js_aa858592e14c9dcfdf455375962b13ff5}

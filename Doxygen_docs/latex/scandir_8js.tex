@@ -1,0 +1,71 @@
+\hypertarget{scandir_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/scandir.js File Reference}
+\label{scandir_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/scandir.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/scandir.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{scandir_8js_a257c1144ed4804cfc7074491c5f634f2}{if} (system.\+args.\+length!==2)
+\item 
+\hyperlink{scandir_8js_a72121a65c97422d955a809682871cfd7}{scan\+Directory} (\hyperlink{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{system.\+args}\mbox{[}1\mbox{]})
+\item 
+phantom \hyperlink{scandir_8js_a01fca00da67a8c60470b440fa7083bf7}{exit} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{scandir_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{scandir_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system} = require(\textquotesingle{}system\textquotesingle{})
+\item 
+var \hyperlink{scandir_8js_acd773039700242b55c6437cedc12a44b}{scan\+Directory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{scandir.\+js@{scandir.\+js}!exit@{exit}}
+\index{exit@{exit}!scandir.\+js@{scandir.\+js}}
+\subsubsection[{\texorpdfstring{exit()}{exit()}}]{\setlength{\rightskip}{0pt plus 5cm}phantom exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{scandir_8js_a01fca00da67a8c60470b440fa7083bf7}{}\label{scandir_8js_a01fca00da67a8c60470b440fa7083bf7}
+\index{scandir.\+js@{scandir.\+js}!if@{if}}
+\index{if@{if}!scandir.\+js@{scandir.\+js}}
+\subsubsection[{\texorpdfstring{if(system.\+args.\+length"!==2)}{if(system.args.length!==2)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{}]{system.\+args.\+length! = {\ttfamily =~2}}
+\end{DoxyParamCaption}
+)}\hypertarget{scandir_8js_a257c1144ed4804cfc7074491c5f634f2}{}\label{scandir_8js_a257c1144ed4804cfc7074491c5f634f2}
+\index{scandir.\+js@{scandir.\+js}!scan\+Directory@{scan\+Directory}}
+\index{scan\+Directory@{scan\+Directory}!scandir.\+js@{scandir.\+js}}
+\subsubsection[{\texorpdfstring{scan\+Directory(system.\+args[1])}{scanDirectory(system.args[1])}}]{\setlength{\rightskip}{0pt plus 5cm}scan\+Directory (
+\begin{DoxyParamCaption}
+\item[{system.}]{args\mbox{[}1\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{scandir_8js_a72121a65c97422d955a809682871cfd7}{}\label{scandir_8js_a72121a65c97422d955a809682871cfd7}
+
+
+\subsection{Variable Documentation}
+\index{scandir.\+js@{scandir.\+js}!scan\+Directory@{scan\+Directory}}
+\index{scan\+Directory@{scan\+Directory}!scandir.\+js@{scandir.\+js}}
+\subsubsection[{\texorpdfstring{scan\+Directory}{scanDirectory}}]{\setlength{\rightskip}{0pt plus 5cm}var scan\+Directory}\hypertarget{scandir_8js_acd773039700242b55c6437cedc12a44b}{}\label{scandir_8js_acd773039700242b55c6437cedc12a44b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function} (path) \{
+    var \hyperlink{echo_to_file_8js_aebcdd70130f7e0b00b39cc981ab0bab0}{fs} = require(\textcolor{stringliteral}{'fs'});
+    \textcolor{keywordflow}{if} (fs.exists(path) && fs.isFile(path)) \{
+        console.log(path);
+    \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fs.isDirectory(path)) \{
+        fs.list(path).forEach(\textcolor{keyword}{function} (e) \{
+            \textcolor{keywordflow}{if} ( e !== \textcolor{stringliteral}{"."} && e !== \textcolor{stringliteral}{".."} ) \{    
+                \hyperlink{scandir_8js_acd773039700242b55c6437cedc12a44b}{scanDirectory}(path + \textcolor{charliteral}{'/'} + e);
+            \}
+        \});
+    \}
+\}
+\end{DoxyCode}
+\index{scandir.\+js@{scandir.\+js}!strict@{strict}}
+\index{strict@{strict}!scandir.\+js@{scandir.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{scandir_8js_ae2475e10618961c050dcba04e8c42331}{}\label{scandir_8js_ae2475e10618961c050dcba04e8c42331}
+\index{scandir.\+js@{scandir.\+js}!system@{system}}
+\index{system@{system}!scandir.\+js@{scandir.\+js}}
+\subsubsection[{\texorpdfstring{system}{system}}]{\setlength{\rightskip}{0pt plus 5cm}var system = require(\textquotesingle{}system\textquotesingle{})}\hypertarget{scandir_8js_acdb77dc97eb44e91baaadd41d9d078fc}{}\label{scandir_8js_acdb77dc97eb44e91baaadd41d9d078fc}

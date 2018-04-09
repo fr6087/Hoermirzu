@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1my_inputs" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::myInputs</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1my_inputs_1a6e63baf613d06d2fe0c196e3214c7b47" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ListenToMe.myInputs.canonicalForm</definition>
+        <argsstring></argsstring>
+        <name>canonicalForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="969" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="969" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1my_inputs_1afa576673bde85df5836d17fb36f2d949" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>ObservableCollection&lt; String &gt;</type>
+        <definition>ObservableCollection&lt;String&gt; ListenToMe.myInputs.list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="971" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="971" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>used for experimenting with path updating the LUIS model. did not work so far. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="965" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="964" bodyend="973"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1my_inputs_1a6e63baf613d06d2fe0c196e3214c7b47" prot="public" virt="non-virtual"><scope>ListenToMe::myInputs</scope><name>canonicalForm</name></member>
+      <member refid="class_listen_to_me_1_1my_inputs_1afa576673bde85df5836d17fb36f2d949" prot="public" virt="non-virtual"><scope>ListenToMe::myInputs</scope><name>list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

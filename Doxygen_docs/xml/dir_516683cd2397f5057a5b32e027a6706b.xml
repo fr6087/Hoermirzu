@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_516683cd2397f5057a5b32e027a6706b" kind="dir">
+    <compoundname>C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View</compoundname>
+    <innerfile refid="_disambiguate_view_8xaml_8cs">DisambiguateView.xaml.cs</innerfile>
+    <innerfile refid="_section_details_8xaml_8cs">SectionDetails.xaml.cs</innerfile>
+    <innerfile refid="_section_list_view_8xaml_8cs">SectionListView.xaml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/"/>
+  </compounddef>
+</doxygen>

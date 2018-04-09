@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_listen_to_me_1_1_view" kind="namespace" language="C#">
+    <compoundname>ListenToMe::View</compoundname>
+    <innerclass refid="class_listen_to_me_1_1_view_1_1_disambiguate_view" prot="public">ListenToMe::View::DisambiguateView</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_view_1_1_section_details" prot="public">ListenToMe::View::SectionDetails</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_view_1_1_section_list_view" prot="public">ListenToMe::View::SectionListView</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/DisambiguateView.xaml.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

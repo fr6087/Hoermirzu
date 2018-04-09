@@ -1,0 +1,109 @@
+\hypertarget{class_listen_to_me_1_1_view_model_1_1_section_view_model}{}\section{Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model Class Reference}
+\label{class_listen_to_me_1_1_view_model_1_1_section_view_model}\index{Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model@{Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model}}
+
+
+\hyperlink{namespace_listen_to_me_1_1_view}{View} \hyperlink{namespace_listen_to_me_1_1_model}{Model} associated with Section\+Details.\+xaml. Provides access to an individual Section, and Commands for saving new, updating existing, and deleting Sections. Is able to both create brand new Sections, and edit existing Sections, hiding buttons that should not be accessible in some cases.  
+
+
+
+
+Inheritance diagram for Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_listen_to_me_1_1_view_model_1_1_section_view_model__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_listen_to_me_1_1_view_model_1_1_section_view_model_a622922d8160810c017cbe323966da8cd}{Section\+View\+Model} (\hyperlink{class_listen_to_me_1_1_model_1_1_form}{Model.\+Form} store)
+\begin{DoxyCompactList}\small\item\em Construct Section \hyperlink{namespace_listen_to_me_1_1_view_model}{View\+Model}, providing the store to persist Sections. Creates the Relay\+Commands to be bound to various buttons in the UI. \end{DoxyCompactList}\item 
+async Task \hyperlink{class_listen_to_me_1_1_view_model_1_1_section_view_model_a47ce8676fc601da4752a2ddab8d2250a}{Update\+Destination\+Phrase\+List} ()
+\begin{DoxyCompactList}\small\item\em Whenever a Section is modified, we trigger an update of the voice command Phrase list. This allows voice commands such as "Adventure Works Show Section to \{destination\} to be up to date with saved Sections. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Section \hyperlink{class_listen_to_me_1_1_view_model_1_1_section_view_model_ac1ac47e03f46b5fe9945f66cfbb03fa7}{Section}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Section this view model represents. \end{DoxyCompactList}\item 
+String \hyperlink{class_listen_to_me_1_1_view_model_1_1_section_view_model_a6cd72ba0cad2236b996d642a70b22bfa}{Destination\+Validation\+Error}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em We require that a destination be set to a non-\/empty string. If the user attempts to save without one, this will be set to an explanatory validation prompt to be rendered in the UI. \end{DoxyCompactList}\item 
+bool \hyperlink{class_listen_to_me_1_1_view_model_1_1_section_view_model_a82a97f1530d04dd2f88d29b886cc6593}{Show\+Destination\+Validation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether the Text\+Block that contains the destination validation string is visible. Combined with the Visibility\+Converter, can show or collapse elements. \end{DoxyCompactList}\item 
+bool \hyperlink{class_listen_to_me_1_1_view_model_1_1_section_view_model_a24849a3722acd4b1d7d3bf227af05674}{Show\+Delete}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether the Button that deletes Sections is shown. If creating a new Section, this is false. Otherwise, true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{namespace_listen_to_me_1_1_view}{View} \hyperlink{namespace_listen_to_me_1_1_model}{Model} associated with Section\+Details.\+xaml. Provides access to an individual Section, and Commands for saving new, updating existing, and deleting Sections. Is able to both create brand new Sections, and edit existing Sections, hiding buttons that should not be accessible in some cases. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model@{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model}!Section\+View\+Model@{Section\+View\+Model}}
+\index{Section\+View\+Model@{Section\+View\+Model}!Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model@{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model}}
+\subsubsection[{\texorpdfstring{Section\+View\+Model(\+Model.\+Form store)}{SectionViewModel(Model.Form store)}}]{\setlength{\rightskip}{0pt plus 5cm}Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model.\+Section\+View\+Model (
+\begin{DoxyParamCaption}
+\item[{{\bf Model.\+Form}}]{store}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_view_model_1_1_section_view_model_a622922d8160810c017cbe323966da8cd}{}\label{class_listen_to_me_1_1_view_model_1_1_section_view_model_a622922d8160810c017cbe323966da8cd}
+
+
+Construct Section \hyperlink{namespace_listen_to_me_1_1_view_model}{View\+Model}, providing the store to persist Sections. Creates the Relay\+Commands to be bound to various buttons in the UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em store} & The persistent store\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model@{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model}!Update\+Destination\+Phrase\+List@{Update\+Destination\+Phrase\+List}}
+\index{Update\+Destination\+Phrase\+List@{Update\+Destination\+Phrase\+List}!Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model@{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model}}
+\subsubsection[{\texorpdfstring{Update\+Destination\+Phrase\+List()}{UpdateDestinationPhraseList()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model.\+Update\+Destination\+Phrase\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_view_model_1_1_section_view_model_a47ce8676fc601da4752a2ddab8d2250a}{}\label{class_listen_to_me_1_1_view_model_1_1_section_view_model_a47ce8676fc601da4752a2ddab8d2250a}
+
+
+Whenever a Section is modified, we trigger an update of the voice command Phrase list. This allows voice commands such as "Adventure Works Show Section to \{destination\} to be up to date with saved Sections. 
+
+
+
+\subsection{Property Documentation}
+\index{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model@{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model}!Destination\+Validation\+Error@{Destination\+Validation\+Error}}
+\index{Destination\+Validation\+Error@{Destination\+Validation\+Error}!Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model@{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model}}
+\subsubsection[{\texorpdfstring{Destination\+Validation\+Error}{DestinationValidationError}}]{\setlength{\rightskip}{0pt plus 5cm}String Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model.\+Destination\+Validation\+Error\hspace{0.3cm}{\ttfamily [get]}}\hypertarget{class_listen_to_me_1_1_view_model_1_1_section_view_model_a6cd72ba0cad2236b996d642a70b22bfa}{}\label{class_listen_to_me_1_1_view_model_1_1_section_view_model_a6cd72ba0cad2236b996d642a70b22bfa}
+
+
+We require that a destination be set to a non-\/empty string. If the user attempts to save without one, this will be set to an explanatory validation prompt to be rendered in the UI. 
+
+\index{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model@{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model}!Section@{Section}}
+\index{Section@{Section}!Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model@{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model}}
+\subsubsection[{\texorpdfstring{Section}{Section}}]{\setlength{\rightskip}{0pt plus 5cm}Section Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model.\+Section\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_listen_to_me_1_1_view_model_1_1_section_view_model_ac1ac47e03f46b5fe9945f66cfbb03fa7}{}\label{class_listen_to_me_1_1_view_model_1_1_section_view_model_ac1ac47e03f46b5fe9945f66cfbb03fa7}
+
+
+The Section this view model represents. 
+
+\index{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model@{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model}!Show\+Delete@{Show\+Delete}}
+\index{Show\+Delete@{Show\+Delete}!Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model@{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model}}
+\subsubsection[{\texorpdfstring{Show\+Delete}{ShowDelete}}]{\setlength{\rightskip}{0pt plus 5cm}bool Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model.\+Show\+Delete\hspace{0.3cm}{\ttfamily [get]}}\hypertarget{class_listen_to_me_1_1_view_model_1_1_section_view_model_a24849a3722acd4b1d7d3bf227af05674}{}\label{class_listen_to_me_1_1_view_model_1_1_section_view_model_a24849a3722acd4b1d7d3bf227af05674}
+
+
+Controls whether the Button that deletes Sections is shown. If creating a new Section, this is false. Otherwise, true. 
+
+\index{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model@{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model}!Show\+Destination\+Validation@{Show\+Destination\+Validation}}
+\index{Show\+Destination\+Validation@{Show\+Destination\+Validation}!Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model@{Listen\+To\+Me\+::\+View\+Model\+::\+Section\+View\+Model}}
+\subsubsection[{\texorpdfstring{Show\+Destination\+Validation}{ShowDestinationValidation}}]{\setlength{\rightskip}{0pt plus 5cm}bool Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model.\+Show\+Destination\+Validation\hspace{0.3cm}{\ttfamily [get]}}\hypertarget{class_listen_to_me_1_1_view_model_1_1_section_view_model_a82a97f1530d04dd2f88d29b886cc6593}{}\label{class_listen_to_me_1_1_view_model_1_1_section_view_model_a82a97f1530d04dd2f88d29b886cc6593}
+
+
+Controls whether the Text\+Block that contains the destination validation string is visible. Combined with the Visibility\+Converter, can show or collapse elements. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Listen\+To\+Me/\+View\+Model/Section\+View\+Model.\+cs\end{DoxyCompactItemize}

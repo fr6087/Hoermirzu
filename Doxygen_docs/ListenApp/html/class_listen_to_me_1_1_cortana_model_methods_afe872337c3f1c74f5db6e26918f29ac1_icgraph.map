@@ -1,0 +1,6 @@
+<map id="ListenToMe.CortanaModelMethods.UpdatePhraseList" name="ListenToMe.CortanaModelMethods.UpdatePhraseList">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_app.html#ac79758b58c56c49b87a3e2ff6a9ad638" title="The method ActivateVoiceCommands is calling an VoiceCommands.xml&#45;File from local storage to determine..." alt="" coords="280,23,479,65"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_app.html#ad23d27a2bdcd858e10e589bfadb1db17" title="initGui determines whether or not there is an active Windows Frame. It creates one for the applicatio..." alt="" coords="527,31,684,57"/>
+<area shape="rect" id="node4" href="$class_listen_to_me_1_1_app.html#ace89a3624e2de8cc528dea8b1288d03f" title="Is called as the application is started normally by the user. Other enty points are used for example ..." alt="" coords="732,5,925,32"/>
+<area shape="rect" id="node5" href="$class_listen_to_me_1_1_app.html#a3e2da49bb555b7fdc5858f5442d396e4" title="OnActivated is called whenever an external application e.g&#45; Cortana launches the ListenToMeApp ..." alt="" coords="733,56,924,83"/>
+</map>

@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form" kind="class" language="C#" prot="public">
+    <compoundname>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a7cda51e12dbb2e8f75d96cabb509cde5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Dialogs.BasicLuisDialog.ESF2CompanyDetailsForm.Vorname</definition>
+        <argsstring></argsstring>
+        <name>Vorname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="227" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1abda3f0affd1910b7c78b66b0221aea1e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Dialogs.BasicLuisDialog.ESF2CompanyDetailsForm.Nachname</definition>
+        <argsstring></argsstring>
+        <name>Nachname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="230" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="230" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a60ff5ff4544bdb7895325a5189c4578b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Dialogs.BasicLuisDialog.ESF2CompanyDetailsForm.Unternehmensname</definition>
+        <argsstring></argsstring>
+        <name>Unternehmensname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="233" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="233" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1afabb9f925bf242263f983416abc8cb39" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>String</type>
+        <definition>String LuisBot.Dialogs.BasicLuisDialog.ESF2CompanyDetailsForm.Straße</definition>
+        <argsstring></argsstring>
+        <name>Straße</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="235" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="235" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a7e1c525e67f4dafdcea2016061bbe615" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>String</type>
+        <definition>String LuisBot.Dialogs.BasicLuisDialog.ESF2CompanyDetailsForm.Hausnummer</definition>
+        <argsstring></argsstring>
+        <name>Hausnummer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="239" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="239" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a80cf51b11d6dddc70f9d835620948c59" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Dialogs.BasicLuisDialog.ESF2CompanyDetailsForm.Telefon</definition>
+        <argsstring></argsstring>
+        <name>Telefon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="242" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="242" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1aa2fc75f37b5477fe7038695b757a9603" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Dialogs.BasicLuisDialog.ESF2CompanyDetailsForm.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="246" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="246" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a60b1cee406743f369be0abc7629abc1a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Dialogs.BasicLuisDialog.ESF2CompanyDetailsForm.URL</definition>
+        <argsstring></argsstring>
+        <name>URL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="250" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="250" bodyend="250"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a2592b3e1a69b4b594d0e450961701e4e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IForm&lt; <ref refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form" kindref="compound">ESF2CompanyDetailsForm</ref> &gt;</type>
+        <definition>static IForm&lt;ESF2CompanyDetailsForm&gt; LuisBot.Dialogs.BasicLuisDialog.ESF2CompanyDetailsForm.BuildForm</definition>
+        <argsstring>()</argsstring>
+        <name>BuildForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="252" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="252" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1ad2e2bf2ada9337cfcbfab7a2002c1e87" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IForm&lt; <ref refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form" kindref="compound">ESF2CompanyDetailsForm</ref> &gt;</type>
+        <definition>static IForm&lt;ESF2CompanyDetailsForm&gt; LuisBot.Dialogs.BasicLuisDialog.ESF2CompanyDetailsForm.BuildLocalizedForm</definition>
+        <argsstring>()</argsstring>
+        <name>BuildLocalizedForm</name>
+        <briefdescription>
+<para>this is a method for conversinging in bot dialog&apos;s in multiple languages. However, the navigation language is still English(e.g.commands like yes or no in a confimation message.This is slightly dissatisfactory and brings thus no real advantage over BuildJsonFromForm </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Localized IForm (that is changes the UI-Culture of the bot messages)</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="266" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="266" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a6a12cc34432e160bd670e9f92a3fee4b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IForm&lt; JObject &gt;</type>
+        <definition>static IForm&lt;JObject&gt; LuisBot.Dialogs.BasicLuisDialog.ESF2CompanyDetailsForm.BuildJsonForm</definition>
+        <argsstring>()</argsstring>
+        <name>BuildJsonForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="298" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="298" bodyend="309"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class ESFCompanyDetailsForm is a static class modelling the input fields of a form. It is instantiated with FormBuider.Build() method.This is the easiest but also crudest way of having the bot filling in fields with user input. </para>    </briefdescription>
+    <detaileddescription>
+<para>The API for Prompts for example is not localizable meaning that if these Promps are used, there is only one language available in which is prompted. Since ListenToMe is using a dynamic webform with German, English and Polish, where the fields might change in the future, usage of this class is deprecated. ToDO search for alternatives </para>    </detaileddescription>
+    <location file="Dialogs/BasicLuisDialog.cs" line="225" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="224" bodyend="310"/>
+    <listofallmembers>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a2592b3e1a69b4b594d0e450961701e4e" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</scope><name>BuildForm</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a6a12cc34432e160bd670e9f92a3fee4b" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</scope><name>BuildJsonForm</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1ad2e2bf2ada9337cfcbfab7a2002c1e87" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</scope><name>BuildLocalizedForm</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1aa2fc75f37b5477fe7038695b757a9603" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</scope><name>Email</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a7e1c525e67f4dafdcea2016061bbe615" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</scope><name>Hausnummer</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1abda3f0affd1910b7c78b66b0221aea1e" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</scope><name>Nachname</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1afabb9f925bf242263f983416abc8cb39" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</scope><name>Straße</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a80cf51b11d6dddc70f9d835620948c59" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</scope><name>Telefon</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a60ff5ff4544bdb7895325a5189c4578b" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</scope><name>Unternehmensname</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a60b1cee406743f369be0abc7629abc1a" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</scope><name>URL</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a7cda51e12dbb2e8f75d96cabb509cde5" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</scope><name>Vorname</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

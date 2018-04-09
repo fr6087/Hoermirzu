@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AskForFieldFemale" xml:space="preserve">
+    <value>Was ist deine</value>
+  </data>
+  <data name="AskForFieldMaleNeutral" xml:space="preserve">
+    <value>Was ist dein</value>
+  </data>
+  <data name="AskForSave" xml:space="preserve">
+    <value>Möchtest du folgendes speichern:</value>
+  </data>
+  <data name="CompanyDetailsMessage" xml:space="preserve">
+    <value>Die Unternehmensangaben-Intention wurde erreicht</value>
+    <comment>You have reached the companydetails intent.</comment>
+  </data>
+  <data name="coordinates" xml:space="preserve">
+    <value>Du bist bei Breitengrad/Längengrad:</value>
+  </data>
+  <data name="FillInMessage" xml:space="preserve">
+    <value>Es wurde eine Feld-Ausfüll-Intention erkannt. Du sagtest:</value>
+    <comment>You have reached the fillin Intent intent. You said:</comment>
+  </data>
+  <data name="FormWelcomeMessage" xml:space="preserve">
+    <value>Willkommen. Ich bin dein Helfer um das ESF Formular auszufüllen. Ich werde dir eine Reihe von Fragen und dich auffordern, Dokumente hochzuladen. Wenn ich etwas nicht verstehe, sei mir nicht böse, denn ich lerne kontinuierlich hinzu. Tippe einmal "help" ein dann sage ich dir, welche Kommandos ich bereits kenne.</value>
+  </data>
+  <data name="GoBackMessage" xml:space="preserve">
+    <value>Die Zurückgehen-Intention wurde erreicht.</value>
+    <comment>You have reached the goBack intent. You said:</comment>
+  </data>
+  <data name="GotHelpedQuestion" xml:space="preserve">
+    <value>Hat das geholfen?</value>
+  </data>
+  <data name="GreetingMessage" xml:space="preserve">
+    <value>Ich bin dein Assistent beim Ausfüllen von Formularen. Versuche einmal 'Ich möchte die Unternehmensangaben im ESF_2 Formular ausfüllen'.</value>
+  </data>
+  <data name="hello" xml:space="preserve">
+    <value>Hallo</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>hilfe</value>
+  </data>
+  <data name="HelpClarification" xml:space="preserve">
+    <value>Was kann ich für dich tun?</value>
+  </data>
+  <data name="HelpSpeak" xml:space="preserve">
+    <value>In der Hilfe.</value>
+  </data>
+  <data name="HelpText" xml:space="preserve">
+    <value>Klar helfe ich dir.</value>
+  </data>
+  <data name="HelpTitel" xml:space="preserve">
+    <value>Sie können folgende Dialoge mit mir führen:</value>
+  </data>
+  <data name="HelpWelcomeMessage" xml:space="preserve">
+    <value>Willkommen in der Hilfe. Dieser Bot ist dazu da Formularangaben zu machen. Versuchen Sie 'Meine Firma ist innobis' um das Feld Firma zu füllen.</value>
+  </data>
+  <data name="hi" xml:space="preserve">
+    <value>hi</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>nein</value>
+  </data>
+  <data name="NoneMessage" xml:space="preserve">
+    <value>Es wurde keine spezielle Intention erkannt. Du sagtest:</value>
+    <comment>You have reached the none intent AGAIN. You said:</comment>
+  </data>
+  <data name="problem" xml:space="preserve">
+    <value>Problem</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>Deine Werte werden verarbeitet.</value>
+  </data>
+  <data name="regionalGreeting" xml:space="preserve">
+    <value>moin</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Soll ich diese Werte speichern?</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Gespeichert.</value>
+  </data>
+  <data name="support" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Thanks" xml:space="preserve">
+    <value>Danke.</value>
+  </data>
+  <data name="UploadOptions" xml:space="preserve">
+    <value>Uploadoptionen</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>ja</value>
+  </data>
+  <data name="OptionForm" xml:space="preserve">
+    <value>Formular</value>
+  </data>
+  <data name="OptionHelp" xml:space="preserve">
+    <value>Hilfe</value>
+  </data>
+  <data name="OptionLuis" xml:space="preserve">
+    <value>Sprachintentions-Erkennung</value>
+  </data>
+  <data name="OptionUpload" xml:space="preserve">
+    <value>Zeige Bilder</value>
+  </data>
+  <data name="AfterOrder" xml:space="preserve">
+    <value>Formular ausgefüllt</value>
+  </data>
+  <data name="AfterSupport" xml:space="preserve">
+    <value>Danke für die Support-Kontaktaufnahme. Deine Ticketnummer ist {ticketNumber}.");</value>
+  </data>
+  <data name="AskSelectDialog" xml:space="preserve">
+    <value>Suchst du ein Formular oder etwas anderes?</value>
+  </data>
+  <data name="Exception" xml:space="preserve">
+    <value>Ausnahme aufgetreten:</value>
+    <comment>Failed with message: {ex.Message}</comment>
+  </data>
+  <data name="StopUnexpected" xml:space="preserve">
+    <value>Du hast aufgehört. Nächstes Mal kannst du weiterarbeiten bei: </value>
+  </data>
+  <data name="TooManyAttempts" xml:space="preserve">
+    <value>Oh-oh. zu viele Versuche :(. Aber keine Sorge, ich kümmere mich um diesen Zusatnd und du kannst es erneut probieren.</value>
+  </data>
+  <data name="TryLater" xml:space="preserve">
+    <value>Entschuldigung, ich bin begriffsstutzig. Versuch es später noch mal.</value>
+  </data>
+  <data name="DialogRetry" xml:space="preserve">
+    <value>Diese Antwort verstehe ich nicht. Versuch es erneut, bitte.</value>
+  </data>
+  <data name="LuisNone" xml:space="preserve">
+    <value>Ich habe keine Intention hinter dieser Anfrage erkannt: </value>
+  </data>
+  <data name="UploadDialogOptionInline" xml:space="preserve">
+    <value>(1) Inine-Foto zeigen</value>
+  </data>
+  <data name="UploadDialogOptionService" xml:space="preserve">
+    <value>(2) Service Foto zeigen</value>
+  </data>
+  <data name="UploadDialogOptionWeb" xml:space="preserve">
+    <value>(3) Internet Foto</value>
+  </data>
+  <data name="UploadDialogPrompt" xml:space="preserve">
+    <value>Welche Fortoart würdest du gerne sehen?</value>
+  </data>
+  <data name="UploadDialogWelcome" xml:space="preserve">
+    <value>Hier kannst du deinene Foto Optionen wählen</value>
+  </data>
+  <data name="JsonFile" xml:space="preserve">
+    <value>LuisBot.JsonDummyForBot_DE.json</value>
+  </data>
+  <data name="ReEnterRoot" xml:space="preserve">
+    <value>Ich gehe zurück zum Einstiegsdialog</value>
+  </data>
+  <data name="UploadAttachment" xml:space="preserve">
+    <value>Bitte wähle die Datei aus, die du hochladen möchtest.</value>
+  </data>
+  <data name="UploadBot" xml:space="preserve">
+    <value>Hier ein Bild des Bots</value>
+  </data>
+  <data name="UploadInternet" xml:space="preserve">
+    <value>Hier ein Bild aus dem Internet</value>
+  </data>
+  <data name="UploadNoAttachment" xml:space="preserve">
+    <value>Hallo. Eigentlich sollte hier ein Anhang angehängt werden aber kein geeigneter wurde ausgewählt. Bitte versuche noch einmal eine Nachricht mit Anhang zu senden</value>
+  </data>
+  <data name="CommandBack" xml:space="preserve">
+    <value>Zurück</value>
+  </data>
+  <data name="CommandBackHelp" xml:space="preserve">
+    <value>Zurück: Kehre zur vorherigen Frage zurück</value>
+  </data>
+  <data name="CommandBackTerms" xml:space="preserve">
+    <value>zurück; vorherige</value>
+  </data>
+  <data name="CommandHelp" xml:space="preserve">
+    <value>Hilfe</value>
+  </data>
+  <data name="CommandHelpHelp" xml:space="preserve">
+    <value>Hilfe: Zeige eine Übersicht der möglichen Kommandos</value>
+  </data>
+  <data name="CommandHelpTerms" xml:space="preserve">
+    <value>hilfe; hilf mir; was kann ich sagen?; gottverdammt</value>
+  </data>
+  <data name="CommandQuit" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="CommandQuitHelp" xml:space="preserve">
+    <value>Stop: Den Formulardialog ohne Ergebnis beenden</value>
+  </data>
+  <data name="CommandQuitTerms" xml:space="preserve">
+    <value>stop; halt; abbrechen; verlassen</value>
+  </data>
+  <data name="CommandReset" xml:space="preserve">
+    <value>Zurücksetzen</value>
+  </data>
+  <data name="CommandResetHelp" xml:space="preserve">
+    <value>Reset: Diese Fragen erneut beginnen (ggf. mit vorherigen Default-Werten)</value>
+  </data>
+  <data name="CommandResetTerms" xml:space="preserve">
+    <value>reset; zurücksetzen; rückgängig; von vorne, neu</value>
+  </data>
+  <data name="CommandStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="CommandStatusHelp" xml:space="preserve">
+    <value>Status: Zeigt den Status der aktuellen Conversation</value>
+  </data>
+  <data name="CommandStatusTerms" xml:space="preserve">
+    <value>status; stand; information; ergebnisse; info</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Bestätigung</value>
+  </data>
+  <data name="MatchNo" xml:space="preserve">
+    <value>Nein; nö; nee; na; 2</value>
+  </data>
+  <data name="MatchYes" xml:space="preserve">
+    <value>Ja, ja; stimmt; richtig; ok</value>
+  </data>
+  <data name="TemplateConfirmation" xml:space="preserve">
+    <value>Ist dies Ihre Auswahl?</value>
+  </data>
+</root>

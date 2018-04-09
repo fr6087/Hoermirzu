@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_listen_to_me_1_1_common" kind="namespace" language="C#">
+    <compoundname>ListenToMe::Common</compoundname>
+    <innerclass refid="class_listen_to_me_1_1_common_1_1_date_time_offset_converter" prot="public">ListenToMe::Common::DateTimeOffsetConverter</innerclass>
+    <innerclass refid="interface_listen_to_me_1_1_common_1_1_i_navigation_service" prot="public">ListenToMe::Common::INavigationService</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_common_1_1_load_state_event_args" prot="public">ListenToMe::Common::LoadStateEventArgs</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_common_1_1_navigation_helper" prot="public">ListenToMe::Common::NavigationHelper</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_common_1_1_navigation_service" prot="public">ListenToMe::Common::NavigationService</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper" prot="public">ListenToMe::Common::RootFrameNavigationHelper</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_common_1_1_save_state_event_args" prot="public">ListenToMe::Common::SaveStateEventArgs</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_common_1_1_suspension_manager" prot="package">ListenToMe::Common::SuspensionManager</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_common_1_1_suspension_manager_exception" prot="public">ListenToMe::Common::SuspensionManagerException</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_common_1_1_validation_helper" prot="package">ListenToMe::Common::ValidationHelper</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_listen_to_me_1_1_common_1a7d7e529a5b6741d55bc043ba136c4978" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void ListenToMe.Common.LoadStateEventHandler</definition>
+        <argsstring>(object sender, LoadStateEventArgs e)</argsstring>
+        <name>LoadStateEventHandler</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="class_listen_to_me_1_1_common_1_1_load_state_event_args" kindref="compound">LoadStateEventArgs</ref></type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Represents the method that will handle the <ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1a8179285cdfdfeb3a5b80f2e6c8150743" kindref="member">NavigationHelper.LoadState</ref>event </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="327" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_listen_to_me_1_1_common_1a75a2e49e8dd247f0cc35403c67a48a18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void ListenToMe.Common.SaveStateEventHandler</definition>
+        <argsstring>(object sender, SaveStateEventArgs e)</argsstring>
+        <name>SaveStateEventHandler</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="class_listen_to_me_1_1_common_1_1_save_state_event_args" kindref="compound">SaveStateEventArgs</ref></type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Represents the method that will handle the <ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1a63888f37f25238442c4f5f68af554541" kindref="member">NavigationHelper.SaveState</ref>event </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="331" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/DateTimeOffsetConverter.cs" line="20" column="1"/>
+  </compounddef>
+</doxygen>

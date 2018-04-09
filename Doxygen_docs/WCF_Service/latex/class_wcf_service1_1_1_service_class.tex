@@ -1,0 +1,357 @@
+\hypertarget{class_wcf_service1_1_1_service_class}{}\section{Wcf\+Service1.\+Service\+Class Class Reference}
+\label{class_wcf_service1_1_1_service_class}\index{Wcf\+Service1.\+Service\+Class@{Wcf\+Service1.\+Service\+Class}}
+
+
+contains operations of the service1client for parsing the html-\/webform All operations containing a \char`\"{}1\char`\"{} are Dummy-\/\+Operations that only run on files simulating the webform  
+
+
+
+
+Inheritance diagram for Wcf\+Service1.\+Service\+Class\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wcf\+Service1.\+Service\+Class\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_wcf_service1_1_1_service_class__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract bool \hyperlink{class_wcf_service1_1_1_service_class_add477e49eab8927cc943dfb751dc976a}{Upload\+Section} (Section section)
+\item 
+abstract string \hyperlink{class_wcf_service1_1_1_service_class_a023c63c6a95132c7f2b9754c1bb41c80}{Login} (string user\+Name, string password)
+\item 
+abstract string \hyperlink{class_wcf_service1_1_1_service_class_a791350c6bf7ba90f63f95e1b935dde3b}{Get\+Form} (string username, string password)
+\item 
+abstract List$<$ Section $>$ \hyperlink{class_wcf_service1_1_1_service_class_ac0640daeb28fada4b6f80a2b66b0ec3e}{Get\+All\+Elements} (string username, string password)
+\item 
+async Task$<$ string $>$ \hyperlink{class_wcf_service1_1_1_service_class_a9c82b9884f5da75aad18624ff0f74115}{Talk\+To\+The\+Bot\+Async} (string message)
+\item 
+List$<$ string $>$ \hyperlink{class_wcf_service1_1_1_service_class_a4ad3ab638087f1c0deaeafcd5de0592c}{Get\+Headings} (string username, string password, string domain)
+\item 
+List$<$ string $>$ \hyperlink{class_wcf_service1_1_1_service_class_af7c843fb65336f76c29c1ce7633d3f18}{Get\+Inputs} (string username, string password, string domain)
+\begin{DoxyCompactList}\small\item\em returns a list of all labels on the web form. Those can then be translated into text\+Boxes by the App \end{DoxyCompactList}\item 
+string \hyperlink{class_wcf_service1_1_1_service_class_a3911ec2648b29d1ed247ee852920ca62}{Read\+File} (string filename)
+\item 
+string \hyperlink{class_wcf_service1_1_1_service_class_abc1e643d4f507b20ddb1c477e0ec3307}{Get\+C\+S\+V\+Dropdown\+String} (string list\+\_\+id)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_wcf_service1_1_1_service_class_ab88a7ee56c72aac3229b737273fbca20}{Read\+Lines\+Containing\+String} (string list\+\_\+id, File\+Info file)
+\begin{DoxyCompactList}\small\item\em retrieves the dropdown menu lines for a specific drobdown menu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wcf_service1_1_1_cortana_direct_line_client}{Cortana\+Direct\+Line\+Client} \hyperlink{class_wcf_service1_1_1_service_class_a9bd8bdea6c82d92334badcb56a75d0a8}{bot\+Client} = new \hyperlink{class_wcf_service1_1_1_cortana_direct_line_client}{Cortana\+Direct\+Line\+Client}()
+\begin{DoxyCompactList}\small\item\em connects to the bot using Direct\+Line \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains operations of the service1client for parsing the html-\/webform All operations containing a \char`\"{}1\char`\"{} are Dummy-\/\+Operations that only run on files simulating the webform 
+
+
+
+\subsection{Member Function Documentation}
+\index{Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}!Get\+All\+Elements@{Get\+All\+Elements}}
+\index{Get\+All\+Elements@{Get\+All\+Elements}!Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}}
+\subsubsection[{\texorpdfstring{Get\+All\+Elements(string username, string password)}{GetAllElements(string username, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}abstract List$<$Section$>$ Wcf\+Service1.\+Service\+Class.\+Get\+All\+Elements (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_wcf_service1_1_1_service_class_ac0640daeb28fada4b6f80a2b66b0ec3e}{}\label{class_wcf_service1_1_1_service_class_ac0640daeb28fada4b6f80a2b66b0ec3e}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_implementation___mock_a3677cf44f7acac9549f1e58ce9191e4e}{Wcf\+Service1.\+Implementation\+\_\+\+Mock}, and \hyperlink{class_wcf_service1_1_1_implementation___real_a6cedd1da2b421038727ed52afaf7197e}{Wcf\+Service1.\+Implementation\+\_\+\+Real}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_ac0640daeb28fada4b6f80a2b66b0ec3e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}!Get\+C\+S\+V\+Dropdown\+String@{Get\+C\+S\+V\+Dropdown\+String}}
+\index{Get\+C\+S\+V\+Dropdown\+String@{Get\+C\+S\+V\+Dropdown\+String}!Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}}
+\subsubsection[{\texorpdfstring{Get\+C\+S\+V\+Dropdown\+String(string list\+\_\+id)}{GetCSVDropdownString(string list_id)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Service\+Class.\+Get\+C\+S\+V\+Dropdown\+String (
+\begin{DoxyParamCaption}
+\item[{string}]{list\+\_\+id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service_class_abc1e643d4f507b20ddb1c477e0ec3307}{}\label{class_wcf_service1_1_1_service_class_abc1e643d4f507b20ddb1c477e0ec3307}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_abc1e643d4f507b20ddb1c477e0ec3307_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_abc1e643d4f507b20ddb1c477e0ec3307_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}!Get\+Form@{Get\+Form}}
+\index{Get\+Form@{Get\+Form}!Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}}
+\subsubsection[{\texorpdfstring{Get\+Form(string username, string password)}{GetForm(string username, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}abstract string Wcf\+Service1.\+Service\+Class.\+Get\+Form (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_wcf_service1_1_1_service_class_a791350c6bf7ba90f63f95e1b935dde3b}{}\label{class_wcf_service1_1_1_service_class_a791350c6bf7ba90f63f95e1b935dde3b}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_implementation___real_a82b0d0cc9a634454bfa583f55eb13dad}{Wcf\+Service1.\+Implementation\+\_\+\+Real}, and \hyperlink{class_wcf_service1_1_1_implementation___mock_a770d195f0883f20e2356381152a6ea00}{Wcf\+Service1.\+Implementation\+\_\+\+Mock}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_a791350c6bf7ba90f63f95e1b935dde3b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}!Get\+Headings@{Get\+Headings}}
+\index{Get\+Headings@{Get\+Headings}!Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}}
+\subsubsection[{\texorpdfstring{Get\+Headings(string username, string password, string domain)}{GetHeadings(string username, string password, string domain)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$string$>$ Wcf\+Service1.\+Service\+Class.\+Get\+Headings (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password, }
+\item[{string}]{domain}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service_class_a4ad3ab638087f1c0deaeafcd5de0592c}{}\label{class_wcf_service1_1_1_service_class_a4ad3ab638087f1c0deaeafcd5de0592c}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_a4ad3ab638087f1c0deaeafcd5de0592c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_a4ad3ab638087f1c0deaeafcd5de0592c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}!Get\+Inputs@{Get\+Inputs}}
+\index{Get\+Inputs@{Get\+Inputs}!Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}}
+\subsubsection[{\texorpdfstring{Get\+Inputs(string username, string password, string domain)}{GetInputs(string username, string password, string domain)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$string$>$ Wcf\+Service1.\+Service\+Class.\+Get\+Inputs (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password, }
+\item[{string}]{domain}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service_class_af7c843fb65336f76c29c1ce7633d3f18}{}\label{class_wcf_service1_1_1_service_class_af7c843fb65336f76c29c1ce7633d3f18}
+
+
+returns a list of all labels on the web form. Those can then be translated into text\+Boxes by the App 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+{\em domain} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_af7c843fb65336f76c29c1ce7633d3f18_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_af7c843fb65336f76c29c1ce7633d3f18_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}!Login@{Login}}
+\index{Login@{Login}!Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}}
+\subsubsection[{\texorpdfstring{Login(string user\+Name, string password)}{Login(string userName, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}abstract string Wcf\+Service1.\+Service\+Class.\+Login (
+\begin{DoxyParamCaption}
+\item[{string}]{user\+Name, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_wcf_service1_1_1_service_class_a023c63c6a95132c7f2b9754c1bb41c80}{}\label{class_wcf_service1_1_1_service_class_a023c63c6a95132c7f2b9754c1bb41c80}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_implementation___real_aec1081c3a83135e9f11ea182ca3e9321}{Wcf\+Service1.\+Implementation\+\_\+\+Real}, and \hyperlink{class_wcf_service1_1_1_implementation___mock_ad4676c509d48e01e7ed6e2962fc01b29}{Wcf\+Service1.\+Implementation\+\_\+\+Mock}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_a023c63c6a95132c7f2b9754c1bb41c80_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}!Read\+File@{Read\+File}}
+\index{Read\+File@{Read\+File}!Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}}
+\subsubsection[{\texorpdfstring{Read\+File(string filename)}{ReadFile(string filename)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Service\+Class.\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service_class_a3911ec2648b29d1ed247ee852920ca62}{}\label{class_wcf_service1_1_1_service_class_a3911ec2648b29d1ed247ee852920ca62}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_a3911ec2648b29d1ed247ee852920ca62_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}!Read\+Lines\+Containing\+String@{Read\+Lines\+Containing\+String}}
+\index{Read\+Lines\+Containing\+String@{Read\+Lines\+Containing\+String}!Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}}
+\subsubsection[{\texorpdfstring{Read\+Lines\+Containing\+String(string list\+\_\+id, File\+Info file)}{ReadLinesContainingString(string list_id, FileInfo file)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Service\+Class.\+Read\+Lines\+Containing\+String (
+\begin{DoxyParamCaption}
+\item[{string}]{list\+\_\+id, }
+\item[{File\+Info}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_service_class_ab88a7ee56c72aac3229b737273fbca20}{}\label{class_wcf_service1_1_1_service_class_ab88a7ee56c72aac3229b737273fbca20}
+
+
+retrieves the dropdown menu lines for a specific drobdown menu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list\+\_\+id} & \\
+\hline
+{\em file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_ab88a7ee56c72aac3229b737273fbca20_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}!Talk\+To\+The\+Bot\+Async@{Talk\+To\+The\+Bot\+Async}}
+\index{Talk\+To\+The\+Bot\+Async@{Talk\+To\+The\+Bot\+Async}!Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}}
+\subsubsection[{\texorpdfstring{Talk\+To\+The\+Bot\+Async(string message)}{TalkToTheBotAsync(string message)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$string$>$ Wcf\+Service1.\+Service\+Class.\+Talk\+To\+The\+Bot\+Async (
+\begin{DoxyParamCaption}
+\item[{string}]{message}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service_class_a9c82b9884f5da75aad18624ff0f74115}{}\label{class_wcf_service1_1_1_service_class_a9c82b9884f5da75aad18624ff0f74115}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_a9c82b9884f5da75aad18624ff0f74115_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_a9c82b9884f5da75aad18624ff0f74115_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}!Upload\+Section@{Upload\+Section}}
+\index{Upload\+Section@{Upload\+Section}!Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}}
+\subsubsection[{\texorpdfstring{Upload\+Section(\+Section section)}{UploadSection(Section section)}}]{\setlength{\rightskip}{0pt plus 5cm}abstract bool Wcf\+Service1.\+Service\+Class.\+Upload\+Section (
+\begin{DoxyParamCaption}
+\item[{Section}]{section}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_wcf_service1_1_1_service_class_add477e49eab8927cc943dfb751dc976a}{}\label{class_wcf_service1_1_1_service_class_add477e49eab8927cc943dfb751dc976a}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_implementation___real_ac95892552f6beb92e0557abde468a5a1}{Wcf\+Service1.\+Implementation\+\_\+\+Real}, and \hyperlink{class_wcf_service1_1_1_implementation___mock_aacbbae5d5cd842b1c62cfab84168b287}{Wcf\+Service1.\+Implementation\+\_\+\+Mock}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service_class_add477e49eab8927cc943dfb751dc976a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}!bot\+Client@{bot\+Client}}
+\index{bot\+Client@{bot\+Client}!Wcf\+Service1\+::\+Service\+Class@{Wcf\+Service1\+::\+Service\+Class}}
+\subsubsection[{\texorpdfstring{bot\+Client}{botClient}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cortana\+Direct\+Line\+Client} Wcf\+Service1.\+Service\+Class.\+bot\+Client = new {\bf Cortana\+Direct\+Line\+Client}()\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_service_class_a9bd8bdea6c82d92334badcb56a75d0a8}{}\label{class_wcf_service1_1_1_service_class_a9bd8bdea6c82d92334badcb56a75d0a8}
+
+
+connects to the bot using Direct\+Line 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Wcf\+Service1/\hyperlink{_service_class_8cs}{Service\+Class.\+cs}\end{DoxyCompactItemize}

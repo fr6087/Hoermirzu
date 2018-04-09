@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body style="font-family:'Segoe UI'">
+    <h1>LuisBot</h1>
+    <p>LuisBot implements diffrent features of Microsoft Bot Framework's FormFlow: it shows
+    how to generate a form dialoge from the file "JsonDummyForBot.json" and how to connect multiple
+    dialogs by options. Also there are functions for gernerating localized dialogs.</p>
+    <p>
+        You can run this bot in the Cortana canvas, if you set your device's language and region's settings
+        to USA and are within the group of users to which the bot was published. Type "ask formbot" in the Cortana Canvas to give it a try.
+        There is also the possibility to connect via DirectLine to this bot. This is shown in one of this
+        project's sibling projects, WCFService1.
+    </p>
+    <ul>
+        <li><a href="https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-overview">Get started building bots with .NET.</a></li>
+        <li><a href="https://docs.microsoft.com/en-us/bot-framework/cognitive-services-bot-intelligence-overview#language-understanding">Learn more about LUIS and the Cognitive Services.</a></li>
+    </ul>
+    <h3>creation story of this bot</h3>
+    <p>for reproduction of this bot as a cortana skill
+        <ol>
+            <li>register to <a href="http://formbot20171129.azurewebsites.net/">Azure Portal</a>
+                with valid credit card number. </li>
+            <li>go to create Application/AI and cognitive/Web App Bot. Follow the steps to create a bot and be careful to select F0 as pricing tier. If the option is not available, change to F0 after creation.
+            </li>
+            <li>publish bot from Azure to Cortana dashboard by Cortana channel
+            <li>register as a Cortana developer (cost as an individual: 19 USD)</li>
+            <li>Enable Debug mode in the <a href="https://developer.microsoft.com/en-us/cortana/dashboard#!/debug">Cortana Developer Center</a>.
+                and set your MSA email address as a developer so the skill gets visible to you.</li>
+            <li>check that you are logged in with the same MSA account used on azure/cortana dashboard in the cortana settings</li>
+            <li>call the skill by it's invocation name with "tell [invocation name] " </li>
+       </ol>
+    This bot is available for other channels as well. If you do not want to connect to Cortana, you may use Skype, Facebook messenger or some other channel.
+</p>
+    <h3>How to debug the bot</h3>
+    <p>
+       You can debug this bot locally with the help of the Bot Framework Emulator, if you are online and not behind a proxy.
+       For changes on the LUIS language model please <a href="https://www.luis.ai">Visit the LUIS website </a> and login with the Microsoft Account that was used
+        to host this bot in Azure.
+    </p>
+    <p>
+     <ul>
+         <li>add new languages to the bot. E.g. for Polish create a ressource file Resource1.pl.resx in Resource folder. Right click select that file, set build action to embedded resource and userdefined tool to ResXFileCodeGeneraror.
+         type Windows key and search for visual studio command prompt. Navigate to the Resource folder and execute the commands below.
+         <img src="images/ResgenCMDs.png" alt="Usage of Resgen tool in Visual studio command prompt. Use reference to assembly and namespace"/>
+         Afterwards, ensure that the ResourceManager property in Resource1.cs is naming the namespace and the filename as first argument. First argument should be: 'LuisBot.Resource.Resource1'</li>
+         <li>Debug your bot<a href="https://docs.microsoft.com/en-us/bot-framework/debug-bots-emulator">bot framework emulator</a></li>
+    </ul>
+    </p>
+</body>
+</html>

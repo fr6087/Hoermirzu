@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_class_library_1_1model_1_1_bot_json" kind="class" language="C#" prot="public">
+    <compoundname>ClassLibrary::model::BotJson</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_bot_json_1a91550ddb24b54dc4b48ad598dd0cd6bb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; ClassLibrary.model.BotJson.References</definition>
+        <argsstring></argsstring>
+        <name>References</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="40" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_bot_json_1a37d67a6ef65858d3e63ce3bd91966119" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; ClassLibrary.model.BotJson.Imports</definition>
+        <argsstring></argsstring>
+        <name>Imports</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="42" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_bot_json_1a3701ef93ed4948a7607c7e661a308222" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.BotJson.Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="44" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_bot_json_1a76ffb41b6617ff0fd05b8c594752b903" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; ClassLibrary.model.BotJson.Required</definition>
+        <argsstring></argsstring>
+        <name>Required</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="46" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_bot_json_1a0c17a49de2588b397a8455bebaca27d0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_class_library_1_1model_1_1_node" kindref="compound">Node</ref></type>
+        <definition>Node ClassLibrary.model.BotJson.Templates</definition>
+        <argsstring></argsstring>
+        <name>Templates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="48" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_bot_json_1ad8a7686a022349331af050c89488b2d1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Dictionary&lt; string, <ref refid="class_class_library_1_1model_1_1_property" kindref="compound">Property</ref> &gt;</type>
+        <definition>Dictionary&lt;string, Property&gt; ClassLibrary.model.BotJson.properties</definition>
+        <argsstring></argsstring>
+        <name>properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="50" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="50" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="38" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="37" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_class_library_1_1model_1_1_bot_json_1a37d67a6ef65858d3e63ce3bd91966119" prot="public" virt="non-virtual"><scope>ClassLibrary::model::BotJson</scope><name>Imports</name></member>
+      <member refid="class_class_library_1_1model_1_1_bot_json_1ad8a7686a022349331af050c89488b2d1" prot="public" virt="non-virtual"><scope>ClassLibrary::model::BotJson</scope><name>properties</name></member>
+      <member refid="class_class_library_1_1model_1_1_bot_json_1a91550ddb24b54dc4b48ad598dd0cd6bb" prot="public" virt="non-virtual"><scope>ClassLibrary::model::BotJson</scope><name>References</name></member>
+      <member refid="class_class_library_1_1model_1_1_bot_json_1a76ffb41b6617ff0fd05b8c594752b903" prot="public" virt="non-virtual"><scope>ClassLibrary::model::BotJson</scope><name>Required</name></member>
+      <member refid="class_class_library_1_1model_1_1_bot_json_1a0c17a49de2588b397a8455bebaca27d0" prot="public" virt="non-virtual"><scope>ClassLibrary::model::BotJson</scope><name>Templates</name></member>
+      <member refid="class_class_library_1_1model_1_1_bot_json_1a3701ef93ed4948a7607c7e661a308222" prot="public" virt="non-virtual"><scope>ClassLibrary::model::BotJson</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

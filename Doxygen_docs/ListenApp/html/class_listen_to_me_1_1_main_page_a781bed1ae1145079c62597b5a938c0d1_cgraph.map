@@ -1,0 +1,6 @@
+<map id="ListenToMe.MainPage.initFrame" name="ListenToMe.MainPage.initFrame">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_main_page.html#a1a1e1d6e362134f6426bcf99ca83c45c" title="fill Frame creates a new Page for mainFrame and adds it to the mainFrame as Content ..." alt="" coords="225,5,392,47"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_main_page.html#a16241dfda10c37812bcb3a55a791e011" title="creates a section by adding control elements to a panel " alt="" coords="440,5,631,47"/>
+<area shape="rect" id="node4" href="$class_listen_to_me_1_1_main_page.html#a73b3a3311149846cf028c5824dab2a6e" title="creates an element from the section object by determining what type of element it is reference: https..." alt="" coords="679,5,872,47"/>
+<area shape="rect" id="node5" href="$class_listen_to_me_1_1_main_page.html#a80911257473f608abc125a1083045041" title="sets the enabled property of a TextBox control to disabled, if the model Element&#39;s property is set to..." alt="" coords="920,5,1140,47"/>
+</map>

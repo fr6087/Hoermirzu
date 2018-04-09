@@ -1,0 +1,19 @@
+<map id="ListenToMe.MainPage.ListenForText" name="ListenToMe.MainPage.ListenForText">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_main_page.html#ac541bec23372af9da39117384c6b177e" title="initialized speech recognition " alt="" coords="271,5,443,47"/>
+<area shape="rect" id="node4" href="$class_listen_to_me_1_1_main_page.html#a57d75ef6bb9c10b0c944c3eb5513b076" title="sets the flag whether speech recognition is enabled according to the parameter " alt="" coords="244,71,471,112"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_main_page.html#a78024cb9b68bafc3375081574dbbea89" title="handles the HypothesisGenerated event of the speech recognizer " alt="" coords="519,5,737,47"/>
+<area shape="rect" id="node5" href="$class_listen_to_me_1_1_main_page.html#ab9fba04f0fc94773c2838f6af87ec14b" title="analyzes the speech input, recognized the text and calls SendMessage() to display the rcognized text ..." alt="" coords="537,71,719,112"/>
+<area shape="rect" id="node6" href="$class_listen_to_me_1_1_main_page.html#a09c2518852d4261ff6a2118c8e01de9f" title="calls the LUIS API to retrieve the Bot WebApp&#39;s answer for a specific request " alt="" coords="785,71,971,112"/>
+<area shape="rect" id="node7" href="$class_listen_to_me_1_1_bot.html#a3730a1ccd4cbf3233cde6fe324c9c11e" title="The method is calling the LUIS&#45;Model via HttpClient ToDo find out how to model this to DirectLine as ..." alt="" coords="1025,5,1225,47"/>
+<area shape="rect" id="node8" href="$class_listen_to_me_1_1_main_page.html#a203cee0f97f99d3ac38d9338e7c39427" title="helps calling actions of intents other than Field.FillIn " alt="" coords="1029,71,1220,112"/>
+<area shape="rect" id="node16" href="$class_listen_to_me_1_1_main_page.html#ab68e25e8370c434b0deb5069c7cdd254" title="is essential in processing the recognized LUIS&#45;entities. Sometimes LUIS entities are not recognized b..." alt="" coords="1019,136,1231,177"/>
+<area shape="rect" id="node9" href="$class_listen_to_me_1_1_main_page.html#a8cd1a04a404800cfab55de0ba4466f68" title="ListenToMe.MainPage.goNext\lAsync" alt="" coords="1283,5,1479,47"/>
+<area shape="rect" id="node14" href="$class_listen_to_me_1_1_main_page.html#a1ccf14d59eabbcc4148cadd8dd11fc04" title="ListenToMe.MainPage.goBack\lAsync" alt="" coords="1281,71,1480,112"/>
+<area shape="rect" id="node15" href="$class_listen_to_me_1_1_main_page.html#af4469348ffee9a5d1a8680d2535a279b" title="helper method for cleaning output from luis. Since LUIS answers in lowercase only, this method uppercases the first letter " alt="" coords="1290,136,1471,177"/>
+<area shape="rect" id="node10" href="$class_listen_to_me_1_1_main_page.html#a1a1e1d6e362134f6426bcf99ca83c45c" title="fill Frame creates a new Page for mainFrame and adds it to the mainFrame as Content ..." alt="" coords="1547,5,1713,47"/>
+<area shape="rect" id="node11" href="$class_listen_to_me_1_1_main_page.html#a16241dfda10c37812bcb3a55a791e011" title="creates a section by adding control elements to a panel " alt="" coords="1777,5,1968,47"/>
+<area shape="rect" id="node12" href="$class_listen_to_me_1_1_main_page.html#a73b3a3311149846cf028c5824dab2a6e" title="creates an element from the section object by determining what type of element it is reference: https..." alt="" coords="2016,5,2209,47"/>
+<area shape="rect" id="node13" href="$class_listen_to_me_1_1_main_page.html#a80911257473f608abc125a1083045041" title="sets the enabled property of a TextBox control to disabled, if the model Element&#39;s property is set to..." alt="" coords="2257,5,2477,47"/>
+<area shape="rect" id="node17" href="$class_listen_to_me_1_1_main_page.html#acad3fb1a64c0bea077f5ad38627faeef" title="Button is hit for microphone activation " alt="" coords="1279,201,1483,243"/>
+<area shape="rect" id="node18" href="$class_listen_to_me_1_1_main_page.html#a465e7f9723aec19e912a3913841d477e" title="ListenToMe.MainPage.Clicked" alt="" coords="1531,209,1729,235"/>
+</map>

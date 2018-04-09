@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_view_1_1_disambiguate_view" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::View::DisambiguateView</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ContentDialog</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_1_1_disambiguate_view_1af451728d022f706f40e26acebb2a52b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.View.DisambiguateView.DisambiguateView</definition>
+        <argsstring>()</argsstring>
+        <name>DisambiguateView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/DisambiguateView.xaml.cs" line="12" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/DisambiguateView.xaml.cs" bodystart="12" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="66">
+        <label>ContentDialog</label>
+      </node>
+      <node id="65">
+        <label>ListenToMe.View.DisambiguateView</label>
+        <link refid="class_listen_to_me_1_1_view_1_1_disambiguate_view"/>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="68">
+        <label>ContentDialog</label>
+      </node>
+      <node id="67">
+        <label>ListenToMe.View.DisambiguateView</label>
+        <link refid="class_listen_to_me_1_1_view_1_1_disambiguate_view"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/DisambiguateView.xaml.cs" line="11" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/DisambiguateView.xaml.cs" bodystart="10" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_view_1_1_disambiguate_view_1af451728d022f706f40e26acebb2a52b1" prot="public" virt="non-virtual"><scope>ListenToMe::View::DisambiguateView</scope><name>DisambiguateView</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

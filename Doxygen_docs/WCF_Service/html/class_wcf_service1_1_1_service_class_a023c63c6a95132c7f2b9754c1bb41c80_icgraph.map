@@ -1,0 +1,7 @@
+<map id="WcfService1.ServiceClass.Login" name="WcfService1.ServiceClass.Login">
+<area shape="rect" id="node2" href="$class_wcf_service1_1_1_service1.html#a451391230a00d5f6ea6aafd54aad1a12" title="real login to the web form " alt="" coords="231,5,413,32"/>
+<area shape="rect" id="node3" href="$class_wcf_service1_1_1_service_class.html#a4ad3ab638087f1c0deaeafcd5de0592c" title="WcfService1.ServiceClass.\lGetHeadings" alt="" coords="233,57,411,98"/>
+<area shape="rect" id="node5" href="$class_wcf_service1_1_1_service_class.html#af7c843fb65336f76c29c1ce7633d3f18" title="returns a list of all labels on the web form. Those can then be translated into textBoxes by the App ..." alt="" coords="233,122,411,163"/>
+<area shape="rect" id="node4" href="$class_wcf_service1_1_1_service1.html#a9a93a18651e7fd879d8166bd70abdbfe" title="Is returning headings slightly modified, cuts the number from the heading e.g " alt="" coords="461,57,633,98"/>
+<area shape="rect" id="node6" href="$class_wcf_service1_1_1_service1.html#ad9115f054786f723b3bcb4f3f62457ba" title="returns a list of all labels on the web form. Those can then be translated into textBoxes by the App ..." alt="" coords="461,122,633,163"/>
+</map>

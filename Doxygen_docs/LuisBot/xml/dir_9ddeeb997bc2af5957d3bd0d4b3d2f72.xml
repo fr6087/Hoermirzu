@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_9ddeeb997bc2af5957d3bd0d4b3d2f72" kind="dir">
+    <compoundname>Resource</compoundname>
+    <innerfile refid="_resource1_8cs">Resource1.cs</innerfile>
+    <innerfile refid="_resource1_8_designer_8cs">Resource1.Designer.cs</innerfile>
+    <innerfile refid="_resource1_8en_8_designer_8cs">Resource1.en.Designer.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Resource/"/>
+  </compounddef>
+</doxygen>

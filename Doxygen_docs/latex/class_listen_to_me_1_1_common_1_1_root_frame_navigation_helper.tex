@@ -1,0 +1,90 @@
+\hypertarget{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper}{}\section{Listen\+To\+Me.\+Common.\+Root\+Frame\+Navigation\+Helper Class Reference}
+\label{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper}\index{Listen\+To\+Me.\+Common.\+Root\+Frame\+Navigation\+Helper@{Listen\+To\+Me.\+Common.\+Root\+Frame\+Navigation\+Helper}}
+
+
+registers for standard mouse and keyboard shortcuts used to go back and forward. There should be only one instance of this class per view, and it should be associated with the root frame.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_a4c7cd3f089e03e6c1c7700054992185e}{Root\+Frame\+Navigation\+Helper} (Frame root\+Frame)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the Root\+Navigation\+Helper class. \end{DoxyCompactList}\item 
+bool \hyperlink{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_abe5766b86ae071ae6eebb19749404005}{Try\+Go\+Back} ()
+\begin{DoxyCompactList}\small\item\em navigates the frame to the last page it contained. If there is no last page, it will not navigate \end{DoxyCompactList}\item 
+bool \hyperlink{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_a39b381da6acb50b24c85175b6da8ee12}{Try\+Go\+Forward} ()
+\begin{DoxyCompactList}\small\item\em navigates the frame to the next page. only works if frame has been at some point navigated backwards though page history. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Frame {\bfseries Frame}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\hypertarget{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_ab9ed9b25dd17d7ea1982303c5d6e0116}{}\label{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_ab9ed9b25dd17d7ea1982303c5d6e0116}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+registers for standard mouse and keyboard shortcuts used to go back and forward. There should be only one instance of this class per view, and it should be associated with the root frame. 
+
+To make use of \hyperlink{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper}{Root\+Frame\+Navigation\+Helper}, create an instance of the Root\+Navigation\+Helper such as in the constructor of your root page. 
+\begin{DoxyCode}
+\textcolor{keyword}{public} MyRootPage()
+\{
+    this.InitializeComponent();
+    this.rootNavigationHelper = \textcolor{keyword}{new} RootNavigationHelper(MyFrame);
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Listen\+To\+Me\+::\+Common\+::\+Root\+Frame\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Root\+Frame\+Navigation\+Helper}!Root\+Frame\+Navigation\+Helper@{Root\+Frame\+Navigation\+Helper}}
+\index{Root\+Frame\+Navigation\+Helper@{Root\+Frame\+Navigation\+Helper}!Listen\+To\+Me\+::\+Common\+::\+Root\+Frame\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Root\+Frame\+Navigation\+Helper}}
+\subsubsection[{\texorpdfstring{Root\+Frame\+Navigation\+Helper(\+Frame root\+Frame)}{RootFrameNavigationHelper(Frame rootFrame)}}]{\setlength{\rightskip}{0pt plus 5cm}Listen\+To\+Me.\+Common.\+Root\+Frame\+Navigation\+Helper.\+Root\+Frame\+Navigation\+Helper (
+\begin{DoxyParamCaption}
+\item[{Frame}]{root\+Frame}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_a4c7cd3f089e03e6c1c7700054992185e}{}\label{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_a4c7cd3f089e03e6c1c7700054992185e}
+
+
+Initializes a new instance of the Root\+Navigation\+Helper class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root\+Frame} & A reference to the top-\/level frame. This reference allows for frame manipulation and to register navigation handlers.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Listen\+To\+Me\+::\+Common\+::\+Root\+Frame\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Root\+Frame\+Navigation\+Helper}!Try\+Go\+Back@{Try\+Go\+Back}}
+\index{Try\+Go\+Back@{Try\+Go\+Back}!Listen\+To\+Me\+::\+Common\+::\+Root\+Frame\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Root\+Frame\+Navigation\+Helper}}
+\subsubsection[{\texorpdfstring{Try\+Go\+Back()}{TryGoBack()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Listen\+To\+Me.\+Common.\+Root\+Frame\+Navigation\+Helper.\+Try\+Go\+Back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_abe5766b86ae071ae6eebb19749404005}{}\label{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_abe5766b86ae071ae6eebb19749404005}
+
+
+navigates the frame to the last page it contained. If there is no last page, it will not navigate 
+
+\begin{DoxyReturn}{Returns}
+whether or not the navigation failed
+\end{DoxyReturn}
+\index{Listen\+To\+Me\+::\+Common\+::\+Root\+Frame\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Root\+Frame\+Navigation\+Helper}!Try\+Go\+Forward@{Try\+Go\+Forward}}
+\index{Try\+Go\+Forward@{Try\+Go\+Forward}!Listen\+To\+Me\+::\+Common\+::\+Root\+Frame\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Root\+Frame\+Navigation\+Helper}}
+\subsubsection[{\texorpdfstring{Try\+Go\+Forward()}{TryGoForward()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Listen\+To\+Me.\+Common.\+Root\+Frame\+Navigation\+Helper.\+Try\+Go\+Forward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_a39b381da6acb50b24c85175b6da8ee12}{}\label{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_a39b381da6acb50b24c85175b6da8ee12}
+
+
+navigates the frame to the next page. only works if frame has been at some point navigated backwards though page history. 
+
+\begin{DoxyReturn}{Returns}
+whether or not the navigation failed
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Listen\+To\+Me/\+Common/Navigation\+Helper.\+cs\end{DoxyCompactItemize}

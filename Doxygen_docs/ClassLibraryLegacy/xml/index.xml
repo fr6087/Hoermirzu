@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="class_class_library_1_1model_1_1_bot_json" kind="class"><name>ClassLibrary::model::BotJson</name>
+    <member refid="class_class_library_1_1model_1_1_bot_json_1a91550ddb24b54dc4b48ad598dd0cd6bb" kind="property"><name>References</name></member>
+    <member refid="class_class_library_1_1model_1_1_bot_json_1a37d67a6ef65858d3e63ce3bd91966119" kind="property"><name>Imports</name></member>
+    <member refid="class_class_library_1_1model_1_1_bot_json_1a3701ef93ed4948a7607c7e661a308222" kind="property"><name>Type</name></member>
+    <member refid="class_class_library_1_1model_1_1_bot_json_1a76ffb41b6617ff0fd05b8c594752b903" kind="property"><name>Required</name></member>
+    <member refid="class_class_library_1_1model_1_1_bot_json_1a0c17a49de2588b397a8455bebaca27d0" kind="property"><name>Templates</name></member>
+    <member refid="class_class_library_1_1model_1_1_bot_json_1ad8a7686a022349331af050c89488b2d1" kind="property"><name>properties</name></member>
+  </compound>
+  <compound refid="class_class_library_1_1model_1_1_element" kind="class"><name>ClassLibrary::model::Element</name>
+    <member refid="class_class_library_1_1model_1_1_element_1abfe8d0ad55cd66ffe572ab40f415d510" kind="variable"><name>type</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1aefb98c4307c1957594918ec4ceff280f" kind="variable"><name>text</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a12a5aae140f17fc8c5ec71d66bcb27ab" kind="variable"><name>required</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a2d4a934b8e4322f1a58264c86992b154" kind="variable"><name>comment</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1afdc50e5ab19518c7bcf1e0dfb72d6561" kind="variable"><name>placeholder</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a45f6b6514e6d1462878071d2d7d3c18e" kind="variable"><name>subelems</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a413db5960e6b7232d5228d3c655abeac" kind="variable"><name>size</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a1daa0ef209457fbdeafab55840d989b0" kind="variable"><name>maxlength</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a085da0d3877d39b396472650c9e0a5a4" kind="variable"><name>group_name</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a9f15af68753b20c3ca885cd1d9e3e4e3" kind="variable"><name>list_id</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a643cb787f064b9e2ee4c9aa3b65dd6a8" kind="variable"><name>isSelected</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1ad1b479f501dc22f8bbfd80693f55ae85" kind="event"><name>PropertyChanged</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1aaac88c09836b13b3de4cfd36043d7938" kind="property"><name>Type</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1afc811ca71cc02f1edca957cdeb0ed58e" kind="property"><name>Text</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a6ef2e7cc7ceae634408582683f725486" kind="property"><name>Placeholder</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a8decdbbbad1c5f38b20667229ac451ff" kind="property"><name>List_id</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a0e2fc3bbe18d47f8c312afd71b2ceaa6" kind="property"><name>Group_name</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1aa6fcebce9369824741d179c1e0be008d" kind="property"><name>Maxlength</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a1cee83d205141e4d69b75be6550e1205" kind="property"><name>Size</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a09ed1721f03d2d78458c409912426a99" kind="property"><name>Subelems</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1ae795aa46d42de6f7c6821329b00b4ad3" kind="property"><name>Comment</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a71893c0193a994bd7dd2455f82a05c06" kind="property"><name>Required</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a8e2e5fae5077ca1e77d0c1506db20cd2" kind="property"><name>IsSeclected</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a4cae6672802b7e04632a8deb72922a12" kind="property"><name>Disabled</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1ac50e53dd12a8def9b5a48b5ec055c102" kind="property"><name>Pattern</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a2930c5dd527c6c924ab9d24de264721b" kind="function"><name>Element</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a2b945bac2b1f654101809f85d229bfb1" kind="function"><name>Element</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a6da94df1722991f100be01b15fa7cae6" kind="function"><name>ToString</name></member>
+    <member refid="class_class_library_1_1model_1_1_element_1a38cf7d75e78e928b10427f153a389e2a" kind="function"><name>NotifyPropertyChanged</name></member>
+  </compound>
+  <compound refid="class_class_library_1_1model_1_1_form" kind="class"><name>ClassLibrary::model::Form</name>
+    <member refid="class_class_library_1_1model_1_1_form_1afdca4825d82ce5214a955b33f6bc5cc0" kind="variable"><name>loaded</name></member>
+    <member refid="class_class_library_1_1model_1_1_form_1af8b72164183ebe2809647aa2db5c0aa1" kind="variable"><name>sections</name></member>
+    <member refid="class_class_library_1_1model_1_1_form_1a2f9e51d0fa3181ffc1c783cd1ede207c" kind="property"><name>Sections</name></member>
+    <member refid="class_class_library_1_1model_1_1_form_1a83c0efd5122faf6e0009393da6841337" kind="function"><name>Form</name></member>
+  </compound>
+  <compound refid="class_class_library_1_1model_1_1_message" kind="class"><name>ClassLibrary::model::Message</name>
+    <member refid="class_class_library_1_1model_1_1_message_1a44298df95e2ff4e82811a134d265ee77" kind="variable"><name>Patterns</name></member>
+    <member refid="class_class_library_1_1model_1_1_message_1a1e3d01589348202d3ac3a2c238fc5719" kind="function"><name>Message</name></member>
+  </compound>
+  <compound refid="class_class_library_1_1model_1_1_node" kind="class"><name>ClassLibrary::model::Node</name>
+    <member refid="class_class_library_1_1model_1_1_node_1a98404a4b188f190f5ee1ab7e4fddd5ca" kind="function"><name>Node</name></member>
+  </compound>
+  <compound refid="class_class_library_1_1model_1_1_property" kind="class"><name>ClassLibrary::model::Property</name>
+    <member refid="class_class_library_1_1model_1_1_property_1ad69126781c383a7c3b6c4605a3144046" kind="property"><name>Before</name></member>
+    <member refid="class_class_library_1_1model_1_1_property_1ad1c572e6e2cd65951287611cd1eb3d86" kind="property"><name>Type</name></member>
+    <member refid="class_class_library_1_1model_1_1_property_1a5d74a418084c3cd239bff23325f91268" kind="property"><name>Enum</name></member>
+    <member refid="class_class_library_1_1model_1_1_property_1a8a4345b5f7599f9c1b02b4183e2e3ee6" kind="property"><name>Pattern</name></member>
+    <member refid="class_class_library_1_1model_1_1_property_1afb3d259db0d7a9f5abff79ac2befb29c" kind="property"><name>Minimum</name></member>
+    <member refid="class_class_library_1_1model_1_1_property_1afa05c0a8ffd9f25b1ef8812619067557" kind="property"><name>Maximum</name></member>
+    <member refid="class_class_library_1_1model_1_1_property_1a27b8eb9c69a9549bc260c0b07c597bff" kind="property"><name>After</name></member>
+    <member refid="class_class_library_1_1model_1_1_property_1a1bc3ae48e9702507524847cb670f47b0" kind="property"><name>Prompt</name></member>
+  </compound>
+  <compound refid="class_class_library_1_1model_1_1_section" kind="class"><name>ClassLibrary::model::Section</name>
+    <member refid="class_class_library_1_1model_1_1_section_1a0a6b224da9abcb0b6bc531875b6ab88a" kind="variable"><name>inputsAndHeadings</name></member>
+    <member refid="class_class_library_1_1model_1_1_section_1abd71c1ec5a0b071d3f592525f527e267" kind="variable"><name>section</name></member>
+    <member refid="class_class_library_1_1model_1_1_section_1a4b11dc6762605f645e9df241b3f0b698" kind="property"><name>InputsAndHeadings</name></member>
+    <member refid="class_class_library_1_1model_1_1_section_1a75ced4ef5030417fbb973702bbc7abf5" kind="function"><name>Section</name></member>
+    <member refid="class_class_library_1_1model_1_1_section_1a759a3162bf978f6cbad047db9a1beee0" kind="function"><name>Section</name></member>
+    <member refid="class_class_library_1_1model_1_1_section_1a06bd8414c4432e223321ec33c6ac8ec9" kind="function"><name>Section</name></member>
+    <member refid="class_class_library_1_1model_1_1_section_1a4bb649d25002e9ee5e7024628c27192f" kind="function"><name>Count</name></member>
+  </compound>
+  <compound refid="namespace_class_library" kind="namespace"><name>ClassLibrary</name>
+  </compound>
+  <compound refid="namespace_class_library_1_1model" kind="namespace"><name>ClassLibrary::model</name>
+  </compound>
+  <compound refid="namespace_newtonsoft_1_1_json" kind="namespace"><name>Newtonsoft::Json</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_object_model" kind="namespace"><name>System::Collections::ObjectModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_resources" kind="namespace"><name>System::Resources</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="_element_8cs" kind="file"><name>Element.cs</name>
+  </compound>
+  <compound refid="_form_8cs" kind="file"><name>Form.cs</name>
+  </compound>
+  <compound refid="_section_8cs" kind="file"><name>Section.cs</name>
+  </compound>
+  <compound refid="_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_release_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="test_debug_konfig_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_release_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="test_debug_konfig_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_release_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="test_debug_konfig_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="dir_ef7013b9ffb79cd539d0a3c7033ed04e" kind="dir"><name>C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy</name>
+  </compound>
+  <compound refid="dir_753c729e54916be2817ade7b8521fa65" kind="dir"><name>C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/obj/Debug</name>
+  </compound>
+  <compound refid="dir_79bbee275bf669e56d53cf6fe52b6e2a" kind="dir"><name>C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy</name>
+  </compound>
+  <compound refid="dir_bebc8d8635935d06f0956fd70f799ba0" kind="dir"><name>C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model</name>
+  </compound>
+  <compound refid="dir_5397802b2af7affc8a6322cbb3fe5623" kind="dir"><name>C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/obj</name>
+  </compound>
+  <compound refid="dir_292f954b146e32846821d027f832490b" kind="dir"><name>C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Properties</name>
+  </compound>
+  <compound refid="dir_76a4fa66e8c54195120d087403c78e88" kind="dir"><name>C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/obj/Release</name>
+  </compound>
+  <compound refid="dir_80470d9b14919ab03d75030d613b0f58" kind="dir"><name>C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/obj/testDebugKonfig</name>
+  </compound>
+</doxygenindex>

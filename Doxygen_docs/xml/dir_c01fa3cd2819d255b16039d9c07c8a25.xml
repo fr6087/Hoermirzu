@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_c01fa3cd2819d255b16039d9c07c8a25" kind="dir">
+    <compoundname>C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common</compoundname>
+    <innerfile refid="_date_time_offset_converter_8cs">DateTimeOffsetConverter.cs</innerfile>
+    <innerfile refid="_i_navigation_service_8cs">INavigationService.cs</innerfile>
+    <innerfile refid="_navigation_helper_8cs">NavigationHelper.cs</innerfile>
+    <innerfile refid="_navigation_service_8cs">NavigationService.cs</innerfile>
+    <innerfile refid="_suspension_manager_8cs">SuspensionManager.cs</innerfile>
+    <innerfile refid="_validation_helper_8cs">ValidationHelper.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/"/>
+  </compounddef>
+</doxygen>

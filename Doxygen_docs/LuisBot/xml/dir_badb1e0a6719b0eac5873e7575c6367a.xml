@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_badb1e0a6719b0eac5873e7575c6367a" kind="dir">
+    <compoundname>App_Start</compoundname>
+    <innerfile refid="_web_api_config_8cs">WebApiConfig.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="App_Start/"/>
+  </compounddef>
+</doxygen>

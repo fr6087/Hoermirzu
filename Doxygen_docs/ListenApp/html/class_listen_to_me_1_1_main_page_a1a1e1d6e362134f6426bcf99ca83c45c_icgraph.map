@@ -1,0 +1,16 @@
+<map id="ListenToMe.MainPage.fillFrameAsync" name="ListenToMe.MainPage.fillFrameAsync">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_main_page.html#a781bed1ae1145079c62597b5a938c0d1" title="fills the section field in formstore with information from the web form " alt="" coords="232,5,404,47"/>
+<area shape="rect" id="node4" href="$class_listen_to_me_1_1_main_page.html#a8cd1a04a404800cfab55de0ba4466f68" title="ListenToMe.MainPage.goNext\lAsync" alt="" coords="220,71,416,112"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_main_page.html#afb2ff548c6284f6f179fc9b3dcc89245" title="ListenToMe.MainPage.MainPage" alt="" coords="464,13,677,39"/>
+<area shape="rect" id="node5" href="$class_listen_to_me_1_1_main_page.html#a8144f2438fc2512708677190d74d2111" title="loads the next section into the frame " alt="" coords="479,67,662,108"/>
+<area shape="rect" id="node6" href="$class_listen_to_me_1_1_main_page.html#a203cee0f97f99d3ac38d9338e7c39427" title="helps calling actions of intents other than Field.FillIn " alt="" coords="475,132,666,173"/>
+<area shape="rect" id="node7" href="$class_listen_to_me_1_1_main_page.html#a09c2518852d4261ff6a2118c8e01de9f" title="calls the LUIS API to retrieve the Bot WebApp&#39;s answer for a specific request " alt="" coords="725,132,911,173"/>
+<area shape="rect" id="node8" href="$class_listen_to_me_1_1_main_page.html#a8027d1a18b781cfe127ca02916c4552e" title="is called after the login was sucessful " alt="" coords="1973,47,2216,74"/>
+<area shape="rect" id="node9" href="$class_listen_to_me_1_1_main_page.html#ab9fba04f0fc94773c2838f6af87ec14b" title="analyzes the speech input, recognized the text and calls SendMessage() to display the rcognized text ..." alt="" coords="959,132,1141,173"/>
+<area shape="rect" id="node15" href="$class_listen_to_me_1_1_main_page.html#a2b101dc0c72c1dcb73fe756a5847940e" title="Method that is reacting each time a key is hit while the textinput field has focus. " alt="" coords="961,197,1139,239"/>
+<area shape="rect" id="node10" href="$class_listen_to_me_1_1_main_page.html#a57d75ef6bb9c10b0c944c3eb5513b076" title="sets the flag whether speech recognition is enabled according to the parameter " alt="" coords="1189,132,1416,173"/>
+<area shape="rect" id="node11" href="$class_listen_to_me_1_1_main_page.html#afad060c55f3bedc7d8e499829e133c98" title="ListenToMe.MainPage.Continuous\lRecognitionSession_ResultGenerated" alt="" coords="1464,99,1705,140"/>
+<area shape="rect" id="node13" href="$class_listen_to_me_1_1_main_page.html#afee59bda6fcfb361bf088d543e197879" title="Button is hit for microphone activation " alt="" coords="1489,164,1680,205"/>
+<area shape="rect" id="node14" href="$class_listen_to_me_1_1_main_page.html#a94a7dfd5dc1ec2e9bf7a86a4b9f7df0c" title="handles exceptions in the speechrecognition api. Also checks whether the device the user in using has..." alt="" coords="1489,229,1680,271"/>
+<area shape="rect" id="node12" href="$class_listen_to_me_1_1_main_page.html#adbf1a6a0cab368d6e803bbd1b918a045" title="sets up continous speech recognition " alt="" coords="1753,99,1925,140"/>
+</map>

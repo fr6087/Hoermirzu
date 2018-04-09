@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="md_readme" kind="page">
+    <compoundname>md_readme</compoundname>
+    <title>Use Azure app service editor</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><orderedlist>
+<listitem><para>make code change in the online editor</para></listitem><listitem><para>open the console window and run</para></listitem></orderedlist>
+</para><para><programlisting><codeline><highlight class="normal">build.cmd</highlight></codeline>
+</programlisting></para><para><heading level="2">Use Visual Studio</heading>
+</para><para><heading level="3">Build and debug</heading>
+</para><para><orderedlist>
+<listitem><para>download source code zip and extract source in local folder</para></listitem><listitem><para>open {PROJ_NAME}.sln in Visual Studio</para></listitem><listitem><para>build and run the bot</para></listitem><listitem><para>download and run <ulink url="https://emulator.botframework.com/">botframework-emulator</ulink></para></listitem><listitem><para>connect the emulator to <ulink url="http://localhost:3987">http://localhost:3987</ulink></para></listitem></orderedlist>
+</para><para><heading level="3">Publish back</heading>
+</para><para>In Visual Studio, right click on {PROJ_NAME} and select &apos;Publish&apos;</para><para>For first time publish after downloading source code<orderedlist>
+<listitem><para>In the publish profiles tab, click &apos;Import&apos;</para></listitem><listitem><para>Browse to &apos;PostDeployScripts&apos; and pick &apos;{SITE_NAME}.publishSettings&apos;</para></listitem></orderedlist>
+</para><para><heading level="2">Use continuous integration</heading>
+</para><para>If you have setup continuous integration, then your bot will automatically deployed when new changes are pushed to the source repository.</para><para><heading level="2">Add new languages</heading>
+</para><para>You can add new languages by using the resgen.exe tool of visual studio. The multilingual App Toolkit doesn&apos;t work on this project </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

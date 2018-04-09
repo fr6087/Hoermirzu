@@ -1,0 +1,59 @@
+\hypertarget{namespace_listen_to_me_1_1_common}{}\section{Listen\+To\+Me.\+Common Namespace Reference}
+\label{namespace_listen_to_me_1_1_common}\index{Listen\+To\+Me.\+Common@{Listen\+To\+Me.\+Common}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_listen_to_me_1_1_common_1_1_date_time_offset_converter}{Date\+Time\+Offset\+Converter}
+\begin{DoxyCompactList}\small\item\em Convert a Date\+Time to a Date\+Time\+Offset for use by a Date\+Picker, and back to allow for two-\/day data-\/binding. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_listen_to_me_1_1_common_1_1_i_navigation_service}{I\+Navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Navigation service interface, allows a test implementation to be substituted in its place. \end{DoxyCompactList}\item 
+class \hyperlink{class_listen_to_me_1_1_common_1_1_load_state_event_args}{Load\+State\+Event\+Args}
+\begin{DoxyCompactList}\small\item\em Class used to hold the event data required when a page attempts to load state. \end{DoxyCompactList}\item 
+class \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper}{Navigation\+Helper}
+\begin{DoxyCompactList}\small\item\em aids in navigation between pages. It manages the backstack and integrates Suspension\+Manager to handle process lifetime management and state management when navigating between pages. \end{DoxyCompactList}\item 
+class \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_service}{Navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Navigation system that decouples the \hyperlink{namespace_listen_to_me_1_1_view}{View} \hyperlink{namespace_listen_to_me_1_1_model}{Model} from knowledge of the \hyperlink{namespace_listen_to_me_1_1_view}{View} for navigation purposes. This class can be replaced with a simple mock implementation for test purposes. \end{DoxyCompactList}\item 
+class \hyperlink{class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper}{Root\+Frame\+Navigation\+Helper}
+\begin{DoxyCompactList}\small\item\em registers for standard mouse and keyboard shortcuts used to go back and forward. There should be only one instance of this class per view, and it should be associated with the root frame. \end{DoxyCompactList}\item 
+class \hyperlink{class_listen_to_me_1_1_common_1_1_save_state_event_args}{Save\+State\+Event\+Args}
+\begin{DoxyCompactList}\small\item\em Class used to hold the event data required when a page attempts to save state. \end{DoxyCompactList}\item 
+class {\bfseries Suspension\+Manager}
+\begin{DoxyCompactList}\small\item\em Suspension\+Manager captures global session state to simplify process lifetime management for an application. Note that session state will be automatically cleared under a variety of conditions and should only be used to store information that would be convenient to carry across sessions, but that should be discarded when an application crashes or is upgraded. \end{DoxyCompactList}\item 
+class \hyperlink{class_listen_to_me_1_1_common_1_1_suspension_manager_exception}{Suspension\+Manager\+Exception}
+\begin{DoxyCompactList}\small\item\em occurs when the Suspension\+Manager fails e.\+g. at storing the session state of a frame \end{DoxyCompactList}\item 
+class {\bfseries Validation\+Helper}
+\begin{DoxyCompactList}\small\item\em can help the static X\+A\+M\+L-\/\+Pages to validate the required fields. Currently deactive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \hyperlink{namespace_listen_to_me_1_1_common_a7d7e529a5b6741d55bc043ba136c4978}{Load\+State\+Event\+Handler} (object sender, \hyperlink{class_listen_to_me_1_1_common_1_1_load_state_event_args}{Load\+State\+Event\+Args} e)
+\begin{DoxyCompactList}\small\item\em Represents the method that will handle the \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_a8179285cdfdfeb3a5b80f2e6c8150743}{Navigation\+Helper.\+Load\+State}event \end{DoxyCompactList}\item 
+delegate void \hyperlink{namespace_listen_to_me_1_1_common_a75a2e49e8dd247f0cc35403c67a48a18}{Save\+State\+Event\+Handler} (object sender, \hyperlink{class_listen_to_me_1_1_common_1_1_save_state_event_args}{Save\+State\+Event\+Args} e)
+\begin{DoxyCompactList}\small\item\em Represents the method that will handle the \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_a63888f37f25238442c4f5f68af554541}{Navigation\+Helper.\+Save\+State}event \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Listen\+To\+Me\+::\+Common@{Listen\+To\+Me\+::\+Common}!Load\+State\+Event\+Handler@{Load\+State\+Event\+Handler}}
+\index{Load\+State\+Event\+Handler@{Load\+State\+Event\+Handler}!Listen\+To\+Me\+::\+Common@{Listen\+To\+Me\+::\+Common}}
+\subsubsection[{\texorpdfstring{Load\+State\+Event\+Handler(object sender, Load\+State\+Event\+Args e)}{LoadStateEventHandler(object sender, LoadStateEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Listen\+To\+Me.\+Common.\+Load\+State\+Event\+Handler (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{{\bf Load\+State\+Event\+Args}}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_listen_to_me_1_1_common_a7d7e529a5b6741d55bc043ba136c4978}{}\label{namespace_listen_to_me_1_1_common_a7d7e529a5b6741d55bc043ba136c4978}
+
+
+Represents the method that will handle the \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_a8179285cdfdfeb3a5b80f2e6c8150743}{Navigation\+Helper.\+Load\+State}event 
+
+\index{Listen\+To\+Me\+::\+Common@{Listen\+To\+Me\+::\+Common}!Save\+State\+Event\+Handler@{Save\+State\+Event\+Handler}}
+\index{Save\+State\+Event\+Handler@{Save\+State\+Event\+Handler}!Listen\+To\+Me\+::\+Common@{Listen\+To\+Me\+::\+Common}}
+\subsubsection[{\texorpdfstring{Save\+State\+Event\+Handler(object sender, Save\+State\+Event\+Args e)}{SaveStateEventHandler(object sender, SaveStateEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Listen\+To\+Me.\+Common.\+Save\+State\+Event\+Handler (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{{\bf Save\+State\+Event\+Args}}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_listen_to_me_1_1_common_a75a2e49e8dd247f0cc35403c67a48a18}{}\label{namespace_listen_to_me_1_1_common_a75a2e49e8dd247f0cc35403c67a48a18}
+
+
+Represents the method that will handle the \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_a63888f37f25238442c4f5f68af554541}{Navigation\+Helper.\+Save\+State}event 
+

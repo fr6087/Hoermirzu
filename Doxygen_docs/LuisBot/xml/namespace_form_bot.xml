@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespace_form_bot" kind="namespace" language="C#">
+    <compoundname>FormBot</compoundname>
+    <innerclass refid="class_form_bot_1_1_form_options" prot="public">FormBot::FormOptions</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_form_bot_1aaabee8bca7b8f1dc2a8ff3e380a363a8" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>AnredeOptions</name>
+        <enumvalue id="namespace_form_bot_1aaabee8bca7b8f1dc2a8ff3e380a363a8a5637d9b9874593c673287800f6944194" prot="public">
+          <name>Herr</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_form_bot_1aaabee8bca7b8f1dc2a8ff3e380a363a8a86dd3534fc5d36a81e6b25ef2eef9c52" prot="public">
+          <name>Frau</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FormOptions.cs" line="9" column="1" bodyfile="FormOptions.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_form_bot_1aebf15a36725c2ee1db3018b157253939" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>VorzugssteuerberechtigungsOptions</name>
+        <enumvalue id="namespace_form_bot_1aebf15a36725c2ee1db3018b157253939a375ee26098b46e23bcb854331f0ad8c5" prot="public">
+          <name>Ja</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_form_bot_1aebf15a36725c2ee1db3018b157253939ab397ec0bea79fb90df2b7ec2845cde07" prot="public">
+          <name>Nein</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FormOptions.cs" line="12" column="1" bodyfile="FormOptions.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="FormOptions.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

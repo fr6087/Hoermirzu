@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_luis_bot_1_1_s_s_m_l_helper" kind="class" language="C#" prot="public">
+    <compoundname>LuisBot::SSMLHelper</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_s_s_m_l_helper_1a31fa99b2e6cc6719ba4cf7335422774f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string LuisBot.SSMLHelper.Speak</definition>
+        <argsstring>(string text)</argsstring>
+        <name>Speak</name>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SSMLHelper.cs" line="9" column="1" bodyfile="SSMLHelper.cs" bodystart="9" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_s_s_m_l_helper_1aa93a8c32174e90362461049876a3cefd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string LuisBot.SSMLHelper.Emphasis</definition>
+        <argsstring>(string text)</argsstring>
+        <name>Emphasis</name>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SSMLHelper.cs" line="20" column="1" bodyfile="SSMLHelper.cs" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_s_s_m_l_helper_1af6f1caa1d95dc486278d499febf2b2f0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string LuisBot.SSMLHelper.SayAs</definition>
+        <argsstring>(string interpretAs, string text)</argsstring>
+        <name>SayAs</name>
+        <param>
+          <type>string</type>
+          <declname>interpretAs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SSMLHelper.cs" line="26" column="1" bodyfile="SSMLHelper.cs" bodystart="26" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SSMLHelper.cs" line="8" column="1" bodyfile="SSMLHelper.cs" bodystart="7" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_luis_bot_1_1_s_s_m_l_helper_1aa93a8c32174e90362461049876a3cefd" prot="public" virt="non-virtual"><scope>LuisBot::SSMLHelper</scope><name>Emphasis</name></member>
+      <member refid="class_luis_bot_1_1_s_s_m_l_helper_1af6f1caa1d95dc486278d499febf2b2f0" prot="public" virt="non-virtual"><scope>LuisBot::SSMLHelper</scope><name>SayAs</name></member>
+      <member refid="class_luis_bot_1_1_s_s_m_l_helper_1a31fa99b2e6cc6719ba4cf7335422774f" prot="public" virt="non-virtual"><scope>LuisBot::SSMLHelper</scope><name>Speak</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

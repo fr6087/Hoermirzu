@@ -1,0 +1,52 @@
+\hypertarget{postjson_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/postjson.js File Reference}
+\label{postjson_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/postjson.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/postjson.\+js}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{postjson_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{postjson_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\item 
+var \hyperlink{postjson_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}
+\item 
+var \hyperlink{postjson_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{postjson.\+js@{postjson.\+js}!headers@{headers}}
+\index{headers@{headers}!postjson.\+js@{postjson.\+js}}
+\subsubsection[{\texorpdfstring{headers}{headers}}]{\setlength{\rightskip}{0pt plus 5cm}var headers}\hypertarget{postjson_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{}\label{postjson_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \textcolor{stringliteral}{"Content-Type"}: \textcolor{stringliteral}{"application/json"}
+\}
+
+\hyperlink{postjson_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page}.open(\hyperlink{postjson_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}, \textcolor{stringliteral}{'post'}, \hyperlink{postserver_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}, \hyperlink{postjson_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}, \textcolor{keyword}{function} (status) \{
+    \textcolor{keywordflow}{if} (status !== \textcolor{stringliteral}{'success'}) \{
+        console.log(\textcolor{stringliteral}{'Unable to post!'});
+    \} \textcolor{keywordflow}{else} \{
+        console.log(\hyperlink{postjson_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page}.content);
+    \}
+    phantom.exit();
+\})
+\end{DoxyCode}
+
+
+Referenced by create\+H\+A\+R().
+
+\index{postjson.\+js@{postjson.\+js}!page@{page}}
+\index{page@{page}!postjson.\+js@{postjson.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{postjson_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{postjson_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+\index{postjson.\+js@{postjson.\+js}!server@{server}}
+\index{server@{server}!postjson.\+js@{postjson.\+js}}
+\subsubsection[{\texorpdfstring{server}{server}}]{\setlength{\rightskip}{0pt plus 5cm}var server}\hypertarget{postjson_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{}\label{postjson_8js_a207259f7e3cfd9800ed8f7d7224c7a68}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{stringliteral}{'http:}
+\textcolor{stringliteral}{    data = '}\{\textcolor{stringliteral}{"universe"}: \textcolor{stringliteral}{"expanding"}, \textcolor{stringliteral}{"answer"}: 42\}\textcolor{stringliteral}{'}
+\end{DoxyCode}
+\index{postjson.\+js@{postjson.\+js}!strict@{strict}}
+\index{strict@{strict}!postjson.\+js@{postjson.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{postjson_8js_ae2475e10618961c050dcba04e8c42331}{}\label{postjson_8js_ae2475e10618961c050dcba04e8c42331}

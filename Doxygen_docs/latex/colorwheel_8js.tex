@@ -1,0 +1,69 @@
+\hypertarget{colorwheel_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/colorwheel.js File Reference}
+\label{colorwheel_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/colorwheel.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/colorwheel.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{colorwheel_8js_add2bec0f58b2929bcda0ca393731ed72}{evaluate} (function()\{var el=document.\+get\+Element\+By\+Id(\textquotesingle{}surface\textquotesingle{}), context=el.\+get\+Context(\textquotesingle{}2d\textquotesingle{}), width=window.\+inner\+Width, height=window.\+inner\+Height, cx=width/2, cy=height/2, radius=width/2.\+3, image\+Data, pixels, hue, sat, value, i=0, x, y, rx, ry, d, f, g, p, u, v, w, rgb;el.\+width=width;el.\+height=height;image\+Data=context.\+create\+Image\+Data(width, height);pixels=image\+Data.\+data;for(y=0;y$<$ height;y=y+1)\{for(x=0;x$<$ width;x=x+1, i=i+4)\{rx=x-\/cx;ry=y-\/cy;d=rx $\ast$rx+ry $\ast$ry;if(d$<$ radius $\ast$radius)\{hue=6 $\ast$(\+Math.\+atan2(ry, rx)+\+Math.\+P\+I)/(2 $\ast$\+Math.\+P\+I);sat=\+Math.\+sqrt(d)/radius;g=\+Math.\+floor(hue);f=hue-\/g;u=255 $\ast$(1-\/sat);v=255 $\ast$(1-\/sat $\ast$f);w=255 $\ast$(1-\/sat $\ast$(1-\/f));pixels\mbox{[}i\mbox{]}=\mbox{[}255, v, u, u, w, 255, 255\mbox{]}\mbox{[}g\mbox{]};pixels\mbox{[}i+1\mbox{]}=\mbox{[}w, 255, 255, v, u, u, w\mbox{]}\mbox{[}g\mbox{]};pixels\mbox{[}i+2\mbox{]}=\mbox{[}u, u, w, 255, 255, v, u\mbox{]}\mbox{[}g\mbox{]};pixels\mbox{[}i+3\mbox{]}=255;\}\}\}context.\+put\+Image\+Data(image\+Data, 0, 0);document.\+body.\+style.\+background\+Color= \textquotesingle{}white\textquotesingle{};document.\+body.\+style.\+margin= \textquotesingle{}0px\textquotesingle{};\})
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{colorwheel_8js_a2e68365b09ca6b47bfb6cfb37e38294d}{render} (\textquotesingle{}colorwheel.\+png\textquotesingle{})
+\item 
+phantom \hyperlink{colorwheel_8js_a01fca00da67a8c60470b440fa7083bf7}{exit} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{colorwheel_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{colorwheel_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{colorwheel_8js_abbbde5b34d3e102004827846faf853b0}{viewport\+Size} = \{ width\+: 400, height \+: 400 \}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{colorwheel_8js_af941a9c8d1e0d5867f89739a7d55720c}{content} = \textquotesingle{}$<$html$>$$<$body$>$$<$canvas id=\char`\"{}surface\char`\"{}$>$$<$/canvas$>$$<$/body$>$$<$/html$>$\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{colorwheel.\+js@{colorwheel.\+js}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!colorwheel.\+js@{colorwheel.\+js}}
+\subsubsection[{\texorpdfstring{evaluate(function()\lcurly{}var el=document.\+get\+Element\+By\+Id(\textquotesingle{}surface\textquotesingle{}), context=el.\+get\+Context(\textquotesingle{}2d\textquotesingle{}), width=window.\+inner\+Width, height=window.\+inner\+Height, cx=width/2, cy=height/2, radius=width/2.\+3, image\+Data, pixels, hue, sat, value, i=0, x, y, rx, ry, d, f, g, p, u, v, w, rgb;el.\+width=width;el.\+height=height;image\+Data=context.\+create\+Image\+Data(width, height);pixels=image\+Data.\+data;for(y=0;y$<$ height;y=y+1)\lcurly{}for(x=0;x$<$ width;x=x+1, i=i+4)\lcurly{}rx=x-\/cx;ry=y-\/cy;d=rx $\ast$rx+ry $\ast$ry;if(d$<$ radius $\ast$radius)\lcurly{}hue=6 $\ast$(\+Math.\+atan2(ry, rx)+\+Math.\+P\+I)/(2 $\ast$\+Math.\+P\+I);sat=\+Math.\+sqrt(d)/radius;g=\+Math.\+floor(hue);f=hue-\/g;u=255 $\ast$(1-\/sat);v=255 $\ast$(1-\/sat $\ast$f);w=255 $\ast$(1-\/sat $\ast$(1-\/f));pixels[i]=[255, v, u, u, w, 255, 255][g];pixels[i+1]=[w, 255, 255, v, u, u, w][g];pixels[i+2]=[u, u, w, 255, 255, v, u][g];pixels[i+3]=255;\rcurly{}\rcurly{}\rcurly{}context.\+put\+Image\+Data(image\+Data, 0, 0);document.\+body.\+style.\+background\+Color= \textquotesingle{}white\textquotesingle{};document.\+body.\+style.\+margin= \textquotesingle{}0px\textquotesingle{};\rcurly{})}{evaluate(function()\{var el=document.getElementById('surface'), context=el.getContext('2d'), width=window.innerWidth, height=window.innerHeight, cx=width/2, cy=height/2, radius=width/2.3, imageData, pixels, hue, sat, value, i=0, x, y, rx, ry, d, f, g, p, u, v, w, rgb;el.width=width;el.height=height;imageData=context.createImageData(width, height);pixels=imageData.data;for(y=0;y< height;y=y+1)\{for(x=0;x< width;x=x+1, i=i+4)\{rx=x-cx;ry=y-cy;d=rx *rx+ry *ry;if(d< radius *radius)\{hue=6 *(Math.atan2(ry, rx)+Math.PI)/(2 *Math.PI);sat=Math.sqrt(d)/radius;g=Math.floor(hue);f=hue-g;u=255 *(1-sat);v=255 *(1-sat *f);w=255 *(1-sat *(1-f));pixels[i]=[255, v, u, u, w, 255, 255][g];pixels[i+1]=[w, 255, 255, v, u, u, w][g];pixels[i+2]=[u, u, w, 255, 255, v, u][g];pixels[i+3]=255;\}\}\}context.putImageData(imageData, 0, 0);document.body.style.backgroundColor= 'white';document.body.style.margin= '0px';\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} evaluate (
+\begin{DoxyParamCaption}
+\item[{function()\{var el=document.\+get\+Element\+By\+Id(\textquotesingle{}surface\textquotesingle{}), context=el.\+get\+Context(\textquotesingle{}2d\textquotesingle{}), width=window.\+inner\+Width, height=window.\+inner\+Height, cx=width/2, cy=height/2, radius=width/2.\+3, image\+Data, pixels, hue, sat, value, i=0, x, y, rx, ry, d, f, g, p, u, v, w, rgb;el.\+width=width;el.\+height=height;image\+Data=context.\+create\+Image\+Data(width, height);pixels=image\+Data.\+data;for(y=0;y$<$ height;y=y+1)\{for(x=0;x$<$ width;x=x+1, i=i+4)\{rx=x-\/cx;ry=y-\/cy;d=rx $\ast$rx+ry $\ast$ry;if(d$<$ radius $\ast$radius)\{hue=6 $\ast$(\+Math.\+atan2(ry, rx)+\+Math.\+P\+I)/(2 $\ast$\+Math.\+P\+I);sat=\+Math.\+sqrt(d)/radius;g=\+Math.\+floor(hue);f=hue-\/g;u=255 $\ast$(1-\/sat);v=255 $\ast$(1-\/sat $\ast$f);w=255 $\ast$(1-\/sat $\ast$(1-\/f));pixels\mbox{[}i\mbox{]}=\mbox{[}255, v, u, u, w, 255, 255\mbox{]}\mbox{[}g\mbox{]};pixels\mbox{[}i+1\mbox{]}=\mbox{[}w, 255, 255, v, u, u, w\mbox{]}\mbox{[}g\mbox{]};pixels\mbox{[}i+2\mbox{]}=\mbox{[}u, u, w, 255, 255, v, u\mbox{]}\mbox{[}g\mbox{]};pixels\mbox{[}i+3\mbox{]}=255;\}\}\}context.\+put\+Image\+Data(image\+Data, 0, 0);document.\+body.\+style.\+background\+Color= \textquotesingle{}white\textquotesingle{};document.\+body.\+style.\+margin= \textquotesingle{}0px\textquotesingle{};\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{colorwheel_8js_add2bec0f58b2929bcda0ca393731ed72}{}\label{colorwheel_8js_add2bec0f58b2929bcda0ca393731ed72}
+\index{colorwheel.\+js@{colorwheel.\+js}!exit@{exit}}
+\index{exit@{exit}!colorwheel.\+js@{colorwheel.\+js}}
+\subsubsection[{\texorpdfstring{exit()}{exit()}}]{\setlength{\rightskip}{0pt plus 5cm}phantom exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{colorwheel_8js_a01fca00da67a8c60470b440fa7083bf7}{}\label{colorwheel_8js_a01fca00da67a8c60470b440fa7083bf7}
+\index{colorwheel.\+js@{colorwheel.\+js}!render@{render}}
+\index{render@{render}!colorwheel.\+js@{colorwheel.\+js}}
+\subsubsection[{\texorpdfstring{render(\textquotesingle{}colorwheel.\+png\textquotesingle{})}{render('colorwheel.png')}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} render (
+\begin{DoxyParamCaption}
+\item[{\textquotesingle{}colorwheel.\+png\textquotesingle{}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{colorwheel_8js_a2e68365b09ca6b47bfb6cfb37e38294d}{}\label{colorwheel_8js_a2e68365b09ca6b47bfb6cfb37e38294d}
+
+
+\subsection{Variable Documentation}
+\index{colorwheel.\+js@{colorwheel.\+js}!content@{content}}
+\index{content@{content}!colorwheel.\+js@{colorwheel.\+js}}
+\subsubsection[{\texorpdfstring{content}{content}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} content = \textquotesingle{}$<$html$>$$<$body$>$$<$canvas id=\char`\"{}surface\char`\"{}$>$$<$/canvas$>$$<$/body$>$$<$/html$>$\textquotesingle{}}\hypertarget{colorwheel_8js_af941a9c8d1e0d5867f89739a7d55720c}{}\label{colorwheel_8js_af941a9c8d1e0d5867f89739a7d55720c}
+
+
+Referenced by create\+H\+A\+R(), Listen\+To\+Me.\+Model.\+Proxy\+::\+Make\+Request(), and toggle\+Visibility().
+
+\index{colorwheel.\+js@{colorwheel.\+js}!page@{page}}
+\index{page@{page}!colorwheel.\+js@{colorwheel.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{colorwheel_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{colorwheel_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+
+
+Referenced by Listen\+To\+Me.\+Main\+Page\+::determine\+Response(), if(), Listen\+To\+Me.\+Common.\+Navigation\+Helper\+::\+Navigation\+Helper(), page\+Title(), Listen\+To\+Me.\+App\+::\+Perform\+Command\+Async(), and set\+Page\+Title().
+
+\index{colorwheel.\+js@{colorwheel.\+js}!strict@{strict}}
+\index{strict@{strict}!colorwheel.\+js@{colorwheel.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{colorwheel_8js_ae2475e10618961c050dcba04e8c42331}{}\label{colorwheel_8js_ae2475e10618961c050dcba04e8c42331}
+\index{colorwheel.\+js@{colorwheel.\+js}!viewport\+Size@{viewport\+Size}}
+\index{viewport\+Size@{viewport\+Size}!colorwheel.\+js@{colorwheel.\+js}}
+\subsubsection[{\texorpdfstring{viewport\+Size}{viewportSize}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} viewport\+Size = \{ width\+: 400, height \+: 400 \}}\hypertarget{colorwheel_8js_abbbde5b34d3e102004827846faf853b0}{}\label{colorwheel_8js_abbbde5b34d3e102004827846faf853b0}

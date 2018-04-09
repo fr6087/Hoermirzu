@@ -1,0 +1,5 @@
+<map id="ListenToMe.MainPage.determineResponse" name="ListenToMe.MainPage.determineResponse">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_main_page.html#af4469348ffee9a5d1a8680d2535a279b" title="helper method for cleaning output from luis. Since LUIS answers in lowercase only, this method uppercases the first letter " alt="" coords="277,5,458,47"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_main_page.html#acad3fb1a64c0bea077f5ad38627faeef" title="Button is hit for microphone activation " alt="" coords="265,71,469,112"/>
+<area shape="rect" id="node4" href="$class_listen_to_me_1_1_main_page.html#a465e7f9723aec19e912a3913841d477e" title="ListenToMe.MainPage.Clicked" alt="" coords="517,78,716,105"/>
+</map>

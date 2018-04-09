@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_82a0f24f498220db9f2e7fac97f91183" kind="dir">
+    <compoundname>Dialogs</compoundname>
+    <innerfile refid="_basic_luis_dialog_8cs">BasicLuisDialog.cs</innerfile>
+    <innerfile refid="_help_dialog_8cs">HelpDialog.cs</innerfile>
+    <innerfile refid="_upload_dialog_8cs">UploadDialog.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Dialogs/"/>
+  </compounddef>
+</doxygen>

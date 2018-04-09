@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_bebc8d8635935d06f0956fd70f799ba0" kind="dir">
+    <compoundname>C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model</compoundname>
+    <innerfile refid="_element_8cs">Element.cs</innerfile>
+    <innerfile refid="_form_8cs">Form.cs</innerfile>
+    <innerfile refid="_section_8cs">Section.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/"/>
+  </compounddef>
+</doxygen>

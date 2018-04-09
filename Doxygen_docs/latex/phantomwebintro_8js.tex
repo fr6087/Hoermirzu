@@ -1,0 +1,45 @@
+\hypertarget{phantomwebintro_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/phantomwebintro.js File Reference}
+\label{phantomwebintro_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/phantomwebintro.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/phantomwebintro.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{phantomwebintro_8js_a988a1e6907825fab54d25b9f0db66368}{open} (\char`\"{}http\+://phantomjs.\+org/\char`\"{}, function(status)\{\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(status===\char`\"{}success\char`\"{})\{page.\+include\+Js(\char`\"{}http\+://ajax.\+googleapis.\+com/ajax/libs/jquery/1.\+6.\+1/jquery.\+min.\+js\char`\"{}, function()\{                                       \hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{page.\+evaluate}(function()\{                                                       \hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\char`\"{}\$(\textbackslash{}\char`\"{}.explanation\textbackslash{}\char`\"{}).text() -\/$>$ \char`\"{}+\$(\char`\"{}.explanation\char`\"{}).text());                                       \});                                       \hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}(0);                       \});\}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}(1);\}\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{phantomwebintro_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{phantomwebintro_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{phantomwebintro_8js_a87e6a5ff0ebb4d272a04b52dd70224c6}{on\+Console\+Message}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{phantomwebintro.\+js@{phantomwebintro.\+js}!open@{open}}
+\index{open@{open}!phantomwebintro.\+js@{phantomwebintro.\+js}}
+\subsubsection[{\texorpdfstring{open(""http\+://phantomjs.\+org/"", function(status)\lcurly{}if(status===""success"")\lcurly{}page.\+include\+Js(""http\+://ajax.\+googleapis.\+com/ajax/libs/jquery/1.\+6.\+1/jquery.\+min.\+js"", function()\lcurly{}                                       page.\+evaluate(function()\lcurly{}                                                       console.\+log(""\$(\textbackslash{}"".\+explanation\textbackslash{}"").\+text() -\/$>$ ""+\$("".\+explanation"").\+text());                                       \rcurly{});                                       phantom.\+exit(0);                       \rcurly{});\rcurly{}else\lcurly{}phantom.\+exit(1);\rcurly{}\rcurly{})}{open("http://phantomjs.org/", function(status)\{if(status==="success")\{page.includeJs("http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js", function()\{                                       page.evaluate(function()\{                                                       console.log("$(\textbackslash{}".explanation\textbackslash{}").text() -> "+$(".explanation").text());                                       \});                                       phantom.exit(0);                       \});\}else\{phantom.exit(1);\}\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} open (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}http\+://phantomjs.\+org/\char`\"{}}]{, }
+\item[{function(status)\{{\bf if}(status===\char`\"{}success\char`\"{})\{page.\+include\+Js(\char`\"{}http\+://ajax.\+googleapis.\+com/ajax/libs/jquery/1.\+6.\+1/jquery.\+min.\+js\char`\"{}, function()\{                                                                                                                                                   {\bf page.\+evaluate}(function()\{                                                                                                                                                                                                                   {\bf console.\+log}(\char`\"{}\$(\textbackslash{}\char`\"{}.explanation\textbackslash{}\char`\"{}).text() -\/$>$ \char`\"{}+\$(\char`\"{}.explanation\char`\"{}).text());                                                                                                                                                   \});                                                                                                                                                   {\bf phantom.\+exit}(0);                                                                                   \});\}{\bf else}\{{\bf phantom.\+exit}(1);\}\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{phantomwebintro_8js_a988a1e6907825fab54d25b9f0db66368}{}\label{phantomwebintro_8js_a988a1e6907825fab54d25b9f0db66368}
+
+
+\subsection{Variable Documentation}
+\index{phantomwebintro.\+js@{phantomwebintro.\+js}!on\+Console\+Message@{on\+Console\+Message}}
+\index{on\+Console\+Message@{on\+Console\+Message}!phantomwebintro.\+js@{phantomwebintro.\+js}}
+\subsubsection[{\texorpdfstring{on\+Console\+Message}{onConsoleMessage}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Console\+Message}\hypertarget{phantomwebintro_8js_a87e6a5ff0ebb4d272a04b52dd70224c6}{}\label{phantomwebintro_8js_a87e6a5ff0ebb4d272a04b52dd70224c6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}(msg) \{
+    console.log(msg);
+\}
+\end{DoxyCode}
+\index{phantomwebintro.\+js@{phantomwebintro.\+js}!page@{page}}
+\index{page@{page}!phantomwebintro.\+js@{phantomwebintro.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{phantomwebintro_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{phantomwebintro_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+\index{phantomwebintro.\+js@{phantomwebintro.\+js}!strict@{strict}}
+\index{strict@{strict}!phantomwebintro.\+js@{phantomwebintro.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{phantomwebintro_8js_ae2475e10618961c050dcba04e8c42331}{}\label{phantomwebintro_8js_ae2475e10618961c050dcba04e8c42331}

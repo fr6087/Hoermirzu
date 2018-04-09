@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_luis_bot_1_1_dialogs_1_1_help_dialog" kind="class" language="C#" prot="public">
+    <compoundname>LuisBot::Dialogs::HelpDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IDialog&lt; object &gt;</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a0dfa5dcb2add0b7806e74d96271c9dc4" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string LuisBot.Dialogs.HelpDialog.CompanyValue</definition>
+        <argsstring></argsstring>
+        <name>CompanyValue</name>
+        <initializer>=&quot;Firmenangaben&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="12" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1af9a861cf7c854f257b3bbcae3e96f03a" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string LuisBot.Dialogs.HelpDialog.AddressValue</definition>
+        <argsstring></argsstring>
+        <name>AddressValue</name>
+        <initializer>=&quot;Adressangaben&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="13" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1af2bda7488d8a2a107f8d5ea15fd4b72b" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string LuisBot.Dialogs.HelpDialog.LegalValue</definition>
+        <argsstring></argsstring>
+        <name>LegalValue</name>
+        <initializer>=&quot;Juristisches&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="14" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ab02b15c07417e05ecd594709e7e4126d" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string LuisBot.Dialogs.HelpDialog.RegisterValue</definition>
+        <argsstring></argsstring>
+        <name>RegisterValue</name>
+        <initializer>=&quot;Registereinträge&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="15" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ae875e16127193c8c8a0999a3426a9927" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string LuisBot.Dialogs.HelpDialog.PetitionValue</definition>
+        <argsstring></argsstring>
+        <name>PetitionValue</name>
+        <initializer>=&quot;Petitionsdetails&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="16" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ae5623e93dc645fb0a7de8cdd9edb2248" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string LuisBot.Dialogs.HelpDialog.LocationValue</definition>
+        <argsstring></argsstring>
+        <name>LocationValue</name>
+        <initializer>=&quot;Ortsangaben&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="17" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a01014dbfb2b02140a31b873c35ddd576" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string LuisBot.Dialogs.HelpDialog.ScheduleValue</definition>
+        <argsstring></argsstring>
+        <name>ScheduleValue</name>
+        <initializer>=&quot;Zeitangaben&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="18" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a9207709494423fa44697556b51246ecd" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string LuisBot.Dialogs.HelpDialog.TrainingProvidersValue</definition>
+        <argsstring></argsstring>
+        <name>TrainingProvidersValue</name>
+        <initializer>=&quot;Fortbildungsanbieter&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="19" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a311e18149e7b2497a013757adc75465f" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string LuisBot.Dialogs.HelpDialog.FinancingValue</definition>
+        <argsstring></argsstring>
+        <name>FinancingValue</name>
+        <initializer>=&quot;Finanzen&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="20" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a612f571f3eccf752187d7241b151a00c" prot="private" static="no" mutable="no">
+        <type>IEnumerable&lt; string &gt;</type>
+        <definition>IEnumerable&lt;string&gt; LuisBot.Dialogs.HelpDialog.options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <initializer>= new List&lt;string&gt; {CompanyValue, AddressValue, LegalValue, RegisterValue, PetitionValue, LocationValue, ScheduleValue, TrainingProvidersValue, FinancingValue}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="23" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a98f168f3d7d5f39de9f5ec136c1c3979" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.HelpDialog.StartAsync</definition>
+        <argsstring>(IDialogContext context)</argsstring>
+        <name>StartAsync</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="25" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="25" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ab04e83d5d67c92518a0eb6a552c38c41" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.HelpDialog.StartSelectedDialog</definition>
+        <argsstring>(IDialogContext context, IAwaitable&lt; string &gt; result)</argsstring>
+        <name>StartSelectedDialog</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>IAwaitable&lt; string &gt;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="68" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="68" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a92f2fb7f4752d59ebeab8be3b0e5088b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task LuisBot.Dialogs.HelpDialog.GetSelectedDialog</definition>
+        <argsstring>(string selectedDialog, IDialogContext context)</argsstring>
+        <name>GetSelectedDialog</name>
+        <param>
+          <type>string</type>
+          <declname>selectedDialog</declname>
+        </param>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="75" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="75" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ae471c566423b57d698c3dd5692d4d848" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task LuisBot.Dialogs.HelpDialog.After2Dialog</definition>
+        <argsstring>(IDialogContext context, IAwaitable&lt; object &gt; result)</argsstring>
+        <name>After2Dialog</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>IAwaitable&lt; object &gt;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/HelpDialog.cs" line="104" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="104" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>IDialog&lt; object &gt;</label>
+      </node>
+      <node id="10">
+        <label>LuisBot.Dialogs.HelpDialog</label>
+        <link refid="class_luis_bot_1_1_dialogs_1_1_help_dialog"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>IDialog&lt; object &gt;</label>
+      </node>
+      <node id="12">
+        <label>LuisBot.Dialogs.HelpDialog</label>
+        <link refid="class_luis_bot_1_1_dialogs_1_1_help_dialog"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Dialogs/HelpDialog.cs" line="11" column="1" bodyfile="Dialogs/HelpDialog.cs" bodystart="10" bodyend="115"/>
+    <listofallmembers>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1af9a861cf7c854f257b3bbcae3e96f03a" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>AddressValue</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ae471c566423b57d698c3dd5692d4d848" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>After2Dialog</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a0dfa5dcb2add0b7806e74d96271c9dc4" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>CompanyValue</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a311e18149e7b2497a013757adc75465f" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>FinancingValue</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a92f2fb7f4752d59ebeab8be3b0e5088b" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>GetSelectedDialog</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1af2bda7488d8a2a107f8d5ea15fd4b72b" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>LegalValue</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ae5623e93dc645fb0a7de8cdd9edb2248" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>LocationValue</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a612f571f3eccf752187d7241b151a00c" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>options</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ae875e16127193c8c8a0999a3426a9927" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>PetitionValue</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ab02b15c07417e05ecd594709e7e4126d" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>RegisterValue</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a01014dbfb2b02140a31b873c35ddd576" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>ScheduleValue</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a98f168f3d7d5f39de9f5ec136c1c3979" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>StartAsync</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ab04e83d5d67c92518a0eb6a552c38c41" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>StartSelectedDialog</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a9207709494423fa44697556b51246ecd" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::HelpDialog</scope><name>TrainingProvidersValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

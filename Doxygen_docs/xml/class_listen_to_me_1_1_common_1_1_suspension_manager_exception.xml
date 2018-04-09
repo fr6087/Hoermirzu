@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_common_1_1_suspension_manager_exception" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::Common::SuspensionManagerException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_suspension_manager_exception_1a1883545b1304b65c42542c97a2f405ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.Common.SuspensionManagerException.SuspensionManagerException</definition>
+        <argsstring>()</argsstring>
+        <name>SuspensionManagerException</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="261" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="261" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_suspension_manager_exception_1a322fd8e293b8eb9342a29aae5eecb676" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.Common.SuspensionManagerException.SuspensionManagerException</definition>
+        <argsstring>(Exception e)</argsstring>
+        <name>SuspensionManagerException</name>
+        <param>
+          <type>Exception</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="265" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="265" bodyend="269"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>occurs when the SuspensionManager fails e.g. at storing the session state of a frame </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="139">
+        <label>ListenToMe.Common.SuspensionManagerException</label>
+        <link refid="class_listen_to_me_1_1_common_1_1_suspension_manager_exception"/>
+        <childnode refid="140" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>Exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="141">
+        <label>ListenToMe.Common.SuspensionManagerException</label>
+        <link refid="class_listen_to_me_1_1_common_1_1_suspension_manager_exception"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>Exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" line="260" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/SuspensionManager.cs" bodystart="259" bodyend="270"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_exception_1a1883545b1304b65c42542c97a2f405ce" prot="public" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManagerException</scope><name>SuspensionManagerException</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_suspension_manager_exception_1a322fd8e293b8eb9342a29aae5eecb676" prot="public" virt="non-virtual"><scope>ListenToMe::Common::SuspensionManagerException</scope><name>SuspensionManagerException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_listen_to_me_1_1_model" kind="namespace" language="C#">
+    <compoundname>ListenToMe::Model</compoundname>
+    <innerclass refid="class_listen_to_me_1_1_model_1_1_custom_prebuild_entity" prot="package">ListenToMe::Model::CustomPrebuildEntity</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_model_1_1_entity" prot="public">ListenToMe::Model::Entity</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_model_1_1_form" prot="public">ListenToMe::Model::Form</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_model_1_1_intent" prot="public">ListenToMe::Model::Intent</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command" prot="public">ListenToMe::Model::ListenToMeVoiceCommand</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_model_1_1_proxy" prot="public">ListenToMe::Model::Proxy</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_model_1_1_rootobject" prot="public">ListenToMe::Model::Rootobject</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_model_1_1_topscoringintent" prot="public">ListenToMe::Model::Topscoringintent</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Form.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,47 @@
+\hypertarget{useragent_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/useragent.js File Reference}
+\label{useragent_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/useragent.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/useragent.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+console \hyperlink{useragent_8js_a5358d744d27c43e60076fee92da960de}{log} (\textquotesingle{}The default user agent is \textquotesingle{}+\hyperlink{useragent_8js_a81e21da6263dfc6bd8faa5e3e9cbed9a}{page.\+settings.\+user\+Agent})
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{useragent_8js_a142e4a8e49538573ec842740783414b1}{open} (\textquotesingle{}http\+:if(status!== \textquotesingle{}success\textquotesingle{})\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}Unable to access network\textquotesingle{});\}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{var ua=\hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{page.\+evaluate}(function()\{                                       return document.\+get\+Element\+By\+Id(\textquotesingle{}myagent\textquotesingle{}).inner\+Text;                       \});\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(ua);\}\hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{useragent_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{useragent_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} settings \hyperlink{useragent_8js_a81e21da6263dfc6bd8faa5e3e9cbed9a}{user\+Agent} = \textquotesingle{}Special\+Agent\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{useragent.\+js@{useragent.\+js}!log@{log}}
+\index{log@{log}!useragent.\+js@{useragent.\+js}}
+\subsubsection[{\texorpdfstring{log(\textquotesingle{}\+The default user agent is \textquotesingle{}+page.\+settings.\+user\+Agent)}{log('The default user agent is '+page.settings.userAgent)}}]{\setlength{\rightskip}{0pt plus 5cm}console log (
+\begin{DoxyParamCaption}
+\item[{\textquotesingle{}The default user agent is \textquotesingle{}+page.\+settings.}]{user\+Agent}
+\end{DoxyParamCaption}
+)}\hypertarget{useragent_8js_a5358d744d27c43e60076fee92da960de}{}\label{useragent_8js_a5358d744d27c43e60076fee92da960de}
+\index{useragent.\+js@{useragent.\+js}!open@{open}}
+\index{open@{open}!useragent.\+js@{useragent.\+js}}
+\subsubsection[{\texorpdfstring{open(\textquotesingle{}http\+:if(status"!== \textquotesingle{}success\textquotesingle{})\lcurly{}console.\+log(\textquotesingle{}\+Unable to access network\textquotesingle{});\rcurly{}else\lcurly{}var ua=page.\+evaluate(function()\lcurly{}                                       return document.\+get\+Element\+By\+Id(\textquotesingle{}myagent\textquotesingle{}).\+inner\+Text;                       \rcurly{});console.\+log(ua);\rcurly{}phantom.\+exit();\rcurly{})}{open('http:if(status!== 'success')\{console.log('Unable to access network');\}else\{var ua=page.evaluate(function()\{                                       return document.getElementById('myagent').innerText;                       \});console.log(ua);\}phantom.exit();\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} open (
+\begin{DoxyParamCaption}
+\item[{\textquotesingle{}http\+:if(status!== \textquotesingle{}success\textquotesingle{})\{{\bf console.\+log}(\textquotesingle{}Unable to access network\textquotesingle{});\}{\bf else}\{var ua={\bf page.\+evaluate}(function()\{                                                                                                                                                   return document.\+get\+Element\+By\+Id(\textquotesingle{}myagent\textquotesingle{}).inner\+Text;                                                                                   \});{\bf console.\+log}(ua);\}{\bf phantom.\+exit}();\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{useragent_8js_a142e4a8e49538573ec842740783414b1}{}\label{useragent_8js_a142e4a8e49538573ec842740783414b1}
+
+
+\subsection{Variable Documentation}
+\index{useragent.\+js@{useragent.\+js}!page@{page}}
+\index{page@{page}!useragent.\+js@{useragent.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{useragent_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{useragent_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+\index{useragent.\+js@{useragent.\+js}!strict@{strict}}
+\index{strict@{strict}!useragent.\+js@{useragent.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{useragent_8js_ae2475e10618961c050dcba04e8c42331}{}\label{useragent_8js_ae2475e10618961c050dcba04e8c42331}
+\index{useragent.\+js@{useragent.\+js}!user\+Agent@{user\+Agent}}
+\index{user\+Agent@{user\+Agent}!useragent.\+js@{useragent.\+js}}
+\subsubsection[{\texorpdfstring{user\+Agent}{userAgent}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} settings user\+Agent = \textquotesingle{}Special\+Agent\textquotesingle{}}\hypertarget{useragent_8js_a81e21da6263dfc6bd8faa5e3e9cbed9a}{}\label{useragent_8js_a81e21da6263dfc6bd8faa5e3e9cbed9a}

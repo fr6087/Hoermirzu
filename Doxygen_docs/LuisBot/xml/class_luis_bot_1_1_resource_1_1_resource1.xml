@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_luis_bot_1_1_resource_1_1_resource1" kind="class" language="C#" prot="package">
+    <compoundname>LuisBot::Resource::Resource1</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_luis_bot_1_1_resource_1_1_resource1_1a4da24226b1031aa6365c42c3de3c3108" prot="private" static="yes" mutable="no">
+        <type>global::System.Resources.ResourceManager</type>
+        <definition>global::System.Resources.ResourceManager LuisBot.Resource.Resource1.resourceMan</definition>
+        <argsstring></argsstring>
+        <name>resourceMan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="27" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_resource_1_1_resource1_1a4b6ee8e37603774b143e91b4c634fbcd" prot="private" static="yes" mutable="no">
+        <type>global::System.Globalization.CultureInfo</type>
+        <definition>global::System.Globalization.CultureInfo LuisBot.Resource.Resource1.resourceCulture</definition>
+        <argsstring></argsstring>
+        <name>resourceCulture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="29" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a74bf4faacecd79ac8fab0c5191f1c5ed" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>global::System.Resources.ResourceManager</type>
+        <definition>global::System.Resources.ResourceManager LuisBot.Resource.Resource1.ResourceManager</definition>
+        <argsstring></argsstring>
+        <name>ResourceManager</name>
+        <briefdescription>
+<para>Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="39" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="39" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a9cc534775f390fdca6d308d802ebb277" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>global::System.Globalization.CultureInfo</type>
+        <definition>global::System.Globalization.CultureInfo LuisBot.Resource.Resource1.Culture</definition>
+        <argsstring></argsstring>
+        <name>Culture</name>
+        <briefdescription>
+<para>Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="54" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="54" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1aa8af7afd969b2f1238889506ca378c30" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.AskForFieldFemale</definition>
+        <argsstring></argsstring>
+        <name>AskForFieldFemale</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Was ist deine ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="66" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1abc96aed15f30c2eb17f3c8b9c4ca21d3" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.AskForFieldMaleNeutral</definition>
+        <argsstring></argsstring>
+        <name>AskForFieldMaleNeutral</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Was ist dein ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="75" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a348ecdece8c6acae186a25ad460b8126" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.AskForSave</definition>
+        <argsstring></argsstring>
+        <name>AskForSave</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Möchtest du folgendes speichern: ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="84" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a6a756a7ab180f054990bfeaa51f00ea2" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.CompanyDetailsMessage</definition>
+        <argsstring></argsstring>
+        <name>CompanyDetailsMessage</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Die Unternehmensangaben-Intention wurde erreicht ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="93" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1aad3dd5758554680f5560d85391d904a9" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.FillInMessage</definition>
+        <argsstring></argsstring>
+        <name>FillInMessage</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Es wurde eine Feld-Ausfüll-Intention erkannt. Du sagtest: ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="102" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="102" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a79920dcec5756f89c1cfb03b735faa2c" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.FormWelcomeMessage</definition>
+        <argsstring></argsstring>
+        <name>FormWelcomeMessage</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Willkommen im ESF_2 Bot! ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="111" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="111" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a733685b52b5a3af9753497c6da7152ae" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.GoBackMessage</definition>
+        <argsstring></argsstring>
+        <name>GoBackMessage</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Die Zurückgehen-Intention wurde erreicht. ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="120" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a084de332ef307f7de0e08e535e4f28f1" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.GotHelpedQuestion</definition>
+        <argsstring></argsstring>
+        <name>GotHelpedQuestion</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Hat das geholfen? ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="129" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="129" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1af7d0fe851847af5551fa00052b25768d" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.GreetingMessage</definition>
+        <argsstring></argsstring>
+        <name>GreetingMessage</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Ich bin dein Assistent beim Ausfüllen von Formularen. Versuche einmal 'Ich möchte die Unternehmensangaben im ESF_2 Formular ausfüllen'. ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="138" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a17bb4e8abb4214b6daa4e8725cd3b8ed" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.HelpClarification</definition>
+        <argsstring></argsstring>
+        <name>HelpClarification</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Was kann ich für dich tun? ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="147" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="147" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a471405418f862209ec79bbce906ec58c" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.HelpSpeak</definition>
+        <argsstring></argsstring>
+        <name>HelpSpeak</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die In der Hilfe. ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="156" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="156" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a7b6bb73966e8f239ab0fc8a6fc530c05" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.HelpText</definition>
+        <argsstring></argsstring>
+        <name>HelpText</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Klar helfe ich dir. ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="165" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="165" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a5087d0d03d62d6953829007fd576b132" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.HelpTitel</definition>
+        <argsstring></argsstring>
+        <name>HelpTitel</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Sie können folgende Dialoge mit mir führen: ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="174" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="174" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a7df84199620cfc5909ca76f498af8140" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.HelpWelcomeMessage</definition>
+        <argsstring></argsstring>
+        <name>HelpWelcomeMessage</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Willkommen in der Hilfe. Dieser Bot ist dazu da Formularangaben zu machen. Versuchen Sie 'Meine Firma ist innobis' um das Feld Firma zu füllen. ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="183" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="183" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1ad0791485a7c44ccd87f64e5289c2dc20" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.No</definition>
+        <argsstring></argsstring>
+        <name>No</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die nein ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="192" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="192" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1adff09c01b7c760675034cd2c161977ed" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.NoneMessage</definition>
+        <argsstring></argsstring>
+        <name>NoneMessage</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Es wurde keine spezielle Intention erkannt. Du sagtest: ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="201" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="201" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a291852fa06315077b623339adf6ac7dd" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.Processing</definition>
+        <argsstring></argsstring>
+        <name>Processing</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Deine Werte werden verarbeitet. ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="210" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="210" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1ac4c769859547bd913aa58d05f3445e79" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.Save</definition>
+        <argsstring></argsstring>
+        <name>Save</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Soll ich diese Werte speichern? ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="219" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="219" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1add1aa6de96c78e2b6d5b3189ab5b12c1" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.Saved</definition>
+        <argsstring></argsstring>
+        <name>Saved</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Gespeichert. ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="228" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="228" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a53152dc84dc4e595e63113dcb6bad441" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.Thanks</definition>
+        <argsstring></argsstring>
+        <name>Thanks</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die Danke. ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="237" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="237" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1a0ededd7412f1b32803ae1e643882690c" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.UploadOptions</definition>
+        <argsstring></argsstring>
+        <name>UploadOptions</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="246" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="246" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="property" id="class_luis_bot_1_1_resource_1_1_resource1_1ace627e5d824d2d7f5c4ace0b932d80f8" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Resource.Resource1.Yes</definition>
+        <argsstring></argsstring>
+        <name>Yes</name>
+        <briefdescription>
+<para>Sucht eine lokalisierte Zeichenfolge, die ja ähnelt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="255" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="255" bodyend="259"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_resource_1_1_resource1_1add29da0642a47e738155e0b42a516791" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LuisBot.Resource.Resource1.Resource1</definition>
+        <argsstring>()</argsstring>
+        <name>Resource1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resource/Resource1.Designer.cs" line="32" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="32" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Resource/Resource1.Designer.cs" line="25" column="1" bodyfile="Resource/Resource1.Designer.cs" bodystart="25" bodyend="260"/>
+    <listofallmembers>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1aa8af7afd969b2f1238889506ca378c30" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>AskForFieldFemale</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1abc96aed15f30c2eb17f3c8b9c4ca21d3" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>AskForFieldMaleNeutral</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a348ecdece8c6acae186a25ad460b8126" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>AskForSave</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a6a756a7ab180f054990bfeaa51f00ea2" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>CompanyDetailsMessage</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a9cc534775f390fdca6d308d802ebb277" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>Culture</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1aad3dd5758554680f5560d85391d904a9" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>FillInMessage</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a79920dcec5756f89c1cfb03b735faa2c" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>FormWelcomeMessage</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a733685b52b5a3af9753497c6da7152ae" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>GoBackMessage</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a084de332ef307f7de0e08e535e4f28f1" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>GotHelpedQuestion</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1af7d0fe851847af5551fa00052b25768d" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>GreetingMessage</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a17bb4e8abb4214b6daa4e8725cd3b8ed" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>HelpClarification</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a471405418f862209ec79bbce906ec58c" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>HelpSpeak</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a7b6bb73966e8f239ab0fc8a6fc530c05" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>HelpText</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a5087d0d03d62d6953829007fd576b132" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>HelpTitel</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a7df84199620cfc5909ca76f498af8140" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>HelpWelcomeMessage</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1ad0791485a7c44ccd87f64e5289c2dc20" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>No</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1adff09c01b7c760675034cd2c161977ed" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>NoneMessage</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a291852fa06315077b623339adf6ac7dd" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>Processing</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1add29da0642a47e738155e0b42a516791" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>Resource1</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a4b6ee8e37603774b143e91b4c634fbcd" prot="private" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>resourceCulture</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a4da24226b1031aa6365c42c3de3c3108" prot="private" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>resourceMan</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a74bf4faacecd79ac8fab0c5191f1c5ed" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>ResourceManager</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1ac4c769859547bd913aa58d05f3445e79" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>Save</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1add1aa6de96c78e2b6d5b3189ab5b12c1" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>Saved</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a53152dc84dc4e595e63113dcb6bad441" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>Thanks</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a0ededd7412f1b32803ae1e643882690c" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>UploadOptions</name></member>
+      <member refid="class_luis_bot_1_1_resource_1_1_resource1_1ace627e5d824d2d7f5c4ace0b932d80f8" prot="package" virt="non-virtual"><scope>LuisBot::Resource::Resource1</scope><name>Yes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

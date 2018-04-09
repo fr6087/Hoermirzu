@@ -1,0 +1,7 @@
+<map id="ListenToMe.App.OnActivated" name="ListenToMe.App.OnActivated">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_app.html#ad23d27a2bdcd858e10e589bfadb1db17" title="initGui determines whether or not there is an active Windows Frame. It creates one for the applicatio..." alt="" coords="277,63,434,90"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_app.html#a8867647372e101bdd100a68eab4d0d3a" title="Is called when nvigation to a certain page fails " alt="" coords="516,5,712,47"/>
+<area shape="rect" id="node6" href="$class_listen_to_me_1_1_app.html#a53f967dbeb997202786db199d54f279f" title="performCommand performs the voice commmand it received from Cortana or the input text field..." alt="" coords="244,115,467,156"/>
+<area shape="rect" id="node4" href="$class_listen_to_me_1_1_app.html#ac79758b58c56c49b87a3e2ff6a9ad638" title="The method ActivateVoiceCommands is calling an VoiceCommands.xml&#45;File from local storage to determine..." alt="" coords="515,71,713,112"/>
+<area shape="rect" id="node5" href="$class_listen_to_me_1_1_cortana_model_methods.html#afe872337c3f1c74f5db6e26918f29ac1" title="reference TripViewModel.UpdateDestinationPhraseList in AdventureWorks project called when App Activat..." alt="" coords="761,71,988,112"/>
+</map>

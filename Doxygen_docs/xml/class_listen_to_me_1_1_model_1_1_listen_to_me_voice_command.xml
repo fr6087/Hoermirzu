@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::Model::ListenToMeVoiceCommand</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1ac1ab4ff605dddd6dfe7f038e46cf522e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ListenToMe.Model.ListenToMeVoiceCommand.voiceCommand</definition>
+        <argsstring></argsstring>
+        <name>voiceCommand</name>
+        <briefdescription>
+<para>name of the voice command </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/ListenToMeVoiceCommand.cs" line="15" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/ListenToMeVoiceCommand.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1a6243f032e7b44a3de833ae4362150b53" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ListenToMe.Model.ListenToMeVoiceCommand.commandMode</definition>
+        <argsstring></argsstring>
+        <name>commandMode</name>
+        <briefdescription>
+<para>mode in which the command was delivered. Possible values: speech and text </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/ListenToMeVoiceCommand.cs" line="19" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/ListenToMeVoiceCommand.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1af82e41e09f7b7888d1ce9f6a0fa9ada8" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ListenToMe.Model.ListenToMeVoiceCommand.textSpoken</definition>
+        <argsstring></argsstring>
+        <name>textSpoken</name>
+        <briefdescription>
+<para>contains the spokenText, if command was used in speech mode </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/ListenToMeVoiceCommand.cs" line="23" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/ListenToMeVoiceCommand.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1a2d2a8120188ed1a16fefbb2461ab20f2" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ListenToMe.Model.ListenToMeVoiceCommand.destination</definition>
+        <argsstring></argsstring>
+        <name>destination</name>
+        <briefdescription>
+<para>contains arguments the command may have. e.g. <ref refid="namespace_listen_to_me" kindref="compound">ListenToMe</ref> edit my ConfirmationsPage may result in confirmationspage as destination </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/ListenToMeVoiceCommand.cs" line="27" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/ListenToMeVoiceCommand.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1a3da9ccddfb33c7b23eb9ae0ca4c9b39c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.Model.ListenToMeVoiceCommand.ListenToMeVoiceCommand</definition>
+        <argsstring>(string voiceCommand, string commandMode, string textSpoken, string destination)</argsstring>
+        <name>ListenToMeVoiceCommand</name>
+        <param>
+          <type>string</type>
+          <declname>voiceCommand</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>commandMode</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>textSpoken</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>destination</declname>
+        </param>
+        <briefdescription>
+<para>Set up the voice command struct with the provided details about the voice command. Oriented around the &quot;showTripToDestination&quot; VCD command (See AdventureWorksCommands.xml) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>voiceCommand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The voice command (the Command element in the VCD xml) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>commandMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The command mode (whether it was voice or text activation)</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textSpoken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The raw voice command text.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destination</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination parameter.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/ListenToMeVoiceCommand.cs" line="37" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/ListenToMeVoiceCommand.cs" bodystart="37" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class for storing arguments. used by <ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref> to bind launch arguments (e.g. from Cortana) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/ListenToMeVoiceCommand.cs" line="9" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/ListenToMeVoiceCommand.cs" bodystart="8" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1a6243f032e7b44a3de833ae4362150b53" prot="public" virt="non-virtual"><scope>ListenToMe::Model::ListenToMeVoiceCommand</scope><name>commandMode</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1a2d2a8120188ed1a16fefbb2461ab20f2" prot="public" virt="non-virtual"><scope>ListenToMe::Model::ListenToMeVoiceCommand</scope><name>destination</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1a3da9ccddfb33c7b23eb9ae0ca4c9b39c" prot="public" virt="non-virtual"><scope>ListenToMe::Model::ListenToMeVoiceCommand</scope><name>ListenToMeVoiceCommand</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1af82e41e09f7b7888d1ce9f6a0fa9ada8" prot="public" virt="non-virtual"><scope>ListenToMe::Model::ListenToMeVoiceCommand</scope><name>textSpoken</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1ac1ab4ff605dddd6dfe7f038e46cf522e" prot="public" virt="non-virtual"><scope>ListenToMe::Model::ListenToMeVoiceCommand</scope><name>voiceCommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

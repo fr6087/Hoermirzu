@@ -1,0 +1,5 @@
+<map id="WcfService1.CortanaDirectLineClient.GetResponse" name="WcfService1.CortanaDirectLineClient.GetResponse">
+<area shape="rect" id="node2" href="$class_wcf_service1_1_1_cortana_direct_line_client.html#ad9aee7d49dab0e3bb8806349b68716b3" title="sends a message to the bot and retrieves da response for it " alt="" coords="231,5,429,47"/>
+<area shape="rect" id="node3" href="$class_wcf_service1_1_1_service_class.html#a9c82b9884f5da75aad18624ff0f74115" title="WcfService1.ServiceClass.\lTalkToTheBotAsync" alt="" coords="477,5,655,47"/>
+<area shape="rect" id="node4" href="$class_wcf_service1_1_1_service1.html#a3073c327f0dae7f2a6324341bbefcaf8" title="WcfService1.Service1.Talk\lToTheBotAsync" alt="" coords="703,5,877,47"/>
+</map>

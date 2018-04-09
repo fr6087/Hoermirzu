@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_common_1_1_navigation_helper" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::Common::NavigationHelper</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DependencyObject</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_common_1_1_navigation_helper_1a345338d7f7238153fa0bc6a03501a451" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Page</type>
+        <definition>Page ListenToMe.Common.NavigationHelper.Page</definition>
+        <argsstring></argsstring>
+        <name>Page</name>
+        <briefdescription>
+<para>the page that is used for initializing the class. In this case, <ref refid="class_listen_to_me_1_1_main_page" kindref="compound">MainPage</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="59" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_common_1_1_navigation_helper_1ab6198264998cd328902b4a5965b59e8e" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Frame</type>
+        <definition>Frame ListenToMe.Common.NavigationHelper.Frame</definition>
+        <argsstring></argsstring>
+        <name>Frame</name>
+        <briefdescription>
+<para>the frame that is used for initializing the class. In this case, the root frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="63" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_common_1_1_navigation_helper_1a07bdd1c103cb7f7ef340e31482fd7ff9" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ListenToMe.Common.NavigationHelper._pageKey</definition>
+        <argsstring></argsstring>
+        <name>_pageKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="76" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_listen_to_me_1_1_common_1_1_navigation_helper_1a8179285cdfdfeb3a5b80f2e6c8150743" prot="public" static="no" add="no" remove="no" raise="no">
+        <type><ref refid="namespace_listen_to_me_1_1_common_1a7d7e529a5b6741d55bc043ba136c4978" kindref="member">LoadStateEventHandler</ref></type>
+        <definition>LoadStateEventHandler ListenToMe.Common.NavigationHelper.LoadState</definition>
+        <argsstring></argsstring>
+        <name>LoadState</name>
+        <briefdescription>
+<para>Handle this event to populate the page using content passed during navigation as well as any state that was saved by the SaveState event handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="83" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_listen_to_me_1_1_common_1_1_navigation_helper_1a63888f37f25238442c4f5f68af554541" prot="public" static="no" add="no" remove="no" raise="no">
+        <type><ref refid="namespace_listen_to_me_1_1_common_1a75a2e49e8dd247f0cc35403c67a48a18" kindref="member">SaveStateEventHandler</ref></type>
+        <definition>SaveStateEventHandler ListenToMe.Common.NavigationHelper.SaveState</definition>
+        <argsstring></argsstring>
+        <name>SaveState</name>
+        <briefdescription>
+<para>Handle this event to save state that can be used by the LoadState event handler. Save the state in case the application is suspended or the page is discarded from the navigation cache. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="90" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_navigation_helper_1a129e86f4035b95d45005c0f8326a9f66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.Common.NavigationHelper.NavigationHelper</definition>
+        <argsstring>(Page page)</argsstring>
+        <name>NavigationHelper</name>
+        <param>
+          <type>Page</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper" kindref="compound">NavigationHelper</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>page</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the current page used for navigation. This reference allows for frame manipulation.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="70" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_navigation_helper_1ab0345a70d29e6106ed033ce1bca4ebfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.Common.NavigationHelper.OnNavigatedTo</definition>
+        <argsstring>(NavigationEventArgs e)</argsstring>
+        <name>OnNavigatedTo</name>
+        <param>
+          <type>NavigationEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when this page is about to be displayed in a Frame. This method calls <ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1a8179285cdfdfeb3a5b80f2e6c8150743" kindref="member">LoadState</ref>, where all page specific navigation and process lifetime management logic should be placed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event data that describes how this page was reached. The Parameter property provides the group to be displayed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="99" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="99" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_navigation_helper_1ae6ca3deb14714124aca39a75da0b06f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.Common.NavigationHelper.OnNavigatedFrom</definition>
+        <argsstring>(NavigationEventArgs e)</argsstring>
+        <name>OnNavigatedFrom</name>
+        <param>
+          <type>NavigationEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when this page will no longer be displayed in a Frame. This method calls <ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1a63888f37f25238442c4f5f68af554541" kindref="member">SaveState</ref>, where all page specific navigation and process lifetime management logic should be placed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event data that describes how this page was reached. The Parameter property provides the group to be displayed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="141" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="141" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>aids in navigation between pages. It manages the backstack and integrates SuspensionManager to handle process lifetime management and state management when navigating between pages. </para>    </briefdescription>
+    <detaileddescription>
+<para>To make use of <ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper" kindref="compound">NavigationHelper</ref>, follow these two steps or start with a BasicPage or any other Page item template other than BlankPage.</para><para>1) Create an instance of the <ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper" kindref="compound">NavigationHelper</ref> somewhere such as in the constructor for the page and register a callback for the LoadState and SaveState events. <programlisting><codeline><highlight class="normal">public<sp/>MyPage()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>this.InitializeComponent();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>this.navigationHelper<sp/>=<sp/>new<sp/>NavigationHelper(this);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>this.navigationHelper.LoadState<sp/>+=<sp/>navigationHelper_LoadState;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>this.navigationHelper.SaveState<sp/>+=<sp/>navigationHelper_SaveState;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">private<sp/>void<sp/>navigationHelper_LoadState(object<sp/>sender,<sp/>LoadStateEventArgs<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">{<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">private<sp/>void<sp/>navigationHelper_SaveState(object<sp/>sender,<sp/>LoadStateEventArgs<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">{<sp/>}</highlight></codeline>
+</programlisting></para><para>2) Register the page to call into the NavigationManager whenever the page participates in navigation by overriding the Windows.UI.Xaml.Controls.Page.OnNavigatedTo and Windows.UI.Xaml.Controls.Page.OnNavigatedFrom events. <programlisting><codeline><highlight class="normal">protected<sp/>override<sp/>void<sp/>OnNavigatedTo(NavigationEventArgs<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>navigationHelper.OnNavigatedTo(e);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">protected<sp/>override<sp/>void<sp/>OnNavigatedFrom(NavigationEventArgs<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>navigationHelper.OnNavigatedFrom(e);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="99">
+        <label>ListenToMe.Common.NavigationHelper</label>
+        <link refid="class_listen_to_me_1_1_common_1_1_navigation_helper"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>DependencyObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="101">
+        <label>ListenToMe.Common.NavigationHelper</label>
+        <link refid="class_listen_to_me_1_1_common_1_1_navigation_helper"/>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>DependencyObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="55" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="54" bodyend="153"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1a07bdd1c103cb7f7ef340e31482fd7ff9" prot="private" virt="non-virtual"><scope>ListenToMe::Common::NavigationHelper</scope><name>_pageKey</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1ab6198264998cd328902b4a5965b59e8e" prot="private" virt="non-virtual"><scope>ListenToMe::Common::NavigationHelper</scope><name>Frame</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1a8179285cdfdfeb3a5b80f2e6c8150743" prot="public" virt="non-virtual"><scope>ListenToMe::Common::NavigationHelper</scope><name>LoadState</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1a129e86f4035b95d45005c0f8326a9f66" prot="public" virt="non-virtual"><scope>ListenToMe::Common::NavigationHelper</scope><name>NavigationHelper</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1ae6ca3deb14714124aca39a75da0b06f2" prot="public" virt="non-virtual"><scope>ListenToMe::Common::NavigationHelper</scope><name>OnNavigatedFrom</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1ab0345a70d29e6106ed033ce1bca4ebfb" prot="public" virt="non-virtual"><scope>ListenToMe::Common::NavigationHelper</scope><name>OnNavigatedTo</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1a345338d7f7238153fa0bc6a03501a451" prot="private" virt="non-virtual"><scope>ListenToMe::Common::NavigationHelper</scope><name>Page</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1a63888f37f25238442c4f5f68af554541" prot="public" virt="non-virtual"><scope>ListenToMe::Common::NavigationHelper</scope><name>SaveState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

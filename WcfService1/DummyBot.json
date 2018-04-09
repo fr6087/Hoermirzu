@@ -1,0 +1,145 @@
+ "Name*": {
+    "type": [
+      "string",
+      "null"
+    ],
+    "Prompt": {
+      "Prompt": [
+        "Was ist dein(e) {&amp;} ?"
+      ]
+    },
+    "Before": [
+      {
+        "Message": [
+          "Willkommen im ESF_2 Formular"
+        ]
+      }
+    ]
+  },
+  "Anrede*": {
+    "type": [
+      "string",
+      "null"
+    ],
+    "Prompt": {
+      "Prompt": [
+        "Was ist dein(e) {&amp;} ?"
+      ]
+    },
+    "Before": [
+      {
+        "Message": [
+          "Willkommen im ESF_2 Formular"
+        ]
+      }
+    ]
+  },
+  "Nachname*": {
+    "type": [
+      "string",
+      "null"
+    ],
+    "Prompt": {
+      "Prompt": [
+        "Was ist dein(e) {&amp;} ?"
+      ]
+    },
+    "Before": [
+      {
+        "Message": [
+          "Willkommen im ESF_2 Formular"
+        ]
+      }
+    ]
+  },
+  "Vorname*": {
+    "type": [
+      "string",
+      "null"
+    ],
+    "Prompt": {
+      "Prompt": [
+        "Was ist dein(e) {&amp;} ?"
+      ]
+    },
+    "Before": [
+      {
+        "Message": [
+          "Willkommen im ESF_2 Formular"
+        ]
+      }
+    ]
+  },
+  "Funktion im Unternehmen / Dienststellung*": {
+    "type": [
+      "string",
+      "null"
+    ],
+    "Prompt": {
+      "Prompt": [
+        "Was ist dein(e) {&amp;} ?"
+      ]
+    },
+    "Before": [
+      {
+        "Message": [
+          "Willkommen im ESF_2 Formular"
+        ]
+      }
+    ]
+  },
+  "Telefon*": {
+    "type": [
+      "string",
+      "null"
+    ],
+    "Prompt": {
+      "Prompt": [
+        "Was ist dein(e) {&amp;} ?"
+      ]
+    },
+    "Before": [
+      {
+        "Message": [
+          "Willkommen im ESF_2 Formular"
+        ]
+      }
+    ]
+  },
+  "Fax*": {
+    "type": [
+      "string",
+      "null"
+    ],
+    "Prompt": {
+      "Prompt": [
+        "Was ist dein(e) {&amp;} ?"
+      ]
+    },
+    "Before": [
+      {
+        "Message": [
+          "Willkommen im ESF_2 Formular"
+        ]
+      }
+    ]
+  },
+  "E-Mail-Adresse*": {
+    "type": [
+      "string",
+      "null"
+    ],
+    "Prompt": {
+      "Prompt": [
+        "Was ist dein(e) {&amp;} ?"
+      ]
+    },
+    "Before": [
+      {
+        "Message": [
+          "Willkommen im ESF_2 Formular"
+        ]
+      }
+    ]
+  }
+}

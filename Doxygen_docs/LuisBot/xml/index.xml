@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog" kind="class"><name>LuisBot::Dialogs::BasicLuisDialog</name>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1ae6aa0ee5d0c024263c0149b3bb4a8aef" kind="variable"><name>_forms</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a44d3302f966e180956af084c6f88187a" kind="function"><name>BasicLuisDialog</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a25c5b741205a79ef89e05ddd79b74931" kind="function"><name>NoneIntent</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a2daf768e035ec624d497aa54d4d1b5d1" kind="function"><name>GreetingIntent</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1ae820de711d0758a6452673a0144315b1" kind="function"><name>FillInIntent</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1abb97cdc3082ad21b4b221a9a555cc874" kind="function"><name>CompanyDetailsIntent</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a5ad3168d38947855f5f4e5331847c45e" kind="function"><name>GoBackIntent</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a334f34e94e5fb8da25b6b554730158ff" kind="function"><name>HelpIntent</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a5d760e61559775618a30b8b0cd25e7f4" kind="function"><name>UploadIntent</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a4fc4f935cccd55a73b1a4a7b7a1e668a" kind="function"><name>AfterDialog</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a3db4f0ad76b7edd57122b6d2636ee514" kind="function"><name>FeedbackFormComplete</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1aab832ef20038407b9e43619c2a49eb6b" kind="function"><name>MessageReceivedAsync</name></member>
+  </compound>
+  <compound refid="class_luis_bot_1_1_dialogs_1_1_confirmations" kind="class"><name>LuisBot::Dialogs::Confirmations</name>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_confirmations_1af6e8a1cc717da0435b3cd96963322f9e" kind="variable"><name>mylist</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_confirmations_1ab7d5bb42a3c9b57f0c71aa2ab76f1e96" kind="property"><name>this[int index]</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_confirmations_1a831fabfc83445640130515583dc88260" kind="function"><name>GetEnumerator</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_confirmations_1abdf5cab44bbd1ac05548ecd35e97bfb6" kind="function"><name>GetEnumerator</name></member>
+  </compound>
+  <compound refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form" kind="class"><name>LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</name>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a7cda51e12dbb2e8f75d96cabb509cde5" kind="property"><name>Vorname</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1abda3f0affd1910b7c78b66b0221aea1e" kind="property"><name>Nachname</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a60ff5ff4544bdb7895325a5189c4578b" kind="property"><name>Unternehmensname</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1afabb9f925bf242263f983416abc8cb39" kind="property"><name>Straße</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a7e1c525e67f4dafdcea2016061bbe615" kind="property"><name>Hausnummer</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a80cf51b11d6dddc70f9d835620948c59" kind="property"><name>Telefon</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1aa2fc75f37b5477fe7038695b757a9603" kind="property"><name>Email</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a60b1cee406743f369be0abc7629abc1a" kind="property"><name>URL</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a2592b3e1a69b4b594d0e450961701e4e" kind="function"><name>BuildForm</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1ad2e2bf2ada9337cfcbfab7a2002c1e87" kind="function"><name>BuildLocalizedForm</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a6a12cc34432e160bd670e9f92a3fee4b" kind="function"><name>BuildJsonForm</name></member>
+  </compound>
+  <compound refid="class_luis_bot_1_1_dialogs_1_1_help_dialog" kind="class"><name>LuisBot::Dialogs::HelpDialog</name>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a0dfa5dcb2add0b7806e74d96271c9dc4" kind="variable"><name>CompanyValue</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1af9a861cf7c854f257b3bbcae3e96f03a" kind="variable"><name>AddressValue</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1af2bda7488d8a2a107f8d5ea15fd4b72b" kind="variable"><name>LegalValue</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ab02b15c07417e05ecd594709e7e4126d" kind="variable"><name>RegisterValue</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ae875e16127193c8c8a0999a3426a9927" kind="variable"><name>PetitionValue</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ae5623e93dc645fb0a7de8cdd9edb2248" kind="variable"><name>LocationValue</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a01014dbfb2b02140a31b873c35ddd576" kind="variable"><name>ScheduleValue</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a9207709494423fa44697556b51246ecd" kind="variable"><name>TrainingProvidersValue</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a311e18149e7b2497a013757adc75465f" kind="variable"><name>FinancingValue</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a612f571f3eccf752187d7241b151a00c" kind="variable"><name>options</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a98f168f3d7d5f39de9f5ec136c1c3979" kind="function"><name>StartAsync</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ab04e83d5d67c92518a0eb6a552c38c41" kind="function"><name>StartSelectedDialog</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1a92f2fb7f4752d59ebeab8be3b0e5088b" kind="function"><name>GetSelectedDialog</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_help_dialog_1ae471c566423b57d698c3dd5692d4d848" kind="function"><name>After2Dialog</name></member>
+  </compound>
+  <compound refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller" kind="class"><name>Microsoft::Bot::Sample::LuisBot::MessagesController</name>
+    <member refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller_1ab9183fa0569e80da8554c7e5c4d8a960" kind="function"><name>MakeRootDialog</name></member>
+    <member refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller_1a482246985df14538e948fc9167cc081f" kind="function"><name>MakeJsonRootDialog</name></member>
+    <member refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller_1ac9f66aad62bba0b1022b0831a93ef6d3" kind="function"><name>Post</name></member>
+    <member refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller_1a823027f875a6793ca5aaccb05563eb9f" kind="function"><name>HandleSystemMessage</name></member>
+  </compound>
+  <compound refid="class_resource1" kind="class"><name>Resource1</name>
+    <member refid="class_resource1_1a6dd910bc0f6ec5fe593902d80bbb5a36" kind="variable"><name>resourceMan</name></member>
+    <member refid="class_resource1_1a279325406b81dd0fff9b4373d8fb23ea" kind="variable"><name>resourceCulture</name></member>
+    <member refid="class_resource1_1aa118d56da5ed4961de98c6b1595aade6" kind="property"><name>ResourceManager</name></member>
+    <member refid="class_resource1_1a0d7ab43fea10eb34e7d8de689c6013a1" kind="property"><name>Culture</name></member>
+    <member refid="class_resource1_1a1ec096bf20a91025c008df6f1743277a" kind="property"><name>AskForFieldFemale</name></member>
+    <member refid="class_resource1_1aaaed5c2abc366f68bff31587365f5aa3" kind="property"><name>AskForFieldMaleNeutral</name></member>
+    <member refid="class_resource1_1ad8cb5a59ace1daee67f3ad8f8d05cb69" kind="property"><name>AskForSave</name></member>
+    <member refid="class_resource1_1a3c6ce5b66517e1914da9123117406410" kind="property"><name>FormWelcomeMessage</name></member>
+    <member refid="class_resource1_1a4ff11c73841dd0d6d9cb60b57fd93e4e" kind="property"><name>GotHelpedQuestion</name></member>
+    <member refid="class_resource1_1a2a5df77a0deac07fabe0d2c97f5bcfd2" kind="property"><name>HelpClarification</name></member>
+    <member refid="class_resource1_1a56da905a56633368fcd84619d9de6ee5" kind="property"><name>HelpTitel</name></member>
+    <member refid="class_resource1_1a122212e0c0d38927681020f0095f669e" kind="property"><name>HelpWelcomeMessage</name></member>
+    <member refid="class_resource1_1abe081f6777cfef0855b9a9979f8e5971" kind="property"><name>No</name></member>
+    <member refid="class_resource1_1a002ddb6305260764f33e88a1ec7d8deb" kind="property"><name>Processing</name></member>
+    <member refid="class_resource1_1a0c09ddb26f568de9eccb533d003af6ef" kind="property"><name>Save</name></member>
+    <member refid="class_resource1_1ab9cd9b52b88aa99e26d64a13425ec5fb" kind="property"><name>Saved</name></member>
+    <member refid="class_resource1_1a11d4482ffca85677496742951fda32a4" kind="property"><name>Thanks</name></member>
+    <member refid="class_resource1_1aad90240ad77f9998fb5db7a447737fae" kind="property"><name>UploadOptions</name></member>
+    <member refid="class_resource1_1acf31155810537fca72165b0f7c3f6496" kind="property"><name>Yes</name></member>
+    <member refid="class_resource1_1a3628b5970ae5bb6af7ae979e299ea166" kind="function"><name>Resource1</name></member>
+  </compound>
+  <compound refid="class_luis_bot_1_1_resource_1_1_resource1" kind="class"><name>LuisBot::Resource::Resource1</name>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a4da24226b1031aa6365c42c3de3c3108" kind="variable"><name>resourceMan</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a4b6ee8e37603774b143e91b4c634fbcd" kind="variable"><name>resourceCulture</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a74bf4faacecd79ac8fab0c5191f1c5ed" kind="property"><name>ResourceManager</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a9cc534775f390fdca6d308d802ebb277" kind="property"><name>Culture</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1aa8af7afd969b2f1238889506ca378c30" kind="property"><name>AskForFieldFemale</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1abc96aed15f30c2eb17f3c8b9c4ca21d3" kind="property"><name>AskForFieldMaleNeutral</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a348ecdece8c6acae186a25ad460b8126" kind="property"><name>AskForSave</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a6a756a7ab180f054990bfeaa51f00ea2" kind="property"><name>CompanyDetailsMessage</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1aad3dd5758554680f5560d85391d904a9" kind="property"><name>FillInMessage</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a79920dcec5756f89c1cfb03b735faa2c" kind="property"><name>FormWelcomeMessage</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a733685b52b5a3af9753497c6da7152ae" kind="property"><name>GoBackMessage</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a084de332ef307f7de0e08e535e4f28f1" kind="property"><name>GotHelpedQuestion</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1af7d0fe851847af5551fa00052b25768d" kind="property"><name>GreetingMessage</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a17bb4e8abb4214b6daa4e8725cd3b8ed" kind="property"><name>HelpClarification</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a471405418f862209ec79bbce906ec58c" kind="property"><name>HelpSpeak</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a7b6bb73966e8f239ab0fc8a6fc530c05" kind="property"><name>HelpText</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a5087d0d03d62d6953829007fd576b132" kind="property"><name>HelpTitel</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a7df84199620cfc5909ca76f498af8140" kind="property"><name>HelpWelcomeMessage</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1ad0791485a7c44ccd87f64e5289c2dc20" kind="property"><name>No</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1adff09c01b7c760675034cd2c161977ed" kind="property"><name>NoneMessage</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a291852fa06315077b623339adf6ac7dd" kind="property"><name>Processing</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1ac4c769859547bd913aa58d05f3445e79" kind="property"><name>Save</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1add1aa6de96c78e2b6d5b3189ab5b12c1" kind="property"><name>Saved</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a53152dc84dc4e595e63113dcb6bad441" kind="property"><name>Thanks</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1a0ededd7412f1b32803ae1e643882690c" kind="property"><name>UploadOptions</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1ace627e5d824d2d7f5c4ace0b932d80f8" kind="property"><name>Yes</name></member>
+    <member refid="class_luis_bot_1_1_resource_1_1_resource1_1add29da0642a47e738155e0b42a516791" kind="function"><name>Resource1</name></member>
+  </compound>
+  <compound refid="class_luis_bot_1_1_s_s_m_l_helper" kind="class"><name>LuisBot::SSMLHelper</name>
+    <member refid="class_luis_bot_1_1_s_s_m_l_helper_1a31fa99b2e6cc6719ba4cf7335422774f" kind="function"><name>Speak</name></member>
+    <member refid="class_luis_bot_1_1_s_s_m_l_helper_1aa93a8c32174e90362461049876a3cefd" kind="function"><name>Emphasis</name></member>
+    <member refid="class_luis_bot_1_1_s_s_m_l_helper_1af6f1caa1d95dc486278d499febf2b2f0" kind="function"><name>SayAs</name></member>
+  </compound>
+  <compound refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog" kind="class"><name>LuisBot::Dialogs::UploadDialog</name>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a32d72ad1f348ad969eba7ea4db77dbb8" kind="variable"><name>ShowInlineAttachment</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1af3f5b41a9da75223be8676b9e192e457" kind="variable"><name>ShowUploadedAttachment</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1af6f61a1708a80c8187d79cfd8fbbb2eb" kind="variable"><name>ShowInternetAttachment</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1afbea6ec342c9f48539e14be8c434a140" kind="variable"><name>options</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a09007bf2346bbb13075802e3d58bcb2a" kind="function"><name>StartAsync</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a4ff26b5dc3194b5f464825f61aa81090" kind="function"><name>MessageReceivedAsync</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a01d31d4779e3c07072ce690b7c913324" kind="function"><name>DisplayOptionsAsync</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a240e61c90673000c8065fb98f5f92925" kind="function"><name>ProcessSelectedOptionAsync</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a393e4cf5f7714e7a0f99069b737129c5" kind="function"><name>GetInlineAttachment</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a9c3e039ed15b460a611a401855cff6ad" kind="function"><name>GetUploadedAttachmentAsync</name></member>
+    <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a0709a78d1be28c806b52e814b890ef72" kind="function"><name>GetInternetAttachment</name></member>
+  </compound>
+  <compound refid="class_simple_echo_bot_1_1_web_api_application" kind="class"><name>SimpleEchoBot::WebApiApplication</name>
+    <member refid="class_simple_echo_bot_1_1_web_api_application_1a560dbf218a3be5e70996d0158af08ced" kind="function"><name>Application_Start</name></member>
+  </compound>
+  <compound refid="class_simple_echo_bot_1_1_web_api_config" kind="class"><name>SimpleEchoBot::WebApiConfig</name>
+    <member refid="class_simple_echo_bot_1_1_web_api_config_1abcbd3d32dad993b7ff79d640a7eee61d" kind="function"><name>Register</name></member>
+  </compound>
+  <compound refid="namespace_luis_bot" kind="namespace"><name>LuisBot</name>
+  </compound>
+  <compound refid="namespace_luis_bot_1_1_dialogs" kind="namespace"><name>LuisBot::Dialogs</name>
+  </compound>
+  <compound refid="namespace_luis_bot_1_1_dialogs_1_1_basic_luis_dialog" kind="namespace"><name>LuisBot::Dialogs::BasicLuisDialog</name>
+  </compound>
+  <compound refid="namespace_luis_bot_1_1_resource" kind="namespace"><name>LuisBot::Resource</name>
+  </compound>
+  <compound refid="namespace_microsoft" kind="namespace"><name>Microsoft</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_bot" kind="namespace"><name>Microsoft::Bot</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_bot_1_1_builder_1_1_dialogs" kind="namespace"><name>Microsoft::Bot::Builder::Dialogs</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow" kind="namespace"><name>Microsoft::Bot::Builder::FormFlow</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_bot_1_1_builder_1_1_form_flow_1_1_json" kind="namespace"><name>Microsoft::Bot::Builder::FormFlow::Json</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_bot_1_1_builder_1_1_luis" kind="namespace"><name>Microsoft::Bot::Builder::Luis</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_bot_1_1_builder_1_1_luis_1_1_models" kind="namespace"><name>Microsoft::Bot::Builder::Luis::Models</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_bot_1_1_connector" kind="namespace"><name>Microsoft::Bot::Connector</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_bot_1_1_sample" kind="namespace"><name>Microsoft::Bot::Sample</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_bot_1_1_sample_1_1_luis_bot" kind="namespace"><name>Microsoft::Bot::Sample::LuisBot</name>
+  </compound>
+  <compound refid="namespace_newtonsoft_1_1_json" kind="namespace"><name>Newtonsoft::Json</name>
+  </compound>
+  <compound refid="namespace_newtonsoft_1_1_json_1_1_linq" kind="namespace"><name>Newtonsoft::Json::Linq</name>
+  </compound>
+  <compound refid="namespace_newtonsoft_1_1_json_1_1_serialization" kind="namespace"><name>Newtonsoft::Json::Serialization</name>
+  </compound>
+  <compound refid="namespace_simple_echo_bot" kind="namespace"><name>SimpleEchoBot</name>
+  </compound>
+  <compound refid="namespacestatic" kind="namespace"><name>static</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_concurrent" kind="namespace"><name>System::Collections::Concurrent</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_configuration" kind="namespace"><name>System::Configuration</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_globalization" kind="namespace"><name>System::Globalization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_net_1_1_http" kind="namespace"><name>System::Net::Http</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading" kind="namespace"><name>System::Threading</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_web" kind="namespace"><name>System::Web</name>
+  </compound>
+  <compound refid="namespace_system_1_1_web_1_1_http" kind="namespace"><name>System::Web::Http</name>
+  </compound>
+  <compound refid="namespace_system_1_1_web_1_1_http_1_1_description" kind="namespace"><name>System::Web::Http::Description</name>
+  </compound>
+  <compound refid="namespace_system_1_1_web_1_1_routing" kind="namespace"><name>System::Web::Routing</name>
+  </compound>
+  <compound refid="namespace_system_1_1_xml_1_1_linq" kind="namespace"><name>System::Xml::Linq</name>
+  </compound>
+  <compound refid="_web_api_config_8cs" kind="file"><name>WebApiConfig.cs</name>
+  </compound>
+  <compound refid="_messages_controller_8cs" kind="file"><name>MessagesController.cs</name>
+  </compound>
+  <compound refid="_basic_luis_dialog_8cs" kind="file"><name>BasicLuisDialog.cs</name>
+  </compound>
+  <compound refid="_help_dialog_8cs" kind="file"><name>HelpDialog.cs</name>
+  </compound>
+  <compound refid="_upload_dialog_8cs" kind="file"><name>UploadDialog.cs</name>
+  </compound>
+  <compound refid="_global_8asax_8cs" kind="file"><name>Global.asax.cs</name>
+  </compound>
+  <compound refid="_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="readme_8md" kind="file"><name>readme.md</name>
+  </compound>
+  <compound refid="_resource1_8cs" kind="file"><name>Resource1.cs</name>
+  </compound>
+  <compound refid="_resource1_8_designer_8cs" kind="file"><name>Resource1.Designer.cs</name>
+  </compound>
+  <compound refid="_resource1_8en_8_designer_8cs" kind="file"><name>Resource1.en.Designer.cs</name>
+  </compound>
+  <compound refid="_s_s_m_l_helper_8cs" kind="file"><name>SSMLHelper.cs</name>
+  </compound>
+  <compound refid="md_readme" kind="page"><name>md_readme</name>
+  </compound>
+  <compound refid="dir_badb1e0a6719b0eac5873e7575c6367a" kind="dir"><name>App_Start</name>
+  </compound>
+  <compound refid="dir_f1e231c396d6a78f925b250f39acb3ba" kind="dir"><name>Controllers</name>
+  </compound>
+  <compound refid="dir_a71c3b2ad23b9ff58220dd012d201987" kind="dir"><name>obj/Debug</name>
+  </compound>
+  <compound refid="dir_82a0f24f498220db9f2e7fac97f91183" kind="dir"><name>Dialogs</name>
+  </compound>
+  <compound refid="dir_43724e81dd40e09f32417973865cdd64" kind="dir"><name>obj</name>
+  </compound>
+  <compound refid="dir_d051c76eebdc544d9c3d734575641c72" kind="dir"><name>Properties</name>
+  </compound>
+  <compound refid="dir_9ddeeb997bc2af5957d3bd0d4b3d2f72" kind="dir"><name>Resource</name>
+  </compound>
+</doxygenindex>

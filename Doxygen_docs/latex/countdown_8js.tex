@@ -1,0 +1,42 @@
+\hypertarget{countdown_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/countdown.js File Reference}
+\label{countdown_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/countdown.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/countdown.\+js}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{countdown_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{countdown_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t} = 10
+\item 
+var \hyperlink{countdown_8js_ad25bb2188256d20b0e05deb98cf61265}{interval}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{countdown.\+js@{countdown.\+js}!interval@{interval}}
+\index{interval@{interval}!countdown.\+js@{countdown.\+js}}
+\subsubsection[{\texorpdfstring{interval}{interval}}]{\setlength{\rightskip}{0pt plus 5cm}var interval}\hypertarget{countdown_8js_ad25bb2188256d20b0e05deb98cf61265}{}\label{countdown_8js_ad25bb2188256d20b0e05deb98cf61265}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= setInterval(\textcolor{keyword}{function}()\{
+        \textcolor{keywordflow}{if} ( \hyperlink{countdown_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t} > 0 ) \{
+            console.log(\hyperlink{countdown_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}--);
+        \} \textcolor{keywordflow}{else} \{
+            console.log(\textcolor{stringliteral}{"BLAST OFF!"});
+            phantom.exit();
+        \}
+    \}, 1000)
+\end{DoxyCode}
+
+
+Referenced by wait\+For().
+
+\index{countdown.\+js@{countdown.\+js}!strict@{strict}}
+\index{strict@{strict}!countdown.\+js@{countdown.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{countdown_8js_ae2475e10618961c050dcba04e8c42331}{}\label{countdown_8js_ae2475e10618961c050dcba04e8c42331}
+\index{countdown.\+js@{countdown.\+js}!t@{t}}
+\index{t@{t}!countdown.\+js@{countdown.\+js}}
+\subsubsection[{\texorpdfstring{t}{t}}]{\setlength{\rightskip}{0pt plus 5cm}var t = 10}\hypertarget{countdown_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{}\label{countdown_8js_a5459dd59c2ac7c323d9ca8bca22ff249}
+
+
+Referenced by Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model\+::\+Load\+Section\+From\+Store(), Listen\+To\+Me.\+Main\+Page\+::\+Speak\+Async(), and Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model\+::\+Update\+Destination\+Phrase\+List().
+

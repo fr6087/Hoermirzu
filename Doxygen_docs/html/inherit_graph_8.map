@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_dynamic_page.html" title="This is a page that can be dynamically filled in MainPage. It is used to display the components that ..." alt="" coords="127,5,302,32"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_login_page.html" title="retrieves and stores login Information in a password vault toDo: use this for directLine secret as we..." alt="" coords="137,56,292,83"/>
+<area shape="rect" id="node4" href="$class_listen_to_me_1_1_main_page.html" title="contains the navigation buttons of the app as well as the speech input field " alt="" coords="139,107,290,133"/>
+<area shape="rect" id="node5" href="$class_listen_to_me_1_1_view_1_1_section_details.html" title="Code Behind for a list of Sections, including a Save and Delete button. Associated with the SectionVi..." alt="" coords="110,157,319,184"/>
+<area shape="rect" id="node6" href="$class_listen_to_me_1_1_view_1_1_section_list_view.html" title="Code Behind for a list of Sections, including an Add button. Associated with the SectionListViewModel..." alt="" coords="105,208,324,235"/>
+</map>

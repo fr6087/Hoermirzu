@@ -1,0 +1,7 @@
+\hypertarget{index_zero}{}\section{Prerequisites}\label{index_zero}
+To run Servce1, you need Visual Studio to be registered as a user in the webform (the userename and password is needed for most methods, except when running in Mock-\/\+Mode)\hypertarget{index_first}{}\section{Functionlity}\label{index_first}
+The W\+CF Service is currently named Service1. It provides a Login() method for a specific form of the company innobis using a password and a username on a http-\/post-\/method with a specific session cookie. It also provides a method Get\+All\+Elements() that returns a J\+S\+O\+N-\/\+String listing the form number, all input fields, labels and checkboxes. \begin{DoxySeeAlso}{See also}
+Login()
+\end{DoxySeeAlso}
+\hypertarget{index_second}{}\section{Pecularities}\label{index_second}
+The W\+CF Service is implemented in Factory Pattern. The facory is able to produce either in Mock-\/\+Mode or in Real-\/\+Mode output. Mock-\/\+Mode is independant from the availability of the form to be parsed. It reads from a text file called Sections.\+json which is included in the project. Real-\/\+Mode however, does call the domain of the webform to archieve the same purpose. 

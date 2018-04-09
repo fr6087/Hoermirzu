@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_class_library_1_1model_1_1_node" kind="class" language="C#" prot="public">
+    <compoundname>ClassLibrary::model::Node</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Dictionary&lt; string, Message &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_class_library_1_1model_1_1_node_1a98404a4b188f190f5ee1ab7e4fddd5ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ClassLibrary.model.Node.Node</definition>
+        <argsstring>(string key, Message message)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="class_class_library_1_1model_1_1_message" kindref="compound">Message</ref></type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="57" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="57" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>Dictionary&lt; string, Message &gt;</label>
+      </node>
+      <node id="12">
+        <label>ClassLibrary.model.Node</label>
+        <link refid="class_class_library_1_1model_1_1_node"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="15">
+        <label>Dictionary&lt; string, Message &gt;</label>
+      </node>
+      <node id="14">
+        <label>ClassLibrary.model.Node</label>
+        <link refid="class_class_library_1_1model_1_1_node"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="55" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="54" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_class_library_1_1model_1_1_node_1a98404a4b188f190f5ee1ab7e4fddd5ca" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Node</scope><name>Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

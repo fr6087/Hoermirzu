@@ -1,0 +1,144 @@
+\hypertarget{class_listen_to_me_1_1_common_1_1_navigation_helper}{}\section{Listen\+To\+Me.\+Common.\+Navigation\+Helper Class Reference}
+\label{class_listen_to_me_1_1_common_1_1_navigation_helper}\index{Listen\+To\+Me.\+Common.\+Navigation\+Helper@{Listen\+To\+Me.\+Common.\+Navigation\+Helper}}
+
+
+aids in navigation between pages. It manages the backstack and integrates Suspension\+Manager to handle process lifetime management and state management when navigating between pages.  
+
+
+
+
+Inheritance diagram for Listen\+To\+Me.\+Common.\+Navigation\+Helper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_listen_to_me_1_1_common_1_1_navigation_helper__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_a129e86f4035b95d45005c0f8326a9f66}{Navigation\+Helper} (Page page)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper}{Navigation\+Helper} class. \end{DoxyCompactList}\item 
+void \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_ab0345a70d29e6106ed033ce1bca4ebfb}{On\+Navigated\+To} (Navigation\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Invoked when this page is about to be displayed in a Frame. This method calls \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_a8179285cdfdfeb3a5b80f2e6c8150743}{Load\+State}, where all page specific navigation and process lifetime management logic should be placed. \end{DoxyCompactList}\item 
+void \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_ae6ca3deb14714124aca39a75da0b06f2}{On\+Navigated\+From} (Navigation\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Invoked when this page will no longer be displayed in a Frame. This method calls \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_a63888f37f25238442c4f5f68af554541}{Save\+State}, where all page specific navigation and process lifetime management logic should be placed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_listen_to_me_1_1_common_a7d7e529a5b6741d55bc043ba136c4978}{Load\+State\+Event\+Handler} \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_a8179285cdfdfeb3a5b80f2e6c8150743}{Load\+State}
+\begin{DoxyCompactList}\small\item\em Handle this event to populate the page using content passed during navigation as well as any state that was saved by the Save\+State event handler. \end{DoxyCompactList}\item 
+\hyperlink{namespace_listen_to_me_1_1_common_a75a2e49e8dd247f0cc35403c67a48a18}{Save\+State\+Event\+Handler} \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_a63888f37f25238442c4f5f68af554541}{Save\+State}
+\begin{DoxyCompactList}\small\item\em Handle this event to save state that can be used by the Load\+State event handler. Save the state in case the application is suspended or the page is discarded from the navigation cache. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+aids in navigation between pages. It manages the backstack and integrates Suspension\+Manager to handle process lifetime management and state management when navigating between pages. 
+
+To make use of \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper}{Navigation\+Helper}, follow these two steps or start with a Basic\+Page or any other Page item template other than Blank\+Page.
+
+1) Create an instance of the \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper}{Navigation\+Helper} somewhere such as in the constructor for the page and register a callback for the Load\+State and Save\+State events. 
+\begin{DoxyCode}
+\textcolor{keyword}{public} MyPage()
+\{
+    this.InitializeComponent();
+    this.navigationHelper = \textcolor{keyword}{new} \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_a129e86f4035b95d45005c0f8326a9f66}{NavigationHelper}(\textcolor{keyword}{this});
+    this.navigationHelper.LoadState += navigationHelper\_LoadState;
+    this.navigationHelper.SaveState += navigationHelper\_SaveState;
+\}
+
+\textcolor{keyword}{private} \textcolor{keywordtype}{void} navigationHelper\_LoadState(\textcolor{keywordtype}{object} sender, LoadStateEventArgs e)
+\{ \}
+\textcolor{keyword}{private} \textcolor{keywordtype}{void} navigationHelper\_SaveState(\textcolor{keywordtype}{object} sender, LoadStateEventArgs e)
+\{ \}
+\end{DoxyCode}
+
+
+2) Register the page to call into the Navigation\+Manager whenever the page participates in navigation by overriding the Windows.\+U\+I.\+Xaml.\+Controls.\+Page.\+On\+Navigated\+To and Windows.\+U\+I.\+Xaml.\+Controls.\+Page.\+On\+Navigated\+From events. 
+\begin{DoxyCode}
+\textcolor{keyword}{protected} \textcolor{keyword}{override} \textcolor{keywordtype}{void} \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_ab0345a70d29e6106ed033ce1bca4ebfb}{OnNavigatedTo}(NavigationEventArgs e)
+\{
+    navigationHelper.OnNavigatedTo(e);
+\}
+
+\textcolor{keyword}{protected} \textcolor{keyword}{override} \textcolor{keywordtype}{void} \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_ae6ca3deb14714124aca39a75da0b06f2}{OnNavigatedFrom}(NavigationEventArgs e)
+\{
+    navigationHelper.OnNavigatedFrom(e);
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper}!Navigation\+Helper@{Navigation\+Helper}}
+\index{Navigation\+Helper@{Navigation\+Helper}!Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper}}
+\subsubsection[{\texorpdfstring{Navigation\+Helper(\+Page page)}{NavigationHelper(Page page)}}]{\setlength{\rightskip}{0pt plus 5cm}Listen\+To\+Me.\+Common.\+Navigation\+Helper.\+Navigation\+Helper (
+\begin{DoxyParamCaption}
+\item[{Page}]{page}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_common_1_1_navigation_helper_a129e86f4035b95d45005c0f8326a9f66}{}\label{class_listen_to_me_1_1_common_1_1_navigation_helper_a129e86f4035b95d45005c0f8326a9f66}
+
+
+Initializes a new instance of the \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper}{Navigation\+Helper} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & A reference to the current page used for navigation. This reference allows for frame manipulation.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper}!On\+Navigated\+From@{On\+Navigated\+From}}
+\index{On\+Navigated\+From@{On\+Navigated\+From}!Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper}}
+\subsubsection[{\texorpdfstring{On\+Navigated\+From(\+Navigation\+Event\+Args e)}{OnNavigatedFrom(NavigationEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+Common.\+Navigation\+Helper.\+On\+Navigated\+From (
+\begin{DoxyParamCaption}
+\item[{Navigation\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_common_1_1_navigation_helper_ae6ca3deb14714124aca39a75da0b06f2}{}\label{class_listen_to_me_1_1_common_1_1_navigation_helper_ae6ca3deb14714124aca39a75da0b06f2}
+
+
+Invoked when this page will no longer be displayed in a Frame. This method calls \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_a63888f37f25238442c4f5f68af554541}{Save\+State}, where all page specific navigation and process lifetime management logic should be placed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Event data that describes how this page was reached. The Parameter property provides the group to be displayed.\\
+\hline
+\end{DoxyParams}
+\index{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper}!On\+Navigated\+To@{On\+Navigated\+To}}
+\index{On\+Navigated\+To@{On\+Navigated\+To}!Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper}}
+\subsubsection[{\texorpdfstring{On\+Navigated\+To(\+Navigation\+Event\+Args e)}{OnNavigatedTo(NavigationEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+Common.\+Navigation\+Helper.\+On\+Navigated\+To (
+\begin{DoxyParamCaption}
+\item[{Navigation\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_common_1_1_navigation_helper_ab0345a70d29e6106ed033ce1bca4ebfb}{}\label{class_listen_to_me_1_1_common_1_1_navigation_helper_ab0345a70d29e6106ed033ce1bca4ebfb}
+
+
+Invoked when this page is about to be displayed in a Frame. This method calls \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_helper_a8179285cdfdfeb3a5b80f2e6c8150743}{Load\+State}, where all page specific navigation and process lifetime management logic should be placed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Event data that describes how this page was reached. The Parameter property provides the group to be displayed.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Event Documentation}
+\index{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper}!Load\+State@{Load\+State}}
+\index{Load\+State@{Load\+State}!Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper}}
+\subsubsection[{\texorpdfstring{Load\+State}{LoadState}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Load\+State\+Event\+Handler} Listen\+To\+Me.\+Common.\+Navigation\+Helper.\+Load\+State}\hypertarget{class_listen_to_me_1_1_common_1_1_navigation_helper_a8179285cdfdfeb3a5b80f2e6c8150743}{}\label{class_listen_to_me_1_1_common_1_1_navigation_helper_a8179285cdfdfeb3a5b80f2e6c8150743}
+
+
+Handle this event to populate the page using content passed during navigation as well as any state that was saved by the Save\+State event handler. 
+
+\index{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper}!Save\+State@{Save\+State}}
+\index{Save\+State@{Save\+State}!Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper@{Listen\+To\+Me\+::\+Common\+::\+Navigation\+Helper}}
+\subsubsection[{\texorpdfstring{Save\+State}{SaveState}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Save\+State\+Event\+Handler} Listen\+To\+Me.\+Common.\+Navigation\+Helper.\+Save\+State}\hypertarget{class_listen_to_me_1_1_common_1_1_navigation_helper_a63888f37f25238442c4f5f68af554541}{}\label{class_listen_to_me_1_1_common_1_1_navigation_helper_a63888f37f25238442c4f5f68af554541}
+
+
+Handle this event to save state that can be used by the Load\+State event handler. Save the state in case the application is suspended or the page is discarded from the navigation cache. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Listen\+To\+Me/\+Common/Navigation\+Helper.\+cs\end{DoxyCompactItemize}

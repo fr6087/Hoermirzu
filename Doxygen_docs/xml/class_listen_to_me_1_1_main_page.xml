@@ -1,0 +1,1192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_main_page" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::MainPage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Page</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a9ad9fdc2f7159cbe2d495645459cffe8" prot="private" static="no" mutable="no">
+        <type><ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper" kindref="compound">NavigationHelper</ref></type>
+        <definition>NavigationHelper ListenToMe.MainPage.navigationHelper</definition>
+        <argsstring></argsstring>
+        <name>navigationHelper</name>
+        <briefdescription>
+<para>Navigationhelper is administrating the history of the pages in the frame of the programm </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="39" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1aff60f67b7f65b20f4df33be26d015bcf" prot="private" static="no" mutable="no">
+        <type><ref refid="class_listen_to_me_1_1_common_1_1_navigation_service" kindref="compound">NavigationService</ref></type>
+        <definition>NavigationService ListenToMe.MainPage.navigationService</definition>
+        <argsstring></argsstring>
+        <name>navigationService</name>
+        <briefdescription>
+<para>navigationService is controlling the rootframe changes whenever navigation occurs </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="43" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1ad46f69d6d70b9b13b74b4013b86ca608" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ListenToMe.MainPage.listening</definition>
+        <argsstring></argsstring>
+        <name>listening</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>a variable that is true when the user is speaking to the speech input field and false if he is typing into the speech input field </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="47" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a3185b88ec21f447708a2d3da983997e0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper" kindref="compound">RootFrameNavigationHelper</ref></type>
+        <definition>RootFrameNavigationHelper ListenToMe.MainPage.myFrameHelper</definition>
+        <argsstring></argsstring>
+        <name>myFrameHelper</name>
+        <briefdescription>
+<para>rootframe navigation helper is helping the rootframe navigation with keyboard events </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="51" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1ac417ca2ffe02d44895c029bf23e8f83a" prot="private" static="no" mutable="no">
+        <type>SpeechRecognizer</type>
+        <definition>SpeechRecognizer ListenToMe.MainPage.speechRecognizerContinuous</definition>
+        <argsstring></argsstring>
+        <name>speechRecognizerContinuous</name>
+        <briefdescription>
+<para>evaluates speech input if the user is continually speaking. triggered by the user saying start listening. If the command stop listening is said, it will stop continous speech recognition </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="55" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a906eb7f1e61084dcfb0b0f833b0d96f4" prot="private" static="no" mutable="no">
+        <type>ResourceLoader</type>
+        <definition>ResourceLoader ListenToMe.MainPage.loader</definition>
+        <argsstring></argsstring>
+        <name>loader</name>
+        <briefdescription>
+<para>loads localized string ressources from Strings/ directory </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="60" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a94ae31ea5ea90fff0194c7c3345e3987" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListenToMe.MainPage.countUserInputs</definition>
+        <argsstring></argsstring>
+        <name>countUserInputs</name>
+        <briefdescription>
+<para>counts the user&apos;s inputs for helping the app at guessing which field is filled out next. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="64" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a56393ec41c67e438e12651f5dc44a2cc" prot="private" static="no" mutable="no">
+        <type>SpeechRecognizer</type>
+        <definition>SpeechRecognizer ListenToMe.MainPage.speechRecognizer</definition>
+        <argsstring></argsstring>
+        <name>speechRecognizer</name>
+        <briefdescription>
+<para>evaluates speech input if the user is only speaking a defined interval (e.g while speech input button is pressed) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="68" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1acc2116e019bacfa54fd25381eeaf363f" prot="private" static="no" mutable="no">
+        <type>ManualResetEvent</type>
+        <definition>ManualResetEvent ListenToMe.MainPage.manualResetEvent</definition>
+        <argsstring></argsstring>
+        <name>manualResetEvent</name>
+        <briefdescription>
+<para>has no tasks so far but might be important in the future </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="72" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1afa885f51f46e84b050d0874e64389880" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListenToMe.MainPage.pagesCount</definition>
+        <argsstring></argsstring>
+        <name>pagesCount</name>
+        <briefdescription>
+<para>variable that counts the sections to know which section has to be loades into the frame </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="76" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a6dbd09c74d99bf0223489a06035980eb" prot="private" static="no" mutable="no">
+        <type>StackPanel</type>
+        <definition>StackPanel ListenToMe.MainPage.currentPanel</definition>
+        <argsstring></argsstring>
+        <name>currentPanel</name>
+        <briefdescription>
+<para>contains the TextBoxes and other controls of the page </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="81" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1acc0f3cb24ff26c2cfc76cd42a2fe2118" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListenToMe.MainPage.indexOfCurrentElement</definition>
+        <argsstring></argsstring>
+        <name>indexOfCurrentElement</name>
+        <briefdescription>
+<para>index of the last TextBox to which text was send with SendMessage(string, bool) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="85" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a7ee97019c1b3318631a799c2979b7364" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; ListenToMe.MainPage.inputs</definition>
+        <argsstring></argsstring>
+        <name>inputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="90" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a448f51804566fe32efca61994caf9ab9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ListenToMe.MainPage.IsInitializing</definition>
+        <argsstring></argsstring>
+        <name>IsInitializing</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>flag for preventing the <ref refid="" kindref="compound">Clicked(string, string)</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="94" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a03679610fded2c61480540ebcc7e4667" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ListenToMe.MainPage.showGrid</definition>
+        <argsstring></argsstring>
+        <name>showGrid</name>
+        <briefdescription>
+<para>storing wether the grid is visible for grid navigation </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="89" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1afb2ff548c6284f6f179fc9b3dcc89245" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.MainPage.MainPage</definition>
+        <argsstring>()</argsstring>
+        <name>MainPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="96" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="96" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a781bed1ae1145079c62597b5a938c0d1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.initFrame</definition>
+        <argsstring>()</argsstring>
+        <name>initFrame</name>
+        <briefdescription>
+<para>fills the section field in formstore with information from the web form </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="121" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="121" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1abd810ebce6d7300369767bd604e107d2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.navigationHelper_SaveState</definition>
+        <argsstring>(object sender, SaveStateEventArgs e)</argsstring>
+        <name>navigationHelper_SaveState</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="class_listen_to_me_1_1_common_1_1_save_state_event_args" kindref="compound">SaveStateEventArgs</ref></type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>toDo implement formstore call that saves the values of the input fields </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="134" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a696e8f4cb397c01ba2465d68e2b8c369" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.navigationHelper_LoadState</definition>
+        <argsstring>(object sender, LoadStateEventArgs e)</argsstring>
+        <name>navigationHelper_LoadState</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="class_listen_to_me_1_1_common_1_1_load_state_event_args" kindref="compound">LoadStateEventArgs</ref></type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>toDo implement formstore call that loads the values of the input fields </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="142" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1ab68e25e8370c434b0deb5069c7cdd254" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; string &gt;</type>
+        <definition>async Task&lt;string&gt; ListenToMe.MainPage.determineResponse</definition>
+        <argsstring>(string intent, string textValue, string usersFieldName, string luisTypeOfTextValue)</argsstring>
+        <name>determineResponse</name>
+        <param>
+          <type>string</type>
+          <declname>intent</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>textValue</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>usersFieldName</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>luisTypeOfTextValue</declname>
+        </param>
+        <briefdescription>
+<para>is essential in processing the recognized LUIS-entities. Sometimes LUIS entities are not recognized by the language model. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the intent that LUIS recognizes. Is not importent, as this will be always Field.FillIn</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the textvalue for the input field</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usersFieldName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the dirty text type name the user used in the query. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>luisTypeOfTextValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the clean text type</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>error messages</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="184" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="184" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a465e7f9723aec19e912a3913841d477e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.Clicked</definition>
+        <argsstring>(string sender, string textValue)</argsstring>
+        <name>Clicked</name>
+        <param>
+          <type>string</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>textValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="230" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="230" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1adbf1a6a0cab368d6e803bbd1b918a045" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.InitContinuousRecognition</definition>
+        <argsstring>()</argsstring>
+        <name>InitContinuousRecognition</name>
+        <briefdescription>
+<para>sets up continous speech recognition </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="256" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="256" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1afad060c55f3bedc7d8e499829e133c98" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.ContinuousRecognitionSession_ResultGenerated</definition>
+        <argsstring>(SpeechContinuousRecognitionSession sender, SpeechContinuousRecognitionResultGeneratedEventArgs args)</argsstring>
+        <name>ContinuousRecognitionSession_ResultGenerated</name>
+        <param>
+          <type>SpeechContinuousRecognitionSession</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SpeechContinuousRecognitionResultGeneratedEventArgs</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="286" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="286" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1ab7c9aeb7a6b1053375754c58933360d6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.Media_MediaEnded</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Media_MediaEnded</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="301" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="301" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a9e7a645ae278f0e83ff9c3a831b37028" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.Page_Loaded</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Page_Loaded</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="311" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="311" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1ad477d18baff88094baa32ac20b462284" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.BackButton_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>BackButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="316" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="316" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a1ccf14d59eabbcc4148cadd8dd11fc04" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.goBackAsync</definition>
+        <argsstring>()</argsstring>
+        <name>goBackAsync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="321" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="321" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a1a1e1d6e362134f6426bcf99ca83c45c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.fillFrameAsync</definition>
+        <argsstring>()</argsstring>
+        <name>fillFrameAsync</name>
+        <briefdescription>
+<para>fill Frame creates a new Page for mainFrame and adds it to the mainFrame as Content </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rnd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>random element signalling background Page&apos;s colour</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="335" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="335" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a16241dfda10c37812bcb3a55a791e011" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.createSection</definition>
+        <argsstring>(Section section, StackPanel myPanel)</argsstring>
+        <name>createSection</name>
+        <param>
+          <type>Section</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>StackPanel</type>
+          <declname>myPanel</declname>
+        </param>
+        <briefdescription>
+<para>creates a section by adding control elements to a panel </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>section</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the section object that is being translated into controls</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>myPanel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the panel on which to place the controls</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="377" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="377" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a73b3a3311149846cf028c5824dab2a6e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.CreateElementAsync</definition>
+        <argsstring>(Element element, StackPanel panel, TextBox field=null)</argsstring>
+        <name>CreateElementAsync</name>
+        <param>
+          <type>Element</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>StackPanel</type>
+          <declname>panel</declname>
+        </param>
+        <param>
+          <type>TextBox</type>
+          <declname>field</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>creates an element from the section object by determining what type of element it is reference: <ulink url="https://stackoverflow.com/questions/37297810/updatesourcetrigger-dont-work-in-wpf-customcontrols">https://stackoverflow.com/questions/37297810/updatesourcetrigger-dont-work-in-wpf-customcontrols</ulink> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element from the section</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>panel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the panel on which to add the element</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as label elements have subelements, field is used for recursive calls to know the parent object</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="395" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="395" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a80911257473f608abc125a1083045041" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.setEnabledAndHashForField</definition>
+        <argsstring>(TextBox field, Element element, StackPanel panel)</argsstring>
+        <name>setEnabledAndHashForField</name>
+        <param>
+          <type>TextBox</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>Element</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>StackPanel</type>
+          <declname>panel</declname>
+        </param>
+        <briefdescription>
+<para>sets the enabled property of a TextBox control to disabled, if the model Element&apos;s property is set to &apos;disabled&apos; string. This is the case for input elements that are only for displaying information, e.g. summing up other entries made by the user. If the TextBox stays enabled, the header will be added to the HashTable that is used by the LUIS-Model to determine to which TextBox to pass a user value to. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextBox to be set</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the model insatnce that saved the future property valus of the field</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>panel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the panel on which all TextBoxes lie</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="556" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="556" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a4dec5880c4a900edea6e9a2f37cd93fc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.HomeButton_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>HomeButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>has no speacial meaning as of yet </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="592" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="592" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a8144f2438fc2512708677190d74d2111" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.NextButton_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>NextButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>loads the next section into the frame </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the next-button</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>some arguments</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="604" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="604" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a8cd1a04a404800cfab55de0ba4466f68" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.goNextAsync</definition>
+        <argsstring>()</argsstring>
+        <name>goNextAsync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="609" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="609" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1acad3fb1a64c0bea077f5ad38627faeef" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.dynamicButton_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>dynamicButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Button is hit for microphone activation </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the microphone button</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>some eventarguments</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="628" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="628" bodyend="635"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1afee59bda6fcfb361bf088d543e197879" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.button_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>button_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Button is hit for microphone activation </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the microphone button</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>some eventarguments</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="641" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="641" bodyend="644"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a57d75ef6bb9c10b0c944c3eb5513b076" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async System.Threading.Tasks.Task</type>
+        <definition>async System.Threading.Tasks.Task ListenToMe.MainPage.SetListeningAsync</definition>
+        <argsstring>(bool toListen)</argsstring>
+        <name>SetListeningAsync</name>
+        <param>
+          <type>bool</type>
+          <declname>toListen</declname>
+        </param>
+        <briefdescription>
+<para>sets the flag whether speech recognition is enabled according to the parameter </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>toListen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parameter. If true it sets the flag and activates listenmode for false vice versa</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="651" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="651" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1ab9fba04f0fc94773c2838f6af87ec14b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.StartListenMode</definition>
+        <argsstring>()</argsstring>
+        <name>StartListenMode</name>
+        <briefdescription>
+<para>analyzes the speech input, recognized the text and calls SendMessage() to display the rcognized text </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="684" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="684" bodyend="711"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a09c2518852d4261ff6a2118c8e01de9f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.SendMessage</definition>
+        <argsstring>(string message, bool speak=false)</argsstring>
+        <name>SendMessage</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>speak</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>calls the LUIS API to retrieve the Bot WebApp&apos;s answer for a specific request </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the request</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>speak</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag that indicates whether the funtion is called in speech mode or text mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="718" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="718" bodyend="772"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a203cee0f97f99d3ac38d9338e7c39427" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.checkOtherIntents</definition>
+        <argsstring>(string intent, string message, bool speak)</argsstring>
+        <name>checkOtherIntents</name>
+        <param>
+          <type>string</type>
+          <declname>intent</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>speak</declname>
+        </param>
+        <briefdescription>
+<para>helps calling actions of intents other than Field.FillIn </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the intent</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="777" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="777" bodyend="824"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1aa1c50f04230b8907027a95bfe54cb7d2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.SpeakAsync</definition>
+        <argsstring>(string toSpeak)</argsstring>
+        <name>SpeakAsync</name>
+        <param>
+          <type>string</type>
+          <declname>toSpeak</declname>
+        </param>
+        <briefdescription>
+<para>lets the <ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref> speak the answer to the user </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>toSpeak</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the answer to be spoken</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="830" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="830" bodyend="845"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a94a7dfd5dc1ec2e9bf7a86a4b9f7df0c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; string &gt;</type>
+        <definition>async Task&lt;string&gt; ListenToMe.MainPage.ListenForText</definition>
+        <argsstring>()</argsstring>
+        <name>ListenForText</name>
+        <briefdescription>
+<para>handles exceptions in the speechrecognition api. Also checks whether the device the user in using has enabled microphone input </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="850" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="850" bodyend="886"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1ac541bec23372af9da39117384c6b177e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.InitSpeech</definition>
+        <argsstring>()</argsstring>
+        <name>InitSpeech</name>
+        <briefdescription>
+<para>initialized speech recognition </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="890" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="890" bodyend="912"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a78024cb9b68bafc3375081574dbbea89" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.SpeechRecognizer_HypothesisGenerated</definition>
+        <argsstring>(SpeechRecognizer sender, SpeechRecognitionHypothesisGeneratedEventArgs args)</argsstring>
+        <name>SpeechRecognizer_HypothesisGenerated</name>
+        <param>
+          <type>SpeechRecognizer</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SpeechRecognitionHypothesisGeneratedEventArgs</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>handles the HypothesisGenerated event of the speech recognizer </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the speech recognizer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arguments that may be passed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="934" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="934" bodyend="940"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a2b101dc0c72c1dcb73fe756a5847940e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.text_KeyDown</definition>
+        <argsstring>(object sender, KeyRoutedEventArgs e)</argsstring>
+        <name>text_KeyDown</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>KeyRoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Method that is reacting each time a key is hit while the textinput field has focus. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="947" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="947" bodyend="955"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a8027d1a18b781cfe127ca02916c4552e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override async void</type>
+        <definition>override async void ListenToMe.MainPage.OnNavigatedTo</definition>
+        <argsstring>(NavigationEventArgs e)</argsstring>
+        <name>OnNavigatedTo</name>
+        <param>
+          <type>NavigationEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>is called after the login was sucessful </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="149" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="149" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a15a008ef01c6354ef72d4ec864d8d8e3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ListenToMe.MainPage.OnNavigatedFrom</definition>
+        <argsstring>(NavigationEventArgs e)</argsstring>
+        <name>OnNavigatedFrom</name>
+        <param>
+          <type>NavigationEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="307" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="307" bodyend="310"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1af4469348ffee9a5d1a8680d2535a279b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string ListenToMe.MainPage.FirstCharToUpper</definition>
+        <argsstring>(string input)</argsstring>
+        <name>FirstCharToUpper</name>
+        <param>
+          <type>string</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>helper method for cleaning output from luis. Since LUIS answers in lowercase only, this method uppercases the first letter </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="919" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="919" bodyend="927"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>contains the navigation buttons of the app as well as the speech input field </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="96">
+        <label>Page</label>
+      </node>
+      <node id="95">
+        <label>ListenToMe.MainPage</label>
+        <link refid="class_listen_to_me_1_1_main_page"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="98">
+        <label>Page</label>
+      </node>
+      <node id="97">
+        <label>ListenToMe.MainPage</label>
+        <link refid="class_listen_to_me_1_1_main_page"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" line="35" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/MainPage.xaml.cs" bodystart="34" bodyend="958"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_main_page_1ad477d18baff88094baa32ac20b462284" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>BackButton_Click</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1afee59bda6fcfb361bf088d543e197879" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>button_Click</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a203cee0f97f99d3ac38d9338e7c39427" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>checkOtherIntents</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a465e7f9723aec19e912a3913841d477e" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>Clicked</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1afad060c55f3bedc7d8e499829e133c98" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>ContinuousRecognitionSession_ResultGenerated</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a94ae31ea5ea90fff0194c7c3345e3987" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>countUserInputs</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a73b3a3311149846cf028c5824dab2a6e" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>CreateElementAsync</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a16241dfda10c37812bcb3a55a791e011" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>createSection</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a6dbd09c74d99bf0223489a06035980eb" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>currentPanel</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ab68e25e8370c434b0deb5069c7cdd254" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>determineResponse</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1acad3fb1a64c0bea077f5ad38627faeef" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>dynamicButton_Click</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a1a1e1d6e362134f6426bcf99ca83c45c" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>fillFrameAsync</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1af4469348ffee9a5d1a8680d2535a279b" prot="public" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>FirstCharToUpper</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a1ccf14d59eabbcc4148cadd8dd11fc04" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>goBackAsync</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a8cd1a04a404800cfab55de0ba4466f68" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>goNextAsync</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a4dec5880c4a900edea6e9a2f37cd93fc" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>HomeButton_Click</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1acc0f3cb24ff26c2cfc76cd42a2fe2118" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>indexOfCurrentElement</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1adbf1a6a0cab368d6e803bbd1b918a045" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>InitContinuousRecognition</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a781bed1ae1145079c62597b5a938c0d1" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>initFrame</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ac541bec23372af9da39117384c6b177e" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>InitSpeech</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a7ee97019c1b3318631a799c2979b7364" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>inputs</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a448f51804566fe32efca61994caf9ab9" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>IsInitializing</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a94a7dfd5dc1ec2e9bf7a86a4b9f7df0c" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>ListenForText</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ad46f69d6d70b9b13b74b4013b86ca608" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>listening</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a906eb7f1e61084dcfb0b0f833b0d96f4" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>loader</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1afb2ff548c6284f6f179fc9b3dcc89245" prot="public" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>MainPage</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1acc2116e019bacfa54fd25381eeaf363f" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>manualResetEvent</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ab7c9aeb7a6b1053375754c58933360d6" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>Media_MediaEnded</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a3185b88ec21f447708a2d3da983997e0" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>myFrameHelper</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a9ad9fdc2f7159cbe2d495645459cffe8" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>navigationHelper</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a696e8f4cb397c01ba2465d68e2b8c369" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>navigationHelper_LoadState</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1abd810ebce6d7300369767bd604e107d2" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>navigationHelper_SaveState</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1aff60f67b7f65b20f4df33be26d015bcf" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>navigationService</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a8144f2438fc2512708677190d74d2111" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>NextButton_Click</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a15a008ef01c6354ef72d4ec864d8d8e3" prot="protected" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>OnNavigatedFrom</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a8027d1a18b781cfe127ca02916c4552e" prot="protected" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>OnNavigatedTo</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a9e7a645ae278f0e83ff9c3a831b37028" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>Page_Loaded</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1afa885f51f46e84b050d0874e64389880" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>pagesCount</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a09c2518852d4261ff6a2118c8e01de9f" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>SendMessage</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a80911257473f608abc125a1083045041" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>setEnabledAndHashForField</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a57d75ef6bb9c10b0c944c3eb5513b076" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>SetListeningAsync</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a03679610fded2c61480540ebcc7e4667" prot="public" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>showGrid</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1aa1c50f04230b8907027a95bfe54cb7d2" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>SpeakAsync</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a56393ec41c67e438e12651f5dc44a2cc" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>speechRecognizer</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a78024cb9b68bafc3375081574dbbea89" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>SpeechRecognizer_HypothesisGenerated</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ac417ca2ffe02d44895c029bf23e8f83a" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>speechRecognizerContinuous</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ab9fba04f0fc94773c2838f6af87ec14b" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>StartListenMode</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a2b101dc0c72c1dcb73fe756a5847940e" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>text_KeyDown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

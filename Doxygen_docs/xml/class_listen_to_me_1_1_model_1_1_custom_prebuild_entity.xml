@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_model_1_1_custom_prebuild_entity" kind="class" language="C#" prot="package">
+    <compoundname>ListenToMe::Model::CustomPrebuildEntity</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_custom_prebuild_entity_1a85f65323dbf6e727a7dd8066327c7df0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>String</type>
+        <definition>String ListenToMe.Model.CustomPrebuildEntity.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" line="132" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>models the entity that programmatically should be uploaded to the luis model </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" line="130" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" bodystart="129" bodyend="133"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_model_1_1_custom_prebuild_entity_1a85f65323dbf6e727a7dd8066327c7df0" prot="public" virt="non-virtual"><scope>ListenToMe::Model::CustomPrebuildEntity</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

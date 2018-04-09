@@ -1,0 +1,1189 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "formbot20171129",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "ESF2.Unternehmensangaben"
+    },
+    {
+      "name": "Field.FillIn"
+    },
+    {
+      "name": "Greeting"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "Upload"
+    },
+    {
+      "name": "Utilities.Cancel",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Cancel"
+      }
+    },
+    {
+      "name": "Utilities.Confirm",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Confirm"
+      }
+    },
+    {
+      "name": "Utilities.FinishTask",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "FinishTask"
+      }
+    },
+    {
+      "name": "Utilities.GoBack",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "GoBack"
+      }
+    },
+    {
+      "name": "Utilities.Help",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Help"
+      }
+    },
+    {
+      "name": "Utilities.ShowNext",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "ShowNext"
+      }
+    },
+    {
+      "name": "Utilities.ShowPrevious",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "ShowPrevious"
+      }
+    },
+    {
+      "name": "Utilities.StartOver",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "StartOver"
+      }
+    },
+    {
+      "name": "Utilities.Stop",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Stop"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "name": "Feldwert"
+    },
+    {
+      "name": "Formularname"
+    },
+    {
+      "name": "Page"
+    },
+    {
+      "name": "Dateiname"
+    },
+    {
+      "name": "feldname"
+    },
+    {
+      "name": "Firma"
+    },
+    {
+      "name": "Ordner"
+    },
+    {
+      "name": "Ort"
+    },
+    {
+      "name": "Postfach"
+    },
+    {
+      "name": "Postleitzahl"
+    },
+    {
+      "name": "Stellung"
+    },
+    {
+      "name": "Straße"
+    },
+    {
+      "name": "Telefon"
+    },
+    {
+      "name": "Vorname"
+    }
+  ],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "FeldName",
+      "subLists": [
+        {
+          "canonicalForm": "FeldName",
+          "list": [
+            "name",
+            "anrede",
+            "nachname",
+            "vorname",
+            "funktion im unternehmen / dienststellung",
+            "telefon",
+            "fax",
+            "e-mail-adresse",
+            "straße",
+            "hausnr.",
+            "plz",
+            "ort",
+            "gemeinde",
+            "amtlicher gemeindeschlüssel (ags)",
+            "landkreis",
+            "postfach",
+            "postleitzahl postfach",
+            "telefon",
+            "e-mail-adresse",
+            "internetadresse (url) des antragstellers",
+            "iban",
+            "rechtsform",
+            "gründungsdatum bzw. geburtsdatum (bei natürlichen personen):",
+            "datum der bescheinigung der gewerbeanmeldung",
+            "datum des beginns der angemeldeten tätigkeit",
+            "angemeldete tätigkeit (entsprechend ziffer 15 der gewerbeanmeldung)",
+            "handelsregister-nummer",
+            "datum des eintrags ins hr",
+            "seiten-nummer letztes blatt hr",
+            "datum des letzten eintrags",
+            "vereinsregister-nummer",
+            "datum des eintrags ins vr",
+            "genossenschaftsregister-nummer",
+            "datum des eintrags in gr",
+            "steuernummer",
+            "zuständiges finanzamt",
+            "anrede",
+            "titel",
+            "name",
+            "vorname",
+            "funktion im unternehmen",
+            "bitte wählen sie einen branchenschlüssel",
+            "anzahl weibliche beschäftigte",
+            "anzahl männliche beschäftigte",
+            "anzahl der beschäftigten gesamt",
+            "ist zum zeitpunkt der antragstellung eine verbindliche anmeldung für die weiterbildungsmaßnahme/den kurs erfolgt oder wird vor erhalt des zuwendungsbescheides der lasa eine anmeldung erfolgen?",
+            "das unternehmen befindet sich in folgendem regionalen wachstumskern:",
+            "das unternehmen ist folgendem zukunftscluster zuzuordnen:",
+            "bezirk der agentur für arbeit",
+            "landkreis",
+            "plz",
+            "maßnahmeort",
+            "gemeinde",
+            "amtlicher gemeindeschlüssel (ags)",
+            "zuordnungskriterium: kreisstadt von sitz/betriebsstätte des unternehmens im land brandenburg",
+            "10.1 kurzbezeichnung der weiterbildungsmaßnahme/n",
+            "10.2 bitte beschreiben sie die mittel- und langfristigen entwicklungsziele ihres unternehmens, zu deren erreichung die weiterbildungsmaßnahme/n beitragen soll/en:",
+            "von",
+            "bis",
+            "frauen:",
+            "männer:",
+            "mitarbeiter/innen gesamt:",
+            "weibliche teilnehmende:",
+            "männliche teilnehmende:",
+            "teilnehmende gesamt:",
+            "gesamtinvestitionen:",
+            "gesamtinvestitionen:",
+            "zuschuss:",
+            "gesamt:",
+            "Öffentliche mittel eu:",
+            "gesamt:",
+            "ort",
+            "datum der antragstellung",
+            "nachname, vorname der/des zeichnungsberechtigten",
+            "anzahl frauen:*",
+            "anzahl männer:*",
+            "gesamt:",
+            "zahl der erwerbstätigen (einschl. selbstständige, auszubildende) gesamt:*",
+            "davon anzahl frauen:*",
+            "darunter zahl der selbstständigen (einschl. existenzgründer):*",
+            "davon anzahl frauen:*",
+            "gemeldete arbeitslose gesamt:*",
+            "davon anzahl frauen:*",
+            "darunter zahl der langzeitarbeitslosen:*",
+            "davon anzahl frauen:*",
+            "zahl der nicht-erwerbstätigen gesamt:*",
+            "davon anzahl frauen:*",
+            "darunter zahl der nicht-erwerbstätigen in beruflicher ausbildung:",
+            "davon anzahl frauen:*",
+            "summe 4.2:",
+            "davon summe frauen:",
+            "zahl der jugendlichen (zwischen 15 und 24 jahren):",
+            "davon anzahl frauen:*",
+            "zahl der Älteren (zwischen 25 und 44 jahren):",
+            "davon anzahl frauen:*",
+            "zahl der Älteren (zwischen 45 und 54 jahren):",
+            "davon anzahl frauen:*",
+            "zahl der Älteren (zwischen 55 und 64 jahren):",
+            "davon anzahl frauen:*",
+            "summe 4.3:",
+            "davon summe frauen:",
+            "angehörige einer nationalen minderheit:",
+            "davon anzahl frauen:*",
+            "zahl der migranten und migrantinnen:",
+            "davon anzahl frauen:*",
+            "zahl der menschen mit behinderungen:",
+            "davon anzahl frauen:*",
+            "mit hauptschulabschluss:",
+            "davon anzahl frauen:*",
+            "mit mittlerer reife (10. klasse):",
+            "davon anzahl frauen:*",
+            "mit (fach)hochschulreife:",
+            "davon anzahl frauen:*",
+            "mit (fach)hochschulabschluss, meisterabschluss, promotion:",
+            "davon anzahl frauen:*",
+            "summe 4.5:",
+            "davon summe frauen:",
+            "jahr:",
+            "anzahl frauen:*",
+            "anzahl männer:*",
+            "darunter zahl der nicht-erwerbstätigen in beruflicher ausbildung:",
+            "zahl der nicht-erwerbstätigen gesamt:*",
+            "darunter zahl der langzeitarbeitslosen:*",
+            "gemeldete arbeitslose gesamt:*",
+            "darunter zahl der selbstständigen (einschl. existenzgründer):",
+            "zahl der erwerbstätigen gesamt:",
+            "theorie:",
+            "praxis:",
+            "arbeitserfahrung:",
+            "beratung / orientierung (soll):",
+            "gesamtteilnehmerstunden:",
+            "gesamt je teilnehmer:",
+            "jahr:",
+            "anzahl frauen:*",
+            "anzahl männer:*",
+            "darunter zahl der nicht-erwerbstätigen in beruflicher ausbildung:",
+            "zahl der nicht-erwerbstätigen gesamt:*",
+            "darunter zahl der langzeitarbeitslosen:*",
+            "gemeldete arbeitslose gesamt:*",
+            "darunter zahl der selbstständigen (einschl. existenzgründer):",
+            "zahl der erwerbstätigen gesamt:",
+            "theorie:",
+            "praxis:",
+            "arbeitserfahrung:",
+            "beratung / orientierung (soll):",
+            "gesamtteilnehmerstunden:",
+            "gesamt je teilnehmer:"
+          ]
+        }
+      ]
+    }
+  ],
+  "bing_entities": [
+    "datetimeV2",
+    "email",
+    "money",
+    "phonenumber"
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "go back",
+      "intent": "Utilities.GoBack",
+      "entities": []
+    },
+    {
+      "text": "cancel",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "please help me",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "shut up",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "stop listening",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "okay",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "hallo",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "stop please",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "help me please",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "cancel it",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "no thank you",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "help me with this",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "upload",
+      "intent": "Upload",
+      "entities": []
+    },
+    {
+      "text": "servus",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "ok thanks",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "guten tag",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "moin",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "cancel navigation",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "grüß gott",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "show me the next",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "go back to the beginning",
+      "intent": "Utilities.GoBack",
+      "entities": []
+    },
+    {
+      "text": "not tomorrow please",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "can you help me here",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "i ' m done",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "Can you show me the previous please ?",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Alright I am confirming",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "A yes from me",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "Okay for now",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yep agreed",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "Sure I confirm",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yes i saw",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "Yeah ohh I confirm",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "good I am confirming",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "Cancel brawl",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel expanse",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "wait never mind i just told you never mind",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "I want to cancel",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel silent hours",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "Go back to google please",
+      "intent": "Utilities.GoBack",
+      "entities": []
+    },
+    {
+      "text": "go back on music player",
+      "intent": "Utilities.GoBack",
+      "entities": []
+    },
+    {
+      "text": "Never mind go back",
+      "intent": "Utilities.GoBack",
+      "entities": []
+    },
+    {
+      "text": "go back to my contacts",
+      "intent": "Utilities.GoBack",
+      "entities": []
+    },
+    {
+      "text": "go back to amazon",
+      "intent": "Utilities.GoBack",
+      "entities": []
+    },
+    {
+      "text": "i need to go back",
+      "intent": "Utilities.GoBack",
+      "entities": []
+    },
+    {
+      "text": "I need your help",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "help me to start",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "help me to understand more please",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "help with my device please",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "please help me i want to finish",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "show me the next please",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "Go Next",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "can you click next",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "second one please",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "Next please",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "Show the next please",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "the next please",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "let me go next please",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "please go next",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "Show the previous please",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "I want to display the previous message",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "previous one please",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Click on previous for me",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Let me check the previous item please",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Show me the previous",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "If you would please turn to previous",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Display the previous for me",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Please restart the search",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "Let me start it again from scratch",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "Restart please",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "I want to do restart",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "Delete that and start again",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "Please do restarting",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "I need to begin over and restart",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "Quit help",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "stop it you are really annoying",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "Stop saying that please",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "Let it finished please",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "we finished our last task",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "ohh finished",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "yeah l just finished this one",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "finished please",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "can just be quiet you ' re giving me a headache",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "i don ' t want that . go back home",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "phone be quiet for 5 minutes .",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "Shut up .",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "Can you restart for me ?",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "Let ' s restart",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "\" go back , swhy are you here ?  \"",
+      "intent": "Utilities.GoBack",
+      "entities": []
+    },
+    {
+      "text": "Go back .",
+      "intent": "Utilities.GoBack",
+      "entities": []
+    },
+    {
+      "text": "Can you help me ?",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "please show previous .",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "I am done .",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "i think i ' m done",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "i ' m done with that",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "i ' m done y ' all",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "erzähl mir was.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "frag mich die registereinträge in meinem esf_2 formular ab",
+      "intent": "ESF2.Unternehmensangaben",
+      "entities": [
+        {
+          "entity": "Page",
+          "startPos": 14,
+          "endPos": 29
+        },
+        {
+          "entity": "Formularname",
+          "startPos": 41,
+          "endPos": 54
+        }
+      ]
+    },
+    {
+      "text": "ich möchte die unternehmensangaben in meinem esf_2 antrag ausfüllen",
+      "intent": "ESF2.Unternehmensangaben",
+      "entities": [
+        {
+          "entity": "Page",
+          "startPos": 15,
+          "endPos": 33
+        },
+        {
+          "entity": "Formularname",
+          "startPos": 45,
+          "endPos": 56
+        }
+      ]
+    },
+    {
+      "text": "ich habe jetzt die angaben zum juristischen.",
+      "intent": "ESF2.Unternehmensangaben",
+      "entities": [
+        {
+          "entity": "Page",
+          "startPos": 31,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "Öffne esf_2 und befrag mich zu den finanzen",
+      "intent": "ESF2.Unternehmensangaben",
+      "entities": [
+        {
+          "entity": "Page",
+          "startPos": 35,
+          "endPos": 42
+        },
+        {
+          "entity": "Formularname",
+          "startPos": 6,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "hochladen",
+      "intent": "Upload",
+      "entities": []
+    },
+    {
+      "text": "lade text.doc hoch",
+      "intent": "Upload",
+      "entities": [
+        {
+          "entity": "Feldwert",
+          "startPos": 5,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "öffne dateiupload",
+      "intent": "Upload",
+      "entities": [
+        {
+          "entity": "feldname",
+          "startPos": 6,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "dateien durchsuchen",
+      "intent": "Upload",
+      "entities": [ ]
+    },
+    {
+    "text": "trage friederike als vorname ein",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "feldname",
+          "startPos": 21,
+          "endPos": 27
+        },
+        {
+          "entity": "Vorname",
+          "startPos": 6,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "fülle maienweg 50 als straße ein",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Straße",
+          "startPos": 6,
+          "endPos": 16
+        },
+        {
+          "entity": "feldname",
+          "startPos": 22,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "ich wohne in 26789 leer",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Ort",
+          "startPos": 19,
+          "endPos": 22
+        },
+        {
+          "entity": "Postleitzahl",
+          "startPos": 13,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "meine postleitzahl ist 22297",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Postleitzahl",
+          "startPos": 23,
+          "endPos": 27
+        },
+        {
+          "entity": "feldname",
+          "startPos": 6,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "telefonummer ist 040 9999023910",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Telefon",
+          "startPos": 17,
+          "endPos": 30
+        },
+        {
+          "entity": "feldname",
+          "startPos": 0,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "meine emailadresse ist klaus.mueller@gmx.de",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "feldname",
+          "startPos": 6,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "ich bin geschäftsführer.",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Stellung",
+          "startPos": 8,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "ich heiße anna",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Vorname",
+          "startPos": 10,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "mein vorname ist tobias",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "feldname",
+          "startPos": 5,
+          "endPos": 11
+        },
+        {
+          "entity": "Vorname",
+          "startPos": 17,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "meine telefonnummer ist 030778913194",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Telefon",
+          "startPos": 24,
+          "endPos": 35
+        },
+        {
+          "entity": "feldname",
+          "startPos": 6,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "was kann ich sagen?",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "fülle sparda hamburg als firma ein",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "feldname",
+          "startPos": 25,
+          "endPos": 29
+        },
+        {
+          "entity": "Firma",
+          "startPos": 6,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "fülle innobis als firma ein",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "feldname",
+          "startPos": 18,
+          "endPos": 22
+        },
+        {
+          "entity": "Firma",
+          "startPos": 6,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "meine straße ist südportal",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Straße",
+          "startPos": 17,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "fülle als postfach 34241 ein",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Postfach",
+          "startPos": 19,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "postleitzahl ist 26789 leer",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Ort",
+          "startPos": 23,
+          "endPos": 26
+        },
+        {
+          "entity": "Postleitzahl",
+          "startPos": 17,
+          "endPos": 21
+        },
+        {
+          "entity": "feldname",
+          "startPos": 0,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "mein name ist ismael",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Vorname",
+          "startPos": 14,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "meine telefonnummer ist 04063944",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Telefon",
+          "startPos": 24,
+          "endPos": 31
+        },
+        {
+          "entity": "feldname",
+          "startPos": 6,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "meine emailadresse ist friederike@stud.hs-emden-leer.de",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "feldname",
+          "startPos": 6,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "can i tell you sth?",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "hlöhö",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "mein vorname ist hannes",
+      "intent": "Field.FillIn",
+      "entities": []
+    },
+    {
+      "text": "meine straße ist maienweg",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Straße",
+          "startPos": 17,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "trage friederike als vorname ein",
+      "intent": "Field.FillIn",
+      "entities": [
+        {
+          "entity": "Vorname",
+          "startPos": 6,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "bitte lade angebot1.docx aus meinen downloads hoch",
+      "intent": "Upload",
+      "entities": [
+        {
+          "entity": "Ordner",
+          "startPos": 36,
+          "endPos": 44
+        },
+        {
+          "entity": "Dateiname",
+          "startPos": 11,
+          "endPos": 23
+        }
+      ]
+    },
+
+  ]
+}

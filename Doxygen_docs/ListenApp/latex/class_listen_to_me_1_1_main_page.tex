@@ -1,0 +1,1334 @@
+\hypertarget{class_listen_to_me_1_1_main_page}{}\section{Listen\+To\+Me.\+Main\+Page Class Reference}
+\label{class_listen_to_me_1_1_main_page}\index{Listen\+To\+Me.\+Main\+Page@{Listen\+To\+Me.\+Main\+Page}}
+
+
+The class \hyperlink{class_listen_to_me_1_1_main_page}{Main\+Page} contains the navigation buttons of the app as well as the speech input field  
+
+
+
+
+Inheritance diagram for Listen\+To\+Me.\+Main\+Page\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_listen_to_me_1_1_main_page__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Listen\+To\+Me.\+Main\+Page\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_listen_to_me_1_1_main_page__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_listen_to_me_1_1_main_page_afb2ff548c6284f6f179fc9b3dcc89245}{Main\+Page} ()
+\item 
+async void \hyperlink{class_listen_to_me_1_1_main_page_a4adb881a143354b71604cfa79ea69e25}{test\+Net\+Connection\+Smaller} ()
+\begin{DoxyCompactList}\small\item\em testing connection to the website. Not working, both requests return with empty responses. reference\+: \href{https://blogs.windows.com/buildingapps/2015/11/23/demystifying-httpclient-apis-in-the-universal-windows-platform/#kzmsLAKtjKLGJFAU.97}{\tt https\+://blogs.\+windows.\+com/buildingapps/2015/11/23/demystifying-\/httpclient-\/apis-\/in-\/the-\/universal-\/windows-\/platform/\#kzms\+L\+A\+Ktj\+K\+L\+G\+J\+F\+A\+U.\+97} reference\+: \href{https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client}{\tt https\+://docs.\+microsoft.\+com/en-\/us/aspnet/web-\/api/overview/advanced/calling-\/a-\/web-\/api-\/from-\/a-\/net-\/client} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{class_listen_to_me_1_1_main_page_af4469348ffee9a5d1a8680d2535a279b}{First\+Char\+To\+Upper} (string input)
+\begin{DoxyCompactList}\small\item\em helper method for cleaning output from luis. Since L\+U\+IS answers in lowercase only, this method uppercases the first letter \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_listen_to_me_1_1_main_page_a03679610fded2c61480540ebcc7e4667}{show\+Grid}
+\begin{DoxyCompactList}\small\item\em storing wether the grid is visible for grid navigation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override async void \hyperlink{class_listen_to_me_1_1_main_page_a8027d1a18b781cfe127ca02916c4552e}{On\+Navigated\+To} (Navigation\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em is called after the login was sucessful \end{DoxyCompactList}\item 
+override void \hyperlink{class_listen_to_me_1_1_main_page_a15a008ef01c6354ef72d4ec864d8d8e3}{On\+Navigated\+From} (Navigation\+Event\+Args e)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async void \hyperlink{class_listen_to_me_1_1_main_page_ae285c1eb3d44999ceecdb1b4f5a7bf83}{test\+Regex} ()
+\item 
+async void \hyperlink{class_listen_to_me_1_1_main_page_a781bed1ae1145079c62597b5a938c0d1}{init\+Frame} ()
+\begin{DoxyCompactList}\small\item\em fills the section field in formstore with information from the web form \end{DoxyCompactList}\item 
+void \hyperlink{class_listen_to_me_1_1_main_page_abd810ebce6d7300369767bd604e107d2}{navigation\+Helper\+\_\+\+Save\+State} (object sender, Save\+State\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em to\+Do implement formstore call that saves the values of the input fields \end{DoxyCompactList}\item 
+void \hyperlink{class_listen_to_me_1_1_main_page_a696e8f4cb397c01ba2465d68e2b8c369}{navigation\+Helper\+\_\+\+Load\+State} (object sender, Load\+State\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em to\+Do implement formstore call that loads the values of the input fields \end{DoxyCompactList}\item 
+async Task$<$ string $>$ \hyperlink{class_listen_to_me_1_1_main_page_ab68e25e8370c434b0deb5069c7cdd254}{determine\+Response} (string intent, string text\+Value, string users\+Field\+Name, string luis\+Type\+Of\+Text\+Value)
+\begin{DoxyCompactList}\small\item\em is essential in processing the recognized L\+U\+I\+S-\/entities. Sometimes L\+U\+IS entities are not recognized by the language model. \end{DoxyCompactList}\item 
+void \hyperlink{class_listen_to_me_1_1_main_page_a465e7f9723aec19e912a3913841d477e}{Clicked} (string sender, string text\+Value)
+\item 
+async Task \hyperlink{class_listen_to_me_1_1_main_page_adbf1a6a0cab368d6e803bbd1b918a045}{Init\+Continuous\+Recognition} ()
+\begin{DoxyCompactList}\small\item\em sets up continous speech recognition \end{DoxyCompactList}\item 
+async void \hyperlink{class_listen_to_me_1_1_main_page_afad060c55f3bedc7d8e499829e133c98}{Continuous\+Recognition\+Session\+\_\+\+Result\+Generated} (Speech\+Continuous\+Recognition\+Session sender, Speech\+Continuous\+Recognition\+Result\+Generated\+Event\+Args args)
+\item 
+void \hyperlink{class_listen_to_me_1_1_main_page_ab7c9aeb7a6b1053375754c58933360d6}{Media\+\_\+\+Media\+Ended} (object sender, Routed\+Event\+Args e)
+\item 
+void \hyperlink{class_listen_to_me_1_1_main_page_a9e7a645ae278f0e83ff9c3a831b37028}{Page\+\_\+\+Loaded} (object sender, Routed\+Event\+Args e)
+\item 
+async void \hyperlink{class_listen_to_me_1_1_main_page_ad477d18baff88094baa32ac20b462284}{Back\+Button\+\_\+\+Click} (object sender, Routed\+Event\+Args e)
+\item 
+async Task \hyperlink{class_listen_to_me_1_1_main_page_a1ccf14d59eabbcc4148cadd8dd11fc04}{go\+Back\+Async} ()
+\item 
+async Task \hyperlink{class_listen_to_me_1_1_main_page_a1a1e1d6e362134f6426bcf99ca83c45c}{fill\+Frame\+Async} ()
+\begin{DoxyCompactList}\small\item\em fill Frame creates a new Page for main\+Frame and adds it to the main\+Frame as Content \end{DoxyCompactList}\item 
+async Task \hyperlink{class_listen_to_me_1_1_main_page_a16241dfda10c37812bcb3a55a791e011}{create\+Section} (Section section, Stack\+Panel my\+Panel)
+\begin{DoxyCompactList}\small\item\em creates a section by adding control elements to a panel \end{DoxyCompactList}\item 
+async Task \hyperlink{class_listen_to_me_1_1_main_page_a73b3a3311149846cf028c5824dab2a6e}{Create\+Element\+Async} (Element element, Stack\+Panel panel, Text\+Box field=null)
+\begin{DoxyCompactList}\small\item\em creates an element from the section object by determining what type of element it is reference\+: \href{https://stackoverflow.com/questions/37297810/updatesourcetrigger-dont-work-in-wpf-customcontrols}{\tt https\+://stackoverflow.\+com/questions/37297810/updatesourcetrigger-\/dont-\/work-\/in-\/wpf-\/customcontrols} \end{DoxyCompactList}\item 
+void \hyperlink{class_listen_to_me_1_1_main_page_a80911257473f608abc125a1083045041}{set\+Enabled\+And\+Hash\+For\+Field} (Text\+Box field, Element element, Stack\+Panel panel)
+\begin{DoxyCompactList}\small\item\em sets the enabled property of a Text\+Box control to disabled, if the model Element\textquotesingle{}s property is set to \textquotesingle{}disabled\textquotesingle{} string. This is the case for input elements that are only for displaying information, e.\+g. summing up other entries made by the user. If the Text\+Box stays enabled, the header will be added to the Hash\+Table that is used by the L\+U\+I\+S-\/\+Model to determine to which Text\+Box to pass a user value to. \end{DoxyCompactList}\item 
+async void \hyperlink{class_listen_to_me_1_1_main_page_a4dec5880c4a900edea6e9a2f37cd93fc}{Home\+Button\+\_\+\+Click} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em has no speacial meaning as of yet \end{DoxyCompactList}\item 
+async void \hyperlink{class_listen_to_me_1_1_main_page_a8144f2438fc2512708677190d74d2111}{Next\+Button\+\_\+\+Click} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em loads the next section into the frame \end{DoxyCompactList}\item 
+async Task \hyperlink{class_listen_to_me_1_1_main_page_a8cd1a04a404800cfab55de0ba4466f68}{go\+Next\+Async} ()
+\item 
+void \hyperlink{class_listen_to_me_1_1_main_page_acad3fb1a64c0bea077f5ad38627faeef}{dynamic\+Button\+\_\+\+Click} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Button is hit for microphone activation \end{DoxyCompactList}\item 
+async void \hyperlink{class_listen_to_me_1_1_main_page_afee59bda6fcfb361bf088d543e197879}{button\+\_\+\+Click} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Button is hit for microphone activation \end{DoxyCompactList}\item 
+async System.\+Threading.\+Tasks.\+Task \hyperlink{class_listen_to_me_1_1_main_page_a57d75ef6bb9c10b0c944c3eb5513b076}{Set\+Listening\+Async} (bool to\+Listen)
+\begin{DoxyCompactList}\small\item\em sets the flag whether speech recognition is enabled according to the parameter \end{DoxyCompactList}\item 
+async void \hyperlink{class_listen_to_me_1_1_main_page_ab9fba04f0fc94773c2838f6af87ec14b}{Start\+Listen\+Mode} ()
+\begin{DoxyCompactList}\small\item\em analyzes the speech input, recognized the text and calls \hyperlink{class_listen_to_me_1_1_main_page_a09c2518852d4261ff6a2118c8e01de9f}{Send\+Message()} to display the rcognized text \end{DoxyCompactList}\item 
+async void \hyperlink{class_listen_to_me_1_1_main_page_a09c2518852d4261ff6a2118c8e01de9f}{Send\+Message} (string message, bool speak=false)
+\begin{DoxyCompactList}\small\item\em calls the L\+U\+IS A\+PI to retrieve the \hyperlink{class_listen_to_me_1_1_bot}{Bot} Web\+App\textquotesingle{}s answer for a specific request \end{DoxyCompactList}\item 
+async void \hyperlink{class_listen_to_me_1_1_main_page_a203cee0f97f99d3ac38d9338e7c39427}{check\+Other\+Intents} (string intent, string message, bool speak)
+\begin{DoxyCompactList}\small\item\em helps calling actions of intents other than Field.\+Fill\+In \end{DoxyCompactList}\item 
+async Task \hyperlink{class_listen_to_me_1_1_main_page_aa1c50f04230b8907027a95bfe54cb7d2}{Speak\+Async} (string to\+Speak)
+\begin{DoxyCompactList}\small\item\em lets the \hyperlink{class_listen_to_me_1_1_app}{App} speak the answer to the user \end{DoxyCompactList}\item 
+async Task$<$ string $>$ \hyperlink{class_listen_to_me_1_1_main_page_a94a7dfd5dc1ec2e9bf7a86a4b9f7df0c}{Listen\+For\+Text} ()
+\begin{DoxyCompactList}\small\item\em handles exceptions in the speechrecognition api. Also checks whether the device the user in using has enabled microphone input \end{DoxyCompactList}\item 
+async Task \hyperlink{class_listen_to_me_1_1_main_page_ac541bec23372af9da39117384c6b177e}{Init\+Speech} ()
+\begin{DoxyCompactList}\small\item\em initialized speech recognition \end{DoxyCompactList}\item 
+async void \hyperlink{class_listen_to_me_1_1_main_page_a78024cb9b68bafc3375081574dbbea89}{Speech\+Recognizer\+\_\+\+Hypothesis\+Generated} (Speech\+Recognizer sender, Speech\+Recognition\+Hypothesis\+Generated\+Event\+Args args)
+\begin{DoxyCompactList}\small\item\em handles the Hypothesis\+Generated event of the speech recognizer \end{DoxyCompactList}\item 
+void \hyperlink{class_listen_to_me_1_1_main_page_a2b101dc0c72c1dcb73fe756a5847940e}{text\+\_\+\+Key\+Down} (object sender, Key\+Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Method that is reacting each time a key is hit while the textinput field has focus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Navigation\+Helper \hyperlink{class_listen_to_me_1_1_main_page_a9ad9fdc2f7159cbe2d495645459cffe8}{navigation\+Helper}
+\begin{DoxyCompactList}\small\item\em Navigationhelper is administrating the history of the pages in the frame of the programm \end{DoxyCompactList}\item 
+Navigation\+Service \hyperlink{class_listen_to_me_1_1_main_page_aff60f67b7f65b20f4df33be26d015bcf}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em navigation\+Service is controlling the rootframe changes whenever navigation occurs \end{DoxyCompactList}\item 
+bool \hyperlink{class_listen_to_me_1_1_main_page_ad46f69d6d70b9b13b74b4013b86ca608}{listening} = false
+\begin{DoxyCompactList}\small\item\em a variable that is true when the user is speaking to the speech input field and false if he is typing into the speech input field \end{DoxyCompactList}\item 
+Root\+Frame\+Navigation\+Helper \hyperlink{class_listen_to_me_1_1_main_page_a3185b88ec21f447708a2d3da983997e0}{my\+Frame\+Helper}
+\begin{DoxyCompactList}\small\item\em rootframe navigation helper is helping the rootframe navigation with keyboard events \end{DoxyCompactList}\item 
+Speech\+Recognizer \hyperlink{class_listen_to_me_1_1_main_page_ac417ca2ffe02d44895c029bf23e8f83a}{speech\+Recognizer\+Continuous}
+\begin{DoxyCompactList}\small\item\em evaluates speech input if the user is continually speaking. triggered by the user saying start listening. If the command stop listening is said, it will stop continous speech recognition \end{DoxyCompactList}\item 
+\hyperlink{class_listen_to_me_1_1_bot}{Bot} \hyperlink{class_listen_to_me_1_1_main_page_a09b9deff7e80e3d524cd0f12d1c060f9}{bot}
+\begin{DoxyCompactList}\small\item\em connects via Direct\+Line tho the Web\+App. Communicates with the language understanding intelligence model \end{DoxyCompactList}\item 
+Resource\+Loader \hyperlink{class_listen_to_me_1_1_main_page_a906eb7f1e61084dcfb0b0f833b0d96f4}{loader}
+\begin{DoxyCompactList}\small\item\em loads localized string ressources from Strings/ directory \end{DoxyCompactList}\item 
+int \hyperlink{class_listen_to_me_1_1_main_page_a94ae31ea5ea90fff0194c7c3345e3987}{count\+User\+Inputs}
+\begin{DoxyCompactList}\small\item\em counts the user\textquotesingle{}s inputs for helping the app at guessing which field is filled out next. \end{DoxyCompactList}\item 
+Speech\+Recognizer \hyperlink{class_listen_to_me_1_1_main_page_a56393ec41c67e438e12651f5dc44a2cc}{speech\+Recognizer}
+\begin{DoxyCompactList}\small\item\em evaluates speech input if the user is only speaking a defined interval (e.\+g while speech input button is pressed) \end{DoxyCompactList}\item 
+Manual\+Reset\+Event \hyperlink{class_listen_to_me_1_1_main_page_acc2116e019bacfa54fd25381eeaf363f}{manual\+Reset\+Event}
+\begin{DoxyCompactList}\small\item\em has no tasks so far but might be important in the future \end{DoxyCompactList}\item 
+int \hyperlink{class_listen_to_me_1_1_main_page_afa885f51f46e84b050d0874e64389880}{pages\+Count}
+\begin{DoxyCompactList}\small\item\em variable that counts the sections to know which section has to be loades into the frame \end{DoxyCompactList}\item 
+Stack\+Panel \hyperlink{class_listen_to_me_1_1_main_page_a6dbd09c74d99bf0223489a06035980eb}{current\+Panel}
+\begin{DoxyCompactList}\small\item\em contains the Text\+Boxes and other controls of the page \end{DoxyCompactList}\item 
+int \hyperlink{class_listen_to_me_1_1_main_page_acc0f3cb24ff26c2cfc76cd42a2fe2118}{index\+Of\+Current\+Element}
+\begin{DoxyCompactList}\small\item\em index of the last Text\+Box to which text was send with \hyperlink{class_listen_to_me_1_1_main_page_a09c2518852d4261ff6a2118c8e01de9f}{Send\+Message(string, bool)} \end{DoxyCompactList}\item 
+List$<$ string $>$ \hyperlink{class_listen_to_me_1_1_main_page_a7ee97019c1b3318631a799c2979b7364}{inputs}
+\item 
+bool \hyperlink{class_listen_to_me_1_1_main_page_a448f51804566fe32efca61994caf9ab9}{Is\+Initializing} = true
+\begin{DoxyCompactList}\small\item\em flag for preventing the \hyperlink{class_listen_to_me_1_1_main_page_a465e7f9723aec19e912a3913841d477e}{Clicked(string, string)} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class \hyperlink{class_listen_to_me_1_1_main_page}{Main\+Page} contains the navigation buttons of the app as well as the speech input field 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Main\+Page@{Main\+Page}}
+\index{Main\+Page@{Main\+Page}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Main\+Page()}{MainPage()}}]{\setlength{\rightskip}{0pt plus 5cm}Listen\+To\+Me.\+Main\+Page.\+Main\+Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_main_page_afb2ff548c6284f6f179fc9b3dcc89245}{}\label{class_listen_to_me_1_1_main_page_afb2ff548c6284f6f179fc9b3dcc89245}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_afb2ff548c6284f6f179fc9b3dcc89245_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Back\+Button\+\_\+\+Click@{Back\+Button\+\_\+\+Click}}
+\index{Back\+Button\+\_\+\+Click@{Back\+Button\+\_\+\+Click}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Back\+Button\+\_\+\+Click(object sender, Routed\+Event\+Args e)}{BackButton_Click(object sender, RoutedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Main\+Page.\+Back\+Button\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_ad477d18baff88094baa32ac20b462284}{}\label{class_listen_to_me_1_1_main_page_ad477d18baff88094baa32ac20b462284}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_ad477d18baff88094baa32ac20b462284_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!button\+\_\+\+Click@{button\+\_\+\+Click}}
+\index{button\+\_\+\+Click@{button\+\_\+\+Click}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{button\+\_\+\+Click(object sender, Routed\+Event\+Args e)}{button_Click(object sender, RoutedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Main\+Page.\+button\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_afee59bda6fcfb361bf088d543e197879}{}\label{class_listen_to_me_1_1_main_page_afee59bda6fcfb361bf088d543e197879}
+
+
+Button is hit for microphone activation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & the microphone button\\
+\hline
+{\em e} & some eventarguments\\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_afee59bda6fcfb361bf088d543e197879_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!check\+Other\+Intents@{check\+Other\+Intents}}
+\index{check\+Other\+Intents@{check\+Other\+Intents}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{check\+Other\+Intents(string intent, string message, bool speak)}{checkOtherIntents(string intent, string message, bool speak)}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Main\+Page.\+check\+Other\+Intents (
+\begin{DoxyParamCaption}
+\item[{string}]{intent, }
+\item[{string}]{message, }
+\item[{bool}]{speak}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a203cee0f97f99d3ac38d9338e7c39427}{}\label{class_listen_to_me_1_1_main_page_a203cee0f97f99d3ac38d9338e7c39427}
+
+
+helps calling actions of intents other than Field.\+Fill\+In 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intent} & the name of the intent\\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a203cee0f97f99d3ac38d9338e7c39427_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a203cee0f97f99d3ac38d9338e7c39427_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Clicked@{Clicked}}
+\index{Clicked@{Clicked}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Clicked(string sender, string text\+Value)}{Clicked(string sender, string textValue)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+Main\+Page.\+Clicked (
+\begin{DoxyParamCaption}
+\item[{string}]{sender, }
+\item[{string}]{text\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a465e7f9723aec19e912a3913841d477e}{}\label{class_listen_to_me_1_1_main_page_a465e7f9723aec19e912a3913841d477e}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a465e7f9723aec19e912a3913841d477e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Continuous\+Recognition\+Session\+\_\+\+Result\+Generated@{Continuous\+Recognition\+Session\+\_\+\+Result\+Generated}}
+\index{Continuous\+Recognition\+Session\+\_\+\+Result\+Generated@{Continuous\+Recognition\+Session\+\_\+\+Result\+Generated}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Continuous\+Recognition\+Session\+\_\+\+Result\+Generated(\+Speech\+Continuous\+Recognition\+Session sender, Speech\+Continuous\+Recognition\+Result\+Generated\+Event\+Args args)}{ContinuousRecognitionSession_ResultGenerated(SpeechContinuousRecognitionSession sender, SpeechContinuousRecognitionResultGeneratedEventArgs args)}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Main\+Page.\+Continuous\+Recognition\+Session\+\_\+\+Result\+Generated (
+\begin{DoxyParamCaption}
+\item[{Speech\+Continuous\+Recognition\+Session}]{sender, }
+\item[{Speech\+Continuous\+Recognition\+Result\+Generated\+Event\+Args}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_afad060c55f3bedc7d8e499829e133c98}{}\label{class_listen_to_me_1_1_main_page_afad060c55f3bedc7d8e499829e133c98}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_afad060c55f3bedc7d8e499829e133c98_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_afad060c55f3bedc7d8e499829e133c98_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Create\+Element\+Async@{Create\+Element\+Async}}
+\index{Create\+Element\+Async@{Create\+Element\+Async}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Create\+Element\+Async(\+Element element, Stack\+Panel panel, Text\+Box field=null)}{CreateElementAsync(Element element, StackPanel panel, TextBox field=null)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Listen\+To\+Me.\+Main\+Page.\+Create\+Element\+Async (
+\begin{DoxyParamCaption}
+\item[{Element}]{element, }
+\item[{Stack\+Panel}]{panel, }
+\item[{Text\+Box}]{field = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a73b3a3311149846cf028c5824dab2a6e}{}\label{class_listen_to_me_1_1_main_page_a73b3a3311149846cf028c5824dab2a6e}
+
+
+creates an element from the section object by determining what type of element it is reference\+: \href{https://stackoverflow.com/questions/37297810/updatesourcetrigger-dont-work-in-wpf-customcontrols}{\tt https\+://stackoverflow.\+com/questions/37297810/updatesourcetrigger-\/dont-\/work-\/in-\/wpf-\/customcontrols} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The element from the section\\
+\hline
+{\em panel} & the panel on which to add the element\\
+\hline
+{\em field} & as label elements have subelements, field is used for recursive calls to know the parent object\\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a73b3a3311149846cf028c5824dab2a6e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a73b3a3311149846cf028c5824dab2a6e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!create\+Section@{create\+Section}}
+\index{create\+Section@{create\+Section}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{create\+Section(\+Section section, Stack\+Panel my\+Panel)}{createSection(Section section, StackPanel myPanel)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Listen\+To\+Me.\+Main\+Page.\+create\+Section (
+\begin{DoxyParamCaption}
+\item[{Section}]{section, }
+\item[{Stack\+Panel}]{my\+Panel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a16241dfda10c37812bcb3a55a791e011}{}\label{class_listen_to_me_1_1_main_page_a16241dfda10c37812bcb3a55a791e011}
+
+
+creates a section by adding control elements to a panel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & the section object that is being translated into controls\\
+\hline
+{\em my\+Panel} & the panel on which to place the controls\\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a16241dfda10c37812bcb3a55a791e011_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a16241dfda10c37812bcb3a55a791e011_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!determine\+Response@{determine\+Response}}
+\index{determine\+Response@{determine\+Response}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{determine\+Response(string intent, string text\+Value, string users\+Field\+Name, string luis\+Type\+Of\+Text\+Value)}{determineResponse(string intent, string textValue, string usersFieldName, string luisTypeOfTextValue)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$string$>$ Listen\+To\+Me.\+Main\+Page.\+determine\+Response (
+\begin{DoxyParamCaption}
+\item[{string}]{intent, }
+\item[{string}]{text\+Value, }
+\item[{string}]{users\+Field\+Name, }
+\item[{string}]{luis\+Type\+Of\+Text\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_ab68e25e8370c434b0deb5069c7cdd254}{}\label{class_listen_to_me_1_1_main_page_ab68e25e8370c434b0deb5069c7cdd254}
+
+
+is essential in processing the recognized L\+U\+I\+S-\/entities. Sometimes L\+U\+IS entities are not recognized by the language model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intent} & the intent that L\+U\+IS recognizes. Is not importent, as this will be always Field.\+Fill\+In\\
+\hline
+{\em text\+Value} & the textvalue for the input field\\
+\hline
+{\em users\+Field\+Name} & the dirty text type name the user used in the query. \\
+\hline
+{\em luis\+Type\+Of\+Text\+Value} & the clean text type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error messages
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_ab68e25e8370c434b0deb5069c7cdd254_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_ab68e25e8370c434b0deb5069c7cdd254_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!dynamic\+Button\+\_\+\+Click@{dynamic\+Button\+\_\+\+Click}}
+\index{dynamic\+Button\+\_\+\+Click@{dynamic\+Button\+\_\+\+Click}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{dynamic\+Button\+\_\+\+Click(object sender, Routed\+Event\+Args e)}{dynamicButton_Click(object sender, RoutedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+Main\+Page.\+dynamic\+Button\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_acad3fb1a64c0bea077f5ad38627faeef}{}\label{class_listen_to_me_1_1_main_page_acad3fb1a64c0bea077f5ad38627faeef}
+
+
+Button is hit for microphone activation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & the microphone button\\
+\hline
+{\em e} & some eventarguments\\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_acad3fb1a64c0bea077f5ad38627faeef_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_acad3fb1a64c0bea077f5ad38627faeef_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!fill\+Frame\+Async@{fill\+Frame\+Async}}
+\index{fill\+Frame\+Async@{fill\+Frame\+Async}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{fill\+Frame\+Async()}{fillFrameAsync()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Listen\+To\+Me.\+Main\+Page.\+fill\+Frame\+Async (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a1a1e1d6e362134f6426bcf99ca83c45c}{}\label{class_listen_to_me_1_1_main_page_a1a1e1d6e362134f6426bcf99ca83c45c}
+
+
+fill Frame creates a new Page for main\+Frame and adds it to the main\+Frame as Content 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rnd} & random element signalling background Page\textquotesingle{}s colour\\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a1a1e1d6e362134f6426bcf99ca83c45c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a1a1e1d6e362134f6426bcf99ca83c45c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!First\+Char\+To\+Upper@{First\+Char\+To\+Upper}}
+\index{First\+Char\+To\+Upper@{First\+Char\+To\+Upper}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{First\+Char\+To\+Upper(string input)}{FirstCharToUpper(string input)}}]{\setlength{\rightskip}{0pt plus 5cm}static string Listen\+To\+Me.\+Main\+Page.\+First\+Char\+To\+Upper (
+\begin{DoxyParamCaption}
+\item[{string}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_listen_to_me_1_1_main_page_af4469348ffee9a5d1a8680d2535a279b}{}\label{class_listen_to_me_1_1_main_page_af4469348ffee9a5d1a8680d2535a279b}
+
+
+helper method for cleaning output from luis. Since L\+U\+IS answers in lowercase only, this method uppercases the first letter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_af4469348ffee9a5d1a8680d2535a279b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!go\+Back\+Async@{go\+Back\+Async}}
+\index{go\+Back\+Async@{go\+Back\+Async}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{go\+Back\+Async()}{goBackAsync()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Listen\+To\+Me.\+Main\+Page.\+go\+Back\+Async (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a1ccf14d59eabbcc4148cadd8dd11fc04}{}\label{class_listen_to_me_1_1_main_page_a1ccf14d59eabbcc4148cadd8dd11fc04}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a1ccf14d59eabbcc4148cadd8dd11fc04_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!go\+Next\+Async@{go\+Next\+Async}}
+\index{go\+Next\+Async@{go\+Next\+Async}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{go\+Next\+Async()}{goNextAsync()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Listen\+To\+Me.\+Main\+Page.\+go\+Next\+Async (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a8cd1a04a404800cfab55de0ba4466f68}{}\label{class_listen_to_me_1_1_main_page_a8cd1a04a404800cfab55de0ba4466f68}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a8cd1a04a404800cfab55de0ba4466f68_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a8cd1a04a404800cfab55de0ba4466f68_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Home\+Button\+\_\+\+Click@{Home\+Button\+\_\+\+Click}}
+\index{Home\+Button\+\_\+\+Click@{Home\+Button\+\_\+\+Click}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Home\+Button\+\_\+\+Click(object sender, Routed\+Event\+Args e)}{HomeButton_Click(object sender, RoutedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Main\+Page.\+Home\+Button\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a4dec5880c4a900edea6e9a2f37cd93fc}{}\label{class_listen_to_me_1_1_main_page_a4dec5880c4a900edea6e9a2f37cd93fc}
+
+
+has no speacial meaning as of yet 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Init\+Continuous\+Recognition@{Init\+Continuous\+Recognition}}
+\index{Init\+Continuous\+Recognition@{Init\+Continuous\+Recognition}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Init\+Continuous\+Recognition()}{InitContinuousRecognition()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Listen\+To\+Me.\+Main\+Page.\+Init\+Continuous\+Recognition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_adbf1a6a0cab368d6e803bbd1b918a045}{}\label{class_listen_to_me_1_1_main_page_adbf1a6a0cab368d6e803bbd1b918a045}
+
+
+sets up continous speech recognition 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_adbf1a6a0cab368d6e803bbd1b918a045_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_adbf1a6a0cab368d6e803bbd1b918a045_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!init\+Frame@{init\+Frame}}
+\index{init\+Frame@{init\+Frame}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{init\+Frame()}{initFrame()}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Main\+Page.\+init\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a781bed1ae1145079c62597b5a938c0d1}{}\label{class_listen_to_me_1_1_main_page_a781bed1ae1145079c62597b5a938c0d1}
+
+
+fills the section field in formstore with information from the web form 
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a781bed1ae1145079c62597b5a938c0d1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a781bed1ae1145079c62597b5a938c0d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Init\+Speech@{Init\+Speech}}
+\index{Init\+Speech@{Init\+Speech}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Init\+Speech()}{InitSpeech()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Listen\+To\+Me.\+Main\+Page.\+Init\+Speech (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_ac541bec23372af9da39117384c6b177e}{}\label{class_listen_to_me_1_1_main_page_ac541bec23372af9da39117384c6b177e}
+
+
+initialized speech recognition 
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_ac541bec23372af9da39117384c6b177e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_ac541bec23372af9da39117384c6b177e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Listen\+For\+Text@{Listen\+For\+Text}}
+\index{Listen\+For\+Text@{Listen\+For\+Text}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Listen\+For\+Text()}{ListenForText()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$string$>$ Listen\+To\+Me.\+Main\+Page.\+Listen\+For\+Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a94a7dfd5dc1ec2e9bf7a86a4b9f7df0c}{}\label{class_listen_to_me_1_1_main_page_a94a7dfd5dc1ec2e9bf7a86a4b9f7df0c}
+
+
+handles exceptions in the speechrecognition api. Also checks whether the device the user in using has enabled microphone input 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a94a7dfd5dc1ec2e9bf7a86a4b9f7df0c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a94a7dfd5dc1ec2e9bf7a86a4b9f7df0c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Media\+\_\+\+Media\+Ended@{Media\+\_\+\+Media\+Ended}}
+\index{Media\+\_\+\+Media\+Ended@{Media\+\_\+\+Media\+Ended}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Media\+\_\+\+Media\+Ended(object sender, Routed\+Event\+Args e)}{Media_MediaEnded(object sender, RoutedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+Main\+Page.\+Media\+\_\+\+Media\+Ended (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_ab7c9aeb7a6b1053375754c58933360d6}{}\label{class_listen_to_me_1_1_main_page_ab7c9aeb7a6b1053375754c58933360d6}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_ab7c9aeb7a6b1053375754c58933360d6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!navigation\+Helper\+\_\+\+Load\+State@{navigation\+Helper\+\_\+\+Load\+State}}
+\index{navigation\+Helper\+\_\+\+Load\+State@{navigation\+Helper\+\_\+\+Load\+State}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{navigation\+Helper\+\_\+\+Load\+State(object sender, Load\+State\+Event\+Args e)}{navigationHelper_LoadState(object sender, LoadStateEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+Main\+Page.\+navigation\+Helper\+\_\+\+Load\+State (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Load\+State\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a696e8f4cb397c01ba2465d68e2b8c369}{}\label{class_listen_to_me_1_1_main_page_a696e8f4cb397c01ba2465d68e2b8c369}
+
+
+to\+Do implement formstore call that loads the values of the input fields 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a696e8f4cb397c01ba2465d68e2b8c369_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!navigation\+Helper\+\_\+\+Save\+State@{navigation\+Helper\+\_\+\+Save\+State}}
+\index{navigation\+Helper\+\_\+\+Save\+State@{navigation\+Helper\+\_\+\+Save\+State}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{navigation\+Helper\+\_\+\+Save\+State(object sender, Save\+State\+Event\+Args e)}{navigationHelper_SaveState(object sender, SaveStateEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+Main\+Page.\+navigation\+Helper\+\_\+\+Save\+State (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Save\+State\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_abd810ebce6d7300369767bd604e107d2}{}\label{class_listen_to_me_1_1_main_page_abd810ebce6d7300369767bd604e107d2}
+
+
+to\+Do implement formstore call that saves the values of the input fields 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_abd810ebce6d7300369767bd604e107d2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Next\+Button\+\_\+\+Click@{Next\+Button\+\_\+\+Click}}
+\index{Next\+Button\+\_\+\+Click@{Next\+Button\+\_\+\+Click}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Next\+Button\+\_\+\+Click(object sender, Routed\+Event\+Args e)}{NextButton_Click(object sender, RoutedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Main\+Page.\+Next\+Button\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a8144f2438fc2512708677190d74d2111}{}\label{class_listen_to_me_1_1_main_page_a8144f2438fc2512708677190d74d2111}
+
+
+loads the next section into the frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & the next-\/button\\
+\hline
+{\em e} & some arguments\\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a8144f2438fc2512708677190d74d2111_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!On\+Navigated\+From@{On\+Navigated\+From}}
+\index{On\+Navigated\+From@{On\+Navigated\+From}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{On\+Navigated\+From(\+Navigation\+Event\+Args e)}{OnNavigatedFrom(NavigationEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}override void Listen\+To\+Me.\+Main\+Page.\+On\+Navigated\+From (
+\begin{DoxyParamCaption}
+\item[{Navigation\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_listen_to_me_1_1_main_page_a15a008ef01c6354ef72d4ec864d8d8e3}{}\label{class_listen_to_me_1_1_main_page_a15a008ef01c6354ef72d4ec864d8d8e3}
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!On\+Navigated\+To@{On\+Navigated\+To}}
+\index{On\+Navigated\+To@{On\+Navigated\+To}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{On\+Navigated\+To(\+Navigation\+Event\+Args e)}{OnNavigatedTo(NavigationEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}override async void Listen\+To\+Me.\+Main\+Page.\+On\+Navigated\+To (
+\begin{DoxyParamCaption}
+\item[{Navigation\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_listen_to_me_1_1_main_page_a8027d1a18b781cfe127ca02916c4552e}{}\label{class_listen_to_me_1_1_main_page_a8027d1a18b781cfe127ca02916c4552e}
+
+
+is called after the login was sucessful 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a8027d1a18b781cfe127ca02916c4552e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Page\+\_\+\+Loaded@{Page\+\_\+\+Loaded}}
+\index{Page\+\_\+\+Loaded@{Page\+\_\+\+Loaded}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Page\+\_\+\+Loaded(object sender, Routed\+Event\+Args e)}{Page_Loaded(object sender, RoutedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+Main\+Page.\+Page\+\_\+\+Loaded (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a9e7a645ae278f0e83ff9c3a831b37028}{}\label{class_listen_to_me_1_1_main_page_a9e7a645ae278f0e83ff9c3a831b37028}
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Send\+Message@{Send\+Message}}
+\index{Send\+Message@{Send\+Message}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Send\+Message(string message, bool speak=false)}{SendMessage(string message, bool speak=false)}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Main\+Page.\+Send\+Message (
+\begin{DoxyParamCaption}
+\item[{string}]{message, }
+\item[{bool}]{speak = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a09c2518852d4261ff6a2118c8e01de9f}{}\label{class_listen_to_me_1_1_main_page_a09c2518852d4261ff6a2118c8e01de9f}
+
+
+calls the L\+U\+IS A\+PI to retrieve the \hyperlink{class_listen_to_me_1_1_bot}{Bot} Web\+App\textquotesingle{}s answer for a specific request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & the request\\
+\hline
+{\em speak} & flag that indicates whether the funtion is called in speech mode or text mode\\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a09c2518852d4261ff6a2118c8e01de9f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a09c2518852d4261ff6a2118c8e01de9f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!set\+Enabled\+And\+Hash\+For\+Field@{set\+Enabled\+And\+Hash\+For\+Field}}
+\index{set\+Enabled\+And\+Hash\+For\+Field@{set\+Enabled\+And\+Hash\+For\+Field}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{set\+Enabled\+And\+Hash\+For\+Field(\+Text\+Box field, Element element, Stack\+Panel panel)}{setEnabledAndHashForField(TextBox field, Element element, StackPanel panel)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+Main\+Page.\+set\+Enabled\+And\+Hash\+For\+Field (
+\begin{DoxyParamCaption}
+\item[{Text\+Box}]{field, }
+\item[{Element}]{element, }
+\item[{Stack\+Panel}]{panel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a80911257473f608abc125a1083045041}{}\label{class_listen_to_me_1_1_main_page_a80911257473f608abc125a1083045041}
+
+
+sets the enabled property of a Text\+Box control to disabled, if the model Element\textquotesingle{}s property is set to \textquotesingle{}disabled\textquotesingle{} string. This is the case for input elements that are only for displaying information, e.\+g. summing up other entries made by the user. If the Text\+Box stays enabled, the header will be added to the Hash\+Table that is used by the L\+U\+I\+S-\/\+Model to determine to which Text\+Box to pass a user value to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & The Text\+Box to be set\\
+\hline
+{\em element} & the model insatnce that saved the future property valus of the field\\
+\hline
+{\em panel} & the panel on which all Text\+Boxes lie\\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a80911257473f608abc125a1083045041_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Set\+Listening\+Async@{Set\+Listening\+Async}}
+\index{Set\+Listening\+Async@{Set\+Listening\+Async}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Set\+Listening\+Async(bool to\+Listen)}{SetListeningAsync(bool toListen)}}]{\setlength{\rightskip}{0pt plus 5cm}async System.\+Threading.\+Tasks.\+Task Listen\+To\+Me.\+Main\+Page.\+Set\+Listening\+Async (
+\begin{DoxyParamCaption}
+\item[{bool}]{to\+Listen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a57d75ef6bb9c10b0c944c3eb5513b076}{}\label{class_listen_to_me_1_1_main_page_a57d75ef6bb9c10b0c944c3eb5513b076}
+
+
+sets the flag whether speech recognition is enabled according to the parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Listen} & the parameter. If true it sets the flag and activates listenmode for false vice versa\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a57d75ef6bb9c10b0c944c3eb5513b076_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a57d75ef6bb9c10b0c944c3eb5513b076_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Speak\+Async@{Speak\+Async}}
+\index{Speak\+Async@{Speak\+Async}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Speak\+Async(string to\+Speak)}{SpeakAsync(string toSpeak)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Listen\+To\+Me.\+Main\+Page.\+Speak\+Async (
+\begin{DoxyParamCaption}
+\item[{string}]{to\+Speak}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_aa1c50f04230b8907027a95bfe54cb7d2}{}\label{class_listen_to_me_1_1_main_page_aa1c50f04230b8907027a95bfe54cb7d2}
+
+
+lets the \hyperlink{class_listen_to_me_1_1_app}{App} speak the answer to the user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Speak} & the answer to be spoken\\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_aa1c50f04230b8907027a95bfe54cb7d2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Speech\+Recognizer\+\_\+\+Hypothesis\+Generated@{Speech\+Recognizer\+\_\+\+Hypothesis\+Generated}}
+\index{Speech\+Recognizer\+\_\+\+Hypothesis\+Generated@{Speech\+Recognizer\+\_\+\+Hypothesis\+Generated}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Speech\+Recognizer\+\_\+\+Hypothesis\+Generated(\+Speech\+Recognizer sender, Speech\+Recognition\+Hypothesis\+Generated\+Event\+Args args)}{SpeechRecognizer_HypothesisGenerated(SpeechRecognizer sender, SpeechRecognitionHypothesisGeneratedEventArgs args)}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Main\+Page.\+Speech\+Recognizer\+\_\+\+Hypothesis\+Generated (
+\begin{DoxyParamCaption}
+\item[{Speech\+Recognizer}]{sender, }
+\item[{Speech\+Recognition\+Hypothesis\+Generated\+Event\+Args}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a78024cb9b68bafc3375081574dbbea89}{}\label{class_listen_to_me_1_1_main_page_a78024cb9b68bafc3375081574dbbea89}
+
+
+handles the Hypothesis\+Generated event of the speech recognizer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & the speech recognizer\\
+\hline
+{\em args} & arguments that may be passed\\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a78024cb9b68bafc3375081574dbbea89_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Start\+Listen\+Mode@{Start\+Listen\+Mode}}
+\index{Start\+Listen\+Mode@{Start\+Listen\+Mode}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Start\+Listen\+Mode()}{StartListenMode()}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Main\+Page.\+Start\+Listen\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_ab9fba04f0fc94773c2838f6af87ec14b}{}\label{class_listen_to_me_1_1_main_page_ab9fba04f0fc94773c2838f6af87ec14b}
+
+
+analyzes the speech input, recognized the text and calls \hyperlink{class_listen_to_me_1_1_main_page_a09c2518852d4261ff6a2118c8e01de9f}{Send\+Message()} to display the rcognized text 
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_ab9fba04f0fc94773c2838f6af87ec14b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_ab9fba04f0fc94773c2838f6af87ec14b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!test\+Net\+Connection\+Smaller@{test\+Net\+Connection\+Smaller}}
+\index{test\+Net\+Connection\+Smaller@{test\+Net\+Connection\+Smaller}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{test\+Net\+Connection\+Smaller()}{testNetConnectionSmaller()}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Main\+Page.\+test\+Net\+Connection\+Smaller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_main_page_a4adb881a143354b71604cfa79ea69e25}{}\label{class_listen_to_me_1_1_main_page_a4adb881a143354b71604cfa79ea69e25}
+
+
+testing connection to the website. Not working, both requests return with empty responses. reference\+: \href{https://blogs.windows.com/buildingapps/2015/11/23/demystifying-httpclient-apis-in-the-universal-windows-platform/#kzmsLAKtjKLGJFAU.97}{\tt https\+://blogs.\+windows.\+com/buildingapps/2015/11/23/demystifying-\/httpclient-\/apis-\/in-\/the-\/universal-\/windows-\/platform/\#kzms\+L\+A\+Ktj\+K\+L\+G\+J\+F\+A\+U.\+97} reference\+: \href{https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client}{\tt https\+://docs.\+microsoft.\+com/en-\/us/aspnet/web-\/api/overview/advanced/calling-\/a-\/web-\/api-\/from-\/a-\/net-\/client} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!test\+Regex@{test\+Regex}}
+\index{test\+Regex@{test\+Regex}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{test\+Regex()}{testRegex()}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Main\+Page.\+test\+Regex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_ae285c1eb3d44999ceecdb1b4f5a7bf83}{}\label{class_listen_to_me_1_1_main_page_ae285c1eb3d44999ceecdb1b4f5a7bf83}
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!text\+\_\+\+Key\+Down@{text\+\_\+\+Key\+Down}}
+\index{text\+\_\+\+Key\+Down@{text\+\_\+\+Key\+Down}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{text\+\_\+\+Key\+Down(object sender, Key\+Routed\+Event\+Args e)}{text_KeyDown(object sender, KeyRoutedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+Main\+Page.\+text\+\_\+\+Key\+Down (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Key\+Routed\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a2b101dc0c72c1dcb73fe756a5847940e}{}\label{class_listen_to_me_1_1_main_page_a2b101dc0c72c1dcb73fe756a5847940e}
+
+
+Method that is reacting each time a key is hit while the textinput field has focus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_main_page_a2b101dc0c72c1dcb73fe756a5847940e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!bot@{bot}}
+\index{bot@{bot}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{bot}{bot}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bot} Listen\+To\+Me.\+Main\+Page.\+bot\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a09b9deff7e80e3d524cd0f12d1c060f9}{}\label{class_listen_to_me_1_1_main_page_a09b9deff7e80e3d524cd0f12d1c060f9}
+
+
+connects via Direct\+Line tho the Web\+App. Communicates with the language understanding intelligence model 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!count\+User\+Inputs@{count\+User\+Inputs}}
+\index{count\+User\+Inputs@{count\+User\+Inputs}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{count\+User\+Inputs}{countUserInputs}}]{\setlength{\rightskip}{0pt plus 5cm}int Listen\+To\+Me.\+Main\+Page.\+count\+User\+Inputs\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a94ae31ea5ea90fff0194c7c3345e3987}{}\label{class_listen_to_me_1_1_main_page_a94ae31ea5ea90fff0194c7c3345e3987}
+
+
+counts the user\textquotesingle{}s inputs for helping the app at guessing which field is filled out next. 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!current\+Panel@{current\+Panel}}
+\index{current\+Panel@{current\+Panel}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{current\+Panel}{currentPanel}}]{\setlength{\rightskip}{0pt plus 5cm}Stack\+Panel Listen\+To\+Me.\+Main\+Page.\+current\+Panel\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a6dbd09c74d99bf0223489a06035980eb}{}\label{class_listen_to_me_1_1_main_page_a6dbd09c74d99bf0223489a06035980eb}
+
+
+contains the Text\+Boxes and other controls of the page 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!index\+Of\+Current\+Element@{index\+Of\+Current\+Element}}
+\index{index\+Of\+Current\+Element@{index\+Of\+Current\+Element}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{index\+Of\+Current\+Element}{indexOfCurrentElement}}]{\setlength{\rightskip}{0pt plus 5cm}int Listen\+To\+Me.\+Main\+Page.\+index\+Of\+Current\+Element\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_acc0f3cb24ff26c2cfc76cd42a2fe2118}{}\label{class_listen_to_me_1_1_main_page_acc0f3cb24ff26c2cfc76cd42a2fe2118}
+
+
+index of the last Text\+Box to which text was send with \hyperlink{class_listen_to_me_1_1_main_page_a09c2518852d4261ff6a2118c8e01de9f}{Send\+Message(string, bool)} 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!inputs@{inputs}}
+\index{inputs@{inputs}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{inputs}{inputs}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$string$>$ Listen\+To\+Me.\+Main\+Page.\+inputs\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a7ee97019c1b3318631a799c2979b7364}{}\label{class_listen_to_me_1_1_main_page_a7ee97019c1b3318631a799c2979b7364}
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!Is\+Initializing@{Is\+Initializing}}
+\index{Is\+Initializing@{Is\+Initializing}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{Is\+Initializing}{IsInitializing}}]{\setlength{\rightskip}{0pt plus 5cm}bool Listen\+To\+Me.\+Main\+Page.\+Is\+Initializing = true\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a448f51804566fe32efca61994caf9ab9}{}\label{class_listen_to_me_1_1_main_page_a448f51804566fe32efca61994caf9ab9}
+
+
+flag for preventing the \hyperlink{class_listen_to_me_1_1_main_page_a465e7f9723aec19e912a3913841d477e}{Clicked(string, string)} 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!listening@{listening}}
+\index{listening@{listening}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{listening}{listening}}]{\setlength{\rightskip}{0pt plus 5cm}bool Listen\+To\+Me.\+Main\+Page.\+listening = false\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_ad46f69d6d70b9b13b74b4013b86ca608}{}\label{class_listen_to_me_1_1_main_page_ad46f69d6d70b9b13b74b4013b86ca608}
+
+
+a variable that is true when the user is speaking to the speech input field and false if he is typing into the speech input field 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!loader@{loader}}
+\index{loader@{loader}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{loader}{loader}}]{\setlength{\rightskip}{0pt plus 5cm}Resource\+Loader Listen\+To\+Me.\+Main\+Page.\+loader\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a906eb7f1e61084dcfb0b0f833b0d96f4}{}\label{class_listen_to_me_1_1_main_page_a906eb7f1e61084dcfb0b0f833b0d96f4}
+
+
+loads localized string ressources from Strings/ directory 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!manual\+Reset\+Event@{manual\+Reset\+Event}}
+\index{manual\+Reset\+Event@{manual\+Reset\+Event}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{manual\+Reset\+Event}{manualResetEvent}}]{\setlength{\rightskip}{0pt plus 5cm}Manual\+Reset\+Event Listen\+To\+Me.\+Main\+Page.\+manual\+Reset\+Event\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_acc2116e019bacfa54fd25381eeaf363f}{}\label{class_listen_to_me_1_1_main_page_acc2116e019bacfa54fd25381eeaf363f}
+
+
+has no tasks so far but might be important in the future 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!my\+Frame\+Helper@{my\+Frame\+Helper}}
+\index{my\+Frame\+Helper@{my\+Frame\+Helper}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{my\+Frame\+Helper}{myFrameHelper}}]{\setlength{\rightskip}{0pt plus 5cm}Root\+Frame\+Navigation\+Helper Listen\+To\+Me.\+Main\+Page.\+my\+Frame\+Helper\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a3185b88ec21f447708a2d3da983997e0}{}\label{class_listen_to_me_1_1_main_page_a3185b88ec21f447708a2d3da983997e0}
+
+
+rootframe navigation helper is helping the rootframe navigation with keyboard events 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!navigation\+Helper@{navigation\+Helper}}
+\index{navigation\+Helper@{navigation\+Helper}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{navigation\+Helper}{navigationHelper}}]{\setlength{\rightskip}{0pt plus 5cm}Navigation\+Helper Listen\+To\+Me.\+Main\+Page.\+navigation\+Helper\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a9ad9fdc2f7159cbe2d495645459cffe8}{}\label{class_listen_to_me_1_1_main_page_a9ad9fdc2f7159cbe2d495645459cffe8}
+
+
+Navigationhelper is administrating the history of the pages in the frame of the programm 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}Navigation\+Service Listen\+To\+Me.\+Main\+Page.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_aff60f67b7f65b20f4df33be26d015bcf}{}\label{class_listen_to_me_1_1_main_page_aff60f67b7f65b20f4df33be26d015bcf}
+
+
+navigation\+Service is controlling the rootframe changes whenever navigation occurs 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!pages\+Count@{pages\+Count}}
+\index{pages\+Count@{pages\+Count}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{pages\+Count}{pagesCount}}]{\setlength{\rightskip}{0pt plus 5cm}int Listen\+To\+Me.\+Main\+Page.\+pages\+Count\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_afa885f51f46e84b050d0874e64389880}{}\label{class_listen_to_me_1_1_main_page_afa885f51f46e84b050d0874e64389880}
+
+
+variable that counts the sections to know which section has to be loades into the frame 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!show\+Grid@{show\+Grid}}
+\index{show\+Grid@{show\+Grid}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{show\+Grid}{showGrid}}]{\setlength{\rightskip}{0pt plus 5cm}bool Listen\+To\+Me.\+Main\+Page.\+show\+Grid}\hypertarget{class_listen_to_me_1_1_main_page_a03679610fded2c61480540ebcc7e4667}{}\label{class_listen_to_me_1_1_main_page_a03679610fded2c61480540ebcc7e4667}
+
+
+storing wether the grid is visible for grid navigation 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!speech\+Recognizer@{speech\+Recognizer}}
+\index{speech\+Recognizer@{speech\+Recognizer}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{speech\+Recognizer}{speechRecognizer}}]{\setlength{\rightskip}{0pt plus 5cm}Speech\+Recognizer Listen\+To\+Me.\+Main\+Page.\+speech\+Recognizer\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_a56393ec41c67e438e12651f5dc44a2cc}{}\label{class_listen_to_me_1_1_main_page_a56393ec41c67e438e12651f5dc44a2cc}
+
+
+evaluates speech input if the user is only speaking a defined interval (e.\+g while speech input button is pressed) 
+
+\index{Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}!speech\+Recognizer\+Continuous@{speech\+Recognizer\+Continuous}}
+\index{speech\+Recognizer\+Continuous@{speech\+Recognizer\+Continuous}!Listen\+To\+Me\+::\+Main\+Page@{Listen\+To\+Me\+::\+Main\+Page}}
+\subsubsection[{\texorpdfstring{speech\+Recognizer\+Continuous}{speechRecognizerContinuous}}]{\setlength{\rightskip}{0pt plus 5cm}Speech\+Recognizer Listen\+To\+Me.\+Main\+Page.\+speech\+Recognizer\+Continuous\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_main_page_ac417ca2ffe02d44895c029bf23e8f83a}{}\label{class_listen_to_me_1_1_main_page_ac417ca2ffe02d44895c029bf23e8f83a}
+
+
+evaluates speech input if the user is continually speaking. triggered by the user saying start listening. If the command stop listening is said, it will stop continous speech recognition 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Listen\+To\+Me/\hyperlink{_main_page_8xaml_8cs}{Main\+Page.\+xaml.\+cs}\end{DoxyCompactItemize}

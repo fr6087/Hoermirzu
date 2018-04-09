@@ -1,0 +1,100 @@
+{
+  "References": [ "LuisBot.dll" ],
+  "Imports": [ "LuisBot.Resource" ],
+  "type": "object",
+  "Templates": {
+    "NotUnderstood": {
+      "Patterns": [ "I didn't understand: \"{0}\".", "Try again, I don't know about \"{0}\"." ]
+    }
+  },
+  "properties": {
+
+    "Vorname": {
+      
+      "Prompt": {
+        "Patterns": [ "What is your given name?" ]
+      },
+
+      "type": [
+        "string",
+        "null"
+      ]
+
+    },
+    "Nachname": {
+
+      "Prompt": {
+        "Patterns": [ "And your surname?" ]
+      },
+
+      "type": [
+        "string",
+        "null"
+      ]
+
+    },
+    "Hausnummer": {
+
+      "Prompt": {
+        "Patterns": [ "What is your street number?" ]
+      },
+
+      "type": [
+        "string",
+        "null"
+      ]
+
+    },
+    "Telefonnummer": {
+
+      "Prompt": {
+        "Patterns": [ "What is your telephone number?" ]
+      },
+
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "(\\(\\d{3}\\))?\\s*\\d{3}(-|\\s*)\\d{4}"
+
+    },
+    "Emailadresse": {
+
+      "Prompt": {
+        "Patterns": [ "e-mail-address?" ]
+      },
+
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$"
+
+    },
+    "Firmen-URL": {
+      "Prompt": {
+        "Patterns": [ "What is your company's url?" ]
+      },
+
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)",
+      "After": [ { "Message": [ "Form has accumulated the following data: {Vorname}, {Nachname}, {Hausnummer}, {Emailadresse}, {Telefonnummer}, {Firmen-URL}" ] } ]
+    },
+    "Rating": {
+      "Describe": "your experience today",
+
+      "type": [
+        "number",
+        "null"
+      ],
+
+      "minimum": 1,
+      "maximum": 5
+    }
+
+  }
+
+}

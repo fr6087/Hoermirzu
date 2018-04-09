@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simple_echo_bot_1_1_web_api_config" kind="class" language="C#" prot="public">
+    <compoundname>SimpleEchoBot::WebApiConfig</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_simple_echo_bot_1_1_web_api_config_1abcbd3d32dad993b7ff79d640a7eee61d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SimpleEchoBot.WebApiConfig.Register</definition>
+        <argsstring>(HttpConfiguration config)</argsstring>
+        <name>Register</name>
+        <param>
+          <type>HttpConfiguration</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="App_Start/WebApiConfig.cs" line="9" column="1" bodyfile="App_Start/WebApiConfig.cs" bodystart="9" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="App_Start/WebApiConfig.cs" line="8" column="1" bodyfile="App_Start/WebApiConfig.cs" bodystart="7" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_simple_echo_bot_1_1_web_api_config_1abcbd3d32dad993b7ff79d640a7eee61d" prot="public" virt="non-virtual"><scope>SimpleEchoBot::WebApiConfig</scope><name>Register</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_ef7013b9ffb79cd539d0a3c7033ed04e" kind="dir">
+    <compoundname>C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy</compoundname>
+    <innerdir refid="dir_bebc8d8635935d06f0956fd70f799ba0">C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model</innerdir>
+    <innerdir refid="dir_5397802b2af7affc8a6322cbb3fe5623">C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/obj</innerdir>
+    <innerdir refid="dir_292f954b146e32846821d027f832490b">C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Properties</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/"/>
+  </compounddef>
+</doxygen>

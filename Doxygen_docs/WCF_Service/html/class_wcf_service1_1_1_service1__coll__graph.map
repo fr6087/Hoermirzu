@@ -1,0 +1,5 @@
+<map id="WcfService1.Service1" name="WcfService1.Service1">
+<area shape="rect" id="node2" href="$interface_wcf_service1_1_1_i_service1.html" title="IService1" alt="" coords="5,81,80,108"/>
+<area shape="rect" id="node3" href="$class_wcf_service1_1_1_service1_factory.html" title="WcfService1.Service1Factory" alt="" coords="105,81,295,108"/>
+<area shape="rect" id="node4" href="$class_wcf_service1_1_1_implementation_factory.html" title="reference: http://www.c&#45;sharpcorner.com/article/factory&#45;method&#45;design&#45;pattern&#45;in&#45;c&#45;sharp/ ..." alt="" coords="123,5,277,32"/>
+</map>

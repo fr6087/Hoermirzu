@@ -1,0 +1,496 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_class_library_1_1model_1_1_element" kind="class" language="C#" prot="public">
+    <compoundname>ClassLibrary::model::Element</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">INotifyPropertyChanged</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_element_1abfe8d0ad55cd66ffe572ab40f415d510" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="10" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_element_1aefb98c4307c1957594918ec4ceff280f" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="11" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_element_1a12a5aae140f17fc8c5ec71d66bcb27ab" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.required</definition>
+        <argsstring></argsstring>
+        <name>required</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="14" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_element_1a2d4a934b8e4322f1a58264c86992b154" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.comment</definition>
+        <argsstring></argsstring>
+        <name>comment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="15" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_element_1afdc50e5ab19518c7bcf1e0dfb72d6561" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.placeholder</definition>
+        <argsstring></argsstring>
+        <name>placeholder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="16" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_element_1a45f6b6514e6d1462878071d2d7d3c18e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_class_library_1_1model_1_1_element" kindref="compound">Element</ref> []</type>
+        <definition>Element [] ClassLibrary.model.Element.subelems</definition>
+        <argsstring></argsstring>
+        <name>subelems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="18" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_element_1a413db5960e6b7232d5228d3c655abeac" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="21" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_element_1a1daa0ef209457fbdeafab55840d989b0" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.maxlength</definition>
+        <argsstring></argsstring>
+        <name>maxlength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="22" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_element_1a085da0d3877d39b396472650c9e0a5a4" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.group_name</definition>
+        <argsstring></argsstring>
+        <name>group_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="23" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_element_1a9f15af68753b20c3ca885cd1d9e3e4e3" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.list_id</definition>
+        <argsstring></argsstring>
+        <name>list_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="24" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_element_1a643cb787f064b9e2ee4c9aa3b65dd6a8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ClassLibrary.model.Element.isSelected</definition>
+        <argsstring></argsstring>
+        <name>isSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="25" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_class_library_1_1model_1_1_element_1ad1b479f501dc22f8bbfd80693f55ae85" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>PropertyChangedEventHandler</type>
+        <definition>PropertyChangedEventHandler ClassLibrary.model.Element.PropertyChanged</definition>
+        <argsstring></argsstring>
+        <name>PropertyChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="33" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1aaac88c09836b13b3de4cfd36043d7938" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="69" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="70" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1afc811ca71cc02f1edca957cdeb0ed58e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="81" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="82" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1a6ef2e7cc7ceae634408582683f725486" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.Placeholder</definition>
+        <argsstring></argsstring>
+        <name>Placeholder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="94" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1a8decdbbbad1c5f38b20667229ac451ff" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.List_id</definition>
+        <argsstring></argsstring>
+        <name>List_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="95" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1a0e2fc3bbe18d47f8c312afd71b2ceaa6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.Group_name</definition>
+        <argsstring></argsstring>
+        <name>Group_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="96" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1aa6fcebce9369824741d179c1e0be008d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.Maxlength</definition>
+        <argsstring></argsstring>
+        <name>Maxlength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="97" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1a1cee83d205141e4d69b75be6550e1205" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.Size</definition>
+        <argsstring></argsstring>
+        <name>Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="98" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1a09ed1721f03d2d78458c409912426a99" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_class_library_1_1model_1_1_element" kindref="compound">Element</ref> []</type>
+        <definition>Element [] ClassLibrary.model.Element.Subelems</definition>
+        <argsstring></argsstring>
+        <name>Subelems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="99" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1ae795aa46d42de6f7c6821329b00b4ad3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.Comment</definition>
+        <argsstring></argsstring>
+        <name>Comment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="100" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1a71893c0193a994bd7dd2455f82a05c06" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.Required</definition>
+        <argsstring></argsstring>
+        <name>Required</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="101" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1a8e2e5fae5077ca1e77d0c1506db20cd2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool ClassLibrary.model.Element.IsSeclected</definition>
+        <argsstring></argsstring>
+        <name>IsSeclected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="102" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1a4cae6672802b7e04632a8deb72922a12" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.Disabled</definition>
+        <argsstring></argsstring>
+        <name>Disabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="104" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_element_1ac50e53dd12a8def9b5a48b5ec055c102" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Element.Pattern</definition>
+        <argsstring></argsstring>
+        <name>Pattern</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="105" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="105" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_class_library_1_1model_1_1_element_1a2930c5dd527c6c924ab9d24de264721b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ClassLibrary.model.Element.Element</definition>
+        <argsstring>()</argsstring>
+        <name>Element</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="28" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_class_library_1_1model_1_1_element_1a2b945bac2b1f654101809f85d229bfb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ClassLibrary.model.Element.Element</definition>
+        <argsstring>(string text, string _type, string _required, string _comment, string _placeholder, Element[] _subelems, string _size, string _maxlength, string _groupname, string _list_id)</argsstring>
+        <name>Element</name>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>_required</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>_comment</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>_placeholder</declname>
+        </param>
+        <param>
+          <type><ref refid="class_class_library_1_1model_1_1_element" kindref="compound">Element</ref> []</type>
+          <declname>_subelems</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>_size</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>_maxlength</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>_groupname</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>_list_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="34" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="34" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_class_library_1_1model_1_1_element_1a6da94df1722991f100be01b15fa7cae6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string ClassLibrary.model.Element.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="48" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="48" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_class_library_1_1model_1_1_element_1a38cf7d75e78e928b10427f153a389e2a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ClassLibrary.model.Element.NotifyPropertyChanged</definition>
+        <argsstring>(string propertyName)</argsstring>
+        <name>NotifyPropertyChanged</name>
+        <param>
+          <type>string</type>
+          <declname>propertyName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="107" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="107" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>models the control element of a web form </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="2">
+        <label>ClassLibrary.model.Element</label>
+        <link refid="class_class_library_1_1model_1_1_element"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="4">
+        <label>ClassLibrary.model.Element</label>
+        <link refid="class_class_library_1_1model_1_1_element"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" line="9" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Element.cs" bodystart="8" bodyend="116"/>
+    <listofallmembers>
+      <member refid="class_class_library_1_1model_1_1_element_1a2d4a934b8e4322f1a58264c86992b154" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>comment</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1ae795aa46d42de6f7c6821329b00b4ad3" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Comment</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a4cae6672802b7e04632a8deb72922a12" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Disabled</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a2930c5dd527c6c924ab9d24de264721b" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Element</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a2b945bac2b1f654101809f85d229bfb1" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Element</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a0e2fc3bbe18d47f8c312afd71b2ceaa6" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Group_name</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a085da0d3877d39b396472650c9e0a5a4" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>group_name</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a8e2e5fae5077ca1e77d0c1506db20cd2" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>IsSeclected</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a643cb787f064b9e2ee4c9aa3b65dd6a8" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>isSelected</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a8decdbbbad1c5f38b20667229ac451ff" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>List_id</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a9f15af68753b20c3ca885cd1d9e3e4e3" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>list_id</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a1daa0ef209457fbdeafab55840d989b0" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>maxlength</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1aa6fcebce9369824741d179c1e0be008d" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Maxlength</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a38cf7d75e78e928b10427f153a389e2a" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>NotifyPropertyChanged</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1ac50e53dd12a8def9b5a48b5ec055c102" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Pattern</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1afdc50e5ab19518c7bcf1e0dfb72d6561" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>placeholder</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a6ef2e7cc7ceae634408582683f725486" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Placeholder</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1ad1b479f501dc22f8bbfd80693f55ae85" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>PropertyChanged</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a12a5aae140f17fc8c5ec71d66bcb27ab" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>required</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a71893c0193a994bd7dd2455f82a05c06" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Required</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a413db5960e6b7232d5228d3c655abeac" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>size</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a1cee83d205141e4d69b75be6550e1205" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Size</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a45f6b6514e6d1462878071d2d7d3c18e" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>subelems</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a09ed1721f03d2d78458c409912426a99" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Subelems</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1aefb98c4307c1957594918ec4ceff280f" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>text</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1afc811ca71cc02f1edca957cdeb0ed58e" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Text</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1a6da94df1722991f100be01b15fa7cae6" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>ToString</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1abfe8d0ad55cd66ffe572ab40f415d510" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>type</name></member>
+      <member refid="class_class_library_1_1model_1_1_element_1aaac88c09836b13b3de4cfd36043d7938" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Element</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

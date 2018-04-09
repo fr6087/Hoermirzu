@@ -1,0 +1,195 @@
+\hypertarget{class_wcf_service1_1_1_implementation___mock}{}\section{Wcf\+Service1.\+Implementation\+\_\+\+Mock Class Reference}
+\label{class_wcf_service1_1_1_implementation___mock}\index{Wcf\+Service1.\+Implementation\+\_\+\+Mock@{Wcf\+Service1.\+Implementation\+\_\+\+Mock}}
+
+
+Inheritance diagram for Wcf\+Service1.\+Implementation\+\_\+\+Mock\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{class_wcf_service1_1_1_implementation___mock__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wcf\+Service1.\+Implementation\+\_\+\+Mock\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{class_wcf_service1_1_1_implementation___mock__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task \hyperlink{class_wcf_service1_1_1_implementation___mock_aeee2fcebb9cfd636b4ead332f500273c}{Connect\+Async} ()
+\item 
+override List$<$ Section $>$ \hyperlink{class_wcf_service1_1_1_implementation___mock_a3677cf44f7acac9549f1e58ce9191e4e}{Get\+All\+Elements} (string username, string password)
+\item 
+override string \hyperlink{class_wcf_service1_1_1_implementation___mock_a770d195f0883f20e2356381152a6ea00}{Get\+Form} (string username, string password)
+\item 
+override string \hyperlink{class_wcf_service1_1_1_implementation___mock_ad4676c509d48e01e7ed6e2962fc01b29}{Login} (string user\+Name, string password)
+\item 
+override bool \hyperlink{class_wcf_service1_1_1_implementation___mock_aacbbae5d5cd842b1c62cfab84168b287}{Upload\+Section} (Section section)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Section \hyperlink{class_wcf_service1_1_1_implementation___mock_a8cc683e1ef69f6d291c8b0381163d69b}{convert\+String\+To\+Section} (string section)
+\begin{DoxyCompactList}\small\item\em processes the json string contained in the sections\+List into a Section from the Portable\+Class\+Library model \end{DoxyCompactList}\item 
+string \hyperlink{class_wcf_service1_1_1_implementation___mock_a137882a409681590c57f58b259d1e6cb}{read\+File} (string path\+File)
+\begin{DoxyCompactList}\small\item\em reads a text file (in this case json file) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}!Connect\+Async@{Connect\+Async}}
+\index{Connect\+Async@{Connect\+Async}!Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}}
+\subsubsection[{\texorpdfstring{Connect\+Async()}{ConnectAsync()}}]{\setlength{\rightskip}{0pt plus 5cm}Task Wcf\+Service1.\+Implementation\+\_\+\+Mock.\+Connect\+Async (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_implementation___mock_aeee2fcebb9cfd636b4ead332f500273c}{}\label{class_wcf_service1_1_1_implementation___mock_aeee2fcebb9cfd636b4ead332f500273c}
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}!convert\+String\+To\+Section@{convert\+String\+To\+Section}}
+\index{convert\+String\+To\+Section@{convert\+String\+To\+Section}!Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}}
+\subsubsection[{\texorpdfstring{convert\+String\+To\+Section(string section)}{convertStringToSection(string section)}}]{\setlength{\rightskip}{0pt plus 5cm}Section Wcf\+Service1.\+Implementation\+\_\+\+Mock.\+convert\+String\+To\+Section (
+\begin{DoxyParamCaption}
+\item[{string}]{section}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_implementation___mock_a8cc683e1ef69f6d291c8b0381163d69b}{}\label{class_wcf_service1_1_1_implementation___mock_a8cc683e1ef69f6d291c8b0381163d69b}
+
+
+processes the json string contained in the sections\+List into a Section from the Portable\+Class\+Library model 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___mock_a8cc683e1ef69f6d291c8b0381163d69b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}!Get\+All\+Elements@{Get\+All\+Elements}}
+\index{Get\+All\+Elements@{Get\+All\+Elements}!Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}}
+\subsubsection[{\texorpdfstring{Get\+All\+Elements(string username, string password)}{GetAllElements(string username, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}override List$<$Section$>$ Wcf\+Service1.\+Implementation\+\_\+\+Mock.\+Get\+All\+Elements (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wcf_service1_1_1_implementation___mock_a3677cf44f7acac9549f1e58ce9191e4e}{}\label{class_wcf_service1_1_1_implementation___mock_a3677cf44f7acac9549f1e58ce9191e4e}
+
+
+Implements \hyperlink{class_wcf_service1_1_1_service_class_ac0640daeb28fada4b6f80a2b66b0ec3e}{Wcf\+Service1.\+Service\+Class}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___mock_a3677cf44f7acac9549f1e58ce9191e4e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}!Get\+Form@{Get\+Form}}
+\index{Get\+Form@{Get\+Form}!Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}}
+\subsubsection[{\texorpdfstring{Get\+Form(string username, string password)}{GetForm(string username, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}override string Wcf\+Service1.\+Implementation\+\_\+\+Mock.\+Get\+Form (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wcf_service1_1_1_implementation___mock_a770d195f0883f20e2356381152a6ea00}{}\label{class_wcf_service1_1_1_implementation___mock_a770d195f0883f20e2356381152a6ea00}
+
+
+Implements \hyperlink{class_wcf_service1_1_1_service_class_a791350c6bf7ba90f63f95e1b935dde3b}{Wcf\+Service1.\+Service\+Class}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___mock_a770d195f0883f20e2356381152a6ea00_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}!Login@{Login}}
+\index{Login@{Login}!Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}}
+\subsubsection[{\texorpdfstring{Login(string user\+Name, string password)}{Login(string userName, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}override string Wcf\+Service1.\+Implementation\+\_\+\+Mock.\+Login (
+\begin{DoxyParamCaption}
+\item[{string}]{user\+Name, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wcf_service1_1_1_implementation___mock_ad4676c509d48e01e7ed6e2962fc01b29}{}\label{class_wcf_service1_1_1_implementation___mock_ad4676c509d48e01e7ed6e2962fc01b29}
+
+
+Implements \hyperlink{class_wcf_service1_1_1_service_class_a023c63c6a95132c7f2b9754c1bb41c80}{Wcf\+Service1.\+Service\+Class}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___mock_ad4676c509d48e01e7ed6e2962fc01b29_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}!read\+File@{read\+File}}
+\index{read\+File@{read\+File}!Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}}
+\subsubsection[{\texorpdfstring{read\+File(string path\+File)}{readFile(string pathFile)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Implementation\+\_\+\+Mock.\+read\+File (
+\begin{DoxyParamCaption}
+\item[{string}]{path\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_implementation___mock_a137882a409681590c57f58b259d1e6cb}{}\label{class_wcf_service1_1_1_implementation___mock_a137882a409681590c57f58b259d1e6cb}
+
+
+reads a text file (in this case json file) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+File} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the content of the file
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___mock_a137882a409681590c57f58b259d1e6cb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}!Upload\+Section@{Upload\+Section}}
+\index{Upload\+Section@{Upload\+Section}!Wcf\+Service1\+::\+Implementation\+\_\+\+Mock@{Wcf\+Service1\+::\+Implementation\+\_\+\+Mock}}
+\subsubsection[{\texorpdfstring{Upload\+Section(\+Section section)}{UploadSection(Section section)}}]{\setlength{\rightskip}{0pt plus 5cm}override bool Wcf\+Service1.\+Implementation\+\_\+\+Mock.\+Upload\+Section (
+\begin{DoxyParamCaption}
+\item[{Section}]{section}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wcf_service1_1_1_implementation___mock_aacbbae5d5cd842b1c62cfab84168b287}{}\label{class_wcf_service1_1_1_implementation___mock_aacbbae5d5cd842b1c62cfab84168b287}
+
+
+Implements \hyperlink{class_wcf_service1_1_1_service_class_add477e49eab8927cc943dfb751dc976a}{Wcf\+Service1.\+Service\+Class}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Wcf\+Service1/\hyperlink{_implementation___mock_8cs}{Implementation\+\_\+\+Mock.\+cs}\end{DoxyCompactItemize}

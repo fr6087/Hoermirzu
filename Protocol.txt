@@ -1,0 +1,4 @@
+SAP Knowledge Warehouse Translator 7.4.000 3/14/2018 11:39:35 AM
+#1  Warning         Not a Knowledge Warehouse Translator package.      
+Application finished execution. 0 errors occurred.
+Application finished execution. 0 errors occurred.

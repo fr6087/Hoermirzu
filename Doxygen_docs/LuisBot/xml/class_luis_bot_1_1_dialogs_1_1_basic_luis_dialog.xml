@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog" kind="class" language="C#" prot="public">
+    <compoundname>LuisBot::Dialogs::BasicLuisDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">LuisDialog&lt; object &gt;</basecompoundref>
+    <innerclass refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form" prot="public">LuisBot::Dialogs::BasicLuisDialog::ESF2CompanyDetailsForm</innerclass>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1ae6aa0ee5d0c024263c0149b3bb4a8aef" prot="private" static="yes" mutable="no">
+        <type>ConcurrentDictionary&lt; CultureInfo, IForm&lt; <ref refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form" kindref="compound">ESF2CompanyDetailsForm</ref> &gt; &gt;</type>
+        <definition>ConcurrentDictionary&lt;CultureInfo, IForm&lt;ESF2CompanyDetailsForm&gt; &gt; LuisBot.Dialogs.BasicLuisDialog._forms</definition>
+        <argsstring></argsstring>
+        <name>_forms</name>
+        <initializer>= new ConcurrentDictionary&lt;CultureInfo, IForm&lt;<ref refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form" kindref="compound">ESF2CompanyDetailsForm</ref>&gt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="213" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a44d3302f966e180956af084c6f88187a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LuisBot.Dialogs.BasicLuisDialog.BasicLuisDialog</definition>
+        <argsstring>()</argsstring>
+        <name>BasicLuisDialog</name>
+        <briefdescription>
+<para>the constructor uses information from the web.config that it needs to authenticate towards the online luis language model </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="38" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a25c5b741205a79ef89e05ddd79b74931" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.BasicLuisDialog.NoneIntent</definition>
+        <argsstring>(IDialogContext context, LuisResult result)</argsstring>
+        <name>NoneIntent</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>LuisResult</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>The none intent is the default intent that is recognized </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The calling class, MessagesConroller</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameters returned by the language model. Contains sometimes entities</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="51" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="51" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a2daf768e035ec624d497aa54d4d1b5d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.BasicLuisDialog.GreetingIntent</definition>
+        <argsstring>(IDialogContext context, LuisResult result)</argsstring>
+        <name>GreetingIntent</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>LuisResult</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>The greeting intent should be reached whenever the user is typing in a greeting. Note: There are nice examples of using this for determining the language that the user prefers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MessagesController</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the luisresult returned from the language Model</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="65" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="65" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1ae820de711d0758a6452673a0144315b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.BasicLuisDialog.FillInIntent</definition>
+        <argsstring>(IDialogContext context, LuisResult result)</argsstring>
+        <name>FillInIntent</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>LuisResult</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>The fillin-intent should be recognized by the language model whenever the user says something that implies he or she wants to fill in a field in the form. As it is, for each field intent there needs to be an endbpoint call. As that is very inefficient, If&apos;s better to let the bot work with Formflow/ESF2.Unternehmensangaben /// </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="80" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="80" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1abb97cdc3082ad21b4b221a9a555cc874" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.BasicLuisDialog.CompanyDetailsIntent</definition>
+        <argsstring>(IDialogContext context, LuisResult result)</argsstring>
+        <name>CompanyDetailsIntent</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>LuisResult</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>ESF2.Unternehmensangaben is triggered when the user says something like &quot;Unernehmensangaben ausfüllen&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="95" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="95" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a5ad3168d38947855f5f4e5331847c45e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.BasicLuisDialog.GoBackIntent</definition>
+        <argsstring>(IDialogContext context, LuisResult result)</argsstring>
+        <name>GoBackIntent</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>LuisResult</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>This is a steering intent, that has not been implemented so far. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="113" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="113" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a334f34e94e5fb8da25b6b554730158ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.BasicLuisDialog.HelpIntent</definition>
+        <argsstring>(IDialogContext context, LuisResult result)</argsstring>
+        <name>HelpIntent</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>LuisResult</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>spawns a seperate dialog to help the user. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="126" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="126" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a5d760e61559775618a30b8b0cd25e7f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.BasicLuisDialog.UploadIntent</definition>
+        <argsstring>(IDialogContext context, LuisResult result)</argsstring>
+        <name>UploadIntent</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>LuisResult</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>not implemented yet. In the web form there are some fields in which the user has to choose an attachment. This intent could come convienient for that. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="144" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="144" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a4fc4f935cccd55a73b1a4a7b7a1e668a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.BasicLuisDialog.AfterDialog</definition>
+        <argsstring>(IDialogContext context, IAwaitable&lt; object &gt; result)</argsstring>
+        <name>AfterDialog</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>IAwaitable&lt; object &gt;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>AfterDialog is a ResumeHandler-Method. Whenever a call to other <ref refid="namespace_luis_bot_1_1_dialogs" kindref="compound">Dialogs</ref> is made by Context.Call() the return point of Code has to be specified AferDialog is such a return point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The result that may be passed back by the dialog, e.g. a JSON Object with populated enities</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="203" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="203" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a3db4f0ad76b7edd57122b6d2636ee514" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.BasicLuisDialog.FeedbackFormComplete</definition>
+        <argsstring>(IDialogContext context, IAwaitable&lt; ESF2CompanyDetailsForm &gt; result)</argsstring>
+        <name>FeedbackFormComplete</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>IAwaitable&lt; <ref refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form" kindref="compound">ESF2CompanyDetailsForm</ref> &gt;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>resume handler for fillIn and FormIntent (=&apos;unternehmensangaben&apos;) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="161" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="161" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1aab832ef20038407b9e43619c2a49eb6b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.BasicLuisDialog.MessageReceivedAsync</definition>
+        <argsstring>(IDialogContext context, IAwaitable&lt; IMessageActivity &gt; argument)</argsstring>
+        <name>MessageReceivedAsync</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>IAwaitable&lt; IMessageActivity &gt;</type>
+          <declname>argument</declname>
+        </param>
+        <briefdescription>
+<para>is a resume handler that handles navigation to the final resumeHandler or answers to the user depending on the calling Dialogcontext </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argument</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="176" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="176" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the first dialog that MessagesController sends its messages to. The <ref refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog" kindref="compound">BasicLuisDialog</ref> class is implementing processing of the Luis.ai language model that belongs to this application. Each intent discovered by the Luis-Model triggers a certain action. The strings used in this class were generated by <ref refid="namespace_microsoft" kindref="compound">Microsoft</ref>&apos;s rview.exe tool. assambly name is assembly LuisBot.dll and namespace for rview tool Method to build Form: <ref refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1_1_e_s_f2_company_details_form_1a2592b3e1a69b4b594d0e450961701e4e" kindref="member">ESF2CompanyDetailsForm.BuildForm()</ref>; reference: <ulink url="https://stackoverflow.com/questions/46199439/how-to-use-rview-tool-in-bot-builder-c-sdk-to-localize-strings-in-form-flow">https://stackoverflow.com/questions/46199439/how-to-use-rview-tool-in-bot-builder-c-sdk-to-localize-strings-in-form-flow</ulink> reference: </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>LuisDialog&lt; object &gt;</label>
+      </node>
+      <node id="0">
+        <label>LuisBot.Dialogs.BasicLuisDialog</label>
+        <link refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>LuisDialog&lt; object &gt;</label>
+      </node>
+      <node id="2">
+        <label>LuisBot.Dialogs.BasicLuisDialog</label>
+        <link refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Dialogs/BasicLuisDialog.cs" line="33" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="32" bodyend="312"/>
+    <listofallmembers>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1ae6aa0ee5d0c024263c0149b3bb4a8aef" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog</scope><name>_forms</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a4fc4f935cccd55a73b1a4a7b7a1e668a" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog</scope><name>AfterDialog</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a44d3302f966e180956af084c6f88187a" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog</scope><name>BasicLuisDialog</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1abb97cdc3082ad21b4b221a9a555cc874" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog</scope><name>CompanyDetailsIntent</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a3db4f0ad76b7edd57122b6d2636ee514" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog</scope><name>FeedbackFormComplete</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1ae820de711d0758a6452673a0144315b1" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog</scope><name>FillInIntent</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a5ad3168d38947855f5f4e5331847c45e" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog</scope><name>GoBackIntent</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a2daf768e035ec624d497aa54d4d1b5d1" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog</scope><name>GreetingIntent</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a334f34e94e5fb8da25b6b554730158ff" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog</scope><name>HelpIntent</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1aab832ef20038407b9e43619c2a49eb6b" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog</scope><name>MessageReceivedAsync</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a25c5b741205a79ef89e05ddd79b74931" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog</scope><name>NoneIntent</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_basic_luis_dialog_1a5d760e61559775618a30b8b0cd25e7f4" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::BasicLuisDialog</scope><name>UploadIntent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

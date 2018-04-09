@@ -1,0 +1,5 @@
+<map id="ListenToMe.App.OnNavigationFailed" name="ListenToMe.App.OnNavigationFailed">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_app.html#a3e2da49bb555b7fdc5858f5442d396e4" title="OnActivated is called whenever an external application e.g&#45; Cortana launches the ListenToMeApp ..." alt="" coords="456,5,647,32"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_app.html#ad23d27a2bdcd858e10e589bfadb1db17" title="initGui determines whether or not there is an active Windows Frame. It creates one for the applicatio..." alt="" coords="249,56,407,83"/>
+<area shape="rect" id="node4" href="$class_listen_to_me_1_1_app.html#ace89a3624e2de8cc528dea8b1288d03f" title="Is called as the application is started normally by the user. Other enty points are used for example ..." alt="" coords="455,56,648,83"/>
+</map>

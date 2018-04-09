@@ -1,0 +1,160 @@
+\hypertarget{interface_wcf_service1_1_1_i_service1}{}\section{Wcf\+Service1.\+I\+Service1 Interface Reference}
+\label{interface_wcf_service1_1_1_i_service1}\index{Wcf\+Service1.\+I\+Service1@{Wcf\+Service1.\+I\+Service1}}
+
+
+Inheritance diagram for Wcf\+Service1.\+I\+Service1\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{interface_wcf_service1_1_1_i_service1__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{interface_wcf_service1_1_1_i_service1_a22c297ac3e406ff48776942e47e6ba65}{Login} (string username, string password)
+\item 
+string \hyperlink{interface_wcf_service1_1_1_i_service1_ab0b52fb983ee4488ad7de5f03597d186}{Get\+Form} (string \+\_\+username, string \+\_\+password)
+\item 
+List$<$ string $>$ \hyperlink{interface_wcf_service1_1_1_i_service1_a81d8f9d0c98959c0db9856ef015ef71c}{Get\+Inputs} (string username, string password, string domain)
+\item 
+List$<$ string $>$ \hyperlink{interface_wcf_service1_1_1_i_service1_a62b4a23525791f79b35325acdc9c08c1}{Get\+Headings} (string username, string password, string domain)
+\item 
+List$<$ Section $>$ \hyperlink{interface_wcf_service1_1_1_i_service1_aa3f75be37b97eb1f0b0630cfabc2c51c}{Get\+All\+Elements} (string username, string password)
+\item 
+string \hyperlink{interface_wcf_service1_1_1_i_service1_a19ff6b5fd0d71880ef89413442e3eabe}{Read\+Jason\+From\+File} (string filename)
+\item 
+string \hyperlink{interface_wcf_service1_1_1_i_service1_a1baba4ded4ba686dc43912639339e1a0}{Get\+C\+S\+V\+Dropdown\+String} (string list\+\_\+id)
+\item 
+string \hyperlink{interface_wcf_service1_1_1_i_service1_aa4b0e92420addad7422e113b7b7161e2}{Serialize\+To\+Json} (string username, string password)
+\item 
+bool \hyperlink{interface_wcf_service1_1_1_i_service1_a40f5fb59f7eb2c10dc216bceb4fc366c}{Upload\+Section} (Section section)
+\item 
+Task$<$ string $>$ \hyperlink{interface_wcf_service1_1_1_i_service1_a1d49b0b16f20bd13e61cc1bb80aa7832}{Talk\+To\+The\+Bot\+Async} (string message)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}!Get\+All\+Elements@{Get\+All\+Elements}}
+\index{Get\+All\+Elements@{Get\+All\+Elements}!Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}}
+\subsubsection[{\texorpdfstring{Get\+All\+Elements(string username, string password)}{GetAllElements(string username, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Section$>$ Wcf\+Service1.\+I\+Service1.\+Get\+All\+Elements (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_wcf_service1_1_1_i_service1_aa3f75be37b97eb1f0b0630cfabc2c51c}{}\label{interface_wcf_service1_1_1_i_service1_aa3f75be37b97eb1f0b0630cfabc2c51c}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_service1_ab19a2f842aca61072732f113e7278ba6}{Wcf\+Service1.\+Service1}.
+
+\index{Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}!Get\+C\+S\+V\+Dropdown\+String@{Get\+C\+S\+V\+Dropdown\+String}}
+\index{Get\+C\+S\+V\+Dropdown\+String@{Get\+C\+S\+V\+Dropdown\+String}!Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}}
+\subsubsection[{\texorpdfstring{Get\+C\+S\+V\+Dropdown\+String(string list\+\_\+id)}{GetCSVDropdownString(string list_id)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+I\+Service1.\+Get\+C\+S\+V\+Dropdown\+String (
+\begin{DoxyParamCaption}
+\item[{string}]{list\+\_\+id}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_wcf_service1_1_1_i_service1_a1baba4ded4ba686dc43912639339e1a0}{}\label{interface_wcf_service1_1_1_i_service1_a1baba4ded4ba686dc43912639339e1a0}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_service1_a3c0423e72454f64650ca89e43aa30955}{Wcf\+Service1.\+Service1}.
+
+\index{Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}!Get\+Form@{Get\+Form}}
+\index{Get\+Form@{Get\+Form}!Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}}
+\subsubsection[{\texorpdfstring{Get\+Form(string \+\_\+username, string \+\_\+password)}{GetForm(string _username, string _password)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+I\+Service1.\+Get\+Form (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+username, }
+\item[{string}]{\+\_\+password}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_wcf_service1_1_1_i_service1_ab0b52fb983ee4488ad7de5f03597d186}{}\label{interface_wcf_service1_1_1_i_service1_ab0b52fb983ee4488ad7de5f03597d186}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_service1_a13eccecdb2a4a36fbbbd96f2ff07f880}{Wcf\+Service1.\+Service1}.
+
+\index{Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}!Get\+Headings@{Get\+Headings}}
+\index{Get\+Headings@{Get\+Headings}!Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}}
+\subsubsection[{\texorpdfstring{Get\+Headings(string username, string password, string domain)}{GetHeadings(string username, string password, string domain)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$string$>$ Wcf\+Service1.\+I\+Service1.\+Get\+Headings (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password, }
+\item[{string}]{domain}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_wcf_service1_1_1_i_service1_a62b4a23525791f79b35325acdc9c08c1}{}\label{interface_wcf_service1_1_1_i_service1_a62b4a23525791f79b35325acdc9c08c1}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_service1_a9a93a18651e7fd879d8166bd70abdbfe}{Wcf\+Service1.\+Service1}.
+
+\index{Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}!Get\+Inputs@{Get\+Inputs}}
+\index{Get\+Inputs@{Get\+Inputs}!Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}}
+\subsubsection[{\texorpdfstring{Get\+Inputs(string username, string password, string domain)}{GetInputs(string username, string password, string domain)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$string$>$ Wcf\+Service1.\+I\+Service1.\+Get\+Inputs (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password, }
+\item[{string}]{domain}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_wcf_service1_1_1_i_service1_a81d8f9d0c98959c0db9856ef015ef71c}{}\label{interface_wcf_service1_1_1_i_service1_a81d8f9d0c98959c0db9856ef015ef71c}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_service1_ad9115f054786f723b3bcb4f3f62457ba}{Wcf\+Service1.\+Service1}.
+
+\index{Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}!Login@{Login}}
+\index{Login@{Login}!Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}}
+\subsubsection[{\texorpdfstring{Login(string username, string password)}{Login(string username, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+I\+Service1.\+Login (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_wcf_service1_1_1_i_service1_a22c297ac3e406ff48776942e47e6ba65}{}\label{interface_wcf_service1_1_1_i_service1_a22c297ac3e406ff48776942e47e6ba65}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_service1_a451391230a00d5f6ea6aafd54aad1a12}{Wcf\+Service1.\+Service1}.
+
+\index{Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}!Read\+Jason\+From\+File@{Read\+Jason\+From\+File}}
+\index{Read\+Jason\+From\+File@{Read\+Jason\+From\+File}!Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}}
+\subsubsection[{\texorpdfstring{Read\+Jason\+From\+File(string filename)}{ReadJasonFromFile(string filename)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+I\+Service1.\+Read\+Jason\+From\+File (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_wcf_service1_1_1_i_service1_a19ff6b5fd0d71880ef89413442e3eabe}{}\label{interface_wcf_service1_1_1_i_service1_a19ff6b5fd0d71880ef89413442e3eabe}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_service1_a1efce216795958b0c4e3f176665027fe}{Wcf\+Service1.\+Service1}.
+
+\index{Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}!Serialize\+To\+Json@{Serialize\+To\+Json}}
+\index{Serialize\+To\+Json@{Serialize\+To\+Json}!Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}}
+\subsubsection[{\texorpdfstring{Serialize\+To\+Json(string username, string password)}{SerializeToJson(string username, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+I\+Service1.\+Serialize\+To\+Json (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_wcf_service1_1_1_i_service1_aa4b0e92420addad7422e113b7b7161e2}{}\label{interface_wcf_service1_1_1_i_service1_aa4b0e92420addad7422e113b7b7161e2}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_service1_abc900a9de8f8aa5a126f1eef3353b154}{Wcf\+Service1.\+Service1}.
+
+\index{Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}!Talk\+To\+The\+Bot\+Async@{Talk\+To\+The\+Bot\+Async}}
+\index{Talk\+To\+The\+Bot\+Async@{Talk\+To\+The\+Bot\+Async}!Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}}
+\subsubsection[{\texorpdfstring{Talk\+To\+The\+Bot\+Async(string message)}{TalkToTheBotAsync(string message)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<$string$>$ Wcf\+Service1.\+I\+Service1.\+Talk\+To\+The\+Bot\+Async (
+\begin{DoxyParamCaption}
+\item[{string}]{message}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_wcf_service1_1_1_i_service1_a1d49b0b16f20bd13e61cc1bb80aa7832}{}\label{interface_wcf_service1_1_1_i_service1_a1d49b0b16f20bd13e61cc1bb80aa7832}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_service1_a3073c327f0dae7f2a6324341bbefcaf8}{Wcf\+Service1.\+Service1}.
+
+\index{Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}!Upload\+Section@{Upload\+Section}}
+\index{Upload\+Section@{Upload\+Section}!Wcf\+Service1\+::\+I\+Service1@{Wcf\+Service1\+::\+I\+Service1}}
+\subsubsection[{\texorpdfstring{Upload\+Section(\+Section section)}{UploadSection(Section section)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wcf\+Service1.\+I\+Service1.\+Upload\+Section (
+\begin{DoxyParamCaption}
+\item[{Section}]{section}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_wcf_service1_1_1_i_service1_a40f5fb59f7eb2c10dc216bceb4fc366c}{}\label{interface_wcf_service1_1_1_i_service1_a40f5fb59f7eb2c10dc216bceb4fc366c}
+
+
+Implemented in \hyperlink{class_wcf_service1_1_1_service1_a4ba31cd1a202c84fac4d03461d8f4361}{Wcf\+Service1.\+Service1}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Wcf\+Service1/\hyperlink{_i_service1_8cs}{I\+Service1.\+cs}\end{DoxyCompactItemize}

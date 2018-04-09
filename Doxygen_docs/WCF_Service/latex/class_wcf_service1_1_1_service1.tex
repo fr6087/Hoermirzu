@@ -1,0 +1,434 @@
+\hypertarget{class_wcf_service1_1_1_service1}{}\section{Wcf\+Service1.\+Service1 Class Reference}
+\label{class_wcf_service1_1_1_service1}\index{Wcf\+Service1.\+Service1@{Wcf\+Service1.\+Service1}}
+
+
+the class implements the webservice parsing the form. ther is a debug and no-\/debug mode. If Debug is true, the form is build from a json text fine. If not it\textquotesingle{}s delivered fróm a Selenium Browser \hyperlink{class_wcf_service1_1_1_website_crawler}{Website\+Crawler}  
+
+
+
+
+Inheritance diagram for Wcf\+Service1.\+Service1\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_wcf_service1_1_1_service1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wcf\+Service1.\+Service1\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_wcf_service1_1_1_service1__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_wcf_service1_1_1_service1_a451391230a00d5f6ea6aafd54aad1a12}{Login} (string \+\_\+user\+Name, string \+\_\+password)
+\begin{DoxyCompactList}\small\item\em real login to the web form \end{DoxyCompactList}\item 
+string \hyperlink{class_wcf_service1_1_1_service1_a13eccecdb2a4a36fbbbd96f2ff07f880}{Get\+Form} (string \+\_\+username, string \+\_\+password)
+\begin{DoxyCompactList}\small\item\em is telling the headless browser to navigate to a specific domain in order to login and view the form \end{DoxyCompactList}\item 
+List$<$ string $>$ \hyperlink{class_wcf_service1_1_1_service1_ad9115f054786f723b3bcb4f3f62457ba}{Get\+Inputs} (string username, string password, string domain)
+\begin{DoxyCompactList}\small\item\em returns a list of all labels on the web form. Those can then be translated into text\+Boxes by the App \end{DoxyCompactList}\item 
+List$<$ string $>$ \hyperlink{class_wcf_service1_1_1_service1_a9a93a18651e7fd879d8166bd70abdbfe}{Get\+Headings} (string username, string password, string domain)
+\begin{DoxyCompactList}\small\item\em Is returning headings slightly modified, cuts the number from the heading e.\+g \end{DoxyCompactList}\item 
+List$<$ Section $>$ \hyperlink{class_wcf_service1_1_1_service1_ab19a2f842aca61072732f113e7278ba6}{Get\+All\+Elements} (string username, string password)
+\begin{DoxyCompactList}\small\item\em parses the website form and returns a json string simulating radio buttons, check-\/boxec, input fields, headings, dopdown lists, date pickers and labels. This is specialized for these control types and other types will not be recognized this is not working correctly. In the inputs and headings region old values are kept don\textquotesingle{}t use this in debug mude, returns only partial output \end{DoxyCompactList}\item 
+string \hyperlink{class_wcf_service1_1_1_service1_abc900a9de8f8aa5a126f1eef3353b154}{Serialize\+To\+Json} (string username, string password)
+\begin{DoxyCompactList}\small\item\em serializes a Dictionary to a json string with indented formatting not needed with current factory pattern \end{DoxyCompactList}\item 
+string \hyperlink{class_wcf_service1_1_1_service1_a1efce216795958b0c4e3f176665027fe}{Read\+Jason\+From\+File} (string filename)
+\begin{DoxyCompactList}\small\item\em reads the json sections from a file. This is used in debugging if the web form is not available \end{DoxyCompactList}\item 
+string \hyperlink{class_wcf_service1_1_1_service1_a3c0423e72454f64650ca89e43aa30955}{Get\+C\+S\+V\+Dropdown\+String} (string list\+\_\+id)
+\item 
+Task$<$ string $>$ \hyperlink{class_wcf_service1_1_1_service1_a3073c327f0dae7f2a6324341bbefcaf8}{Talk\+To\+The\+Bot\+Async} (string message)
+\item 
+bool \hyperlink{class_wcf_service1_1_1_service1_a4ba31cd1a202c84fac4d03461d8f4361}{Upload\+Section} (Section section)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_wcf_service1_1_1_service1_a499bdb13585860a3ac6042e511b267ef}{convert\+H\+T\+M\+L\+Doc\+To\+X\+M\+L\+Doc} (Html\+Document doc)
+\begin{DoxyCompactList}\small\item\em could help at converting the html to xml. xml was originally used in the formstore. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wcf_service1_1_1_service1_factory}{Service1\+Factory} \hyperlink{class_wcf_service1_1_1_service1_a7ff9458393176c80aa7d4365896de3b0}{factory} = new \hyperlink{class_wcf_service1_1_1_service1_factory}{Service1\+Factory}(true)
+\begin{DoxyCompactList}\small\item\em Factory returning the Mock Document(param true) or the real Document(param false) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the class implements the webservice parsing the form. ther is a debug and no-\/debug mode. If Debug is true, the form is build from a json text fine. If not it\textquotesingle{}s delivered fróm a Selenium Browser \hyperlink{class_wcf_service1_1_1_website_crawler}{Website\+Crawler} 
+
+
+
+\subsection{Member Function Documentation}
+\index{Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}!convert\+H\+T\+M\+L\+Doc\+To\+X\+M\+L\+Doc@{convert\+H\+T\+M\+L\+Doc\+To\+X\+M\+L\+Doc}}
+\index{convert\+H\+T\+M\+L\+Doc\+To\+X\+M\+L\+Doc@{convert\+H\+T\+M\+L\+Doc\+To\+X\+M\+L\+Doc}!Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}}
+\subsubsection[{\texorpdfstring{convert\+H\+T\+M\+L\+Doc\+To\+X\+M\+L\+Doc(\+Html\+Document doc)}{convertHTMLDocToXMLDoc(HtmlDocument doc)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Service1.\+convert\+H\+T\+M\+L\+Doc\+To\+X\+M\+L\+Doc (
+\begin{DoxyParamCaption}
+\item[{Html\+Document}]{doc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_service1_a499bdb13585860a3ac6042e511b267ef}{}\label{class_wcf_service1_1_1_service1_a499bdb13585860a3ac6042e511b267ef}
+
+
+could help at converting the html to xml. xml was originally used in the formstore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc} & the html document to be converted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}!Get\+All\+Elements@{Get\+All\+Elements}}
+\index{Get\+All\+Elements@{Get\+All\+Elements}!Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}}
+\subsubsection[{\texorpdfstring{Get\+All\+Elements(string username, string password)}{GetAllElements(string username, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Section$>$ Wcf\+Service1.\+Service1.\+Get\+All\+Elements (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service1_ab19a2f842aca61072732f113e7278ba6}{}\label{class_wcf_service1_1_1_service1_ab19a2f842aca61072732f113e7278ba6}
+
+
+parses the website form and returns a json string simulating radio buttons, check-\/boxec, input fields, headings, dopdown lists, date pickers and labels. This is specialized for these control types and other types will not be recognized this is not working correctly. In the inputs and headings region old values are kept don\textquotesingle{}t use this in debug mude, returns only partial output 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+{\em is\+Debug} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns Json string containing structure for a Section
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_wcf_service1_1_1_i_service1_aa3f75be37b97eb1f0b0630cfabc2c51c}{Wcf\+Service1.\+I\+Service1}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service1_ab19a2f842aca61072732f113e7278ba6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service1_ab19a2f842aca61072732f113e7278ba6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}!Get\+C\+S\+V\+Dropdown\+String@{Get\+C\+S\+V\+Dropdown\+String}}
+\index{Get\+C\+S\+V\+Dropdown\+String@{Get\+C\+S\+V\+Dropdown\+String}!Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}}
+\subsubsection[{\texorpdfstring{Get\+C\+S\+V\+Dropdown\+String(string list\+\_\+id)}{GetCSVDropdownString(string list_id)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Service1.\+Get\+C\+S\+V\+Dropdown\+String (
+\begin{DoxyParamCaption}
+\item[{string}]{list\+\_\+id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service1_a3c0423e72454f64650ca89e43aa30955}{}\label{class_wcf_service1_1_1_service1_a3c0423e72454f64650ca89e43aa30955}
+
+
+Implements \hyperlink{interface_wcf_service1_1_1_i_service1_a1baba4ded4ba686dc43912639339e1a0}{Wcf\+Service1.\+I\+Service1}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service1_a3c0423e72454f64650ca89e43aa30955_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}!Get\+Form@{Get\+Form}}
+\index{Get\+Form@{Get\+Form}!Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}}
+\subsubsection[{\texorpdfstring{Get\+Form(string \+\_\+username, string \+\_\+password)}{GetForm(string _username, string _password)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Service1.\+Get\+Form (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+username, }
+\item[{string}]{\+\_\+password}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service1_a13eccecdb2a4a36fbbbd96f2ff07f880}{}\label{class_wcf_service1_1_1_service1_a13eccecdb2a4a36fbbbd96f2ff07f880}
+
+
+is telling the headless browser to navigate to a specific domain in order to login and view the form 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+username} & \\
+\hline
+{\em \+\_\+password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_wcf_service1_1_1_i_service1_ab0b52fb983ee4488ad7de5f03597d186}{Wcf\+Service1.\+I\+Service1}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service1_a13eccecdb2a4a36fbbbd96f2ff07f880_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}!Get\+Headings@{Get\+Headings}}
+\index{Get\+Headings@{Get\+Headings}!Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}}
+\subsubsection[{\texorpdfstring{Get\+Headings(string username, string password, string domain)}{GetHeadings(string username, string password, string domain)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$string$>$ Wcf\+Service1.\+Service1.\+Get\+Headings (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password, }
+\item[{string}]{domain}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service1_a9a93a18651e7fd879d8166bd70abdbfe}{}\label{class_wcf_service1_1_1_service1_a9a93a18651e7fd879d8166bd70abdbfe}
+
+
+Is returning headings slightly modified, cuts the number from the heading e.\+g 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+{\em domain} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_wcf_service1_1_1_i_service1_a62b4a23525791f79b35325acdc9c08c1}{Wcf\+Service1.\+I\+Service1}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service1_a9a93a18651e7fd879d8166bd70abdbfe_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}!Get\+Inputs@{Get\+Inputs}}
+\index{Get\+Inputs@{Get\+Inputs}!Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}}
+\subsubsection[{\texorpdfstring{Get\+Inputs(string username, string password, string domain)}{GetInputs(string username, string password, string domain)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$string$>$ Wcf\+Service1.\+Service1.\+Get\+Inputs (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password, }
+\item[{string}]{domain}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service1_ad9115f054786f723b3bcb4f3f62457ba}{}\label{class_wcf_service1_1_1_service1_ad9115f054786f723b3bcb4f3f62457ba}
+
+
+returns a list of all labels on the web form. Those can then be translated into text\+Boxes by the App 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+{\em domain} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_wcf_service1_1_1_i_service1_a81d8f9d0c98959c0db9856ef015ef71c}{Wcf\+Service1.\+I\+Service1}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service1_ad9115f054786f723b3bcb4f3f62457ba_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}!Login@{Login}}
+\index{Login@{Login}!Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}}
+\subsubsection[{\texorpdfstring{Login(string \+\_\+user\+Name, string \+\_\+password)}{Login(string _userName, string _password)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Service1.\+Login (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+user\+Name, }
+\item[{string}]{\+\_\+password}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service1_a451391230a00d5f6ea6aafd54aad1a12}{}\label{class_wcf_service1_1_1_service1_a451391230a00d5f6ea6aafd54aad1a12}
+
+
+real login to the web form 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+user\+Name} & \\
+\hline
+{\em \+\_\+password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_wcf_service1_1_1_i_service1_a22c297ac3e406ff48776942e47e6ba65}{Wcf\+Service1.\+I\+Service1}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service1_a451391230a00d5f6ea6aafd54aad1a12_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}!Read\+Jason\+From\+File@{Read\+Jason\+From\+File}}
+\index{Read\+Jason\+From\+File@{Read\+Jason\+From\+File}!Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}}
+\subsubsection[{\texorpdfstring{Read\+Jason\+From\+File(string filename)}{ReadJasonFromFile(string filename)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Service1.\+Read\+Jason\+From\+File (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service1_a1efce216795958b0c4e3f176665027fe}{}\label{class_wcf_service1_1_1_service1_a1efce216795958b0c4e3f176665027fe}
+
+
+reads the json sections from a file. This is used in debugging if the web form is not available 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_wcf_service1_1_1_i_service1_a19ff6b5fd0d71880ef89413442e3eabe}{Wcf\+Service1.\+I\+Service1}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service1_a1efce216795958b0c4e3f176665027fe_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}!Serialize\+To\+Json@{Serialize\+To\+Json}}
+\index{Serialize\+To\+Json@{Serialize\+To\+Json}!Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}}
+\subsubsection[{\texorpdfstring{Serialize\+To\+Json(string username, string password)}{SerializeToJson(string username, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Service1.\+Serialize\+To\+Json (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service1_abc900a9de8f8aa5a126f1eef3353b154}{}\label{class_wcf_service1_1_1_service1_abc900a9de8f8aa5a126f1eef3353b154}
+
+
+serializes a Dictionary to a json string with indented formatting not needed with current factory pattern 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Dictionary} & the\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_wcf_service1_1_1_i_service1_aa4b0e92420addad7422e113b7b7161e2}{Wcf\+Service1.\+I\+Service1}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service1_abc900a9de8f8aa5a126f1eef3353b154_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}!Talk\+To\+The\+Bot\+Async@{Talk\+To\+The\+Bot\+Async}}
+\index{Talk\+To\+The\+Bot\+Async@{Talk\+To\+The\+Bot\+Async}!Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}}
+\subsubsection[{\texorpdfstring{Talk\+To\+The\+Bot\+Async(string message)}{TalkToTheBotAsync(string message)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<$string$>$ Wcf\+Service1.\+Service1.\+Talk\+To\+The\+Bot\+Async (
+\begin{DoxyParamCaption}
+\item[{string}]{message}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service1_a3073c327f0dae7f2a6324341bbefcaf8}{}\label{class_wcf_service1_1_1_service1_a3073c327f0dae7f2a6324341bbefcaf8}
+
+
+Implements \hyperlink{interface_wcf_service1_1_1_i_service1_a1d49b0b16f20bd13e61cc1bb80aa7832}{Wcf\+Service1.\+I\+Service1}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service1_a3073c327f0dae7f2a6324341bbefcaf8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}!Upload\+Section@{Upload\+Section}}
+\index{Upload\+Section@{Upload\+Section}!Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}}
+\subsubsection[{\texorpdfstring{Upload\+Section(\+Section section)}{UploadSection(Section section)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wcf\+Service1.\+Service1.\+Upload\+Section (
+\begin{DoxyParamCaption}
+\item[{Section}]{section}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_service1_a4ba31cd1a202c84fac4d03461d8f4361}{}\label{class_wcf_service1_1_1_service1_a4ba31cd1a202c84fac4d03461d8f4361}
+
+
+Implements \hyperlink{interface_wcf_service1_1_1_i_service1_a40f5fb59f7eb2c10dc216bceb4fc366c}{Wcf\+Service1.\+I\+Service1}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_service1_a4ba31cd1a202c84fac4d03461d8f4361_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}!factory@{factory}}
+\index{factory@{factory}!Wcf\+Service1\+::\+Service1@{Wcf\+Service1\+::\+Service1}}
+\subsubsection[{\texorpdfstring{factory}{factory}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Service1\+Factory} Wcf\+Service1.\+Service1.\+factory = new {\bf Service1\+Factory}(true)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_service1_a7ff9458393176c80aa7d4365896de3b0}{}\label{class_wcf_service1_1_1_service1_a7ff9458393176c80aa7d4365896de3b0}
+
+
+Factory returning the Mock Document(param true) or the real Document(param false) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Wcf\+Service1/\hyperlink{_service1_8svc_8cs}{Service1.\+svc.\+cs}\end{DoxyCompactItemize}

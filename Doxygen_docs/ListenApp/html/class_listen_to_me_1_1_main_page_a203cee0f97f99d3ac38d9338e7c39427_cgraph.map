@@ -1,0 +1,9 @@
+<map id="ListenToMe.MainPage.checkOtherIntents" name="ListenToMe.MainPage.checkOtherIntents">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_main_page.html#a8cd1a04a404800cfab55de0ba4466f68" title="ListenToMe.MainPage.goNext\lAsync" alt="" coords="245,5,441,47"/>
+<area shape="rect" id="node7" href="$class_listen_to_me_1_1_main_page.html#a1ccf14d59eabbcc4148cadd8dd11fc04" title="ListenToMe.MainPage.goBack\lAsync" alt="" coords="244,71,443,112"/>
+<area shape="rect" id="node8" href="$class_listen_to_me_1_1_main_page.html#af4469348ffee9a5d1a8680d2535a279b" title="helper method for cleaning output from luis. Since LUIS answers in lowercase only, this method uppercases the first letter " alt="" coords="253,136,434,177"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_main_page.html#a1a1e1d6e362134f6426bcf99ca83c45c" title="fill Frame creates a new Page for mainFrame and adds it to the mainFrame as Content ..." alt="" coords="491,5,657,47"/>
+<area shape="rect" id="node4" href="$class_listen_to_me_1_1_main_page.html#a16241dfda10c37812bcb3a55a791e011" title="creates a section by adding control elements to a panel " alt="" coords="705,5,896,47"/>
+<area shape="rect" id="node5" href="$class_listen_to_me_1_1_main_page.html#a73b3a3311149846cf028c5824dab2a6e" title="creates an element from the section object by determining what type of element it is reference: https..." alt="" coords="944,5,1137,47"/>
+<area shape="rect" id="node6" href="$class_listen_to_me_1_1_main_page.html#a80911257473f608abc125a1083045041" title="sets the enabled property of a TextBox control to disabled, if the model Element&#39;s property is set to..." alt="" coords="1185,5,1405,47"/>
+</map>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller" kind="class" language="C#" prot="public">
+    <compoundname>Microsoft::Bot::Sample::LuisBot::MessagesController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ApiController</basecompoundref>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller_1ab9183fa0569e80da8554c7e5c4d8a960" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IDialog&lt; ESF2CompanyDetailsForm &gt;</type>
+        <definition>static IDialog&lt;ESF2CompanyDetailsForm&gt; Microsoft.Bot.Sample.LuisBot.MessagesController.MakeRootDialog</definition>
+        <argsstring>()</argsstring>
+        <name>MakeRootDialog</name>
+        <briefdescription>
+<para>MakeRootDialog uses a JSON-Object to bind the user&apos;s answers to. It uses FormFlow to create a FormDialog in which the user iterates though all the properties of the Object and is asked questions about them. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The FormDialog. The user is able to quit the form dialog by typing or saying &apos;quit&apos;.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controllers/MessagesController.cs" line="34" column="1" bodyfile="Controllers/MessagesController.cs" bodystart="34" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller_1a482246985df14538e948fc9167cc081f" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IDialog&lt; JObject &gt;</type>
+        <definition>static IDialog&lt;JObject&gt; Microsoft.Bot.Sample.LuisBot.MessagesController.MakeJsonRootDialog</definition>
+        <argsstring>()</argsstring>
+        <name>MakeJsonRootDialog</name>
+        <briefdescription>
+<para>MakeJsonRootDialog is calling a JSON file from the assembly with BuildJsonForm. It binds to the same static class, which might later be problematic. To make this dynamic, one has to delve deeper into C# classes. Surely there is somewhere a concept, that solves this problem. Note that the build action of JsonDummyForBot.json has to be set to Embedded rescouce for this to work. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The dialog generated from the file JsonDummyForBot.json</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controllers/MessagesController.cs" line="67" column="1" bodyfile="Controllers/MessagesController.cs" bodystart="67" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller_1ac9f66aad62bba0b1022b0831a93ef6d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>async Task&lt; HttpResponseMessage &gt;</type>
+        <definition>virtual async Task&lt;HttpResponseMessage&gt; Microsoft.Bot.Sample.LuisBot.MessagesController.Post</definition>
+        <argsstring>([FromBody] Activity activity)</argsstring>
+        <name>Post</name>
+        <param>
+          <attributes>[FromBody]</attributes>
+          <type>Activity</type>
+          <declname>activity</declname>
+        </param>
+        <briefdescription>
+<para>POST: api/Messages receive a message from a user and send replies. This is also the method in which the bot might receive Cortana information such as the user name. Below the method is a snippet that needs to be integrated in the swich case for that to work. Warning: The <ref refid="namespace_microsoft_1_1_bot" kindref="compound">Bot</ref> will only be able to receive Cortana information if the computer in question has reagion and language settions set to USA. Cortana skills are only open for US-market as it is. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controllers/MessagesController.cs" line="112" column="1" bodyfile="Controllers/MessagesController.cs" bodystart="112" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller_1a823027f875a6793ca5aaccb05563eb9f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Activity</type>
+        <definition>Activity Microsoft.Bot.Sample.LuisBot.MessagesController.HandleSystemMessage</definition>
+        <argsstring>(Activity message)</argsstring>
+        <name>HandleSystemMessage</name>
+        <param>
+          <type>Activity</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Handles Events that might be raised during conversation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a message that informs the user of the changed conservation state</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controllers/MessagesController.cs" line="178" column="1" bodyfile="Controllers/MessagesController.cs" bodystart="178" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class <ref refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller" kindref="compound">MessagesController</ref> is the central entry point of the bot. It receives all messages by the user in the post()-method, where it specifies what to do with them. In the Post-Method it is possible to create a new static dialog (via method MakeRootDialog) or to build one from JSON. Currently I&apos;m debugging the BuildFromJason()-Method. I regard that one very promising, because if I manage to create a similar JSON output in the WCF-Service, then the bot and the WCF-Service will be able to communicate directly and fill out the form alone together. If this works out, then the UWP-App will have no central meaning any more, enabling downscaling of the application. On devices that have no screen and have higher storage restictions (e.g. smartwatches, some have &apos;only&apos; 4 GB capacity) it could be a significant advantage to need less components for ListenToMe. reference: <ulink url="https://www.engadget.com/2017/02/08/lg-watch-sport-review/">https://www.engadget.com/2017/02/08/lg-watch-sport-review/</ulink> // reference: <ulink url="https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AnnotatedSandwichBot">https://github.com/Microsoft/BotBuilder/tree/master/CSharp/Samples/AnnotatedSandwichBot</ulink> </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="14">
+        <label>Microsoft.Bot.Sample.LuisBot.MessagesController</label>
+        <link refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ApiController</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>Microsoft.Bot.Sample.LuisBot.MessagesController</label>
+        <link refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ApiController</label>
+      </node>
+    </collaborationgraph>
+    <location file="Controllers/MessagesController.cs" line="28" column="1" bodyfile="Controllers/MessagesController.cs" bodystart="27" bodyend="207"/>
+    <listofallmembers>
+      <member refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller_1a823027f875a6793ca5aaccb05563eb9f" prot="private" virt="non-virtual"><scope>Microsoft::Bot::Sample::LuisBot::MessagesController</scope><name>HandleSystemMessage</name></member>
+      <member refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller_1a482246985df14538e948fc9167cc081f" prot="package" virt="non-virtual"><scope>Microsoft::Bot::Sample::LuisBot::MessagesController</scope><name>MakeJsonRootDialog</name></member>
+      <member refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller_1ab9183fa0569e80da8554c7e5c4d8a960" prot="package" virt="non-virtual"><scope>Microsoft::Bot::Sample::LuisBot::MessagesController</scope><name>MakeRootDialog</name></member>
+      <member refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller_1ac9f66aad62bba0b1022b0831a93ef6d3" prot="public" virt="virtual"><scope>Microsoft::Bot::Sample::LuisBot::MessagesController</scope><name>Post</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

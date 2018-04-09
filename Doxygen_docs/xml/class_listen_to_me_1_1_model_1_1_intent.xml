@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_model_1_1_intent" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::Model::Intent</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_intent_1a72e3844bbc2658989213e3182068c3d4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ListenToMe.Model.Intent.intent</definition>
+        <argsstring></argsstring>
+        <name>intent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" line="169" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_intent_1a82e80d6b2c310b22beacb60637a03d20" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float ListenToMe.Model.Intent.score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" line="171" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>subclass of RootObject. Note: these classes were easily pasted in C# using the visual studio tools for converting JSON </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" line="167" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" bodystart="166" bodyend="172"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_model_1_1_intent_1a72e3844bbc2658989213e3182068c3d4" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Intent</scope><name>intent</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_intent_1a82e80d6b2c310b22beacb60637a03d20" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Intent</scope><name>score</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

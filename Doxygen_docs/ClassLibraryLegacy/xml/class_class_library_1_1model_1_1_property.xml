@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_class_library_1_1model_1_1_property" kind="class" language="C#" prot="public">
+    <compoundname>ClassLibrary::model::Property</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_property_1ad69126781c383a7c3b6c4605a3144046" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_class_library_1_1model_1_1_message" kindref="compound">Message</ref> &gt;</type>
+        <definition>List&lt;Message&gt; ClassLibrary.model.Property.Before</definition>
+        <argsstring></argsstring>
+        <name>Before</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="66" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_property_1ad1c572e6e2cd65951287611cd1eb3d86" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; ClassLibrary.model.Property.Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="68" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_property_1a5d74a418084c3cd239bff23325f91268" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string []</type>
+        <definition>string [] ClassLibrary.model.Property.Enum</definition>
+        <argsstring></argsstring>
+        <name>Enum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="70" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_property_1a8a4345b5f7599f9c1b02b4183e2e3ee6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Property.Pattern</definition>
+        <argsstring></argsstring>
+        <name>Pattern</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="72" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_property_1afb3d259db0d7a9f5abff79ac2befb29c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Property.Minimum</definition>
+        <argsstring></argsstring>
+        <name>Minimum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="74" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_property_1afa05c0a8ffd9f25b1ef8812619067557" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Property.Maximum</definition>
+        <argsstring></argsstring>
+        <name>Maximum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="76" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_property_1a27b8eb9c69a9549bc260c0b07c597bff" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Property.After</definition>
+        <argsstring></argsstring>
+        <name>After</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="78" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_property_1a1bc3ae48e9702507524847cb670f47b0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_class_library_1_1model_1_1_message" kindref="compound">Message</ref></type>
+        <definition>Message ClassLibrary.model.Property.Prompt</definition>
+        <argsstring></argsstring>
+        <name>Prompt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="80" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="80" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" line="64" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Form.cs" bodystart="63" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_class_library_1_1model_1_1_property_1a27b8eb9c69a9549bc260c0b07c597bff" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Property</scope><name>After</name></member>
+      <member refid="class_class_library_1_1model_1_1_property_1ad69126781c383a7c3b6c4605a3144046" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Property</scope><name>Before</name></member>
+      <member refid="class_class_library_1_1model_1_1_property_1a5d74a418084c3cd239bff23325f91268" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Property</scope><name>Enum</name></member>
+      <member refid="class_class_library_1_1model_1_1_property_1afa05c0a8ffd9f25b1ef8812619067557" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Property</scope><name>Maximum</name></member>
+      <member refid="class_class_library_1_1model_1_1_property_1afb3d259db0d7a9f5abff79ac2befb29c" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Property</scope><name>Minimum</name></member>
+      <member refid="class_class_library_1_1model_1_1_property_1a8a4345b5f7599f9c1b02b4183e2e3ee6" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Property</scope><name>Pattern</name></member>
+      <member refid="class_class_library_1_1model_1_1_property_1a1bc3ae48e9702507524847cb670f47b0" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Property</scope><name>Prompt</name></member>
+      <member refid="class_class_library_1_1model_1_1_property_1ad1c572e6e2cd65951287611cd1eb3d86" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Property</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

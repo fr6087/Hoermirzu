@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_view_model_1_1_section_list_view_model" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::ViewModel::SectionListViewModel</compoundname>
+    <basecompoundref refid="class_listen_to_me_1_1_view_model_1_1_view_model_base" prot="public" virt="non-virtual">ListenToMe.ViewModel.ViewModelBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1aef27471118a3bd9fdfde5f27d0164c72" prot="private" static="no" mutable="no">
+        <type>ICommand</type>
+        <definition>ICommand ListenToMe.ViewModel.SectionListViewModel.addSectionCommand</definition>
+        <argsstring></argsstring>
+        <name>addSectionCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" line="15" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a51ef6e271dbbd1818a2fbfd240721ca1" prot="private" static="no" mutable="no">
+        <type>ObservableCollection&lt; Section &gt;</type>
+        <definition>ObservableCollection&lt;Section&gt; ListenToMe.ViewModel.SectionListViewModel._Sections</definition>
+        <argsstring></argsstring>
+        <name>_Sections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" line="16" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1afa17f3b63f0cb4f5edc0d8a2b91e99d9" prot="private" static="no" mutable="no">
+        <type>Section</type>
+        <definition>Section ListenToMe.ViewModel.SectionListViewModel.selectedSection</definition>
+        <argsstring></argsstring>
+        <name>selectedSection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" line="17" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a036c18d65d7151e5eec6afc62240913d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_listen_to_me_1_1_model_1_1_form" kindref="compound">Model.Form</ref></type>
+        <definition>Model.Form ListenToMe.ViewModel.SectionListViewModel.store</definition>
+        <argsstring></argsstring>
+        <name>store</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" line="18" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1adf81e04a9788a1c5372d0cf517282fea" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>ObservableCollection&lt; Section &gt;</type>
+        <definition>ObservableCollection&lt;Section&gt; ListenToMe.ViewModel.SectionListViewModel.Sections</definition>
+        <argsstring></argsstring>
+        <name>Sections</name>
+        <briefdescription>
+<para>The list of Sections to display on the UI. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" line="35" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a75f26037abfa359ad884df4fd17a9409" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Section</type>
+        <definition>Section ListenToMe.ViewModel.SectionListViewModel.SelectedSection</definition>
+        <argsstring></argsstring>
+        <name>SelectedSection</name>
+        <briefdescription>
+<para>A two-way binding that keeps reference to the currently selected Section on the UI. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" line="52" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1ac121b81d27f1365be1c8d8a00d65f7f0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ICommand</type>
+        <definition>ICommand ListenToMe.ViewModel.SectionListViewModel.AddSectionCommand</definition>
+        <argsstring></argsstring>
+        <name>AddSectionCommand</name>
+        <briefdescription>
+<para>The command to invoke when the Add button is pressed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" line="68" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a483b475364b5e9af40e66451ef7cb799" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.ViewModel.SectionListViewModel.SectionListViewModel</definition>
+        <argsstring>(Model.Form store)</argsstring>
+        <name>SectionListViewModel</name>
+        <param>
+          <type><ref refid="class_listen_to_me_1_1_model_1_1_form" kindref="compound">Model.Form</ref></type>
+          <declname>store</declname>
+        </param>
+        <briefdescription>
+<para>Construct the Section view, passing in the persistent Section store. Sets up a command to handle invoking the Add button. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>store</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" line="25" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" bodystart="25" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a1ff300530c9bd34dd5de6fe195be6f2b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.ViewModel.SectionListViewModel.LoadSections</definition>
+        <argsstring>()</argsstring>
+        <name>LoadSections</name>
+        <briefdescription>
+<para>Reload the Section store from data files. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" line="79" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a445d6dc12d26535a0c4067c7a4b03af9" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.ViewModel.SectionListViewModel.SelectionChanged</definition>
+        <argsstring>()</argsstring>
+        <name>SelectionChanged</name>
+        <briefdescription>
+<para>Handles a user selecting a Section on the UI by navigating to the SectionDetails view for that Section. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" line="98" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" bodystart="98" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a6f41d416999a49c0bdffd3e3654af799" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.ViewModel.SectionListViewModel.AddSection</definition>
+        <argsstring>()</argsstring>
+        <name>AddSection</name>
+        <briefdescription>
+<para>The implementation of the command to execute when the Add button is pressed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" line="89" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" bodystart="89" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespace_listen_to_me_1_1_view" kindref="compound">View</ref> <ref refid="namespace_listen_to_me_1_1_model" kindref="compound">Model</ref> controlling the behavior of a List view of Sections </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="127">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="126">
+        <label>ViewModelBase</label>
+        <link refid="class_listen_to_me_1_1_view_model_1_1_view_model_base"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>ListenToMe.ViewModel.SectionListViewModel</label>
+        <link refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="130">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="129">
+        <label>ViewModelBase</label>
+        <link refid="class_listen_to_me_1_1_view_model_1_1_view_model_base"/>
+        <childnode refid="130" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>ListenToMe.ViewModel.SectionListViewModel</label>
+        <link refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model"/>
+        <childnode refid="129" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" line="14" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/ViewModel/SectionListViewModel.cs" bodystart="13" bodyend="105"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a51ef6e271dbbd1818a2fbfd240721ca1" prot="private" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>_Sections</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a6f41d416999a49c0bdffd3e3654af799" prot="private" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>AddSection</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1aef27471118a3bd9fdfde5f27d0164c72" prot="private" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>addSectionCommand</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1ac121b81d27f1365be1c8d8a00d65f7f0" prot="public" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>AddSectionCommand</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a1ff300530c9bd34dd5de6fe195be6f2b" prot="package" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>LoadSections</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_base_1a6b89260bf9d20007189f49a73dec334d" prot="protected" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>NotifyPropertyChanged</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_base_1ae448ae2d936921e058563627fae0292b" prot="public" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>PropertyChanged</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a483b475364b5e9af40e66451ef7cb799" prot="public" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>SectionListViewModel</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1adf81e04a9788a1c5372d0cf517282fea" prot="public" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>Sections</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1afa17f3b63f0cb4f5edc0d8a2b91e99d9" prot="private" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>selectedSection</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a75f26037abfa359ad884df4fd17a9409" prot="public" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>SelectedSection</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a445d6dc12d26535a0c4067c7a4b03af9" prot="package" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>SelectionChanged</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a036c18d65d7151e5eec6afc62240913d" prot="private" virt="non-virtual"><scope>ListenToMe::ViewModel::SectionListViewModel</scope><name>store</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

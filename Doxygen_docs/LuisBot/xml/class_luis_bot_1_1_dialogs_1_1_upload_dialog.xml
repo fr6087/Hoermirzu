@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_luis_bot_1_1_dialogs_1_1_upload_dialog" kind="class" language="C#" prot="public">
+    <compoundname>LuisBot::Dialogs::UploadDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IDialog&lt; object &gt;</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a32d72ad1f348ad969eba7ea4db77dbb8" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string LuisBot.Dialogs.UploadDialog.ShowInlineAttachment</definition>
+        <argsstring></argsstring>
+        <name>ShowInlineAttachment</name>
+        <initializer>= &quot;(1) Show inline attachment&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/UploadDialog.cs" line="14" column="1" bodyfile="Dialogs/UploadDialog.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1af3f5b41a9da75223be8676b9e192e457" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string LuisBot.Dialogs.UploadDialog.ShowUploadedAttachment</definition>
+        <argsstring></argsstring>
+        <name>ShowUploadedAttachment</name>
+        <initializer>= &quot;(2) Show uploaded attachment&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/UploadDialog.cs" line="15" column="1" bodyfile="Dialogs/UploadDialog.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1af6f61a1708a80c8187d79cfd8fbbb2eb" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string LuisBot.Dialogs.UploadDialog.ShowInternetAttachment</definition>
+        <argsstring></argsstring>
+        <name>ShowInternetAttachment</name>
+        <initializer>= &quot;(3) Show Internet attachment&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/UploadDialog.cs" line="16" column="1" bodyfile="Dialogs/UploadDialog.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1afbea6ec342c9f48539e14be8c434a140" prot="private" static="no" mutable="no">
+        <type>readonly IDictionary&lt; string, string &gt;</type>
+        <definition>readonly IDictionary&lt;string, string&gt; LuisBot.Dialogs.UploadDialog.options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <initializer>= new Dictionary&lt;string, string&gt;
+        {
+            { &quot;1&quot;, ShowInlineAttachment },
+            { &quot;2&quot;, ShowUploadedAttachment },
+            { &quot;3&quot;, ShowInternetAttachment }
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/UploadDialog.cs" line="18" column="1" bodyfile="Dialogs/UploadDialog.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a09007bf2346bbb13075802e3d58bcb2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.UploadDialog.StartAsync</definition>
+        <argsstring>(IDialogContext context)</argsstring>
+        <name>StartAsync</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/UploadDialog.cs" line="24" column="1" bodyfile="Dialogs/UploadDialog.cs" bodystart="24" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a4ff26b5dc3194b5f464825f61aa81090" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.UploadDialog.MessageReceivedAsync</definition>
+        <argsstring>(IDialogContext context, IAwaitable&lt; object &gt; result)</argsstring>
+        <name>MessageReceivedAsync</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>IAwaitable&lt; object &gt;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/UploadDialog.cs" line="29" column="1" bodyfile="Dialogs/UploadDialog.cs" bodystart="29" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a01d31d4779e3c07072ce690b7c913324" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.UploadDialog.DisplayOptionsAsync</definition>
+        <argsstring>(IDialogContext context)</argsstring>
+        <name>DisplayOptionsAsync</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/UploadDialog.cs" line="41" column="1" bodyfile="Dialogs/UploadDialog.cs" bodystart="41" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a240e61c90673000c8065fb98f5f92925" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.UploadDialog.ProcessSelectedOptionAsync</definition>
+        <argsstring>(IDialogContext context, IAwaitable&lt; string &gt; argument)</argsstring>
+        <name>ProcessSelectedOptionAsync</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>IAwaitable&lt; string &gt;</type>
+          <declname>argument</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/UploadDialog.cs" line="54" column="1" bodyfile="Dialogs/UploadDialog.cs" bodystart="54" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a393e4cf5f7714e7a0f99069b737129c5" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Attachment</type>
+        <definition>static Attachment LuisBot.Dialogs.UploadDialog.GetInlineAttachment</definition>
+        <argsstring>()</argsstring>
+        <name>GetInlineAttachment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/UploadDialog.cs" line="84" column="1" bodyfile="Dialogs/UploadDialog.cs" bodystart="84" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a9c3e039ed15b460a611a401855cff6ad" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; Attachment &gt;</type>
+        <definition>static async Task&lt;Attachment&gt; LuisBot.Dialogs.UploadDialog.GetUploadedAttachmentAsync</definition>
+        <argsstring>(string serviceUrl, string conversationId)</argsstring>
+        <name>GetUploadedAttachmentAsync</name>
+        <param>
+          <type>string</type>
+          <declname>serviceUrl</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>conversationId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/UploadDialog.cs" line="98" column="1" bodyfile="Dialogs/UploadDialog.cs" bodystart="98" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a0709a78d1be28c806b52e814b890ef72" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Attachment</type>
+        <definition>static Attachment LuisBot.Dialogs.UploadDialog.GetInternetAttachment</definition>
+        <argsstring>()</argsstring>
+        <name>GetInternetAttachment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/UploadDialog.cs" line="125" column="1" bodyfile="Dialogs/UploadDialog.cs" bodystart="125" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="24">
+        <label>LuisBot.Dialogs.UploadDialog</label>
+        <link refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>IDialog&lt; object &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="26">
+        <label>LuisBot.Dialogs.UploadDialog</label>
+        <link refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>IDialog&lt; object &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="Dialogs/UploadDialog.cs" line="13" column="1" bodyfile="Dialogs/UploadDialog.cs" bodystart="12" bodyend="134"/>
+    <listofallmembers>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a01d31d4779e3c07072ce690b7c913324" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::UploadDialog</scope><name>DisplayOptionsAsync</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a393e4cf5f7714e7a0f99069b737129c5" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::UploadDialog</scope><name>GetInlineAttachment</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a0709a78d1be28c806b52e814b890ef72" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::UploadDialog</scope><name>GetInternetAttachment</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a9c3e039ed15b460a611a401855cff6ad" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::UploadDialog</scope><name>GetUploadedAttachmentAsync</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a4ff26b5dc3194b5f464825f61aa81090" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::UploadDialog</scope><name>MessageReceivedAsync</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1afbea6ec342c9f48539e14be8c434a140" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::UploadDialog</scope><name>options</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a240e61c90673000c8065fb98f5f92925" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::UploadDialog</scope><name>ProcessSelectedOptionAsync</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a32d72ad1f348ad969eba7ea4db77dbb8" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::UploadDialog</scope><name>ShowInlineAttachment</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1af6f61a1708a80c8187d79cfd8fbbb2eb" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::UploadDialog</scope><name>ShowInternetAttachment</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1af3f5b41a9da75223be8676b9e192e457" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::UploadDialog</scope><name>ShowUploadedAttachment</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_upload_dialog_1a09007bf2346bbb13075802e3d58bcb2a" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::UploadDialog</scope><name>StartAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

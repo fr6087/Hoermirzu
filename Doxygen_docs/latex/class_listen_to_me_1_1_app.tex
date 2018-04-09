@@ -1,0 +1,148 @@
+\hypertarget{class_listen_to_me_1_1_app}{}\section{Listen\+To\+Me.\+App Class Reference}
+\label{class_listen_to_me_1_1_app}\index{Listen\+To\+Me.\+App@{Listen\+To\+Me.\+App}}
+
+
+contains application specific methods for starting the application. Initializations and state-\/related actions are includes.  
+
+
+
+
+Inheritance diagram for Listen\+To\+Me.\+App\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_listen_to_me_1_1_app__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_listen_to_me_1_1_app_a8b865aa5eb8e0a1333c2b29f41bf4aa1}{App} ()
+\begin{DoxyCompactList}\small\item\em Initialized the Singleton application object. This is the first line of built code and the logic equivalent to main() that is Win\+Main(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static System.\+Collections.\+Hashtable \hyperlink{class_listen_to_me_1_1_app_a311ccaa1ae0fd9cf9f89d3e3466098fe}{hash\+Table}
+\begin{DoxyCompactList}\small\item\em saves the adresses of the input fields present in the frame; this helps identifying the control in which to display the textvalue recognized by Luis \end{DoxyCompactList}\item 
+static Bot \hyperlink{class_listen_to_me_1_1_app_a2862b032c76095016dd7dc7600bfd029}{Bot}
+\begin{DoxyCompactList}\small\item\em connects via Direct\+Line tho the Web\+App. Communicates with the language understanding intelligence model \end{DoxyCompactList}\item 
+static Service1\+Client \hyperlink{class_listen_to_me_1_1_app_a41b762ac78fada5d35954d39419b8e36}{client}
+\begin{DoxyCompactList}\small\item\em the W\+C\+F-\/\+Service client instance that is able to parse the H\+T\+M\+L-\/\+Form \end{DoxyCompactList}\item 
+static \hyperlink{class_listen_to_me_1_1_model_1_1_form}{Model.\+Form} \hyperlink{class_listen_to_me_1_1_app_a3e094e220103fe4590cf50c22f38ee65}{formstore} = new \hyperlink{class_listen_to_me_1_1_model_1_1_form}{Model.\+Form}()
+\begin{DoxyCompactList}\small\item\em keeps a collection Model.\+Form\+Store.\+Sections of all the sections of the web form. is able to store and load sections in the device storage \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_listen_to_me_1_1_app_ace89a3624e2de8cc528dea8b1288d03f}{On\+Launched} (Launch\+Activated\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Is called as the application is started normally by the user. Other enty points are used for example if the application is activated in the fore or background \end{DoxyCompactList}\item 
+async override void \hyperlink{class_listen_to_me_1_1_app_a3e2da49bb555b7fdc5858f5442d396e4}{On\+Activated} (I\+Activated\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em On\+Activated is called whenever an external application e.\+g-\/ Cortana launches the Listen\+To\+Me\+App \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_listen_to_me_1_1_common_1_1_navigation_service}{Navigation\+Service} \hyperlink{class_listen_to_me_1_1_app_ae35ddc10bf8aad1a80c92c71c6e3b7fc}{Navigation\+Service}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Navigation service, provides a decoupled way to trigger the UI Frame to transition between views. \end{DoxyCompactList}\item 
+static Password\+Vault \hyperlink{class_listen_to_me_1_1_app_ad1b3a77f44f52055446727716abfccc6}{Vault}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The password vault stores application specific usernames and passwords encrypted \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains application specific methods for starting the application. Initializations and state-\/related actions are includes. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!App@{App}}
+\index{App@{App}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection[{\texorpdfstring{App()}{App()}}]{\setlength{\rightskip}{0pt plus 5cm}Listen\+To\+Me.\+App.\+App (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_app_a8b865aa5eb8e0a1333c2b29f41bf4aa1}{}\label{class_listen_to_me_1_1_app_a8b865aa5eb8e0a1333c2b29f41bf4aa1}
+
+
+Initialized the Singleton application object. This is the first line of built code and the logic equivalent to main() that is Win\+Main(). 
+
+
+
+\subsection{Member Function Documentation}
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!On\+Activated@{On\+Activated}}
+\index{On\+Activated@{On\+Activated}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection[{\texorpdfstring{On\+Activated(\+I\+Activated\+Event\+Args e)}{OnActivated(IActivatedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}async override void Listen\+To\+Me.\+App.\+On\+Activated (
+\begin{DoxyParamCaption}
+\item[{I\+Activated\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_listen_to_me_1_1_app_a3e2da49bb555b7fdc5858f5442d396e4}{}\label{class_listen_to_me_1_1_app_a3e2da49bb555b7fdc5858f5442d396e4}
+
+
+On\+Activated is called whenever an external application e.\+g-\/ Cortana launches the Listen\+To\+Me\+App 
+
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!On\+Launched@{On\+Launched}}
+\index{On\+Launched@{On\+Launched}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection[{\texorpdfstring{On\+Launched(\+Launch\+Activated\+Event\+Args e)}{OnLaunched(LaunchActivatedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}override void Listen\+To\+Me.\+App.\+On\+Launched (
+\begin{DoxyParamCaption}
+\item[{Launch\+Activated\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_listen_to_me_1_1_app_ace89a3624e2de8cc528dea8b1288d03f}{}\label{class_listen_to_me_1_1_app_ace89a3624e2de8cc528dea8b1288d03f}
+
+
+Is called as the application is started normally by the user. Other enty points are used for example if the application is activated in the fore or background 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Details on application start and start arguments.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!Bot@{Bot}}
+\index{Bot@{Bot}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection[{\texorpdfstring{Bot}{Bot}}]{\setlength{\rightskip}{0pt plus 5cm}Bot Listen\+To\+Me.\+App.\+Bot\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_listen_to_me_1_1_app_a2862b032c76095016dd7dc7600bfd029}{}\label{class_listen_to_me_1_1_app_a2862b032c76095016dd7dc7600bfd029}
+
+
+connects via Direct\+Line tho the Web\+App. Communicates with the language understanding intelligence model 
+
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!client@{client}}
+\index{client@{client}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection[{\texorpdfstring{client}{client}}]{\setlength{\rightskip}{0pt plus 5cm}Service1\+Client Listen\+To\+Me.\+App.\+client\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_listen_to_me_1_1_app_a41b762ac78fada5d35954d39419b8e36}{}\label{class_listen_to_me_1_1_app_a41b762ac78fada5d35954d39419b8e36}
+
+
+the W\+C\+F-\/\+Service client instance that is able to parse the H\+T\+M\+L-\/\+Form 
+
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!formstore@{formstore}}
+\index{formstore@{formstore}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection[{\texorpdfstring{formstore}{formstore}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model.\+Form} Listen\+To\+Me.\+App.\+formstore = new {\bf Model.\+Form}()\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_listen_to_me_1_1_app_a3e094e220103fe4590cf50c22f38ee65}{}\label{class_listen_to_me_1_1_app_a3e094e220103fe4590cf50c22f38ee65}
+
+
+keeps a collection Model.\+Form\+Store.\+Sections of all the sections of the web form. is able to store and load sections in the device storage 
+
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!hash\+Table@{hash\+Table}}
+\index{hash\+Table@{hash\+Table}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection[{\texorpdfstring{hash\+Table}{hashTable}}]{\setlength{\rightskip}{0pt plus 5cm}System.\+Collections.\+Hashtable Listen\+To\+Me.\+App.\+hash\+Table\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_listen_to_me_1_1_app_a311ccaa1ae0fd9cf9f89d3e3466098fe}{}\label{class_listen_to_me_1_1_app_a311ccaa1ae0fd9cf9f89d3e3466098fe}
+
+
+saves the adresses of the input fields present in the frame; this helps identifying the control in which to display the textvalue recognized by Luis 
+
+
+
+\subsection{Property Documentation}
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!Navigation\+Service@{Navigation\+Service}}
+\index{Navigation\+Service@{Navigation\+Service}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection[{\texorpdfstring{Navigation\+Service}{NavigationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Navigation\+Service} Listen\+To\+Me.\+App.\+Navigation\+Service\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}\hypertarget{class_listen_to_me_1_1_app_ae35ddc10bf8aad1a80c92c71c6e3b7fc}{}\label{class_listen_to_me_1_1_app_ae35ddc10bf8aad1a80c92c71c6e3b7fc}
+
+
+Navigation service, provides a decoupled way to trigger the UI Frame to transition between views. 
+
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!Vault@{Vault}}
+\index{Vault@{Vault}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection[{\texorpdfstring{Vault}{Vault}}]{\setlength{\rightskip}{0pt plus 5cm}Password\+Vault Listen\+To\+Me.\+App.\+Vault\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_listen_to_me_1_1_app_ad1b3a77f44f52055446727716abfccc6}{}\label{class_listen_to_me_1_1_app_ad1b3a77f44f52055446727716abfccc6}
+
+
+The password vault stores application specific usernames and passwords encrypted 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Listen\+To\+Me/App.\+xaml.\+cs\end{DoxyCompactItemize}

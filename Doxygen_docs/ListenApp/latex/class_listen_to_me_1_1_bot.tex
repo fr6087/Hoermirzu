@@ -1,0 +1,97 @@
+\hypertarget{class_listen_to_me_1_1_bot}{}\section{Listen\+To\+Me.\+Bot Class Reference}
+\label{class_listen_to_me_1_1_bot}\index{Listen\+To\+Me.\+Bot@{Listen\+To\+Me.\+Bot}}
+
+
+the \hyperlink{class_listen_to_me_1_1_bot}{Bot} class establishes connection to L\+U\+IS A\+PI. It extracts the intent that it recognises behind the user input. For example, a user input like \char`\"{}what is the stock price of dax?\char`\"{} will return Json\+Object\+: Response\{  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+I\+Async\+Operation$<$ Rootobject $>$ \hyperlink{class_listen_to_me_1_1_bot_a3730a1ccd4cbf3233cde6fe324c9c11e}{Send\+Message\+And\+Get\+Intent\+From\+Bot} (string message)
+\begin{DoxyCompactList}\small\item\em The method is calling the L\+U\+I\+S-\/\+Model via Http\+Client To\+Do find out how to model this to Direct\+Line as well. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const string \hyperlink{class_listen_to_me_1_1_bot_a3f7fa2c3cbea4ec11f5a75e2e8c9c72d}{\+\_\+direct\+Line\+Secret} = \char`\"{}W\+Kd\+R\+O\+R\+P\+T2\+A\+Y.\+cw\+A.\+jb\+Q.\+9j8\+Xk\+C\+Z\+Dzx\+K\+Tom\+M\+Mqmt\+G\+O1g\+H\+G\+P\+U3tixmng\+L\+J\+T6\+Qzd\+Uk\char`\"{}
+\item 
+Direct\+Line\+Client \hyperlink{class_listen_to_me_1_1_bot_a964ea223816ac25f4ccf8357edb2f5ad}{\+\_\+direct\+Line}
+\begin{DoxyCompactList}\small\item\em The directline client instance used to establish Direct\+Line connection to the bot for conversation. In the current implementation this is a Http\+Client. To\+Do reasearch if Websockets are more efficient \& can be implemented as easily as descriebed in the documentation. \end{DoxyCompactList}\item 
+string \hyperlink{class_listen_to_me_1_1_bot_a2537a949a0ae2f9adab1e080ad2a9c3a}{\+\_\+conversation\+Id}
+\begin{DoxyCompactList}\small\item\em Each Direct\+Line conversation receives a conversation id that is delivered at first connection to the Web\+App bot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly string \hyperlink{class_listen_to_me_1_1_bot_adeb0c25a77e095d890c32da6f06ed669}{from\+User} = \hyperlink{class_listen_to_me_1_1_app_a8cb2cb11cbb86861f2e1a11840270bf0}{App.\+user\+Name}
+\begin{DoxyCompactList}\small\item\em The from\+User tag is a parameter when initializing a direct\+Line call. It is a string that helps identifying the sender. there are no name restrictions on that. Could be also \textquotesingle{}Alice\textquotesingle{} or \textquotesingle{}Bob\textquotesingle{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the \hyperlink{class_listen_to_me_1_1_bot}{Bot} class establishes connection to L\+U\+IS A\+PI. It extracts the intent that it recognises behind the user input. For example, a user input like \char`\"{}what is the stock price of dax?\char`\"{} will return Json\+Object\+: Response\{ 
+
+\char`\"{}query\char`\"{}\+: \char`\"{}what about dax\char`\"{}, \char`\"{}top\+Scoring\+Intent\char`\"{}\+: \{ \char`\"{}intent\char`\"{}\+: \char`\"{}\+Stock\+Price2\char`\"{}, \char`\"{}score\char`\"{}\+: 0.\+3969668 \}, \char`\"{}intents\char`\"{}\+: \mbox{[} \{ \char`\"{}intent\char`\"{}\+: \char`\"{}\+Stock\+Price2\char`\"{}, \char`\"{}score\char`\"{}\+: 0.\+3969668 \}, \{ \char`\"{}intent\char`\"{}\+: \char`\"{}\+None\char`\"{}, \char`\"{}score\char`\"{}\+: 0.\+372112036 \}, \mbox{]}, \char`\"{}entities\char`\"{}\+: \mbox{[} \{ \char`\"{}entity\char`\"{}\+: \char`\"{}dax\char`\"{}, \char`\"{}type\char`\"{}\+: \char`\"{}\+Stock\+Symbol\char`\"{} \} \mbox{]} \} The Http\+Client\+Connection is from an old state of the \hyperlink{class_listen_to_me_1_1_app}{App}. The \hyperlink{class_listen_to_me_1_1_app}{App} uses now a Direct\+Line-\/\+Connection via http. Therefore it contains methods and fields that support Direct\+Line as well. With the Direct\+Line Connection it is not only possible to reach the luis model but also the bot. This enables to create a more sophisticated bot e.\+g. containing Form\+Flow and ccommunicate with it. 
+
+\subsection{Member Function Documentation}
+\index{Listen\+To\+Me\+::\+Bot@{Listen\+To\+Me\+::\+Bot}!Send\+Message\+And\+Get\+Intent\+From\+Bot@{Send\+Message\+And\+Get\+Intent\+From\+Bot}}
+\index{Send\+Message\+And\+Get\+Intent\+From\+Bot@{Send\+Message\+And\+Get\+Intent\+From\+Bot}!Listen\+To\+Me\+::\+Bot@{Listen\+To\+Me\+::\+Bot}}
+\subsubsection[{\texorpdfstring{Send\+Message\+And\+Get\+Intent\+From\+Bot(string message)}{SendMessageAndGetIntentFromBot(string message)}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Async\+Operation$<$Rootobject$>$ Listen\+To\+Me.\+Bot.\+Send\+Message\+And\+Get\+Intent\+From\+Bot (
+\begin{DoxyParamCaption}
+\item[{string}]{message}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_bot_a3730a1ccd4cbf3233cde6fe324c9c11e}{}\label{class_listen_to_me_1_1_bot_a3730a1ccd4cbf3233cde6fe324c9c11e}
+
+
+The method is calling the L\+U\+I\+S-\/\+Model via Http\+Client To\+Do find out how to model this to Direct\+Line as well. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_listen_to_me_1_1_bot_a3730a1ccd4cbf3233cde6fe324c9c11e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Listen\+To\+Me\+::\+Bot@{Listen\+To\+Me\+::\+Bot}!\+\_\+conversation\+Id@{\+\_\+conversation\+Id}}
+\index{\+\_\+conversation\+Id@{\+\_\+conversation\+Id}!Listen\+To\+Me\+::\+Bot@{Listen\+To\+Me\+::\+Bot}}
+\subsubsection[{\texorpdfstring{\+\_\+conversation\+Id}{_conversationId}}]{\setlength{\rightskip}{0pt plus 5cm}string Listen\+To\+Me.\+Bot.\+\_\+conversation\+Id\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_bot_a2537a949a0ae2f9adab1e080ad2a9c3a}{}\label{class_listen_to_me_1_1_bot_a2537a949a0ae2f9adab1e080ad2a9c3a}
+
+
+Each Direct\+Line conversation receives a conversation id that is delivered at first connection to the Web\+App bot. 
+
+\index{Listen\+To\+Me\+::\+Bot@{Listen\+To\+Me\+::\+Bot}!\+\_\+direct\+Line@{\+\_\+direct\+Line}}
+\index{\+\_\+direct\+Line@{\+\_\+direct\+Line}!Listen\+To\+Me\+::\+Bot@{Listen\+To\+Me\+::\+Bot}}
+\subsubsection[{\texorpdfstring{\+\_\+direct\+Line}{_directLine}}]{\setlength{\rightskip}{0pt plus 5cm}Direct\+Line\+Client Listen\+To\+Me.\+Bot.\+\_\+direct\+Line\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_bot_a964ea223816ac25f4ccf8357edb2f5ad}{}\label{class_listen_to_me_1_1_bot_a964ea223816ac25f4ccf8357edb2f5ad}
+
+
+The directline client instance used to establish Direct\+Line connection to the bot for conversation. In the current implementation this is a Http\+Client. To\+Do reasearch if Websockets are more efficient \& can be implemented as easily as descriebed in the documentation. 
+
+\index{Listen\+To\+Me\+::\+Bot@{Listen\+To\+Me\+::\+Bot}!\+\_\+direct\+Line\+Secret@{\+\_\+direct\+Line\+Secret}}
+\index{\+\_\+direct\+Line\+Secret@{\+\_\+direct\+Line\+Secret}!Listen\+To\+Me\+::\+Bot@{Listen\+To\+Me\+::\+Bot}}
+\subsubsection[{\texorpdfstring{\+\_\+direct\+Line\+Secret}{_directLineSecret}}]{\setlength{\rightskip}{0pt plus 5cm}const string Listen\+To\+Me.\+Bot.\+\_\+direct\+Line\+Secret = \char`\"{}W\+Kd\+R\+O\+R\+P\+T2\+A\+Y.\+cw\+A.\+jb\+Q.\+9j8\+Xk\+C\+Z\+Dzx\+K\+Tom\+M\+Mqmt\+G\+O1g\+H\+G\+P\+U3tixmng\+L\+J\+T6\+Qzd\+Uk\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_bot_a3f7fa2c3cbea4ec11f5a75e2e8c9c72d}{}\label{class_listen_to_me_1_1_bot_a3f7fa2c3cbea4ec11f5a75e2e8c9c72d}
+\index{Listen\+To\+Me\+::\+Bot@{Listen\+To\+Me\+::\+Bot}!from\+User@{from\+User}}
+\index{from\+User@{from\+User}!Listen\+To\+Me\+::\+Bot@{Listen\+To\+Me\+::\+Bot}}
+\subsubsection[{\texorpdfstring{from\+User}{fromUser}}]{\setlength{\rightskip}{0pt plus 5cm}readonly string Listen\+To\+Me.\+Bot.\+from\+User = {\bf App.\+user\+Name}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_bot_adeb0c25a77e095d890c32da6f06ed669}{}\label{class_listen_to_me_1_1_bot_adeb0c25a77e095d890c32da6f06ed669}
+
+
+The from\+User tag is a parameter when initializing a direct\+Line call. It is a string that helps identifying the sender. there are no name restrictions on that. Could be also \textquotesingle{}Alice\textquotesingle{} or \textquotesingle{}Bob\textquotesingle{} 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Listen\+To\+Me/\hyperlink{_bot_8cs}{Bot.\+cs}\end{DoxyCompactItemize}

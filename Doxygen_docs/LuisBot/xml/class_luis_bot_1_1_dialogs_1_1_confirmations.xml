@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_luis_bot_1_1_dialogs_1_1_confirmations" kind="class" language="C#" prot="public">
+    <compoundname>LuisBot::Dialogs::Confirmations</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IEnumerable&lt; string &gt;</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_luis_bot_1_1_dialogs_1_1_confirmations_1af6e8a1cc717da0435b3cd96963322f9e" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; LuisBot.Dialogs.Confirmations.mylist</definition>
+        <argsstring></argsstring>
+        <name>mylist</name>
+        <initializer>= new List&lt;string&gt;() { Resource1.Yes, Resource1.No }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="322" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_luis_bot_1_1_dialogs_1_1_confirmations_1ab7d5bb42a3c9b57f0c71aa2ab76f1e96" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string LuisBot.Dialogs.Confirmations.this[int index]</definition>
+        <argsstring></argsstring>
+        <name>this[int index]</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="324" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="325" bodyend="328"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_confirmations_1a831fabfc83445640130515583dc88260" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator LuisBot.Dialogs.Confirmations.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="330" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="330" bodyend="333"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_confirmations_1abdf5cab44bbd1ac05548ecd35e97bfb6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator&lt; string &gt; IEnumerable&lt; string &gt;.</type>
+        <definition>IEnumerator&lt;string&gt; IEnumerable&lt;string&gt;. LuisBot.Dialogs.Confirmations.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/BasicLuisDialog.cs" line="335" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="335" bodyend="338"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>this was an experiment to circumvent the navigation language English and enable the user to confirm in confirmations with &apos;ja&apos;/&apos;nein&apos; Has not been sucessfull. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>LuisBot.Dialogs.Confirmations</label>
+        <link refid="class_luis_bot_1_1_dialogs_1_1_confirmations"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IEnumerable&lt; string &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>LuisBot.Dialogs.Confirmations</label>
+        <link refid="class_luis_bot_1_1_dialogs_1_1_confirmations"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>IEnumerable&lt; string &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="Dialogs/BasicLuisDialog.cs" line="321" column="1" bodyfile="Dialogs/BasicLuisDialog.cs" bodystart="320" bodyend="339"/>
+    <listofallmembers>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_confirmations_1a831fabfc83445640130515583dc88260" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::Confirmations</scope><name>GetEnumerator</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_confirmations_1abdf5cab44bbd1ac05548ecd35e97bfb6" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::Confirmations</scope><name>GetEnumerator</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_confirmations_1af6e8a1cc717da0435b3cd96963322f9e" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::Confirmations</scope><name>mylist</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_confirmations_1ab7d5bb42a3c9b57f0c71aa2ab76f1e96" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::Confirmations</scope><name>this[int index]</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

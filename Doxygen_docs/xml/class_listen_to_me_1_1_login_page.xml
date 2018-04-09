@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_login_page" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::LoginPage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Page</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_login_page_1aa0fc5c3c6f21dc7322caa046ff9c2897" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ListenToMe.LoginPage.resourceName</definition>
+        <argsstring></argsstring>
+        <name>resourceName</name>
+        <initializer>= &quot;ListenToMe&quot;</initializer>
+        <briefdescription>
+<para>names the resourcename for the passwordvault. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" line="22" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_login_page_1a38a6bf1ffefb35369036ce1f5cf0b629" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ListenToMe.LoginPage.defaultUserName</definition>
+        <argsstring></argsstring>
+        <name>defaultUserName</name>
+        <initializer>= &quot;fr6087&quot;</initializer>
+        <briefdescription>
+<para>names the user for which loginpage is retrieving Login information </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" line="26" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_login_page_1afb3d704904757345ed85b1143bccccb0" prot="private" static="no" mutable="no">
+        <type>readonly bool</type>
+        <definition>readonly bool ListenToMe.LoginPage.isDebug</definition>
+        <argsstring></argsstring>
+        <name>isDebug</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>As the webForm is currently broken we need to parse a html text file. When the website is online again, this will be reset to false </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" line="30" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_login_page_1afcefc5f9f4f5cee5d9f5e15493e4058b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.LoginPage.LoginPage</definition>
+        <argsstring>()</argsstring>
+        <name>LoginPage</name>
+        <briefdescription>
+<para>retreives the credentials from the list and populates the GUI with them, sets the cursor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" line="35" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" bodystart="35" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_login_page_1a41207ebe789ac6bdf7b789e567fdf837" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.LoginPage.loginButton_ClickAsync</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>loginButton_ClickAsync</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>calls some valigation rules based on length that are similar to the buisiness logic behind the webform </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the button</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>event information</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" line="61" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" bodystart="61" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_login_page_1a08d3ad9382e4aa77a5e7781eb393dd10" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.LoginPage.switchToNextPage</definition>
+        <argsstring>()</argsstring>
+        <name>switchToNextPage</name>
+        <briefdescription>
+<para>navigates the frame if logged in sucessfully </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" line="129" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" bodystart="129" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_login_page_1af6692799b00ea2ad405a7af8dff73ad3" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ListenToMe.LoginPage.AddUserCredential</definition>
+        <argsstring>(string username, string password)</argsstring>
+        <name>AddUserCredential</name>
+        <param>
+          <type>string</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>adds a user credential to the password vault </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the username of the credential</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the password of the credential</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" line="140" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" bodystart="140" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>retrieves and stores login Information in a password vault toDo: use this for directLine secret as well </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="92">
+        <label>Page</label>
+      </node>
+      <node id="91">
+        <label>ListenToMe.LoginPage</label>
+        <link refid="class_listen_to_me_1_1_login_page"/>
+        <childnode refid="92" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="94">
+        <label>Page</label>
+      </node>
+      <node id="93">
+        <label>ListenToMe.LoginPage</label>
+        <link refid="class_listen_to_me_1_1_login_page"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" line="18" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/LoginPage.xaml.cs" bodystart="17" bodyend="150"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_login_page_1af6692799b00ea2ad405a7af8dff73ad3" prot="private" virt="non-virtual"><scope>ListenToMe::LoginPage</scope><name>AddUserCredential</name></member>
+      <member refid="class_listen_to_me_1_1_login_page_1a38a6bf1ffefb35369036ce1f5cf0b629" prot="private" virt="non-virtual"><scope>ListenToMe::LoginPage</scope><name>defaultUserName</name></member>
+      <member refid="class_listen_to_me_1_1_login_page_1afb3d704904757345ed85b1143bccccb0" prot="private" virt="non-virtual"><scope>ListenToMe::LoginPage</scope><name>isDebug</name></member>
+      <member refid="class_listen_to_me_1_1_login_page_1a41207ebe789ac6bdf7b789e567fdf837" prot="private" virt="non-virtual"><scope>ListenToMe::LoginPage</scope><name>loginButton_ClickAsync</name></member>
+      <member refid="class_listen_to_me_1_1_login_page_1afcefc5f9f4f5cee5d9f5e15493e4058b" prot="public" virt="non-virtual"><scope>ListenToMe::LoginPage</scope><name>LoginPage</name></member>
+      <member refid="class_listen_to_me_1_1_login_page_1aa0fc5c3c6f21dc7322caa046ff9c2897" prot="private" virt="non-virtual"><scope>ListenToMe::LoginPage</scope><name>resourceName</name></member>
+      <member refid="class_listen_to_me_1_1_login_page_1a08d3ad9382e4aa77a5e7781eb393dd10" prot="private" virt="non-virtual"><scope>ListenToMe::LoginPage</scope><name>switchToNextPage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

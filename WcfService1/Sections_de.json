@@ -1,0 +1,1896 @@
+{
+    "SECTION136": {
+      "InputsAndHeadings": [
+        {
+          "Type": "div",
+          "Text": "Antragsnummer:  81004791"
+        },
+        {
+          "Type": "heading",
+          "Text": "Antrag A 1.1.0: Weiterbildungsrichtlinie - Betriebliche Weiterbildung",
+          "Size": "3"
+        },
+        {
+          "Type": "heading",
+          "Text": "Antrag auf Zuwendungen nach dem Arbeitspolitischen Programm Brandenburg aus Mitteln des Europäischen Sozialfonds (ESF) und des Landes Brandenburg gemäß der Weiterbildungsrichtlinie des Ministeriums für Arbeit, Soziales, Frauen und Familie (MASF) zur Förderung von Weiterbildungsmaßnahmen zur Kompetenzentwicklung in kleinen und mittleren Unternehmen (KMU) auf Basis betrieblicher Qualifikationsbedarfe (Hier: Antragstellung durch das Unternehmen/KMU)",
+          "Size": "5"
+        }
+      ]
+    },
+    "SECTION135": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Angaben zum antragstellenden Unternehmen",
+          "Size": "3"
+        },
+        {
+          "Type": "heading",
+          "Text": "1 Name/Bezeichnung des Unternehmens",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Name*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "80",
+              "Comment": "text field",
+              "Required": "true"
+            }
+          ]
+        },
+        {
+          "Type": "heading",
+          "Text": "2 Berechtigung zum Vorsteuerabzug",
+          "Size": "4"
+        },
+        {
+          "Type": "heading",
+          "Text": "Mein Unternehmen ist zum Zeitpunkt der Antragstellung:",
+          "Size": "5"
+        },
+        {
+          "Type": "inn-radiobutton",
+          "Text": "vorsteuerabzugsberechtigt",
+          "Group_name": "group1"
+        },
+        {
+          "Type": "inn-radiobutton",
+          "Text": "nicht vorsteuerabzugsberechtigt",
+          "Group_name": "group1"
+        },
+        {
+          "Type": "heading",
+          "Text": "3 Ansprechpartner/in bzw. Projektverantwortliche/r",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Anrede*",
+          "Subelems": [
+            {
+              "Type": "dropdown",
+              "List_id": "AnredePerson",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Nachname*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "35",
+              "Comment": "text field",
+              "Required": "true"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Vorname*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "35",
+              "Comment": "text field",
+              "Required": "true"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Funktion im Unternehmen / Dienststellung*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "120",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Telefon*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "z.B. +49 (040) 4010-0100",
+              "Maxlength": "32",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "[^a-zA-Z]+"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Fax*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "32",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "[^a-zA-Z]+"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "E-Mail-Adresse*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "z.B. email@beispiel.de",
+              "Maxlength": "40",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[a-zA-Z0-9äöüÄÖÜß!#\\$%&'\\*\\+\\-/=\\?\\^_`\\{\\}\\|~]+(\\.[a-zA-Z0-9äöüÄÖÜß!#\\$%&amp;'\\*\\+\\-/=\\?\\^_`\\{\\}\\|~]+)*@[a-zA-Z0-9äöüÄÖÜß_-]+(\\.[a-zA-Z0-9äöüÄÖÜß_-]{2,})+$"
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION134": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Sitz des Antragstellers",
+          "Size": "3"
+        },
+        {
+          "Type": "label",
+          "Text": "Straße*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "80",
+              "Comment": "text field",
+              "Required": "true"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Hausnr.*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "12",
+              "Comment": "text field",
+              "Required": "true"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "PLZ* PLZ",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "5",
+              "Comment": "text field",
+              "Required": "true",
+              "Pattern": "[0-9]{5}"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Ort*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "60",
+              "Comment": "text field",
+              "Required": "true"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Gemeinde*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Amtlicher Gemeindeschlüssel (AGS)*",
+          "Subelems": [
+            {
+              "Type": "dropdown",
+              "Text": "Bitte wählen...",
+              "List_id": "Gemeindeschluessel",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Landkreis*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "50",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Postfach*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Postleitzahl Postfach* PLZ",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "5",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "[0-9]{5}"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Telefon*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "z.B. +49 (040) 4010-0100",
+              "Maxlength": "32",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "[^a-zA-Z]+"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "E-Mail-Adresse*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "z.B. email@beispiel.de",
+              "Maxlength": "40",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[a-zA-Z0-9äöüÄÖÜß!#\\$%&'\\*\\+\\-/=\\?\\^_`\\{\\}\\|~]+(\\.[a-zA-Z0-9äöüÄÖÜß!#\\$%&amp;'\\*\\+\\-/=\\?\\^_`\\{\\}\\|~]+)*@[a-zA-Z0-9äöüÄÖÜß_-]+(\\.[a-zA-Z0-9äöüÄÖÜß_-]{2,})+$"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Internetadresse (URL) des Antragstellers*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "z.B. www.beispielurl.de",
+              "Maxlength": "120",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "IBAN* IBAN",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "Beispiel: DEXX XXXX XXXX XXXX XXXX XX",
+              "Maxlength": "34",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[A-Z]{2}([0-9A-Z]{0,32})$"
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION132": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Rechtsform und Geschäftsform des Antragstellers",
+          "Size": "3"
+        },
+        {
+          "Type": "label",
+          "Text": "Rechtsform*",
+          "Subelems": [
+            {
+              "Type": "dropdown",
+              "Text": "Bitte wählen...",
+              "List_id": "Rechtsform",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Gründungsdatum bzw. Geburtsdatum (bei natürlichen Personen):*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "TT.MM.JJJJ",
+              "Comment": "dd.MM.yyyy''",
+              "Required": "::componentCtrl.validation.required"
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION137": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Angaben zum angemeldeten Gewerbe",
+          "Size": "3"
+        },
+        {
+          "Type": "label",
+          "Text": "Datum der Bescheinigung der Gewerbeanmeldung*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "TT.MM.JJJJ",
+              "Comment": "dd.MM.yyyy''",
+              "Required": "::componentCtrl.validation.required"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Datum des Beginns der angemeldeten Tätigkeit*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "TT.MM.JJJJ",
+              "Comment": "dd.MM.yyyy''",
+              "Required": "::componentCtrl.validation.required"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Angemeldete Tätigkeit (entsprechend Ziffer 15 der Gewerbeanmeldung)*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "120",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION138": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Registereintragungen",
+          "Size": "3"
+        },
+        {
+          "Type": "label",
+          "Text": "Handelsregister-Nummer*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "Wenn Registereintrag im Land Brandenburg, dann erfolgt die Überprüfung seitens der LASA online. Wenn nicht in Brandenburg, bitte aktuellen Nachweis einscannen und als Anlage mitschicken!",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Datum des Eintrags ins HR*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "TT.MM.JJJJ",
+              "Comment": "dd.MM.yyyy''",
+              "Required": "::componentCtrl.validation.required"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Seiten-Nummer letztes Blatt HR*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Datum des letzten Eintrags*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "TT.MM.JJJJ",
+              "Comment": "dd.MM.yyyy''",
+              "Required": "::componentCtrl.validation.required"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Vereinsregister-Nummer*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "Wenn Registereintrag im Land Brandenburg, dann erfolgt die Überprüfung seitens der LASA online. Wenn nicht in Brandenburg, bitte aktuellen Nachweis einscannen und als Anlage mitschicken!",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Datum des Eintrags ins VR*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "TT.MM.JJJJ",
+              "Comment": "dd.MM.yyyy''",
+              "Required": "::componentCtrl.validation.required"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "5.3 Genossenschaftsregister-Nummer*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "Wenn Registereintrag im Land Brandenburg, dann erfolgt die Überprüfung seitens der LASA online. Wenn nicht in Brandenburg, bitte aktuellen Nachweis einscannen und als Anlage mitschicken!",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Datum des Eintrags in GR*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "TT.MM.JJJJ",
+              "Comment": "dd.MM.yyyy''",
+              "Required": "::componentCtrl.validation.required"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Steuernummer*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "Auch für natürliche Personen und bei freiberuflicher/selbstständiger Tätigkeit.",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Zuständiges Finanzamt*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION139": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Gesetzliche Vertreter",
+          "Size": "3"
+        },
+        {
+          "Type": "label",
+          "Text": "Anrede*",
+          "Subelems": [
+            {
+              "Type": "dropdown",
+              "Text": "Bitte wählen...",
+              "List_id": "AnredePerson",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Titel*",
+          "Subelems": [
+            {
+              "Type": "dropdown",
+              "Text": "Bitte wählen...",
+              "List_id": "AkademischerTitel",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Name*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Vorname*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Funktion im Unternehmen*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION140": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Weitere Angaben zum Antragsteller",
+          "Size": "3"
+        },
+        {
+          "Type": "heading",
+          "Text": "1 Wirtschaftsbranche des Antragstellers",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Bitte wählen Sie einen Branchenschlüssel*",
+          "Subelems": [
+            {
+              "Type": "dropdown",
+              "Text": "Bitte wählen...",
+              "List_id": "Branchenschluessel",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "heading",
+          "Text": "2 Anzahl der Beschäftigten",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Anzahl weibliche Beschäftigte*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Anzahl männliche Beschäftigte*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Anzahl der Beschäftigten gesamt*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled"
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION141": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Angaben zur Antragstellung",
+          "Size": "3"
+        },
+        {
+          "Type": "heading",
+          "Text": "1 Eine Förderung ist ausgeschlossen, wenn sich der Antragsteller bereits verbindlich zur Weiterbildungsmaßnahme bzw. zu einem Kurs anmeldet, bevor die LASA Brandenburg GmbH einenZuwendungsbescheid zur Förderung erteilt hat.",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Ist zum Zeitpunkt der Antragstellung eine verbindliche Anmeldung für die Weiterbildungsmaßnahme/den Kurs erfolgt oder wird vor Erhalt des Zuwendungsbescheides der LASA eine Anmeldung erfolgen?*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "120",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "heading",
+          "Text": "2 Zuordnung des Antragstellers zu Regionalen Wachtumskernen und Clustern in Brandenburg",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Das Unternehmen befindet sich in folgendem Regionalen Wachstumskern:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "60",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Das Unternehmen ist folgendem Zukunftscluster zuzuordnen:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "60",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION142": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Ort der beantragten Weiterbildungsmaßnahme/n",
+          "Size": "3"
+        },
+        {
+          "Type": "heading",
+          "Text": "1 Durchführungsort der Weiterbildungsmaßnahme/n",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Bezirk der Agentur für Arbeit*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Landkreis*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "50",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "PLZ* PLZ",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "5",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "[0-9]{5}"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Maßnahmeort*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Gemeinde*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Amtlicher Gemeindeschlüssel (AGS)*",
+          "Subelems": [
+            {
+              "Type": "dropdown",
+              "Text": "Bitte wählen...",
+              "List_id": "Gemeindeschluessel",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "heading",
+          "Text": "2 Zuordnung der Maßnahme zur EU-Zielregion",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Zuordnungskriterium: Kreisstadt von Sitz/Betriebsstätte des Unternehmens im Land Brandenburg*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "120",
+              "Comment": "Nachweis von Sitz/Betriebsstätte in Brandenburg bitte beibringen, wenn dies noch nicht mit der Registrierung im LASA Portal erfolgt ist!",
+              "Required": ""
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION143": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Daten zur beantragten Weiterbildungsmaßnahme/n",
+          "Size": "3"
+        },
+        {
+          "Type": "heading",
+          "Text": "Gegenstand der Förderung, der auf Basis dargelegter Qualifikationsbedarfe besteht",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Kurzbezeichnung der Weiterbildungsmaßnahme/n*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "120",
+              "Comment": "Es können auch mehrere Weiterbildungen in Blöcken durchgeführt werden. Bitte nennen Sie uns hier die übergeordnete Bezeichnung (Oberbegriff) für alles. Die einzelnen Kurse/Lehrgänge werden unter Punkt 6 des Antrages abgefragt.",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Bitte beschreiben Sie die mittel- und langfristigen Entwicklungsziele Ihres Unternehmens, zu deren Erreichung dieWeiterbildungsmaßnahme/n beitragen soll/en:*"
+        },
+        {
+          "Type": "heading",
+          "Text": "3 Maßnahmezeitraum",
+          "Size": "5"
+        },
+        {
+          "Type": "label",
+          "Text": "von*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "TT.MM.JJJJ",
+              "Comment": "dd.MM.yyyy''",
+              "Required": "::componentCtrl.validation.required"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "bis*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "TT.MM.JJJJ",
+              "Comment": "dd.MM.yyyy''",
+              "Required": "::componentCtrl.validation.required"
+            }
+          ]
+        },
+        {
+          "Type": "heading",
+          "Text": "Bitte beachten Sie, dass zwischen dem Tag der Antragstellung und dem geplanten Beginn der Weiterbildungsmaßnahme/n mindestens6 Wochen einzuplanen sind! Eine verbindliche Anmeldung bei Bildungsanbieter darf erst nach Erhalt des Zuwendungsbescheideserfolgen!",
+          "Size": "5"
+        }
+      ]
+    },
+    "SECTION144": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Anzahl Mitarbeiter/innen & zu qual. Teilnehmer/innen",
+          "Size": "3"
+        },
+        {
+          "Type": "heading",
+          "Text": "1 Anzahl der Mitarbeiter/innen und Inhaber/innen des Unternehmens",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Frauen:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Männer:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Mitarbeiter/innen gesamt:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled"
+            }
+          ]
+        },
+        {
+          "Type": "heading",
+          "Text": "2 Anzahl der Mitarbeiter/innen und Inhaber/innen des Unternehmens, die an Weiterbildungen teilnehmen sollen:",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Weibliche Teilnehmende:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "Bitte zählen Sie jede/n MitarbeiterIn nur einmal, auch wenn mehrere Weiterbildungen besucht werden!",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Männliche Teilnehmende:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "Bitte zählen Sie jede/n MitarbeiterIn nur einmal, auch wenn mehrere Weiterbildungen besucht werden!",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Teilnehmende gesamt:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled"
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION145": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Einzelne Weiterbildungsinhalte & fav. Bildungsanbieter",
+          "Size": "3"
+        },
+        {
+          "Type": "heading",
+          "Text": "Pro geplantem Weiterbildungsinhalt, der mehr als 500,- EUR kostet, sind drei vergleichbare Angebote vondurch externe Stellen zertifizierten Bildungsanbietern einzuholen und dem Antrag beizufügen (Siehe Punkt8). Sollten keine drei vergleichbaren Angebote von durch externe Stellen zertifizierte Bildungsanbietervorgelegt werden können, ist zwingend eine formlose Begründung mit einzureichen. Für einzelneWeiterbildungsmaßnahmen, die bis zu 500,- EUR kosten, genügt das Angebot des favorisiertenBildungsanbieters, der über ein überprüftes System zur Sicherung der Qualität verfügen muss.",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Kurzbezeichnung Weiterbildungsinhalt:",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Favorisierter Bildungsanbieter*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "40",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION146": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Gesamtfinanzierung",
+          "Size": "3"
+        },
+        {
+          "Type": "heading",
+          "Text": "1 Gesamtausgaben",
+          "Size": "4"
+        },
+        {
+          "Type": "heading",
+          "Text": "Gesamtausgaben für die Weiterbildung/en laut favorisiertem/n Angebot/en inkl. Prüfungsgebühren (in EUR)",
+          "Size": "5"
+        },
+        {
+          "Type": "heading",
+          "Text": "Die bewilligten Mittel werden im Erstattungsprinzip ausgezahlt nach Ende der Weiterbildung/en. Bitte nehmen Sie die Eintragungen entsprechend dem Ende der Maßnahme/n in den Jahren vor:",
+          "Size": "5"
+        },
+        {
+          "Type": "label",
+          "Text": "Gesamtinvestitionen:* €",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "z.B. 100,00 €",
+              "Maxlength": "15",
+              "Comment": "text field",
+              "Required": "true",
+              "Pattern": "^[0-9]+((,|.)[0-9]{1,2})?$"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Gesamtinvestitionen:* €",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled"
+            }
+          ]
+        },
+        {
+          "Type": "heading",
+          "Text": "2 Förderfinanzierung",
+          "Size": "4"
+        },
+        {
+          "Type": "heading",
+          "Text": "Rein rechnerisch beträgt der Eigenanteil mindestens (in EUR):",
+          "Size": "5"
+        },
+        {
+          "Type": "label",
+          "Text": "* €",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "Entspricht 30 % der Gesamtausgaben für die Weiterbildung/en.",
+              "Required": "",
+              "Disabled": "disabled"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Zuschuss:* €",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "z.B. 100,00 €",
+              "Maxlength": "15",
+              "Comment": "text field",
+              "Required": "true",
+              "Pattern": "^[0-9]+((,|.)[0-9]{1,2})?$"
+            }
+          ]
+        },
+        {
+          "Type": "heading",
+          "Text": "Beteiligung Gesamtausgaben:",
+          "Size": "5"
+        },
+        {
+          "Type": "label",
+          "Text": "* €",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Gesamt:* €",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled"
+            }
+          ]
+        },
+        {
+          "Type": "heading",
+          "Text": "3 Fremdfinanzierung",
+          "Size": "4"
+        },
+        {
+          "Type": "heading",
+          "Text": "Zur Finanzierung der o. g. Ausgaben beantrage ich folgende Zuwendung (in EUR):",
+          "Size": "5"
+        },
+        {
+          "Type": "label",
+          "Text": "Öffentliche Mittel EU:* €",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "z.B. 100,00 €",
+              "Maxlength": "15",
+              "Comment": "text field",
+              "Required": "true",
+              "Pattern": "^[0-9]+((,|.)[0-9]{1,2})?$"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Gesamt:* €",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled"
+            }
+          ]
+        },
+        {
+          "Type": "inn-checkbox",
+          "Text": "check"
+        },
+        {
+          "Type": "heading",
+          "Text": "Mir ist bekannt, dass bei Bewilligung der Fördermittel das Erstattungsprinzip gilt. Das bedeutet, die bewilligte Zuwendung wird erst nach Abschluss der Weiterbildungsmaßnahme/n mit Vorlage des Verwendungsnachweises, der unterschriebenen Teilnahmeliste, der Rechnung/en und der Zahlungsbelege ausgezahlt. Die Mittel dürfen ab einer Zuwendungssumme i. H. v. 2.000 EUR für bereits getätigte Ausgaben ab dem 6. Monat per Formular \"Mittelanforderung\" abgerufen werden. Voraussetzung dafür ist, dass die Weiterbildung/en einen Gesamtzeitraum von mindestens einem Jahr haben und bereits bei der Antragstellung die beantragte Zuwendung ggf. auf die Jahre verteilt werden. Weitere Hinweise erhalten Sie auf der LASA-Internetseite.",
+          "Size": "5"
+        }
+      ]
+    },
+    "SECTION147": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Bestätigungen",
+          "Size": "3"
+        },
+        {
+          "Type": "heading",
+          "Text": "Ich bestätige, dass...",
+          "Size": "4"
+        },
+        {
+          "Type": "inn-checkbox",
+          "Text": "check"
+        },
+        {
+          "Type": "heading",
+          "Text": "mein Unternehmen gemäß der Angaben auf der Anlage \"Selbsterklärung zurKMU-Eigenschaft\" ein Kleinstunternehmen oder kleines und mittleres Unternehmen im Sinne der EU-Definition ist. Oder kein KMU ist, weil die Weiterbildung im Rahmen von Ansiedlung, Erweiterung oder Umstrukturierung (gemäß Punkt 2.3 der Weiterbildungsrichtlinie) mit einer Eigenbeteiligung von mindestens 50 % an den Ausgaben stattfinden wird.",
+          "Size": "5"
+        },
+        {
+          "Type": "inn-checkbox",
+          "Text": "check"
+        },
+        {
+          "Type": "heading",
+          "Text": "pro Mitarbeiter/in meines Unternehmens, für die mit diesem Formular eine Förderung nach der Weiterbildungsrichtlinie beantragt wird, nicht mehr als 3.000 EUR in diesem Kalenderjahr für betriebliche Weiterbildungen nach der Richtlinie in Anspruch genommen wurden.",
+          "Size": "5"
+        },
+        {
+          "Type": "inn-checkbox",
+          "Text": "check"
+        },
+        {
+          "Type": "heading",
+          "Text": "zum bzw. zu den favorisierten Bildungsanbieter/n keine vertraglichen Beziehungen (z. B. Beratungs-, Service- oder ähnliche Verträge) bestehen.",
+          "Size": "5"
+        },
+        {
+          "Type": "inn-checkbox",
+          "Text": "*"
+        },
+        {
+          "Type": "heading",
+          "Text": "die Weiterbildungsmaßnahme/n nicht der Erholung, der Unterhaltung, der privaten Haushaltsführung, der sportlichen und künstlerischen Betätigung,zur Erlangung rechtlich vorgegebener Befähigungs- und Sachkundenachweise, dem Erwerb von Fahrerlaubnissen dienen bzw. gesetzlich vorgeschrieben sind und es sich nicht um berufsabschlussbezogene Qualifikationen, Produktschulungen handelt, die bereits im Preis des Produktes inbegriffen sind oder die im Rahmen von Serviceverträgen verbindlich festgelegt sind.",
+          "Size": "5"
+        },
+        {
+          "Type": "inn-checkbox",
+          "Text": "check"
+        },
+        {
+          "Type": "heading",
+          "Text": "mir bekannt ist, dass bei Teilnahme des/der Firmeninhabers/n an den geplanten Weiterbildungsmaßnahmen dieser Teil der Förderung als \"De-minimis\"-Beihilfe entsprechend der Verordnung (EG) Nr. 1998/2006 der Kommission vom 15. Dezember 2006 über die Anwendung der Artikel 87 und 88 EG-Vertrag angerechnet wird. In dem Fall reiche ich die Anlage \"De minimis\"-Erklärung mit ein.",
+          "Size": "5"
+        },
+        {
+          "Type": "inn-checkbox",
+          "Text": "check"
+        },
+        {
+          "Type": "heading",
+          "Text": "mir bekannt ist, dass die Bildungsanbieter, die für meine Weiterbildungsbedarfe Angebote abgeben, über ein regelmäßig von externer Stelle überprüftes System zur Sicherung der Qualität verfügen müssen. Nähere Ausführungen dazu habe ich auf der LASA-Website zur Kenntnis genommen und die Bildungsanbieter darüber informiert.",
+          "Size": "5"
+        },
+        {
+          "Type": "inn-checkbox",
+          "Text": "check"
+        },
+        {
+          "Type": "heading",
+          "Text": "es sich bei den Teilnehmenden an der geplanten Weiterbildungsmaßnahme weder um Beschäftigte des Öffentlichen Dienstes, noch um Auszubildende oder um Studierende des ersten Bildungsweges handelt.",
+          "Size": "5"
+        }
+      ]
+    },
+    "SECTION148": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Erklärungen",
+          "Size": "3"
+        },
+        {
+          "Type": "heading",
+          "Text": "Ich erkläre, dass...",
+          "Size": "4"
+        },
+        {
+          "Type": "heading",
+          "Text": "ich die ESF-Fördergrundsätze unter dem Link http://www.esf.brandenburg.de/cms/detail.php/bb3.c.208827.de sowie weitere förderrechtliche Bestimmungen (z. B. Richtlinie, Merkblatt) zur Kenntnis genommen habe.",
+          "Size": "5"
+        },
+        {
+          "Type": "heading",
+          "Text": "ich den Inhalt des § 264 Strafgesetzbuch (StGB) und der §§ 2-5 Subventionsgesetz (SubvG) – abrufbar auf der LASA-Webseite unter http://www.lasa-brandenburg.de/fileadmin/user_upload/FM-dateien/foerderprog/StGB-SubvG.pdf – zur Kenntnis genommen habe und mir bekannt ist, dass ich mich infolge unrichtiger, unvollständiger oder unterlassener Angaben hinsichtlich subventionserheblicher Tatsachen des Subventionsbetruges strafbar machen kann und verpflichtet bin, der LASA Brandenburg GmbH mitzuteilen, sobald sich Umstände ändern, die subventionserhebliche Tatsachen betreffen. Subventionserheblich im Sinne des § 264 StGB in Verbindung mit den §§ 2 - 5 SubvG vom 29.07.1976 (BGBl. I S. 2034ff.) und § 1 Brandenburger Subventionsgesetz vom 11.11.1996 (GVBl.I/96, [Nr. 24], S. 306) sind alle Angaben zur Antragsberechtigung und zum Verwendungszweck, insbesondere alle Tatsachen, von denen die Gewährung oder Belassung der Zuwendung abhängig ist, d. h. die bedeutend zur Beurteilung der Angemessenheit der Zuwendung sind, die Gegenstand des Finanzplanes, etwaiger Übersichten oder sonstiger dem Antrag beizufügender Unterlagen sind und von denen nach Verwaltungsverfahrensrecht (insb. § 1 Abs. 1 S. 1 VwVfGBbg i. V. m. §§ 48 ff. VwVfG) die Erstattung der Zuwendung abhängig ist. Subventionserheblich sind ferner solche Tatsachen, durch die Scheingeschäfte oder Scheinhandlungen verdeckt werden, so wie Rechtsgeschäfte oder Handlungen unter Missbrauch von Gestaltungsmöglichkeiten im Zusammenhang mit einer beantragten Zuwendung.",
+          "Size": "5"
+        },
+        {
+          "Type": "heading",
+          "Text": "ich für denselben Förderzweck keine anderen öffentlichen Mittel beantragt bzw. erhalten habe, und auch nicht beantragen werde. Dazu zählen auch Förderungen aus Mitteln der Strukturfonds der EU – Europäischer Sozialfonds (ESF) und Europäischer Fonds für regionale Entwicklung (EFRE) –, dem Europäischen Landwirtschaftsfonds für die Entwicklung des ländlichen Raums (ELER), aus den regional übergreifenden Operationellen Programmen des Bundes zur Entwicklung des Arbeitsmarktes und der Humanressourcen sowie Förderungen aus anderen Programmen der Europäischen Union.",
+          "Size": "5"
+        },
+        {
+          "Type": "heading",
+          "Text": "bei der Planung und Durchführung der Weiterbildungsmaßnahme/n darauf geachtet wird/wurde, dass allen Beschäftigten im Unternehmen die gleichen Chancen auf Bildung gewährt werden, unabhängig von Alter, Geschlecht, Bildungsstand, sozialer, kultureller oder ethnischer Herkunft sowie unabhängig von der aktuellen Beschäftigungsart, dem Beschäftigungsumfang und -status im Unternehmen.",
+          "Size": "5"
+        },
+        {
+          "Type": "heading",
+          "Text": "ich mit der Verarbeitung meiner personen- und betriebsbezogenen Daten einverstanden bin und bestätige deren Richtigkeit. Mir ist bekannt, dass es sich sowohl um für die Bearbeitung des Antrages notwendige Daten handelt, als auch um Daten die ausschließlich statistischen Zwecken dienen und die erhobenen Daten auch an das MASF weitergegeben werden können. Der Veröffentlichung folgender Daten - Name des Antragstellers, Zuwendungszweck und Höhe der Förderung - stimme ich zu. Diese Zustimmung gilt insbesondere im Rahmen der Beantwortung parlamentarischer Anfragen, Petitionen und Aktenvorlagen an Untersuchungsausschüsse sowie im Rahmen von sonstigen Auskunftsersuchen von Abgeordneten des Landtages.",
+          "Size": "5"
+        },
+        {
+          "Type": "heading",
+          "Text": "die Teilnehmenden ihr Einverständnis erklärt haben bzw. erklären werden, dass die zur Bearbeitung des Antrages erhobenen personenbezogenen Daten für statistische Zwecke im automatisierten Verfahren, in Dateien, Akten und sonstigen amtlichen Zwecken dienenden Unterlagen beim MASF und bei der LASA Brandenburg GmbH gespeichert, genutzt und verarbeitet werden. Die Einverständniserklärungen der Betroffenen liegen mir vor bzw. werden spätestens mit Abschluss des Vertrages von mir eingeholt und aufbewahrt.",
+          "Size": "5"
+        },
+        {
+          "Type": "heading",
+          "Text": "ich über die Aufnahme meiner Daten in das öffentliche Verzeichnis der Begünstigten und die Folgen einer Verweigerung bzw. eines Widerrufs dazu informiert bin: Gemäß Art. 7 Abs. 2 d) der VO (EG) 1828/2006 ist die ESF-Mittel verwaltende Behörde im Rahmen ihrer Informations- und Publizitätsmaßnahmen verpflichtet, ein Verzeichnis der Begünstigten in elektronischer oder anderer Form zu veröffentlichen, in dem der Begünstigte der Förderung, die Bezeichnung des Vorhabens und der Betrag der bereitgestellten öffentlichen Beteiligung veröffentlicht werden. Zur Umsetzung des Verzeichnisses sind gemäß Art. 6 der VO (EG) 1828/2006 die Begünstigten darüber zu informieren, dass sie sich, wenn sie die Finanzierung annehmen, zugleich damit einverstanden erklären, dass sie in das gemäß Art. 7 Abs. 2 d) VO (EG) 1828/2006 veröffentlichte Verzeichnis aufgenommen werden. In dem Begünstigtenverzeichnis des ESF Brandenburg werden die Prioritätsachse des Operationellen Programms für den ESF in Brandenburg, zu welcher die Förderung zuzuordnen ist, der Name des Begünstigten, die Art der geförderten Maßnahme und der Betrag der öffentlichen Förderung (ESF-Mittel und sonstige öffentliche Mittel) veröffentlicht. Zur Umsetzung der EU-Vorschriften kann eine Förderung nur dann bewilligt werden, wenn Sie als der Antragsteller in die Veröffentlichung der Förderung im Begünstigtenverzeichnis einwilligen. Sie können die Einwilligung verweigern oder für die Zukunft widerrufen. Sofern die Einwilligung verweigert oder eine erteilte Einwilligung widerrufen wird, werden keine ESF-Mittel bewilligt bzw. erfolgte Bewilligungen werden widerrufen und zurückgefordert.",
+          "Size": "5"
+        },
+        {
+          "Type": "heading",
+          "Text": "ich in der Lage bin, erforderliche Daten elektronisch an die LASA Brandenburg GmbH zu übertragen. Ich bin damit einverstanden, dass mir die LASA Brandenburg GmbH elektronische Dokumente an die in den Stammdaten angegebenen E-Mail-Adresse übermittelt und eröffne hiermit den Zugang (vgl. § 1 Abs. 1 S. 1 VwVfGBbg i. V. m. § 3a VwVfG).",
+          "Size": "5"
+        },
+        {
+          "Type": "heading",
+          "Text": "ich Zahlungsansprüche aus bestandskräftigen Zuwendungsbescheiden weder abgetreten oder verpfändet habe noch abtreten oder verpfänden werde bzw. Ansprüche aus Zuwendungsbescheiden auch in keiner anderen Art und Weise als Sicherheit zur Verfügung gestellt habe und stellen werde.",
+          "Size": "5"
+        },
+        {
+          "Type": "heading",
+          "Text": "über das Vermögen des Antragstellers kein Insolvenzverfahren eröffnet bzw. beantragt worden ist.",
+          "Size": "5"
+        },
+        {
+          "Type": "heading",
+          "Text": "alle getätigten Angaben in diesem Antrag und in den antragsbegründenden Unterlagen, insbesondere die Angaben auf der Teilnehmerliste, vollständig und richtig sind.",
+          "Size": "5"
+        },
+        {
+          "Type": "label",
+          "Text": "Ort*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "60",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Datum der Antragstellung*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Placeholder": "TT.MM.JJJJ",
+              "Comment": "dd.MM.yyyy''",
+              "Required": "::componentCtrl.validation.required"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Nachname, Vorname der/des Zeichnungsberechtigten*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "120",
+              "Comment": "text field",
+              "Required": ""
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION149": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "Anlagen",
+          "Size": "3"
+        },
+        {
+          "Type": "heading",
+          "Text": "Für funktionalen Test - Übernahme der Teilnehmerstruktur",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "*Jahr",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled"
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION150": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "2 Zahl der in das Projekt eingetretenen TN",
+          "Size": "4"
+        },
+        {
+          "Type": "heading",
+          "Text": "Werden im Projekt ausschließlich Unternehmen/Organisationen gefördert, dann tragen Sie bitte in allen Feldern unter Punkt 4 eine Null ein. Projektmitarbeiter/innen (z. B. Projektleiter, Verwaltungspersonal beim Projektträger) zählen nicht zu den geförderten Personen!",
+          "Size": "5"
+        },
+        {
+          "Type": "label",
+          "Text": "Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Anzahl Männer:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Gesamt:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled"
+            }
+          ]
+        },
+        {
+          "Type": "heading",
+          "Text": "2 Zahl der in das Projekt eingetretenen TN nach ihrem vorherigen Erwerbsstatus",
+          "Size": "4"
+        },
+        {
+          "Type": "heading",
+          "Text": "2.1 Erwerbstätige",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Zahl der Erwerbstätigen (einschl. Selbstständige, Auszubildende) gesamt:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Darunter Zahl der Selbstständigen (einschl. Existenzgründer):**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "heading",
+          "Text": "2.2 Arbeitslose",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Gemeldete Arbeitslose gesamt:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Darunter Zahl der Langzeitarbeitslosen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "heading",
+          "Text": "2.3 Nicht-Erwerbstätige",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Zahl der Nicht-Erwerbstätigen gesamt:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Darunter Zahl der Nicht-Erwerbstätigen in beruflicher Ausbildung:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Summe 4.2:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Summe Frauen:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION151": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "3 Zahl der eingetretenen (TN) nach Altersgruppen",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Zahl der Jugendlichen (zwischen 15 und 24 Jahren):*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Zahl der Älteren (zwischen 25 und 44 Jahren):*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Zahl der Älteren (zwischen 45 und 54 Jahren):*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Zahl der Älteren (zwischen 55 und 64 Jahren):*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Summe 4.3:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Summe Frauen:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "30",
+              "Comment": "text field",
+              "Required": "",
+              "Disabled": "disabled",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        }
+      ]
+    },
+    "SECTION152": {
+      "InputsAndHeadings": [
+        {
+          "Type": "heading",
+          "Text": "4 Zahl der eingetretenen (TN) nach best. Bevölkerungsgruppen",
+          "Size": "4"
+        },
+        {
+          "Type": "label",
+          "Text": "Angehörige einer nationalen Minderheit:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "z. B. Sorben, Sinti, Roma",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Zahl der Migranten und Migrantinnen:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "D. h. die Person(en) selbst bzw. die Eltern der Person(en) sind aus dem Ausland zugewandert, unabhängig von ihrem Aufenthaltsstatus.",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Zahl der Menschen mit Behinderungen:*",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "D. h. Personen mit dauerhafter Minderung ihrer Erwerbsfähigkeit um wenigstens 20 %.",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        },
+        {
+          "Type": "label",
+          "Text": "Davon Anzahl Frauen:**",
+          "Subelems": [
+            {
+              "Type": "input",
+              "Maxlength": "10",
+              "Comment": "text field",
+              "Required": "",
+              "Pattern": "^[0-9]*"
+            }
+          ]
+        }
+      ]
+    }
+}

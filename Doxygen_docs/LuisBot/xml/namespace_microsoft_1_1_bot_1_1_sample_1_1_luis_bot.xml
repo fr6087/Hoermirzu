@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespace_microsoft_1_1_bot_1_1_sample_1_1_luis_bot" kind="namespace" language="C#">
+    <compoundname>Microsoft::Bot::Sample::LuisBot</compoundname>
+    <innerclass refid="class_microsoft_1_1_bot_1_1_sample_1_1_luis_bot_1_1_messages_controller" prot="public">Microsoft::Bot::Sample::LuisBot::MessagesController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Controllers/MessagesController.cs" line="14" column="1"/>
+  </compounddef>
+</doxygen>

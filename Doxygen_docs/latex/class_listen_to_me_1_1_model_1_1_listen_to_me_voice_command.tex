@@ -1,0 +1,92 @@
+\hypertarget{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command}{}\section{Listen\+To\+Me.\+Model.\+Listen\+To\+Me\+Voice\+Command Class Reference}
+\label{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command}\index{Listen\+To\+Me.\+Model.\+Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me.\+Model.\+Listen\+To\+Me\+Voice\+Command}}
+
+
+class for storing arguments. used by \hyperlink{class_listen_to_me_1_1_app}{App} to bind launch arguments (e.\+g. from Cortana)  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_a3da9ccddfb33c7b23eb9ae0ca4c9b39c}{Listen\+To\+Me\+Voice\+Command} (string \hyperlink{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_ac1ab4ff605dddd6dfe7f038e46cf522e}{voice\+Command}, string \hyperlink{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_a6243f032e7b44a3de833ae4362150b53}{command\+Mode}, string \hyperlink{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_af82e41e09f7b7888d1ce9f6a0fa9ada8}{text\+Spoken}, string \hyperlink{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_a2d2a8120188ed1a16fefbb2461ab20f2}{destination})
+\begin{DoxyCompactList}\small\item\em Set up the voice command struct with the provided details about the voice command. Oriented around the \char`\"{}show\+Trip\+To\+Destination\char`\"{} V\+CD command (See Adventure\+Works\+Commands.\+xml) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_ac1ab4ff605dddd6dfe7f038e46cf522e}{voice\+Command}
+\begin{DoxyCompactList}\small\item\em name of the voice command \end{DoxyCompactList}\item 
+string \hyperlink{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_a6243f032e7b44a3de833ae4362150b53}{command\+Mode}
+\begin{DoxyCompactList}\small\item\em mode in which the command was delivered. Possible values\+: speech and text \end{DoxyCompactList}\item 
+string \hyperlink{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_af82e41e09f7b7888d1ce9f6a0fa9ada8}{text\+Spoken}
+\begin{DoxyCompactList}\small\item\em contains the spoken\+Text, if command was used in speech mode \end{DoxyCompactList}\item 
+string \hyperlink{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_a2d2a8120188ed1a16fefbb2461ab20f2}{destination}
+\begin{DoxyCompactList}\small\item\em contains arguments the command may have. e.\+g. \hyperlink{namespace_listen_to_me}{Listen\+To\+Me} edit my Confirmations\+Page may result in confirmationspage as destination \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class for storing arguments. used by \hyperlink{class_listen_to_me_1_1_app}{App} to bind launch arguments (e.\+g. from Cortana) 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command}!Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me\+Voice\+Command}}
+\index{Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me\+Voice\+Command}!Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command}}
+\subsubsection[{\texorpdfstring{Listen\+To\+Me\+Voice\+Command(string voice\+Command, string command\+Mode, string text\+Spoken, string destination)}{ListenToMeVoiceCommand(string voiceCommand, string commandMode, string textSpoken, string destination)}}]{\setlength{\rightskip}{0pt plus 5cm}Listen\+To\+Me.\+Model.\+Listen\+To\+Me\+Voice\+Command.\+Listen\+To\+Me\+Voice\+Command (
+\begin{DoxyParamCaption}
+\item[{string}]{voice\+Command, }
+\item[{string}]{command\+Mode, }
+\item[{string}]{text\+Spoken, }
+\item[{string}]{destination}
+\end{DoxyParamCaption}
+)}\hypertarget{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_a3da9ccddfb33c7b23eb9ae0ca4c9b39c}{}\label{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_a3da9ccddfb33c7b23eb9ae0ca4c9b39c}
+
+
+Set up the voice command struct with the provided details about the voice command. Oriented around the \char`\"{}show\+Trip\+To\+Destination\char`\"{} V\+CD command (See Adventure\+Works\+Commands.\+xml) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em voice\+Command} & The voice command (the Command element in the V\+CD xml) \\
+\hline
+{\em command\+Mode} & The command mode (whether it was voice or text activation)\\
+\hline
+{\em text\+Spoken} & The raw voice command text.\\
+\hline
+{\em destination} & The destination parameter.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command}!command\+Mode@{command\+Mode}}
+\index{command\+Mode@{command\+Mode}!Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command}}
+\subsubsection[{\texorpdfstring{command\+Mode}{commandMode}}]{\setlength{\rightskip}{0pt plus 5cm}string Listen\+To\+Me.\+Model.\+Listen\+To\+Me\+Voice\+Command.\+command\+Mode}\hypertarget{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_a6243f032e7b44a3de833ae4362150b53}{}\label{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_a6243f032e7b44a3de833ae4362150b53}
+
+
+mode in which the command was delivered. Possible values\+: speech and text 
+
+\index{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command}!destination@{destination}}
+\index{destination@{destination}!Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command}}
+\subsubsection[{\texorpdfstring{destination}{destination}}]{\setlength{\rightskip}{0pt plus 5cm}string Listen\+To\+Me.\+Model.\+Listen\+To\+Me\+Voice\+Command.\+destination}\hypertarget{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_a2d2a8120188ed1a16fefbb2461ab20f2}{}\label{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_a2d2a8120188ed1a16fefbb2461ab20f2}
+
+
+contains arguments the command may have. e.\+g. \hyperlink{namespace_listen_to_me}{Listen\+To\+Me} edit my Confirmations\+Page may result in confirmationspage as destination 
+
+\index{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command}!text\+Spoken@{text\+Spoken}}
+\index{text\+Spoken@{text\+Spoken}!Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command}}
+\subsubsection[{\texorpdfstring{text\+Spoken}{textSpoken}}]{\setlength{\rightskip}{0pt plus 5cm}string Listen\+To\+Me.\+Model.\+Listen\+To\+Me\+Voice\+Command.\+text\+Spoken}\hypertarget{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_af82e41e09f7b7888d1ce9f6a0fa9ada8}{}\label{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_af82e41e09f7b7888d1ce9f6a0fa9ada8}
+
+
+contains the spoken\+Text, if command was used in speech mode 
+
+\index{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command}!voice\+Command@{voice\+Command}}
+\index{voice\+Command@{voice\+Command}!Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command@{Listen\+To\+Me\+::\+Model\+::\+Listen\+To\+Me\+Voice\+Command}}
+\subsubsection[{\texorpdfstring{voice\+Command}{voiceCommand}}]{\setlength{\rightskip}{0pt plus 5cm}string Listen\+To\+Me.\+Model.\+Listen\+To\+Me\+Voice\+Command.\+voice\+Command}\hypertarget{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_ac1ab4ff605dddd6dfe7f038e46cf522e}{}\label{class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_ac1ab4ff605dddd6dfe7f038e46cf522e}
+
+
+name of the voice command 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Listen\+To\+Me/\+View\+Model/Listen\+To\+Me\+Voice\+Command.\+cs\end{DoxyCompactItemize}

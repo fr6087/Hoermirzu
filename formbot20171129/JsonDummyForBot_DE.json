@@ -1,0 +1,134 @@
+﻿{
+  "References": [
+    "LuisBot.dll"
+  ],
+  "Imports": [
+    "LuisBot.Resource"
+  ],
+  "type": "object",
+  "required": [
+    "Name",
+    "Anrede",
+    "Nachname",
+    "Vorname",
+    "Funktion im Unternehmen / Dienststellung",
+    "Telefon",
+    "Fax",
+    "E-Mail-Adresse"
+  ],
+  "Templates": {
+    "NotUnderstood": {
+      "Patterns": [
+        "Dies habe ich nicht verstanden: \"{0}\".",
+        "Nochmal versuchen, ich verstehe \"{0}\" nicht."
+      ]
+    }
+  },
+  "properties": {
+    "Name": {
+    "Before": [
+      {
+        "Message": [
+          "Willkommen im Formularabschnitt 1"
+        ]
+      }
+    ],
+    "type": [
+      "string",
+      "null"
+    ],
+    "Prompt": {
+      "Patterns": [
+        "Was ist dein(e) {&} ?"
+      ]
+    }
+  },
+    "Anrede": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "----",
+        "Herr",
+        "Frau",
+        "Fräulein"
+      ],
+      "Prompt": {
+        "Patterns": [
+          "Wähle dein(e) {&}: {||} "
+        ]
+      }
+    },
+    "Nachname": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "Prompt": {
+        "Patterns": [
+          "Was ist dein(e) {&} ?"
+        ]
+      }
+    },
+    "Vorname": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "Prompt": {
+        "Patterns": [
+          "Was ist dein(e) {&} ?"
+        ]
+      }
+    },
+    "Funktion": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "Prompt": {
+        "Patterns": [
+          "Was ist dein(e) {&} ?"
+        ]
+      }
+    },
+    "Telefon": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "[^a-zA-Z]+",
+      "Prompt": {
+        "Patterns": [
+          "Was ist dein(e) {&} ?"
+        ]
+      }
+    },
+    "Fax": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "[^a-zA-Z]+",
+      "Prompt": {
+        "Patterns": [
+          "Was ist dein(e) {&} ?"
+        ]
+      }
+    },
+    "E-Mail-Adresse": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-zA-Z0-9äöüÄÖÜß!#\\$%&'\\*\\+\\-/=\\?\\^_`\\{\\}\\|~]+(\\.[a-zA-Z0-9äöüÄÖÜß!#\\$%&'\\*\\+\\-/=\\?\\^_`\\{\\}\\|~]+)*@[a-zA-Z0-9äöüÄÖÜß_-]+(\\.[a-zA-Z0-9äöüÄÖÜß_-]{2,})+$",
+      "Prompt": {
+        "Patterns": [
+          "Was ist dein(e) {&} ?"
+        ]
+      }
+    }
+
+  }
+}

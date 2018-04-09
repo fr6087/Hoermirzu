@@ -1,0 +1,69 @@
+\hypertarget{waitfor_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/waitfor.js File Reference}
+\label{waitfor_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/waitfor.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/waitfor.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \hyperlink{waitfor_8js_a92050644a3b06d4b107af3a767f370b1}{wait\+For} (test\+Fx, on\+Ready, time\+Out\+Millis)
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{waitfor_8js_ab8deb579b353fc974f18aaf2575f3100}{open} (\char`\"{}http\+://twitter.\+com/\#!/sencha\char`\"{}, function(status)\{\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(status!==\char`\"{}success\char`\"{})\{console.\+log(\char`\"{}Unable to access network\char`\"{});\}else\{\hyperlink{waitfor_8js_a92050644a3b06d4b107af3a767f370b1}{wait\+For}(function()\{                                       
+                                       return \hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{page.\+evaluate}(function()\{                                                       return \$(\char`\"{}\#signin-\/dropdown\char`\"{}).is(\char`\"{}\+:visible\char`\"{});                                       \});                       \}, function()\{                                   \hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\char`\"{}The sign-\/in dialog should be visible now.\char`\"{});                                   phantom.\+exit();                       \});\}\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{waitfor_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{waitfor.\+js@{waitfor.\+js}!open@{open}}
+\index{open@{open}!waitfor.\+js@{waitfor.\+js}}
+\subsubsection[{\texorpdfstring{open(""http\+://twitter.\+com/\#"!/sencha"", function(status)\lcurly{}if(status"!==""success"")\lcurly{}console.\+log(""Unable to access network"");\rcurly{}else\lcurly{}wait\+For(function()\lcurly{}                                       
+                                       return page.\+evaluate(function()\lcurly{}                                                       return \$(""\#signin-\/dropdown"").\+is(""\+:visible"");                                       \rcurly{});                       \rcurly{}, function()\lcurly{}                                   console.\+log(""The sign-\/in dialog should be visible now."");                                   phantom.\+exit();                       \rcurly{});\rcurly{}\rcurly{})}{open("http://twitter.com/#!/sencha", function(status)\{if(status!=="success")\{console.log("Unable to access network");\}else\{waitFor(function()\{                                       
+                                       return page.evaluate(function()\{                                                       return $("#signin-dropdown").is(":visible");                                       \});                       \}, function()\{                                   console.log("The sign-in dialog should be visible now.");                                   phantom.exit();                       \});\}\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} open (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}http\+://twitter.\+com/\#!/sencha\char`\"{}}]{, }
+\item[{function(status)\{{\bf if}(status!==\char`\"{}success\char`\"{})\{console.\+log(\char`\"{}Unable to access network\char`\"{});\}else\{{\bf wait\+For}(function()\{                                                                                                                                                                                                                                                                                                               return {\bf page.\+evaluate}(function()\{                                                                                                                                                                                                                   return \$(\char`\"{}\#signin-\/dropdown\char`\"{}).is(\char`\"{}\+:visible\char`\"{});                                                                                                                                                   \});                                                                                   \}, function()\{                                                                                                                                   {\bf console.\+log}(\char`\"{}The sign-\/in dialog should be visible now.\char`\"{});                                                                                                                                   phantom.\+exit();                                                                                   \});\}\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{waitfor_8js_ab8deb579b353fc974f18aaf2575f3100}{}\label{waitfor_8js_ab8deb579b353fc974f18aaf2575f3100}
+\index{waitfor.\+js@{waitfor.\+js}!wait\+For@{wait\+For}}
+\index{wait\+For@{wait\+For}!waitfor.\+js@{waitfor.\+js}}
+\subsubsection[{\texorpdfstring{wait\+For(test\+Fx, on\+Ready, time\+Out\+Millis)}{waitFor(testFx, onReady, timeOutMillis)}}]{\setlength{\rightskip}{0pt plus 5cm}function wait\+For (
+\begin{DoxyParamCaption}
+\item[{}]{test\+Fx, }
+\item[{}]{on\+Ready, }
+\item[{}]{time\+Out\+Millis}
+\end{DoxyParamCaption}
+)}\hypertarget{waitfor_8js_a92050644a3b06d4b107af3a767f370b1}{}\label{waitfor_8js_a92050644a3b06d4b107af3a767f370b1}
+
+
+References interval, and start().
+
+
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+
+
+\subsection{Variable Documentation}
+\index{waitfor.\+js@{waitfor.\+js}!page@{page}}
+\index{page@{page}!waitfor.\+js@{waitfor.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+\index{waitfor.\+js@{waitfor.\+js}!strict@{strict}}
+\index{strict@{strict}!waitfor.\+js@{waitfor.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{waitfor_8js_ae2475e10618961c050dcba04e8c42331}{}\label{waitfor_8js_ae2475e10618961c050dcba04e8c42331}
+Wait until the test condition is true or a timeout occurs. Useful for waiting on a server response or for a ui change (fade\+In, etc.) to occur.
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Fx} & javascript condition that evaluates to a boolean, it can be passed in as a string (e.\+g.\+: \char`\"{}1 == 1\char`\"{} or \char`\"{}\$(\textquotesingle{}\#bar\textquotesingle{}).\+is(\textquotesingle{}\+:visible\textquotesingle{})\char`\"{} or as a callback function. \\
+\hline
+{\em on\+Ready} & what to do when test\+Fx condition is fulfilled, it can be passed in as a string (e.\+g.\+: \char`\"{}1 == 1\char`\"{} or \char`\"{}\$(\textquotesingle{}\#bar\textquotesingle{}).\+is(\textquotesingle{}\+:visible\textquotesingle{})\char`\"{} or as a callback function. \\
+\hline
+{\em time\+Out\+Millis} & the max amount of time to wait. If not specified, 3 sec is used. \\
+\hline
+\end{DoxyParams}

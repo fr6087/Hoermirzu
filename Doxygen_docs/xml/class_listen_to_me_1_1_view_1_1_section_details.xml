@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_view_1_1_section_details" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::View::SectionDetails</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Page</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_view_1_1_section_details_1a9b3831abfc78ab12eb1583bc62cfeb1e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper" kindref="compound">NavigationHelper</ref></type>
+        <definition>NavigationHelper ListenToMe.View.SectionDetails.navigationHelper</definition>
+        <argsstring></argsstring>
+        <name>navigationHelper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" line="20" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_view_1_1_section_details_1ac55befedbd28f2021a0c70232aa576e9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_listen_to_me_1_1_view_model_1_1_section_view_model" kindref="compound">SectionViewModel</ref></type>
+        <definition>SectionViewModel ListenToMe.View.SectionDetails.defaultViewModel</definition>
+        <argsstring></argsstring>
+        <name>defaultViewModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" line="21" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_view_1_1_section_details_1af6416183f4db29d4661a36a2d1b68379" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>StackPanel</type>
+        <definition>StackPanel ListenToMe.View.SectionDetails.myPanel</definition>
+        <argsstring></argsstring>
+        <name>myPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" line="22" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_view_1_1_section_details_1a4617900ee574b4b8b2fb23d1f11eb7d2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_listen_to_me_1_1_view_model_1_1_section_view_model" kindref="compound">SectionViewModel</ref></type>
+        <definition>SectionViewModel ListenToMe.View.SectionDetails.DefaultViewModel</definition>
+        <argsstring></argsstring>
+        <name>DefaultViewModel</name>
+        <briefdescription>
+<para>The <ref refid="namespace_listen_to_me_1_1_view_model" kindref="compound">ViewModel</ref> that provides behaviors and properties associated with displaying a Section&apos;s details. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" line="28" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_view_1_1_section_details_1a4712dad29872447f222e969ba956759e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper" kindref="compound">NavigationHelper</ref></type>
+        <definition>NavigationHelper ListenToMe.View.SectionDetails.NavigationHelper</definition>
+        <argsstring></argsstring>
+        <name>NavigationHelper</name>
+        <briefdescription>
+<para>NavigationHelper is used on each page to aid in navigation and process lifetime management </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" line="37" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_1_1_section_details_1adfa9c157f9f8b5e7de70c8c3e8ce79d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.View.SectionDetails.SectionDetails</definition>
+        <argsstring>()</argsstring>
+        <name>SectionDetails</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" line="43" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" bodystart="43" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_1_1_section_details_1a62895467fa187de3a9fa81674cbceb70" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.View.SectionDetails.navigationHelper_LoadState</definition>
+        <argsstring>(object sender, LoadStateEventArgs e)</argsstring>
+        <name>navigationHelper_LoadState</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="class_listen_to_me_1_1_common_1_1_load_state_event_args" kindref="compound">LoadStateEventArgs</ref></type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Populates the page with content passed during navigation. Any saved state is also provided when recreating a page from a prior session. Resets the state of the view model by passing in the parameters provided by the caller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event; typically <ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper" kindref="compound">Common.NavigationHelper</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event data that provides both the navigation parameter passed to Frame.Navigate(Type, Object) when this page was initially requested and a dictionary of state preserved by this page during an earlier session. The state will be null the first time a page is visited.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" line="65" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" bodystart="65" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_1_1_section_details_1a347d40fa8e6f656fa73a91faedaf56bc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.View.SectionDetails.navigationHelper_SaveState</definition>
+        <argsstring>(object sender, SaveStateEventArgs e)</argsstring>
+        <name>navigationHelper_SaveState</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="class_listen_to_me_1_1_common_1_1_save_state_event_args" kindref="compound">SaveStateEventArgs</ref></type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Preserves state associated with this page in case the application is suspended or the page is discarded from the navigation cache. Values must conform to the serialization requirements of Common.SuspensionManager.SessionState. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event; typically <ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper" kindref="compound">Common.NavigationHelper</ref></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event data that provides an empty dictionary to be populated with serializable state.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" line="119" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_1_1_section_details_1aa11b1a8d0b12faca5213e8290a53776e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.View.SectionDetails.Footer_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Footer_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handle footer link clicks. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target uri</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ignored</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" line="154" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" bodystart="154" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_1_1_section_details_1a2d1f58db622fbfddf4b848c9194436ae" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ListenToMe.View.SectionDetails.OnNavigatedTo</definition>
+        <argsstring>(NavigationEventArgs e)</argsstring>
+        <name>OnNavigatedTo</name>
+        <param>
+          <type>NavigationEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The methods provided in this section are simply used to allow NavigationHelper to respond to the page&apos;s navigation methods.</para><para>Page specific logic should be placed in event handlers for the <ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1a8179285cdfdfeb3a5b80f2e6c8150743" kindref="member">Common.NavigationHelper.LoadState</ref> and <ref refid="class_listen_to_me_1_1_common_1_1_navigation_helper_1a63888f37f25238442c4f5f68af554541" kindref="member">Common.NavigationHelper.SaveState</ref>. The navigation parameter is available in the LoadState method in addition to page state preserved during an earlier session. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" line="134" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" bodystart="134" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_1_1_section_details_1ae3088d35563a02d86cc338be20ba56a3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ListenToMe.View.SectionDetails.OnNavigatedFrom</definition>
+        <argsstring>(NavigationEventArgs e)</argsstring>
+        <name>OnNavigatedFrom</name>
+        <param>
+          <type>NavigationEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" line="142" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" bodystart="142" bodyend="145"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Code Behind for a list of Sections, including a Save and Delete button. Associated with the SectionViewModel for most behaviors and properties. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="118">
+        <label>Page</label>
+      </node>
+      <node id="117">
+        <label>ListenToMe.View.SectionDetails</label>
+        <link refid="class_listen_to_me_1_1_view_1_1_section_details"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="120">
+        <label>Page</label>
+      </node>
+      <node id="119">
+        <label>ListenToMe.View.SectionDetails</label>
+        <link refid="class_listen_to_me_1_1_view_1_1_section_details"/>
+        <childnode refid="120" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" line="19" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/View/SectionDetails.xaml.cs" bodystart="18" bodyend="158"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_view_1_1_section_details_1ac55befedbd28f2021a0c70232aa576e9" prot="private" virt="non-virtual"><scope>ListenToMe::View::SectionDetails</scope><name>defaultViewModel</name></member>
+      <member refid="class_listen_to_me_1_1_view_1_1_section_details_1a4617900ee574b4b8b2fb23d1f11eb7d2" prot="public" virt="non-virtual"><scope>ListenToMe::View::SectionDetails</scope><name>DefaultViewModel</name></member>
+      <member refid="class_listen_to_me_1_1_view_1_1_section_details_1aa11b1a8d0b12faca5213e8290a53776e" prot="private" virt="non-virtual"><scope>ListenToMe::View::SectionDetails</scope><name>Footer_Click</name></member>
+      <member refid="class_listen_to_me_1_1_view_1_1_section_details_1af6416183f4db29d4661a36a2d1b68379" prot="private" virt="non-virtual"><scope>ListenToMe::View::SectionDetails</scope><name>myPanel</name></member>
+      <member refid="class_listen_to_me_1_1_view_1_1_section_details_1a9b3831abfc78ab12eb1583bc62cfeb1e" prot="private" virt="non-virtual"><scope>ListenToMe::View::SectionDetails</scope><name>navigationHelper</name></member>
+      <member refid="class_listen_to_me_1_1_view_1_1_section_details_1a4712dad29872447f222e969ba956759e" prot="public" virt="non-virtual"><scope>ListenToMe::View::SectionDetails</scope><name>NavigationHelper</name></member>
+      <member refid="class_listen_to_me_1_1_view_1_1_section_details_1a62895467fa187de3a9fa81674cbceb70" prot="private" virt="non-virtual"><scope>ListenToMe::View::SectionDetails</scope><name>navigationHelper_LoadState</name></member>
+      <member refid="class_listen_to_me_1_1_view_1_1_section_details_1a347d40fa8e6f656fa73a91faedaf56bc" prot="private" virt="non-virtual"><scope>ListenToMe::View::SectionDetails</scope><name>navigationHelper_SaveState</name></member>
+      <member refid="class_listen_to_me_1_1_view_1_1_section_details_1ae3088d35563a02d86cc338be20ba56a3" prot="protected" virt="non-virtual"><scope>ListenToMe::View::SectionDetails</scope><name>OnNavigatedFrom</name></member>
+      <member refid="class_listen_to_me_1_1_view_1_1_section_details_1a2d1f58db622fbfddf4b848c9194436ae" prot="protected" virt="non-virtual"><scope>ListenToMe::View::SectionDetails</scope><name>OnNavigatedTo</name></member>
+      <member refid="class_listen_to_me_1_1_view_1_1_section_details_1adfa9c157f9f8b5e7de70c8c3e8ce79d4" prot="public" virt="non-virtual"><scope>ListenToMe::View::SectionDetails</scope><name>SectionDetails</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+<map id="ListenToMe.App.initGui" name="ListenToMe.App.initGui">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_app.html#ace89a3624e2de8cc528dea8b1288d03f" title="Is called as the application is started normally by the user. Other enty points are used for example ..." alt="" coords="211,5,404,32"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_app.html#a3e2da49bb555b7fdc5858f5442d396e4" title="OnActivated is called whenever an external application e.g&#45; Cortana launches the ListenToMeApp ..." alt="" coords="212,56,403,83"/>
+</map>

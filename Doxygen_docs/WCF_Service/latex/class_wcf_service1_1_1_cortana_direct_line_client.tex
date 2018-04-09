@@ -1,0 +1,181 @@
+\hypertarget{class_wcf_service1_1_1_cortana_direct_line_client}{}\section{Wcf\+Service1.\+Cortana\+Direct\+Line\+Client Class Reference}
+\label{class_wcf_service1_1_1_cortana_direct_line_client}\index{Wcf\+Service1.\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1.\+Cortana\+Direct\+Line\+Client}}
+
+
+creates Direct\+Line connection to the bot  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task \hyperlink{class_wcf_service1_1_1_cortana_direct_line_client_a71a4d8cff19707b3f6cb0c559b8104f7}{Connect\+Async} ()
+\begin{DoxyCompactList}\small\item\em opens a Direct\+Line channel to the bot \end{DoxyCompactList}\item 
+async Task$<$ string $>$ \hyperlink{class_wcf_service1_1_1_cortana_direct_line_client_ad9aee7d49dab0e3bb8806349b68716b3}{Talk\+To\+The\+Bot\+Async} (string message)
+\begin{DoxyCompactList}\small\item\em sends a message to the bot and retrieves da response for it \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ string $>$ \hyperlink{class_wcf_service1_1_1_cortana_direct_line_client_a0bc2576ae50d7eafd2092bb9cf7e6f7c}{Get\+Response} ()
+\begin{DoxyCompactList}\small\item\em retrieves a response from the bot \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Direct\+Line\+Client \hyperlink{class_wcf_service1_1_1_cortana_direct_line_client_a2161a12a94efe732c80a2f31f7a91d8d}{\+\_\+direct\+Line}
+\begin{DoxyCompactList}\small\item\em client \end{DoxyCompactList}\item 
+string \hyperlink{class_wcf_service1_1_1_cortana_direct_line_client_a460c7a68d595773d131142651fa2b213}{\+\_\+conversation\+Id}
+\begin{DoxyCompactList}\small\item\em client\textquotesingle{}s conversation id \end{DoxyCompactList}\item 
+string \hyperlink{class_wcf_service1_1_1_cortana_direct_line_client_a06b449cbb20e2a97dc873b306371b577}{\+\_\+direct\+Line\+Secret} = Configuration\+Manager.\+App\+Settings\mbox{[}\char`\"{}Direct\+Line\+Secret\char`\"{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em the key to the bot\textquotesingle{}s Direct\+Line channel \end{DoxyCompactList}\item 
+string \hyperlink{class_wcf_service1_1_1_cortana_direct_line_client_a92b26da0f83e644653c3cd4f8c248b1b}{bot\+Id} = Configuration\+Manager.\+App\+Settings\mbox{[}\char`\"{}Bot\+Id\char`\"{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em the bot\textquotesingle{}s microsoft id \end{DoxyCompactList}\item 
+readonly string \hyperlink{class_wcf_service1_1_1_cortana_direct_line_client_a5c02c54f3f2ed0d5c508092e516cb5d9}{username} = Configuration\+Manager.\+App\+Settings\mbox{[}\char`\"{}user\+Name\char`\"{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+creates Direct\+Line connection to the bot 
+
+
+
+\subsection{Member Function Documentation}
+\index{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}!Connect\+Async@{Connect\+Async}}
+\index{Connect\+Async@{Connect\+Async}!Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}}
+\subsubsection[{\texorpdfstring{Connect\+Async()}{ConnectAsync()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Wcf\+Service1.\+Cortana\+Direct\+Line\+Client.\+Connect\+Async (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_cortana_direct_line_client_a71a4d8cff19707b3f6cb0c559b8104f7}{}\label{class_wcf_service1_1_1_cortana_direct_line_client_a71a4d8cff19707b3f6cb0c559b8104f7}
+
+
+opens a Direct\+Line channel to the bot 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_cortana_direct_line_client_a71a4d8cff19707b3f6cb0c559b8104f7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}!Get\+Response@{Get\+Response}}
+\index{Get\+Response@{Get\+Response}!Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}}
+\subsubsection[{\texorpdfstring{Get\+Response()}{GetResponse()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$string$>$ Wcf\+Service1.\+Cortana\+Direct\+Line\+Client.\+Get\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_cortana_direct_line_client_a0bc2576ae50d7eafd2092bb9cf7e6f7c}{}\label{class_wcf_service1_1_1_cortana_direct_line_client_a0bc2576ae50d7eafd2092bb9cf7e6f7c}
+
+
+retrieves a response from the bot 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_cortana_direct_line_client_a0bc2576ae50d7eafd2092bb9cf7e6f7c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_cortana_direct_line_client_a0bc2576ae50d7eafd2092bb9cf7e6f7c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}!Talk\+To\+The\+Bot\+Async@{Talk\+To\+The\+Bot\+Async}}
+\index{Talk\+To\+The\+Bot\+Async@{Talk\+To\+The\+Bot\+Async}!Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}}
+\subsubsection[{\texorpdfstring{Talk\+To\+The\+Bot\+Async(string message)}{TalkToTheBotAsync(string message)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$string$>$ Wcf\+Service1.\+Cortana\+Direct\+Line\+Client.\+Talk\+To\+The\+Bot\+Async (
+\begin{DoxyParamCaption}
+\item[{string}]{message}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_cortana_direct_line_client_ad9aee7d49dab0e3bb8806349b68716b3}{}\label{class_wcf_service1_1_1_cortana_direct_line_client_ad9aee7d49dab0e3bb8806349b68716b3}
+
+
+sends a message to the bot and retrieves da response for it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_cortana_direct_line_client_ad9aee7d49dab0e3bb8806349b68716b3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_cortana_direct_line_client_ad9aee7d49dab0e3bb8806349b68716b3_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}!\+\_\+conversation\+Id@{\+\_\+conversation\+Id}}
+\index{\+\_\+conversation\+Id@{\+\_\+conversation\+Id}!Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}}
+\subsubsection[{\texorpdfstring{\+\_\+conversation\+Id}{_conversationId}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Cortana\+Direct\+Line\+Client.\+\_\+conversation\+Id\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_cortana_direct_line_client_a460c7a68d595773d131142651fa2b213}{}\label{class_wcf_service1_1_1_cortana_direct_line_client_a460c7a68d595773d131142651fa2b213}
+
+
+client\textquotesingle{}s conversation id 
+
+\index{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}!\+\_\+direct\+Line@{\+\_\+direct\+Line}}
+\index{\+\_\+direct\+Line@{\+\_\+direct\+Line}!Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}}
+\subsubsection[{\texorpdfstring{\+\_\+direct\+Line}{_directLine}}]{\setlength{\rightskip}{0pt plus 5cm}Direct\+Line\+Client Wcf\+Service1.\+Cortana\+Direct\+Line\+Client.\+\_\+direct\+Line\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_cortana_direct_line_client_a2161a12a94efe732c80a2f31f7a91d8d}{}\label{class_wcf_service1_1_1_cortana_direct_line_client_a2161a12a94efe732c80a2f31f7a91d8d}
+
+
+client 
+
+\index{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}!\+\_\+direct\+Line\+Secret@{\+\_\+direct\+Line\+Secret}}
+\index{\+\_\+direct\+Line\+Secret@{\+\_\+direct\+Line\+Secret}!Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}}
+\subsubsection[{\texorpdfstring{\+\_\+direct\+Line\+Secret}{_directLineSecret}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Cortana\+Direct\+Line\+Client.\+\_\+direct\+Line\+Secret = Configuration\+Manager.\+App\+Settings\mbox{[}\char`\"{}Direct\+Line\+Secret\char`\"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_cortana_direct_line_client_a06b449cbb20e2a97dc873b306371b577}{}\label{class_wcf_service1_1_1_cortana_direct_line_client_a06b449cbb20e2a97dc873b306371b577}
+
+
+the key to the bot\textquotesingle{}s Direct\+Line channel 
+
+\index{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}!bot\+Id@{bot\+Id}}
+\index{bot\+Id@{bot\+Id}!Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}}
+\subsubsection[{\texorpdfstring{bot\+Id}{botId}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Cortana\+Direct\+Line\+Client.\+bot\+Id = Configuration\+Manager.\+App\+Settings\mbox{[}\char`\"{}Bot\+Id\char`\"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_cortana_direct_line_client_a92b26da0f83e644653c3cd4f8c248b1b}{}\label{class_wcf_service1_1_1_cortana_direct_line_client_a92b26da0f83e644653c3cd4f8c248b1b}
+
+
+the bot\textquotesingle{}s microsoft id 
+
+\index{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}!username@{username}}
+\index{username@{username}!Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client@{Wcf\+Service1\+::\+Cortana\+Direct\+Line\+Client}}
+\subsubsection[{\texorpdfstring{username}{username}}]{\setlength{\rightskip}{0pt plus 5cm}readonly string Wcf\+Service1.\+Cortana\+Direct\+Line\+Client.\+username = Configuration\+Manager.\+App\+Settings\mbox{[}\char`\"{}user\+Name\char`\"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_cortana_direct_line_client_a5c02c54f3f2ed0d5c508092e516cb5d9}{}\label{class_wcf_service1_1_1_cortana_direct_line_client_a5c02c54f3f2ed0d5c508092e516cb5d9}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Wcf\+Service1/\hyperlink{_cortana_direct_line_client_8cs}{Cortana\+Direct\+Line\+Client.\+cs}\end{DoxyCompactItemize}

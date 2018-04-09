@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_class_library_1_1model_1_1_section" kind="class" language="C#" prot="public">
+    <compoundname>ClassLibrary::model::Section</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_section_1a0a6b224da9abcb0b6bc531875b6ab88a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_class_library_1_1model_1_1_element" kindref="compound">Element</ref> []</type>
+        <definition>Element [] ClassLibrary.model.Section.inputsAndHeadings</definition>
+        <argsstring></argsstring>
+        <name>inputsAndHeadings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" line="15" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_class_library_1_1model_1_1_section_1abd71c1ec5a0b071d3f592525f527e267" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ClassLibrary.model.Section.section</definition>
+        <argsstring></argsstring>
+        <name>section</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" line="17" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_class_library_1_1model_1_1_section_1a4b11dc6762605f645e9df241b3f0b698" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_class_library_1_1model_1_1_element" kindref="compound">Element</ref> []</type>
+        <definition>Element [] ClassLibrary.model.Section.InputsAndHeadings</definition>
+        <argsstring></argsstring>
+        <name>InputsAndHeadings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" line="40" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" bodystart="40" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_class_library_1_1model_1_1_section_1a75ced4ef5030417fbb973702bbc7abf5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ClassLibrary.model.Section.Section</definition>
+        <argsstring>(string section)</argsstring>
+        <name>Section</name>
+        <param>
+          <type>string</type>
+          <declname>section</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" line="19" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_class_library_1_1model_1_1_section_1a759a3162bf978f6cbad047db9a1beee0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ClassLibrary.model.Section.Section</definition>
+        <argsstring>()</argsstring>
+        <name>Section</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" line="26" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_class_library_1_1model_1_1_section_1a06bd8414c4432e223321ec33c6ac8ec9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ClassLibrary.model.Section.Section</definition>
+        <argsstring>(Element[] inputs)</argsstring>
+        <name>Section</name>
+        <param>
+          <type><ref refid="class_class_library_1_1model_1_1_element" kindref="compound">Element</ref> []</type>
+          <declname>inputs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" line="30" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_class_library_1_1model_1_1_section_1a4bb649d25002e9ee5e7024628c27192f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ClassLibrary.model.Section.Count</definition>
+        <argsstring>()</argsstring>
+        <name>Count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" line="42" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" bodystart="42" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>stores a section of the form </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" line="10" column="1" bodyfile="C:/Users/fgeissle/source/repos/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/Legacy/ClassLibraryLegacy/Model/Section.cs" bodystart="9" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_class_library_1_1model_1_1_section_1a4bb649d25002e9ee5e7024628c27192f" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Section</scope><name>Count</name></member>
+      <member refid="class_class_library_1_1model_1_1_section_1a0a6b224da9abcb0b6bc531875b6ab88a" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Section</scope><name>inputsAndHeadings</name></member>
+      <member refid="class_class_library_1_1model_1_1_section_1a4b11dc6762605f645e9df241b3f0b698" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Section</scope><name>InputsAndHeadings</name></member>
+      <member refid="class_class_library_1_1model_1_1_section_1a75ced4ef5030417fbb973702bbc7abf5" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Section</scope><name>Section</name></member>
+      <member refid="class_class_library_1_1model_1_1_section_1a759a3162bf978f6cbad047db9a1beee0" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Section</scope><name>Section</name></member>
+      <member refid="class_class_library_1_1model_1_1_section_1a06bd8414c4432e223321ec33c6ac8ec9" prot="public" virt="non-virtual"><scope>ClassLibrary::model::Section</scope><name>Section</name></member>
+      <member refid="class_class_library_1_1model_1_1_section_1abd71c1ec5a0b071d3f592525f527e267" prot="private" virt="non-virtual"><scope>ClassLibrary::model::Section</scope><name>section</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

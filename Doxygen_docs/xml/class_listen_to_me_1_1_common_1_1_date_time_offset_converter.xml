@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_common_1_1_date_time_offset_converter" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::Common::DateTimeOffsetConverter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IValueConverter</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_date_time_offset_converter_1afe759bf69875dd6ce92331655502f189" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>object ListenToMe.Common.DateTimeOffsetConverter.Convert</definition>
+        <argsstring>(object value, Type targetType, object parameter, string language)</argsstring>
+        <name>Convert</name>
+        <param>
+          <type>object</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>Type</type>
+          <declname>targetType</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>parameter</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Convert a DateTime to a DateTimeOffset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The DateTime to convert</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>targetType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ignored.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ignored.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ignored.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/DateTimeOffsetConverter.cs" line="35" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/DateTimeOffsetConverter.cs" bodystart="35" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_date_time_offset_converter_1aef90b6e6edb5fffaf53c91cdf25bcb3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>object ListenToMe.Common.DateTimeOffsetConverter.ConvertBack</definition>
+        <argsstring>(object value, Type targetType, object parameter, string language)</argsstring>
+        <name>ConvertBack</name>
+        <param>
+          <type>object</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>Type</type>
+          <declname>targetType</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>parameter</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Convert a DateTimeOffset to a DateTime. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DateTimeOffset to convert.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>targetType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ignored.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ignored.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ignored.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/DateTimeOffsetConverter.cs" line="63" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/DateTimeOffsetConverter.cs" bodystart="63" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Convert a DateTime to a DateTimeOffset for use by a DatePicker, and back to allow for two-day data-binding. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="61">
+        <label>ListenToMe.Common.DateTimeOffsetConverter</label>
+        <link refid="class_listen_to_me_1_1_common_1_1_date_time_offset_converter"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>IValueConverter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="63">
+        <label>ListenToMe.Common.DateTimeOffsetConverter</label>
+        <link refid="class_listen_to_me_1_1_common_1_1_date_time_offset_converter"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>IValueConverter</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/DateTimeOffsetConverter.cs" line="26" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/DateTimeOffsetConverter.cs" bodystart="25" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_common_1_1_date_time_offset_converter_1afe759bf69875dd6ce92331655502f189" prot="public" virt="non-virtual"><scope>ListenToMe::Common::DateTimeOffsetConverter</scope><name>Convert</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_date_time_offset_converter_1aef90b6e6edb5fffaf53c91cdf25bcb3c" prot="public" virt="non-virtual"><scope>ListenToMe::Common::DateTimeOffsetConverter</scope><name>ConvertBack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

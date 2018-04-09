@@ -1,0 +1,4 @@
+<map id="ListenToMe.LoginPage.loginButton_ClickAsync" name="ListenToMe.LoginPage.loginButton_ClickAsync">
+<area shape="rect" id="node2" href="$class_listen_to_me_1_1_login_page.html#af6692799b00ea2ad405a7af8dff73ad3" title="adds a user credential to the password vault " alt="" coords="245,5,427,47"/>
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_login_page.html#a08d3ad9382e4aa77a5e7781eb393dd10" title="navigates the frame if logged in sucessfully " alt="" coords="239,71,433,112"/>
+</map>

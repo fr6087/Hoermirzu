@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="readme_8md" kind="file" language="Markdown">
+    <compoundname>readme.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>Use<sp/>Azure<sp/>app<sp/>service<sp/>editor</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>make<sp/>code<sp/>change<sp/>in<sp/>the<sp/>online<sp/>editor</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>open<sp/>the<sp/>console<sp/>window<sp/>and<sp/>run</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">build.cmd</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Use<sp/>Visual<sp/>Studio<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Build<sp/>and<sp/>debug</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>download<sp/>source<sp/>code<sp/>zip<sp/>and<sp/>extract<sp/>source<sp/>in<sp/>local<sp/>folder</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>open<sp/>{PROJ_NAME}.sln<sp/>in<sp/>Visual<sp/>Studio</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>build<sp/>and<sp/>run<sp/>the<sp/>bot</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>download<sp/>and<sp/>run<sp/>[botframework-emulator](https://emulator.botframework.com/)</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>connect<sp/>the<sp/>emulator<sp/>to<sp/>http://localhost:3987</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Publish<sp/>back</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>Visual<sp/>Studio,<sp/>right<sp/>click<sp/>on<sp/>{PROJ_NAME}<sp/>and<sp/>select<sp/>&apos;Publish&apos;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>first<sp/>time<sp/>publish<sp/>after<sp/>downloading<sp/>source<sp/>code</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>In<sp/>the<sp/>publish<sp/>profiles<sp/>tab,<sp/>click<sp/>&apos;Import&apos;</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Browse<sp/>to<sp/>&apos;PostDeployScripts&apos;<sp/>and<sp/>pick<sp/>&apos;{SITE_NAME}.publishSettings&apos;</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Use<sp/>continuous<sp/>integration</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>have<sp/>setup<sp/>continuous<sp/>integration,<sp/>then<sp/>your<sp/>bot<sp/>will<sp/>automatically<sp/>deployed<sp/>when<sp/>new<sp/>changes<sp/>are<sp/>pushed<sp/>to<sp/>the<sp/>source<sp/>repository.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Add<sp/>new<sp/>languages</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>add<sp/>new<sp/>languages<sp/>by<sp/>using<sp/>the<sp/>resgen.exe<sp/>tool<sp/>of<sp/>visual<sp/>studio.<sp/>The<sp/>multilingual<sp/>App<sp/>Toolkit<sp/>doesn&apos;t<sp/>work<sp/>on<sp/>this<sp/>project</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="readme.md"/>
+  </compounddef>
+</doxygen>

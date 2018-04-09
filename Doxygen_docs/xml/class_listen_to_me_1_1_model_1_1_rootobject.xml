@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_model_1_1_rootobject" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::Model::Rootobject</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_rootobject_1adad3e848ab548426bf08f2a4e72406d9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ListenToMe.Model.Rootobject.query</definition>
+        <argsstring></argsstring>
+        <name>query</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" line="142" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_rootobject_1a01604703f06c73a21555365a7619b6a5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_listen_to_me_1_1_model_1_1_topscoringintent" kindref="compound">Topscoringintent</ref></type>
+        <definition>Topscoringintent ListenToMe.Model.Rootobject.topScoringIntent</definition>
+        <argsstring></argsstring>
+        <name>topScoringIntent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" line="144" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_rootobject_1ad59ca4d5e32b1963884203c0e83c8e18" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_listen_to_me_1_1_model_1_1_intent" kindref="compound">Intent</ref>[]</type>
+        <definition>Intent [] ListenToMe.Model.Rootobject.intents</definition>
+        <argsstring></argsstring>
+        <name>intents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" line="146" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_rootobject_1a95eb6979506b4876f2fd9ef010706d1f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_listen_to_me_1_1_model_1_1_entity" kindref="compound">Entity</ref>[]</type>
+        <definition>Entity [] ListenToMe.Model.Rootobject.entities</definition>
+        <argsstring></argsstring>
+        <name>entities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" line="148" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>models the default LUIS Http-answer which consiscts in a json object providing propabilities of intens together with entity model </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" line="140" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Model/Proxy.cs" bodystart="139" bodyend="149"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_model_1_1_rootobject_1a95eb6979506b4876f2fd9ef010706d1f" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Rootobject</scope><name>entities</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_rootobject_1ad59ca4d5e32b1963884203c0e83c8e18" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Rootobject</scope><name>intents</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_rootobject_1adad3e848ab548426bf08f2a4e72406d9" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Rootobject</scope><name>query</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_rootobject_1a01604703f06c73a21555365a7619b6a5" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Rootobject</scope><name>topScoringIntent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

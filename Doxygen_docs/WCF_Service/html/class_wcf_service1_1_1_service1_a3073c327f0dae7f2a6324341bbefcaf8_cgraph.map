@@ -1,0 +1,7 @@
+<map id="WcfService1.Service1.TalkToTheBotAsync" name="WcfService1.Service1.TalkToTheBotAsync">
+<area shape="rect" id="node2" href="$class_wcf_service1_1_1_service1_factory.html#ae1204f90d6f8c4fcd4ad6b95cb6815b7" title="WcfService1.Service1Factory.\lGetImplementation" alt="" coords="228,5,423,47"/>
+<area shape="rect" id="node3" href="$class_wcf_service1_1_1_service_class.html#a9c82b9884f5da75aad18624ff0f74115" title="WcfService1.ServiceClass.\lTalkToTheBotAsync" alt="" coords="237,71,414,112"/>
+<area shape="rect" id="node4" href="$class_wcf_service1_1_1_cortana_direct_line_client.html#a71a4d8cff19707b3f6cb0c559b8104f7" title="opens a DirectLine channel to the bot " alt="" coords="943,92,1120,133"/>
+<area shape="rect" id="node5" href="$class_wcf_service1_1_1_cortana_direct_line_client.html#ad9aee7d49dab0e3bb8806349b68716b3" title="sends a message to the bot and retrieves da response for it " alt="" coords="471,100,669,141"/>
+<area shape="rect" id="node6" href="$class_wcf_service1_1_1_cortana_direct_line_client.html#a0bc2576ae50d7eafd2092bb9cf7e6f7c" title="retrieves a response from the bot " alt="" coords="717,151,895,192"/>
+</map>

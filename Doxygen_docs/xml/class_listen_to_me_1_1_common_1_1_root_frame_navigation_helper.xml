@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::Common::RootFrameNavigationHelper</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1ab9ed9b25dd17d7ea1982303c5d6e0116" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Frame</type>
+        <definition>Frame ListenToMe.Common.RootFrameNavigationHelper.Frame</definition>
+        <argsstring></argsstring>
+        <name>Frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="175" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1afdf46fe40c7351f2eeba5d76a8301dc5" prot="private" static="no" mutable="no">
+        <type>SystemNavigationManager</type>
+        <definition>SystemNavigationManager ListenToMe.Common.RootFrameNavigationHelper.systemNavigationManager</definition>
+        <argsstring></argsstring>
+        <name>systemNavigationManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="176" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1a4c7cd3f089e03e6c1c7700054992185e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.Common.RootFrameNavigationHelper.RootFrameNavigationHelper</definition>
+        <argsstring>(Frame rootFrame)</argsstring>
+        <name>RootFrameNavigationHelper</name>
+        <param>
+          <type>Frame</type>
+          <declname>rootFrame</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the RootNavigationHelper class. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rootFrame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the top-level frame. This reference allows for frame manipulation and to register navigation handlers.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="183" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="183" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1abe5766b86ae071ae6eebb19749404005" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ListenToMe.Common.RootFrameNavigationHelper.TryGoBack</definition>
+        <argsstring>()</argsstring>
+        <name>TryGoBack</name>
+        <briefdescription>
+<para>navigates the frame to the last page it contained. If there is no last page, it will not navigate </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>whether or not the navigation failed</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="206" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="206" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1a39b381da6acb50b24c85175b6da8ee12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ListenToMe.Common.RootFrameNavigationHelper.TryGoForward</definition>
+        <argsstring>()</argsstring>
+        <name>TryGoForward</name>
+        <briefdescription>
+<para>navigates the frame to the next page. only works if frame has been at some point navigated backwards though page history. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>whether or not the navigation failed</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="220" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="220" bodyend="229"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1a4dcd8580ff37283df8ef768df8e9e053" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.Common.RootFrameNavigationHelper.SystemNavigationManager_BackRequested</definition>
+        <argsstring>(object sender, BackRequestedEventArgs e)</argsstring>
+        <name>SystemNavigationManager_BackRequested</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>BackRequestedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>overloads the BackRequestedEvent of the SystemNavigationManager. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="236" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="236" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1a2e457b1de95e0aa4a5ffbdda789c7457" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.Common.RootFrameNavigationHelper.UpdateBackButton</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateBackButton</name>
+        <briefdescription>
+<para>updates the Backbutton which may be visible on the screen or not. If there is no going back, it hides the goBack-Button </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="247" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="247" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1a552e6b81998514081475eaba4643e70a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.Common.RootFrameNavigationHelper.CoreDispatcher_AcceleratorKeyActivated</definition>
+        <argsstring>(CoreDispatcher sender, AcceleratorKeyEventArgs e)</argsstring>
+        <name>CoreDispatcher_AcceleratorKeyActivated</name>
+        <param>
+          <type>CoreDispatcher</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>AcceleratorKeyEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Invoked on every keystroke, including system keys such as Alt key combinations. Used to detect keyboard navigation between pages even when the page itself doesn&apos;t have focus. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance that triggered the event.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event data describing the conditions that led to the event.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="260" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="260" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1a5f851d88b534395544257b03b81afe3f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.Common.RootFrameNavigationHelper.CoreWindow_PointerPressed</definition>
+        <argsstring>(CoreWindow sender, PointerEventArgs e)</argsstring>
+        <name>CoreWindow_PointerPressed</name>
+        <param>
+          <type>CoreWindow</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>PointerEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Invoked on every mouse click, touch screen tap, or equivalent interaction. Used to detect browser-style next and previous mouse button clicks to navigate between pages. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance that triggered the event.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event data describing the conditions that led to the event.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="302" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="302" bodyend="321"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>registers for standard mouse and keyboard shortcuts used to go back and forward. There should be only one instance of this class per view, and it should be associated with the root frame. </para>    </briefdescription>
+    <detaileddescription>
+<para>To make use of <ref refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper" kindref="compound">RootFrameNavigationHelper</ref>, create an instance of the RootNavigationHelper such as in the constructor of your root page. <programlisting><codeline><highlight class="normal">public<sp/>MyRootPage()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>this.InitializeComponent();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>this.rootNavigationHelper<sp/>=<sp/>new<sp/>RootNavigationHelper(MyFrame);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <location file="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" line="174" column="1" bodyfile="C:/Users/user/source/repos/Hoermirzu/ListenToMe-master-89f0b49594deaade7bfad24dad062ff16eca36da/ListenToMe/Common/NavigationHelper.cs" bodystart="173" bodyend="322"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1a552e6b81998514081475eaba4643e70a" prot="private" virt="non-virtual"><scope>ListenToMe::Common::RootFrameNavigationHelper</scope><name>CoreDispatcher_AcceleratorKeyActivated</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1a5f851d88b534395544257b03b81afe3f" prot="private" virt="non-virtual"><scope>ListenToMe::Common::RootFrameNavigationHelper</scope><name>CoreWindow_PointerPressed</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1ab9ed9b25dd17d7ea1982303c5d6e0116" prot="public" virt="non-virtual"><scope>ListenToMe::Common::RootFrameNavigationHelper</scope><name>Frame</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1a4c7cd3f089e03e6c1c7700054992185e" prot="public" virt="non-virtual"><scope>ListenToMe::Common::RootFrameNavigationHelper</scope><name>RootFrameNavigationHelper</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1afdf46fe40c7351f2eeba5d76a8301dc5" prot="private" virt="non-virtual"><scope>ListenToMe::Common::RootFrameNavigationHelper</scope><name>systemNavigationManager</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1a4dcd8580ff37283df8ef768df8e9e053" prot="private" virt="non-virtual"><scope>ListenToMe::Common::RootFrameNavigationHelper</scope><name>SystemNavigationManager_BackRequested</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1abe5766b86ae071ae6eebb19749404005" prot="public" virt="non-virtual"><scope>ListenToMe::Common::RootFrameNavigationHelper</scope><name>TryGoBack</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1a39b381da6acb50b24c85175b6da8ee12" prot="public" virt="non-virtual"><scope>ListenToMe::Common::RootFrameNavigationHelper</scope><name>TryGoForward</name></member>
+      <member refid="class_listen_to_me_1_1_common_1_1_root_frame_navigation_helper_1a2e457b1de95e0aa4a5ffbdda789c7457" prot="private" virt="non-virtual"><scope>ListenToMe::Common::RootFrameNavigationHelper</scope><name>UpdateBackButton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

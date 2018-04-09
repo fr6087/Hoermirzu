@@ -1,0 +1,125 @@
+\hypertarget{detectsniff_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/detectsniff.js File Reference}
+\label{detectsniff_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/detectsniff.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/detectsniff.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{detectsniff_8js_ad96c8bd5761b78693c1f5953cfbc43f6}{if} (system.\+args.\+length===1)
+\item 
+console \hyperlink{detectsniff_8js_a1bda0a62881efb0bb0a13b5707dc33c4}{log} (\textquotesingle{}Checking \textquotesingle{}+\hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{address}+ \textquotesingle{}...\textquotesingle{})
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{detectsniff_8js_ac560ccdfb81beb48496f4cbce84a6720}{open} (\hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{address}, function(status)\{\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(status!== \textquotesingle{}success\textquotesingle{})\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}F\+A\+IL to load the \hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{address}\textquotesingle{});\hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();\}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{page__events_8js_ade245ee708b346c7f822a576459e3674}{window.\+set\+Timeout}(function()\{                                                       \hyperlink{detectsniff_8js_afd2f79f41766376b706342f1fdc49a62}{sniffed}=\hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{page.\+evaluate}(function()\{                                                                       return \hyperlink{detectsniff_8js_afd2f79f41766376b706342f1fdc49a62}{navigator.\+sniffed};                                                       \});                                                       \hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(\hyperlink{detectsniff_8js_afd2f79f41766376b706342f1fdc49a62}{sniffed})\{                                                                       \hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}The \hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} tried to sniff the user agent.\textquotesingle{});                                                       \}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{                                                                       \hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}The \hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} did not \hyperlink{echo_to_file_8js_abe4cc9788f52e49485473dc699537388}{try} to sniff the user agent.\textquotesingle{});                                                       \}                                                       \hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();                                       \}, 1500);\}\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{detectsniff_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{detectsniff_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\item 
+var \hyperlink{detectsniff_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system} = require(\textquotesingle{}system\textquotesingle{})
+\item 
+var \hyperlink{detectsniff_8js_afd2f79f41766376b706342f1fdc49a62}{sniffed}
+\item 
+var \hyperlink{detectsniff_8js_a2f48084defc0a4df2c31dac40f213f94}{address}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{detectsniff_8js_a54c7495028ac9167fd70c44348a1fbb9}{on\+Initialized}
+\item 
+\hyperlink{detectsniff_8js_a0544c3fe466e421738dae463968b70ba}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{detectsniff.\+js@{detectsniff.\+js}!if@{if}}
+\index{if@{if}!detectsniff.\+js@{detectsniff.\+js}}
+\subsubsection[{\texorpdfstring{if(system.\+args.\+length===1)}{if(system.args.length===1)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{system.\+args.}]{length = {\ttfamily ==~1}}
+\end{DoxyParamCaption}
+)}\hypertarget{detectsniff_8js_ad96c8bd5761b78693c1f5953cfbc43f6}{}\label{detectsniff_8js_ad96c8bd5761b78693c1f5953cfbc43f6}
+\index{detectsniff.\+js@{detectsniff.\+js}!log@{log}}
+\index{log@{log}!detectsniff.\+js@{detectsniff.\+js}}
+\subsubsection[{\texorpdfstring{log(\textquotesingle{}\+Checking \textquotesingle{}+address+ \textquotesingle{}...\textquotesingle{})}{log('Checking '+address+ '...')}}]{\setlength{\rightskip}{0pt plus 5cm}console log (
+\begin{DoxyParamCaption}
+\item[{\textquotesingle{}Checking \textquotesingle{}+{\bf address}+ \textquotesingle{}...\textquotesingle{}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{detectsniff_8js_a1bda0a62881efb0bb0a13b5707dc33c4}{}\label{detectsniff_8js_a1bda0a62881efb0bb0a13b5707dc33c4}
+
+
+Referenced by create\+H\+A\+R().
+
+
+
+Here is the caller graph for this function\+:
+% FIG 0
+
+
+\index{detectsniff.\+js@{detectsniff.\+js}!open@{open}}
+\index{open@{open}!detectsniff.\+js@{detectsniff.\+js}}
+\subsubsection[{\texorpdfstring{open(address, function(status)\lcurly{}if(status"!== \textquotesingle{}success\textquotesingle{})\lcurly{}console.\+log(\textquotesingle{}\+F\+A\+I\+L to load the address\textquotesingle{});phantom.\+exit();\rcurly{}else\lcurly{}window.\+set\+Timeout(function()\lcurly{}                                                       sniffed=page.\+evaluate(function()\lcurly{}                                                                       return navigator.\+sniffed;                                                       \rcurly{});                                                       if(sniffed)\lcurly{}                                                                       console.\+log(\textquotesingle{}\+The page tried to sniff the user agent.\textquotesingle{});                                                       \rcurly{}else\lcurly{}                                                                       console.\+log(\textquotesingle{}\+The page did not try to sniff the user agent.\textquotesingle{});                                                       \rcurly{}                                                       phantom.\+exit();                                       \rcurly{}, 1500);\rcurly{}\rcurly{})}{open(address, function(status)\{if(status!== 'success')\{console.log('FAIL to load the address');phantom.exit();\}else\{window.setTimeout(function()\{                                                       sniffed=page.evaluate(function()\{                                                                       return navigator.sniffed;                                                       \});                                                       if(sniffed)\{                                                                       console.log('The page tried to sniff the user agent.');                                                       \}else\{                                                                       console.log('The page did not try to sniff the user agent.');                                                       \}                                                       phantom.exit();                                       \}, 1500);\}\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} open (
+\begin{DoxyParamCaption}
+\item[{{\bf address}}]{, }
+\item[{function(status)\{{\bf if}(status!== \textquotesingle{}success\textquotesingle{})\{{\bf console.\+log}(\textquotesingle{}F\+A\+IL to load the {\bf address}\textquotesingle{});{\bf phantom.\+exit}();\}{\bf else}\{{\bf window.\+set\+Timeout}(function()\{                                                                                                                                                                                                                   {\bf sniffed}={\bf page.\+evaluate}(function()\{                                                                                                                                                                                                                                                                                   return {\bf navigator.\+sniffed};                                                                                                                                                                                                                   \});                                                                                                                                                                                                                   {\bf if}({\bf sniffed})\{                                                                                                                                                                                                                                                                                   {\bf console.\+log}(\textquotesingle{}The {\bf page} tried to sniff the user agent.\textquotesingle{});                                                                                                                                                                                                                   \}{\bf else}\{                                                                                                                                                                                                                                                                                   {\bf console.\+log}(\textquotesingle{}The {\bf page} did not {\bf try} to sniff the user agent.\textquotesingle{});                                                                                                                                                                                                                   \}                                                                                                                                                                                                                   {\bf phantom.\+exit}();                                                                                                                                                   \}, 1500);\}\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{detectsniff_8js_ac560ccdfb81beb48496f4cbce84a6720}{}\label{detectsniff_8js_ac560ccdfb81beb48496f4cbce84a6720}
+
+
+\subsection{Variable Documentation}
+\index{detectsniff.\+js@{detectsniff.\+js}!address@{address}}
+\index{address@{address}!detectsniff.\+js@{detectsniff.\+js}}
+\subsubsection[{\texorpdfstring{address}{address}}]{\setlength{\rightskip}{0pt plus 5cm}var address}\hypertarget{detectsniff_8js_a2f48084defc0a4df2c31dac40f213f94}{}\label{detectsniff_8js_a2f48084defc0a4df2c31dac40f213f94}
+
+
+Referenced by create\+H\+A\+R().
+
+\index{detectsniff.\+js@{detectsniff.\+js}!else@{else}}
+\index{else@{else}!detectsniff.\+js@{detectsniff.\+js}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}else}\hypertarget{detectsniff_8js_a0544c3fe466e421738dae463968b70ba}{}\label{detectsniff_8js_a0544c3fe466e421738dae463968b70ba}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \hyperlink{detectsniff_8js_a2f48084defc0a4df2c31dac40f213f94}{address} = \hyperlink{detectsniff_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system}.args[1]
+\end{DoxyCode}
+\index{detectsniff.\+js@{detectsniff.\+js}!on\+Initialized@{on\+Initialized}}
+\index{on\+Initialized@{on\+Initialized}!detectsniff.\+js@{detectsniff.\+js}}
+\subsubsection[{\texorpdfstring{on\+Initialized}{onInitialized}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} on\+Initialized}\hypertarget{detectsniff_8js_a54c7495028ac9167fd70c44348a1fbb9}{}\label{detectsniff_8js_a54c7495028ac9167fd70c44348a1fbb9}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function} () \{
+    \hyperlink{detectsniff_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page}.evaluate(\textcolor{keyword}{function} () \{
+
+        (\textcolor{keyword}{function} () \{
+            var \hyperlink{useragent_8js_a81e21da6263dfc6bd8faa5e3e9cbed9a}{userAgent} = window.navigator.userAgent,
+                platform = window.navigator.platform;
+
+            window.navigator = \{
+                appCodeName: \textcolor{stringliteral}{'Mozilla'},
+                appName: \textcolor{stringliteral}{'Netscape'},
+                cookieEnabled: \textcolor{keyword}{false},
+                \hyperlink{detectsniff_8js_afd2f79f41766376b706342f1fdc49a62}{sniffed}: \textcolor{keyword}{false}
+            \};
+
+            window.navigator.\_\_defineGetter\_\_(\textcolor{stringliteral}{'userAgent'}, \textcolor{keyword}{function} () \{
+                window.navigator.sniffed = \textcolor{keyword}{true};
+                \textcolor{keywordflow}{return} \hyperlink{useragent_8js_a81e21da6263dfc6bd8faa5e3e9cbed9a}{userAgent};
+            \});
+
+            window.navigator.\_\_defineGetter\_\_(\textcolor{stringliteral}{'platform'}, \textcolor{keyword}{function} () \{
+                window.navigator.sniffed = \textcolor{keyword}{true};
+                \textcolor{keywordflow}{return} platform;
+            \});
+        \})();
+    \});
+\}
+\end{DoxyCode}
+\index{detectsniff.\+js@{detectsniff.\+js}!page@{page}}
+\index{page@{page}!detectsniff.\+js@{detectsniff.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{detectsniff_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{detectsniff_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+\index{detectsniff.\+js@{detectsniff.\+js}!sniffed@{sniffed}}
+\index{sniffed@{sniffed}!detectsniff.\+js@{detectsniff.\+js}}
+\subsubsection[{\texorpdfstring{sniffed}{sniffed}}]{\setlength{\rightskip}{0pt plus 5cm}var sniffed}\hypertarget{detectsniff_8js_afd2f79f41766376b706342f1fdc49a62}{}\label{detectsniff_8js_afd2f79f41766376b706342f1fdc49a62}
+\index{detectsniff.\+js@{detectsniff.\+js}!strict@{strict}}
+\index{strict@{strict}!detectsniff.\+js@{detectsniff.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{detectsniff_8js_ae2475e10618961c050dcba04e8c42331}{}\label{detectsniff_8js_ae2475e10618961c050dcba04e8c42331}
+\index{detectsniff.\+js@{detectsniff.\+js}!system@{system}}
+\index{system@{system}!detectsniff.\+js@{detectsniff.\+js}}
+\subsubsection[{\texorpdfstring{system}{system}}]{\setlength{\rightskip}{0pt plus 5cm}var system = require(\textquotesingle{}system\textquotesingle{})}\hypertarget{detectsniff_8js_acdb77dc97eb44e91baaadd41d9d078fc}{}\label{detectsniff_8js_acdb77dc97eb44e91baaadd41d9d078fc}

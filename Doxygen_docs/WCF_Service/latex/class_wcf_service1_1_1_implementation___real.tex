@@ -1,0 +1,243 @@
+\hypertarget{class_wcf_service1_1_1_implementation___real}{}\section{Wcf\+Service1.\+Implementation\+\_\+\+Real Class Reference}
+\label{class_wcf_service1_1_1_implementation___real}\index{Wcf\+Service1.\+Implementation\+\_\+\+Real@{Wcf\+Service1.\+Implementation\+\_\+\+Real}}
+
+
+Inheritance diagram for Wcf\+Service1.\+Implementation\+\_\+\+Real\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_wcf_service1_1_1_implementation___real__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wcf\+Service1.\+Implementation\+\_\+\+Real\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_wcf_service1_1_1_implementation___real__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override List$<$ Section $>$ \hyperlink{class_wcf_service1_1_1_implementation___real_a6cedd1da2b421038727ed52afaf7197e}{Get\+All\+Elements} (string username, string password)
+\item 
+override string \hyperlink{class_wcf_service1_1_1_implementation___real_a82b0d0cc9a634454bfa583f55eb13dad}{Get\+Form} (string username, string password)
+\item 
+override string \hyperlink{class_wcf_service1_1_1_implementation___real_aec1081c3a83135e9f11ea182ca3e9321}{Login} (string user\+Name, string password)
+\item 
+override bool \hyperlink{class_wcf_service1_1_1_implementation___real_ac95892552f6beb92e0557abde468a5a1}{Upload\+Section} (Section section)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_wcf_service1_1_1_implementation___real_a15223fee34324eadbaf60510013d78c0}{cut\+Leading\+Number\+From\+Heading} (Element element)
+\item 
+string \hyperlink{class_wcf_service1_1_1_implementation___real_a79882899922f4204592c464a2cb6a71d}{Clean\+String\+From\+H\+T\+ML} (string to\+Clean)
+\begin{DoxyCompactList}\small\item\em cleans a text from Htlm decoded values. I found that Http\+Utility.\+Decode() is not working on this correctly, when there are two \& \textquotesingle{}s behind each other as in the patterns sometimes the caase reference\+: \href{http://weblogs.sqlteam.com/mladenp/archive/2008/10/21/Different-ways-how-to-escape-an-XML-string-in-C.aspx}{\tt http\+://weblogs.\+sqlteam.\+com/mladenp/archive/2008/10/21/\+Different-\/ways-\/how-\/to-\/escape-\/an-\/\+X\+M\+L-\/string-\/in-\/\+C.\+aspx} \end{DoxyCompactList}\item 
+Html\+Node \hyperlink{class_wcf_service1_1_1_implementation___real_ac320b296695abc0db1ff6266f7d39dda}{select\+Child\+Node} (Html\+Node node)
+\begin{DoxyCompactList}\small\item\em selects a specific child node from the dropdown list node \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wcf_service1_1_1_website_crawler}{Website\+Crawler} \hyperlink{class_wcf_service1_1_1_implementation___real_a670aed6bbd357da19134e8f8c3c907a9}{wc} = new \hyperlink{class_wcf_service1_1_1_website_crawler}{Website\+Crawler}()
+\begin{DoxyCompactList}\small\item\em the headless browser used to connect to the form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}!Clean\+String\+From\+H\+T\+ML@{Clean\+String\+From\+H\+T\+ML}}
+\index{Clean\+String\+From\+H\+T\+ML@{Clean\+String\+From\+H\+T\+ML}!Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}}
+\subsubsection[{\texorpdfstring{Clean\+String\+From\+H\+T\+M\+L(string to\+Clean)}{CleanStringFromHTML(string toClean)}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Implementation\+\_\+\+Real.\+Clean\+String\+From\+H\+T\+ML (
+\begin{DoxyParamCaption}
+\item[{string}]{to\+Clean}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_implementation___real_a79882899922f4204592c464a2cb6a71d}{}\label{class_wcf_service1_1_1_implementation___real_a79882899922f4204592c464a2cb6a71d}
+
+
+cleans a text from Htlm decoded values. I found that Http\+Utility.\+Decode() is not working on this correctly, when there are two \& \textquotesingle{}s behind each other as in the patterns sometimes the caase reference\+: \href{http://weblogs.sqlteam.com/mladenp/archive/2008/10/21/Different-ways-how-to-escape-an-XML-string-in-C.aspx}{\tt http\+://weblogs.\+sqlteam.\+com/mladenp/archive/2008/10/21/\+Different-\/ways-\/how-\/to-\/escape-\/an-\/\+X\+M\+L-\/string-\/in-\/\+C.\+aspx} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Clean} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___real_a79882899922f4204592c464a2cb6a71d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}!cut\+Leading\+Number\+From\+Heading@{cut\+Leading\+Number\+From\+Heading}}
+\index{cut\+Leading\+Number\+From\+Heading@{cut\+Leading\+Number\+From\+Heading}!Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}}
+\subsubsection[{\texorpdfstring{cut\+Leading\+Number\+From\+Heading(\+Element element)}{cutLeadingNumberFromHeading(Element element)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wcf\+Service1.\+Implementation\+\_\+\+Real.\+cut\+Leading\+Number\+From\+Heading (
+\begin{DoxyParamCaption}
+\item[{Element}]{element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_implementation___real_a15223fee34324eadbaf60510013d78c0}{}\label{class_wcf_service1_1_1_implementation___real_a15223fee34324eadbaf60510013d78c0}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___real_a15223fee34324eadbaf60510013d78c0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}!Get\+All\+Elements@{Get\+All\+Elements}}
+\index{Get\+All\+Elements@{Get\+All\+Elements}!Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}}
+\subsubsection[{\texorpdfstring{Get\+All\+Elements(string username, string password)}{GetAllElements(string username, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}override List$<$Section$>$ Wcf\+Service1.\+Implementation\+\_\+\+Real.\+Get\+All\+Elements (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wcf_service1_1_1_implementation___real_a6cedd1da2b421038727ed52afaf7197e}{}\label{class_wcf_service1_1_1_implementation___real_a6cedd1da2b421038727ed52afaf7197e}
+string.\+Is\+Null\+Or\+White\+Space(element.\+Text)\&\& 
+
+Implements \hyperlink{class_wcf_service1_1_1_service_class_ac0640daeb28fada4b6f80a2b66b0ec3e}{Wcf\+Service1.\+Service\+Class}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___real_a6cedd1da2b421038727ed52afaf7197e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}!Get\+Form@{Get\+Form}}
+\index{Get\+Form@{Get\+Form}!Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}}
+\subsubsection[{\texorpdfstring{Get\+Form(string username, string password)}{GetForm(string username, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}override string Wcf\+Service1.\+Implementation\+\_\+\+Real.\+Get\+Form (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wcf_service1_1_1_implementation___real_a82b0d0cc9a634454bfa583f55eb13dad}{}\label{class_wcf_service1_1_1_implementation___real_a82b0d0cc9a634454bfa583f55eb13dad}
+
+
+Implements \hyperlink{class_wcf_service1_1_1_service_class_a791350c6bf7ba90f63f95e1b935dde3b}{Wcf\+Service1.\+Service\+Class}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___real_a82b0d0cc9a634454bfa583f55eb13dad_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___real_a82b0d0cc9a634454bfa583f55eb13dad_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}!Login@{Login}}
+\index{Login@{Login}!Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}}
+\subsubsection[{\texorpdfstring{Login(string user\+Name, string password)}{Login(string userName, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}override string Wcf\+Service1.\+Implementation\+\_\+\+Real.\+Login (
+\begin{DoxyParamCaption}
+\item[{string}]{user\+Name, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wcf_service1_1_1_implementation___real_aec1081c3a83135e9f11ea182ca3e9321}{}\label{class_wcf_service1_1_1_implementation___real_aec1081c3a83135e9f11ea182ca3e9321}
+
+
+Implements \hyperlink{class_wcf_service1_1_1_service_class_a023c63c6a95132c7f2b9754c1bb41c80}{Wcf\+Service1.\+Service\+Class}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___real_aec1081c3a83135e9f11ea182ca3e9321_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___real_aec1081c3a83135e9f11ea182ca3e9321_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}!select\+Child\+Node@{select\+Child\+Node}}
+\index{select\+Child\+Node@{select\+Child\+Node}!Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}}
+\subsubsection[{\texorpdfstring{select\+Child\+Node(\+Html\+Node node)}{selectChildNode(HtmlNode node)}}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Node Wcf\+Service1.\+Implementation\+\_\+\+Real.\+select\+Child\+Node (
+\begin{DoxyParamCaption}
+\item[{Html\+Node}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_implementation___real_ac320b296695abc0db1ff6266f7d39dda}{}\label{class_wcf_service1_1_1_implementation___real_ac320b296695abc0db1ff6266f7d39dda}
+
+
+selects a specific child node from the dropdown list node 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_implementation___real_ac320b296695abc0db1ff6266f7d39dda_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}!Upload\+Section@{Upload\+Section}}
+\index{Upload\+Section@{Upload\+Section}!Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}}
+\subsubsection[{\texorpdfstring{Upload\+Section(\+Section section)}{UploadSection(Section section)}}]{\setlength{\rightskip}{0pt plus 5cm}override bool Wcf\+Service1.\+Implementation\+\_\+\+Real.\+Upload\+Section (
+\begin{DoxyParamCaption}
+\item[{Section}]{section}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wcf_service1_1_1_implementation___real_ac95892552f6beb92e0557abde468a5a1}{}\label{class_wcf_service1_1_1_implementation___real_ac95892552f6beb92e0557abde468a5a1}
+
+
+Implements \hyperlink{class_wcf_service1_1_1_service_class_add477e49eab8927cc943dfb751dc976a}{Wcf\+Service1.\+Service\+Class}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}!wc@{wc}}
+\index{wc@{wc}!Wcf\+Service1\+::\+Implementation\+\_\+\+Real@{Wcf\+Service1\+::\+Implementation\+\_\+\+Real}}
+\subsubsection[{\texorpdfstring{wc}{wc}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Website\+Crawler} Wcf\+Service1.\+Implementation\+\_\+\+Real.\+wc = new {\bf Website\+Crawler}()\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_implementation___real_a670aed6bbd357da19134e8f8c3c907a9}{}\label{class_wcf_service1_1_1_implementation___real_a670aed6bbd357da19134e8f8c3c907a9}
+
+
+the headless browser used to connect to the form. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Wcf\+Service1/\hyperlink{_implementation___real_8cs}{Implementation\+\_\+\+Real.\+cs}\end{DoxyCompactItemize}

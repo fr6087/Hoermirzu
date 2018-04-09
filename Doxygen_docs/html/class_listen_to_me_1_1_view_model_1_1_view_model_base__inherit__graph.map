@@ -1,0 +1,4 @@
+<map id="ListenToMe.ViewModel.ViewModelBase" name="ListenToMe.ViewModel.ViewModelBase">
+<area shape="rect" id="node3" href="$class_listen_to_me_1_1_view_model_1_1_section_list_view_model.html" title="View Model controlling the behavior of a List view of Sections " alt="" coords="5,169,209,211"/>
+<area shape="rect" id="node4" href="$class_listen_to_me_1_1_view_model_1_1_section_view_model.html" title="View Model associated with SectionDetails.xaml. Provides access to an individual Section, and Commands for saving new, updating existing, and deleting Sections. Is able to both create brand new Sections, and edit existing Sections, hiding buttons that should not be accessible in some cases. " alt="" coords="233,169,437,211"/>
+</map>

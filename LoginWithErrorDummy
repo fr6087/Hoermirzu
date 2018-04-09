@@ -1,0 +1,222 @@
+<html><head>
+<script type="text/javascript">
+/*HTML Business for Java, 6.0*/
+ur_system = {doc : window.document , mimepath :"/com.sap.portal.design.urdesigndata/themes/portal/sap_tradeshow_plus/common/", stylepath : "/com.sap.portal.design.urdesigndata/themes/portal/sap_tradeshow_plus/ur/", is508 : false, domainrelaxing : "MINIMAL"};
+var popup_emptydoc = "/htmlb/jslib/emptyhover.html";</script>
+<link rel="stylesheet" href="/com.sap.portal.theming.webdav.themeswebdavlistener/Portal/prtl_std/sap_tradeshow_plus/sf3.css?v=7.50.5.1476955969739">
+
+<!-- EPCF: BOB Core -->
+<meta http-equiv="content-script-type" content="text/javascript">
+<script type="text/javascript" src="/com.sap.portal.epcf.loader/script/optimize/js13_epcf.js?d106b201a6f06a28aa8d9757e16c9a87"></script>
+<script type="text/javascript">
+<!--
+EPCM.relaxDocumentDomain();
+EPCM.init( {
+Level:1,
+DynamicTop:false, // [service=true nestedWinOnAlias=false]
+UAType:31, // [Safari]
+UAVersion:6.0,
+UAPlatform:1, // [Win]
+UIPMode:"1", // [Default=1, User=0, Personalize=true]
+UIPModeOptions:"",
+UIPWinFeatures:"",
+UIPPortalPath:"http://10.150.50.21:80/irj/portal",
+UIPPopupComp:"http://10.150.50.21:80/irj/servlet/prt/portal/prtroot/com.sap.portal.epcf.admin.WorkProtectPopup",
+UIPPopupCompSize:"dialogWidth:450px; dialogHeight:200px; status:no",
+UIPPopupMsgNN:"Ihre\x20aktuelle\x20Seite\x20enth\xe4lt\x20ungesicherte\x20Daten.\r\nM\xf6chten\x20Sie\x20mit\x20der\x20Navigation\x20fortfahren\x20und\x20ein\x20neues\x20Fenster\x20\xf6ffnen\x3f",
+UIPPopupMsgND:"Ihre\x20aktuelle\x20Seite\x20enth\xe4lt\x20ungesicherte\x20Daten.\r\nM\xf6chten\x20Sie\x20die\x20\xc4nderungen\x20verwerfen\x20und\x20den\x20Content\x20im\x20gleichen\x20Fenster\x20\xf6ffnen\x3f",
+DBGException:false,
+nervousFingerTimeout:"0",
+DBCookie:false
+} );
+EPCM.DSM.init( {
+TerminatorURL:"/irj/servlet/prt/portal/prtroot/com.sap.portal.dsm.Terminator",
+WinEmptyUrl:"/com.sap.portal.dsm/images/empty.gif",
+NavAcrossSubFramesUrl:"disabled",
+omitTerminationPopup:false,
+omitLogoffPopup:false,
+ForcedUserDebug:false,
+KeepAliveActive:false,
+KeepAliveDelta:840,
+dsmMethodGetKey:"",
+KeepAliveStopAfter:36000
+} );
+function SAPWP_receiveSessInfo( sessInfo, frameRef ){
+  EPCM.DSM.processSession( sessInfo, frameRef );
+}
+//-->
+</script>
+<!-- EPCF: EOB Core -->
+<title>BKO Kundenportal</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="STYLESHEET" href="/com.sap.portal.theming.webdav.themeswebdavlistener/UR/ur/sap_tradeshow_plus/sf3.css?rid=a9d48a43a79f84b8c7813d57e1749faa&amp;v=10.30.6.253519.1476955864101" type="text/css"></head><body class="prtlBody urFontBaseFam urScrl">
+<!-- EPCF: Component com.sap.portal.runtime.logon.certlogon, nahepkginjmmekapgemhepgaofjifjka -->
+<script>
+  var inPortalScript = true
+  var webpath = "/abk_custlogon/"
+</script>
+
+<script language="javascript">
+var originWindowName=window.name;
+window.name="logonAppPage";
+function restoreWindow() {
+try{
+window.name=originWindowName;
+} catch(ex){}
+}
+</script>
+<script language="JavaScript">
+function putFocus(formInst, elementInst) {
+  if (document.forms.length > 0) {
+    document.forms[formInst].elements[elementInst].focus();
+  }
+}
+
+function setValuesAutoCreation() {
+var form = document.getElementById('logonForm');
+form.j_username.value="";
+form.j_password.value="";
+form.automaticAccountCreation.value="true";
+}
+function submitForm() {
+var form = document.getElementById('logonForm');
+form.submit();
+}
+function clearEntries() {
+  document.logonForm.longUid.value="";
+  document.logonForm.password.value="";
+}
+function setFocusToFirstField() {
+ myform = document.logonForm;
+ try{
+   for (i=0; i<myform.length; i++) {
+    elem = myform.elements[i];
+    if (!elem.disabled) {
+      elemType = elem.type;
+      if (elemType=="text" || elemType=="password") {
+       if (!elem.readOnly && elem.value=="") {
+          elem.focus();
+          break;
+       }
+      }
+      if (elemType=="select-one" || elemType=="select-multiple" || elemType=="checkbox" || elemType=="radio") {
+        elem.focus();
+        break;
+      }
+    }
+   }
+ } catch(ex){
+ }
+}
+function addTenantPrefix() {
+  return true;
+}
+</script>
+<span id="UMELogon">
+<script language="JavaScript">
+if( window.EPCM != null ) {
+  EPCM.subscribeEvent( "urn:com.sapportals.portal:browser", "load", setFocusToFirstField );
+}
+</script>
+
+
+
+
+<link rel="stylesheet" href="/abk_custlogon//css/ur/ur_ilb.css">
+
+<table id="tblFrmUI" width="790px" valign="middle" dir="ltr" align="center" cellpadding="0" cellspacing="0" style="background-color:#ffffff;margin-top:50px;">
+	<tbody><tr>
+		<td><img src="/abk_custlogon/layout/lf_tl.png" width="29" height="32"></td>
+		<td background="/abk_custlogon/layout/lf_st.png"></td>
+		<td><img src="/abk_custlogon/layout/lf_tr.png" width="27" height="32"></td>
+	</tr>
+	<tr>
+		<td background="/abk_custlogon/layout/lf_sl.png"></td>
+		<td width="100%">
+		<table id="tblInnerCnt" dir="ltr" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td valign="top">
+				<div class="urBrandImage"><img src="/abk_custlogon/layout/branding-image-abk.jpg" alt="Branding Image" border="0"></div>
+				</td>
+				<td width="100%"></td>
+				<td>
+				<table height="380px" cellpadding="0" cellspacing="0">
+					<tbody><tr>
+						<td valign="top">
+						<div class="urProductName"><img src="/abk_custlogon/layout/branding-text.gif" alt="" border="0"></div>
+						 </td>
+					</tr>
+					<tr>
+						<td valign="top" align="left">
+						<div class="urLogonData"><!-- data table starts after this line --> <form autocomplete="off" id="logonForm" name="logonForm" target="logonAppPage" method="post" action="portal?login_submit=on&amp;login_do_redirect=1&amp;no_cert_storing=on&amp;uidPasswordLogon=Anmelden%3a+undefined">
+<input name="login_submit" type="hidden" value="on"><input type="hidden" name="login_do_redirect" value="1"><input name="no_cert_storing" type="hidden" value="on"><input type="hidden" name="j_salt" value="HKWpmG0vhiv72gIiBLCUCrMk1H0=">
+
+							<table class="urLogonTable" cellspacing="3px" cellpadding="0" valign="top">
+								<tbody><tr>
+									<td colspan="3">
+									<div class="urMessageArea"><!--	Federation Error Message				-->  
+										<!-- display error message if there is one -->
+										<div class="urMsgBarErr"><span class="urMsgBarImgError"><img height="12" width="12" src="/abk_custlogon/css/common/1x1.gif"></span>
+										<span class="urTxtMsg" tabindex="0">Benutzerauthentifizierung fehlgeschlagen</span></div>
+									</div>
+									</td>
+								</tr>
+								
+								<!-- userid -->
+								<tr>
+									<td><label class="urLblStdNew"><nobr>Benutzer<span class="urLblReq">&nbsp;*</span></nobr></label>
+</td>
+									<td><input type="text" id="logonuidfield" name="j_username" value="k" title="Benutzer * - Benutzerauthentifizierung fehlgeschlagen" class="urEdfTxtEnbl" style="width:170px"></td>
+									<td width="100%">&nbsp;</td>
+								</tr>
+								<!-- password -->
+								<tr>
+									<td><label class="urLblStdNew" for="logonpassfield"><nobr>Passwort<span class="urLblReq">&nbsp;*</span></nobr></label>
+</td>
+									<td><input type="password" id="logonpassfield" name="j_password" class="urEdfTxtEnbl" style="width:170px"></td>
+									<td>&nbsp;</td>
+								</tr>
+
+								<!-- Language Option -->
+
+
+								<!-- create certificate -->
+								
+								<!-- Federate User checkbox -->
+								
+								<tr>
+									<td width="100%" colspan="3">&nbsp;</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td align="right"><!-- logon button --> <input class="urBtnStdNew" type="submit" name="uidPasswordLogon" value="Anmelden">
+ </td>
+									<td>&nbsp;</td>
+								</tr>
+								<!-- link to certificate logon -->
+								
+								<!-- logon help -->
+								
+							</tbody></table>
+						</form>
+ <!-- data table ends before this line --></div>
+						<div class="urLinkArea"><a href="/irj/portal/anonymous/">Neuen Benutzer registrieren</a> <br>
+						<br>
+						<a href="/irj/portal/anonymous?NavigationTarget=ROLES://portal_content/EU-DLR_Refactoring/OAM_PORTAL_GUEST/PW_RESET">Passwort vergessen</a> <br>
+						<br>
+						<a href="/irj/portal/anonymous?NavigationTarget=ROLES://portal_content/EU-DLR_Refactoring/OAM_PORTAL_GUEST/UM_USERID_REQUEST">Benutzername vergessen</a></div>
+						</td>
+					</tr>
+				</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+		</td>
+		<td background="/abk_custlogon/layout/lf_sr.png"></td>
+	</tr>
+	<tr>
+		<td><img src="/abk_custlogon/layout/lf_bl.png" width="29" height="32"></td>
+		<td align="center" background="/abk_custlogon/layout/lf_sb.png"></td>
+		<td><img src="/abk_custlogon/layout/lf_br.png" width="27" height="32"></td>
+	</tr>
+</tbody></table>
+<br></span>
+<script>var hash = document.location.hash;if (hash && hash !='#'){ var forms = document.getElementsByTagName('FORM'); for (var i = 0; i < forms.length; i++) {      var form = forms[i];     var currentElement = document.createElement('input');     currentElement.setAttribute('type', 'hidden');     currentElement.setAttribute('name', 'postAnchorString');     currentElement.setAttribute('id', 'postAnchorString');     currentElement.setAttribute('value', hash);     form.appendChild(currentElement);     }}</script></body></html>

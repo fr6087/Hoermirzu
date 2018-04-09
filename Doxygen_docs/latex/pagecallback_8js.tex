@@ -1,0 +1,63 @@
+\hypertarget{pagecallback_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/pagecallback.js File Reference}
+\label{pagecallback_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/pagecallback.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/pagecallback.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_w_c_f___service_2html_2jquery_8js_a2335e57f79b6acfb6de59c235dc8a83e}{p} \hyperlink{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{evaluate} (function()\{var callback\+Response=window.\+call\+Phantom(\char`\"{}Hello, I\textquotesingle{}m coming to you from the \textquotesingle{}\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page}\textquotesingle{} context\char`\"{});console.\+log(\char`\"{}Received by the \textquotesingle{}\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page}\textquotesingle{} context\+: \char`\"{}+callback\+Response);\})
+\item 
+phantom \hyperlink{pagecallback_8js_a01fca00da67a8c60470b440fa7083bf7}{exit} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{pagecallback_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{pagecallback_8js_ad1707b001240e9c8298830073364c8bf}{p} = require(\char`\"{}webpage\char`\"{}).create()
+\item 
+\hyperlink{_w_c_f___service_2html_2jquery_8js_a2335e57f79b6acfb6de59c235dc8a83e}{p} \hyperlink{pagecallback_8js_a339e234d1f5d36809f5f76048e8e579e}{on\+Console\+Message} = function(msg) \{ \hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(msg); \}
+\item 
+\hyperlink{_w_c_f___service_2html_2jquery_8js_a2335e57f79b6acfb6de59c235dc8a83e}{p} \hyperlink{pagecallback_8js_a138c9ad3ea5b65503a075c47a0de6a89}{on\+Callback}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{pagecallback.\+js@{pagecallback.\+js}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!pagecallback.\+js@{pagecallback.\+js}}
+\subsubsection[{\texorpdfstring{evaluate(function()\lcurly{}var callback\+Response=window.\+call\+Phantom(""Hello, I\textquotesingle{}m coming to you from the \textquotesingle{}page\textquotesingle{} context"");console.\+log(""Received by the \textquotesingle{}page\textquotesingle{} context\+: ""+callback\+Response);\rcurly{})}{evaluate(function()\{var callbackResponse=window.callPhantom("Hello, I'm coming to you from the 'page' context");console.log("Received by the 'page' context: "+callbackResponse);\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf p} evaluate (
+\begin{DoxyParamCaption}
+\item[{function()\{var callback\+Response=window.\+call\+Phantom(\char`\"{}Hello, I\textquotesingle{}m coming to you from the \textquotesingle{}{\bf page}\textquotesingle{} context\char`\"{});console.\+log(\char`\"{}Received by the \textquotesingle{}{\bf page}\textquotesingle{} context\+: \char`\"{}+callback\+Response);\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{pagecallback_8js_a63376e151867d7c68f635e19817b9302}{}\label{pagecallback_8js_a63376e151867d7c68f635e19817b9302}
+\index{pagecallback.\+js@{pagecallback.\+js}!exit@{exit}}
+\index{exit@{exit}!pagecallback.\+js@{pagecallback.\+js}}
+\subsubsection[{\texorpdfstring{exit()}{exit()}}]{\setlength{\rightskip}{0pt plus 5cm}phantom exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{pagecallback_8js_a01fca00da67a8c60470b440fa7083bf7}{}\label{pagecallback_8js_a01fca00da67a8c60470b440fa7083bf7}
+
+
+\subsection{Variable Documentation}
+\index{pagecallback.\+js@{pagecallback.\+js}!on\+Callback@{on\+Callback}}
+\index{on\+Callback@{on\+Callback}!pagecallback.\+js@{pagecallback.\+js}}
+\subsubsection[{\texorpdfstring{on\+Callback}{onCallback}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf p} on\+Callback}\hypertarget{pagecallback_8js_a138c9ad3ea5b65503a075c47a0de6a89}{}\label{pagecallback_8js_a138c9ad3ea5b65503a075c47a0de6a89}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}(msg) \{
+    console.log(\textcolor{stringliteral}{"Received by the 'phantom' main context: "}+msg);
+    \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Hello there, I'm coming to you from the 'phantom' context instead"};
+\}
+\end{DoxyCode}
+\index{pagecallback.\+js@{pagecallback.\+js}!on\+Console\+Message@{on\+Console\+Message}}
+\index{on\+Console\+Message@{on\+Console\+Message}!pagecallback.\+js@{pagecallback.\+js}}
+\subsubsection[{\texorpdfstring{on\+Console\+Message}{onConsoleMessage}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf p} on\+Console\+Message = function(msg) \{ {\bf console.\+log}(msg); \}}\hypertarget{pagecallback_8js_a339e234d1f5d36809f5f76048e8e579e}{}\label{pagecallback_8js_a339e234d1f5d36809f5f76048e8e579e}
+\index{pagecallback.\+js@{pagecallback.\+js}!p@{p}}
+\index{p@{p}!pagecallback.\+js@{pagecallback.\+js}}
+\subsubsection[{\texorpdfstring{p}{p}}]{\setlength{\rightskip}{0pt plus 5cm}var p = require(\char`\"{}webpage\char`\"{}).create()}\hypertarget{pagecallback_8js_ad1707b001240e9c8298830073364c8bf}{}\label{pagecallback_8js_ad1707b001240e9c8298830073364c8bf}
+
+
+Referenced by Listen\+To\+Me.\+View\+Model.\+Section\+View\+Model\+::\+Load\+Section\+From\+Store(), and Listen\+To\+Me.\+Program\+::\+Main().
+
+\index{pagecallback.\+js@{pagecallback.\+js}!strict@{strict}}
+\index{strict@{strict}!pagecallback.\+js@{pagecallback.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{pagecallback_8js_ae2475e10618961c050dcba04e8c42331}{}\label{pagecallback_8js_ae2475e10618961c050dcba04e8c42331}

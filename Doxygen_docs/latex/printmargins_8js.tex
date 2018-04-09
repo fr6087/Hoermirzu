@@ -1,0 +1,105 @@
+\hypertarget{printmargins_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/printmargins.js File Reference}
+\label{printmargins_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/printmargins.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/printmargins.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{printmargins_8js_a48452dd4482b7c4cb7ed63d403cd3f38}{if} (system.\+args.\+length$<$ 7)
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{printmargins_8js_a5f4df56a70e6fa625c27ab107f39e3a2}{open} (\hyperlink{rasterize_8js_a2f48084defc0a4df2c31dac40f213f94}{address}, function(status)\{\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(status!== \textquotesingle{}success\textquotesingle{})\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}Unable to load the address!\textquotesingle{});\}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{page__events_8js_ade245ee708b346c7f822a576459e3674}{window.\+set\+Timeout}(function()\{                                                       \hyperlink{colorwheel_8js_a2e68365b09ca6b47bfb6cfb37e38294d}{page.\+render}(\hyperlink{rasterize_8js_ad288825273ed7192429ab0474fb2d4a0}{output});                                                       \hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();                                       \}, 200);\}\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+use \hyperlink{printmargins_8js_ae2475e10618961c050dcba04e8c42331}{strict}
+\item 
+var \hyperlink{printmargins_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = require(\textquotesingle{}webpage\textquotesingle{}).create()
+\item 
+var \hyperlink{printmargins_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system} = require(\textquotesingle{}system\textquotesingle{})
+\item 
+\hyperlink{printmargins_8js_a0544c3fe466e421738dae463968b70ba}{else}
+\item 
+var \hyperlink{printmargins_8js_a34687689873d42dec2c94cc27f36e1e9}{output} = \hyperlink{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{system.\+args}\mbox{[}2\mbox{]}
+\item 
+var \hyperlink{printmargins_8js_ae2b319a35f1e7ec10b0be892f7ce4c3a}{margin\+Left} = \hyperlink{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{system.\+args}\mbox{[}3\mbox{]}
+\item 
+var \hyperlink{printmargins_8js_a30682799f224c9d6a953ec5cf3a62976}{margin\+Top} = \hyperlink{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{system.\+args}\mbox{[}4\mbox{]}
+\item 
+var \hyperlink{printmargins_8js_ad8c7158b3a1cf645da97bfdc6ff086b4}{margin\+Right} = \hyperlink{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{system.\+args}\mbox{[}5\mbox{]}
+\item 
+var \hyperlink{printmargins_8js_a962ad18806fcb183a2459ad319c8b750}{margin\+Bottom} = \hyperlink{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{system.\+args}\mbox{[}6\mbox{]}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{printmargins_8js_abbbde5b34d3e102004827846faf853b0}{viewport\+Size} = \{ width\+: 600, height\+: 600 \}
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{printmargins_8js_a659ab248ae6a3b260e06339897de8965}{paper\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{printmargins.\+js@{printmargins.\+js}!if@{if}}
+\index{if@{if}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{if(system.\+args.\+length$<$ 7)}{if(system.args.length< 7)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{printmargins_8js_a48452dd4482b7c4cb7ed63d403cd3f38}{}\label{printmargins_8js_a48452dd4482b7c4cb7ed63d403cd3f38}
+\index{printmargins.\+js@{printmargins.\+js}!open@{open}}
+\index{open@{open}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{open(address, function(status)\lcurly{}if(status"!== \textquotesingle{}success\textquotesingle{})\lcurly{}console.\+log(\textquotesingle{}\+Unable to load the address"!\textquotesingle{});\rcurly{}else\lcurly{}window.\+set\+Timeout(function()\lcurly{}                                                       page.\+render(output);                                                       phantom.\+exit();                                       \rcurly{}, 200);\rcurly{}\rcurly{})}{open(address, function(status)\{if(status!== 'success')\{console.log('Unable to load the address!');\}else\{window.setTimeout(function()\{                                                       page.render(output);                                                       phantom.exit();                                       \}, 200);\}\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} open (
+\begin{DoxyParamCaption}
+\item[{{\bf address}}]{, }
+\item[{function(status)\{{\bf if}(status!== \textquotesingle{}success\textquotesingle{})\{{\bf console.\+log}(\textquotesingle{}Unable to load the address!\textquotesingle{});\}{\bf else}\{{\bf window.\+set\+Timeout}(function()\{                                                                                                                                                                                                                   {\bf page.\+render}({\bf output});                                                                                                                                                                                                                   {\bf phantom.\+exit}();                                                                                                                                                   \}, 200);\}\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{printmargins_8js_a5f4df56a70e6fa625c27ab107f39e3a2}{}\label{printmargins_8js_a5f4df56a70e6fa625c27ab107f39e3a2}
+
+
+\subsection{Variable Documentation}
+\index{printmargins.\+js@{printmargins.\+js}!else@{else}}
+\index{else@{else}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}else}\hypertarget{printmargins_8js_a0544c3fe466e421738dae463968b70ba}{}\label{printmargins_8js_a0544c3fe466e421738dae463968b70ba}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    var \hyperlink{detectsniff_8js_a2f48084defc0a4df2c31dac40f213f94}{address} = \hyperlink{printmargins_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system}.args[1]
+\end{DoxyCode}
+\index{printmargins.\+js@{printmargins.\+js}!margin\+Bottom@{margin\+Bottom}}
+\index{margin\+Bottom@{margin\+Bottom}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{margin\+Bottom}{marginBottom}}]{\setlength{\rightskip}{0pt plus 5cm}var margin\+Bottom = {\bf system.\+args}\mbox{[}6\mbox{]}}\hypertarget{printmargins_8js_a962ad18806fcb183a2459ad319c8b750}{}\label{printmargins_8js_a962ad18806fcb183a2459ad319c8b750}
+\index{printmargins.\+js@{printmargins.\+js}!margin\+Left@{margin\+Left}}
+\index{margin\+Left@{margin\+Left}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{margin\+Left}{marginLeft}}]{\setlength{\rightskip}{0pt plus 5cm}var margin\+Left = {\bf system.\+args}\mbox{[}3\mbox{]}}\hypertarget{printmargins_8js_ae2b319a35f1e7ec10b0be892f7ce4c3a}{}\label{printmargins_8js_ae2b319a35f1e7ec10b0be892f7ce4c3a}
+\index{printmargins.\+js@{printmargins.\+js}!margin\+Right@{margin\+Right}}
+\index{margin\+Right@{margin\+Right}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{margin\+Right}{marginRight}}]{\setlength{\rightskip}{0pt plus 5cm}var margin\+Right = {\bf system.\+args}\mbox{[}5\mbox{]}}\hypertarget{printmargins_8js_ad8c7158b3a1cf645da97bfdc6ff086b4}{}\label{printmargins_8js_ad8c7158b3a1cf645da97bfdc6ff086b4}
+\index{printmargins.\+js@{printmargins.\+js}!margin\+Top@{margin\+Top}}
+\index{margin\+Top@{margin\+Top}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{margin\+Top}{marginTop}}]{\setlength{\rightskip}{0pt plus 5cm}var margin\+Top = {\bf system.\+args}\mbox{[}4\mbox{]}}\hypertarget{printmargins_8js_a30682799f224c9d6a953ec5cf3a62976}{}\label{printmargins_8js_a30682799f224c9d6a953ec5cf3a62976}
+\index{printmargins.\+js@{printmargins.\+js}!output@{output}}
+\index{output@{output}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{output}{output}}]{\setlength{\rightskip}{0pt plus 5cm}var output = {\bf system.\+args}\mbox{[}2\mbox{]}}\hypertarget{printmargins_8js_a34687689873d42dec2c94cc27f36e1e9}{}\label{printmargins_8js_a34687689873d42dec2c94cc27f36e1e9}
+\index{printmargins.\+js@{printmargins.\+js}!page@{page}}
+\index{page@{page}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = require(\textquotesingle{}webpage\textquotesingle{}).create()}\hypertarget{printmargins_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{printmargins_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+\index{printmargins.\+js@{printmargins.\+js}!paper\+Size@{paper\+Size}}
+\index{paper\+Size@{paper\+Size}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{paper\+Size}{paperSize}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} paper\+Size}\hypertarget{printmargins_8js_a659ab248ae6a3b260e06339897de8965}{}\label{printmargins_8js_a659ab248ae6a3b260e06339897de8965}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        format: \textcolor{stringliteral}{'A4'},
+        margin: \{
+            left: \hyperlink{printmargins_8js_ae2b319a35f1e7ec10b0be892f7ce4c3a}{marginLeft},
+            top: \hyperlink{printmargins_8js_a30682799f224c9d6a953ec5cf3a62976}{marginTop},
+            right: \hyperlink{printmargins_8js_ad8c7158b3a1cf645da97bfdc6ff086b4}{marginRight},
+            bottom: \hyperlink{printmargins_8js_a962ad18806fcb183a2459ad319c8b750}{marginBottom}
+        \}
+    \}
+\end{DoxyCode}
+\index{printmargins.\+js@{printmargins.\+js}!strict@{strict}}
+\index{strict@{strict}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{strict}{strict}}]{\setlength{\rightskip}{0pt plus 5cm}use strict}\hypertarget{printmargins_8js_ae2475e10618961c050dcba04e8c42331}{}\label{printmargins_8js_ae2475e10618961c050dcba04e8c42331}
+\index{printmargins.\+js@{printmargins.\+js}!system@{system}}
+\index{system@{system}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{system}{system}}]{\setlength{\rightskip}{0pt plus 5cm}var system = require(\textquotesingle{}system\textquotesingle{})}\hypertarget{printmargins_8js_acdb77dc97eb44e91baaadd41d9d078fc}{}\label{printmargins_8js_acdb77dc97eb44e91baaadd41d9d078fc}
+\index{printmargins.\+js@{printmargins.\+js}!viewport\+Size@{viewport\+Size}}
+\index{viewport\+Size@{viewport\+Size}!printmargins.\+js@{printmargins.\+js}}
+\subsubsection[{\texorpdfstring{viewport\+Size}{viewportSize}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} viewport\+Size = \{ width\+: 600, height\+: 600 \}}\hypertarget{printmargins_8js_abbbde5b34d3e102004827846faf853b0}{}\label{printmargins_8js_abbbde5b34d3e102004827846faf853b0}

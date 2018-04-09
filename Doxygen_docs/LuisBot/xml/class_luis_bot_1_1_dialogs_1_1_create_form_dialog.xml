@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_luis_bot_1_1_dialogs_1_1_create_form_dialog" kind="class" language="C#" prot="public">
+    <compoundname>LuisBot::Dialogs::CreateFormDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IDialog&lt; FormOptions &gt;</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_luis_bot_1_1_dialogs_1_1_create_form_dialog_1a151e36d0d536745476273724089edcdb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>String</type>
+        <definition>String LuisBot.Dialogs.CreateFormDialog.intent</definition>
+        <argsstring></argsstring>
+        <name>intent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/CreateFormDialog.cs" line="14" column="1" bodyfile="Dialogs/CreateFormDialog.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_create_form_dialog_1a232fcf2c8a2052afd9a3a0b76f07aaff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task LuisBot.Dialogs.CreateFormDialog.StartAsync</definition>
+        <argsstring>(IDialogContext context)</argsstring>
+        <name>StartAsync</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/CreateFormDialog.cs" line="16" column="1" bodyfile="Dialogs/CreateFormDialog.cs" bodystart="16" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_luis_bot_1_1_dialogs_1_1_create_form_dialog_1a428fad789a869793fcfcd20ace060743" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task LuisBot.Dialogs.CreateFormDialog.AddressChoiceReceivedAsync</definition>
+        <argsstring>(IDialogContext context, IAwaitable&lt; string &gt; result)</argsstring>
+        <name>AddressChoiceReceivedAsync</name>
+        <param>
+          <type>IDialogContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>IAwaitable&lt; string &gt;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dialogs/CreateFormDialog.cs" line="36" column="1" bodyfile="Dialogs/CreateFormDialog.cs" bodystart="36" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>IDialog&lt; FormOptions &gt;</label>
+      </node>
+      <node id="8">
+        <label>LuisBot.Dialogs.CreateFormDialog</label>
+        <link refid="class_luis_bot_1_1_dialogs_1_1_create_form_dialog"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>IDialog&lt; FormOptions &gt;</label>
+      </node>
+      <node id="10">
+        <label>LuisBot.Dialogs.CreateFormDialog</label>
+        <link refid="class_luis_bot_1_1_dialogs_1_1_create_form_dialog"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Dialogs/CreateFormDialog.cs" line="13" column="1" bodyfile="Dialogs/CreateFormDialog.cs" bodystart="12" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_create_form_dialog_1a428fad789a869793fcfcd20ace060743" prot="private" virt="non-virtual"><scope>LuisBot::Dialogs::CreateFormDialog</scope><name>AddressChoiceReceivedAsync</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_create_form_dialog_1a151e36d0d536745476273724089edcdb" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::CreateFormDialog</scope><name>intent</name></member>
+      <member refid="class_luis_bot_1_1_dialogs_1_1_create_form_dialog_1a232fcf2c8a2052afd9a3a0b76f07aaff" prot="public" virt="non-virtual"><scope>LuisBot::Dialogs::CreateFormDialog</scope><name>StartAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

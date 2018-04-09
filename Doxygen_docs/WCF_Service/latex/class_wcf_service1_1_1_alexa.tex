@@ -1,0 +1,149 @@
+\hypertarget{class_wcf_service1_1_1_alexa}{}\section{Wcf\+Service1.\+Alexa Class Reference}
+\label{class_wcf_service1_1_1_alexa}\index{Wcf\+Service1.\+Alexa@{Wcf\+Service1.\+Alexa}}
+
+
+provides code for connecting to an \hyperlink{class_wcf_service1_1_1_alexa}{Alexa} skill. Not tested. reference\+: \href{https://www.robinosborne.co.uk/2016/12/19/connecting-alexa-to-a-botframework-chatbot/}{\tt https\+://www.\+robinosborne.\+co.\+uk/2016/12/19/connecting-\/alexa-\/to-\/a-\/botframework-\/chatbot/}  
+
+
+
+
+Inheritance diagram for Wcf\+Service1.\+Alexa\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_wcf_service1_1_1_alexa__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wcf\+Service1.\+Alexa\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_wcf_service1_1_1_alexa__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wcf_service1_1_1_alexa_a4d589d523e0b283f94c1e2507ef4700f}{Alexa} (string secret, string from)
+\item 
+async Task$<$ I\+Enumerable$<$ string $>$ $>$ \hyperlink{class_wcf_service1_1_1_alexa_a6222dd6b2c2bc8da8ece2321ad2090ed}{Fetch\+Recent\+Replies} ()
+\item 
+async Task \hyperlink{class_wcf_service1_1_1_alexa_a6d8d3cc497642584fa380f1cbf053f66}{Send\+Message} (string outgoing\+Text)
+\item 
+void \hyperlink{class_wcf_service1_1_1_alexa_a7dfa3adcc0c14cf1863daafac2ff5c37}{Dispose} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Http\+Client \hyperlink{class_wcf_service1_1_1_alexa_a62b57286b8d06d2328d1c160bd80f7c5}{Client}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ Http\+Client $>$ \hyperlink{class_wcf_service1_1_1_alexa_a2e9aee5a18c8690845046d1da09e60b2}{Create\+Http\+Client} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_wcf_service1_1_1_alexa_abe74124f288adbe9661da5a83ae0051c}{\+\_\+conversation\+Id}
+\item 
+readonly string \hyperlink{class_wcf_service1_1_1_alexa_a1c94ae34da8665a0918b04cbdfe7707e}{\+\_\+from}
+\item 
+readonly string \hyperlink{class_wcf_service1_1_1_alexa_a7619c280d871d3abd9db45e733ffaaa5}{\+\_\+secret}
+\item 
+string \hyperlink{class_wcf_service1_1_1_alexa_a7c8ee921966bce4aa52953d9a148e69b}{Messages\+Path} =$>$ \$\char`\"{}/api/conversations/\{\hyperlink{class_wcf_service1_1_1_alexa_abe74124f288adbe9661da5a83ae0051c}{\+\_\+conversation\+Id}\}/messages\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+provides code for connecting to an \hyperlink{class_wcf_service1_1_1_alexa}{Alexa} skill. Not tested. reference\+: \href{https://www.robinosborne.co.uk/2016/12/19/connecting-alexa-to-a-botframework-chatbot/}{\tt https\+://www.\+robinosborne.\+co.\+uk/2016/12/19/connecting-\/alexa-\/to-\/a-\/botframework-\/chatbot/} 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}!Alexa@{Alexa}}
+\index{Alexa@{Alexa}!Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}}
+\subsubsection[{\texorpdfstring{Alexa(string secret, string from)}{Alexa(string secret, string from)}}]{\setlength{\rightskip}{0pt plus 5cm}Wcf\+Service1.\+Alexa.\+Alexa (
+\begin{DoxyParamCaption}
+\item[{string}]{secret, }
+\item[{string}]{from}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_alexa_a4d589d523e0b283f94c1e2507ef4700f}{}\label{class_wcf_service1_1_1_alexa_a4d589d523e0b283f94c1e2507ef4700f}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_alexa_a4d589d523e0b283f94c1e2507ef4700f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}!Create\+Http\+Client@{Create\+Http\+Client}}
+\index{Create\+Http\+Client@{Create\+Http\+Client}!Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}}
+\subsubsection[{\texorpdfstring{Create\+Http\+Client()}{CreateHttpClient()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Http\+Client$>$ Wcf\+Service1.\+Alexa.\+Create\+Http\+Client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_alexa_a2e9aee5a18c8690845046d1da09e60b2}{}\label{class_wcf_service1_1_1_alexa_a2e9aee5a18c8690845046d1da09e60b2}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wcf_service1_1_1_alexa_a2e9aee5a18c8690845046d1da09e60b2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}}
+\subsubsection[{\texorpdfstring{Dispose()}{Dispose()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wcf\+Service1.\+Alexa.\+Dispose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_alexa_a7dfa3adcc0c14cf1863daafac2ff5c37}{}\label{class_wcf_service1_1_1_alexa_a7dfa3adcc0c14cf1863daafac2ff5c37}
+\index{Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}!Fetch\+Recent\+Replies@{Fetch\+Recent\+Replies}}
+\index{Fetch\+Recent\+Replies@{Fetch\+Recent\+Replies}!Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}}
+\subsubsection[{\texorpdfstring{Fetch\+Recent\+Replies()}{FetchRecentReplies()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$I\+Enumerable$<$string$>$ $>$ Wcf\+Service1.\+Alexa.\+Fetch\+Recent\+Replies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_alexa_a6222dd6b2c2bc8da8ece2321ad2090ed}{}\label{class_wcf_service1_1_1_alexa_a6222dd6b2c2bc8da8ece2321ad2090ed}
+\index{Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}!Send\+Message@{Send\+Message}}
+\index{Send\+Message@{Send\+Message}!Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}}
+\subsubsection[{\texorpdfstring{Send\+Message(string outgoing\+Text)}{SendMessage(string outgoingText)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Wcf\+Service1.\+Alexa.\+Send\+Message (
+\begin{DoxyParamCaption}
+\item[{string}]{outgoing\+Text}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wcf_service1_1_1_alexa_a6d8d3cc497642584fa380f1cbf053f66}{}\label{class_wcf_service1_1_1_alexa_a6d8d3cc497642584fa380f1cbf053f66}
+
+
+\subsection{Member Data Documentation}
+\index{Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}!\+\_\+conversation\+Id@{\+\_\+conversation\+Id}}
+\index{\+\_\+conversation\+Id@{\+\_\+conversation\+Id}!Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}}
+\subsubsection[{\texorpdfstring{\+\_\+conversation\+Id}{_conversationId}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Alexa.\+\_\+conversation\+Id\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_alexa_abe74124f288adbe9661da5a83ae0051c}{}\label{class_wcf_service1_1_1_alexa_abe74124f288adbe9661da5a83ae0051c}
+\index{Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}!\+\_\+from@{\+\_\+from}}
+\index{\+\_\+from@{\+\_\+from}!Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}}
+\subsubsection[{\texorpdfstring{\+\_\+from}{_from}}]{\setlength{\rightskip}{0pt plus 5cm}readonly string Wcf\+Service1.\+Alexa.\+\_\+from\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_alexa_a1c94ae34da8665a0918b04cbdfe7707e}{}\label{class_wcf_service1_1_1_alexa_a1c94ae34da8665a0918b04cbdfe7707e}
+\index{Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}!\+\_\+secret@{\+\_\+secret}}
+\index{\+\_\+secret@{\+\_\+secret}!Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}}
+\subsubsection[{\texorpdfstring{\+\_\+secret}{_secret}}]{\setlength{\rightskip}{0pt plus 5cm}readonly string Wcf\+Service1.\+Alexa.\+\_\+secret\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_alexa_a7619c280d871d3abd9db45e733ffaaa5}{}\label{class_wcf_service1_1_1_alexa_a7619c280d871d3abd9db45e733ffaaa5}
+\index{Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}!Client@{Client}}
+\index{Client@{Client}!Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}}
+\subsubsection[{\texorpdfstring{Client}{Client}}]{\setlength{\rightskip}{0pt plus 5cm}Http\+Client Wcf\+Service1.\+Alexa.\+Client}\hypertarget{class_wcf_service1_1_1_alexa_a62b57286b8d06d2328d1c160bd80f7c5}{}\label{class_wcf_service1_1_1_alexa_a62b57286b8d06d2328d1c160bd80f7c5}
+\index{Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}!Messages\+Path@{Messages\+Path}}
+\index{Messages\+Path@{Messages\+Path}!Wcf\+Service1\+::\+Alexa@{Wcf\+Service1\+::\+Alexa}}
+\subsubsection[{\texorpdfstring{Messages\+Path}{MessagesPath}}]{\setlength{\rightskip}{0pt plus 5cm}string Wcf\+Service1.\+Alexa.\+Messages\+Path =$>$ \$\char`\"{}/api/conversations/\{{\bf \+\_\+conversation\+Id}\}/messages\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_wcf_service1_1_1_alexa_a7c8ee921966bce4aa52953d9a148e69b}{}\label{class_wcf_service1_1_1_alexa_a7c8ee921966bce4aa52953d9a148e69b}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Wcf\+Service1/\hyperlink{_alexa_8cs}{Alexa.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,201 @@
+\hypertarget{responsive-screenshot_8js}{}\section{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+JS.2.1.1/tools/phantomjs/examples/responsive-\/screenshot.js File Reference}
+\label{responsive-screenshot_8js}\index{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/responsive-\/screenshot.\+js@{C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/packages/\+Phantom\+J\+S.\+2.\+1.\+1/tools/phantomjs/examples/responsive-\/screenshot.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{responsive-screenshot_8js_ad7c9dc7ddd031fe12461f8bb04f17284}{if} (1===args.\+length)
+\item 
+\hyperlink{waitfor_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} \hyperlink{responsive-screenshot_8js_a242ea10c27162428411453a782371c19}{open} (\hyperlink{responsive-screenshot_8js_a5acdc5bac87276538445379382dba523}{url\+Address}, function(status)\{\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}( \textquotesingle{}success\textquotesingle{}!==status)\{\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}Unable to load the \hyperlink{server_8js_a273346471dff7030093765f4e043d101}{url} address!\textquotesingle{});\}\hyperlink{sleepsort_8js_a0544c3fe466e421738dae463968b70ba}{else}\{var folder=\hyperlink{responsive-screenshot_8js_ac6324f309d86358a00f0fbca484a3257}{url\+To\+Dir}(\hyperlink{responsive-screenshot_8js_a5acdc5bac87276538445379382dba523}{url\+Address});var \hyperlink{rasterize_8js_ad288825273ed7192429ab0474fb2d4a0}{output}, \hyperlink{printenv_8js_a9bbe78e9381a5fe38011c4fa0f948854}{key};function \hyperlink{colorwheel_8js_a2e68365b09ca6b47bfb6cfb37e38294d}{render}(n)\{\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(!!n)\{\hyperlink{printenv_8js_a9bbe78e9381a5fe38011c4fa0f948854}{key}=n-\/1;\hyperlink{rasterize_8js_abbbde5b34d3e102004827846faf853b0}{page.\+viewport\+Size}=\hyperlink{responsive-screenshot_8js_a00da385fc9be9cb4e2d703a1fc928ef1}{viewports}\mbox{[}\hyperlink{printenv_8js_a9bbe78e9381a5fe38011c4fa0f948854}{key}\mbox{]};\hyperlink{sleepsort_8js_a41bc2f4fa2f08e1e174987b1c09445c1}{if}(\hyperlink{responsive-screenshot_8js_a2b6584f3e4fa2fd3eb22798214519b67}{clipping})\{page.\+clip\+Rect=\hyperlink{responsive-screenshot_8js_a00da385fc9be9cb4e2d703a1fc928ef1}{viewports}\mbox{[}\hyperlink{printenv_8js_a9bbe78e9381a5fe38011c4fa0f948854}{key}\mbox{]};\}\hyperlink{rasterize_8js_ad288825273ed7192429ab0474fb2d4a0}{output}=folder+\char`\"{}/\char`\"{}+\hyperlink{responsive-screenshot_8js_aef8d74268b9976dc3ed881e3593a29b1}{get\+File\+Name}(\hyperlink{responsive-screenshot_8js_a00da385fc9be9cb4e2d703a1fc928ef1}{viewports}\mbox{[}\hyperlink{printenv_8js_a9bbe78e9381a5fe38011c4fa0f948854}{key}\mbox{]});\hyperlink{version_8js_a8805635a2f9bf454129d95456a5d317a}{console.\+log}(\textquotesingle{}Saving \textquotesingle{}+\hyperlink{rasterize_8js_ad288825273ed7192429ab0474fb2d4a0}{output});\hyperlink{colorwheel_8js_a2e68365b09ca6b47bfb6cfb37e38294d}{page.\+render}(\hyperlink{rasterize_8js_ad288825273ed7192429ab0474fb2d4a0}{output});\hyperlink{colorwheel_8js_a2e68365b09ca6b47bfb6cfb37e38294d}{render}(\hyperlink{printenv_8js_a9bbe78e9381a5fe38011c4fa0f948854}{key});\}\}\hyperlink{colorwheel_8js_a2e68365b09ca6b47bfb6cfb37e38294d}{render}(viewports.\+length);\}\hyperlink{version_8js_a01fca00da67a8c60470b440fa7083bf7}{phantom.\+exit}();\})
+\item 
+function \hyperlink{responsive-screenshot_8js_aef8d74268b9976dc3ed881e3593a29b1}{get\+File\+Name} (viewport)
+\item 
+function \hyperlink{responsive-screenshot_8js_a9f5def91abd2944c728e243fa418bc6f}{get\+File\+Extension} ()
+\item 
+function \hyperlink{responsive-screenshot_8js_a758a4d0cb35c31dee79146da2bddfc0d}{get\+Clipping} ()
+\item 
+function \hyperlink{responsive-screenshot_8js_ac6324f309d86358a00f0fbca484a3257}{url\+To\+Dir} (\hyperlink{server_8js_a273346471dff7030093765f4e043d101}{url})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \hyperlink{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{args} = require(\textquotesingle{}\hyperlink{stdin-stdout-stderr_8js_acdb77dc97eb44e91baaadd41d9d078fc}{system}\textquotesingle{}).args
+\item 
+var \hyperlink{responsive-screenshot_8js_aebcdd70130f7e0b00b39cc981ab0bab0}{fs} = require(\textquotesingle{}fs\textquotesingle{})
+\item 
+var \hyperlink{responsive-screenshot_8js_a85d8b1b97106b359e1c9ee119ebe5832}{page} = new Web\+Page()
+\item 
+var \hyperlink{responsive-screenshot_8js_a5acdc5bac87276538445379382dba523}{url\+Address} = \hyperlink{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{args}\mbox{[}1\mbox{]}.to\+Lower\+Case()
+\item 
+var \hyperlink{responsive-screenshot_8js_af37ccdf7a718667b94d302bb07937162}{ext} = \hyperlink{responsive-screenshot_8js_a9f5def91abd2944c728e243fa418bc6f}{get\+File\+Extension}()
+\item 
+var \hyperlink{responsive-screenshot_8js_a2b6584f3e4fa2fd3eb22798214519b67}{clipping} = \hyperlink{responsive-screenshot_8js_a758a4d0cb35c31dee79146da2bddfc0d}{get\+Clipping}()
+\item 
+var \hyperlink{responsive-screenshot_8js_a00da385fc9be9cb4e2d703a1fc928ef1}{viewports}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!get\+Clipping@{get\+Clipping}}
+\index{get\+Clipping@{get\+Clipping}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{get\+Clipping()}{getClipping()}}]{\setlength{\rightskip}{0pt plus 5cm}function get\+Clipping (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{responsive-screenshot_8js_a758a4d0cb35c31dee79146da2bddfc0d}{}\label{responsive-screenshot_8js_a758a4d0cb35c31dee79146da2bddfc0d}
+check if clipping
+
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+
+
+References args.
+
+\index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!get\+File\+Extension@{get\+File\+Extension}}
+\index{get\+File\+Extension@{get\+File\+Extension}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{get\+File\+Extension()}{getFileExtension()}}]{\setlength{\rightskip}{0pt plus 5cm}function get\+File\+Extension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{responsive-screenshot_8js_a9f5def91abd2944c728e243fa418bc6f}{}\label{responsive-screenshot_8js_a9f5def91abd2944c728e243fa418bc6f}
+output extension format helper
+
+\begin{DoxyReturn}{Returns}
+\{$\ast$\} 
+\end{DoxyReturn}
+
+
+References args.
+
+\index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!get\+File\+Name@{get\+File\+Name}}
+\index{get\+File\+Name@{get\+File\+Name}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{get\+File\+Name(viewport)}{getFileName(viewport)}}]{\setlength{\rightskip}{0pt plus 5cm}function get\+File\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{viewport}
+\end{DoxyParamCaption}
+)}\hypertarget{responsive-screenshot_8js_aef8d74268b9976dc3ed881e3593a29b1}{}\label{responsive-screenshot_8js_aef8d74268b9976dc3ed881e3593a29b1}
+filename generator helper 
+\begin{DoxyParams}{Parameters}
+{\em viewport} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} 
+\end{DoxyReturn}
+
+
+References ext.
+
+\index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!if@{if}}
+\index{if@{if}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{if(1===args.\+length)}{if(1===args.length)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{}]{1 = {\ttfamily ==~args.length}}
+\end{DoxyParamCaption}
+)}\hypertarget{responsive-screenshot_8js_ad7c9dc7ddd031fe12461f8bb04f17284}{}\label{responsive-screenshot_8js_ad7c9dc7ddd031fe12461f8bb04f17284}
+if url address does not exist, exit phantom \index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!open@{open}}
+\index{open@{open}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{open(url\+Address, function(status)\lcurly{}if( \textquotesingle{}success\textquotesingle{}"!==status)\lcurly{}console.\+log(\textquotesingle{}\+Unable to load the url address"!\textquotesingle{});\rcurly{}else\lcurly{}var folder=url\+To\+Dir(url\+Address);var output, key;function render(n)\lcurly{}if("!"!n)\lcurly{}key=n-\/1;page.\+viewport\+Size=viewports[key];if(clipping)\lcurly{}page.\+clip\+Rect=viewports[key];\rcurly{}output=folder+""/""+get\+File\+Name(viewports[key]);console.\+log(\textquotesingle{}\+Saving \textquotesingle{}+output);page.\+render(output);render(key);\rcurly{}\rcurly{}render(viewports.\+length);\rcurly{}phantom.\+exit();\rcurly{})}{open(urlAddress, function(status)\{if( 'success'!==status)\{console.log('Unable to load the url address!');\}else\{var folder=urlToDir(urlAddress);var output, key;function render(n)\{if(!!n)\{key=n-1;page.viewportSize=viewports[key];if(clipping)\{page.clipRect=viewports[key];\}output=folder+"/"+getFileName(viewports[key]);console.log('Saving '+output);page.render(output);render(key);\}\}render(viewports.length);\}phantom.exit();\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page} open (
+\begin{DoxyParamCaption}
+\item[{{\bf url\+Address}}]{, }
+\item[{function(status)\{{\bf if}( \textquotesingle{}success\textquotesingle{}!==status)\{{\bf console.\+log}(\textquotesingle{}Unable to load the {\bf url} address!\textquotesingle{});\}{\bf else}\{var folder={\bf url\+To\+Dir}({\bf url\+Address});var {\bf output}, {\bf key};function {\bf render}(n)\{{\bf if}(!!n)\{{\bf key}=n-\/1;{\bf page.\+viewport\+Size}={\bf viewports}\mbox{[}{\bf key}\mbox{]};{\bf if}({\bf clipping})\{page.\+clip\+Rect={\bf viewports}\mbox{[}{\bf key}\mbox{]};\}{\bf output}=folder+\char`\"{}/\char`\"{}+{\bf get\+File\+Name}({\bf viewports}\mbox{[}{\bf key}\mbox{]});{\bf console.\+log}(\textquotesingle{}Saving \textquotesingle{}+{\bf output});{\bf page.\+render}({\bf output});{\bf render}({\bf key});\}\}{\bf render}(viewports.\+length);\}{\bf phantom.\+exit}();\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{responsive-screenshot_8js_a242ea10c27162428411453a782371c19}{}\label{responsive-screenshot_8js_a242ea10c27162428411453a782371c19}
+\index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!url\+To\+Dir@{url\+To\+Dir}}
+\index{url\+To\+Dir@{url\+To\+Dir}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{url\+To\+Dir(url)}{urlToDir(url)}}]{\setlength{\rightskip}{0pt plus 5cm}function url\+To\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{url}
+\end{DoxyParamCaption}
+)}\hypertarget{responsive-screenshot_8js_ac6324f309d86358a00f0fbca484a3257}{}\label{responsive-screenshot_8js_ac6324f309d86358a00f0fbca484a3257}
+url to directory helper
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} 
+\end{DoxyReturn}
+
+
+References fs, and url.
+
+
+
+\subsection{Variable Documentation}
+\index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!args@{args}}
+\index{args@{args}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{args}{args}}]{\setlength{\rightskip}{0pt plus 5cm}var args = require(\textquotesingle{}{\bf system}\textquotesingle{}).args}\hypertarget{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}{}\label{responsive-screenshot_8js_a64e5c861448a80a00f5c93e96de17d7a}
+Captures the full height document even if it\textquotesingle{}s not showing on the screen or captures with the provided range of screen sizes.
+
+A basic example for taking a screen shot using phantomjs which is sampled for \href{https://nodejs-dersleri.github.io/}{\tt https\+://nodejs-\/dersleri.\+github.\+io/}
+
+usage \+: phantomjs \hyperlink{responsive-screenshot_8js}{responsive-\/screenshot.\+js} \{url\} \mbox{[}output format\mbox{]} \mbox{[}do\+Clipping\mbox{]}
+
+examples $>$ phantomjs \hyperlink{responsive-screenshot_8js}{responsive-\/screenshot.\+js} \href{https://nodejs-dersleri.github.io/}{\tt https\+://nodejs-\/dersleri.\+github.\+io/} phantomjs \hyperlink{responsive-screenshot_8js}{responsive-\/screenshot.\+js} \href{https://nodejs-dersleri.github.io/}{\tt https\+://nodejs-\/dersleri.\+github.\+io/} pdf phantomjs \hyperlink{responsive-screenshot_8js}{responsive-\/screenshot.\+js} \href{https://nodejs-dersleri.github.io/}{\tt https\+://nodejs-\/dersleri.\+github.\+io/} true phantomjs \hyperlink{responsive-screenshot_8js}{responsive-\/screenshot.\+js} \href{https://nodejs-dersleri.github.io/}{\tt https\+://nodejs-\/dersleri.\+github.\+io/} png true
+
+\begin{DoxyAuthor}{Author}
+Salih sagdilek \href{mailto:salihsagdilek@gmail.com}{\tt salihsagdilek@gmail.\+com} \href{http://phantomjs.org/api/system/property/args.html}{\tt http\+://phantomjs.\+org/api/system/property/args.\+html}
+\end{DoxyAuthor}
+Queries and returns a list of the command-\/line arguments. The first one is always the script name, which is then followed by the subsequent arguments. 
+
+Referenced by Listen\+To\+Me.\+View.\+Section\+List\+View\+::\+Core\+Window\+\_\+\+Visibility\+Changed(), get\+Clipping(), get\+File\+Extension(), Listen\+To\+Me.\+App\+::\+Initialize\+Component(), Listen\+To\+Me.\+View.\+Section\+Details\+::navigation\+Helper\+\_\+\+Load\+State(), Listen\+To\+Me.\+View\+Model.\+View\+Model\+Base\+::\+Notify\+Property\+Changed(), and Class\+Library.\+model.\+Element\+::\+Notify\+Property\+Changed().
+
+\index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!clipping@{clipping}}
+\index{clipping@{clipping}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{clipping}{clipping}}]{\setlength{\rightskip}{0pt plus 5cm}var clipping = {\bf get\+Clipping}()}\hypertarget{responsive-screenshot_8js_a2b6584f3e4fa2fd3eb22798214519b67}{}\label{responsive-screenshot_8js_a2b6584f3e4fa2fd3eb22798214519b67}
+set if clipping ?  \{boolean\} \index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!ext@{ext}}
+\index{ext@{ext}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{ext}{ext}}]{\setlength{\rightskip}{0pt plus 5cm}var ext = {\bf get\+File\+Extension}()}\hypertarget{responsive-screenshot_8js_af37ccdf7a718667b94d302bb07937162}{}\label{responsive-screenshot_8js_af37ccdf7a718667b94d302bb07937162}
+set output extension format  \{$\ast$\} 
+
+Referenced by get\+File\+Name().
+
+\index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!fs@{fs}}
+\index{fs@{fs}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{fs}{fs}}]{\setlength{\rightskip}{0pt plus 5cm}var fs = require(\textquotesingle{}fs\textquotesingle{})}\hypertarget{responsive-screenshot_8js_aebcdd70130f7e0b00b39cc981ab0bab0}{}\label{responsive-screenshot_8js_aebcdd70130f7e0b00b39cc981ab0bab0}
+\href{http://phantomjs.org/api/fs/}{\tt http\+://phantomjs.\+org/api/fs/}
+
+file system api 
+
+Referenced by url\+To\+Dir().
+
+\index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!page@{page}}
+\index{page@{page}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{page}{page}}]{\setlength{\rightskip}{0pt plus 5cm}var page = new Web\+Page()}\hypertarget{responsive-screenshot_8js_a85d8b1b97106b359e1c9ee119ebe5832}{}\label{responsive-screenshot_8js_a85d8b1b97106b359e1c9ee119ebe5832}
+\href{http://phantomjs.org/api/webpage/}{\tt http\+://phantomjs.\+org/api/webpage/}
+
+Web page api \index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!url\+Address@{url\+Address}}
+\index{url\+Address@{url\+Address}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{url\+Address}{urlAddress}}]{\setlength{\rightskip}{0pt plus 5cm}var url\+Address = {\bf args}\mbox{[}1\mbox{]}.to\+Lower\+Case()}\hypertarget{responsive-screenshot_8js_a5acdc5bac87276538445379382dba523}{}\label{responsive-screenshot_8js_a5acdc5bac87276538445379382dba523}
+setup url address (second argument); \index{responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}!viewports@{viewports}}
+\index{viewports@{viewports}!responsive-\/screenshot.\+js@{responsive-\/screenshot.\+js}}
+\subsubsection[{\texorpdfstring{viewports}{viewports}}]{\setlength{\rightskip}{0pt plus 5cm}var viewports}\hypertarget{responsive-screenshot_8js_a00da385fc9be9cb4e2d703a1fc928ef1}{}\label{responsive-screenshot_8js_a00da385fc9be9cb4e2d703a1fc928ef1}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= [
+    \{
+        width : 1200,
+        height : 800
+    \},
+    \{
+        width : 1024,
+        height : 768
+    \},
+    \{
+        width : 768,
+        height : 1024
+    \},
+    \{
+        width : 480,
+        height : 640
+    \},
+    \{
+        width : 320,
+        height : 480
+    \}
+]
+\end{DoxyCode}
+setup viewports 

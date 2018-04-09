@@ -1,0 +1,4 @@
+<map id="WcfService1.ServiceClass.GetAllElements" name="WcfService1.ServiceClass.GetAllElements">
+<area shape="rect" id="node2" href="$class_wcf_service1_1_1_service1.html#ab19a2f842aca61072732f113e7278ba6" title="parses the website form and returns a json string simulating radio buttons, check&#45;boxec, input fields, headings, dopdown lists, date pickers and labels. This is specialized for these control types and other types will not be recognized this is not working correctly. In the inputs and headings region old values are kept don&#39;t use this in debug mude, returns only partial output " alt="" coords="231,5,403,47"/>
+<area shape="rect" id="node3" href="$class_wcf_service1_1_1_service1.html#abc900a9de8f8aa5a126f1eef3353b154" title="serializes a Dictionary to a json string with indented formatting not needed with current factory pat..." alt="" coords="451,5,652,47"/>
+</map>

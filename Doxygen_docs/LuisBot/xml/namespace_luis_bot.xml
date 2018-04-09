@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespace_luis_bot" kind="namespace" language="C#">
+    <compoundname>LuisBot</compoundname>
+    <innerclass refid="class_luis_bot_1_1_s_s_m_l_helper" prot="public">LuisBot::SSMLHelper</innerclass>
+    <innernamespace refid="namespace_luis_bot_1_1_dialogs">LuisBot::Dialogs</innernamespace>
+    <innernamespace refid="namespace_luis_bot_1_1_resource">LuisBot::Resource</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="[generated]" line="1" column="1"/>
+  </compounddef>
+</doxygen>
