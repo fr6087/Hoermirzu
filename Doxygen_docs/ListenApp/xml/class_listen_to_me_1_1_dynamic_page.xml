@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_listen_to_me_1_1_dynamic_page" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::DynamicPage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Page</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_dynamic_page_1a187c4aba2636c3956cf023f1dc3f86ec" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>StackPanel</type>
+        <definition>StackPanel ListenToMe.DynamicPage.myPanel</definition>
+        <argsstring></argsstring>
+        <name>myPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/DynamicPage.xaml.cs" line="28" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/DynamicPage.xaml.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_dynamic_page_1aee4e65517f3b3f4bda37fec075ee0371" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.DynamicPage.DynamicPage</definition>
+        <argsstring>()</argsstring>
+        <name>DynamicPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/DynamicPage.xaml.cs" line="29" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/DynamicPage.xaml.cs" bodystart="29" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_dynamic_page_1ab3716b91cf48530310b3cd6ce47506a3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.DynamicPage.saveSection</definition>
+        <argsstring>(int index)</argsstring>
+        <name>saveSection</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/DynamicPage.xaml.cs" line="35" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/DynamicPage.xaml.cs" bodystart="35" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_dynamic_page_1abe7cf843906f8a930d2bdd2ade17ea0b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ListenToMe.DynamicPage.OnNavigatedTo</definition>
+        <argsstring>(NavigationEventArgs e)</argsstring>
+        <name>OnNavigatedTo</name>
+        <param>
+          <type>NavigationEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>OnNavigatedTo fills the DynamicPages&apos;s Grid element with a stackpanel that contains all fields of a section </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the stackpanel provided by NavigationService.Navigate(DynamicPage, stackpanel)-method</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/DynamicPage.xaml.cs" line="74" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/DynamicPage.xaml.cs" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_dynamic_page_1a042e3936e2668147cd280d2428ef793b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ListenToMe.DynamicPage.OnNavigatedFrom</definition>
+        <argsstring>(NavigationEventArgs e)</argsstring>
+        <name>OnNavigatedFrom</name>
+        <param>
+          <type>NavigationEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>called when the page is unloaded. Since there is navigation whenever the &apos;next&apos; button is hit the Layout grid has to be deleted. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/DynamicPage.xaml.cs" line="86" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/DynamicPage.xaml.cs" bodystart="86" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is a page that can be dynamically filled in <ref refid="class_listen_to_me_1_1_main_page" kindref="compound">MainPage</ref>. It is used to display the components that the wcf service finds per section on the form </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>Page</label>
+      </node>
+      <node id="12">
+        <label>ListenToMe.DynamicPage</label>
+        <link refid="class_listen_to_me_1_1_dynamic_page"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="15">
+        <label>Page</label>
+      </node>
+      <node id="14">
+        <label>ListenToMe.DynamicPage</label>
+        <link refid="class_listen_to_me_1_1_dynamic_page"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/DynamicPage.xaml.cs" line="27" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/DynamicPage.xaml.cs" bodystart="26" bodyend="91"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_dynamic_page_1aee4e65517f3b3f4bda37fec075ee0371" prot="public" virt="non-virtual"><scope>ListenToMe::DynamicPage</scope><name>DynamicPage</name></member>
+      <member refid="class_listen_to_me_1_1_dynamic_page_1a187c4aba2636c3956cf023f1dc3f86ec" prot="private" virt="non-virtual"><scope>ListenToMe::DynamicPage</scope><name>myPanel</name></member>
+      <member refid="class_listen_to_me_1_1_dynamic_page_1a042e3936e2668147cd280d2428ef793b" prot="protected" virt="non-virtual"><scope>ListenToMe::DynamicPage</scope><name>OnNavigatedFrom</name></member>
+      <member refid="class_listen_to_me_1_1_dynamic_page_1abe7cf843906f8a930d2bdd2ade17ea0b" prot="protected" virt="non-virtual"><scope>ListenToMe::DynamicPage</scope><name>OnNavigatedTo</name></member>
+      <member refid="class_listen_to_me_1_1_dynamic_page_1ab3716b91cf48530310b3cd6ce47506a3" prot="private" virt="non-virtual"><scope>ListenToMe::DynamicPage</scope><name>saveSection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

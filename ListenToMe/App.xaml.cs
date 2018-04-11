@@ -15,11 +15,9 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using ListenToMe.Common;
 using System.Text.RegularExpressions;
-using ClassLibrary.model;
 using Windows.Security.Credentials;
 using ListenToMe.Model;
-using ListenToMe.ServiceReference1;
-using System.ServiceModel.Channels;
+using ListenToMe.ServiceReferenceFBK;
 
 namespace ListenToMe
 {
@@ -93,22 +91,15 @@ namespace ListenToMe
             this.InitializeComponent();
             this.Suspending += OnSuspending;
 
-            client = new Service1Client( new System.ServiceModel.BasicHttpBinding(System.ServiceModel.BasicHttpSecurityMode.None)
+            client = new Service1Client(new System.ServiceModel.BasicHttpBinding(System.ServiceModel.BasicHttpSecurityMode.None)
             {
-                MaxReceivedMessageSize= 2147483647 //maximum possible buffer size is Int64.Value 9223372036854775807
+                MaxReceivedMessageSize = 2147483647 //maximum possible buffer size is Int64.Value 9223372036854775807
             },
-            new System.ServiceModel.EndpointAddress("http://localhost:65384/Service1.svc")
+            new System.ServiceModel.EndpointAddress("http://localhost:59964/Service1.svc")
 
-                );
-            /**
+            );
+            /** the MaxReceivedBufferSize is important because GetAllElements() returns a message 2^16*100 and 2^16 is the max default value 
              * reference https://stackoverflow.com/questions/16173835/wcf-error-the-server-did-not-provide-a-meaningful-reply
-             var API = new StreamService.StreamServiceClient(
-  new System.ServiceModel.NetTcpBinding(System.ServiceModel.SecurityMode.None)
-  {
-    MaxReceivedMessageSize = 2147483647
-  },
-  new System.ServiceModel.EndpointAddress("net.tcp://machine/app/service.svc")
-);
              */
         }
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loginpage_2examl_2ecs',['LoginPage.xaml.cs',['../_login_page_8xaml_8cs.html',1,'']]]
+  ['imodelmethods_2ecs',['IModelMethods.cs',['../_i_model_methods_8cs.html',1,'']]]
 ];

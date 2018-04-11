@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_e87bbb279bd5c2a32f3158e372509d76" kind="dir">
+    <compoundname>C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel</compoundname>
+    <innerfile refid="_listen_to_me_voice_command_8cs">ListenToMeVoiceCommand.cs</innerfile>
+    <innerfile refid="_section_list_view_model_8cs">SectionListViewModel.cs</innerfile>
+    <innerfile refid="_section_view_model_8cs">SectionViewModel.cs</innerfile>
+    <innerfile refid="_view_model_base_8cs">ViewModelBase.cs</innerfile>
+    <innerfile refid="_view_model_locator_8cs">ViewModelLocator.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/"/>
+  </compounddef>
+</doxygen>

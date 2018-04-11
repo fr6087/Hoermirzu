@@ -2,189 +2,103 @@
 \label{class_listen_to_me_1_1_app}\index{Listen\+To\+Me.\+App@{Listen\+To\+Me.\+App}}
 
 
-The class \hyperlink{class_listen_to_me_1_1_app}{App} contains application specific methods for starting the application. Initializations and state-\/related actions are includes.  
+contains application specific methods for starting the application. Initializations and state-\/related actions are includes.  
 
 
 
 
-Inheritance diagram for Listen\+To\+Me.\+App\+:
-\nopagebreak
+Inheritance diagram for Listen\+To\+Me.\+App\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=167pt]{class_listen_to_me_1_1_app__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Collaboration diagram for Listen\+To\+Me.\+App\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=287pt]{class_listen_to_me_1_1_app__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_listen_to_me_1_1_app_a8b865aa5eb8e0a1333c2b29f41bf4aa1}{App} ()
-\begin{DoxyCompactList}\small\item\em Initialized the Singleton application object. This is the first line of built code and the logic equivalent to main() that is Win\+Main(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_listen_to_me_1_1_app_a8b865aa5eb8e0a1333c2b29f41bf4aa1}{App}} ()
+\begin{DoxyCompactList}\small\item\em the Dictionary is filled if the Debug mode is not enabled instead of sections\+List \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static System.\+Collections.\+Hashtable \hyperlink{class_listen_to_me_1_1_app_a311ccaa1ae0fd9cf9f89d3e3466098fe}{hash\+Table}
+static System.\+Collections.\+Hashtable \mbox{\hyperlink{class_listen_to_me_1_1_app_a311ccaa1ae0fd9cf9f89d3e3466098fe}{hash\+Table}}
 \begin{DoxyCompactList}\small\item\em saves the adresses of the input fields present in the frame; this helps identifying the control in which to display the textvalue recognized by Luis \end{DoxyCompactList}\item 
-static Service1\+Client \hyperlink{class_listen_to_me_1_1_app_a41b762ac78fada5d35954d39419b8e36}{client}
+static Bot \mbox{\hyperlink{class_listen_to_me_1_1_app_a2862b032c76095016dd7dc7600bfd029}{Bot}}
+\begin{DoxyCompactList}\small\item\em connects via Direct\+Line tho the Web\+App. Communicates with the language understanding intelligence model \end{DoxyCompactList}\item 
+static Service1\+Client \mbox{\hyperlink{class_listen_to_me_1_1_app_a41b762ac78fada5d35954d39419b8e36}{client}}
 \begin{DoxyCompactList}\small\item\em the W\+C\+F-\/\+Service client instance that is able to parse the H\+T\+M\+L-\/\+Form \end{DoxyCompactList}\item 
-static Model.\+Form \hyperlink{class_listen_to_me_1_1_app_a3e094e220103fe4590cf50c22f38ee65}{formstore} = new Model.\+Form()
+static \mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_form}{Model.\+Form}} \mbox{\hyperlink{class_listen_to_me_1_1_app_a3e094e220103fe4590cf50c22f38ee65}{formstore}} = new \mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_form}{Model.\+Form}}()
 \begin{DoxyCompactList}\small\item\em keeps a collection Model.\+Form\+Store.\+Sections of all the sections of the web form. is able to store and load sections in the device storage \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-override void \hyperlink{class_listen_to_me_1_1_app_ace89a3624e2de8cc528dea8b1288d03f}{On\+Launched} (Launch\+Activated\+Event\+Args e)
+override void \mbox{\hyperlink{class_listen_to_me_1_1_app_ace89a3624e2de8cc528dea8b1288d03f}{On\+Launched}} (Launch\+Activated\+Event\+Args e)
 \begin{DoxyCompactList}\small\item\em Is called as the application is started normally by the user. Other enty points are used for example if the application is activated in the fore or background \end{DoxyCompactList}\item 
-async override void \hyperlink{class_listen_to_me_1_1_app_a3e2da49bb555b7fdc5858f5442d396e4}{On\+Activated} (I\+Activated\+Event\+Args e)
-\begin{DoxyCompactList}\small\item\em On\+Activated is called whenever an external application e.\+g-\/ Cortana launches the Listen\+To\+Me\+App \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Static Package Functions}
-\begin{DoxyCompactItemize}
-\item 
-static void \hyperlink{class_listen_to_me_1_1_app_ac165e2cffa6fc662285627595a6a7622}{Filter\+\_\+\+Changed} (object sender, Text\+Changed\+Event\+Args e, String regex)
-\begin{DoxyCompactList}\small\item\em Filter changed is supposed to filter every sign from input string that\textquotesingle{}s not alphanumerical. Unfortunately, Textchanged\+Event is only triggered between posts to the server, so this is inept try. see reference\+: \href{https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.textbox.textchanged(v=vs.110).aspx}{\tt https\+://msdn.\+microsoft.\+com/en-\/us/library/system.\+web.\+ui.\+webcontrols.\+textbox.\+textchanged(v=vs.\+110).\+aspx} \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Static Package Attributes}
-\begin{DoxyCompactItemize}
-\item 
-static readonly string \hyperlink{class_listen_to_me_1_1_app_a2c50cfed33094aff84b281be8244f41a}{uri} = \char`\"{}http\+://10.\+150.\+50.\+21/formularservice/formular/A\+\_\+\+F\+O\+R\+E\+X\+\_\+\+A\+N\+T\+R\+A\+G\+\_\+\+E\+SF/appl/d556026e-\/991d-\/11e7-\/9fb1-\/27c0f1da4ec4/?lang=de\char`\"{}
-\begin{DoxyCompactList}\small\item\em the uri of the form to be accessed. Warning\+: the client is highly form-\/specific and is searching for specific attributes and types. Similar generated forms that contain the same attributes and html-\/tags will work, but all other forms will not be parsed correctly. this form ist available in Polish and English as well. But the forms of these languages still contain 50\% German so I\textquotesingle{}m neglecting these other languages. \end{DoxyCompactList}\item 
-static bool \hyperlink{class_listen_to_me_1_1_app_a59acc333f6141d00101170b53ad29754}{is\+Debug} = true
-\begin{DoxyCompactList}\small\item\em is Debug determines the mode in which to run the application. If the above form uri is sometimes not available due to maintenace this should be set to true. If the form is available, this should be false. \end{DoxyCompactList}\item 
-static Dictionary$<$ string, Section $>$ \hyperlink{class_listen_to_me_1_1_app_a0ceb5219b35307c9377448b1071ee4cc}{sections}
-\begin{DoxyCompactList}\small\item\em the Dictionary is filled if the Debug mode is not enabled instead of sections\+List \end{DoxyCompactList}\end{DoxyCompactItemize}
+async override void \mbox{\hyperlink{class_listen_to_me_1_1_app_a3e2da49bb555b7fdc5858f5442d396e4}{On\+Activated}} (I\+Activated\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em is called whenever an external application e.\+g-\/ Cortana launches the Listen\+To\+Me\+App \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-static Navigation\+Service \hyperlink{class_listen_to_me_1_1_app_ae35ddc10bf8aad1a80c92c71c6e3b7fc}{Navigation\+Service}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+static Navigation\+Service \mbox{\hyperlink{class_listen_to_me_1_1_app_ae35ddc10bf8aad1a80c92c71c6e3b7fc}{Navigation\+Service}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
 \begin{DoxyCompactList}\small\item\em Navigation service, provides a decoupled way to trigger the UI Frame to transition between views. \end{DoxyCompactList}\item 
-static Password\+Vault \hyperlink{class_listen_to_me_1_1_app_ab90eb28339ec63046179e8756fd08314}{vault}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\begin{DoxyCompactList}\small\item\em The password vault stores application specific usernames and passwords encrypted \end{DoxyCompactList}\item 
-static string \hyperlink{class_listen_to_me_1_1_app_a8cb2cb11cbb86861f2e1a11840270bf0}{user\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
-\begin{DoxyCompactList}\small\item\em the user\+Name field is a tempory storage for the user\textquotesingle{}s name to\+Do\+: check if needed. \end{DoxyCompactList}\item 
-static string \hyperlink{class_listen_to_me_1_1_app_a64ce0f541633af939a3afca3a1d15dec}{user\+Password}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
-\end{DoxyCompactItemize}
+static Password\+Vault \mbox{\hyperlink{class_listen_to_me_1_1_app_ad1b3a77f44f52055446727716abfccc6}{Vault}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The password vault stores application specific usernames and passwords encrypted \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-async void \hyperlink{class_listen_to_me_1_1_app_ac79758b58c56c49b87a3e2ff6a9ad638}{Activate\+Voice\+Commands} ()
+async void \mbox{\hyperlink{class_listen_to_me_1_1_app_ac79758b58c56c49b87a3e2ff6a9ad638}{Activate\+Voice\+Commands}} ()
 \begin{DoxyCompactList}\small\item\em The method Activate\+Voice\+Commands is calling an Voice\+Commands.\+xml-\/\+File from local storage to determine which Cortana commands are valid. It also is able to update the phrase lists page and sections. The problem with that is, though that the phrase lists are limited to one word.\+7 For a voice command like \char`\"{}\+Open \textquotesingle{}\+Angaben zum antragsstellenden Unternehmen\textquotesingle{}\char`\"{} this is problematic. \end{DoxyCompactList}\item 
-void \hyperlink{class_listen_to_me_1_1_app_ad23d27a2bdcd858e10e589bfadb1db17}{init\+Gui} (Launch\+Activated\+Event\+Args e=null)
+void \mbox{\hyperlink{class_listen_to_me_1_1_app_a4a8894ffc0736b646470c2a8ad6fca0d}{Init\+Gui}} (Launch\+Activated\+Event\+Args e=null)
 \begin{DoxyCompactList}\small\item\em init\+Gui determines whether or not there is an active Windows Frame. It creates one for the application if there wasn\textquotesingle{}t one before. As soon as there exists a frame, the method can transfer launch\+Arguments to it. This is curently not used but might be in the future interesting. The command Edit could by this concept get the launch argument \char`\"{}company details\char`\"{} and is navigating the frame to companydails page. \end{DoxyCompactList}\item 
-async Task \hyperlink{class_listen_to_me_1_1_app_a53f967dbeb997202786db199d54f279f}{perform\+Command\+Async} (string command\+Name, String result)
+async Task \mbox{\hyperlink{class_listen_to_me_1_1_app_aaf710baa7ee4fb8e6da7e97a333e6e8c}{Perform\+Command\+Async}} (string command\+Name, String result)
 \begin{DoxyCompactList}\small\item\em perform\+Command performs the voice commmand it received from Cortana or the input text field. \end{DoxyCompactList}\item 
-void \hyperlink{class_listen_to_me_1_1_app_a8867647372e101bdd100a68eab4d0d3a}{On\+Navigation\+Failed} (object sender, Navigation\+Failed\+Event\+Args e)
+void \mbox{\hyperlink{class_listen_to_me_1_1_app_a8867647372e101bdd100a68eab4d0d3a}{On\+Navigation\+Failed}} (object sender, Navigation\+Failed\+Event\+Args e)
 \begin{DoxyCompactList}\small\item\em Is called when nvigation to a certain page fails \end{DoxyCompactList}\item 
-void \hyperlink{class_listen_to_me_1_1_app_adc9d18402a7a696ca6d4a7631a610e8d}{On\+Suspending} (object sender, Suspending\+Event\+Args e)
+void \mbox{\hyperlink{class_listen_to_me_1_1_app_adc9d18402a7a696ca6d4a7631a610e8d}{On\+Suspending}} (object sender, Suspending\+Event\+Args e)
 \begin{DoxyCompactList}\small\item\em On\+Suspending is called if the application execution is stopped. The application state is stored without knowing whether the application is terminated or will be called at a later time \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-Root\+Frame\+Navigation\+Helper \hyperlink{class_listen_to_me_1_1_app_a92eb573f880ce92d5b9fa79b90ba3f41}{root\+Frame\+Navigation\+Helper}
-\begin{DoxyCompactList}\small\item\em The rootframenavigation helper instance enables \hyperlink{class_listen_to_me_1_1_app}{App} to register to keayboard events related to navigation \end{DoxyCompactList}\end{DoxyCompactItemize}
+Root\+Frame\+Navigation\+Helper \mbox{\hyperlink{class_listen_to_me_1_1_app_a92eb573f880ce92d5b9fa79b90ba3f41}{root\+Frame\+Navigation\+Helper}}
+\begin{DoxyCompactList}\small\item\em The rootframenavigation helper instance enables \mbox{\hyperlink{class_listen_to_me_1_1_app}{App}} to register to keayboard events related to navigation \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-The class \hyperlink{class_listen_to_me_1_1_app}{App} contains application specific methods for starting the application. Initializations and state-\/related actions are includes. 
+contains application specific methods for starting the application. Initializations and state-\/related actions are includes. 
 
 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_a8b865aa5eb8e0a1333c2b29f41bf4aa1}\label{class_listen_to_me_1_1_app_a8b865aa5eb8e0a1333c2b29f41bf4aa1}} 
 \index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!App@{App}}
 \index{App@{App}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{App()}{App()}}]{\setlength{\rightskip}{0pt plus 5cm}Listen\+To\+Me.\+App.\+App (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{class_listen_to_me_1_1_app_a8b865aa5eb8e0a1333c2b29f41bf4aa1}{}\label{class_listen_to_me_1_1_app_a8b865aa5eb8e0a1333c2b29f41bf4aa1}
-
-
-Initialized the Singleton application object. This is the first line of built code and the logic equivalent to main() that is Win\+Main(). 
+\subsubsection{\texorpdfstring{App()}{App()}}
+{\footnotesize\ttfamily Listen\+To\+Me.\+App.\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_app_a8b865aa5eb8e0a1333c2b29f41bf4aa1_cgraph}
-\end{center}
-\end{figure}
+the Dictionary is filled if the Debug mode is not enabled instead of sections\+List 
 
-
-
+Initialized the Singleton application object. This is the first line of built code and the logic equivalent to main() that is Win\+Main(). the Max\+Received\+Buffer\+Size is important because Get\+All\+Elements() returns a message 2$^\wedge$16$\ast$100 and 2$^\wedge$16 is the max default value reference \href{https://stackoverflow.com/questions/16173835/wcf-error-the-server-did-not-provide-a-meaningful-reply}{\tt https\+://stackoverflow.\+com/questions/16173835/wcf-\/error-\/the-\/server-\/did-\/not-\/provide-\/a-\/meaningful-\/reply}
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_ac79758b58c56c49b87a3e2ff6a9ad638}\label{class_listen_to_me_1_1_app_ac79758b58c56c49b87a3e2ff6a9ad638}} 
 \index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!Activate\+Voice\+Commands@{Activate\+Voice\+Commands}}
 \index{Activate\+Voice\+Commands@{Activate\+Voice\+Commands}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{Activate\+Voice\+Commands()}{ActivateVoiceCommands()}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+App.\+Activate\+Voice\+Commands (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_app_ac79758b58c56c49b87a3e2ff6a9ad638}{}\label{class_listen_to_me_1_1_app_ac79758b58c56c49b87a3e2ff6a9ad638}
+\subsubsection{\texorpdfstring{Activate\+Voice\+Commands()}{ActivateVoiceCommands()}}
+{\footnotesize\ttfamily async void Listen\+To\+Me.\+App.\+Activate\+Voice\+Commands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The method Activate\+Voice\+Commands is calling an Voice\+Commands.\+xml-\/\+File from local storage to determine which Cortana commands are valid. It also is able to update the phrase lists page and sections. The problem with that is, though that the phrase lists are limited to one word.\+7 For a voice command like \char`\"{}\+Open \textquotesingle{}\+Angaben zum antragsstellenden Unternehmen\textquotesingle{}\char`\"{} this is problematic. 
 
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_a4a8894ffc0736b646470c2a8ad6fca0d}\label{class_listen_to_me_1_1_app_a4a8894ffc0736b646470c2a8ad6fca0d}} 
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!Init\+Gui@{Init\+Gui}}
+\index{Init\+Gui@{Init\+Gui}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection{\texorpdfstring{Init\+Gui()}{InitGui()}}
+{\footnotesize\ttfamily void Listen\+To\+Me.\+App.\+Init\+Gui (\begin{DoxyParamCaption}\item[{Launch\+Activated\+Event\+Args}]{e = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_app_ac79758b58c56c49b87a3e2ff6a9ad638_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_app_ac79758b58c56c49b87a3e2ff6a9ad638_icgraph}
-\end{center}
-\end{figure}
-
-
-\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!Filter\+\_\+\+Changed@{Filter\+\_\+\+Changed}}
-\index{Filter\+\_\+\+Changed@{Filter\+\_\+\+Changed}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{Filter\+\_\+\+Changed(object sender, Text\+Changed\+Event\+Args e, String regex)}{Filter_Changed(object sender, TextChangedEventArgs e, String regex)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Listen\+To\+Me.\+App.\+Filter\+\_\+\+Changed (
-\begin{DoxyParamCaption}
-\item[{object}]{sender, }
-\item[{Text\+Changed\+Event\+Args}]{e, }
-\item[{String}]{regex}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}\hypertarget{class_listen_to_me_1_1_app_ac165e2cffa6fc662285627595a6a7622}{}\label{class_listen_to_me_1_1_app_ac165e2cffa6fc662285627595a6a7622}
-
-
-Filter changed is supposed to filter every sign from input string that\textquotesingle{}s not alphanumerical. Unfortunately, Textchanged\+Event is only triggered between posts to the server, so this is inept try. see reference\+: \href{https://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.textbox.textchanged(v=vs.110).aspx}{\tt https\+://msdn.\+microsoft.\+com/en-\/us/library/system.\+web.\+ui.\+webcontrols.\+textbox.\+textchanged(v=vs.\+110).\+aspx} 
-
-
-\begin{DoxyParams}{Parameters}
-{\em sender} & \\
-\hline
-{\em e} & \\
-\hline
-\end{DoxyParams}
-\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!init\+Gui@{init\+Gui}}
-\index{init\+Gui@{init\+Gui}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{init\+Gui(\+Launch\+Activated\+Event\+Args e=null)}{initGui(LaunchActivatedEventArgs e=null)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+App.\+init\+Gui (
-\begin{DoxyParamCaption}
-\item[{Launch\+Activated\+Event\+Args}]{e = {\ttfamily null}}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_app_ad23d27a2bdcd858e10e589bfadb1db17}{}\label{class_listen_to_me_1_1_app_ad23d27a2bdcd858e10e589bfadb1db17}
 
 
 init\+Gui determines whether or not there is an active Windows Frame. It creates one for the application if there wasn\textquotesingle{}t one before. As soon as there exists a frame, the method can transfer launch\+Arguments to it. This is curently not used but might be in the future interesting. The command Edit could by this concept get the launch argument \char`\"{}company details\char`\"{} and is navigating the frame to companydails page. 
@@ -194,60 +108,22 @@ init\+Gui determines whether or not there is an active Windows Frame. It creates
 {\em e} & \\
 \hline
 \end{DoxyParams}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_app_ad23d27a2bdcd858e10e589bfadb1db17_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_app_ad23d27a2bdcd858e10e589bfadb1db17_icgraph}
-\end{center}
-\end{figure}
-
-
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_a3e2da49bb555b7fdc5858f5442d396e4}\label{class_listen_to_me_1_1_app_a3e2da49bb555b7fdc5858f5442d396e4}} 
 \index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!On\+Activated@{On\+Activated}}
 \index{On\+Activated@{On\+Activated}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{On\+Activated(\+I\+Activated\+Event\+Args e)}{OnActivated(IActivatedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}async override void Listen\+To\+Me.\+App.\+On\+Activated (
-\begin{DoxyParamCaption}
-\item[{I\+Activated\+Event\+Args}]{e}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_listen_to_me_1_1_app_a3e2da49bb555b7fdc5858f5442d396e4}{}\label{class_listen_to_me_1_1_app_a3e2da49bb555b7fdc5858f5442d396e4}
-
-
-On\+Activated is called whenever an external application e.\+g-\/ Cortana launches the Listen\+To\+Me\+App 
+\subsubsection{\texorpdfstring{On\+Activated()}{OnActivated()}}
+{\footnotesize\ttfamily async override void Listen\+To\+Me.\+App.\+On\+Activated (\begin{DoxyParamCaption}\item[{I\+Activated\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_app_a3e2da49bb555b7fdc5858f5442d396e4_cgraph}
-\end{center}
-\end{figure}
+is called whenever an external application e.\+g-\/ Cortana launches the Listen\+To\+Me\+App 
 
-
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_ace89a3624e2de8cc528dea8b1288d03f}\label{class_listen_to_me_1_1_app_ace89a3624e2de8cc528dea8b1288d03f}} 
 \index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!On\+Launched@{On\+Launched}}
 \index{On\+Launched@{On\+Launched}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{On\+Launched(\+Launch\+Activated\+Event\+Args e)}{OnLaunched(LaunchActivatedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}override void Listen\+To\+Me.\+App.\+On\+Launched (
-\begin{DoxyParamCaption}
-\item[{Launch\+Activated\+Event\+Args}]{e}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_listen_to_me_1_1_app_ace89a3624e2de8cc528dea8b1288d03f}{}\label{class_listen_to_me_1_1_app_ace89a3624e2de8cc528dea8b1288d03f}
+\subsubsection{\texorpdfstring{On\+Launched()}{OnLaunched()}}
+{\footnotesize\ttfamily override void Listen\+To\+Me.\+App.\+On\+Launched (\begin{DoxyParamCaption}\item[{Launch\+Activated\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 Is called as the application is started normally by the user. Other enty points are used for example if the application is activated in the fore or background 
@@ -257,26 +133,12 @@ Is called as the application is started normally by the user. Other enty points 
 {\em e} & Details on application start and start arguments.\\
 \hline
 \end{DoxyParams}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_app_ace89a3624e2de8cc528dea8b1288d03f_cgraph}
-\end{center}
-\end{figure}
-
-
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_a8867647372e101bdd100a68eab4d0d3a}\label{class_listen_to_me_1_1_app_a8867647372e101bdd100a68eab4d0d3a}} 
 \index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!On\+Navigation\+Failed@{On\+Navigation\+Failed}}
 \index{On\+Navigation\+Failed@{On\+Navigation\+Failed}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{On\+Navigation\+Failed(object sender, Navigation\+Failed\+Event\+Args e)}{OnNavigationFailed(object sender, NavigationFailedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+App.\+On\+Navigation\+Failed (
-\begin{DoxyParamCaption}
-\item[{object}]{sender, }
-\item[{Navigation\+Failed\+Event\+Args}]{e}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_app_a8867647372e101bdd100a68eab4d0d3a}{}\label{class_listen_to_me_1_1_app_a8867647372e101bdd100a68eab4d0d3a}
+\subsubsection{\texorpdfstring{On\+Navigation\+Failed()}{OnNavigationFailed()}}
+{\footnotesize\ttfamily void Listen\+To\+Me.\+App.\+On\+Navigation\+Failed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Navigation\+Failed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 Is called when nvigation to a certain page fails 
@@ -288,26 +150,12 @@ Is called when nvigation to a certain page fails
 {\em e} & Details about navigation error\\
 \hline
 \end{DoxyParams}
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_app_a8867647372e101bdd100a68eab4d0d3a_icgraph}
-\end{center}
-\end{figure}
-
-
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_adc9d18402a7a696ca6d4a7631a610e8d}\label{class_listen_to_me_1_1_app_adc9d18402a7a696ca6d4a7631a610e8d}} 
 \index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!On\+Suspending@{On\+Suspending}}
 \index{On\+Suspending@{On\+Suspending}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{On\+Suspending(object sender, Suspending\+Event\+Args e)}{OnSuspending(object sender, SuspendingEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+App.\+On\+Suspending (
-\begin{DoxyParamCaption}
-\item[{object}]{sender, }
-\item[{Suspending\+Event\+Args}]{e}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_app_adc9d18402a7a696ca6d4a7631a610e8d}{}\label{class_listen_to_me_1_1_app_adc9d18402a7a696ca6d4a7631a610e8d}
+\subsubsection{\texorpdfstring{On\+Suspending()}{OnSuspending()}}
+{\footnotesize\ttfamily void Listen\+To\+Me.\+App.\+On\+Suspending (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Suspending\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 On\+Suspending is called if the application execution is stopped. The application state is stored without knowing whether the application is terminated or will be called at a later time 
@@ -319,26 +167,12 @@ On\+Suspending is called if the application execution is stopped. The applicatio
 {\em e} & Details on suspension.\\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_aaf710baa7ee4fb8e6da7e97a333e6e8c}\label{class_listen_to_me_1_1_app_aaf710baa7ee4fb8e6da7e97a333e6e8c}} 
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!Perform\+Command\+Async@{Perform\+Command\+Async}}
+\index{Perform\+Command\+Async@{Perform\+Command\+Async}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection{\texorpdfstring{Perform\+Command\+Async()}{PerformCommandAsync()}}
+{\footnotesize\ttfamily async Task Listen\+To\+Me.\+App.\+Perform\+Command\+Async (\begin{DoxyParamCaption}\item[{string}]{command\+Name,  }\item[{String}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_app_adc9d18402a7a696ca6d4a7631a610e8d_icgraph}
-\end{center}
-\end{figure}
-
-
-\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!perform\+Command\+Async@{perform\+Command\+Async}}
-\index{perform\+Command\+Async@{perform\+Command\+Async}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{perform\+Command\+Async(string command\+Name, String result)}{performCommandAsync(string commandName, String result)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Listen\+To\+Me.\+App.\+perform\+Command\+Async (
-\begin{DoxyParamCaption}
-\item[{string}]{command\+Name, }
-\item[{String}]{result}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_app_a53f967dbeb997202786db199d54f279f}{}\label{class_listen_to_me_1_1_app_a53f967dbeb997202786db199d54f279f}
 
 
 perform\+Command performs the voice commmand it received from Cortana or the input text field. 
@@ -355,91 +189,76 @@ perform\+Command performs the voice commmand it received from Cortana or the inp
 \end{DoxyReturn}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_app_a53f967dbeb997202786db199d54f279f_icgraph}
-\end{center}
-\end{figure}
-
-
-
-
 \subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_a2862b032c76095016dd7dc7600bfd029}\label{class_listen_to_me_1_1_app_a2862b032c76095016dd7dc7600bfd029}} 
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!Bot@{Bot}}
+\index{Bot@{Bot}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection{\texorpdfstring{Bot}{Bot}}
+{\footnotesize\ttfamily Bot Listen\+To\+Me.\+App.\+Bot\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+connects via Direct\+Line tho the Web\+App. Communicates with the language understanding intelligence model 
+
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_a41b762ac78fada5d35954d39419b8e36}\label{class_listen_to_me_1_1_app_a41b762ac78fada5d35954d39419b8e36}} 
 \index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!client@{client}}
 \index{client@{client}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{client}{client}}]{\setlength{\rightskip}{0pt plus 5cm}Service1\+Client Listen\+To\+Me.\+App.\+client\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_listen_to_me_1_1_app_a41b762ac78fada5d35954d39419b8e36}{}\label{class_listen_to_me_1_1_app_a41b762ac78fada5d35954d39419b8e36}
+\subsubsection{\texorpdfstring{client}{client}}
+{\footnotesize\ttfamily Service1\+Client Listen\+To\+Me.\+App.\+client\hspace{0.3cm}{\ttfamily [static]}}
+
 
 
 the W\+C\+F-\/\+Service client instance that is able to parse the H\+T\+M\+L-\/\+Form 
 
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_a3e094e220103fe4590cf50c22f38ee65}\label{class_listen_to_me_1_1_app_a3e094e220103fe4590cf50c22f38ee65}} 
 \index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!formstore@{formstore}}
 \index{formstore@{formstore}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{formstore}{formstore}}]{\setlength{\rightskip}{0pt plus 5cm}Model.\+Form Listen\+To\+Me.\+App.\+formstore = new Model.\+Form()\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_listen_to_me_1_1_app_a3e094e220103fe4590cf50c22f38ee65}{}\label{class_listen_to_me_1_1_app_a3e094e220103fe4590cf50c22f38ee65}
+\subsubsection{\texorpdfstring{formstore}{formstore}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_form}{Model.\+Form}} Listen\+To\+Me.\+App.\+formstore = new \mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_form}{Model.\+Form}}()\hspace{0.3cm}{\ttfamily [static]}}
+
 
 
 keeps a collection Model.\+Form\+Store.\+Sections of all the sections of the web form. is able to store and load sections in the device storage 
 
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_a311ccaa1ae0fd9cf9f89d3e3466098fe}\label{class_listen_to_me_1_1_app_a311ccaa1ae0fd9cf9f89d3e3466098fe}} 
 \index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!hash\+Table@{hash\+Table}}
 \index{hash\+Table@{hash\+Table}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{hash\+Table}{hashTable}}]{\setlength{\rightskip}{0pt plus 5cm}System.\+Collections.\+Hashtable Listen\+To\+Me.\+App.\+hash\+Table\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_listen_to_me_1_1_app_a311ccaa1ae0fd9cf9f89d3e3466098fe}{}\label{class_listen_to_me_1_1_app_a311ccaa1ae0fd9cf9f89d3e3466098fe}
+\subsubsection{\texorpdfstring{hash\+Table}{hashTable}}
+{\footnotesize\ttfamily System.\+Collections.\+Hashtable Listen\+To\+Me.\+App.\+hash\+Table\hspace{0.3cm}{\ttfamily [static]}}
+
 
 
 saves the adresses of the input fields present in the frame; this helps identifying the control in which to display the textvalue recognized by Luis 
 
-\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!is\+Debug@{is\+Debug}}
-\index{is\+Debug@{is\+Debug}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{is\+Debug}{isDebug}}]{\setlength{\rightskip}{0pt plus 5cm}bool Listen\+To\+Me.\+App.\+is\+Debug = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}\hypertarget{class_listen_to_me_1_1_app_a59acc333f6141d00101170b53ad29754}{}\label{class_listen_to_me_1_1_app_a59acc333f6141d00101170b53ad29754}
-
-
-is Debug determines the mode in which to run the application. If the above form uri is sometimes not available due to maintenace this should be set to true. If the form is available, this should be false. 
-
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_a92eb573f880ce92d5b9fa79b90ba3f41}\label{class_listen_to_me_1_1_app_a92eb573f880ce92d5b9fa79b90ba3f41}} 
 \index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!root\+Frame\+Navigation\+Helper@{root\+Frame\+Navigation\+Helper}}
 \index{root\+Frame\+Navigation\+Helper@{root\+Frame\+Navigation\+Helper}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{root\+Frame\+Navigation\+Helper}{rootFrameNavigationHelper}}]{\setlength{\rightskip}{0pt plus 5cm}Root\+Frame\+Navigation\+Helper Listen\+To\+Me.\+App.\+root\+Frame\+Navigation\+Helper\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_app_a92eb573f880ce92d5b9fa79b90ba3f41}{}\label{class_listen_to_me_1_1_app_a92eb573f880ce92d5b9fa79b90ba3f41}
+\subsubsection{\texorpdfstring{root\+Frame\+Navigation\+Helper}{rootFrameNavigationHelper}}
+{\footnotesize\ttfamily Root\+Frame\+Navigation\+Helper Listen\+To\+Me.\+App.\+root\+Frame\+Navigation\+Helper\hspace{0.3cm}{\ttfamily [private]}}
 
 
-The rootframenavigation helper instance enables \hyperlink{class_listen_to_me_1_1_app}{App} to register to keayboard events related to navigation 
 
-\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!sections@{sections}}
-\index{sections@{sections}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{sections}{sections}}]{\setlength{\rightskip}{0pt plus 5cm}Dictionary$<$string, Section$>$ Listen\+To\+Me.\+App.\+sections\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}\hypertarget{class_listen_to_me_1_1_app_a0ceb5219b35307c9377448b1071ee4cc}{}\label{class_listen_to_me_1_1_app_a0ceb5219b35307c9377448b1071ee4cc}
-
-
-the Dictionary is filled if the Debug mode is not enabled instead of sections\+List 
-
-\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!uri@{uri}}
-\index{uri@{uri}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{uri}{uri}}]{\setlength{\rightskip}{0pt plus 5cm}readonly string Listen\+To\+Me.\+App.\+uri = \char`\"{}http\+://10.\+150.\+50.\+21/formularservice/formular/A\+\_\+\+F\+O\+R\+E\+X\+\_\+\+A\+N\+T\+R\+A\+G\+\_\+\+E\+SF/appl/d556026e-\/991d-\/11e7-\/9fb1-\/27c0f1da4ec4/?lang=de\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}\hypertarget{class_listen_to_me_1_1_app_a2c50cfed33094aff84b281be8244f41a}{}\label{class_listen_to_me_1_1_app_a2c50cfed33094aff84b281be8244f41a}
-
-
-the uri of the form to be accessed. Warning\+: the client is highly form-\/specific and is searching for specific attributes and types. Similar generated forms that contain the same attributes and html-\/tags will work, but all other forms will not be parsed correctly. this form ist available in Polish and English as well. But the forms of these languages still contain 50\% German so I\textquotesingle{}m neglecting these other languages. 
+The rootframenavigation helper instance enables \mbox{\hyperlink{class_listen_to_me_1_1_app}{App}} to register to keayboard events related to navigation 
 
 
 
 \subsection{Property Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_ae35ddc10bf8aad1a80c92c71c6e3b7fc}\label{class_listen_to_me_1_1_app_ae35ddc10bf8aad1a80c92c71c6e3b7fc}} 
 \index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!Navigation\+Service@{Navigation\+Service}}
 \index{Navigation\+Service@{Navigation\+Service}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{Navigation\+Service}{NavigationService}}]{\setlength{\rightskip}{0pt plus 5cm}Navigation\+Service Listen\+To\+Me.\+App.\+Navigation\+Service\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_listen_to_me_1_1_app_ae35ddc10bf8aad1a80c92c71c6e3b7fc}{}\label{class_listen_to_me_1_1_app_ae35ddc10bf8aad1a80c92c71c6e3b7fc}
+\subsubsection{\texorpdfstring{Navigation\+Service}{NavigationService}}
+{\footnotesize\ttfamily Navigation\+Service Listen\+To\+Me.\+App.\+Navigation\+Service\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}}
+
 
 
 Navigation service, provides a decoupled way to trigger the UI Frame to transition between views. 
 
-\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!user\+Name@{user\+Name}}
-\index{user\+Name@{user\+Name}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{user\+Name}{userName}}]{\setlength{\rightskip}{0pt plus 5cm}string Listen\+To\+Me.\+App.\+user\+Name\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}, {\ttfamily [package]}}\hypertarget{class_listen_to_me_1_1_app_a8cb2cb11cbb86861f2e1a11840270bf0}{}\label{class_listen_to_me_1_1_app_a8cb2cb11cbb86861f2e1a11840270bf0}
+\mbox{\Hypertarget{class_listen_to_me_1_1_app_ad1b3a77f44f52055446727716abfccc6}\label{class_listen_to_me_1_1_app_ad1b3a77f44f52055446727716abfccc6}} 
+\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!Vault@{Vault}}
+\index{Vault@{Vault}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
+\subsubsection{\texorpdfstring{Vault}{Vault}}
+{\footnotesize\ttfamily Password\+Vault Listen\+To\+Me.\+App.\+Vault\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
 
-
-the user\+Name field is a tempory storage for the user\textquotesingle{}s name to\+Do\+: check if needed. 
-
-\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!user\+Password@{user\+Password}}
-\index{user\+Password@{user\+Password}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{user\+Password}{userPassword}}]{\setlength{\rightskip}{0pt plus 5cm}string Listen\+To\+Me.\+App.\+user\+Password\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}, {\ttfamily [package]}}\hypertarget{class_listen_to_me_1_1_app_a64ce0f541633af939a3afca3a1d15dec}{}\label{class_listen_to_me_1_1_app_a64ce0f541633af939a3afca3a1d15dec}
-\index{Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}!vault@{vault}}
-\index{vault@{vault}!Listen\+To\+Me\+::\+App@{Listen\+To\+Me\+::\+App}}
-\subsubsection[{\texorpdfstring{vault}{vault}}]{\setlength{\rightskip}{0pt plus 5cm}Password\+Vault Listen\+To\+Me.\+App.\+vault\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_listen_to_me_1_1_app_ab90eb28339ec63046179e8756fd08314}{}\label{class_listen_to_me_1_1_app_ab90eb28339ec63046179e8756fd08314}
 
 
 The password vault stores application specific usernames and passwords encrypted 
@@ -448,4 +267,4 @@ The password vault stores application specific usernames and passwords encrypted
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Listen\+To\+Me/\hyperlink{_app_8xaml_8cs}{App.\+xaml.\+cs}\end{DoxyCompactItemize}
+C\+:/\+Users/fgeissle/source/repos/\+F\+B\+K\+Voice\+App/\+Listen\+To\+Me/\mbox{\hyperlink{_app_8xaml_8cs}{App.\+xaml.\+cs}}\end{DoxyCompactItemize}

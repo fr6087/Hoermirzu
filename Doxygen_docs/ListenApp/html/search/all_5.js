@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['equals',['Equals',['../class_listen_to_me_1_1_query_comparer.html#a8c5ce93e1d11dcebbcc0693d4c425169',1,'ListenToMe::QueryComparer']]]
+  ['endindex',['endIndex',['../class_listen_to_me_1_1_model_1_1_entity.html#ab4fe7e4a09235bbf2715a3049cba3efb',1,'ListenToMe::Model::Entity']]],
+  ['entities',['entities',['../class_listen_to_me_1_1_model_1_1_rootobject.html#a95eb6979506b4876f2fd9ef010706d1f',1,'ListenToMe::Model::Rootobject']]],
+  ['entity',['Entity',['../class_listen_to_me_1_1_model_1_1_entity.html',1,'ListenToMe.Model.Entity'],['../class_listen_to_me_1_1_model_1_1_entity.html#a4ae17435557f0e0ec97ff0a93f791f63',1,'ListenToMe.Model.Entity.entity()']]]
 ];

@@ -1,0 +1,93 @@
+\hypertarget{class_listen_to_me_1_1_view_model_1_1_view_model_locator}{}\section{Listen\+To\+Me.\+View\+Model.\+View\+Model\+Locator Class Reference}
+\label{class_listen_to_me_1_1_view_model_1_1_view_model_locator}\index{Listen\+To\+Me.\+View\+Model.\+View\+Model\+Locator@{Listen\+To\+Me.\+View\+Model.\+View\+Model\+Locator}}
+
+
+\mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_view_model_locator}{View\+Model\+Locator}} ensures that viewmodels can be instantiated with a common reference to the Section\+Store. This allows for easier decoupling of the store implementation and the view models, and allows for less viewmodel specific code in the views.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_view_model_locator_a50210a77a76da746801409d1787c1660}{View\+Model\+Locator}} ()
+\begin{DoxyCompactList}\small\item\em Set up all of the known view models, and instantiate the Section repository. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_section_list_view_model}{Section\+List\+View\+Model}} \mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_view_model_locator_afc24088b98a0ad7f3b8e7f1afd70b80f}{Section\+List\+View\+Model}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Section\+List (main page) view model. The Section\+List\+View is databound to this property. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_section_view_model}{Section\+View\+Model}} \mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_view_model_locator_ac631670f442882ee7070273fb72d48d1}{Section\+View\+Model}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Section (detail page) view model. Section\+Details page is databound to this property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_view_model_locator_ad6b566b8472eec5e6e2655e150c04cde}{Initialize\+Store}} (\mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_form}{Form}} store)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, \mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_view_model_base}{View\+Model\+Base}} $>$ \mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_view_model_locator_a07ebd298d4e133fb38202d02e0cbc0ea}{model\+Set}} = new Dictionary$<$string, \mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_view_model_base}{View\+Model\+Base}}$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_view_model_locator}{View\+Model\+Locator}} ensures that viewmodels can be instantiated with a common reference to the Section\+Store. This allows for easier decoupling of the store implementation and the view models, and allows for less viewmodel specific code in the views. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_view_model_1_1_view_model_locator_a50210a77a76da746801409d1787c1660}\label{class_listen_to_me_1_1_view_model_1_1_view_model_locator_a50210a77a76da746801409d1787c1660}} 
+\index{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator@{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator}!View\+Model\+Locator@{View\+Model\+Locator}}
+\index{View\+Model\+Locator@{View\+Model\+Locator}!Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator@{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator}}
+\subsubsection{\texorpdfstring{View\+Model\+Locator()}{ViewModelLocator()}}
+{\footnotesize\ttfamily Listen\+To\+Me.\+View\+Model.\+View\+Model\+Locator.\+View\+Model\+Locator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set up all of the known view models, and instantiate the Section repository. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_view_model_1_1_view_model_locator_ad6b566b8472eec5e6e2655e150c04cde}\label{class_listen_to_me_1_1_view_model_1_1_view_model_locator_ad6b566b8472eec5e6e2655e150c04cde}} 
+\index{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator@{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator}!Initialize\+Store@{Initialize\+Store}}
+\index{Initialize\+Store@{Initialize\+Store}!Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator@{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator}}
+\subsubsection{\texorpdfstring{Initialize\+Store()}{InitializeStore()}}
+{\footnotesize\ttfamily void Listen\+To\+Me.\+View\+Model.\+View\+Model\+Locator.\+Initialize\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_form}{Form}}}]{store }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_view_model_1_1_view_model_locator_a07ebd298d4e133fb38202d02e0cbc0ea}\label{class_listen_to_me_1_1_view_model_1_1_view_model_locator_a07ebd298d4e133fb38202d02e0cbc0ea}} 
+\index{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator@{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator}!model\+Set@{model\+Set}}
+\index{model\+Set@{model\+Set}!Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator@{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator}}
+\subsubsection{\texorpdfstring{model\+Set}{modelSet}}
+{\footnotesize\ttfamily Dictionary$<$string, \mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_view_model_base}{View\+Model\+Base}}$>$ Listen\+To\+Me.\+View\+Model.\+View\+Model\+Locator.\+model\+Set = new Dictionary$<$string, \mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_view_model_base}{View\+Model\+Base}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_view_model_1_1_view_model_locator_afc24088b98a0ad7f3b8e7f1afd70b80f}\label{class_listen_to_me_1_1_view_model_1_1_view_model_locator_afc24088b98a0ad7f3b8e7f1afd70b80f}} 
+\index{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator@{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator}!Section\+List\+View\+Model@{Section\+List\+View\+Model}}
+\index{Section\+List\+View\+Model@{Section\+List\+View\+Model}!Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator@{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator}}
+\subsubsection{\texorpdfstring{Section\+List\+View\+Model}{SectionListViewModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_section_list_view_model}{Section\+List\+View\+Model}} Listen\+To\+Me.\+View\+Model.\+View\+Model\+Locator.\+Section\+List\+View\+Model\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Section\+List (main page) view model. The Section\+List\+View is databound to this property. 
+
+\mbox{\Hypertarget{class_listen_to_me_1_1_view_model_1_1_view_model_locator_ac631670f442882ee7070273fb72d48d1}\label{class_listen_to_me_1_1_view_model_1_1_view_model_locator_ac631670f442882ee7070273fb72d48d1}} 
+\index{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator@{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator}!Section\+View\+Model@{Section\+View\+Model}}
+\index{Section\+View\+Model@{Section\+View\+Model}!Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator@{Listen\+To\+Me\+::\+View\+Model\+::\+View\+Model\+Locator}}
+\subsubsection{\texorpdfstring{Section\+View\+Model}{SectionViewModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_listen_to_me_1_1_view_model_1_1_section_view_model}{Section\+View\+Model}} Listen\+To\+Me.\+View\+Model.\+View\+Model\+Locator.\+Section\+View\+Model\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Section (detail page) view model. Section\+Details page is databound to this property. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/fgeissle/source/repos/\+F\+B\+K\+Voice\+App/\+Listen\+To\+Me/\+View\+Model/\mbox{\hyperlink{_view_model_locator_8cs}{View\+Model\+Locator.\+cs}}\end{DoxyCompactItemize}

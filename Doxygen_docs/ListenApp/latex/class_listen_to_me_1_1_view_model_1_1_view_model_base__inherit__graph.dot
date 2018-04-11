@@ -1,0 +1,12 @@
+digraph "ListenToMe.ViewModel.ViewModelBase"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="ListenToMe.ViewModel.View\lModelBase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 [label="INotifyPropertyChanged",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="ListenToMe.ViewModel.Section\lListViewModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_listen_to_me_1_1_view_model_1_1_section_list_view_model.html",tooltip="View Model controlling the behavior of a List view of Sections "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="ListenToMe.ViewModel.Section\lViewModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_listen_to_me_1_1_view_model_1_1_section_view_model.html",tooltip="View Model associated with SectionDetails.xaml. Provides access to an individual Section, and Commands for saving new, updating existing, and deleting Sections. Is able to both create brand new Sections, and edit existing Sections, hiding buttons that should not be accessible in some cases. "];
+}

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['onactivated',['OnActivated',['../class_listen_to_me_1_1_app.html#a3e2da49bb555b7fdc5858f5442d396e4',1,'ListenToMe::App']]],
-  ['onlaunched',['OnLaunched',['../class_listen_to_me_1_1_app.html#ace89a3624e2de8cc528dea8b1288d03f',1,'ListenToMe::App']]],
-  ['onnavigatedfrom',['OnNavigatedFrom',['../class_listen_to_me_1_1_dynamic_page.html#a042e3936e2668147cd280d2428ef793b',1,'ListenToMe.DynamicPage.OnNavigatedFrom()'],['../class_listen_to_me_1_1_main_page.html#a15a008ef01c6354ef72d4ec864d8d8e3',1,'ListenToMe.MainPage.OnNavigatedFrom()']]],
-  ['onnavigatedto',['OnNavigatedTo',['../class_listen_to_me_1_1_dynamic_page.html#abe7cf843906f8a930d2bdd2ade17ea0b',1,'ListenToMe.DynamicPage.OnNavigatedTo()'],['../class_listen_to_me_1_1_main_page.html#a8027d1a18b781cfe127ca02916c4552e',1,'ListenToMe.MainPage.OnNavigatedTo()']]],
-  ['onnavigationfailed',['OnNavigationFailed',['../class_listen_to_me_1_1_app.html#a8867647372e101bdd100a68eab4d0d3a',1,'ListenToMe::App']]],
-  ['onsuspending',['OnSuspending',['../class_listen_to_me_1_1_app.html#adc9d18402a7a696ca6d4a7631a610e8d',1,'ListenToMe::App']]]
+  ['navigationhelper',['navigationHelper',['../class_listen_to_me_1_1_main_page.html#a9ad9fdc2f7159cbe2d495645459cffe8',1,'ListenToMe::MainPage']]],
+  ['navigationhelper_5floadstate',['NavigationHelper_LoadState',['../class_listen_to_me_1_1_main_page.html#a5d938633b84211b5962e83e1a0077e51',1,'ListenToMe::MainPage']]],
+  ['navigationhelper_5fsavestate',['NavigationHelper_SaveState',['../class_listen_to_me_1_1_main_page.html#aaf8102340fb741eaa5b6c501b423e060',1,'ListenToMe::MainPage']]],
+  ['navigationservice',['navigationService',['../class_listen_to_me_1_1_main_page.html#aff60f67b7f65b20f4df33be26d015bcf',1,'ListenToMe.MainPage.navigationService()'],['../class_listen_to_me_1_1_app.html#ae35ddc10bf8aad1a80c92c71c6e3b7fc',1,'ListenToMe.App.NavigationService()']]],
+  ['nextbutton_5fclick',['NextButton_Click',['../class_listen_to_me_1_1_main_page.html#a8144f2438fc2512708677190d74d2111',1,'ListenToMe::MainPage']]],
+  ['notifypropertychanged',['NotifyPropertyChanged',['../class_listen_to_me_1_1_view_model_1_1_view_model_base.html#a6b89260bf9d20007189f49a73dec334d',1,'ListenToMe::ViewModel::ViewModelBase']]]
 ];

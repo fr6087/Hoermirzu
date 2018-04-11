@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="class_listen_to_me_1_1_app" kind="class"><name>ListenToMe::App</name>
+    <member refid="class_listen_to_me_1_1_app_1a311ccaa1ae0fd9cf9f89d3e3466098fe" kind="variable"><name>hashTable</name></member>
+    <member refid="class_listen_to_me_1_1_app_1a2862b032c76095016dd7dc7600bfd029" kind="variable"><name>Bot</name></member>
+    <member refid="class_listen_to_me_1_1_app_1a41b762ac78fada5d35954d39419b8e36" kind="variable"><name>client</name></member>
+    <member refid="class_listen_to_me_1_1_app_1a3e094e220103fe4590cf50c22f38ee65" kind="variable"><name>formstore</name></member>
+    <member refid="class_listen_to_me_1_1_app_1ae35ddc10bf8aad1a80c92c71c6e3b7fc" kind="property"><name>NavigationService</name></member>
+    <member refid="class_listen_to_me_1_1_app_1ad1b3a77f44f52055446727716abfccc6" kind="property"><name>Vault</name></member>
+    <member refid="class_listen_to_me_1_1_app_1a2ff13a3c353a770011b988fe8b392b75" kind="property"><name>UserName</name></member>
+    <member refid="class_listen_to_me_1_1_app_1a18804f091f81b46de97ab88c594f3f23" kind="property"><name>UserPassword</name></member>
+    <member refid="class_listen_to_me_1_1_app_1a92eb573f880ce92d5b9fa79b90ba3f41" kind="variable"><name>rootFrameNavigationHelper</name></member>
+    <member refid="class_listen_to_me_1_1_app_1a2c50cfed33094aff84b281be8244f41a" kind="variable"><name>uri</name></member>
+    <member refid="class_listen_to_me_1_1_app_1a59acc333f6141d00101170b53ad29754" kind="variable"><name>isDebug</name></member>
+    <member refid="class_listen_to_me_1_1_app_1a8b865aa5eb8e0a1333c2b29f41bf4aa1" kind="function"><name>App</name></member>
+    <member refid="class_listen_to_me_1_1_app_1ace89a3624e2de8cc528dea8b1288d03f" kind="function"><name>OnLaunched</name></member>
+    <member refid="class_listen_to_me_1_1_app_1a3e2da49bb555b7fdc5858f5442d396e4" kind="function"><name>OnActivated</name></member>
+    <member refid="class_listen_to_me_1_1_app_1ac79758b58c56c49b87a3e2ff6a9ad638" kind="function"><name>ActivateVoiceCommands</name></member>
+    <member refid="class_listen_to_me_1_1_app_1a4a8894ffc0736b646470c2a8ad6fca0d" kind="function"><name>InitGui</name></member>
+    <member refid="class_listen_to_me_1_1_app_1aaf710baa7ee4fb8e6da7e97a333e6e8c" kind="function"><name>PerformCommandAsync</name></member>
+    <member refid="class_listen_to_me_1_1_app_1a8867647372e101bdd100a68eab4d0d3a" kind="function"><name>OnNavigationFailed</name></member>
+    <member refid="class_listen_to_me_1_1_app_1adc9d18402a7a696ca6d4a7631a610e8d" kind="function"><name>OnSuspending</name></member>
+    <member refid="class_listen_to_me_1_1_app_1ac165e2cffa6fc662285627595a6a7622" kind="function"><name>Filter_Changed</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_cortana_model_methods" kind="class"><name>ListenToMe::CortanaModelMethods</name>
+    <member refid="class_listen_to_me_1_1_cortana_model_methods_1a163bfa4e5d0d538593edc2802a3d9b42" kind="variable"><name>headings</name></member>
+    <member refid="class_listen_to_me_1_1_cortana_model_methods_1ab5c02fb296556b31d87eab09fea7c514" kind="variable"><name>inputs</name></member>
+    <member refid="class_listen_to_me_1_1_cortana_model_methods_1afe872337c3f1c74f5db6e26918f29ac1" kind="function"><name>UpdatePhraseList</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_model_1_1_custom_prebuild_entity" kind="class"><name>ListenToMe::Model::CustomPrebuildEntity</name>
+    <member refid="class_listen_to_me_1_1_model_1_1_custom_prebuild_entity_1a85f65323dbf6e727a7dd8066327c7df0" kind="property"><name>name</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_dynamic_page" kind="class"><name>ListenToMe::DynamicPage</name>
+    <member refid="class_listen_to_me_1_1_dynamic_page_1a187c4aba2636c3956cf023f1dc3f86ec" kind="property"><name>myPanel</name></member>
+    <member refid="class_listen_to_me_1_1_dynamic_page_1aee4e65517f3b3f4bda37fec075ee0371" kind="function"><name>DynamicPage</name></member>
+    <member refid="class_listen_to_me_1_1_dynamic_page_1ab3716b91cf48530310b3cd6ce47506a3" kind="function"><name>saveSection</name></member>
+    <member refid="class_listen_to_me_1_1_dynamic_page_1abe7cf843906f8a930d2bdd2ade17ea0b" kind="function"><name>OnNavigatedTo</name></member>
+    <member refid="class_listen_to_me_1_1_dynamic_page_1a042e3936e2668147cd280d2428ef793b" kind="function"><name>OnNavigatedFrom</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_model_1_1_entity" kind="class"><name>ListenToMe::Model::Entity</name>
+    <member refid="class_listen_to_me_1_1_model_1_1_entity_1a4ae17435557f0e0ec97ff0a93f791f63" kind="property"><name>entity</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_entity_1af2daeab3bb0f1ec71b0664aad418ac65" kind="property"><name>type</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_entity_1a32c85bf1ead96ed642a8164fb425c274" kind="property"><name>startIndex</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_entity_1ab4fe7e4a09235bbf2715a3049cba3efb" kind="property"><name>endIndex</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_entity_1aed4873738d141be126a637073cae179a" kind="property"><name>score</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_model_1_1_form" kind="class"><name>ListenToMe::Model::Form</name>
+    <member refid="class_listen_to_me_1_1_model_1_1_form_1a4b5d6fd20dc2522f3ad05614958c9895" kind="variable"><name>sections</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_form_1a5ecdd2a344e3e2e6157ff3c5b6dfc2d1" kind="property"><name>Sections</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_form_1ae0301066625a452b488a25365cf369d0" kind="function"><name>Form</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_form_1a97e6f2c705e11c7c99b8742d846d8738" kind="function"><name>Fill_sections</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_form_1aecf4fafb0c634f1e4c077076a984a967" kind="function"><name>SaveSectionAsync</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_form_1a6a232d7bcb2cff3bd69cdb149c3dd485" kind="function"><name>MatchTextToControl</name></member>
+  </compound>
+  <compound refid="interface_listen_to_me_1_1_i_model_methods" kind="interface"><name>ListenToMe::IModelMethods</name>
+    <member refid="interface_listen_to_me_1_1_i_model_methods_1a3df168676eb965dc8079af676c2cf47a" kind="function"><name>UpdatePhraseList</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_model_1_1_intent" kind="class"><name>ListenToMe::Model::Intent</name>
+    <member refid="class_listen_to_me_1_1_model_1_1_intent_1a72e3844bbc2658989213e3182068c3d4" kind="property"><name>intent</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_intent_1a82e80d6b2c310b22beacb60637a03d20" kind="property"><name>score</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command" kind="class"><name>ListenToMe::Model::ListenToMeVoiceCommand</name>
+    <member refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1ac1ab4ff605dddd6dfe7f038e46cf522e" kind="variable"><name>voiceCommand</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1a6243f032e7b44a3de833ae4362150b53" kind="variable"><name>commandMode</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1af82e41e09f7b7888d1ce9f6a0fa9ada8" kind="variable"><name>textSpoken</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1a2d2a8120188ed1a16fefbb2461ab20f2" kind="variable"><name>destination</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command_1a3da9ccddfb33c7b23eb9ae0ca4c9b39c" kind="function"><name>ListenToMeVoiceCommand</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_login_page" kind="class"><name>ListenToMe::LoginPage</name>
+    <member refid="class_listen_to_me_1_1_login_page_1afcefc5f9f4f5cee5d9f5e15493e4058b" kind="function"><name>LoginPage</name></member>
+    <member refid="class_listen_to_me_1_1_login_page_1ace57aa2c75a95bab9c32ea95bc9adb31" kind="function"><name>LoginButton_ClickAsync</name></member>
+    <member refid="class_listen_to_me_1_1_login_page_1a3f7972af36ca0c72f1bd37c4a3f84c14" kind="function"><name>SwitchToNextPage</name></member>
+    <member refid="class_listen_to_me_1_1_login_page_1af6692799b00ea2ad405a7af8dff73ad3" kind="function"><name>AddUserCredential</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_main_page" kind="class"><name>ListenToMe::MainPage</name>
+    <member refid="class_listen_to_me_1_1_main_page_1a9ad9fdc2f7159cbe2d495645459cffe8" kind="variable"><name>navigationHelper</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1aff60f67b7f65b20f4df33be26d015bcf" kind="variable"><name>navigationService</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1ad46f69d6d70b9b13b74b4013b86ca608" kind="variable"><name>listening</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1ad0705129e3c921457944d8c12f4c0d0a" kind="variable"><name>DisableSpeaking</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a3185b88ec21f447708a2d3da983997e0" kind="variable"><name>myFrameHelper</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1ac417ca2ffe02d44895c029bf23e8f83a" kind="variable"><name>speechRecognizerContinuous</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a906eb7f1e61084dcfb0b0f833b0d96f4" kind="variable"><name>loader</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a94ae31ea5ea90fff0194c7c3345e3987" kind="variable"><name>countUserInputs</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a56393ec41c67e438e12651f5dc44a2cc" kind="variable"><name>speechRecognizer</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1acc2116e019bacfa54fd25381eeaf363f" kind="variable"><name>manualResetEvent</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1afa885f51f46e84b050d0874e64389880" kind="variable"><name>pagesCount</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a6dbd09c74d99bf0223489a06035980eb" kind="variable"><name>currentPanel</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a6bb5a969c5955f0d7eca81e420fa0193" kind="variable"><name>AllPanels</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1acc0f3cb24ff26c2cfc76cd42a2fe2118" kind="variable"><name>indexOfCurrentElement</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a448f51804566fe32efca61994caf9ab9" kind="variable"><name>IsInitializing</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1af1acf9bff52880473e0889410ead00c4" kind="variable"><name>dialog</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a5d61d66540a58eb612a80a05f2236548" kind="variable"><name>speechSyntesizer</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a03679610fded2c61480540ebcc7e4667" kind="variable"><name>showGrid</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1afb2ff548c6284f6f179fc9b3dcc89245" kind="function"><name>MainPage</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a45421e24076000d4d47b83b35ee7f45e" kind="function"><name>InitFrame</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1aaf8102340fb741eaa5b6c501b423e060" kind="function"><name>NavigationHelper_SaveState</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a5d938633b84211b5962e83e1a0077e51" kind="function"><name>NavigationHelper_LoadState</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a5d7ee17d9ee59cfc8ddee9731415c4c3" kind="function"><name>InitTextToSpeech</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a6151ec18200a907f2dae7fc2e7d90202" kind="function"><name>DetermineResponse</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a465e7f9723aec19e912a3913841d477e" kind="function"><name>Clicked</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1ad9bc9fb81f3bfa4ccdee54d0f36503f1" kind="function"><name>SetWhereAmI</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1adbf1a6a0cab368d6e803bbd1b918a045" kind="function"><name>InitContinuousRecognition</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1afad060c55f3bedc7d8e499829e133c98" kind="function"><name>ContinuousRecognitionSession_ResultGenerated</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1ab7c9aeb7a6b1053375754c58933360d6" kind="function"><name>Media_MediaEnded</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a9e7a645ae278f0e83ff9c3a831b37028" kind="function"><name>Page_Loaded</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1abf609ebc2f3561a5031ede871d605f4e" kind="function"><name>BackButton_Click</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a1c903daffe2e54a7e05a983a3831b973" kind="function"><name>GoBackAsync</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1aa8407277b978652a0e0ff80038bd443a" kind="function"><name>FillFrameAsync</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a383d3107e02c41689a1c4602467724f7" kind="function"><name>CreateSection</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a73b3a3311149846cf028c5824dab2a6e" kind="function"><name>CreateElementAsync</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a03c7cef2603da00588c9a6a87fde49b1" kind="function"><name>SetEnabledAndHashForField</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a20dbe0c5559b5b0d039d4eddedb8bb8f" kind="function"><name>HomeButton_Click</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a8144f2438fc2512708677190d74d2111" kind="function"><name>NextButton_Click</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1adb3a16ea6300f702c809a64ac87dc502" kind="function"><name>GoNextAsync</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a1b565fbb49fd56541853357581d0cd44" kind="function"><name>DynamicButton_Click</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a5277043a631146593b3f10699577408f" kind="function"><name>Button_Click</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a57d75ef6bb9c10b0c944c3eb5513b076" kind="function"><name>SetListeningAsync</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1ab9fba04f0fc94773c2838f6af87ec14b" kind="function"><name>StartListenMode</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a09c2518852d4261ff6a2118c8e01de9f" kind="function"><name>SendMessage</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a83b106bf0b81203d9c02f1bf4dcdd02e" kind="function"><name>CheckOtherIntents</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1aa87f869a3f59f800027481c98e4b906e" kind="function"><name>JumpToNextField</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1ac18d07a7cf5452ea9fc8539764cc026d" kind="function"><name>ReadSection</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1aa1c50f04230b8907027a95bfe54cb7d2" kind="function"><name>SpeakAsync</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a94a7dfd5dc1ec2e9bf7a86a4b9f7df0c" kind="function"><name>ListenForText</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1ac541bec23372af9da39117384c6b177e" kind="function"><name>InitSpeech</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a78024cb9b68bafc3375081574dbbea89" kind="function"><name>SpeechRecognizer_HypothesisGenerated</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a1a90b99d968c5e20d291452daff8a0c3" kind="function"><name>Text_KeyDown</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a8027d1a18b781cfe127ca02916c4552e" kind="function"><name>OnNavigatedTo</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1a15a008ef01c6354ef72d4ec864d8d8e3" kind="function"><name>OnNavigatedFrom</name></member>
+    <member refid="class_listen_to_me_1_1_main_page_1af4469348ffee9a5d1a8680d2535a279b" kind="function"><name>FirstCharToUpper</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_model_1_1_proxy" kind="class"><name>ListenToMe::Model::Proxy</name>
+    <member refid="class_listen_to_me_1_1_model_1_1_proxy_1a5207b409f3a97f2450e9dce1108a6da1" kind="function"><name>GetJSON</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_proxy_1a6e03af261e464fb9b5a25e99b5209c32" kind="function"><name>UploadHeadings</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_proxy_1a37a55aec58b3df6abab1caedc017df9b" kind="function"><name>MakeRequest</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_model_1_1_rootobject" kind="class"><name>ListenToMe::Model::Rootobject</name>
+    <member refid="class_listen_to_me_1_1_model_1_1_rootobject_1adad3e848ab548426bf08f2a4e72406d9" kind="property"><name>query</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_rootobject_1a01604703f06c73a21555365a7619b6a5" kind="property"><name>topScoringIntent</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_rootobject_1ad59ca4d5e32b1963884203c0e83c8e18" kind="property"><name>intents</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_rootobject_1a95eb6979506b4876f2fd9ef010706d1f" kind="property"><name>entities</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model" kind="class"><name>ListenToMe::ViewModel::SectionListViewModel</name>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a51ef6e271dbbd1818a2fbfd240721ca1" kind="variable"><name>_Sections</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1afa17f3b63f0cb4f5edc0d8a2b91e99d9" kind="variable"><name>selectedSection</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a036c18d65d7151e5eec6afc62240913d" kind="variable"><name>store</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1adf81e04a9788a1c5372d0cf517282fea" kind="property"><name>Sections</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a75f26037abfa359ad884df4fd17a9409" kind="property"><name>SelectedSection</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a483b475364b5e9af40e66451ef7cb799" kind="function"><name>SectionListViewModel</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a433aa8f37999b6d0b23d368a8d1c8519" kind="function"><name>LoadSections</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a445d6dc12d26535a0c4067c7a4b03af9" kind="function"><name>SelectionChanged</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model_1a6f41d416999a49c0bdffd3e3654af799" kind="function"><name>AddSection</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_view_model_1_1_section_view_model" kind="class"><name>ListenToMe::ViewModel::SectionViewModel</name>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1ac1067b4fd318f072ace0c5fdb9be744a" kind="variable"><name>section</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1af8a79aa8edbec7bff25750aec728dbef" kind="variable"><name>store</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1a1decfa9737e0cefb15a6e49fdc2c1833" kind="variable"><name>showDestinationValidation</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1a3b691d4a11c695f3c7d14250f18c63ef" kind="variable"><name>destinationValidationError</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1a1ba78b6bf4b9e5c7ecd8b9d17d11d159" kind="variable"><name>showDelete</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1ac1ac47e03f46b5fe9945f66cfbb03fa7" kind="property"><name>Section</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1a6cd72ba0cad2236b996d642a70b22bfa" kind="property"><name>DestinationValidationError</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1a82a97f1530d04dd2f88d29b886cc6593" kind="property"><name>ShowDestinationValidation</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1a24849a3722acd4b1d7d3bf227af05674" kind="property"><name>ShowDelete</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1a8a3c1823d0ec471c6e969f870b9c1374" kind="function"><name>LoadSectionFromStore</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1a37a7181199cf8f72c1d2e07ad6440234" kind="function"><name>ShowSection</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1aa1f27efd436d57cf34ac85554eaf9b8d" kind="function"><name>NewSection</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1a622922d8160810c017cbe323966da8cd" kind="function"><name>SectionViewModel</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1a47ce8676fc601da4752a2ddab8d2250a" kind="function"><name>UpdateDestinationPhraseList</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1a066a3b114a5e6c0eeab2d198edd01e8c" kind="function"><name>DeleteSection</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1a23907ae918b929a5135c1fd45772a98d" kind="function"><name>GetLongestWordInSection</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_section_view_model_1ad4c6cb932c883814993d3f1cc6b8b0f2" kind="function"><name>SaveSection</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_model_1_1_topscoringintent" kind="class"><name>ListenToMe::Model::Topscoringintent</name>
+    <member refid="class_listen_to_me_1_1_model_1_1_topscoringintent_1a3124e191e99297ef94e0d5d5c4eac40e" kind="property"><name>intent</name></member>
+    <member refid="class_listen_to_me_1_1_model_1_1_topscoringintent_1abf874e7fa0861cde6292c84eca9dc18b" kind="property"><name>score</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_view_model_1_1_view_model_base" kind="class"><name>ListenToMe::ViewModel::ViewModelBase</name>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_base_1ae448ae2d936921e058563627fae0292b" kind="event"><name>PropertyChanged</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_base_1a6b89260bf9d20007189f49a73dec334d" kind="function"><name>NotifyPropertyChanged</name></member>
+  </compound>
+  <compound refid="class_listen_to_me_1_1_view_model_1_1_view_model_locator" kind="class"><name>ListenToMe::ViewModel::ViewModelLocator</name>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1a07ebd298d4e133fb38202d02e0cbc0ea" kind="variable"><name>modelSet</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1afc24088b98a0ad7f3b8e7f1afd70b80f" kind="property"><name>SectionListViewModel</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1ac631670f442882ee7070273fb72d48d1" kind="property"><name>SectionViewModel</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1a50210a77a76da746801409d1787c1660" kind="function"><name>ViewModelLocator</name></member>
+    <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1ad6b566b8472eec5e6e2655e150c04cde" kind="function"><name>InitializeStore</name></member>
+  </compound>
+  <compound refid="namespace_class_library_1_1model" kind="namespace"><name>ClassLibrary::model</name>
+  </compound>
+  <compound refid="namespace_listen_to_me" kind="namespace"><name>ListenToMe</name>
+  </compound>
+  <compound refid="namespace_listen_to_me_1_1_common" kind="namespace"><name>ListenToMe::Common</name>
+  </compound>
+  <compound refid="namespace_listen_to_me_1_1_model" kind="namespace"><name>ListenToMe::Model</name>
+  </compound>
+  <compound refid="namespace_listen_to_me_1_1_service_reference_f_b_k" kind="namespace"><name>ListenToMe::ServiceReferenceFBK</name>
+  </compound>
+  <compound refid="namespace_listen_to_me_1_1_view" kind="namespace"><name>ListenToMe::View</name>
+  </compound>
+  <compound refid="namespace_listen_to_me_1_1_view_model" kind="namespace"><name>ListenToMe::ViewModel</name>
+  </compound>
+  <compound refid="namespace_newtonsoft_1_1_json" kind="namespace"><name>Newtonsoft::Json</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_object_model" kind="namespace"><name>System::Collections::ObjectModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_globalization" kind="namespace"><name>System::Globalization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_net_1_1_http" kind="namespace"><name>System::Net::Http</name>
+  </compound>
+  <compound refid="namespace_system_1_1_net_1_1_http_1_1_headers" kind="namespace"><name>System::Net::Http::Headers</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services_1_1_windows_runtime" kind="namespace"><name>System::Runtime::InteropServices::WindowsRuntime</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_serialization" kind="namespace"><name>System::Runtime::Serialization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_serialization_1_1_json" kind="namespace"><name>System::Runtime::Serialization::Json</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_regular_expressions" kind="namespace"><name>System::Text::RegularExpressions</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading" kind="namespace"><name>System::Threading</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_input" kind="namespace"><name>System::Windows::Input</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_application_model" kind="namespace"><name>Windows::ApplicationModel</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_application_model_1_1_activation" kind="namespace"><name>Windows::ApplicationModel::Activation</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_application_model_1_1_resources" kind="namespace"><name>Windows::ApplicationModel::Resources</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_application_model_1_1_voice_commands" kind="namespace"><name>Windows::ApplicationModel::VoiceCommands</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_foundation" kind="namespace"><name>Windows::Foundation</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_foundation_1_1_collections" kind="namespace"><name>Windows::Foundation::Collections</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_media_1_1_speech_recognition" kind="namespace"><name>Windows::Media::SpeechRecognition</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_media_1_1_speech_synthesis" kind="namespace"><name>Windows::Media::SpeechSynthesis</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_security_1_1_credentials" kind="namespace"><name>Windows::Security::Credentials</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_storage" kind="namespace"><name>Windows::Storage</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_u_i_1_1_popups" kind="namespace"><name>Windows::UI::Popups</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_u_i_1_1_xaml" kind="namespace"><name>Windows::UI::Xaml</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_u_i_1_1_xaml_1_1_controls" kind="namespace"><name>Windows::UI::Xaml::Controls</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_u_i_1_1_xaml_1_1_controls_1_1_primitives" kind="namespace"><name>Windows::UI::Xaml::Controls::Primitives</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_u_i_1_1_xaml_1_1_data" kind="namespace"><name>Windows::UI::Xaml::Data</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_u_i_1_1_xaml_1_1_input" kind="namespace"><name>Windows::UI::Xaml::Input</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_u_i_1_1_xaml_1_1_media" kind="namespace"><name>Windows::UI::Xaml::Media</name>
+  </compound>
+  <compound refid="namespace_windows_1_1_u_i_1_1_xaml_1_1_navigation" kind="namespace"><name>Windows::UI::Xaml::Navigation</name>
+  </compound>
+  <compound refid="_app_8xaml_8cs" kind="file"><name>App.xaml.cs</name>
+  </compound>
+  <compound refid="_bot_8cs" kind="file"><name>Bot.cs</name>
+  </compound>
+  <compound refid="_cortana_model_methods_8cs" kind="file"><name>CortanaModelMethods.cs</name>
+  </compound>
+  <compound refid="_dynamic_page_8xaml_8cs" kind="file"><name>DynamicPage.xaml.cs</name>
+  </compound>
+  <compound refid="_i_model_methods_8cs" kind="file"><name>IModelMethods.cs</name>
+  </compound>
+  <compound refid="_login_page_8xaml_8cs" kind="file"><name>LoginPage.xaml.cs</name>
+  </compound>
+  <compound refid="_main_page_8xaml_8cs" kind="file"><name>MainPage.xaml.cs</name>
+  </compound>
+  <compound refid="_form_8cs" kind="file"><name>Form.cs</name>
+  </compound>
+  <compound refid="_proxy_8cs" kind="file"><name>Proxy.cs</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8txt" kind="file"><name>README.txt</name>
+    <member refid="_r_e_a_d_m_e_8txt_1a38ccef022a886075e294ad30cbfcae20" kind="variable"><name>__pad0__</name></member>
+    <member refid="_r_e_a_d_m_e_8txt_1ae87c321689a82617b1f79b2274e0c802" kind="variable"><name>ausgelöst</name></member>
+    <member refid="_r_e_a_d_m_e_8txt_1a5efed622080494c17160e34d1aa15886" kind="variable"><name>ValueAsString</name></member>
+    <member refid="_r_e_a_d_m_e_8txt_1a225ecf32ab26301c2eb46c45696e77a2" kind="variable"><name>fieldName</name></member>
+    <member refid="_r_e_a_d_m_e_8txt_1a135543df2f8a787ac2ddeaf87194562c" kind="variable"><name>daran</name></member>
+    <member refid="_r_e_a_d_m_e_8txt_1a86dd00a8c1f3448e32e23bece4a957d6" kind="variable"><name>Problem</name></member>
+    <member refid="_r_e_a_d_m_e_8txt_1a2a72fc7da943588cba8c302409b22e53" kind="variable"><name>war</name></member>
+    <member refid="_r_e_a_d_m_e_8txt_1ac0dcc138103869e0359e06225049e770" kind="variable"><name>Unstimmigkeiten</name></member>
+    <member refid="_r_e_a_d_m_e_8txt_1ab1eb46320c0ab46284b341bc594406ed" kind="variable"><name>Petitionsdetails</name></member>
+    <member refid="_r_e_a_d_m_e_8txt_1a7cfea504e3a5e9a3a42e1f0a414a9efa" kind="variable"><name>schreiben</name></member>
+    <member refid="_r_e_a_d_m_e_8txt_1a3f0b43af3dec73858a3eea661590145f" kind="function"><name>Confirm</name></member>
+    <member refid="_r_e_a_d_m_e_8txt_1a2aaebc81a95fa9e9802135da338a8e3e" kind="function"><name>uploadHeadingsToLuisModel</name></member>
+  </compound>
+  <compound refid="_listen_to_me_voice_command_8cs" kind="file"><name>ListenToMeVoiceCommand.cs</name>
+  </compound>
+  <compound refid="_section_list_view_model_8cs" kind="file"><name>SectionListViewModel.cs</name>
+  </compound>
+  <compound refid="_section_view_model_8cs" kind="file"><name>SectionViewModel.cs</name>
+  </compound>
+  <compound refid="_view_model_base_8cs" kind="file"><name>ViewModelBase.cs</name>
+  </compound>
+  <compound refid="_view_model_locator_8cs" kind="file"><name>ViewModelLocator.cs</name>
+  </compound>
+  <compound refid="dir_f7d333c9b129375253c0340e2696b6ce" kind="dir"><name>C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe</name>
+  </compound>
+  <compound refid="dir_23773e5ab53f4113196970e4cee695f2" kind="dir"><name>C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model</name>
+  </compound>
+  <compound refid="dir_e87bbb279bd5c2a32f3158e372509d76" kind="dir"><name>C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

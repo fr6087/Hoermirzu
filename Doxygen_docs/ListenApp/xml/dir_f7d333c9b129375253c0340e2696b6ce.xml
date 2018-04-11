@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_f7d333c9b129375253c0340e2696b6ce" kind="dir">
+    <compoundname>C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe</compoundname>
+    <innerdir refid="dir_23773e5ab53f4113196970e4cee695f2">C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model</innerdir>
+    <innerdir refid="dir_e87bbb279bd5c2a32f3158e372509d76">C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel</innerdir>
+    <innerfile refid="_app_8xaml_8cs">App.xaml.cs</innerfile>
+    <innerfile refid="_bot_8cs">Bot.cs</innerfile>
+    <innerfile refid="_cortana_model_methods_8cs">CortanaModelMethods.cs</innerfile>
+    <innerfile refid="_dynamic_page_8xaml_8cs">DynamicPage.xaml.cs</innerfile>
+    <innerfile refid="_i_model_methods_8cs">IModelMethods.cs</innerfile>
+    <innerfile refid="_login_page_8xaml_8cs">LoginPage.xaml.cs</innerfile>
+    <innerfile refid="_main_page_8xaml_8cs">MainPage.xaml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/"/>
+  </compounddef>
+</doxygen>

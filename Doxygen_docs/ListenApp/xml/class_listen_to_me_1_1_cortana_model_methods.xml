@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_listen_to_me_1_1_cortana_model_methods" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::CortanaModelMethods</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ListenToMe.IModelMethods</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_cortana_model_methods_1a163bfa4e5d0d538593edc2802a3d9b42" prot="package" static="no" mutable="no">
+        <type>ObservableCollection&lt; string &gt;</type>
+        <definition>ObservableCollection&lt;string&gt; ListenToMe.CortanaModelMethods.headings</definition>
+        <argsstring></argsstring>
+        <name>headings</name>
+        <initializer>= new ObservableCollection&lt;string&gt;()</initializer>
+        <briefdescription>
+<para>stores the headings that the wcf service finds on the form </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/CortanaModelMethods.cs" line="22" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/CortanaModelMethods.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_cortana_model_methods_1ab5c02fb296556b31d87eab09fea7c514" prot="package" static="no" mutable="no">
+        <type>ObservableCollection&lt; string &gt;</type>
+        <definition>ObservableCollection&lt;string&gt; ListenToMe.CortanaModelMethods.inputs</definition>
+        <argsstring></argsstring>
+        <name>inputs</name>
+        <initializer>= new ObservableCollection&lt;string&gt;()</initializer>
+        <briefdescription>
+<para>stores the input field labels that the wcf service finds on the form </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/CortanaModelMethods.cs" line="26" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/CortanaModelMethods.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_cortana_model_methods_1afe872337c3f1c74f5db6e26918f29ac1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; List&lt; String &gt; &gt;</type>
+        <definition>async Task&lt;List&lt;String&gt; &gt; ListenToMe.CortanaModelMethods.UpdatePhraseList</definition>
+        <argsstring>(String phraselistName)</argsstring>
+        <name>UpdatePhraseList</name>
+        <param>
+          <type>String</type>
+          <declname>phraselistName</declname>
+        </param>
+        <briefdescription>
+<para>reference TripViewModel.UpdateDestinationPhraseList in AdventureWorks project called when <ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref> Activates VoiceCommands, this method fills the collections of tags from the html Form and updates the VoiceCommand-xml File </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/CortanaModelMethods.cs" line="33" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/CortanaModelMethods.cs" bodystart="33" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains methods that update the cortana voice command definition file to make it more dynamic. Note: This doesn&apos;t work as intendet, because phrase lists are only allowing one word entries and the form headings are mostly more than one word long. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>ListenToMe.CortanaModelMethods</label>
+        <link refid="class_listen_to_me_1_1_cortana_model_methods"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>IModelMethods</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>ListenToMe.CortanaModelMethods</label>
+        <link refid="class_listen_to_me_1_1_cortana_model_methods"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>IModelMethods</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/CortanaModelMethods.cs" line="18" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/CortanaModelMethods.cs" bodystart="17" bodyend="103"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_cortana_model_methods_1a163bfa4e5d0d538593edc2802a3d9b42" prot="package" virt="non-virtual"><scope>ListenToMe::CortanaModelMethods</scope><name>headings</name></member>
+      <member refid="class_listen_to_me_1_1_cortana_model_methods_1ab5c02fb296556b31d87eab09fea7c514" prot="package" virt="non-virtual"><scope>ListenToMe::CortanaModelMethods</scope><name>inputs</name></member>
+      <member refid="class_listen_to_me_1_1_cortana_model_methods_1afe872337c3f1c74f5db6e26918f29ac1" prot="public" virt="non-virtual"><scope>ListenToMe::CortanaModelMethods</scope><name>UpdatePhraseList</name></member>
+      <member refid="interface_listen_to_me_1_1_i_model_methods_1a3df168676eb965dc8079af676c2cf47a" prot="public" virt="non-virtual" ambiguityscope="ListenToMe::IModelMethods."><scope>ListenToMe::CortanaModelMethods</scope><name>UpdatePhraseList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

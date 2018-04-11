@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="ListenToMe.myControl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_listen_to_me_1_1my_control.html"];
+  Node0 [label="ListenToMe.Model.ListenTo\lMeVoiceCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_listen_to_me_1_1_model_1_1_listen_to_me_voice_command.html",tooltip="class for storing arguments. used by App to bind launch arguments (e.g. from Cortana) ..."];
 }

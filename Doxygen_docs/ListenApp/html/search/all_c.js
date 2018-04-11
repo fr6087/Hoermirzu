@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['navigationhelper',['navigationHelper',['../class_listen_to_me_1_1_main_page.html#a9ad9fdc2f7159cbe2d495645459cffe8',1,'ListenToMe::MainPage']]],
-  ['navigationhelper_5floadstate',['navigationHelper_LoadState',['../class_listen_to_me_1_1_main_page.html#a696e8f4cb397c01ba2465d68e2b8c369',1,'ListenToMe::MainPage']]],
-  ['navigationhelper_5fsavestate',['navigationHelper_SaveState',['../class_listen_to_me_1_1_main_page.html#abd810ebce6d7300369767bd604e107d2',1,'ListenToMe::MainPage']]],
-  ['navigationservice',['NavigationService',['../class_listen_to_me_1_1_app.html#ae35ddc10bf8aad1a80c92c71c6e3b7fc',1,'ListenToMe.App.NavigationService()'],['../class_listen_to_me_1_1_main_page.html#aff60f67b7f65b20f4df33be26d015bcf',1,'ListenToMe.MainPage.navigationService()']]],
-  ['nextbutton_5fclick',['NextButton_Click',['../class_listen_to_me_1_1_main_page.html#a8144f2438fc2512708677190d74d2111',1,'ListenToMe::MainPage']]]
+  ['mainpage',['MainPage',['../class_listen_to_me_1_1_main_page.html',1,'ListenToMe.MainPage'],['../class_listen_to_me_1_1_main_page.html#afb2ff548c6284f6f179fc9b3dcc89245',1,'ListenToMe.MainPage.MainPage()']]],
+  ['mainpage_2examl_2ecs',['MainPage.xaml.cs',['../_main_page_8xaml_8cs.html',1,'']]],
+  ['makerequest',['MakeRequest',['../class_listen_to_me_1_1_model_1_1_proxy.html#a37a55aec58b3df6abab1caedc017df9b',1,'ListenToMe::Model::Proxy']]],
+  ['manualresetevent',['manualResetEvent',['../class_listen_to_me_1_1_main_page.html#acc2116e019bacfa54fd25381eeaf363f',1,'ListenToMe::MainPage']]],
+  ['matchtexttocontrol',['MatchTextToControl',['../class_listen_to_me_1_1_model_1_1_form.html#a6a232d7bcb2cff3bd69cdb149c3dd485',1,'ListenToMe::Model::Form']]],
+  ['media_5fmediaended',['Media_MediaEnded',['../class_listen_to_me_1_1_main_page.html#ab7c9aeb7a6b1053375754c58933360d6',1,'ListenToMe::MainPage']]],
+  ['modelset',['modelSet',['../class_listen_to_me_1_1_view_model_1_1_view_model_locator.html#a07ebd298d4e133fb38202d02e0cbc0ea',1,'ListenToMe::ViewModel::ViewModelLocator']]],
+  ['myframehelper',['myFrameHelper',['../class_listen_to_me_1_1_main_page.html#a3185b88ec21f447708a2d3da983997e0',1,'ListenToMe::MainPage']]],
+  ['mypanel',['myPanel',['../class_listen_to_me_1_1_dynamic_page.html#a187c4aba2636c3956cf023f1dc3f86ec',1,'ListenToMe::DynamicPage']]]
 ];

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="interface_listen_to_me_1_1_i_model_methods" kind="interface" language="C#" prot="package">
+    <compoundname>ListenToMe::IModelMethods</compoundname>
+    <derivedcompoundref refid="class_listen_to_me_1_1_cortana_model_methods" prot="public" virt="non-virtual">ListenToMe.CortanaModelMethods</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_listen_to_me_1_1_i_model_methods_1a3df168676eb965dc8079af676c2cf47a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; List&lt; string &gt; &gt;</type>
+        <definition>Task&lt;List&lt;string&gt; &gt; ListenToMe.IModelMethods.UpdatePhraseList</definition>
+        <argsstring>(string phraseListName)</argsstring>
+        <name>UpdatePhraseList</name>
+        <param>
+          <type>string</type>
+          <declname>phraseListName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/IModelMethods.cs" line="11" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>interface for containing the cortana methods </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="21">
+        <label>ListenToMe.CortanaModelMethods</label>
+        <link refid="class_listen_to_me_1_1_cortana_model_methods"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ListenToMe.IModelMethods</label>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/IModelMethods.cs" line="10" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/IModelMethods.cs" bodystart="9" bodyend="12"/>
+    <listofallmembers>
+      <member refid="interface_listen_to_me_1_1_i_model_methods_1a3df168676eb965dc8079af676c2cf47a" prot="public" virt="non-virtual"><scope>ListenToMe::IModelMethods</scope><name>UpdatePhraseList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

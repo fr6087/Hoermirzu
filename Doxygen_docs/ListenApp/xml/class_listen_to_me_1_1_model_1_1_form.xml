@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_listen_to_me_1_1_model_1_1_form" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::Model::Form</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_model_1_1_form_1a4b5d6fd20dc2522f3ad05614958c9895" prot="private" static="no" mutable="no">
+        <type>ObservableCollection&lt; ClassLibrary.model.Section &gt;</type>
+        <definition>ObservableCollection&lt;ClassLibrary.model.Section&gt; ListenToMe.Model.Form.sections</definition>
+        <argsstring></argsstring>
+        <name>sections</name>
+        <briefdescription>
+<para>flag to determine whether the page is loaded or not </para>        </briefdescription>
+        <detaileddescription>
+<para>Persist the loaded fields in memory for use in other parts of the application. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" line="25" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_form_1a5ecdd2a344e3e2e6157ff3c5b6dfc2d1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>ObservableCollection&lt; ClassLibrary.model.Section &gt;</type>
+        <definition>ObservableCollection&lt;ClassLibrary.model.Section&gt; ListenToMe.Model.Form.Sections</definition>
+        <argsstring></argsstring>
+        <name>Sections</name>
+        <briefdescription>
+<para>helps storing the sections collection. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" line="29" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_model_1_1_form_1ae0301066625a452b488a25365cf369d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.Model.Form.Form</definition>
+        <argsstring>()</argsstring>
+        <name>Form</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" line="32" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_model_1_1_form_1a97e6f2c705e11c7c99b8742d846d8738" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.Model.Form.Fill_sections</definition>
+        <argsstring>()</argsstring>
+        <name>Fill_sections</name>
+        <briefdescription>
+<para>calls the wcf service to dertermine the structure of the form. Then, it separates the structure into sections and binds them to a static attibute that&apos;s globally available in <ref refid="namespace_listen_to_me" kindref="compound">ListenToMe</ref> <ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref>. To which object it outputs depends on the debug mode. If debug is enabled, it will write to sectionsList. If not it will write to a Dictionary. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" line="45" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" bodystart="45" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_model_1_1_form_1aecf4fafb0c634f1e4c077076a984a967" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.Model.Form.SaveSectionAsync</definition>
+        <argsstring>(StackPanel[] myPanel)</argsstring>
+        <name>SaveSectionAsync</name>
+        <param>
+          <type>StackPanel []</type>
+          <declname>myPanel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" line="54" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" bodystart="54" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_model_1_1_form_1a6a232d7bcb2cff3bd69cdb149c3dd485" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Element</type>
+        <definition>Element ListenToMe.Model.Form.MatchTextToControl</definition>
+        <argsstring>(UIElement element, Element jsonElement)</argsstring>
+        <name>MatchTextToControl</name>
+        <param>
+          <type>UIElement</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>Element</type>
+          <declname>jsonElement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" line="90" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" bodystart="90" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>able to store Sections of the form. &lt;reference&gt;AdventureWorks in UWP sample projects at github&lt;/reference&gt; /summary&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" line="15" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Form.cs" bodystart="13" bodyend="129"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_model_1_1_form_1a97e6f2c705e11c7c99b8742d846d8738" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Form</scope><name>Fill_sections</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_form_1ae0301066625a452b488a25365cf369d0" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Form</scope><name>Form</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_form_1a6a232d7bcb2cff3bd69cdb149c3dd485" prot="private" virt="non-virtual"><scope>ListenToMe::Model::Form</scope><name>MatchTextToControl</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_form_1aecf4fafb0c634f1e4c077076a984a967" prot="package" virt="non-virtual"><scope>ListenToMe::Model::Form</scope><name>SaveSectionAsync</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_form_1a4b5d6fd20dc2522f3ad05614958c9895" prot="private" virt="non-virtual"><scope>ListenToMe::Model::Form</scope><name>sections</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_form_1a5ecdd2a344e3e2e6157ff3c5b6dfc2d1" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Form</scope><name>Sections</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

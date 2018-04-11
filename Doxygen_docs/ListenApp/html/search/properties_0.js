@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['canonicalform',['canonicalForm',['../class_listen_to_me_1_1my_inputs.html#a6e63baf613d06d2fe0c196e3214c7b47',1,'ListenToMe::myInputs']]]
+  ['destinationvalidationerror',['DestinationValidationError',['../class_listen_to_me_1_1_view_model_1_1_section_view_model.html#a6cd72ba0cad2236b996d642a70b22bfa',1,'ListenToMe::ViewModel::SectionViewModel']]]
 ];

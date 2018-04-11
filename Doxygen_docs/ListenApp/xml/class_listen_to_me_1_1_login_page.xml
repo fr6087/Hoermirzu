@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_listen_to_me_1_1_login_page" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::LoginPage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Page</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_login_page_1afcefc5f9f4f5cee5d9f5e15493e4058b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.LoginPage.LoginPage</definition>
+        <argsstring>()</argsstring>
+        <name>LoginPage</name>
+        <briefdescription>
+<para>names the resourcename for the passwordvault. </para>        </briefdescription>
+        <detaileddescription>
+<para>retreives the credentials from the list and populates the GUI with them, sets the cursor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/LoginPage.xaml.cs" line="27" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/LoginPage.xaml.cs" bodystart="27" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_login_page_1ace57aa2c75a95bab9c32ea95bc9adb31" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.LoginPage.LoginButton_ClickAsync</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>LoginButton_ClickAsync</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>calls some valigation rules based on length that are similar to the buisiness logic behind the webform </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the button</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>event information</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/LoginPage.xaml.cs" line="61" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/LoginPage.xaml.cs" bodystart="61" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_login_page_1a3f7972af36ca0c72f1bd37c4a3f84c14" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.LoginPage.SwitchToNextPage</definition>
+        <argsstring>()</argsstring>
+        <name>SwitchToNextPage</name>
+        <briefdescription>
+<para>navigates the frame if logged in sucessfully </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/LoginPage.xaml.cs" line="128" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/LoginPage.xaml.cs" bodystart="128" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_login_page_1af6692799b00ea2ad405a7af8dff73ad3" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ListenToMe.LoginPage.AddUserCredential</definition>
+        <argsstring>(string username, string password)</argsstring>
+        <name>AddUserCredential</name>
+        <param>
+          <type>string</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>adds a user credential to the password vault </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the username of the credential</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the password of the credential</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/LoginPage.xaml.cs" line="139" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/LoginPage.xaml.cs" bodystart="139" bodyend="148"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>retrieves and stores login Information in a password vault toDo: use this for directLine secret as well </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="28">
+        <label>Page</label>
+      </node>
+      <node id="27">
+        <label>ListenToMe.LoginPage</label>
+        <link refid="class_listen_to_me_1_1_login_page"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="30">
+        <label>Page</label>
+      </node>
+      <node id="29">
+        <label>ListenToMe.LoginPage</label>
+        <link refid="class_listen_to_me_1_1_login_page"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/LoginPage.xaml.cs" line="18" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/LoginPage.xaml.cs" bodystart="17" bodyend="149"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_login_page_1af6692799b00ea2ad405a7af8dff73ad3" prot="private" virt="non-virtual"><scope>ListenToMe::LoginPage</scope><name>AddUserCredential</name></member>
+      <member refid="class_listen_to_me_1_1_login_page_1ace57aa2c75a95bab9c32ea95bc9adb31" prot="private" virt="non-virtual"><scope>ListenToMe::LoginPage</scope><name>LoginButton_ClickAsync</name></member>
+      <member refid="class_listen_to_me_1_1_login_page_1afcefc5f9f4f5cee5d9f5e15493e4058b" prot="public" virt="non-virtual"><scope>ListenToMe::LoginPage</scope><name>LoginPage</name></member>
+      <member refid="class_listen_to_me_1_1_login_page_1a3f7972af36ca0c72f1bd37c4a3f84c14" prot="private" virt="non-virtual"><scope>ListenToMe::LoginPage</scope><name>SwitchToNextPage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespace_listen_to_me" kind="namespace" language="C#">
+    <compoundname>ListenToMe</compoundname>
+    <innerclass refid="class_listen_to_me_1_1_app" prot="public">ListenToMe::App</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_cortana_model_methods" prot="public">ListenToMe::CortanaModelMethods</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_dynamic_page" prot="public">ListenToMe::DynamicPage</innerclass>
+    <innerclass refid="interface_listen_to_me_1_1_i_model_methods" prot="package">ListenToMe::IModelMethods</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_login_page" prot="public">ListenToMe::LoginPage</innerclass>
+    <innerclass refid="class_listen_to_me_1_1_main_page" prot="public">ListenToMe::MainPage</innerclass>
+    <innernamespace refid="namespace_listen_to_me_1_1_model">ListenToMe::Model</innernamespace>
+    <innernamespace refid="namespace_listen_to_me_1_1_view_model">ListenToMe::ViewModel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/App.xaml.cs" line="23" column="1"/>
+  </compounddef>
+</doxygen>

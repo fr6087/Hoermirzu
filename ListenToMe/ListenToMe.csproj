@@ -18,7 +18,11 @@
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
     <PackageCertificateKeyFile>ListenToMe_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+    <!--<AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>-->
+    <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <PackageCertificateThumbprint>8BA042CA55FEC36E4E404AB51CEB72181351186C</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -99,7 +103,7 @@
     </Compile>
     <Compile Include="Bot.cs" />
     <Compile Include="Common\DateTimeOffsetConverter.cs" />
-    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+    <Compile Include="Connected Services\ServiceReferenceFBK\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -185,7 +189,7 @@
     <PRIResource Include="Strings\en\Resources.resw" />
     <PRIResource Include="Strings\de\Resources.resw" />
     <PRIResource Include="Strings\pl\Resources.resw" />
-    <PRIResource Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-125.png" />
     <Content Include="Assets\StoreLogo.scale-150.png" />
     <Content Include="Assets\StoreLogo.scale-200.png" />
@@ -194,10 +198,10 @@
     <Content Include="Assets\Wide310x150Logo.scale-125.png" />
     <Content Include="Assets\Wide310x150Logo.scale-150.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
-    <None Include="Connected Services\ServiceReference1\Service1.disco" />
-    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
-    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
-    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+    <None Include="Connected Services\ServiceReferenceFBK\Service1.disco" />
+    <None Include="Connected Services\ServiceReferenceFBK\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReferenceFBK\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReferenceFBK\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -252,7 +256,7 @@
       <Version>1.1.0-beta02</Version>
     </PackageReference>
     <PackageReference Include="HtmlAgilityPack">
-      <Version>1.7.2</Version>
+      <Version>1.7.4</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Bot.Connector.DirectLine">
       <Version>3.0.2</Version>
@@ -298,19 +302,20 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\Service1.wsdl" />
-    <None Include="Connected Services\ServiceReference1\Service1.xsd">
+    <None Include="Connected Services\ServiceReferenceFBK\Service1.wsdl" />
+    <None Include="Connected Services\ServiceReferenceFBK\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\Service11.xsd">
+    <None Include="Connected Services\ServiceReferenceFBK\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\Service12.xsd">
+    <None Include="Connected Services\ServiceReferenceFBK\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\Service13.xsd">
+    <None Include="Connected Services\ServiceReferenceFBK\Service13.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="ListenToMe_TemporaryKey.pfx" />
     <None Include="projectEntities.json" />
     <None Include="project.json" />
     <None Include="Properties\DataSources\ClassLibrary.model.Section.datasource" />
@@ -330,7 +335,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReferenceFBK\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

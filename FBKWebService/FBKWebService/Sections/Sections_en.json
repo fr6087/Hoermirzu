@@ -1,0 +1,1926 @@
+﻿{
+    "SECTION136": {
+    "InputsAndHeadings": [
+      {
+        "Type": "div",
+        "Text": "Application number: 81004791"
+      },
+      {
+        "Type": "heading",
+        "Text": "Request A 1.1.0: education policy - continuing vocational training",
+        "Size": "3"
+      },
+      {
+        "Type": "heading",
+        "Text": "Request for donations after the Arbeitspolitischen Brandenburg programme financed by the European Social Fund (ESF) and the State of Brandenburg, in accordance with the training policy of the Ministry of labour, Social Affairs, women and family (MASF) to promote by Training skills development in small and medium-sized enterprises (SMEs) on the basis of operational qualification requirements (here: submission by the company/SME)",
+        "Size": "5"
+      }
+    ]
+  },
+    "SECTION137": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "information concerning the applicant companies",
+        "Size": "3"
+      },
+      {
+        "Type": "heading",
+        "Text": "1 name/name of company",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "Name",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "80",
+            "Comment": "text field",
+            "Required": "true"
+          }
+        ]
+      },
+      {
+        "Type": "heading",
+        "Text": "2 permission to deduct",
+        "Size": "4"
+      },
+      {
+        "Type": "heading",
+        "Text": "My company is at the time of the application:",
+        "Size": "5"
+      },
+      {
+        "Type": "inn-radiobutton",
+        "Text": "pre tax deductible",
+        "Group_name": "group1"
+      },
+      {
+        "Type": "inn-radiobutton",
+        "Text": "not before tax deductible",
+        "Group_name": "group1"
+      },
+      {
+        "Type": "heading",
+        "Text": "3 contact person / project manager/r",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "Salutation",
+        "Subelems": [
+          {
+            "Type": "dropdown",
+            "List_id": "AnredePerson",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Last name",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "35",
+            "Comment": "text field",
+            "Required": "true"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "First name",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "35",
+            "Comment": "text field",
+            "Required": "true"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Function in the company / service",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "120",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Phone",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "E.g. + 49 (040) 4010-0100",
+            "Maxlength": "32",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "[^a-zA-Z]+"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Fax",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "32",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "[^a-zA-Z]+"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Email address",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "E.g. email@beispiel.de",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[a-zA-Z0-9äöüÄÖÜß!#\\$%&'\\*\\+\\-/=\\?\\^_`\\{\\}\\|~]+(\\.[a-zA-Z0-9äöüÄÖÜß!#\\$%&amp;'\\*\\+\\-/=\\?\\^_`\\{\\}\\|~]+)*@[a-zA-Z0-9äöüÄÖÜß_-]+(\\.[a-zA-Z0-9äöüÄÖÜß_-]{2,})+$"
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION138": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "seat of the applicant",
+        "Size": "3"
+      },
+      {
+        "Type": "label",
+        "Text": "Road",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "80",
+            "Comment": "text field",
+            "Required": "true"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Nr.",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "12",
+            "Comment": "text field",
+            "Required": "true"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "POSTAL CODE * ZIP CODE",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "5",
+            "Comment": "text field",
+            "Required": "true",
+            "Pattern": "[0-9]{5}"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Place",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "60",
+            "Comment": "text field",
+            "Required": "true"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Municipality",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Official municipality key (AGS) * Please select...",
+        "Subelems": [
+          {
+            "Type": "dropdown",
+            "Text": "Please choose...",
+            "List_id": "Gemeindeschluessel",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "District",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "50",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "P.o. box",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Postal code P.o. box * PLZ",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "5",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "[0-9]{5}"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Phone",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "E.g. + 49 (040) 4010-0100",
+            "Maxlength": "32",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "[^a-zA-Z]+"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Email address",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "E.g. email@beispiel.de",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[a-zA-Z0-9äöüÄÖÜß!#\\$%&'\\*\\+\\-/=\\?\\^_`\\{\\}\\|~]+(\\.[a-zA-Z0-9äöüÄÖÜß!#\\$%&amp;'\\*\\+\\-/=\\?\\^_`\\{\\}\\|~]+)*@[a-zA-Z0-9äöüÄÖÜß_-]+(\\.[a-zA-Z0-9äöüÄÖÜß_-]{2,})+$"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Internet address (URL) of the applicant",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "E.g. www.beispielurl.de",
+            "Maxlength": "120",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "IBAN * IBAN",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "Example: DEXX XXXX XXXX XXXX XXXX XX",
+            "Maxlength": "34",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[A-Z]{2}([0-9A-Z]{0,32})$"
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION139": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "legal form and form of business of the applicant",
+        "Size": "3"
+      },
+      {
+        "Type": "label",
+        "Text": "3.1 legal form * please select...",
+        "Subelems": [
+          {
+            "Type": "dropdown",
+            "Text": "Please choose...",
+            "List_id": "Rechtsform",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "3.2 date of establishment or date of birth (for natural persons):",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "TT. MM.JJJJ",
+            "Comment": "dd.MM.yyyy''",
+            "Required": "::componentCtrl.validation.required"
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION140": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "information on the notified trade",
+        "Size": "3"
+      },
+      {
+        "Type": "label",
+        "Text": "4.1 date of the certificate of business registration",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "TT. MM.JJJJ",
+            "Comment": "dd.MM.yyyy''",
+            "Required": "::componentCtrl.validation.required"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "4.2 the notified activity start date",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "TT. MM.JJJJ",
+            "Comment": "dd.MM.yyyy''",
+            "Required": "::componentCtrl.validation.required"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "4.3 pending activity (in accordance with paragraph 15 of business registration)",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "120",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION141": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "registry entries",
+        "Size": "3"
+      },
+      {
+        "Type": "label",
+        "Text": "5.1 trade register number",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "If register entry in the Land Brandenburg, then check on the part of the LASA online. Not in Brandenburg, please current detection scan and send as an attachment!",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Date of entry in the HR",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "TT. MM.JJJJ",
+            "Comment": "dd.MM.yyyy''",
+            "Required": "::componentCtrl.validation.required"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Page number last sheet HR",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Date of the last entry",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "TT. MM.JJJJ",
+            "Comment": "dd.MM.yyyy''",
+            "Required": "::componentCtrl.validation.required"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "5.2 Association register number",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "If register entry in the Land Brandenburg, then check on the part of the LASA online. Not in Brandenburg, please current detection scan and send as an attachment!",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Date of entry in the people's Republic",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "TT. MM.JJJJ",
+            "Comment": "dd.MM.yyyy''",
+            "Required": "::componentCtrl.validation.required"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "5.3 cooperative register number",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "If register entry in the Land Brandenburg, then check on the part of the LASA online. Not in Brandenburg, please current detection scan and send as an attachment!",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Date of entry in GR",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "TT. MM.JJJJ",
+            "Comment": "dd.MM.yyyy''",
+            "Required": "::componentCtrl.validation.required"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "5.4 tax number",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "Also for natural persons and for freelance/self-employment.",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Competent Tax Office",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION142": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "6 legal representative",
+        "Size": "3"
+      },
+      {
+        "Type": "label",
+        "Text": "Form of address * please select...",
+        "Subelems": [
+          {
+            "Type": "dropdown",
+            "Text": "Please choose...",
+            "List_id": "AnredePerson",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Title * please select...",
+        "Subelems": [
+          {
+            "Type": "dropdown",
+            "Text": "Please choose...",
+            "List_id": "AkademischerTitel",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Name",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "First name",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Function in the company",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION143": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "other information on the applicant",
+        "Size": "3"
+      },
+      {
+        "Type": "heading",
+        "Text": "1 economic sector of the applicant",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "Please select a sector key * please select...",
+        "Subelems": [
+          {
+            "Type": "dropdown",
+            "Text": "Please choose...",
+            "List_id": "Branchenschluessel",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "heading",
+        "Text": "2 number of employees",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "Number of female employees",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of male workers",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Total number of employees",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled"
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION144": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "8 information on the submission of the",
+        "Size": "3"
+      },
+      {
+        "Type": "heading",
+        "Text": "1 funding is excluded if the applicant already binding to the training course or a course registering before the LASA Brandenburg GmbH has granted einenZuwendungsbescheid for the promotion.",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "A binding registration for the training / course is carried out at the time of application or registration will take place prior to receipt of the grant decision of the LASA?",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "120",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "heading",
+        "Text": "2 assignment of the applicant of to regional Wachtumskernen and clusters in Brandenburg",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "The company is located in the following regional growth core:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "60",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "The company is allocated to the following Zukunftscluster:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "60",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION145": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "place of further education measure (s) applied for",
+        "Size": "3"
+      },
+      {
+        "Type": "heading",
+        "Text": "1 location of training course (s)",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "District of employment agency",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "District",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "50",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "POSTAL CODE * ZIP CODE",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "5",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "[0-9]{5}"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Massnahmeort",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Municipality",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Official municipality key (AGS) * Please select...",
+        "Subelems": [
+          {
+            "Type": "dropdown",
+            "Text": "Please choose...",
+            "List_id": "Gemeindeschluessel",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "heading",
+        "Text": "2 mapping of the action to the EU target region",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "Allocation criteria: District of seat/establishment of the company in the State of Brandenburg",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "Proof of seat/facility in Brandenburg please teach if you still not done with the registry in the LASA Portal!",
+            "Maxlength": "120",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION146": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "10 data for the requested training course/n",
+        "Size": "3"
+      },
+      {
+        "Type": "heading",
+        "Text": "Promoting the subject, composed on the basis of laid out qualification requirements",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "10.1 short name of training course (s)",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "Also several further blocks can be carried out. Please let us know here the parent designation (generic term) for everything. The individual courses/courses be queried under item 6 of the application.",
+            "Maxlength": "120",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "10.2 Please describe the medium - and long-term development goals of your company, to contribute to the attainment of dieWeiterbildungsmaßnahme/n / en:"
+      },
+      {
+        "Type": "heading",
+        "Text": "3 action period",
+        "Size": "5"
+      },
+      {
+        "Type": "label",
+        "Text": "by",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "TT. MM.JJJJ",
+            "Comment": "dd.MM.yyyy''",
+            "Required": "::componentCtrl.validation.required"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "until",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "TT. MM.JJJJ",
+            "Comment": "dd.MM.yyyy''",
+            "Required": "::componentCtrl.validation.required"
+          }
+        ]
+      },
+      {
+        "Type": "heading",
+        "Text": "Please keep in mind that weeks plan are between the date of submission and the scheduled start of training (s) mindestens6! A binding registration for education providers may only after receiving the grant decision successes!",
+        "Size": "5"
+      }
+    ]
+  },
+    "SECTION147": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "11 number of employees & to torment. Participants",
+        "Size": "3"
+      },
+      {
+        "Type": "heading",
+        "Text": "1 number of employees and holders of the company",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "Women:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Men:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Total employees:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled"
+          }
+        ]
+      },
+      {
+        "Type": "heading",
+        "Text": "2 number of employees and holders of the company, who are to take part in training:",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "Female participants:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "Please count each employee only once, even if several further visits!",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Male participants:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "Please count each employee only once, even if several further visits!",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Total participants:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled"
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION148": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "12 individual training content & fav. Education providers",
+        "Size": "3"
+      },
+      {
+        "Type": "heading",
+        "Text": "Per planned training content that is more than 500 euros, three comparable offers are vondurch external bodies to obtain certified training providers and attach to the application (see Punkt8). No three comparable offers of by external bodies can be certified Bildungsanbietervorgelegt, an informal justification to submit is imperative. For einzelneWeiterbildungsmaßnahmen, which cost up to 500,-EUR, the offer of the favorisiertenBildungsanbieters who must have a verified system of quality is sufficient.",
+        "Size": "4"
+      },
+      {
+        "Type": "heading",
+        "Text": "Short term training content:",
+        "Size": "5"
+      },
+      {
+        "Type": "heading",
+        "Text": "Favored education providers:",
+        "Size": "5"
+      },
+      {
+        "Type": "label",
+        "Text": "",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "40",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "inn-button",
+        "Text": "Add row"
+      },
+      {
+        "Type": "inn-button",
+        "Text": "Remove line"
+      }
+    ]
+  },
+    "SECTION149": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "13 total financing",
+        "Size": "3"
+      },
+      {
+        "Type": "heading",
+        "Text": "1 total expenditure",
+        "Size": "4"
+      },
+      {
+        "Type": "heading",
+        "Text": "Total expenditure for the training (s) according to favorisiertem / offer/s including examination fees (in EUR)",
+        "Size": "5"
+      },
+      {
+        "Type": "heading",
+        "Text": "The approved funds are paid in reimbursement principle after the end of the training (s). Please, make the entries according to the end of measure (s) over the years:",
+        "Size": "5"
+      },
+      {
+        "Type": "label",
+        "Text": "Total investment: * €",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "E.g. €100.00",
+            "Maxlength": "15",
+            "Comment": "text field",
+            "Required": "true",
+            "Pattern": "^[0-9]+((,|.)[0-9]{1,2})?$"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Total investment: * €",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled"
+          }
+        ]
+      },
+      {
+        "Type": "heading",
+        "Text": "2 support funding",
+        "Size": "4"
+      },
+      {
+        "Type": "heading",
+        "Text": "Mathematically, the deductible is at least (in EUR):",
+        "Size": "5"
+      },
+      {
+        "Type": "label",
+        "Text": "* €",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "Equal to 30% of the total expenditure for training/en.",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Grant: * €",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "E.g. €100.00",
+            "Maxlength": "15",
+            "Comment": "text field",
+            "Required": "true",
+            "Pattern": "^[0-9]+((,|.)[0-9]{1,2})?$"
+          }
+        ]
+      },
+      {
+        "Type": "heading",
+        "Text": "Participation total expenditure:",
+        "Size": "5"
+      },
+      {
+        "Type": "label",
+        "Text": "* €",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Total: * €",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled"
+          }
+        ]
+      },
+      {
+        "Type": "heading",
+        "Text": "3 debt financing",
+        "Size": "4"
+      },
+      {
+        "Type": "heading",
+        "Text": "To finance the above mentioned expenditure I propose following donation (in EUR):",
+        "Size": "5"
+      },
+      {
+        "Type": "label",
+        "Text": "EU public resources: * €",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "E.g. €100.00",
+            "Maxlength": "15",
+            "Comment": "text field",
+            "Required": "true",
+            "Pattern": "^[0-9]+((,|.)[0-9]{1,2})?$"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Total: * €",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled"
+          }
+        ]
+      },
+      {
+        "Type": "inn-checkbox",
+        "Text": "check"
+      },
+      {
+        "Type": "heading",
+        "Text": "It is known that in granting the subsidies the reimbursement principle applies. This means that the awarded grant is paid only upon completion of training course (s) with template of the proof of use, the signed attendance list, the invoice (s) and the proof of payment. The funds may be obtained from a donation sum i. H. v. 2000 euro for expenditure already incurred from the 6 month per form 'Means requirement'. Prerequisite for this is that the training (s) have a total period of at least one year and already in the application the requested donation if necessary on the years be distributed. For more information on the LASA website.",
+        "Size": "5"
+      }
+    ]
+  },
+    "SECTION150": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "14 acknowledgments",
+        "Size": "3"
+      },
+      {
+        "Type": "heading",
+        "Text": "I confirm that...",
+        "Size": "4"
+      },
+      {
+        "Type": "inn-checkbox",
+        "Text": "check"
+      },
+      {
+        "Type": "heading",
+        "Text": "my company according to the instructions on the plant 'Self declaration zurKMU property' is a micro enterprises or small and medium companies in the sense of the EU definition. Or is not a SME because the training in the context of settlement, expansion or restructuring (in accordance with point 2.3 of the training policy) with equity participation by at least 50% of the expenditure will take place.",
+        "Size": "5"
+      },
+      {
+        "Type": "inn-checkbox",
+        "Text": "check"
+      },
+      {
+        "Type": "heading",
+        "Text": "per employee of my company, for which this form a promotion is applied after the training policy, not more than EUR 3,000 in this calendar year for operational training taken according to the directive.",
+        "Size": "5"
+      },
+      {
+        "Type": "inn-checkbox",
+        "Text": "check"
+      },
+      {
+        "Type": "heading",
+        "Text": "to the or to the preferred education provider (s) exist no contractual relationships (for example, consulting, service, or similar contracts).",
+        "Size": "5"
+      },
+      {
+        "Type": "inn-checkbox",
+        "Text": ""
+      },
+      {
+        "Type": "heading",
+        "Text": "the training/n not the recreation, entertainment, private financial management, the sporting and artistic activity, to obtain legally prescribed enablement and certificates of competence, the acquisition of licences are used or are prescribed by law and it is not related to the vocational degree qualifications, product training, which are already included in the price of the product, or which are binding in the context of service contracts.",
+        "Size": "5"
+      },
+      {
+        "Type": "inn-checkbox",
+        "Text": "check"
+      },
+      {
+        "Type": "heading",
+        "Text": "me is known, that participation of the / of company owner (s) of the planned training this part of the promotion as a \"de minimis\" aid in accordance with Regulation (EC) No 1998/2006 of the Commission of 15 December 2006 on the application of articles 87 and 88 of the EC Treaty will be applied. In the case I am submitting statement with the facility of 'De minimis'.",
+        "Size": "5"
+      },
+      {
+        "Type": "inn-checkbox",
+        "Text": "check"
+      },
+      {
+        "Type": "heading",
+        "Text": "It is known to me that the educational providers that submit bids for my continuing education requirements, must have a quality assurance system checked regularly by external authority. To do this I took further versions on the LASA website note and informed the education provider.",
+        "Size": "5"
+      },
+      {
+        "Type": "inn-checkbox",
+        "Text": "check"
+      },
+      {
+        "Type": "heading",
+        "Text": "This is participating in the planned training to employees of the public service, nor to apprentices or to students of the first education path.",
+        "Size": "5"
+      }
+    ]
+  },
+    "SECTION151": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "15 declarations",
+        "Size": "3"
+      },
+      {
+        "Type": "heading",
+        "Text": "I explain that...",
+        "Size": "4"
+      },
+      {
+        "Type": "heading",
+        "Text": "I the ESF funding principles under the link http://www.esf.brandenburg.de/cms/detail.php/bb3.c.208827.de as well as other eligible legal provisions (for example, policy, data sheet) have taken note.",
+        "Size": "5"
+      },
+      {
+        "Type": "heading",
+        "Text": "I criminal code (StGB) and § 2-5 grant Act (SubvG) - available on the LASA website at http://www.lasa-brandenburg.de/fileadmin/user_upload/FM-dateien/foerderprog/StGB-SubvG.pdf - Note § took the contents of section 264 and is known to me,. that I myself can make punishable by law as a result of incorrect, incomplete or omitted information regarding subsidy-significant facts of subsidy fraud and am obliged to inform the LASA Brandenburg GmbH, as soon as circumstances change, the relate to grant significant facts. Substantial subsidy within the meaning of section 264 of the criminal code in connection with the SubvG of paragraphs 2-5 of the 29.07.1976 (BGBl. I S. 2034ff.) and § 1 all information to request permission and to the intended use, are Brandenburg subsidy law the 11.11.1996 (GVBl.I / 96, [24], p. 306) particularly all facts which depends the granting or leaving the donation, i.e. the significantly to assessing the adequacy of the grant are the subject of the financial plan, any statements or other documents to beizufügender the request are and of which administrative procedure law according to (ESP.. § 1 ABS. 1 S. 1 VwVfGBbg i. V. m. §§ 48 et seq.) Depends on the VwVfG) the reimbursement of the grant. Substantial subsidy, such facts by the fictitious trades or license acts are covered as well as legal transactions or acts under abuse of possibilities relating to a proposed grant are also.",
+        "Size": "5"
+      },
+      {
+        "Type": "heading",
+        "Text": "I for the same purpose of funding have applied for any other public agents or receive, and also will not apply. Also funding from the structural funds of the EU - European Social Fund (ESF) and the European Fund for regional development (EFRE) - these include the European agricultural fund for rural development (EAFRD), from the regional cross-cutting operational programmes of the Federal Government to the development of the labour market and human resources, and funding from other programs of the European Union.",
+        "Size": "5"
+      },
+      {
+        "Type": "heading",
+        "Text": "respected in the planning and execution of training course (s) that is / was that all employees in the company be granted equal opportunities to education regardless of age, gender, level of education, social, cultural or ethnic Origin and irrespective of the current type of employment, the employment scope and status in the company.",
+        "Size": "5"
+      },
+      {
+        "Type": "heading",
+        "Text": "I agree with the processing of my personal and operating data and confirm its correctness. Me is known, that it is data necessary for the processing of the application, also to data the exclusively statistical purposes serve as both and the collected data can be passed to the MASF. I agree to the publication of the following data - name of the applicant, grant purpose and amount of funding -. This consent applies particularly in the context of answering parliamentary questions, Petitions and file templates on committees of inquiry, as well as in the framework of other requests for information from members of the State Parliament.",
+        "Size": "5"
+      },
+      {
+        "Type": "heading",
+        "Text": "the participants have stated their consent or to explain that the documents for the processing of the application for serving personal data collected for statistical purposes in the automated procedure, files, records, and other official purposes the MASF and LASA Brandenburg GmbH stored, used and processed. The consent of the persons concerned me are or are obtained at the latest upon conclusion of the contract by me and kept.",
+        "Size": "5"
+      },
+      {
+        "Type": "heading",
+        "Text": "I am informed about the inclusion of my personal data in the public directory of the beneficiaries and the consequences of refusal and of revocation to: in accordance with article 7 para. 2 d) of Reg. (EC) 1828/2006 is the ESF managing authority within the framework of their information and Publicity measures required a list of beneficiaries in electronic or other form to publish, where the beneficiary of the promotion, the name of the project and the amount of the provided public participation posted be. For the implementation of the directory are in accordance with article 6 of Regulation (EC) beneficiaries in 1828/2006 to inform that they, if they accept the financing, at the same time so agree, that in that in accordance with article 7 para. 2 d) EC Regulation 1828/2006 published Directory are included. In the Begünstigtenverzeichnis of the ESF Brandenburg are the priority of the operational programme for the ESF in Brandenburg, to which the promotion to associate is, the name of the beneficiary, the type of funded measure and the amount of public funding Published (ESF funds and other public funds). To the implementation of EU legislation, support may be granted only if you agree to the publication of promotion as the applicant in the Begünstigtenverzeichnis. You can refuse the consent or revoke for the future. Unless consent is denied or is revoked a consent that any ESF appropriations shall be authorised or carried out permits be revoked and recovered.",
+        "Size": "5"
+      },
+      {
+        "Type": "heading",
+        "Text": "I am able to transfer necessary data electronically at the LASA Brandenburg GmbH. I agree that the LASA Brandenburg GmbH sent me electronic documents to the E-Mail address specified in the master data and hereby open access (cf. § 1 ABS. 1 S. 1 VwVfGBbg i. V. m. § 3a VwVfG).",
+        "Size": "5"
+      },
+      {
+        "Type": "heading",
+        "Text": "I have assigned or pledged payment claims from definitive allocation decisions nor cede or pledge will or claims from grant notices in any other manner as collateral have made available and provide will.",
+        "Size": "5"
+      },
+      {
+        "Type": "heading",
+        "Text": "over the assets of the applicant no insolvency procedure has been opened or applied for.",
+        "Size": "5"
+      },
+      {
+        "Type": "heading",
+        "Text": "all any information in this application and in the application-supporting documents, in particular the information on the list of participants, are complete and correct.",
+        "Size": "5"
+      },
+      {
+        "Type": "label",
+        "Text": "Place",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "60",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Date of the application",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "TT. MM.JJJJ",
+            "Comment": "dd.MM.yyyy''",
+            "Required": "::componentCtrl.validation.required"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Last name, first name / of the authorised",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "120",
+            "Comment": "text field",
+            "Required": ""
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION152": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "Plants",
+        "Size": "3"
+      },
+      {
+        "Type": "heading",
+        "Text": "For functional test - taking over the structure of participants",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "* Year",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled"
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION153": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "2 number of the participant in the project",
+        "Size": "4"
+      },
+      {
+        "Type": "heading",
+        "Text": "In the project, only organizations are encouraged, then enter a zero in all fields under point 4. Project staff (E.g. Project Manager, administrative staff the promoter) will not count towards the sponsored persons!",
+        "Size": "5"
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of men:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Total:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled"
+          }
+        ]
+      },
+      {
+        "Type": "heading",
+        "Text": "2 number of TN after their previous employment status occurred in the project",
+        "Size": "4"
+      },
+      {
+        "Type": "heading",
+        "Text": "2.1 workers",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "Number of employees (including self-employed, apprentices) total:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Including number of self-employed workers (including entrepreneur):*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "heading",
+        "Text": "2.2 unemployed",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "Total registered unemployed:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Including the number of long-term unemployed:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "heading",
+        "Text": "2.3 inactive",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "Total number of non-working:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Including number of non-working in vocational training:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Total 4.2:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Of total women:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION154": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "3 number of occurred (TN) by age groups",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "Number of young people (aged 15-24 years):",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of older (between 25 and 44 years of age):",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of older (between 45 and 54 years of age):",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of older (between 55 and 64 years of age):",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Total 4.3:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Of total women:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "30",
+            "Comment": "text field",
+            "Required": "",
+            "Disabled": "disabled",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      }
+    ]
+  },
+    "SECTION155": {
+    "InputsAndHeadings": [
+      {
+        "Type": "heading",
+        "Text": "4 number of occurred (TN) by best. Population groups",
+        "Size": "4"
+      },
+      {
+        "Type": "label",
+        "Text": "Members of a national minority:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "such as SORBS, Sinti, Roma",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of migrants and migrants:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "Which means the person (s) itself or the parents are migrated from abroad, regardless of their immigration status of the person (s).",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of people with disabilities:",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Placeholder": "I.e. people with permanent disability of their working capacity by at least 20%.",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      },
+      {
+        "Type": "label",
+        "Text": "Number of women:*",
+        "Subelems": [
+          {
+            "Type": "input",
+            "Maxlength": "10",
+            "Comment": "text field",
+            "Required": "",
+            "Pattern": "^[0-9]*"
+          }
+        ]
+      }
+    ]
+  }
+}

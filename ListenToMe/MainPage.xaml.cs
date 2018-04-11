@@ -562,7 +562,6 @@ namespace ListenToMe
                 heading.Text = element.Text;
                 heading.FontSize = 20 - 2 * Double.Parse(element.Size); //toDo: test. this should be for h3 14, for h4 12 and h5 10
                 panel.Children.Add(heading);
-
             }
         }
 

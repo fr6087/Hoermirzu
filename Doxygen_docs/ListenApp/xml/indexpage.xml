@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>ListenApp Documentation</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="index_1zero">
+<title>Prerequisites</title>
+<para>To run ListenApp, you need<itemizedlist>
+<listitem><para>Visual Studio C# developing environment</para></listitem><listitem><para>Windows 10 dektop with Cortana. Some functionalities might be available in Windows 8.1+ as well as in Windows Phone Versions, I&apos;m not guaranteeing that however, since it&apos;s not tested.</para></listitem><listitem><para>to be registered as a user in the webform (the userename and password is needed for most methods, except when running in Mock-Mode)</para></listitem><listitem><para>there are a number of other registrations that the App needs and that I have already provided in the background. If I will ever shut down those online services, you will have to create those on your own as follows:<orderedlist>
+<listitem><para>Microsoft Developer Account</para></listitem><listitem><para>LUIS Account</para></listitem><listitem><para>Azure Account</para></listitem><listitem><para>Bot Developer Account</para></listitem><listitem><para>Cortana Developer Account -microphone permission on your device is preferable. Otherwise you will be only able to run the App in text-mode.</para></listitem></orderedlist>
+</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="index_1first">
+<title>Functionality</title>
+<para>ListenApp is the main component of <ref refid="namespace_listen_to_me" kindref="compound">ListenToMe</ref> project. It contains a visual representation of the online form ESF and an text or speech input line. Input is evaluated by sending the phrases to the online Service LUIS or to the online Service Bot with SendMessage(), and then evaluating the response in dertermineResponse(). The available, enabled input fields at the App as well as radio buttons and dropdown lists are referenced in a Hashtable with their labels as keys. If the App recognizes a match with one of the labels in the App, it will fill in the recognised field value in the phrase into that very field. If it is not sure - sometimes there are several inputs with the same label - it will ask the user for disambiguation. As it is, ListenApp can&apos;t upload the data back to the online form. There is a in GO written component formularinstanzservice that has to be addressed for that and I haven&apos;t yet figured out how to do that.</para></sect1>
+<sect1 id="index_1second">
+<title>Pecularities</title>
+<para>The WCF Service is implemented in Factory Pattern. The facory is able to produce either in Mock-Mode or in Real-Mode output. Mock-Mode is independant from the availability of the form to be parsed. It reads from a text file called Sections.json which is included in the project. Real-Mode however, does call the domain of the webform to archieve the same purpose.</para><para>If the app is throwing a COMException, the problem is that it can&apos;t find the WCF Service on which it depends. The workaround for this is to delete the service reference in the app, rebuild the WCF Service project and create a new service reference to the Service1.svc of WCF Service project in this app.</para></sect1>
+<sect1 id="index_1third">
+<title>ToDos</title>
+<para><itemizedlist>
+<listitem><para>Die Buttons zum Hinzufügen von Tabellenzeilen bei den favorisierten Bildungsanbietern sind nicht ohne weiteres darstellbar. Aufgrund der Tabellenstruktur im HTML-Code, die sehr schwer mit XPATH auslesbar sein wird, sind die Feldbeschriftungen zugeteilt.</para></listitem><listitem><para>Testen, ob cutLeadingNumbers in WCFService tatsächlich die führenden Nummern aus den Feldern Gründungsdatum ect. schneidet. Wichtig für Bot.</para></listitem><listitem><para>Der SeleniumBrowser von WCF Service wird nicht beendet</para></listitem><listitem><para>Das Formular in Polnisch und Englisch abrufen -&gt; neue Dummyelemente generieren</para></listitem><listitem><para>Der WCF Service ist extrem spezifisch auf das vorliegende Formular hörig. Da er als Grundlage die Html-Seite parst, hat er keinen zugriff auf die Dahinterliegende Logik, zum Beispiel die Angular-Direktiven, die dafür sorgen, dass in einem bestimmten Feld eine Summe eingetragen wird, sobald ein anderes ausgefüllt ist. Die Darstellung der dynamischen Inhalte kann er nicht abbilden, z.B. Berechnungen, wieviele Zeichen noch übrig sind, Fehlermeldungen und Button-Aktionen.</para></listitem><listitem><para>Ressource Binding läuft für die Checkboxes und RadioButtons nicht glatt</para></listitem><listitem><para>upLoadToJason() wirft</para></listitem></itemizedlist>
+</para><para><programlisting filename=".unparsed"><codeline><highlight class="normal">StatusCode:<sp/>400,<sp/>ReasonPhrase:<sp/>&apos;BadArgument&apos;,<sp/>Version:<sp/>1.1,<sp/>Content:<sp/>System.Net.Http.StreamContent,<sp/>Headers:</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Request-Context:<sp/>appId=cid-v1:26a3540d-a02a-4998-a060-715488fd769b</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Strict-Transport-Security:<sp/>max-age=31536000;<sp/>includeSubDomains;<sp/>preload</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Request-Id:<sp/>c60c9469-68e3-40a5-bb8e-beaa61870875</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Cache-Control:<sp/>no-store,<sp/>proxy-revalidate,<sp/>no-cache,<sp/>max-age=0,<sp/>private</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Date:<sp/>Thu,<sp/>14<sp/>Dec<sp/>2017<sp/>07:51:09<sp/>GMT</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>X-Frame-Options:<sp/>SAMEORIGIN</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>X-Powered-By:<sp/>ASP.NET</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>X-Content-Type-Options:<sp/>nosniff</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Pragma:<sp/>no-cache</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Apim-Request-Id:<sp/>c60c9469-68e3-40a5-bb8e-beaa61870875</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Content-Length:<sp/>152</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Content-Type:<sp/>application/json;<sp/>charset=utf-8</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><itemizedlist>
+<listitem><para>das Codesnippet in den Bot einbauen, das die Cortana information zur email und username abruft, möglich?</para></listitem><listitem><para>ändere meine &lt;Seite&gt; läuft nicht für Seiten, die aus mehr als einem Wort bestehen zum Beispiel &quot;Ändere ListenToMe Registereintragungen&quot; läuft, nicht aber &quot;ändere listentome rggistereintraggunggen&quot; und &quot;Ändere ListenToMe Sitz des Antragsstellers&quot;</para></listitem></itemizedlist>
+</para><para>Kann ich nur zuhause/mit BotframeworkEmulator debuggen:<itemizedlist>
+<listitem><para>die längeren Eingaben funktionieren nicht mehr wenn Cortana auf USA eingestellt ist &quot;Ich möchte die Unternehmensangaben im ESF_2 Formular ausfüllen, z.B.&quot;</para></listitem><listitem><para>dateiupload und helpdialog stürtzen ab </para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

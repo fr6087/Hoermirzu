@@ -238,7 +238,7 @@ namespace ListenToMe.ViewModel
             if (valid)
             {
                 //await store.SaveSection(this.Section);
-                await App.client.UploadSectionAsync(this.Section);
+                //toDo upload html content to online form
                 await UpdateDestinationPhraseList();
                 App.NavigationService.GoBack();
             }

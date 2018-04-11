@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_listen_to_me_1_1_view_model_1_1_view_model_base" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::ViewModel::ViewModelBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">INotifyPropertyChanged</basecompoundref>
+    <derivedcompoundref refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model" prot="public" virt="non-virtual">ListenToMe.ViewModel.SectionListViewModel</derivedcompoundref>
+    <derivedcompoundref refid="class_listen_to_me_1_1_view_model_1_1_section_view_model" prot="public" virt="non-virtual">ListenToMe.ViewModel.SectionViewModel</derivedcompoundref>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_listen_to_me_1_1_view_model_1_1_view_model_base_1ae448ae2d936921e058563627fae0292b" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>PropertyChangedEventHandler</type>
+        <definition>PropertyChangedEventHandler ListenToMe.ViewModel.ViewModelBase.PropertyChanged</definition>
+        <argsstring></argsstring>
+        <name>PropertyChanged</name>
+        <briefdescription>
+<para>Views subscribe to this event to get notified of property updates. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelBase.cs" line="14" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelBase.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_model_1_1_view_model_base_1a6b89260bf9d20007189f49a73dec334d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.ViewModel.ViewModelBase.NotifyPropertyChanged</definition>
+        <argsstring>(string propertyName)</argsstring>
+        <name>NotifyPropertyChanged</name>
+        <param>
+          <type>string</type>
+          <declname>propertyName</declname>
+        </param>
+        <briefdescription>
+<para>Notify subscribers of updates to the named property </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>propertyName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The full, case-sensitive, name of a property.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelBase.cs" line="20" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelBase.cs" bodystart="20" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for all view models. Contains the common implementation of INotifyPropertyChanged and the notification helper method. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="56">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="55">
+        <label>ListenToMe.ViewModel.ViewModelBase</label>
+        <link refid="class_listen_to_me_1_1_view_model_1_1_view_model_base"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>ListenToMe.ViewModel.SectionListViewModel</label>
+        <link refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>ListenToMe.ViewModel.SectionViewModel</label>
+        <link refid="class_listen_to_me_1_1_view_model_1_1_section_view_model"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="60">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="59">
+        <label>ListenToMe.ViewModel.ViewModelBase</label>
+        <link refid="class_listen_to_me_1_1_view_model_1_1_view_model_base"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelBase.cs" line="10" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelBase.cs" bodystart="9" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_base_1a6b89260bf9d20007189f49a73dec334d" prot="protected" virt="non-virtual"><scope>ListenToMe::ViewModel::ViewModelBase</scope><name>NotifyPropertyChanged</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_base_1ae448ae2d936921e058563627fae0292b" prot="public" virt="non-virtual"><scope>ListenToMe::ViewModel::ViewModelBase</scope><name>PropertyChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

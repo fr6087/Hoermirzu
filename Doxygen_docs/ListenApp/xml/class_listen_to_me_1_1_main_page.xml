@@ -1,0 +1,1345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_listen_to_me_1_1_main_page" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::MainPage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Page</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a9ad9fdc2f7159cbe2d495645459cffe8" prot="private" static="no" mutable="no">
+        <type>NavigationHelper</type>
+        <definition>NavigationHelper ListenToMe.MainPage.navigationHelper</definition>
+        <argsstring></argsstring>
+        <name>navigationHelper</name>
+        <briefdescription>
+<para>Navigationhelper is administrating the history of the pages in the frame of the programm </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="35" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1aff60f67b7f65b20f4df33be26d015bcf" prot="private" static="no" mutable="no">
+        <type>NavigationService</type>
+        <definition>NavigationService ListenToMe.MainPage.navigationService</definition>
+        <argsstring></argsstring>
+        <name>navigationService</name>
+        <briefdescription>
+<para>navigationService is controlling the rootframe changes whenever navigation occurs </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="39" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1ad46f69d6d70b9b13b74b4013b86ca608" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ListenToMe.MainPage.listening</definition>
+        <argsstring></argsstring>
+        <name>listening</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>a variable that is true when the user is speaking to the speech input field and false if he is typing into the speech input field </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="43" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1ad0705129e3c921457944d8c12f4c0d0a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ListenToMe.MainPage.DisableSpeaking</definition>
+        <argsstring></argsstring>
+        <name>DisableSpeaking</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>a variable that is true when speech synthesis is generating output </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="47" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a3185b88ec21f447708a2d3da983997e0" prot="private" static="no" mutable="no">
+        <type>RootFrameNavigationHelper</type>
+        <definition>RootFrameNavigationHelper ListenToMe.MainPage.myFrameHelper</definition>
+        <argsstring></argsstring>
+        <name>myFrameHelper</name>
+        <briefdescription>
+<para>rootframe navigation helper is helping the rootframe navigation with keyboard events </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="51" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1ac417ca2ffe02d44895c029bf23e8f83a" prot="private" static="no" mutable="no">
+        <type>SpeechRecognizer</type>
+        <definition>SpeechRecognizer ListenToMe.MainPage.speechRecognizerContinuous</definition>
+        <argsstring></argsstring>
+        <name>speechRecognizerContinuous</name>
+        <briefdescription>
+<para>evaluates speech input if the user is continually speaking. triggered by the user saying start listening. If the command stop listening is said, it will stop continous speech recognition </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="55" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a906eb7f1e61084dcfb0b0f833b0d96f4" prot="private" static="no" mutable="no">
+        <type>ResourceLoader</type>
+        <definition>ResourceLoader ListenToMe.MainPage.loader</definition>
+        <argsstring></argsstring>
+        <name>loader</name>
+        <briefdescription>
+<para>loads localized string ressources from Strings/ directory </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="59" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a94ae31ea5ea90fff0194c7c3345e3987" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListenToMe.MainPage.countUserInputs</definition>
+        <argsstring></argsstring>
+        <name>countUserInputs</name>
+        <briefdescription>
+<para>counts the user&apos;s inputs for helping the app at guessing which field is filled out next. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="63" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a56393ec41c67e438e12651f5dc44a2cc" prot="private" static="no" mutable="no">
+        <type>SpeechRecognizer</type>
+        <definition>SpeechRecognizer ListenToMe.MainPage.speechRecognizer</definition>
+        <argsstring></argsstring>
+        <name>speechRecognizer</name>
+        <briefdescription>
+<para>evaluates speech input if the user is only speaking a defined interval (e.g while speech input button is pressed) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="67" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1acc2116e019bacfa54fd25381eeaf363f" prot="private" static="no" mutable="no">
+        <type>ManualResetEvent</type>
+        <definition>ManualResetEvent ListenToMe.MainPage.manualResetEvent</definition>
+        <argsstring></argsstring>
+        <name>manualResetEvent</name>
+        <initializer>= new ManualResetEvent(false)</initializer>
+        <briefdescription>
+<para>this event is for c# speech recognition. if it is set() then the speech recognition is stopping </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="71" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1afa885f51f46e84b050d0874e64389880" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListenToMe.MainPage.pagesCount</definition>
+        <argsstring></argsstring>
+        <name>pagesCount</name>
+        <briefdescription>
+<para>variable that counts the sections to know which section has to be loades into the frame </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="75" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a6dbd09c74d99bf0223489a06035980eb" prot="private" static="no" mutable="no">
+        <type>StackPanel</type>
+        <definition>StackPanel ListenToMe.MainPage.currentPanel</definition>
+        <argsstring></argsstring>
+        <name>currentPanel</name>
+        <briefdescription>
+<para>contains the TextBoxes and other controls of the page </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="79" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a6bb5a969c5955f0d7eca81e420fa0193" prot="private" static="no" mutable="no">
+        <type>StackPanel []</type>
+        <definition>StackPanel [] ListenToMe.MainPage.AllPanels</definition>
+        <argsstring></argsstring>
+        <name>AllPanels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="81" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1acc0f3cb24ff26c2cfc76cd42a2fe2118" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListenToMe.MainPage.indexOfCurrentElement</definition>
+        <argsstring></argsstring>
+        <name>indexOfCurrentElement</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>index of the last TextBox to which text was send with <ref refid="class_listen_to_me_1_1_main_page_1a09c2518852d4261ff6a2118c8e01de9f" kindref="member">SendMessage(string, bool)</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="85" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a448f51804566fe32efca61994caf9ab9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ListenToMe.MainPage.IsInitializing</definition>
+        <argsstring></argsstring>
+        <name>IsInitializing</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>flag for preventing the <ref refid="class_listen_to_me_1_1_main_page_1a465e7f9723aec19e912a3913841d477e" kindref="member">Clicked(string, string)</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="94" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1af1acf9bff52880473e0889410ead00c4" prot="private" static="no" mutable="no">
+        <type>DisambiguateView</type>
+        <definition>DisambiguateView ListenToMe.MainPage.dialog</definition>
+        <argsstring></argsstring>
+        <name>dialog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="95" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a5d61d66540a58eb612a80a05f2236548" prot="private" static="no" mutable="no">
+        <type>SpeechSynthesizer</type>
+        <definition>SpeechSynthesizer ListenToMe.MainPage.speechSyntesizer</definition>
+        <argsstring></argsstring>
+        <name>speechSyntesizer</name>
+        <briefdescription>
+<para>used for text to speech synthesis </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="99" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_main_page_1a03679610fded2c61480540ebcc7e4667" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ListenToMe.MainPage.showGrid</definition>
+        <argsstring></argsstring>
+        <name>showGrid</name>
+        <briefdescription>
+<para>storing wether the grid is visible for grid navigation </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="89" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1afb2ff548c6284f6f179fc9b3dcc89245" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.MainPage.MainPage</definition>
+        <argsstring>()</argsstring>
+        <name>MainPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="101" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="101" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a45421e24076000d4d47b83b35ee7f45e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.InitFrame</definition>
+        <argsstring>()</argsstring>
+        <name>InitFrame</name>
+        <briefdescription>
+<para>fills the section field in formstore with information from the web form </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="126" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="126" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1aaf8102340fb741eaa5b6c501b423e060" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.NavigationHelper_SaveState</definition>
+        <argsstring>(object sender, SaveStateEventArgs e)</argsstring>
+        <name>NavigationHelper_SaveState</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SaveStateEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>toDo implement formstore call that saves the values of the input fields </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="149" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="149" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a5d938633b84211b5962e83e1a0077e51" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.NavigationHelper_LoadState</definition>
+        <argsstring>(object sender, LoadStateEventArgs e)</argsstring>
+        <name>NavigationHelper_LoadState</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>LoadStateEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>toDo implement formstore call that loads the values of the input fields </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="157" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="157" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a5d7ee17d9ee59cfc8ddee9731415c4c3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.InitTextToSpeech</definition>
+        <argsstring>()</argsstring>
+        <name>InitTextToSpeech</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="185" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="185" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a6151ec18200a907f2dae7fc2e7d90202" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; string &gt;</type>
+        <definition>async Task&lt;string&gt; ListenToMe.MainPage.DetermineResponse</definition>
+        <argsstring>(string intent, string textValue, string usersFieldName, string luisTypeOfTextValue)</argsstring>
+        <name>DetermineResponse</name>
+        <param>
+          <type>string</type>
+          <declname>intent</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>textValue</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>usersFieldName</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>luisTypeOfTextValue</declname>
+        </param>
+        <briefdescription>
+<para>is essential in processing the recognized LUIS-entities. Sometimes LUIS entities are not recognized by the language model. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the intent that LUIS recognizes. Is not importent, as this will be always Field.FillIn</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the textvalue for the input field</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usersFieldName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the dirty text type name the user used in the query. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>luisTypeOfTextValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the clean text type</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>error messages</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="210" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="210" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a465e7f9723aec19e912a3913841d477e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.Clicked</definition>
+        <argsstring>(string sender, string textValue)</argsstring>
+        <name>Clicked</name>
+        <param>
+          <type>string</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>textValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="256" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="256" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1ad9bc9fb81f3bfa4ccdee54d0f36503f1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.SetWhereAmI</definition>
+        <argsstring>(int indexOfCurrentElement)</argsstring>
+        <name>SetWhereAmI</name>
+        <param>
+          <type>int</type>
+          <declname>indexOfCurrentElement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="272" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="272" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1adbf1a6a0cab368d6e803bbd1b918a045" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.InitContinuousRecognition</definition>
+        <argsstring>()</argsstring>
+        <name>InitContinuousRecognition</name>
+        <briefdescription>
+<para>sets up continous speech recognition </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="282" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="282" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1afad060c55f3bedc7d8e499829e133c98" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.ContinuousRecognitionSession_ResultGenerated</definition>
+        <argsstring>(SpeechContinuousRecognitionSession sender, SpeechContinuousRecognitionResultGeneratedEventArgs args)</argsstring>
+        <name>ContinuousRecognitionSession_ResultGenerated</name>
+        <param>
+          <type>SpeechContinuousRecognitionSession</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SpeechContinuousRecognitionResultGeneratedEventArgs</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="310" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="310" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1ab7c9aeb7a6b1053375754c58933360d6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.Media_MediaEnded</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Media_MediaEnded</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="325" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="325" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a9e7a645ae278f0e83ff9c3a831b37028" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.Page_Loaded</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Page_Loaded</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="335" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="335" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1abf609ebc2f3561a5031ede871d605f4e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.BackButton_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>BackButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="338" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a1c903daffe2e54a7e05a983a3831b973" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.GoBackAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GoBackAsync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="343" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="343" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1aa8407277b978652a0e0ff80038bd443a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.FillFrameAsync</definition>
+        <argsstring>()</argsstring>
+        <name>FillFrameAsync</name>
+        <briefdescription>
+<para>fill Frame creates a new Page for mainFrame and adds it to the mainFrame as Content </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rnd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>random element signalling background Page&apos;s colour</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="358" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="358" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a383d3107e02c41689a1c4602467724f7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.CreateSection</definition>
+        <argsstring>(Section section, StackPanel myPanel)</argsstring>
+        <name>CreateSection</name>
+        <param>
+          <type>Section</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>StackPanel</type>
+          <declname>myPanel</declname>
+        </param>
+        <briefdescription>
+<para>creates a section by adding control elements to a panel </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>section</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the section object that is being translated into controls</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>myPanel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the panel on which to place the controls</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="399" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="399" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a73b3a3311149846cf028c5824dab2a6e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.CreateElementAsync</definition>
+        <argsstring>(Element element, StackPanel panel, TextBox field=null)</argsstring>
+        <name>CreateElementAsync</name>
+        <param>
+          <type>Element</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>StackPanel</type>
+          <declname>panel</declname>
+        </param>
+        <param>
+          <type>TextBox</type>
+          <declname>field</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>creates an element from the section object by determining what type of element it is reference: <ulink url="https://stackoverflow.com/questions/37297810/updatesourcetrigger-dont-work-in-wpf-customcontrols">https://stackoverflow.com/questions/37297810/updatesourcetrigger-dont-work-in-wpf-customcontrols</ulink> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element from the section</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>panel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the panel on which to add the element</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as label elements have subelements, field is used for recursive calls to know the parent object</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="417" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="417" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a03c7cef2603da00588c9a6a87fde49b1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.SetEnabledAndHashForField</definition>
+        <argsstring>(TextBox field, Element element, StackPanel panel)</argsstring>
+        <name>SetEnabledAndHashForField</name>
+        <param>
+          <type>TextBox</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>Element</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>StackPanel</type>
+          <declname>panel</declname>
+        </param>
+        <briefdescription>
+<para>sets the enabled property of a TextBox control to disabled, if the model Element&apos;s property is set to &apos;disabled&apos; string. This is the case for input elements that are only for displaying information, e.g. summing up other entries made by the user. If the TextBox stays enabled, the header will be added to the HashTable that is used by the LUIS-Model to determine to which TextBox to pass a user value to. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextBox to be set</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the model insatnce that saved the future property valus of the field</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>panel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the panel on which all TextBoxes lie</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="576" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="576" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a20dbe0c5559b5b0d039d4eddedb8bb8f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.HomeButton_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>HomeButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>has no speacial meaning as of yet </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="608" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="608" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a8144f2438fc2512708677190d74d2111" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.NextButton_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>NextButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>loads the next section into the frame </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the next-button</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>some arguments</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="620" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="620" bodyend="623"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1adb3a16ea6300f702c809a64ac87dc502" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.GoNextAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GoNextAsync</name>
+        <briefdescription>
+<para>helps NextButton_Click to go to the next frame&apos;s page </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="629" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="629" bodyend="643"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a1b565fbb49fd56541853357581d0cd44" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.DynamicButton_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>DynamicButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Button is hit for microphone activation </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the microphone button</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>some eventarguments</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="650" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="650" bodyend="657"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a5277043a631146593b3f10699577408f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.Button_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Button_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Button is hit for microphone activation </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the microphone button</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>some eventarguments</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="664" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="664" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a57d75ef6bb9c10b0c944c3eb5513b076" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async System.Threading.Tasks.Task</type>
+        <definition>async System.Threading.Tasks.Task ListenToMe.MainPage.SetListeningAsync</definition>
+        <argsstring>(bool toListen)</argsstring>
+        <name>SetListeningAsync</name>
+        <param>
+          <type>bool</type>
+          <declname>toListen</declname>
+        </param>
+        <briefdescription>
+<para>sets the flag whether speech recognition is enabled according to the parameter </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>toListen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parameter. If true it sets the flag and activates listenmode for false vice versa</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="674" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="674" bodyend="702"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1ab9fba04f0fc94773c2838f6af87ec14b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.StartListenMode</definition>
+        <argsstring>()</argsstring>
+        <name>StartListenMode</name>
+        <briefdescription>
+<para>analyzes the speech input, recognized the text and calls <ref refid="class_listen_to_me_1_1_main_page_1a09c2518852d4261ff6a2118c8e01de9f" kindref="member">SendMessage()</ref> to display the rcognized text </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="707" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="707" bodyend="734"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a09c2518852d4261ff6a2118c8e01de9f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.SendMessage</definition>
+        <argsstring>(string message, bool speak=false)</argsstring>
+        <name>SendMessage</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>speak</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>calls the LUIS API to retrieve the Bot WebApp&apos;s answer for a specific request </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the request</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>speak</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag that indicates whether the funtion is called in speech mode or text mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="741" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="741" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a83b106bf0b81203d9c02f1bf4dcdd02e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.CheckOtherIntents</definition>
+        <argsstring>(string intent, string message, bool speak)</argsstring>
+        <name>CheckOtherIntents</name>
+        <param>
+          <type>string</type>
+          <declname>intent</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>speak</declname>
+        </param>
+        <briefdescription>
+<para>helps calling actions of intents other than Field.FillIn </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the intent</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="795" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="795" bodyend="825"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1aa87f869a3f59f800027481c98e4b906e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.JumpToNextField</definition>
+        <argsstring>(string intent, string message, bool speak)</argsstring>
+        <name>JumpToNextField</name>
+        <param>
+          <type>string</type>
+          <declname>intent</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>speak</declname>
+        </param>
+        <briefdescription>
+<para>sets the focus to the next fields and writes message into it or delegates to the other intents </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field.FillIn intent. If not then CheckIntents will be called again</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the message the user supposedly wants in the form field</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>speak</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether speech is activated or not</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="833" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="833" bodyend="887"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1ac18d07a7cf5452ea9fc8539764cc026d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.ReadSection</definition>
+        <argsstring>(IQueryable&lt; UIElement &gt; controls)</argsstring>
+        <name>ReadSection</name>
+        <param>
+          <type>IQueryable&lt; UIElement &gt;</type>
+          <declname>controls</declname>
+        </param>
+        <briefdescription>
+<para>reads a section to the user. reading can only be stopped, if user types &quot;shut up&quot; or other utterance for Utilities.Stop intent </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controls</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the controls in the current section</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="893" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="893" bodyend="941"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1aa1c50f04230b8907027a95bfe54cb7d2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.SpeakAsync</definition>
+        <argsstring>(string toSpeak)</argsstring>
+        <name>SpeakAsync</name>
+        <param>
+          <type>string</type>
+          <declname>toSpeak</declname>
+        </param>
+        <briefdescription>
+<para>lets the <ref refid="class_listen_to_me_1_1_app" kindref="compound">App</ref> speak the answer to the user </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>toSpeak</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the answer to be spoken</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="947" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="947" bodyend="964"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a94a7dfd5dc1ec2e9bf7a86a4b9f7df0c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; string &gt;</type>
+        <definition>async Task&lt;string&gt; ListenToMe.MainPage.ListenForText</definition>
+        <argsstring>()</argsstring>
+        <name>ListenForText</name>
+        <briefdescription>
+<para>handles exceptions in the speechrecognition api. Also checks whether the device the user in using has enabled microphone input </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="969" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="969" bodyend="1005"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1ac541bec23372af9da39117384c6b177e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task ListenToMe.MainPage.InitSpeech</definition>
+        <argsstring>()</argsstring>
+        <name>InitSpeech</name>
+        <briefdescription>
+<para>initialized speech recognition </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="1009" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="1009" bodyend="1031"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a78024cb9b68bafc3375081574dbbea89" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void ListenToMe.MainPage.SpeechRecognizer_HypothesisGenerated</definition>
+        <argsstring>(SpeechRecognizer sender, SpeechRecognitionHypothesisGeneratedEventArgs args)</argsstring>
+        <name>SpeechRecognizer_HypothesisGenerated</name>
+        <param>
+          <type>SpeechRecognizer</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SpeechRecognitionHypothesisGeneratedEventArgs</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>handles the HypothesisGenerated event of the speech recognizer </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the speech recognizer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arguments that may be passed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="1068" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="1068" bodyend="1074"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a1a90b99d968c5e20d291452daff8a0c3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.MainPage.Text_KeyDown</definition>
+        <argsstring>(object sender, KeyRoutedEventArgs e)</argsstring>
+        <name>Text_KeyDown</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>KeyRoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Method that is reacting each time a key is hit while the textinput field has focus. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="1081" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="1081" bodyend="1089"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a8027d1a18b781cfe127ca02916c4552e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override async void</type>
+        <definition>override async void ListenToMe.MainPage.OnNavigatedTo</definition>
+        <argsstring>(NavigationEventArgs e)</argsstring>
+        <name>OnNavigatedTo</name>
+        <param>
+          <type>NavigationEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>is called after the login was sucessful </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="164" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="164" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1a15a008ef01c6354ef72d4ec864d8d8e3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ListenToMe.MainPage.OnNavigatedFrom</definition>
+        <argsstring>(NavigationEventArgs e)</argsstring>
+        <name>OnNavigatedFrom</name>
+        <param>
+          <type>NavigationEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="331" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="331" bodyend="334"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_main_page_1af4469348ffee9a5d1a8680d2535a279b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string ListenToMe.MainPage.FirstCharToUpper</definition>
+        <argsstring>(string input)</argsstring>
+        <name>FirstCharToUpper</name>
+        <param>
+          <type>string</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>helper method for cleaning output from luis. Since LUIS answers in lowercase only, this method uppercases the first letter </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="1038" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="1038" bodyend="1061"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>contains the navigation buttons of the app as well as the speech input field </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="32">
+        <label>Page</label>
+      </node>
+      <node id="31">
+        <label>ListenToMe.MainPage</label>
+        <link refid="class_listen_to_me_1_1_main_page"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="34">
+        <label>Page</label>
+      </node>
+      <node id="33">
+        <label>ListenToMe.MainPage</label>
+        <link refid="class_listen_to_me_1_1_main_page"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" line="31" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/MainPage.xaml.cs" bodystart="30" bodyend="1092"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_main_page_1a6bb5a969c5955f0d7eca81e420fa0193" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>AllPanels</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1abf609ebc2f3561a5031ede871d605f4e" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>BackButton_Click</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a5277043a631146593b3f10699577408f" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>Button_Click</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a83b106bf0b81203d9c02f1bf4dcdd02e" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>CheckOtherIntents</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a465e7f9723aec19e912a3913841d477e" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>Clicked</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1afad060c55f3bedc7d8e499829e133c98" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>ContinuousRecognitionSession_ResultGenerated</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a94ae31ea5ea90fff0194c7c3345e3987" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>countUserInputs</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a73b3a3311149846cf028c5824dab2a6e" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>CreateElementAsync</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a383d3107e02c41689a1c4602467724f7" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>CreateSection</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a6dbd09c74d99bf0223489a06035980eb" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>currentPanel</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a6151ec18200a907f2dae7fc2e7d90202" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>DetermineResponse</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1af1acf9bff52880473e0889410ead00c4" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>dialog</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ad0705129e3c921457944d8c12f4c0d0a" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>DisableSpeaking</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a1b565fbb49fd56541853357581d0cd44" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>DynamicButton_Click</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1aa8407277b978652a0e0ff80038bd443a" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>FillFrameAsync</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1af4469348ffee9a5d1a8680d2535a279b" prot="public" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>FirstCharToUpper</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a1c903daffe2e54a7e05a983a3831b973" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>GoBackAsync</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1adb3a16ea6300f702c809a64ac87dc502" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>GoNextAsync</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a20dbe0c5559b5b0d039d4eddedb8bb8f" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>HomeButton_Click</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1acc0f3cb24ff26c2cfc76cd42a2fe2118" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>indexOfCurrentElement</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1adbf1a6a0cab368d6e803bbd1b918a045" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>InitContinuousRecognition</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a45421e24076000d4d47b83b35ee7f45e" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>InitFrame</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ac541bec23372af9da39117384c6b177e" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>InitSpeech</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a5d7ee17d9ee59cfc8ddee9731415c4c3" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>InitTextToSpeech</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a448f51804566fe32efca61994caf9ab9" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>IsInitializing</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1aa87f869a3f59f800027481c98e4b906e" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>JumpToNextField</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a94a7dfd5dc1ec2e9bf7a86a4b9f7df0c" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>ListenForText</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ad46f69d6d70b9b13b74b4013b86ca608" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>listening</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a906eb7f1e61084dcfb0b0f833b0d96f4" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>loader</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1afb2ff548c6284f6f179fc9b3dcc89245" prot="public" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>MainPage</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1acc2116e019bacfa54fd25381eeaf363f" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>manualResetEvent</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ab7c9aeb7a6b1053375754c58933360d6" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>Media_MediaEnded</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a3185b88ec21f447708a2d3da983997e0" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>myFrameHelper</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a9ad9fdc2f7159cbe2d495645459cffe8" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>navigationHelper</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a5d938633b84211b5962e83e1a0077e51" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>NavigationHelper_LoadState</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1aaf8102340fb741eaa5b6c501b423e060" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>NavigationHelper_SaveState</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1aff60f67b7f65b20f4df33be26d015bcf" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>navigationService</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a8144f2438fc2512708677190d74d2111" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>NextButton_Click</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a15a008ef01c6354ef72d4ec864d8d8e3" prot="protected" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>OnNavigatedFrom</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a8027d1a18b781cfe127ca02916c4552e" prot="protected" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>OnNavigatedTo</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a9e7a645ae278f0e83ff9c3a831b37028" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>Page_Loaded</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1afa885f51f46e84b050d0874e64389880" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>pagesCount</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ac18d07a7cf5452ea9fc8539764cc026d" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>ReadSection</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a09c2518852d4261ff6a2118c8e01de9f" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>SendMessage</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a03c7cef2603da00588c9a6a87fde49b1" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>SetEnabledAndHashForField</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a57d75ef6bb9c10b0c944c3eb5513b076" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>SetListeningAsync</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ad9bc9fb81f3bfa4ccdee54d0f36503f1" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>SetWhereAmI</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a03679610fded2c61480540ebcc7e4667" prot="public" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>showGrid</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1aa1c50f04230b8907027a95bfe54cb7d2" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>SpeakAsync</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a56393ec41c67e438e12651f5dc44a2cc" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>speechRecognizer</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a78024cb9b68bafc3375081574dbbea89" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>SpeechRecognizer_HypothesisGenerated</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ac417ca2ffe02d44895c029bf23e8f83a" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>speechRecognizerContinuous</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a5d61d66540a58eb612a80a05f2236548" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>speechSyntesizer</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1ab9fba04f0fc94773c2838f6af87ec14b" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>StartListenMode</name></member>
+      <member refid="class_listen_to_me_1_1_main_page_1a1a90b99d968c5e20d291452daff8a0c3" prot="private" virt="non-virtual"><scope>ListenToMe::MainPage</scope><name>Text_KeyDown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

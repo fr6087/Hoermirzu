@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_listen_to_me_1_1_view_model_1_1_view_model_locator" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::ViewModel::ViewModelLocator</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1a07ebd298d4e133fb38202d02e0cbc0ea" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; string, <ref refid="class_listen_to_me_1_1_view_model_1_1_view_model_base" kindref="compound">ViewModelBase</ref> &gt;</type>
+        <definition>Dictionary&lt;string, ViewModelBase&gt; ListenToMe.ViewModel.ViewModelLocator.modelSet</definition>
+        <argsstring></argsstring>
+        <name>modelSet</name>
+        <initializer>= new Dictionary&lt;string, <ref refid="class_listen_to_me_1_1_view_model_1_1_view_model_base" kindref="compound">ViewModelBase</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelLocator.cs" line="14" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelLocator.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1afc24088b98a0ad7f3b8e7f1afd70b80f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_listen_to_me_1_1_view_model_1_1_section_list_view_model" kindref="compound">SectionListViewModel</ref></type>
+        <definition>SectionListViewModel ListenToMe.ViewModel.ViewModelLocator.SectionListViewModel</definition>
+        <argsstring></argsstring>
+        <name>SectionListViewModel</name>
+        <briefdescription>
+<para>SectionList (main page) view model. The SectionListView is databound to this property. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelLocator.cs" line="36" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelLocator.cs" bodystart="37" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1ac631670f442882ee7070273fb72d48d1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_listen_to_me_1_1_view_model_1_1_section_view_model" kindref="compound">SectionViewModel</ref></type>
+        <definition>SectionViewModel ListenToMe.ViewModel.ViewModelLocator.SectionViewModel</definition>
+        <argsstring></argsstring>
+        <name>SectionViewModel</name>
+        <briefdescription>
+<para>Section (detail page) view model. SectionDetails page is databound to this property. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelLocator.cs" line="47" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelLocator.cs" bodystart="48" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1a50210a77a76da746801409d1787c1660" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListenToMe.ViewModel.ViewModelLocator.ViewModelLocator</definition>
+        <argsstring>()</argsstring>
+        <name>ViewModelLocator</name>
+        <briefdescription>
+<para>Set up all of the known view models, and instantiate the Section repository. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelLocator.cs" line="19" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelLocator.cs" bodystart="19" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1ad6b566b8472eec5e6e2655e150c04cde" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListenToMe.ViewModel.ViewModelLocator.InitializeStore</definition>
+        <argsstring>(Form store)</argsstring>
+        <name>InitializeStore</name>
+        <param>
+          <type><ref refid="class_listen_to_me_1_1_model_1_1_form" kindref="compound">Form</ref></type>
+          <declname>store</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelLocator.cs" line="27" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelLocator.cs" bodystart="27" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_listen_to_me_1_1_view_model_1_1_view_model_locator" kindref="compound">ViewModelLocator</ref> ensures that viewmodels can be instantiated with a common reference to the SectionStore. This allows for easier decoupling of the store implementation and the view models, and allows for less viewmodel specific code in the views. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelLocator.cs" line="13" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/ViewModel/ViewModelLocator.cs" bodystart="12" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1ad6b566b8472eec5e6e2655e150c04cde" prot="private" virt="non-virtual"><scope>ListenToMe::ViewModel::ViewModelLocator</scope><name>InitializeStore</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1a07ebd298d4e133fb38202d02e0cbc0ea" prot="private" virt="non-virtual"><scope>ListenToMe::ViewModel::ViewModelLocator</scope><name>modelSet</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1afc24088b98a0ad7f3b8e7f1afd70b80f" prot="public" virt="non-virtual"><scope>ListenToMe::ViewModel::ViewModelLocator</scope><name>SectionListViewModel</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1ac631670f442882ee7070273fb72d48d1" prot="public" virt="non-virtual"><scope>ListenToMe::ViewModel::ViewModelLocator</scope><name>SectionViewModel</name></member>
+      <member refid="class_listen_to_me_1_1_view_model_1_1_view_model_locator_1a50210a77a76da746801409d1787c1660" prot="public" virt="non-virtual"><scope>ListenToMe::ViewModel::ViewModelLocator</scope><name>ViewModelLocator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

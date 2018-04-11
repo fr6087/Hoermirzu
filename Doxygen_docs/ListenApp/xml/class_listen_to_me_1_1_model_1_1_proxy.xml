@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_listen_to_me_1_1_model_1_1_proxy" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::Model::Proxy</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_model_1_1_proxy_1a5207b409f3a97f2450e9dce1108a6da1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="class_listen_to_me_1_1_model_1_1_rootobject" kindref="compound">Rootobject</ref> &gt;</type>
+        <definition>static async Task&lt;Rootobject&gt; ListenToMe.Model.Proxy.GetJSON</definition>
+        <argsstring>(string query)</argsstring>
+        <name>GetJSON</name>
+        <param>
+          <type>string</type>
+          <declname>query</declname>
+        </param>
+        <briefdescription>
+<para>sends a query to the language understanding model LUIS </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user message to be evaluated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" line="26" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" bodystart="26" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_listen_to_me_1_1_model_1_1_proxy_1a6e03af261e464fb9b5a25e99b5209c32" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task ListenToMe.Model.Proxy.UploadHeadings</definition>
+        <argsstring>()</argsstring>
+        <name>UploadHeadings</name>
+        <briefdescription>
+<para>the luis api is theoretically also able to process other requests automatically. This one is for updating the entities in the luis model. But it didn&apos;t work. I think I&apos;m misunderstanding the documentation reference: <ulink url="https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f">https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f</ulink> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" line="51" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" bodystart="51" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_listen_to_me_1_1_model_1_1_proxy_1a37a55aec58b3df6abab1caedc017df9b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task ListenToMe.Model.Proxy.MakeRequest</definition>
+        <argsstring>(String appId, String versionId, String body)</argsstring>
+        <name>MakeRequest</name>
+        <param>
+          <type>String</type>
+          <declname>appId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>versionId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>this method is written to send data back to the luis-model. Could be useful if the form changes dramatically. doesn&apos;t work as in the luis APÍ documented. reference: <ulink url="https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f">https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f</ulink> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>appId</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>versionId</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" line="97" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" bodystart="97" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>queries LUISbotAi with techniques of Collin Blake from <ulink url="https://www.youtube.com/watch?v=ziLkj4PmcCE">https://www.youtube.com/watch?v=ziLkj4PmcCE</ulink> </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" line="20" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" bodystart="19" bodyend="124"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_model_1_1_proxy_1a5207b409f3a97f2450e9dce1108a6da1" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Proxy</scope><name>GetJSON</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_proxy_1a37a55aec58b3df6abab1caedc017df9b" prot="private" virt="non-virtual"><scope>ListenToMe::Model::Proxy</scope><name>MakeRequest</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_proxy_1a6e03af261e464fb9b5a25e99b5209c32" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Proxy</scope><name>UploadHeadings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

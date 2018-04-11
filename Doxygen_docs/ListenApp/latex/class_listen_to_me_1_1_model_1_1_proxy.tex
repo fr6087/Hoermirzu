@@ -1,0 +1,82 @@
+\hypertarget{class_listen_to_me_1_1_model_1_1_proxy}{}\section{Listen\+To\+Me.\+Model.\+Proxy Class Reference}
+\label{class_listen_to_me_1_1_model_1_1_proxy}\index{Listen\+To\+Me.\+Model.\+Proxy@{Listen\+To\+Me.\+Model.\+Proxy}}
+
+
+queries L\+U\+I\+Sbot\+Ai with techniques of Collin Blake from \href{https://www.youtube.com/watch?v=ziLkj4PmcCE}{\tt https\+://www.\+youtube.\+com/watch?v=zi\+Lkj4\+Pmc\+CE}  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static async Task$<$ \mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_rootobject}{Rootobject}} $>$ \mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_proxy_a5207b409f3a97f2450e9dce1108a6da1}{Get\+J\+S\+ON}} (string query)
+\begin{DoxyCompactList}\small\item\em sends a query to the language understanding model L\+U\+IS \end{DoxyCompactList}\item 
+static async Task \mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_proxy_a6e03af261e464fb9b5a25e99b5209c32}{Upload\+Headings}} ()
+\begin{DoxyCompactList}\small\item\em the luis api is theoretically also able to process other requests automatically. This one is for updating the entities in the luis model. But it didn\textquotesingle{}t work. I think I\textquotesingle{}m misunderstanding the documentation reference\+: \href{https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f}{\tt https\+://westus.\+dev.\+cognitive.\+microsoft.\+com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static async Task \mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_proxy_a37a55aec58b3df6abab1caedc017df9b}{Make\+Request}} (String app\+Id, String version\+Id, String body)
+\begin{DoxyCompactList}\small\item\em this method is written to send data back to the luis-\/model. Could be useful if the form changes dramatically. doesn\textquotesingle{}t work as in the luis A\+PÍ documented. reference\+: \href{https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f}{\tt https\+://westus.\+dev.\+cognitive.\+microsoft.\+com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+queries L\+U\+I\+Sbot\+Ai with techniques of Collin Blake from \href{https://www.youtube.com/watch?v=ziLkj4PmcCE}{\tt https\+://www.\+youtube.\+com/watch?v=zi\+Lkj4\+Pmc\+CE} 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_model_1_1_proxy_a5207b409f3a97f2450e9dce1108a6da1}\label{class_listen_to_me_1_1_model_1_1_proxy_a5207b409f3a97f2450e9dce1108a6da1}} 
+\index{Listen\+To\+Me\+::\+Model\+::\+Proxy@{Listen\+To\+Me\+::\+Model\+::\+Proxy}!Get\+J\+S\+ON@{Get\+J\+S\+ON}}
+\index{Get\+J\+S\+ON@{Get\+J\+S\+ON}!Listen\+To\+Me\+::\+Model\+::\+Proxy@{Listen\+To\+Me\+::\+Model\+::\+Proxy}}
+\subsubsection{\texorpdfstring{Get\+J\+S\+O\+N()}{GetJSON()}}
+{\footnotesize\ttfamily static async Task$<$\mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_rootobject}{Rootobject}}$>$ Listen\+To\+Me.\+Model.\+Proxy.\+Get\+J\+S\+ON (\begin{DoxyParamCaption}\item[{string}]{query }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+sends a query to the language understanding model L\+U\+IS 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & the user message to be evaluated\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_listen_to_me_1_1_model_1_1_proxy_a37a55aec58b3df6abab1caedc017df9b}\label{class_listen_to_me_1_1_model_1_1_proxy_a37a55aec58b3df6abab1caedc017df9b}} 
+\index{Listen\+To\+Me\+::\+Model\+::\+Proxy@{Listen\+To\+Me\+::\+Model\+::\+Proxy}!Make\+Request@{Make\+Request}}
+\index{Make\+Request@{Make\+Request}!Listen\+To\+Me\+::\+Model\+::\+Proxy@{Listen\+To\+Me\+::\+Model\+::\+Proxy}}
+\subsubsection{\texorpdfstring{Make\+Request()}{MakeRequest()}}
+{\footnotesize\ttfamily static async Task Listen\+To\+Me.\+Model.\+Proxy.\+Make\+Request (\begin{DoxyParamCaption}\item[{String}]{app\+Id,  }\item[{String}]{version\+Id,  }\item[{String}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+this method is written to send data back to the luis-\/model. Could be useful if the form changes dramatically. doesn\textquotesingle{}t work as in the luis A\+PÍ documented. reference\+: \href{https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f}{\tt https\+://westus.\+dev.\+cognitive.\+microsoft.\+com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Id} & \\
+\hline
+{\em version\+Id} & \\
+\hline
+{\em body} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_listen_to_me_1_1_model_1_1_proxy_a6e03af261e464fb9b5a25e99b5209c32}\label{class_listen_to_me_1_1_model_1_1_proxy_a6e03af261e464fb9b5a25e99b5209c32}} 
+\index{Listen\+To\+Me\+::\+Model\+::\+Proxy@{Listen\+To\+Me\+::\+Model\+::\+Proxy}!Upload\+Headings@{Upload\+Headings}}
+\index{Upload\+Headings@{Upload\+Headings}!Listen\+To\+Me\+::\+Model\+::\+Proxy@{Listen\+To\+Me\+::\+Model\+::\+Proxy}}
+\subsubsection{\texorpdfstring{Upload\+Headings()}{UploadHeadings()}}
+{\footnotesize\ttfamily static async Task Listen\+To\+Me.\+Model.\+Proxy.\+Upload\+Headings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the luis api is theoretically also able to process other requests automatically. This one is for updating the entities in the luis model. But it didn\textquotesingle{}t work. I think I\textquotesingle{}m misunderstanding the documentation reference\+: \href{https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f}{\tt https\+://westus.\+dev.\+cognitive.\+microsoft.\+com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c2f} 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/fgeissle/source/repos/\+F\+B\+K\+Voice\+App/\+Listen\+To\+Me/\+Model/\mbox{\hyperlink{_proxy_8cs}{Proxy.\+cs}}\end{DoxyCompactItemize}

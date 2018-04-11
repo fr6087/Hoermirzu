@@ -7,50 +7,30 @@ retrieves and stores login Information in a password vault to\+Do\+: use this fo
 
 
 
-Inheritance diagram for Listen\+To\+Me.\+Login\+Page\+:
-\nopagebreak
+Inheritance diagram for Listen\+To\+Me.\+Login\+Page\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=196pt]{class_listen_to_me_1_1_login_page__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Collaboration diagram for Listen\+To\+Me.\+Login\+Page\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=196pt]{class_listen_to_me_1_1_login_page__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_listen_to_me_1_1_login_page_afcefc5f9f4f5cee5d9f5e15493e4058b}{Login\+Page} ()
-\begin{DoxyCompactList}\small\item\em retreives the credentials from the list and populates the G\+UI with them, sets the cursor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_listen_to_me_1_1_login_page_afcefc5f9f4f5cee5d9f5e15493e4058b}{Login\+Page}} ()
+\begin{DoxyCompactList}\small\item\em names the resourcename for the passwordvault. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-async void \hyperlink{class_listen_to_me_1_1_login_page_a41207ebe789ac6bdf7b789e567fdf837}{login\+Button\+\_\+\+Click\+Async} (object sender, Routed\+Event\+Args e)
+async void \mbox{\hyperlink{class_listen_to_me_1_1_login_page_ace57aa2c75a95bab9c32ea95bc9adb31}{Login\+Button\+\_\+\+Click\+Async}} (object sender, Routed\+Event\+Args e)
 \begin{DoxyCompactList}\small\item\em calls some valigation rules based on length that are similar to the buisiness logic behind the webform \end{DoxyCompactList}\item 
-void \hyperlink{class_listen_to_me_1_1_login_page_a08d3ad9382e4aa77a5e7781eb393dd10}{switch\+To\+Next\+Page} ()
+void \mbox{\hyperlink{class_listen_to_me_1_1_login_page_a3f7972af36ca0c72f1bd37c4a3f84c14}{Switch\+To\+Next\+Page}} ()
 \begin{DoxyCompactList}\small\item\em navigates the frame if logged in sucessfully \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \hyperlink{class_listen_to_me_1_1_login_page_af6692799b00ea2ad405a7af8dff73ad3}{Add\+User\+Credential} (string username, string password)
+static void \mbox{\hyperlink{class_listen_to_me_1_1_login_page_af6692799b00ea2ad405a7af8dff73ad3}{Add\+User\+Credential}} (string username, string password)
 \begin{DoxyCompactList}\small\item\em adds a user credential to the password vault \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-string \hyperlink{class_listen_to_me_1_1_login_page_aa0fc5c3c6f21dc7322caa046ff9c2897}{resource\+Name} = \char`\"{}Listen\+To\+Me\char`\"{}
-\begin{DoxyCompactList}\small\item\em names the resourcename for the passwordvault. \end{DoxyCompactList}\item 
-string \hyperlink{class_listen_to_me_1_1_login_page_a38a6bf1ffefb35369036ce1f5cf0b629}{default\+User\+Name} = \char`\"{}fr6087\char`\"{}
-\begin{DoxyCompactList}\small\item\em names the user for which loginpage is retrieving Login information \end{DoxyCompactList}\item 
-readonly bool \hyperlink{class_listen_to_me_1_1_login_page_afb3d704904757345ed85b1143bccccb0}{is\+Debug} = true
-\begin{DoxyCompactList}\small\item\em As the web\+Form is currently broken we need to parse a html text file. When the website is online again, this will be reset to false \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -59,28 +39,25 @@ retrieves and stores login Information in a password vault to\+Do\+: use this fo
 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_login_page_afcefc5f9f4f5cee5d9f5e15493e4058b}\label{class_listen_to_me_1_1_login_page_afcefc5f9f4f5cee5d9f5e15493e4058b}} 
 \index{Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}!Login\+Page@{Login\+Page}}
 \index{Login\+Page@{Login\+Page}!Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}}
-\subsubsection[{\texorpdfstring{Login\+Page()}{LoginPage()}}]{\setlength{\rightskip}{0pt plus 5cm}Listen\+To\+Me.\+Login\+Page.\+Login\+Page (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{class_listen_to_me_1_1_login_page_afcefc5f9f4f5cee5d9f5e15493e4058b}{}\label{class_listen_to_me_1_1_login_page_afcefc5f9f4f5cee5d9f5e15493e4058b}
+\subsubsection{\texorpdfstring{Login\+Page()}{LoginPage()}}
+{\footnotesize\ttfamily Listen\+To\+Me.\+Login\+Page.\+Login\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+names the resourcename for the passwordvault. 
 
 retreives the credentials from the list and populates the G\+UI with them, sets the cursor 
 
-
-
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_login_page_af6692799b00ea2ad405a7af8dff73ad3}\label{class_listen_to_me_1_1_login_page_af6692799b00ea2ad405a7af8dff73ad3}} 
 \index{Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}!Add\+User\+Credential@{Add\+User\+Credential}}
 \index{Add\+User\+Credential@{Add\+User\+Credential}!Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}}
-\subsubsection[{\texorpdfstring{Add\+User\+Credential(string username, string password)}{AddUserCredential(string username, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Listen\+To\+Me.\+Login\+Page.\+Add\+User\+Credential (
-\begin{DoxyParamCaption}
-\item[{string}]{username, }
-\item[{string}]{password}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_login_page_af6692799b00ea2ad405a7af8dff73ad3}{}\label{class_listen_to_me_1_1_login_page_af6692799b00ea2ad405a7af8dff73ad3}
+\subsubsection{\texorpdfstring{Add\+User\+Credential()}{AddUserCredential()}}
+{\footnotesize\ttfamily static void Listen\+To\+Me.\+Login\+Page.\+Add\+User\+Credential (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
 
 
 adds a user credential to the password vault 
@@ -92,26 +69,12 @@ adds a user credential to the password vault
 {\em password} & the password of the credential\\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_listen_to_me_1_1_login_page_ace57aa2c75a95bab9c32ea95bc9adb31}\label{class_listen_to_me_1_1_login_page_ace57aa2c75a95bab9c32ea95bc9adb31}} 
+\index{Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}!Login\+Button\+\_\+\+Click\+Async@{Login\+Button\+\_\+\+Click\+Async}}
+\index{Login\+Button\+\_\+\+Click\+Async@{Login\+Button\+\_\+\+Click\+Async}!Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}}
+\subsubsection{\texorpdfstring{Login\+Button\+\_\+\+Click\+Async()}{LoginButton\_ClickAsync()}}
+{\footnotesize\ttfamily async void Listen\+To\+Me.\+Login\+Page.\+Login\+Button\+\_\+\+Click\+Async (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_login_page_af6692799b00ea2ad405a7af8dff73ad3_icgraph}
-\end{center}
-\end{figure}
-
-
-\index{Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}!login\+Button\+\_\+\+Click\+Async@{login\+Button\+\_\+\+Click\+Async}}
-\index{login\+Button\+\_\+\+Click\+Async@{login\+Button\+\_\+\+Click\+Async}!Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}}
-\subsubsection[{\texorpdfstring{login\+Button\+\_\+\+Click\+Async(object sender, Routed\+Event\+Args e)}{loginButton_ClickAsync(object sender, RoutedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}async void Listen\+To\+Me.\+Login\+Page.\+login\+Button\+\_\+\+Click\+Async (
-\begin{DoxyParamCaption}
-\item[{object}]{sender, }
-\item[{Routed\+Event\+Args}]{e}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_login_page_a41207ebe789ac6bdf7b789e567fdf837}{}\label{class_listen_to_me_1_1_login_page_a41207ebe789ac6bdf7b789e567fdf837}
 
 
 calls some valigation rules based on length that are similar to the buisiness logic behind the webform 
@@ -123,67 +86,18 @@ calls some valigation rules based on length that are similar to the buisiness lo
 {\em e} & event information\\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_listen_to_me_1_1_login_page_a3f7972af36ca0c72f1bd37c4a3f84c14}\label{class_listen_to_me_1_1_login_page_a3f7972af36ca0c72f1bd37c4a3f84c14}} 
+\index{Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}!Switch\+To\+Next\+Page@{Switch\+To\+Next\+Page}}
+\index{Switch\+To\+Next\+Page@{Switch\+To\+Next\+Page}!Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}}
+\subsubsection{\texorpdfstring{Switch\+To\+Next\+Page()}{SwitchToNextPage()}}
+{\footnotesize\ttfamily void Listen\+To\+Me.\+Login\+Page.\+Switch\+To\+Next\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_login_page_a41207ebe789ac6bdf7b789e567fdf837_cgraph}
-\end{center}
-\end{figure}
-
-
-\index{Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}!switch\+To\+Next\+Page@{switch\+To\+Next\+Page}}
-\index{switch\+To\+Next\+Page@{switch\+To\+Next\+Page}!Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}}
-\subsubsection[{\texorpdfstring{switch\+To\+Next\+Page()}{switchToNextPage()}}]{\setlength{\rightskip}{0pt plus 5cm}void Listen\+To\+Me.\+Login\+Page.\+switch\+To\+Next\+Page (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_login_page_a08d3ad9382e4aa77a5e7781eb393dd10}{}\label{class_listen_to_me_1_1_login_page_a08d3ad9382e4aa77a5e7781eb393dd10}
 
 
 navigates the frame if logged in sucessfully 
 
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_listen_to_me_1_1_login_page_a08d3ad9382e4aa77a5e7781eb393dd10_icgraph}
-\end{center}
-\end{figure}
-
-
-
-
-\subsection{Member Data Documentation}
-\index{Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}!default\+User\+Name@{default\+User\+Name}}
-\index{default\+User\+Name@{default\+User\+Name}!Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}}
-\subsubsection[{\texorpdfstring{default\+User\+Name}{defaultUserName}}]{\setlength{\rightskip}{0pt plus 5cm}string Listen\+To\+Me.\+Login\+Page.\+default\+User\+Name = \char`\"{}fr6087\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_login_page_a38a6bf1ffefb35369036ce1f5cf0b629}{}\label{class_listen_to_me_1_1_login_page_a38a6bf1ffefb35369036ce1f5cf0b629}
-
-
-names the user for which loginpage is retrieving Login information 
-
-\index{Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}!is\+Debug@{is\+Debug}}
-\index{is\+Debug@{is\+Debug}!Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}}
-\subsubsection[{\texorpdfstring{is\+Debug}{isDebug}}]{\setlength{\rightskip}{0pt plus 5cm}readonly bool Listen\+To\+Me.\+Login\+Page.\+is\+Debug = true\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_login_page_afb3d704904757345ed85b1143bccccb0}{}\label{class_listen_to_me_1_1_login_page_afb3d704904757345ed85b1143bccccb0}
-
-
-As the web\+Form is currently broken we need to parse a html text file. When the website is online again, this will be reset to false 
-
-\index{Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}!resource\+Name@{resource\+Name}}
-\index{resource\+Name@{resource\+Name}!Listen\+To\+Me\+::\+Login\+Page@{Listen\+To\+Me\+::\+Login\+Page}}
-\subsubsection[{\texorpdfstring{resource\+Name}{resourceName}}]{\setlength{\rightskip}{0pt plus 5cm}string Listen\+To\+Me.\+Login\+Page.\+resource\+Name = \char`\"{}Listen\+To\+Me\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_listen_to_me_1_1_login_page_aa0fc5c3c6f21dc7322caa046ff9c2897}{}\label{class_listen_to_me_1_1_login_page_aa0fc5c3c6f21dc7322caa046ff9c2897}
-
-
-names the resourcename for the passwordvault. 
-
-
-
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/user/source/repos/\+Hoermirzu/\+Listen\+To\+Me-\/master-\/89f0b49594deaade7bfad24dad062ff16eca36da/\+Listen\+To\+Me/\hyperlink{_login_page_8xaml_8cs}{Login\+Page.\+xaml.\+cs}\end{DoxyCompactItemize}
+C\+:/\+Users/fgeissle/source/repos/\+F\+B\+K\+Voice\+App/\+Listen\+To\+Me/\mbox{\hyperlink{_login_page_8xaml_8cs}{Login\+Page.\+xaml.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+\hypertarget{class_listen_to_me_1_1_model_1_1_form}{}\section{Listen\+To\+Me.\+Model.\+Form Class Reference}
+\label{class_listen_to_me_1_1_model_1_1_form}\index{Listen\+To\+Me.\+Model.\+Form@{Listen\+To\+Me.\+Model.\+Form}}
+
+
+able to store Sections of the form. $<$reference$>$Adventure\+Works in U\+WP sample projects at github$<$/reference$>$ /summary$>$  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_form_ae0301066625a452b488a25365cf369d0}{Form}} ()
+\item 
+async Task \mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_form_a97e6f2c705e11c7c99b8742d846d8738}{Fill\+\_\+sections}} ()
+\begin{DoxyCompactList}\small\item\em calls the wcf service to dertermine the structure of the form. Then, it separates the structure into sections and binds them to a static attibute that\textquotesingle{}s globally available in \mbox{\hyperlink{namespace_listen_to_me}{Listen\+To\+Me}} \mbox{\hyperlink{class_listen_to_me_1_1_app}{App}}. To which object it outputs depends on the debug mode. If debug is enabled, it will write to sections\+List. If not it will write to a Dictionary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Observable\+Collection$<$ Class\+Library.\+model.\+Section $>$ \mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_form_a5ecdd2a344e3e2e6157ff3c5b6dfc2d1}{Sections}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em helps storing the sections collection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Element \mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_form_a6a232d7bcb2cff3bd69cdb149c3dd485}{Match\+Text\+To\+Control}} (U\+I\+Element element, Element json\+Element)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Observable\+Collection$<$ Class\+Library.\+model.\+Section $>$ \mbox{\hyperlink{class_listen_to_me_1_1_model_1_1_form_a4b5d6fd20dc2522f3ad05614958c9895}{sections}}
+\begin{DoxyCompactList}\small\item\em flag to determine whether the page is loaded or not \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+able to store Sections of the form. $<$reference$>$Adventure\+Works in U\+WP sample projects at github$<$/reference$>$ /summary$>$ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_model_1_1_form_ae0301066625a452b488a25365cf369d0}\label{class_listen_to_me_1_1_model_1_1_form_ae0301066625a452b488a25365cf369d0}} 
+\index{Listen\+To\+Me\+::\+Model\+::\+Form@{Listen\+To\+Me\+::\+Model\+::\+Form}!Form@{Form}}
+\index{Form@{Form}!Listen\+To\+Me\+::\+Model\+::\+Form@{Listen\+To\+Me\+::\+Model\+::\+Form}}
+\subsubsection{\texorpdfstring{Form()}{Form()}}
+{\footnotesize\ttfamily Listen\+To\+Me.\+Model.\+Form.\+Form (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_model_1_1_form_a97e6f2c705e11c7c99b8742d846d8738}\label{class_listen_to_me_1_1_model_1_1_form_a97e6f2c705e11c7c99b8742d846d8738}} 
+\index{Listen\+To\+Me\+::\+Model\+::\+Form@{Listen\+To\+Me\+::\+Model\+::\+Form}!Fill\+\_\+sections@{Fill\+\_\+sections}}
+\index{Fill\+\_\+sections@{Fill\+\_\+sections}!Listen\+To\+Me\+::\+Model\+::\+Form@{Listen\+To\+Me\+::\+Model\+::\+Form}}
+\subsubsection{\texorpdfstring{Fill\+\_\+sections()}{Fill\_sections()}}
+{\footnotesize\ttfamily async Task Listen\+To\+Me.\+Model.\+Form.\+Fill\+\_\+sections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calls the wcf service to dertermine the structure of the form. Then, it separates the structure into sections and binds them to a static attibute that\textquotesingle{}s globally available in \mbox{\hyperlink{namespace_listen_to_me}{Listen\+To\+Me}} \mbox{\hyperlink{class_listen_to_me_1_1_app}{App}}. To which object it outputs depends on the debug mode. If debug is enabled, it will write to sections\+List. If not it will write to a Dictionary. 
+
+\mbox{\Hypertarget{class_listen_to_me_1_1_model_1_1_form_a6a232d7bcb2cff3bd69cdb149c3dd485}\label{class_listen_to_me_1_1_model_1_1_form_a6a232d7bcb2cff3bd69cdb149c3dd485}} 
+\index{Listen\+To\+Me\+::\+Model\+::\+Form@{Listen\+To\+Me\+::\+Model\+::\+Form}!Match\+Text\+To\+Control@{Match\+Text\+To\+Control}}
+\index{Match\+Text\+To\+Control@{Match\+Text\+To\+Control}!Listen\+To\+Me\+::\+Model\+::\+Form@{Listen\+To\+Me\+::\+Model\+::\+Form}}
+\subsubsection{\texorpdfstring{Match\+Text\+To\+Control()}{MatchTextToControl()}}
+{\footnotesize\ttfamily Element Listen\+To\+Me.\+Model.\+Form.\+Match\+Text\+To\+Control (\begin{DoxyParamCaption}\item[{U\+I\+Element}]{element,  }\item[{Element}]{json\+Element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_model_1_1_form_a4b5d6fd20dc2522f3ad05614958c9895}\label{class_listen_to_me_1_1_model_1_1_form_a4b5d6fd20dc2522f3ad05614958c9895}} 
+\index{Listen\+To\+Me\+::\+Model\+::\+Form@{Listen\+To\+Me\+::\+Model\+::\+Form}!sections@{sections}}
+\index{sections@{sections}!Listen\+To\+Me\+::\+Model\+::\+Form@{Listen\+To\+Me\+::\+Model\+::\+Form}}
+\subsubsection{\texorpdfstring{sections}{sections}}
+{\footnotesize\ttfamily Observable\+Collection$<$Class\+Library.\+model.\+Section$>$ Listen\+To\+Me.\+Model.\+Form.\+sections\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+flag to determine whether the page is loaded or not 
+
+Persist the loaded fields in memory for use in other parts of the application. 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_listen_to_me_1_1_model_1_1_form_a5ecdd2a344e3e2e6157ff3c5b6dfc2d1}\label{class_listen_to_me_1_1_model_1_1_form_a5ecdd2a344e3e2e6157ff3c5b6dfc2d1}} 
+\index{Listen\+To\+Me\+::\+Model\+::\+Form@{Listen\+To\+Me\+::\+Model\+::\+Form}!Sections@{Sections}}
+\index{Sections@{Sections}!Listen\+To\+Me\+::\+Model\+::\+Form@{Listen\+To\+Me\+::\+Model\+::\+Form}}
+\subsubsection{\texorpdfstring{Sections}{Sections}}
+{\footnotesize\ttfamily Observable\+Collection$<$Class\+Library.\+model.\+Section$>$ Listen\+To\+Me.\+Model.\+Form.\+Sections\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+helps storing the sections collection. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/fgeissle/source/repos/\+F\+B\+K\+Voice\+App/\+Listen\+To\+Me/\+Model/\mbox{\hyperlink{_form_8cs}{Form.\+cs}}\end{DoxyCompactItemize}

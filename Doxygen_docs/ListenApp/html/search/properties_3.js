@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['navigationservice',['NavigationService',['../class_listen_to_me_1_1_app.html#ae35ddc10bf8aad1a80c92c71c6e3b7fc',1,'ListenToMe::App']]]
+  ['mypanel',['myPanel',['../class_listen_to_me_1_1_dynamic_page.html#a187c4aba2636c3956cf023f1dc3f86ec',1,'ListenToMe::DynamicPage']]]
 ];

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_listen_to_me_1_1_model_1_1_entity" kind="class" language="C#" prot="public">
+    <compoundname>ListenToMe::Model::Entity</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_entity_1a4ae17435557f0e0ec97ff0a93f791f63" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ListenToMe.Model.Entity.entity</definition>
+        <argsstring></argsstring>
+        <name>entity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" line="180" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" bodystart="180" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_entity_1af2daeab3bb0f1ec71b0664aad418ac65" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ListenToMe.Model.Entity.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" line="182" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" bodystart="182" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_entity_1a32c85bf1ead96ed642a8164fb425c274" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int ListenToMe.Model.Entity.startIndex</definition>
+        <argsstring></argsstring>
+        <name>startIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" line="184" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" bodystart="184" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_entity_1ab4fe7e4a09235bbf2715a3049cba3efb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int ListenToMe.Model.Entity.endIndex</definition>
+        <argsstring></argsstring>
+        <name>endIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" line="186" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" bodystart="186" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="property" id="class_listen_to_me_1_1_model_1_1_entity_1aed4873738d141be126a637073cae179a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float ListenToMe.Model.Entity.score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" line="188" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" bodystart="188" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>subclass of RootObject. Note: these classes were easily pasted in C# using the visual studio tools for converting JSON </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" line="178" column="1" bodyfile="C:/Users/fgeissle/source/repos/FBKVoiceApp/ListenToMe/Model/Proxy.cs" bodystart="177" bodyend="189"/>
+    <listofallmembers>
+      <member refid="class_listen_to_me_1_1_model_1_1_entity_1ab4fe7e4a09235bbf2715a3049cba3efb" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Entity</scope><name>endIndex</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_entity_1a4ae17435557f0e0ec97ff0a93f791f63" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Entity</scope><name>entity</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_entity_1aed4873738d141be126a637073cae179a" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Entity</scope><name>score</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_entity_1a32c85bf1ead96ed642a8164fb425c274" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Entity</scope><name>startIndex</name></member>
+      <member refid="class_listen_to_me_1_1_model_1_1_entity_1af2daeab3bb0f1ec71b0664aad418ac65" prot="public" virt="non-virtual"><scope>ListenToMe::Model::Entity</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node5 [label="Page",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="ListenToMe.DynamicPage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_listen_to_me_1_1_dynamic_page.html",tooltip="This is a page that can be dynamically filled in MainPage. It is used to display the components that ..."];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ListenToMe.LoginPage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_listen_to_me_1_1_login_page.html",tooltip="retrieves and stores login Information in a password vault toDo: use this for directLine secret as we..."];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ListenToMe.MainPage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_listen_to_me_1_1_main_page.html",tooltip="contains the navigation buttons of the app as well as the speech input field "];
+}
