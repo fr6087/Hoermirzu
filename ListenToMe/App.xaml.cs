@@ -89,18 +89,32 @@ namespace ListenToMe
         public App()
         {
             this.InitializeComponent();
-            this.Suspending += OnSuspending;
-
-            client = new Service1Client(new System.ServiceModel.BasicHttpBinding(System.ServiceModel.BasicHttpSecurityMode.None)
+            try
             {
-                MaxReceivedMessageSize = 2147483647 //maximum possible buffer size is Int64.Value 9223372036854775807
-            },
-            new System.ServiceModel.EndpointAddress("http://localhost:59964/Service1.svc")
+                this.Suspending += OnSuspending;
 
-            );
-            /** the MaxReceivedBufferSize is important because GetAllElements() returns a message 2^16*100 and 2^16 is the max default value 
-             * reference https://stackoverflow.com/questions/16173835/wcf-error-the-server-did-not-provide-a-meaningful-reply
-             */
+                client = new Service1Client(new System.ServiceModel.BasicHttpBinding(System.ServiceModel.BasicHttpSecurityMode.None)
+                {
+                    MaxReceivedMessageSize = 2147483647 //maximum possible buffer size is Int64.Value 9223372036854775807
+                },
+                new System.ServiceModel.EndpointAddress("http://localhost:59964/Service1.svc")
+
+                );
+                displayErrorMessage("hey, the client was installed correctly!");
+                /** the MaxReceivedBufferSize is important because GetAllElements() returns a message 2^16*100 and 2^16 is the max default value 
+                 * reference https://stackoverflow.com/questions/16173835/wcf-error-the-server-did-not-provide-a-meaningful-reply
+                 */
+            }
+            catch(Exception e)
+            {
+                displayErrorMessage("service in App.cs not set up. "+e.Message);
+            }
+        }
+
+        private async void displayErrorMessage(string error)
+        {
+            MessageDialog message = new MessageDialog(error);
+            await message.ShowAsync();
         }
 
         /// <summary>

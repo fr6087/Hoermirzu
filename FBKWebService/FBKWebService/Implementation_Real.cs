@@ -4,7 +4,6 @@ using System.Web;
 using HtmlAgilityPack;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
-using FBKWebService.Model;
 using ClassLibrary.model;
 
 namespace FBKWebService
@@ -60,8 +59,9 @@ namespace FBKWebService
             //div elements contain sections
             //label nodes that do not contain text for a radiobutton. Some may have no text at all.
             string buttonfilter = "self::inn-button";
+            string headingfilter = "self::h3 | self::h4 | self::h5";
             string labelfilter = "self::label[not(contains(@ng-bind, '::text.label'))]";//all labelnodes that have no attribute called ng-bind with value xyz, i.e.  all labels except radio button labels
-            var xpath = "//*[span[@class='antragsNummer'] | self::h3 | self::h4 | self::h5 | " + labelfilter + " | " + buttonfilter + " | self::inn-radiobutton |self::inn-checkbox   | self::inn-section]";
+            var xpath = "//*[span[@class='antragsNummer'] | " + headingfilter +" | "+ labelfilter + " | " + buttonfilter + " | self::inn-radiobutton |self::inn-checkbox   | self::inn-section]";
             var nodes = doc.DocumentNode.SelectNodes(xpath);
             foreach (var node in nodes)
             {
