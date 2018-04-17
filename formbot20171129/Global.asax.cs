@@ -12,7 +12,7 @@ namespace SimpleEchoBot
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
             var builder = new ContainerBuilder();
-
+           
             builder
               .RegisterType<TextToSpeechActivityMapper>()
               .AsImplementedInterfaces()

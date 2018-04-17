@@ -10,7 +10,13 @@
   "properties": {
 
     "Vorname": {
-      
+      "Before": [
+        {
+          "Message": [
+            "Willkommen im Formularabschnitt 1"
+          ]
+        }
+      ],
       "Prompt": {
         "Patterns": [ "What is your given name?" ]
       },

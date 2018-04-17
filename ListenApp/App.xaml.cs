@@ -17,8 +17,7 @@ using ListenToMe.Common;
 using System.Text.RegularExpressions;
 using Windows.Security.Credentials;
 using ListenToMe.Model;
-using ListenToMe.ServiceReferenceFBK;
-using Windows.Foundation.Diagnostics;
+using ListenApp.ServiceReferenceFBK;
 
 namespace ListenToMe
 {
@@ -60,7 +59,7 @@ namespace ListenToMe
         /// </summary>
         internal static string UserName { get; private set; }
         internal static string UserPassword { get; private set; }
-        public static StorageFile LogFile { get; private set; }
+        public StorageFile LogFile { get; private set; }
 
         /// <summary>
         /// keeps a collection <see cref="Model.FormStore.Sections"/> of all the sections of the web form. is able to store and load sections in the device storage
@@ -79,7 +78,6 @@ namespace ListenToMe
         /// this should be set to true. If the form is available, this should be false.
         /// </summary>
         internal static bool isDebug = true;
-        internal static LoggingChannel lc;
 
         /// <summary>
         /// Initialized the Singleton application object. This is the first line of built code and the logic equivalent to main() that is WinMain().
@@ -88,9 +86,6 @@ namespace ListenToMe
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-            //maybe guid of listentome: 72B08CB8-6F57-4C46-9188-E8FDADEB0745
-            lc = new LoggingChannel("ListenToMe", null, new Guid("4bd2826e-54a1-4ba9-bf63-92b73ea1ac4a"));
-
         }
 
         /// <summary>
@@ -100,9 +95,11 @@ namespace ListenToMe
         /// <param name="e">Details on application start and start arguments.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-           
-                InitGui(e);
-           
+            MessageDialog message = new MessageDialog("OnLaunched was called.");
+            //await message.ShowAsync();
+
+            InitGui(e);
+
         }
 
         /// <summary>
@@ -114,20 +111,19 @@ namespace ListenToMe
         {
             try
             {
-                StorageFolder folder = Package.Current.InstalledLocation;
-                StorageFile vcd = await folder.GetFileAsync(@"VoiceCommands.xml");
+                WriteToLogAndDebug("ActivateVoiceCommands. Let's search for xml in " + Package.Current.InstalledLocation.Name);
+                StorageFile vcd = await Package.Current.InstalledLocation.GetFileAsync(@"VoiceCommands.xml");
                 await VoiceCommandDefinitionManager.InstallCommandDefinitionsFromStorageFileAsync(vcd);
                 CortanaModelMethods meth = new CortanaModelMethods();
                 List<String> headings = await meth.UpdatePhraseList("Page"); //this is supposed to load the headings from html file and add them as pages to voice command file
                 List<String> inputs = await meth.UpdatePhraseList("Field"); //these UpdatePhraselist methods are not effective since prase lists support only one word items
-                Debug.WriteLine("ActivateVoiceCommands. Let's search for xml in " + Package.Current.InstalledLocation.Name);
 
             }
             catch (Exception ex)
             {
-                string ErrorMessage = "Failed to register custom commands because " + ex.Message +"\n";
-                Debug.WriteLine(ErrorMessage);
-                
+                string ErrorMessage = "Failed to register custom commands because " + ex.Message + "\n";
+                WriteToLogAndDebug(ErrorMessage);
+
             }
         }
 
@@ -151,11 +147,11 @@ namespace ListenToMe
                 int len = result.RulePath.ToArray().Length;
                 String rules = result.Text;
 
-                
+
                 InitGui();//load default frames and page
 
                 string Message = " OnActivated.command found: " + commandName + "\n";
-                Debug.WriteLine(Message);
+                WriteToLogAndDebug(Message);
                 await PerformCommandAsync(commandName, rules);
 
             }
@@ -227,10 +223,9 @@ namespace ListenToMe
         /// <param name="e"></param>
         private void InitGui(LaunchActivatedEventArgs e = null)
         {
-            lc.LogMessage("InitGui starts");
             Frame rootFrame = Window.Current.Content as Frame;
             InitClient();
-            //InitLogging();
+            InitLogging();
             // App-Initialisierung nicht wiederholen, wenn das Fenster bereits Inhalte enthält.
             // Nur sicherstellen, dass das Fenster aktiv ist.
             if (rootFrame == null)
@@ -258,7 +253,7 @@ namespace ListenToMe
                     if (Vault == null)
                         App.Vault = new PasswordVault();
 
-                   try
+                    try
                     {
                         var cred = App.Vault.Retrieve("ListenToMe", "fgeiss");
                         //if the user has already validated user credentials with the web form, skip login
@@ -289,18 +284,15 @@ namespace ListenToMe
 
         private async void InitLogging()
         {
-            //Create Log.txt in LocalCache Folder of the App. Normally this would be done in Temporary Folder but that one is
-            //overwitten by the speech recognition methods
-            StorageFolder temporaryFolder = ApplicationData.Current.LocalCacheFolder;
+            //Create dataFile.txt in LocalCacheFolder and write “My text” to it 
+
+            StorageFolder temporaryFolder = ApplicationData.Current.TemporaryFolder;
             var logfile = await temporaryFolder.TryGetItemAsync("Log.txt") as StorageFile;
-            if (logfile!= null)
+            if (logfile != null)
             {
-                await FileIO.WriteTextAsync(LogFile, "-------------------------------init Logging");
+                await logfile.DeleteAsync();
             }
-            else
-            {
-                LogFile = await temporaryFolder.CreateFileAsync("Log.txt");
-            }
+            await temporaryFolder.CreateFileAsync("Log.txt");
         }
 
         private void InitClient()
@@ -318,9 +310,9 @@ namespace ListenToMe
 
                 );
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                Debug.WriteLine("InitClient. "+e.Message+"\n");
+                WriteToLogAndDebug("InitClient. " + e.Message + "\n");
             }
         }
 
@@ -345,7 +337,7 @@ namespace ListenToMe
                 //do something
                 case "Edit":
                     dialog.Content = "Edit. result.Text " + result;//result.RulePath[1];
-                    Debug.WriteLine("PerformCommand. found 2 edit command ");
+                    WriteToLogAndDebug("PerformCommand. found 2 edit command ");
                     await dialog.ShowAsync();
                     NavigationService nana = new NavigationService(subFrame);
                     var navPageType = typeof(MainPage);
@@ -353,22 +345,22 @@ namespace ListenToMe
                 case "Information":
                     VoiceCommandUserMessage messageM = new VoiceCommandUserMessage();
                     messageM.DisplayMessage = "You can say: 'Edit <Field xyz>' or 'Shutdown'";
-                    Debug.WriteLine("PerformCommand. found information command");
+                    WriteToLogAndDebug("PerformCommand. found information command");
                     break;
                 case "Upload":
                     dialog.Content = "upload command recognized";
-                    Debug.WriteLine("PerformCommand. found upload command");
+                    WriteToLogAndDebug("PerformCommand. found upload command");
                     await dialog.ShowAsync();
                     NavigationService.Navigate(typeof(MainPage));
                     break;
                 case "Shutdown":
                     dialog.Content = "shut computer down.";
-                    Debug.WriteLine("PerformCommand. found shut down command");
+                    WriteToLogAndDebug("PerformCommand. found shut down command");
                     await dialog.ShowAsync();
                     Application.Current.Exit();
                     break;
                 default:
-                    Debug.WriteLine("PerformCommand. Couldn't find command name");
+                    WriteToLogAndDebug("PerformCommand. Couldn't find command name");
                     dialog.Content = "default of onActivated";
                     await dialog.ShowAsync();
                     NavigationService.Navigate(typeof(MainPage));
@@ -376,23 +368,10 @@ namespace ListenToMe
             }
         }
 
-        public static async void WriteToLogAndDebug(string text)
+        private async void WriteToLogAndDebug(string text)
         {
-            Debug.WriteLine("WriteToLog. " + text);
-            StorageFolder temporaryFolder = ApplicationData.Current.LocalCacheFolder;
-            if(LogFile==null)
-                LogFile = await temporaryFolder.TryGetItemAsync("Log.txt") as StorageFile;
-
-            
-            if (LogFile != null)
-            {
-                await FileIO.WriteTextAsync(LogFile, text + "\n");
-            }
-            else
-            {
-                LogFile = await temporaryFolder.CreateFileAsync("Log.txt");
-                await FileIO.WriteTextAsync(LogFile, text + "\n");
-            }
+            Debug.WriteLine(text);
+            await FileIO.WriteTextAsync(LogFile, text + "\n");
         }
 
         /// <summary>

@@ -21,7 +21,6 @@ using ListenToMe.View;
 using Windows.UI.Xaml.Data;
 using System.Globalization;
 using System.Reflection;
-using Windows.Foundation.Diagnostics;
 
 namespace ListenToMe
 {
@@ -78,7 +77,7 @@ namespace ListenToMe
         /// contains the TextBoxes and other controls of the page
         /// </summary>
         private StackPanel currentPanel;
-       
+
         private StackPanel[] AllPanels;
         /// <summary>
         /// index of the last TextBox to which text was send with <see cref="SendMessage(string, bool)"/>
@@ -88,7 +87,7 @@ namespace ListenToMe
         /// storing wether the grid is visible for grid navigation
         /// </summary>
         public bool showGrid;
-        
+
         /// <summary>
         /// flag for preventing the <see cref="Clicked(string, string)" method from being fired when the buttons are initialized/>
         /// </summary>
@@ -111,7 +110,7 @@ namespace ListenToMe
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += NavigationHelper_LoadState;
             this.navigationHelper.SaveState += NavigationHelper_SaveState;
-            
+
             SetWhereAmI(indexOfCurrentElement);
             mainFrame.Name = "mainFrame";
             myFrameHelper = new RootFrameNavigationHelper(mainFrame);
@@ -133,7 +132,8 @@ namespace ListenToMe
             }
             catch (System.ServiceModel.CommunicationException e)
             {
-                Debug.WriteLine("MainPage.InitFrame. WCF Service is unavailable. Please rebuilt the service, then refresh Service Reference UWP App project."+e.Message);
+                Debug.WriteLine("WCF Service is unavailable. Please rebuilt the service, then refresh Service Reference UWP App project.");
+                Debug.WriteLine(e.Message);
                 throw;
             }
             AllPanels = new StackPanel[App.formstore.Sections.Count];
@@ -163,7 +163,7 @@ namespace ListenToMe
         /// <param name="e"></param>
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            App.lc.LogMessage("MainPage_OnNavig");
+            Debug.Write("MainPage_OnNavig");
             Media.MediaEnded += Media_MediaEnded;
             await InitContinuousRecognition();
             await InitTextToSpeech();
@@ -213,7 +213,7 @@ namespace ListenToMe
             var page = mainFrame.Content as DynamicPage;
 
             List<string> possibleMatches = new List<string>();
-            
+
             foreach (string key in App.hashTable.Keys)
             {
                 string cleanString = Regex.Replace(key, @"[^a-zA-Z0-9]", "");//hyphons are ignored. If they have to be evaluated add '/-' behind the '9'
@@ -259,9 +259,11 @@ namespace ListenToMe
                 throw new ArgumentException("textValue is empty or not existing");
             if (IsInitializing)
                 return;
+            //toDo activeTextBoxCount hochsetzen
+            Debug.WriteLine("clicked " + sender);
             TextBox box = App.hashTable[sender] as TextBox;
             indexOfCurrentElement = currentPanel.Children.IndexOf(box);
-            
+
             SetWhereAmI(indexOfCurrentElement);
             box.Text = textValue;
             dialog.Hide();
@@ -356,8 +358,8 @@ namespace ListenToMe
         private async Task FillFrameAsync()
         {
             Debug.WriteLine(pagesCount);
-            if(pagesCount-1>=0 && pagesCount-1<App.formstore.Sections.Count &&currentPanel!=null)
-                AllPanels[pagesCount-1] = currentPanel;//store the old stackpanel
+            if (pagesCount - 1 >= 0 && pagesCount - 1 < App.formstore.Sections.Count && currentPanel != null)
+                AllPanels[pagesCount - 1] = currentPanel;//store the old stackpanel
             ProgressRing.IsActive = true;
             currentPanel = new StackPanel();//init new section
             TextBlock formNumber = new TextBlock();
@@ -378,7 +380,7 @@ namespace ListenToMe
 
             if (pagesCount >= App.formstore.Sections.Count)
                 throw new Exception("too few sections. Impossible to map pages count of " + pagesCount + " to a section when section count is " + App.formstore.Sections.Count);
-            
+
             Debug.WriteLine(pagesCount);
             Section FormSection = App.formstore.Sections.ElementAt(0);
             Section sectionObject = App.formstore.Sections.ElementAt(pagesCount);
@@ -597,7 +599,7 @@ namespace ListenToMe
                 field.IsEnabled = false;
             }
         }
-        
+
         /// <summary>
         /// has no speacial meaning as of yet
         /// </summary>
@@ -743,13 +745,11 @@ namespace ListenToMe
 
             //get direct answer from LuisModel 
             Rootobject response = await App.Bot.SendMessageAndGetIntentFromBot(message); //this works as well but directline more flexible than 
-            string fieldname = "";
-            string fieldvalue = "";
-            string typeOfFieldValue = "";
-            string intent = response.topScoringIntent.intent;
 
+            String intent = response.topScoringIntent.intent;
             if (!intent.Equals("Field.FillIn"))
             {
+                Debug.WriteLine("Entity Length is: " + response.entities.Length);
                 CheckOtherIntents(intent, message, speak);
             }
             else if (intent.Equals("Field.FillIn") && response.entities.Length < 2)
@@ -759,6 +759,9 @@ namespace ListenToMe
             }
             else
             {
+                String fieldname = "";
+                String fieldvalue = "";
+                String typeOfFieldValue = "";
                 for (int i = 0; i < response.entities.Length; i++)
                 {
                     if (response.entities[i].type.ToLower().Equals("feldname"))
@@ -778,8 +781,9 @@ namespace ListenToMe
 
             if (speak)
             {
-                Debug.WriteLine("SendMessage. starting to speak answer");
-                await SpeakAsync(fieldvalue);
+                Debug.WriteLine("starting to speak");
+                //await SpeakAsync(response);
+                Debug.WriteLine("done speaking");
 
             }
         }
@@ -795,7 +799,7 @@ namespace ListenToMe
             switch (intent)
             {
                 case "Utilities.Help":
-                     Toast.Content = loader.GetString("HelpHint");
+                    Toast.Content = loader.GetString("HelpHint");
                     await Toast.ShowAsync();
                     break;
                 case "Utilities.ShowNext":
@@ -843,7 +847,7 @@ namespace ListenToMe
                 Debug.WriteLine("heading");
                 indexOfCurrentElement = currentPanel.Children.IndexOf(block);
                 CheckOtherIntents(intent, message, speak);//recursive call to jump over headings. they can't be "filled out"
-                
+
             }
             TextBox box = Element as TextBox;
             RadioButton rb = Element as RadioButton;
@@ -888,8 +892,8 @@ namespace ListenToMe
         /// <returns></returns>
         private async Task ReadSection(IQueryable<UIElement> controls)
         {
-            DisableSpeaking = false;   
-            foreach(var control in controls)
+            DisableSpeaking = false;
+            foreach (var control in controls)
             {
                 if (DisableSpeaking)
                     return;
@@ -900,8 +904,8 @@ namespace ListenToMe
                 PropertyInfo propertyInfoRB = Type.GetProperty("Content");//in rby the text is in the content
                 PropertyInfo propertyInfoRBVal = Type.GetProperty("IsChecked");
 
-                var header = (propertyInfo!=null)? propertyInfo.GetValue(control, null):"";
-                var textProp = (propertyInfText!=null)? propertyInfText.GetValue(control, null):"";
+                var header = (propertyInfo != null) ? propertyInfo.GetValue(control, null) : "";
+                var textProp = (propertyInfText != null) ? propertyInfText.GetValue(control, null) : "";
                 var textRB = (propertyInfoRB != null) ? propertyInfoRB.GetValue(control, null) : "";
                 var textRBState = (propertyInfoRBVal != null) ? propertyInfoRBVal.GetValue(control, null) : "";
 
@@ -942,7 +946,8 @@ namespace ListenToMe
         /// <param name="toSpeak">the answer to be spoken</param>
         private async Task SpeakAsync(string toSpeak)
         {
-            if (string.IsNullOrWhiteSpace(toSpeak)){
+            if (string.IsNullOrWhiteSpace(toSpeak))
+            {
                 return;
             }
             text.Text = loader.GetString("Speaking");
@@ -1083,5 +1088,9 @@ namespace ListenToMe
                 box.Text = "";
             }
         }
+
+
     }
+
+
 }
