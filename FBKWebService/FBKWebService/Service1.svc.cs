@@ -9,7 +9,7 @@ namespace FBKWebService
     // HINWEIS: Wählen Sie zum Starten des WCF-Testclients zum Testen dieses Diensts Service1.svc oder Service1.svc.cs im Projektmappen-Explorer aus, und starten Sie das Debuggen.
     public class Service1 : IService1
     {
-        Factory Factory = new Factory(true, "en");
+        Factory Factory = new Factory(true, "de");
 
         /// <summary>
         /// parses the website form and returns a json string simulating radio buttons, check-boxec, input fields, headings, dopdown lists, date pickers and labels. This is specialized
